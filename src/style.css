@@ -114,7 +114,13 @@ kbd { border: 1px solid #64748b; border-radius: 3px; padding: 1px 4px; color: #e
 .quiz h2 { font: 700 27px Fraunces, serif; line-height: 1.25; margin: 12px 0 25px; }
 .quiz-options { display: grid; gap: 10px; }
 .quiz-options button { display: flex; text-align: left; gap: 14px; align-items: flex-start; border: 1px solid #41556b; border-radius: 8px; padding: 14px; color: #e9eef3; background: #1d2c3e; }
-.quiz-options button b { color: #f5c765; }
+/* Ô chọn tròn cho câu một đáp án, ô vuông cho câu nhiều đáp án. */
+.quiz-options button b { display: grid; place-items: center; flex: 0 0 26px; height: 26px; border: 1px solid #56697f; font-size: 12px; font-weight: 700; color: #f5c765; transition: .15s; }
+.quiz-options.single-choice button b { border-radius: 50%; }
+.quiz-options.multi-choice button b { border-radius: 6px; }
+.quiz-options button.selected b { background: #f5c765; border-color: #f5c765; color: #172031; }
+.quiz-options button.correct b { background: #76b99a; border-color: #76b99a; color: #13261e; }
+.quiz-options button.wrong b { background: #e67373; border-color: #e67373; color: #2a1214; }
 .quiz-options button:hover, .quiz-options button.selected { border-color: #f5c765; }
 .quiz-options button.selected { background: #3c3b2d; }
 .quiz-options button.correct { border-color: #76b99a; background: #234738; }

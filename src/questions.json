@@ -69,7 +69,7 @@
     "options": {
       "A": "It simplifies the decision-making process by involving only the project manager",
       "B": "It ensures diverse perspectives from management, customers, business analysis, development, and marketing",
-      "C": "It reduces the need for stakeholder involvement i i Gee cites we Gooteninel enentineiinne SES SUITED DO TY Eat OTTO Ue Onna TUTTO |) ne Ae Ee aE TS EE ee ae ee eee rea"
+      "C": "It reduces the need for stakeholder involvement"
     },
     "answer": "B",
     "id": 6
@@ -173,7 +173,7 @@
       "A": "A persona is a real user from the target audience, used to validate requirements and ensure they meet actual user needs.",
       "B": "Personas are hypothetical, generic users representing a group with similar characteristics, used to understand requirements and design user experiences.",
       "C": "Creating a persona helps bring user classes to life and aids in visualizing how different types of users will interact with the system.",
-      "D": "Personas are only useful during the testing phase to ensure that the application functions as expected for diverse user groups. iV)"
+      "D": "Personas are only useful during the testing phase to ensure that the application functions as expected for diverse user groups."
     },
     "answer": "BC",
     "id": 14
@@ -209,7 +209,7 @@
     "numberOnPage": 11,
     "question": "Which of the following statements accurately describe the use case approach? Select two.",
     "options": {
-      "A": "A.use case describes a sequence of interactions between a system and an external actor that results in an outcome of value to the actor.",
+      "A": "A use case describes a sequence of interactions between a system and an external actor that results in an outcome of value to the actor.",
       "B": "In a use case diagram, the boundary between what's inside and outside the system is not explicitly defined.",
       "C": "Actors in a use case can include both human users and other systems that interact with the system being developed.",
       "D": "The primary actor in a use case is always the system itself, as it initiates and controls all interactions."
@@ -290,7 +290,7 @@
       "A": "By focusing exclusively on the nouns mentioned by customers, as they represent the most critical elements.",
       "B": "By identifying keywords such as nouns, verbs, and conditional statements that can be mapped to corresponding analysis model components.",
       "C": "By using a predetermined set of model components without considering the specific word choices of the customer.",
-      "D": "By mapping verbs mentioned by customers to processes, activities, and use cases in the analysis models. 9)"
+      "D": "By mapping verbs mentioned by customers to processes, activities, and use cases in the analysis models."
     },
     "answer": "BD",
     "id": 23
@@ -329,7 +329,7 @@
       "A": "Anyone who reads the requirement comes to the same interpretation as any other reader.",
       "B": "Each reader's interpretation matches what the author intended to communicate.",
       "C": "Developers find the requirements technically easy to understand",
-      "D": "Customers are happy. iV)"
+      "D": "Customers are happy."
     },
     "answer": "AB",
     "id": 26
@@ -354,7 +354,7 @@
       "A": "It is a partial implementation of a proposed new product.",
       "B": "It is a possible implementation of a proposed new product.",
       "C": "It is a preliminary implementation of a proposed new product.",
-      "D": "It is a complete implementation of a proposed new product (7)"
+      "D": "It is a complete implementation of a proposed new product"
     },
     "answer": "ABC",
     "id": 28
@@ -380,7 +380,7 @@
       "A": "Scope creep",
       "B": "Eliminating All Bugs",
       "C": "Misaligned Expectations",
-      "D": "Cost Overruns and Delays 9)"
+      "D": "Cost Overruns and Delays"
     },
     "answer": "ACD",
     "id": 30
@@ -393,7 +393,7 @@
       "A": "Define a lightweight, flexible requirements process and adapt it as the project warrants",
       "B": "Ensure that requirements documentation is at the right level: very detailed",
       "C": "Help validate that customer needs are accurately represented in the product backlog",
-      "D": "Facilitate backlog prioritization V7)"
+      "D": "Facilitate backlog prioritization"
     },
     "answer": "ACD",
     "id": 31
@@ -471,7 +471,7 @@
       "A": "The specific target customer for whom the product is intended",
       "B": "A detailed technical specification of the product's architecture.",
       "C": "The key benefit or compelling reason for the customer to buy or use the product",
-      "D": "A comparison with the primary competitive alternative or current system. iV)"
+      "D": "A comparison with the primary competitive alternative or current system."
     },
     "answer": "ACD",
     "id": 37
@@ -484,7 +484,7 @@
       "A": "Users repeat issues they already covered in previous discussions.",
       "B": "Suggested new features, user requirements, or functional requirements are all deemed to be out of scope.",
       "C": "Proposed new requirements are all low priority.",
-      "D": "Developers and testers who review the requirements for an area raise many questions. 7)"
+      "D": "Developers and testers who review the requirements for an area raise many questions."
     },
     "answer": "ABC",
     "id": 38
@@ -510,7 +510,7 @@
       "A": "Include a detailed implementation data model directly in the SRS to ensure clarity in the system's design.",
       "B": "Create a data dictionary that defines the composition, meaning, data type, and allowed values for all data elements the system will handle.",
       "C": "Document any reports that the application will generate, focusing on their logical descriptions and deferring detailed layouts to the design stage.",
-      "D": "Describe how data will be acquired, maintained, and protected, including policies for data retention, disposal, and ensuring data integrity. iV)"
+      "D": "Describe how data will be acquired, maintained, and protected, including policies for data retention, disposal, and ensuring data integrity."
     },
     "answer": "BCD",
     "id": 40
@@ -570,12 +570,12 @@
   {
     "page": 4,
     "numberOnPage": 1,
-    "question": "Requirement statements must be: ({Chonce 2 correct ancwerc) MS ee deters ee LL Ne | SNe eR EE as ee, ae",
+    "question": "Requirement statements must be: (Choose 3 correct answers)",
     "options": {
       "A": "Feasible",
       "B": "Correct",
       "C": "Verifiable",
-      "D": "Flexible iV)"
+      "D": "Flexible"
     },
     "answer": "ABC",
     "id": 45
@@ -614,7 +614,7 @@
       "A": "subset",
       "B": "representative",
       "C": "partner",
-      "D": "equivalent iV)"
+      "D": "equivalent"
     },
     "answer": "A",
     "id": 48
@@ -627,7 +627,7 @@
       "A": "Correct and Feasible",
       "B": "Unambiguous and Testable",
       "C": "Unambiguous and Non-Testable",
-      "D": "Ambiguous and Non-Testable iV)"
+      "D": "Ambiguous and Non-Testable"
     },
     "answer": "D",
     "id": 49
@@ -666,7 +666,7 @@
       "A": "exceptions",
       "B": "alternative flows",
       "C": "secondary scenarios",
-      "D": "backup flows iV)"
+      "D": "backup flows"
     },
     "answer": "A",
     "id": 52
@@ -692,7 +692,7 @@
       "A": "the right requirements",
       "B": "the requirements right",
       "C": "the flexible requirements",
-      "D": "the variable requirements iV)"
+      "D": "the variable requirements"
     },
     "answer": "A",
     "id": 54
@@ -705,7 +705,7 @@
       "A": "Use case diagrams are both behavior diagrams because they describe the behavior of the system. They are also structure diagrams, serving as a special case of class diagrams where classifiers are restricted to be either actors or use cases related to each other with associations.",
       "B": "Use case diagrams show the graphical user interface that needs to be implemented",
       "C": "Use case diagrams are usually referred to as behavior diagrams used to describe a set of actions (use cases) that some system or systems (subject) should or can perform in collaboration with one or more external users of the system (actors)",
-      "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value"
+      "D": "A use case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value"
     },
     "answer": "B",
     "id": 55
@@ -802,7 +802,7 @@
       "C": "Promptly communicate changes to the requirements.",
       "D": "Receive explanations of requirements practices and deliverables.",
       "E": "Change your requirements.",
-      "F": "Expect an environment of mutual respect. iV)"
+      "F": "Expect an environment of mutual respect."
     },
     "answer": "C",
     "id": 62
@@ -827,7 +827,7 @@
     "options": {
       "A": "It takes advantage of development skills they have available in-house.",
       "B": "It’s harder to get developer input on requirements and to pass along user feedback on delivered software to developers.",
-      "C": "A formal contractual definition of requirements is necessary, which can lead to contention if differences of interpretation are discovered late in the project (9)"
+      "C": "A formal contractual definition of requirements is necessary, which can lead to contention if differences of interpretation are discovered late in the project"
     },
     "answer": "A",
     "id": 64
@@ -853,7 +853,7 @@
       "A": "To refine user interface design.",
       "B": "To test architectural feasibility.",
       "C": "To allow users to judge the overall workflow and requirements.",
-      "D": "To simulate a user interface with no real functionality, 9)"
+      "D": "To simulate a user interface with no real functionality,"
     },
     "answer": "B",
     "id": 66
@@ -867,9 +867,9 @@
       "B": "Document requirements",
       "C": "Analyze requirements",
       "D": "Assure requirements",
-      "E": "Elicit requirements D A a Diéu nao KHONG phai nhiém vu cla Business Analyst? Dap an dung: D Dich dap an dung: Dam bao yéu cau (Assure requirements). . 7 Giai thich: BA thuéng thu thap, phan tich, tai ligu hoa va truyén dat yéu cau."
+      "E": "Elicit requirements"
     },
-    "answer": "DA",
+    "answer": "D",
     "id": 67
   },
   {
@@ -894,7 +894,7 @@
       "A": "Agile processes harness change for the customer's competitive advantage.",
       "B": "Agile projects manage change by maintaining a specific backlog of work to be done",
       "C": "Accepting change helps to meet evolving business objectives and priorities and to accommodate the limitations of human plans and foresight.",
-      "D": "Agile methods vary as to their philosophy on this point; there is no single “correct” approach. iV)"
+      "D": "Agile methods vary as to their philosophy on this point; there is no single “correct” approach."
     },
     "answer": "D",
     "id": 69
@@ -920,9 +920,9 @@
       "A": "A subset of the product's customers in some cases",
       "B": "A subset of the product's users",
       "C": "A superset of stakeholders",
-      "D": "Includes direct users and indirect users V) c a Diéu nao sau day KHONG phai la dac diém cla ngui diing (user)? Dap an dung: C Dich dap an dung: La tap cha (superset) cla cac bén lién quan (stakeholders). Giai thich: Stakeholders la khai niém réng hon users, khéng phai ngu¢c lai."
+      "D": "Includes direct users and indirect users"
     },
-    "answer": "CA",
+    "answer": "C",
     "id": 71
   },
   {
@@ -933,7 +933,7 @@
       "A": "Use Cases are static and do not evolve throughout the software development process.",
       "B": "Use case diagrams are the primary tool to document requirements.",
       "C": "Use Cases are not useful in capturing user requirements.",
-      "D": "Use Cases describe the interactions between the system and external entities. iV)"
+      "D": "Use Cases describe the interactions between the system and external entities."
     },
     "answer": "D",
     "id": 72
@@ -946,7 +946,7 @@
       "A": "Improved system performance.",
       "B": "Increased system efficiency.",
       "C": "Deterioration of system performance.",
-      "D": "Reduced need for performance testing. iV)"
+      "D": "Reduced need for performance testing."
     },
     "answer": "C",
     "id": 73
@@ -972,7 +972,7 @@
       "A": "Risk",
       "B": "Inspection",
       "C": "Scope creep",
-      "D": "Decision rule iV)"
+      "D": "Decision rule"
     },
     "answer": "C",
     "id": 75
@@ -1025,7 +1025,7 @@
       "A": "Mockup",
       "B": "Throwaway prototype",
       "C": "Evolutionary prototype",
-      "D": "Wireframe iV)"
+      "D": "Wireframe"
     },
     "answer": "C",
     "id": 79
@@ -1066,7 +1066,7 @@
       "A": "Interviews",
       "B": "Focus groups",
       "C": "Observations",
-      "D": "Training courses iV)"
+      "D": "Training courses"
     },
     "answer": "D",
     "id": 82
@@ -1093,7 +1093,7 @@
       "A": "Maximizing user convenience",
       "B": "Minimizing development cost",
       "C": "Improving operational efficiency",
-      "D": "Increasing market reach V)"
+      "D": "Increasing market reach"
     },
     "answer": "A",
     "id": 84
@@ -1133,7 +1133,7 @@
       "A": "Focus groups",
       "B": "Observation",
       "C": "Brainstorming sessions",
-      "D": "Stakeholder interviews 9)"
+      "D": "Stakeholder interviews"
     },
     "answer": "A",
     "id": 87
@@ -1172,7 +1172,7 @@
       "A": "Prioritization workshops",
       "B": "Eliminating conflicting requirements",
       "C": "Focusing only on functional requirements",
-      "D": "Avoiding stakeholder feedback 7)"
+      "D": "Avoiding stakeholder feedback"
     },
     "answer": "A",
     "id": 90
@@ -1290,7 +1290,7 @@
       "B": "Constraints",
       "C": "Action enablers",
       "D": "Inferences",
-      "E": "Computations 7)"
+      "E": "Computations"
     },
     "answer": "D",
     "id": 99
@@ -1363,12 +1363,12 @@
   {
     "page": 7,
     "numberOnPage": 1,
-    "question": "Cc Néu mét bao cdo dug tao ra nhung khéng duoc str dung, Business Analyst nén can nhac lam gi? ES COVEN UII Gt, PIUUL OS SIS PS GIL OU! Go.",
+    "question": "In a swimlane diagram, what are the steps of the process represented by?",
     "options": {
       "A": "rectangles",
       "B": "arrows connecting pairs of rectangles",
       "C": "diamonds",
-      "D": "ovals iV)"
+      "D": "ovals"
     },
     "answer": "A",
     "id": 105
@@ -1381,7 +1381,7 @@
       "A": "Adiamond shape",
       "B": "A rectangle",
       "C": "An oval shape",
-      "D": "A hexagon shape iV)"
+      "D": "A hexagon shape"
     },
     "answer": "B",
     "id": 106
@@ -1432,7 +1432,7 @@
       "A": "Preparing for elicitation",
       "B": "Performing elicitation activities",
       "C": "Following up after elicitation",
-      "D": "Classifying customer 9)"
+      "D": "Classifying customer"
     },
     "answer": "C",
     "id": 110
@@ -1458,7 +1458,7 @@
       "A": "Must, Should, Could, Won't",
       "B": "Must, Should, Could, Will",
       "C": "Must, Should, Can, Will",
-      "D": "Must, Shall, Could, Won't iV) A . A ae Bon chi cai viet hoa trong ky thuat uu tién MoSCoW la viet tat cua gi? Dich dap an dung: Must, Should, Could, Won't. . Giai thich: Day la phuong phap phan loai mirc dé vu tién yéu cau trong Agile va BA. “Story point” is used to measure which one below?"
+      "D": "Must, Shall, Could, Won't"
     },
     "answer": "A",
     "id": 112
@@ -1471,7 +1471,7 @@
       "A": "User story",
       "B": "Code",
       "C": "Function",
-      "D": "Architecture iV)"
+      "D": "Architecture"
     },
     "answer": "A",
     "id": 113
@@ -1536,7 +1536,7 @@
       "A": "To test the performance of the system",
       "B": "To demonstrate the system's functionality",
       "C": "To clarify user interface designs early",
-      "D": "To finalize system features iV)"
+      "D": "To finalize system features"
     },
     "answer": "C",
     "id": 118
@@ -1575,7 +1575,7 @@
       "A": "As a <type of user>, | want <some goal> so that <some reason>.",
       "B": "As a <type of user>, | want <some goal>.",
       "C": "As a <type of user>, | need <some need> so that <some reason>.",
-      "D": "As a <type of user>, | want <some goal> to <some purpose>. iV)"
+      "D": "As a <type of user>, | want <some goal> to <some purpose>."
     },
     "answer": "A",
     "id": 121
@@ -1653,7 +1653,7 @@
       "A": "It is the process of examining a project to identify potential threats.",
       "B": "It is one way to deal with a risk: don't do the risky thing.",
       "C": "It produces a plan for dealing with each significant risk.",
-      "D": "It activities to manage the top-priority risks you identified. V)"
+      "D": "It activities to manage the top-priority risks you identified."
     },
     "answer": "A",
     "id": 127
@@ -1692,7 +1692,7 @@
       "A": "Implement a full-scale business rule management tool",
       "B": "Use a requirements management tool",
       "C": "Use a word processor or a simple catalog",
-      "D": "Write business rules directly in application code (7)"
+      "D": "Write business rules directly in application code"
     },
     "answer": "C",
     "id": 130
@@ -1705,7 +1705,7 @@
       "A": "To prioritize high-value requirements for early implementation",
       "B": "To eliminate low-priority requirements altogether",
       "C": "To finalize coding strategies",
-      "D": "To reduce the scope of non-functional requirements iV)"
+      "D": "To reduce the scope of non-functional requirements"
     },
     "answer": "A",
     "id": 131
@@ -1718,7 +1718,7 @@
       "A": "Strict adherence to a detailed project plan",
       "B": "Regular adaptation to changing requirements and priorities",
       "C": "Emphasis on comprehensive documentation over working software",
-      "D": "Minimal interaction with customers and stakeholders 9)"
+      "D": "Minimal interaction with customers and stakeholders"
     },
     "answer": "B",
     "id": 132
@@ -1757,7 +1757,7 @@
       "A": "The process of gathering requirements from stakeholders",
       "B": "The validation of technical requirements",
       "C": "The prioritization of system constraints",
-      "D": "The finalization of the project budget V)"
+      "D": "The finalization of the project budget"
     },
     "answer": "A",
     "id": 135
@@ -1770,7 +1770,7 @@
       "A": "A coding tool for developers.",
       "B": "A requirements effort estimation spreadsheet.",
       "C": "A time-tracking tool for project managers.",
-      "D": "A documentation tool for stakeholders. 7)"
+      "D": "A documentation tool for stakeholders."
     },
     "answer": "B",
     "id": 136
@@ -1784,7 +1784,7 @@
       "B": "Select elicitation techniques",
       "C": "Review requirement",
       "D": "Plan elicitation",
-      "E": "Analysis requirement 7)"
+      "E": "Analysis requirement"
     },
     "answer": "A",
     "id": 137
@@ -1797,7 +1797,7 @@
       "A": "Why do you think this system is perfect?",
       "B": "What are the three things you dislike about the current system?",
       "C": "What happens when an error occurs?",
-      "D": "What is your favorite feature of this system? iV)"
+      "D": "What is your favorite feature of this system?"
     },
     "answer": "C",
     "id": 138
@@ -1810,7 +1810,7 @@
       "A": "Encouraging accountability and clarity of role",
       "B": "Helping champions align with project goals",
       "C": "Guaranteeing the project will stay on budget",
-      "D": "Facilitating negotiation of the champion’s responsibilities V)"
+      "D": "Facilitating negotiation of the champion’s responsibilities"
     },
     "answer": "C",
     "id": 139
@@ -1823,7 +1823,7 @@
       "A": "Performing risk control activities to manage top-priority risks",
       "B": "Documenting potential risks without any action",
       "C": "Not engaging in the risky activity at all",
-      "D": "Ignoring minor risks and focusing only on major risks c 2 z Dau Ia vi du vé chién Iugc né tranh rui ro (risk avoidance)? Dap an ding: C. Khéng thu hién hoat déng co ri ro dé ngay tir dau. Giai thich: Risk avoidance la loai bé nguyén nhan gay rui ro bang cach khéng thurc hién hoat déng do."
+      "D": "Ignoring minor risks and focusing only on major risks"
     },
     "answer": "C",
     "id": 140
@@ -1877,7 +1877,7 @@
       "A": "To track changes and ensure alignment with project goals",
       "B": "To prioritize functional requirements",
       "C": "To reduce stakeholder involvement",
-      "D": "To eliminate ambiguous requirements 7)"
+      "D": "To eliminate ambiguous requirements"
     },
     "answer": "A",
     "id": 144
@@ -1903,7 +1903,7 @@
       "A": "To ensure requirements align with business objectives and user needs",
       "B": "To finalize coding strategies",
       "C": "To skip ambiguous requirements",
-      "D": "To prioritize testing phases iV)"
+      "D": "To prioritize testing phases"
     },
     "answer": "A",
     "id": 146
@@ -1929,7 +1929,7 @@
       "A": "Users often disagree on technical specifications",
       "B": "Structured organizing schemes are typically unavailable",
       "C": "Requirements input is often diverse and unstructured.",
-      "D": "Users lack domain expertise 7)"
+      "D": "Users lack domain expertise"
     },
     "answer": "C",
     "id": 148
@@ -1955,7 +1955,7 @@
       "A": "By classifying features into basic, performance, and delight categories",
       "B": "By prioritizing requirements based on technical feasibility",
       "C": "By eliminating unnecessary requirements",
-      "D": "By focusing only on functional requirements 9)"
+      "D": "By focusing only on functional requirements"
     },
     "answer": "A",
     "id": 150
@@ -1968,7 +1968,7 @@
       "A": "By reducing time and effort during the elicitation process",
       "B": "By skipping stakeholder reviews",
       "C": "By focusing only on functional requirements",
-      "D": "By eliminating non-functional requirements iV) A * Tai str dung yéu cau giup cai thién hiéu qua dy an nhu thé nao? . Dap an dung: A. Giam thoi gian va céng strc trong qua trinh thu thap yéu cau. Giai thich: Cac yéu cau da cé thé dugc st? dung lai thay vi phai xay dung tir dau."
+      "D": "By eliminating non-functional requirements"
     },
     "answer": "A",
     "id": 151
@@ -1981,7 +1981,7 @@
       "A": "By increasing the number of features developed.",
       "B": "By reducing rework, unnecessary features, and miscommunications.",
       "C": "By increasing the project timeline.",
-      "D": "By focusing solely on technical specifications iV)"
+      "D": "By focusing solely on technical specifications"
     },
     "answer": "B",
     "id": 152
@@ -1994,7 +1994,7 @@
       "A": "Creating a checklist of required documents and systems.",
       "B": "Assigning a team member to gather all necessary materials.",
       "C": "Setting up a shared repository for document access.",
-      "D": "Scheduling regular audits to ensure document availability. 9)"
+      "D": "Scheduling regular audits to ensure document availability."
     },
     "answer": "A",
     "id": 153
@@ -2020,7 +2020,7 @@
       "A": "To discourage changes and maintain a fixed project scope",
       "B": "To speed up the development process",
       "C": "To adapt to evolving project needs while maintaining control",
-      "D": "To eliminate the need for documentation iV)"
+      "D": "To eliminate the need for documentation"
     },
     "answer": "C",
     "id": 155
@@ -2034,7 +2034,7 @@
       "B": "Scope Creep arises from customer-driven changes, while Gold Plating results from the project team adding unnecessary features.",
       "C": "Both Scope Creep and Gold Plating involve unplanned changes",
       "D": "Scope Creep occurs only in the early stages of a project, while Gold Plating happens post-delivery.",
-      "E": "Scope Creep is seen in small projects, while Gold Plating only occurs in large projects 7)"
+      "E": "Scope Creep is seen in small projects, while Gold Plating only occurs in large projects"
     },
     "answer": "B",
     "id": 156
@@ -2048,7 +2048,7 @@
       "B": "Users are only relevant for use cases involving a graphical interface, while actors cover backend processes.",
       "C": "Users are responsible for system development, and actors are responsible for testing",
       "D": "Auser is an actual person (or system) using the product, while an actor is an abstraction that represents the role the user plays in a given use case",
-      "E": "Users are always individuals, while actors are always systems. iV)"
+      "E": "Users are always individuals, while actors are always systems."
     },
     "answer": "D",
     "id": 157
@@ -2100,7 +2100,7 @@
       "A": "To ensure all requirements are linked to their design, testing, and implementation phases",
       "B": "To replace stakeholder involvement in the validation phase",
       "C": "To prioritize non-functional requirements over functional ones",
-      "D": "To finalize the system's coding standards iV)"
+      "D": "To finalize the system's coding standards"
     },
     "answer": "A",
     "id": 161
@@ -2113,7 +2113,7 @@
       "A": "It simplifies the decision-making process by involving only the project manager",
       "B": "It ensures diverse perspectives from management, customers, business analysis, development, and marketing",
       "C": "It reduces the need for stakeholder involvement",
-      "D": "It focuses solely on technical specifications iV)"
+      "D": "It focuses solely on technical specifications"
     },
     "answer": "B",
     "id": 162
@@ -2139,7 +2139,7 @@
       "A": "A condition that describes the state of a system after a use case is successfully completed",
       "B": "A condition that must be satisfied or a state the system must be in before a use case can begin",
       "C": "A condition that initiates execution of the use case",
-      "D": "A condition that must be satisfied so that system run successful iV)"
+      "D": "A condition that must be satisfied so that system run successful"
     },
     "answer": "B",
     "id": 164
@@ -2191,7 +2191,7 @@
       "A": "To finalize the product design and ensure no further changes are needed",
       "B": "To validate requirements by finding errors and omissions, and assessing their accuracy and quality",
       "C": "To create a fully functional product that can be immediately deployed",
-      "D": "To focus solely on the user experience without considering technical feasibility iV)"
+      "D": "To focus solely on the user experience without considering technical feasibility"
     },
     "answer": "B",
     "id": 168
@@ -2268,7 +2268,7 @@
       "A": "A condition that describes the state of a system after a use case is successfully completed.",
       "B": "A condition that must be satisfied or a state the system must be in before a use case can begin.",
       "C": "A condition that initiates execution of the use case.",
-      "D": "A condition that must be satisfied so that system run successful 7)"
+      "D": "A condition that must be satisfied so that system run successful"
     },
     "answer": "B",
     "id": 174
@@ -2294,7 +2294,7 @@
       "A": "Have each participant review the requirements individually and submit their feedback separately.",
       "B": "Conduct a formal peer review meeting where participants compare their understanding of each requirement and discuss any ambiguities.",
       "C": "Skip the peer review process and rely on individual interpretations.",
-      "D": "Only review requirements after the development phase. Ban sé dua nhitng budc nao vao quy trinh danh gia dong cap (peer review) dé xac dinh va giai quyét cdc diém mo hé trong yéu cau? Dép an dung: B. Té chive mét cuéc hop danh gia chinh thirc, noi nhtrng ngwdi tham gia so sénh sy hiéu biét cia ho vé ting yéu cau va thao luan cac diém mo ho. Giai thich: Thao luan truc tiép gitp phat hién nhing cach hiéu khac nhau va lam r6 cac yéu cau chwa r6 rang."
+      "D": "Only review requirements after the development phase."
     },
     "answer": "B",
     "id": 176
@@ -2307,7 +2307,7 @@
       "A": "To increase control and oversight project",
       "B": "To minimize stakeholder involvement",
       "C": "To limit project scope",
-      "D": "To save money, or to accelerate development and access specialized expertise. 9)"
+      "D": "To save money, or to accelerate development and access specialized expertise."
     },
     "answer": "D",
     "id": 177
@@ -2320,7 +2320,7 @@
       "A": "The use case is a business artifact which defines the software requirement or an application feature. Whereas use story is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
       "B": "The user story contains complete and lengthy descriptions. A use case contains simplified and short descriptions",
       "C": "The user story is a business artifact which defines the software requirement or an application feature. Whereas use case is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
-      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions (9)"
+      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions"
     },
     "answer": "D",
     "id": 178
@@ -2424,7 +2424,7 @@
       "A": "Document formatting, project scheduling, risk management, and budget tracking.",
       "B": "Quality assurance, stakeholder management, resource allocation, and system testing.",
       "C": "Version control, change control, requirements status tracking, and requirements tracing.",
-      "D": "Designing user interfaces, coding, testing software modules, and system deployment. iV)"
+      "D": "Designing user interfaces, coding, testing software modules, and system deployment."
     },
     "answer": "C",
     "id": 186
@@ -2437,7 +2437,7 @@
       "A": "Individual instances of an entity will have the same attribute values",
       "B": "The cardinality, or multiplicity, of each relationship is shown with a number or letter on the lines that connect entities and relationships",
       "C": "Each entity is described by one or more attributes",
-      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities V)"
+      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities"
     },
     "answer": "A",
     "id": 187
@@ -2476,7 +2476,7 @@
       "A": "A horizontal prototype focuses on the user interface, allowing exploration of specific behaviors without diving into detailed functionality or architectural layers.",
       "B": "A horizontal prototype fully implements all layers of the system, from the user interface to the backend services.",
       "C": "A horizontal prototype is used to validate the architectural approach and test critical timing requirements.",
-      "D": "A horizontal prototype includes detailed implementation of business logic and database interactions. 9)"
+      "D": "A horizontal prototype includes detailed implementation of business logic and database interactions."
     },
     "answer": "A",
     "id": 190
@@ -2489,7 +2489,7 @@
       "A": "COTS packages always require significant customization.",
       "B": "Some COTS packages can be used out of the box with little to no modification",
       "C": "COTS packages provide unlimited flexibility to meet all business requirements",
-      "D": "All COTS packages require integration with other systems. 9)"
+      "D": "All COTS packages require integration with other systems."
     },
     "answer": "B",
     "id": 191
@@ -2528,7 +2528,7 @@
       "A": "By categorizing requirements as Must-have, Should-have, Could-have, and Won't-have",
       "B": "By focusing on technical feasibility",
       "C": "By skipping stakeholder engagement",
-      "D": "By eliminating low-priority requirements V)"
+      "D": "By eliminating low-priority requirements"
     },
     "answer": "A",
     "id": 194
@@ -2567,7 +2567,7 @@
       "A": "The number of additional components that need to be installed with the system.",
       "B": "The average time required for an untrained user to successfully complete the installation process.",
       "C": "The type of hardware used during the installation process.",
-      "D": "The number of user profiles that need to be transferred during installation. iV)"
+      "D": "The number of user profiles that need to be transferred during installation."
     },
     "answer": "B",
     "id": 197
@@ -2580,7 +2580,7 @@
       "A": "To ensure that requirements are documented only once.",
       "B": "To facilitate ongoing collaboration and ensure the team understands the requirements.",
       "C": "To avoid the need for visual analysis models.",
-      "D": "To reduce the number of requirements V7)"
+      "D": "To reduce the number of requirements"
     },
     "answer": "B",
     "id": 198
@@ -2593,7 +2593,7 @@
       "A": "It allows \"Request a Chemical\" to function independently without any alternative flows.",
       "B": "It integrates \"Search Vendor Catalogs\" into the normal flow of \"Request a Chemical.\"",
       "C": "It provides an optional alternative flow for requesting chemicals from a vendor.",
-      "D": "It duplicates the steps of \"Search Vendor Catalogs” within \"Request a Chemical.\" <<extend>> Search Vendor Catalogs V)"
+      "D": "It duplicates the steps of \"Search Vendor Catalogs” within \"Request a Chemical.\" <<extend>> Search Vendor Catalogs"
     },
     "answer": "C",
     "id": 199
@@ -2601,7 +2601,7 @@
   {
     "page": 11,
     "numberOnPage": 15,
-    "question": "huwéng dén chtre nang hé théng nhu thé nao? External quality attributes describe characteristics that are observed when the software is executing. Which following definitions is Integrity?",
+    "question": "External quality attributes describe characteristics that are observed when the software is executing. Which following definitions is Integrity?",
     "options": {
       "A": "It deals with blocking unauthorized access to system functions or data, ensuring that the software is protected from malware attacks, and so on",
       "B": "It is the degree to which a system continues to function properly when confronted with invalid inputs.",
@@ -2632,7 +2632,7 @@
       "A": "By freezing the product backlog after each iteration to prevent any changes until the next iteration.",
       "B": "By maintaining a dynamic product backlog where new tasks are prioritized based on business value, and lower-priority tasks can be deferred or removed.",
       "C": "By allowing changes only during a predefined change window, outside of which no changes are permitted.",
-      "D": "By escalating all change requests to a higher-level change authority, regardless of their impact on the project. 7)"
+      "D": "By escalating all change requests to a higher-level change authority, regardless of their impact on the project."
     },
     "answer": "B",
     "id": 202
@@ -2710,7 +2710,7 @@
       "A": "Post-condition",
       "B": "Actors",
       "C": "Pre-condition",
-      "D": "Name V)"
+      "D": "Name"
     },
     "answer": "BD",
     "id": 208
@@ -2722,7 +2722,7 @@
     "options": {
       "A": "The messages between the client and server shall be in YAML 1.2 format?",
       "B": "The user shall be able to select the course number",
-      "C": "Communication between the client and server will be expressed in EBCDIC encoding iV)"
+      "C": "Communication between the client and server will be expressed in EBCDIC encoding"
     },
     "answer": "AC",
     "id": 209
@@ -2734,7 +2734,7 @@
     "options": {
       "A": "Story decomposition refers to breaking down user stories into smaller epics for implementation in agile projects",
       "B": "Epics are user stories that are too large to be implemented in a single iteration",
-      "C": "User stories are concise statements that articulate user needs and serve as a starting point for detailed discussions iv) BC@Epics chia nhé thanh User Stories Requirements engineering can be split into and Choose 2 correct answers"
+      "C": "User stories are concise statements that articulate user needs and serve as a starting point for detailed discussions"
     },
     "answer": "BC",
     "id": 210
@@ -2747,7 +2747,7 @@
       "A": "requirements development",
       "B": "requirements management",
       "C": "requirements elicitation",
-      "D": "requirements confirmation 0)"
+      "D": "requirements confirmation"
     },
     "answer": "AB",
     "id": 211
@@ -2760,7 +2760,7 @@
       "A": "Entity-relationship diagram",
       "B": "Class diagram",
       "C": "Data dictionary",
-      "D": "Context diagram 0)"
+      "D": "Context diagram"
     },
     "answer": "AB",
     "id": 212
@@ -2773,7 +2773,7 @@
       "A": "Anyone who reads the requirement comes to the same interpretation as any other reader",
       "B": "Each reader’s interpretation matches what the author intended to communicate",
       "C": "Developers find the requirements technically easy to understand",
-      "D": "Customers are happy iV)"
+      "D": "Customers are happy"
     },
     "answer": "AB",
     "id": 213
@@ -2863,7 +2863,7 @@
       "A": "Itis a screen display or printed report",
       "B": "It uses multiple textual and/or graphical representations of data",
       "C": "It aims to provide a consolidated, multidimensional view of what is going on in an organization or a process",
-      "D": "Itis a brochure to promote the product 0)"
+      "D": "Itis a brochure to promote the product"
     },
     "answer": "ABC",
     "id": 220
@@ -2876,7 +2876,7 @@
       "A": "Users repeat issues they already covered in previous discussions",
       "B": "Suggested new features, user requirements, or functional requirements are all deemed to be out of scope",
       "C": "Proposed new requirements are all low priority",
-      "D": "Developers and testers who review the requirements for an area raise many questions iV) ABC@@D sai vi \"Developers and testers who review the requirements for an area raise few questions\""
+      "D": "Developers and testers who review the requirements for an area raise many questions"
     },
     "answer": "ABC",
     "id": 221
@@ -2889,7 +2889,7 @@
       "A": "“Common knowledge” from the organization, often collected from individuals who have worked with the business for a long time and know the details of how it operates",
       "B": "Legacy systems that embed business rules in their requirements and code",
       "C": "Analysis of existing documentation, including requirements specifications from earlier projects, regulations industry standards, corporate policy documents, contracts, and business plans",
-      "D": "Business laws iV)"
+      "D": "Business laws"
     },
     "answer": "ABC",
     "id": 222
@@ -2941,7 +2941,7 @@
       "A": "Project planning",
       "B": "Design and coding",
       "C": "Testing activities",
-      "D": "Financial activities V)"
+      "D": "Financial activities"
     },
     "answer": "ABC",
     "id": 226
@@ -2967,7 +2967,7 @@
       "A": "Feasible",
       "B": "Correct",
       "C": "Verifiable",
-      "D": "Flexible ABC@Characteristics of requirement statements —-Complete —Correct -Feasible —Necessary —Prioritized —Unambiguous —Verifiable@(Da cé trong tai liéu & slide dau) The structure of the vision and scope document includes: (Choose three correct answers)"
+      "D": "Flexible"
     },
     "answer": "ABC",
     "id": 228
@@ -3033,7 +3033,7 @@
       "A": "Use case diagrams are both behavior diagrams because they describe the behavior of the system. They are also structure diagrams, serving as a special case of class diagrams where classifiers are restricted to be either actors or use cases related to each other with associations",
       "B": "Use case diagrams show the graphical user interface that needs to be implemented.",
       "C": "Use case diagrams are usually referred to as behavior diagrams used to describe a set of actions (use cases) that some system or systems (subject) should or can perform in collaboration with one or more external users of the system (actors)",
-      "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value 9)"
+      "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value"
     },
     "answer": "B",
     "id": 233
@@ -3086,7 +3086,7 @@
       "A": "Availability",
       "B": "Integrity",
       "C": "Safety",
-      "D": "Reusability iV)"
+      "D": "Reusability"
     },
     "answer": "D",
     "id": 237
@@ -3113,7 +3113,7 @@
       "B": "External interface",
       "C": "Data requirements",
       "D": "Design features",
-      "E": "System features iV)"
+      "E": "System features"
     },
     "answer": "D",
     "id": 239
@@ -3126,7 +3126,7 @@
       "A": "Subscription-based pricing",
       "B": "On-premises deployment",
       "C": "Centralized hosting",
-      "D": "Internet accessibility iV)"
+      "D": "Internet accessibility"
     },
     "answer": "B",
     "id": 240
@@ -3169,7 +3169,7 @@
       "A": "Define product vision and project scope iS) oo",
       "B": "Hold elicitation interviews = sanpons",
       "C": "Observe users performing their jobs S. taedey moumiomet Omen",
-      "D": "Model the application environment erview iV)"
+      "D": "Model the application environment erview"
     },
     "answer": "D",
     "id": 243
@@ -3262,7 +3262,7 @@
       "A": "A subset of stakeholders",
       "B": "An individual or organization that derives either direct or indirect benefit from a product",
       "C": "They could request, pay for, select, specify, use, or receive the output generated by a software product",
-      "D": "Such as legal staff, compliance auditors, suppliers 0)"
+      "D": "Such as legal staff, compliance auditors, suppliers"
     },
     "answer": "D",
     "id": 250
@@ -3313,7 +3313,7 @@
       "A": "Itis the fourth component of requirements development",
       "B": "Itis ensure that they have all the desired properties of high-quality requirements is also an essential activity",
       "C": "Itis assesses whether you have written the right requirements: they trace back to business objectives",
-      "D": "It allows teams to build a correct solution that meets the stated business objectives 0)"
+      "D": "It allows teams to build a correct solution that meets the stated business objectives"
     },
     "answer": "B",
     "id": 254
@@ -3366,7 +3366,7 @@
       "B": "Document requirements",
       "C": "Analyze requirements",
       "D": "Assurance requirements",
-      "E": "Elicit requirements (9)"
+      "E": "Elicit requirements"
     },
     "answer": "D",
     "id": 258
@@ -3379,7 +3379,7 @@
       "A": "Analysis",
       "B": "Validation",
       "C": "Design",
-      "D": "Elicitation iV) C@ Elicitation, Analysis, Specification and Validation. Requirements analysis involves refining the requirements to ensure that all stakeholders understand them and scrutinizing them for errors, omissions, and other deficiencies"
+      "D": "Elicitation"
     },
     "answer": "C",
     "id": 259
@@ -3394,7 +3394,7 @@
       "C": "Analyze requirement feasibility",
       "D": "Prioritize the requirements",
       "E": "Model the requirements",
-      "F": "Identify requirement origins iV)"
+      "F": "Identify requirement origins"
     },
     "answer": "F",
     "id": 260
@@ -3420,7 +3420,7 @@
       "A": "Delays and rework",
       "B": "Increased resource costs",
       "C": "Faster development process",
-      "D": "Improved product quality iV)"
+      "D": "Improved product quality"
     },
     "answer": "A",
     "id": 262
@@ -3446,7 +3446,7 @@
       "A": "Risk",
       "B": "Inspection",
       "C": "Scope creep",
-      "D": "Decision rule iV)"
+      "D": "Decision rule"
     },
     "answer": "C",
     "id": 264
@@ -3538,7 +3538,7 @@
       "B": "External interface",
       "C": "Data requirements",
       "D": "Design features",
-      "E": "System features iV) D@(D4 co trong tai ligu & slide dau)"
+      "E": "System features"
     },
     "answer": "D",
     "id": 271
@@ -3565,7 +3565,7 @@
       "B": "Unambiguous",
       "C": "Consistent",
       "D": "Traceable",
-      "E": "Modifiable iV)"
+      "E": "Modifiable"
     },
     "answer": "C",
     "id": 273
@@ -3579,7 +3579,7 @@
       "B": "design",
       "C": "analysis",
       "D": "validation",
-      "E": "documentation iV)"
+      "E": "documentation"
     },
     "answer": "B",
     "id": 274
@@ -3593,7 +3593,7 @@
       "B": "Order products",
       "C": "Maintainability",
       "D": "Security",
-      "E": "Robustness iV)"
+      "E": "Robustness"
     },
     "answer": "B",
     "id": 275
@@ -3606,7 +3606,7 @@
       "A": "Mockup",
       "B": "Throwaway prototype",
       "C": "Evolutionary prototype",
-      "D": "Wireframe V)"
+      "D": "Wireframe"
     },
     "answer": "C",
     "id": 276
@@ -3632,7 +3632,7 @@
       "A": "Stakeholder Requirements",
       "B": "Functional Requirements",
       "C": "Business Requirements",
-      "D": "Non-functional Requirements iV)"
+      "D": "Non-functional Requirements"
     },
     "answer": "B",
     "id": 278
@@ -3645,7 +3645,7 @@
       "A": "1,2,3,4",
       "B": "2,1,3,4",
       "C": "2,43,1",
-      "D": "4,1,2,3 iV)"
+      "D": "4,1,2,3"
     },
     "answer": "D",
     "id": 279
@@ -3658,7 +3658,7 @@
       "A": "Peer deskcheck approach",
       "B": "Passaround approach",
       "C": "Walkthrough approach",
-      "D": "Inspection approach iV)"
+      "D": "Inspection approach"
     },
     "answer": "C",
     "id": 280
@@ -3685,7 +3685,7 @@
       "B": "Business rules",
       "C": "Business requirements",
       "D": "Quality attributes",
-      "E": "Solution ideas iV)"
+      "E": "Solution ideas"
     },
     "answer": "C",
     "id": 282
@@ -3698,7 +3698,7 @@
       "A": "Data dictionary",
       "B": "Data flow diagram",
       "C": "Database",
-      "D": "Relationship 0)"
+      "D": "Relationship"
     },
     "answer": "A",
     "id": 283
@@ -3724,7 +3724,7 @@
       "A": "State-transition diagram",
       "B": "Swimlane diagram",
       "C": "Use case diagram",
-      "D": "Data Flow diagram iV)"
+      "D": "Data Flow diagram"
     },
     "answer": "A",
     "id": 285
@@ -3764,7 +3764,7 @@
       "B": "Constraints",
       "C": "Action enablers",
       "D": "inferences",
-      "E": "Computations D@dt doan a lead khéng phan héi trong vong 30 ngay dy doan la a cold lead Consider the following statement: “All the screens in the system must load quickly”. This requirement statement is"
+      "E": "Computations"
     },
     "answer": "D",
     "id": 288
@@ -3803,7 +3803,7 @@
       "A": "Use case diagram",
       "B": "Data model",
       "C": "Data dictionary",
-      "D": "Reports iV)"
+      "D": "Reports"
     },
     "answer": "B",
     "id": 291
@@ -3842,7 +3842,7 @@
       "A": "offshore",
       "B": "offline",
       "C": "on-site",
-      "D": "off-site V)"
+      "D": "off-site"
     },
     "answer": "A",
     "id": 294
@@ -3933,7 +3933,7 @@
       "A": "Overall description",
       "B": "System features",
       "C": "Data requirements",
-      "D": "External interface requirements 0)"
+      "D": "External interface requirements"
     },
     "answer": "D",
     "id": 301
@@ -3946,7 +3946,7 @@
       "A": "primary",
       "B": "secondary",
       "C": "main",
-      "D": "side 0)"
+      "D": "side"
     },
     "answer": "A",
     "id": 302
@@ -3984,7 +3984,7 @@
       "A": "investing excessive effort in prototypes",
       "B": "distraction by details",
       "C": "pressure to release the prototype",
-      "D": "unrealistic performance expectations iV)"
+      "D": "unrealistic performance expectations"
     },
     "answer": "A",
     "id": 305
@@ -3997,7 +3997,7 @@
       "A": "rectangles, lines/arcs with arrows",
       "B": "ovals, lines/arcs with arrows",
       "C": "ovals, lines/arcs without arrows",
-      "D": "triangles, lines/arcs with arrows 0)"
+      "D": "triangles, lines/arcs with arrows"
     },
     "answer": "A",
     "id": 306
@@ -4010,7 +4010,7 @@
       "A": "User story",
       "B": "Code",
       "C": "Function",
-      "D": "Architecture iV)"
+      "D": "Architecture"
     },
     "answer": "A",
     "id": 307
@@ -4021,7 +4021,7 @@
     "question": "Some stakeholders are customers, such as legal staff, compliance auditors, suppliers, contractors, and venture capitalists",
     "options": {
       "A": "True",
-      "B": "False iv)"
+      "B": "False"
     },
     "answer": "B",
     "id": 308
@@ -4034,7 +4034,7 @@
       "A": "design process",
       "B": "organizational activities",
       "C": "stakeholders",
-      "D": "business process V)"
+      "D": "business process"
     },
     "answer": "D",
     "id": 309
@@ -4073,7 +4073,7 @@
       "A": "verify the change",
       "B": "validate the change",
       "C": "test the change",
-      "D": "use the change 0)"
+      "D": "use the change"
     },
     "answer": "A",
     "id": 312
@@ -4086,7 +4086,7 @@
       "A": "less",
       "B": "more",
       "C": "shorter",
-      "D": "longer iv)"
+      "D": "longer"
     },
     "answer": "A",
     "id": 313
@@ -4112,7 +4112,7 @@
       "A": "Availability",
       "B": "Installability",
       "C": "Integrity",
-      "D": "Interoperability iV)"
+      "D": "Interoperability"
     },
     "answer": "D",
     "id": 315
@@ -4125,7 +4125,7 @@
       "A": "Interoperability",
       "B": "Integrity",
       "C": "Performance",
-      "D": "Reliability iv)"
+      "D": "Reliability"
     },
     "answer": "A",
     "id": 316
@@ -4138,7 +4138,7 @@
       "A": "Availability",
       "B": "Usability",
       "C": "Scalability",
-      "D": "Robustness iV)"
+      "D": "Robustness"
     },
     "answer": "C",
     "id": 317
@@ -4177,7 +4177,7 @@
       "A": "You might reuse just a single functional requirement",
       "B": "You consider is how much modification will be needed to make existing requirements reusable on the new project",
       "C": "Itis is simply a copy-and-paste of a piece of requirements information, either from another specification or from a library of reusable requirements",
-      "D": "It specific functional requirements within use cases, performance requirements, usability requirements business rules A@eExtent of reuse: A Extent of modification: B Reuse mechanism: C@Scope of reuse: D"
+      "D": "It specific functional requirements within use cases, performance requirements, usability requirements business rules"
     },
     "answer": "A",
     "id": 320
@@ -4203,7 +4203,7 @@
       "A": "Itis a project in which new capabilities are added to an existing system",
       "B": "Itis a project that replaces an existing application with a new custom-built system, a commercial off-the-shelf system, or a hybrid of those",
       "C": "Itis a project which costs less than planned",
-      "D": "Itis a project which generates more revenues V)"
+      "D": "Itis a project which generates more revenues"
     },
     "answer": "A",
     "id": 322
@@ -4215,7 +4215,7 @@
     "options": {
       "A": "Constraints on the development process of the system",
       "B": "A specification of features be implemented, descriptions of how the system should behave or descriptions",
-      "C": "Aset of requirements that stakeholders have agreed to, often defining the contents of a specific planned release or development iteration iv)"
+      "C": "Aset of requirements that stakeholders have agreed to, often defining the contents of a specific planned release or development iteration"
     },
     "answer": "C",
     "id": 323
@@ -4228,7 +4228,7 @@
       "A": "A group of stakeholders responsible for documenting project assumptions",
       "B": "A group that decides to approve or reject proposed changes for a specific project",
       "C": "A team of project managers tasked with managing project risks",
-      "D": "Acommittee responsible for scheduling project milestones iV)"
+      "D": "Acommittee responsible for scheduling project milestones"
     },
     "answer": "B",
     "id": 324
@@ -4280,7 +4280,7 @@
       "A": "Through an apprenticeship program with mentoring",
       "B": "By studying software development exclusively",
       "C": "By focusing only on user interface design skills",
-      "D": "By avoiding involvement in diverse business activities iV)"
+      "D": "By avoiding involvement in diverse business activities"
     },
     "answer": "A",
     "id": 328
@@ -4306,7 +4306,7 @@
       "A": "It ensures traceability and reduces errors in requirements documentation",
       "B": "It finalizes stakeholder requirements automatically",
       "C": "It replaces the validation process",
-      "D": "It eliminates the need for prototyping iV)"
+      "D": "It eliminates the need for prototyping"
     },
     "answer": "A",
     "id": 330
@@ -4371,7 +4371,7 @@
       "A": "To justify the project's value and align it with organizational goals",
       "B": "To finalize the technical requirements",
       "C": "To replace the Vision and Scope document",
-      "D": "To eliminate stakeholder involvement in the early phases iV)"
+      "D": "To eliminate stakeholder involvement in the early phases"
     },
     "answer": "A",
     "id": 335
@@ -4384,7 +4384,7 @@
       "A": "To define the boundaries and objectives of the project",
       "B": "To specify all technical requirements",
       "C": "To finalize the system's architecture",
-      "D": "Toreplace the requirements traceability matrix iV)"
+      "D": "Toreplace the requirements traceability matrix"
     },
     "answer": "A",
     "id": 336
@@ -4410,7 +4410,7 @@
       "A": "Validation ensures that the product meets the user's needs, while verification ensures it is free from defects",
       "B": "Validation ensures the product satisfies customer needs, while verification ensures the product meets its specifications",
       "C": "Validation occurs before the design phase, and verification occurs after",
-      "D": "Validation is about internal testing, while verification is about external approval V) B@Verification = Dung ky thuat Validation = Dung muc tiéu ngudi ding"
+      "D": "Validation is about internal testing, while verification is about external approval"
     },
     "answer": "B",
     "id": 338
@@ -4462,7 +4462,7 @@
       "A": "There is often no existing trace data to start with",
       "B": "The system is too complex to trace effectively",
       "C": "Trace data becomes obsolete very quickly",
-      "D": "There are too many participants to track é"
+      "D": "There are too many participants to track"
     },
     "answer": "C",
     "id": 342
@@ -4566,7 +4566,7 @@
       "A": "Being involved in the process you are observing",
       "B": "Interrupting with small questions",
       "C": "Silently watch the user perform their tasks",
-      "D": "Only watching video 0) @"
+      "D": "Only watching video"
     },
     "answer": "C",
     "id": 350
@@ -4579,7 +4579,7 @@
       "A": "Essay questions",
       "B": "Closed ended questions with standardized answers",
       "C": "Open-ended questions are asked at the beginning to obtain full and meaningful answers",
-      "D": "Combine close ended questions with open-ended questions é"
+      "D": "Combine close ended questions with open-ended questions"
     },
     "answer": "C",
     "id": 351
@@ -4618,7 +4618,7 @@
       "A": "The use case is a business artifact which defines the software requirement or an application feature Whereas use story is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
       "B": "The user story contains complete and lengthy descriptions. A use case contains simplified and short descriptions",
       "C": "The user story is a business artifact which defines the software requirement or an application feature Whereas use case is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
-      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions 0)"
+      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions"
     },
     "answer": "D",
     "id": 354
@@ -4631,7 +4631,7 @@
       "A": "Define product vision and project scope",
       "B": "Hold elicitation interviews",
       "C": "Observe users performing their jobs",
-      "D": "Model the application environment iV)"
+      "D": "Model the application environment"
     },
     "answer": "D",
     "id": 355
@@ -4657,7 +4657,7 @@
       "A": "Individual instances of an entity will have the same as attribute values",
       "B": "The cardinality, or multiplicity, of each relationship is shown with a number or letter on the lines that connect entities and relationships",
       "C": "Each entity is described by one or more attributes",
-      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities iV)"
+      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities"
     },
     "answer": "A",
     "id": 357
@@ -4734,7 +4734,7 @@
       "A": "Arequirement is anything that drives design choices",
       "B": "Arequirement is a property that a product must have to provide value to a stakeholder",
       "C": "Requirements are a specification of what should be implemented. They are descriptions of how the system should behave, or of a system property or attribute. They may be a constraint on the development process of the system",
-      "D": "Requirements are what customers want 0)"
+      "D": "Requirements are what customers want"
     },
     "answer": "C",
     "id": 363
@@ -4760,7 +4760,7 @@
       "A": "Lack of stakeholder involvement",
       "B": "Frequent updates and version control of requirements documentation",
       "C": "Standardized format for requirements documentation",
-      "D": "Requirements written in natural language are ambiguities, missing information, and hidden assumptions 0) D@(Xem docs 6 slide dau dé) which of the following statements are incorrect about throwaway prototypes?"
+      "D": "Requirements written in natural language are ambiguities, missing information, and hidden assumptions"
     },
     "answer": "D",
     "id": 365
@@ -4786,7 +4786,7 @@
       "A": "also called a horizontal prototype",
       "B": "it dives into all the architectural layers or into detailed functionality",
       "C": "displays the facades of user interface screens and permits some navigation between them",
-      "D": "let's you explore some specific behaviors of the intended system, with the goal of refining the requirements B@Mockup [a UI chi biéu dién cho cho thay téng quan vé giao dién chtr chua code"
+      "D": "let's you explore some specific behaviors of the intended system, with the goal of refining the requirements"
     },
     "answer": "B",
     "id": 367
@@ -4799,7 +4799,7 @@
       "A": "Document formatting, project scheduling, risk management, and budget tracking",
       "B": "Quality assurance, stakeholder management, resource allocation, and system testing",
       "C": "Version control, change control, requirements status tracking, and requirements tracing",
-      "D": "Designing user interfaces, coding, testing software modules, and system deployment 0)"
+      "D": "Designing user interfaces, coding, testing software modules, and system deployment"
     },
     "answer": "C",
     "id": 368
@@ -4812,7 +4812,7 @@
       "A": "Holding workshops and interviews to gather requirements",
       "B": "Submitting requirements changes and proposing new requirements change",
       "C": "Writing requirements specifications and prioritizing requirements",
-      "D": "Creating and evaluating prototypes for requirements development iv)"
+      "D": "Creating and evaluating prototypes for requirements development"
     },
     "answer": "B",
     "id": 369
@@ -4825,7 +4825,7 @@
       "A": "Enhancing project tracking by creating links between project plan tasks and development progress",
       "B": "Reducing overall product life-cycle costs by minimizing development efforts",
       "C": "Identifying all regulatory compliance requirements and confirming their correct implementation",
-      "D": "Finding missing requirements that don't trace to any user or business requirements iV)"
+      "D": "Finding missing requirements that don't trace to any user or business requirements"
     },
     "answer": "D",
     "id": 370
@@ -4851,7 +4851,7 @@
       "A": "Improved project management",
       "B": "Decreased stakeholder involvement",
       "C": "Enhanced focus on high-value features",
-      "D": "Reduced scope creep 7)"
+      "D": "Reduced scope creep"
     },
     "answer": "C",
     "id": 372
@@ -4879,7 +4879,7 @@
       "A": "Using high-fidelity tools that resemble the final product",
       "B": "Leaving the prototype looking rough and unpolished",
       "C": "Making the prototype available for immediate release",
-      "D": "Giving detailed descriptions of every feature iV)"
+      "D": "Giving detailed descriptions of every feature"
     },
     "answer": "B",
     "id": 374
@@ -4918,7 +4918,7 @@
       "A": "Customers get preference, unconditionally",
       "B": "Customers get preference, but in alignment with business objectives",
       "C": "Development gets preference, unconditionally",
-      "D": "Development gets preference, but in alignment with business objectives V)"
+      "D": "Development gets preference, but in alignment with business objectives"
     },
     "answer": "B",
     "id": 377
@@ -4931,7 +4931,7 @@
       "A": "To discourage changes in project priorities",
       "B": "To avoid addressing potential risks",
       "C": "To ensure that development efforts remain aligned with the current business landscape",
-      "D": "To prioritize technical challenges over business goals 0)"
+      "D": "To prioritize technical challenges over business goals"
     },
     "answer": "C",
     "id": 378
@@ -5033,7 +5033,7 @@
       "A": "By focusing on risks that are least likely to occur",
       "B": "By considering both the likelihood of occurrence and potential impact of risks",
       "C": "By ignoring potential impact and only considering likelihood",
-      "D": "By assuming that all risks are equally important V]"
+      "D": "By assuming that all risks are equally important"
     },
     "answer": "B",
     "id": 386
@@ -5046,7 +5046,7 @@
       "A": "During the SRS process, customers should always be required to spell out their unknown unknowns",
       "B": "An unknown unknown cannot be known and therefore we can not make them explicit requirements",
       "C": "There are matters that should be, but are not, elicited through the elicitation process. They exist, but they are not realized",
-      "D": "They help us reveal both known unknowns and more unknown unknowns iV)"
+      "D": "They help us reveal both known unknowns and more unknown unknowns"
     },
     "answer": "C",
     "id": 387
@@ -5059,7 +5059,7 @@
       "A": "By visualizing requirements and identifying inconsistencies or gaps",
       "B": "By prioritizing coding over documentation",
       "C": "By finalizing all functional requirements early",
-      "D": "By reducing stakeholder engagement V)"
+      "D": "By reducing stakeholder engagement"
     },
     "answer": "A",
     "id": 388
@@ -5124,7 +5124,7 @@
       "A": "System architects and developers",
       "B": "Test engineers and quality analysts",
       "C": "Stakeholders, reviewers, and project team members",
-      "D": "All of the others iV)"
+      "D": "All of the others"
     },
     "answer": "D",
     "id": 393
@@ -5137,7 +5137,7 @@
       "A": "Aneed or want of the business to solve a problem or achieve an objective",
       "B": "Acondition or capability of a product or solution that documents a problem or objective of the business",
       "C": "Aneed or necessary feature of a system that could be sensed from a position anywhere within the system",
-      "D": "A condition or capability needed by a stakeholder to solve a problem or achieve an objective IV)"
+      "D": "A condition or capability needed by a stakeholder to solve a problem or achieve an objective"
     },
     "answer": "D",
     "id": 394
@@ -5150,7 +5150,7 @@
       "A": "Proposed requirements changes are thoughtfully evaluated before being committed to",
       "B": "Appropriate dividuals make informed business decisions about requested changes",
       "C": "Approved changes are communicated to all member of team",
-      "D": "Unchange activity is made visible to affected stakeholders iV)"
+      "D": "Unchange activity is made visible to affected stakeholders"
     },
     "answer": "A",
     "id": 395
@@ -5163,7 +5163,7 @@
       "A": "It deals with blocking unauthorized access to system functions or data, ensuring that the software is protected from malware attacks, and so on",
       "B": "Itis the degree to which a system continues to function properly when confronted with invalid inputs",
       "C": "It deals with preventing information loss and preserving the correctness of data entered into the system",
-      "D": "It deal with the need to prevent a system from doing any injury to people or damage to property V)"
+      "D": "It deal with the need to prevent a system from doing any injury to people or damage to property"
     },
     "answer": "C",
     "id": 396
@@ -5176,7 +5176,7 @@
       "A": "investing excessive effort in prototypes",
       "B": "distraction by details",
       "C": "pressure to release the prototype",
-      "D": "unrealistic performance expectations Vv)"
+      "D": "unrealistic performance expectations"
     },
     "answer": "A",
     "id": 397
@@ -5189,7 +5189,7 @@
       "A": "investing excessive effort in prototypes",
       "B": "distraction by details",
       "C": "pressure to release the prototype",
-      "D": "unrealistic performance expectations iV)"
+      "D": "unrealistic performance expectations"
     },
     "answer": "A",
     "id": 398
@@ -5215,7 +5215,7 @@
       "A": "Function, performance and constraints of a computer-based system",
       "B": "The indicators that stakeholders will use to define and measure success on this project and the statement that is believed to be true in the absence of proof or definitive knowledge",
       "C": "The benefits the business",
-      "D": "The ultimate product that will achieve the business objectives and what portion of the ultimate product vision the current project or development iteration will address iV)"
+      "D": "The ultimate product that will achieve the business objectives and what portion of the ultimate product vision the current project or development iteration will address"
     },
     "answer": "D",
     "id": 400

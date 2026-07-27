@@ -322,35 +322,46 @@ function renderQuiz() {
   state.answered = false;
   $('#quiz-question').textContent =
     `Câu ${(state.quizIndex % list.length) + 1}/${list.length} · ${card.topic} · ${card.question}`;
+  // Câu một đáp án dùng kiểu radio (chọn cái mới bỏ cái cũ), câu nhiều đáp án
+  // dùng kiểu checkbox.
+  const single = card.answer.length === 1;
+  $('#quiz-options').className = `quiz-options ${single ? 'single-choice' : 'multi-choice'}`;
+  $('#quiz-options').setAttribute('role', single ? 'radiogroup' : 'group');
   $('#quiz-options').innerHTML = Object.entries(card.options)
     .map(
       ([letter, text]) =>
-        `<button data-option="${letter}" type="button"><b>${letter}</b><span>${text}</span></button>`,
+        `<button data-option="${letter}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${letter}</b><span>${text}</span></button>`,
     )
     .join('');
-  $('#quiz-feedback').textContent =
-    card.answer.length > 1
-      ? `Chọn ${card.answer.length} đáp án rồi kiểm tra.`
-      : 'Chọn một đáp án rồi kiểm tra.';
+  $('#quiz-feedback').textContent = single
+    ? 'Chọn một đáp án rồi kiểm tra.'
+    : `Chọn ${card.answer.length} đáp án rồi kiểm tra.`;
   $('#check-answer').classList.remove('hidden');
   $('#next-quiz').classList.add('hidden');
   renderSaveButton(card, $('#quiz-save-button'), $('#quiz-save-label'));
 
-  $('#quiz-options')
-    .querySelectorAll('button')
-    .forEach((button) => {
-      button.onclick = () => {
-        if (state.answered) return;
-        const letter = button.dataset.option;
-        if (state.selected.has(letter)) {
-          state.selected.delete(letter);
-          button.classList.remove('selected');
-        } else {
-          state.selected.add(letter);
-          button.classList.add('selected');
-        }
-      };
+  const buttons = [...$('#quiz-options').querySelectorAll('button')];
+  const paint = () =>
+    buttons.forEach((button) => {
+      const on = state.selected.has(button.dataset.option);
+      button.classList.toggle('selected', on);
+      button.setAttribute('aria-checked', String(on));
     });
+
+  buttons.forEach((button) => {
+    button.onclick = () => {
+      if (state.answered) return;
+      const letter = button.dataset.option;
+      if (single) {
+        state.selected = new Set([letter]);
+      } else if (state.selected.has(letter)) {
+        state.selected.delete(letter);
+      } else {
+        state.selected.add(letter);
+      }
+      paint();
+    };
+  });
 }
 
 function checkQuizAnswer() {
