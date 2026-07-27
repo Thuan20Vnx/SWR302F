@@ -72,6 +72,7 @@ function setTheme(theme) {
     button.setAttribute('aria-pressed', String(active));
   });
   localStorage.setItem(THEME_KEY, selectedTheme);
+  window.dispatchEvent(new CustomEvent('swr302:theme'));
 }
 
 setTheme(localStorage.getItem(THEME_KEY) || 'dark');

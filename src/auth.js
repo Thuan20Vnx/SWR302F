@@ -112,10 +112,16 @@ export function initAuth({ onLogin, onLogout, onSupportPrompt, onError }) {
         client_id: clientId,
         callback: handleCredential,
       });
-      window.google.accounts.id.renderButton(
-        googleButton,
-        { theme: 'outline', size: 'medium', shape: 'pill' },
-      );
+      // Nút do Google render trong iframe nên không style từ ngoài được; bản
+      // "outline" nền trắng chói trên nền tối, phải đổi sang "filled_black".
+      googleButton.replaceChildren();
+      window.google.accounts.id.renderButton(googleButton, {
+        theme: document.body.classList.contains('light-theme')
+          ? 'outline'
+          : 'filled_black',
+        size: 'medium',
+        shape: 'pill',
+      });
       setTimeout(() => {
         if (!googleButton.childElementCount) {
           fail(
@@ -134,6 +140,8 @@ export function initAuth({ onLogin, onLogout, onSupportPrompt, onError }) {
   }
   retryButton.onclick = renderGoogleButton;
   renderGoogleButton();
+  // Đổi sáng/tối thì vẽ lại nút cho khớp nền.
+  window.addEventListener('swr302:theme', () => renderGoogleButton());
 
   api('/auth/me').then(({ ok, data }) => {
     if (ok) onLogin(data.user);
