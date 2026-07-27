@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import { connectDB } from './db.js';
 import authRouter from './routes/auth.js';
 import progressRouter from './routes/progress.js';
+import questionsRouter from './routes/questions.js';
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(cookieParser());
 
 app.use('/api/auth', authRouter);
 app.use('/api/progress', progressRouter);
+app.use('/api/questions', questionsRouter);
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 

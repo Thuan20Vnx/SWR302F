@@ -1,10 +1,28 @@
-import questions from './questions.json';
 import { initAuth, api } from './auth.js';
 
-const cards = questions.map((question) => ({
-  ...question,
-  topic: `Trang ${question.page}`,
-}));
+const QUESTIONS_CACHE = 'swr302-questions-v1';
+
+// Bộ câu hỏi nằm trên MongoDB. Bản sao trong localStorage giúp app vẫn học được
+// khi server ngủ hoặc mất mạng.
+let cards = [];
+
+async function loadCards() {
+  const { ok, data } = await api('/questions');
+  if (ok && Array.isArray(data.questions) && data.questions.length) {
+    localStorage.setItem(QUESTIONS_CACHE, JSON.stringify(data.questions));
+    return data.questions;
+  }
+
+  const cached = localStorage.getItem(QUESTIONS_CACHE);
+  if (cached) {
+    try {
+      return JSON.parse(cached);
+    } catch {
+      localStorage.removeItem(QUESTIONS_CACHE);
+    }
+  }
+  return [];
+}
 
 const ALL = 'Tất cả';
 const SAVED = 'Đã lưu';
@@ -166,7 +184,7 @@ function updateProgress() {
   const known = Object.values(state.progress).filter(
     (value) => value === 'known',
   ).length;
-  const percent = (known / cards.length) * 100;
+  const percent = cards.length ? (known / cards.length) * 100 : 0;
   // One card is only 0.25%, so small values keep a decimal instead of rounding
   // down to a flat "0%", and the ring keeps a visible sliver once anything is known.
   $('#progress-value').textContent =
@@ -177,8 +195,9 @@ function updateProgress() {
     '--progress',
     `${(known ? Math.max(percent, 1.5) : 0) * 3.6}deg`,
   );
-  $('#progress-title').textContent =
-    known === cards.length
+  $('#progress-title').textContent = !cards.length
+    ? 'Đang tải bộ câu hỏi...'
+    : known === cards.length
       ? `Bạn đã thuộc toàn bộ ${cards.length} câu!`
       : known
         ? 'Tiếp tục giữ nhịp nhé!'
@@ -475,11 +494,41 @@ $('#support-modal').onclick = (event) => {
   if (event.target === $('#support-modal')) hideSupportModal();
 };
 
+let toastTimer = null;
+
+function showToast(message, tone = 'error') {
+  const toast = $('#toast');
+  toast.textContent = message;
+  toast.classList.toggle('toast-error', tone === 'error');
+  toast.classList.remove('hidden');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.add('hidden'), 6000);
+}
+
 initAuth({
   onLogin: showUser,
   onLogout: showLoggedOut,
   onSupportPrompt: showSupportModal,
+  onError: showToast,
 });
+
+async function boot() {
+  const raw = await loadCards();
+  cards = raw.map((question) => ({
+    ...question,
+    topic: `Trang ${question.page}`,
+  }));
+
+  if (!cards.length) {
+    showToast(
+      'Không tải được bộ câu hỏi. Máy chủ có thể đang khởi động lại, thử tải lại trang sau ít phút nhé.',
+    );
+  }
+
+  renderFilters();
+  render();
+}
 
 renderFilters();
 render();
+boot();

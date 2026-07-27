@@ -1,0 +1,17 @@
+import mongoose from 'mongoose';
+
+const questionSchema = new mongoose.Schema(
+  {
+    id: { type: Number, required: true, unique: true, index: true },
+    page: { type: Number, required: true, index: true },
+    numberOnPage: { type: Number, required: true },
+    question: { type: String, required: true },
+    // { "A": "...", "B": "..." }
+    options: { type: Map, of: String, required: true },
+    // Chuỗi các chữ cái đúng, ví dụ "B" hoặc "BD"
+    answer: { type: String, required: true },
+  },
+  { timestamps: true },
+);
+
+export const Question = mongoose.model('Question', questionSchema);

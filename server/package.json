@@ -6,7 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "seed": "node src/scripts/seed-questions.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
