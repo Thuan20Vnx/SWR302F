@@ -93,11 +93,33 @@ const cardById = new Map();
 const originalOf = (card) =>
   card.duplicateOf ? cardById.get(card.duplicateOf) : null;
 
+// Tiến độ và danh sách đã lưu ghi theo câu gốc, nên học một bản là tính cho cả
+// nhóm trùng - không bị đếm hai lần, cũng không mất khi bật "Ẩn câu trùng".
+const canonicalId = (card) => card.duplicateOf || card.id;
+const uniqueCount = () => cards.filter((card) => !card.duplicateOf).length;
+
+function normalizeIds() {
+  const progress = {};
+  for (const [id, value] of Object.entries(state.progress)) {
+    const card = cardById.get(Number(id));
+    const key = card ? canonicalId(card) : Number(id);
+    if (progress[key] !== 'known') progress[key] = value;
+  }
+  state.progress = progress;
+
+  state.saved = new Set(
+    [...state.saved].map((id) => {
+      const card = cardById.get(Number(id));
+      return card ? canonicalId(card) : Number(id);
+    }),
+  );
+}
+
 function filtered() {
   return cards.filter((card) => {
     if (state.hideDuplicates && card.duplicateOf) return false;
     if (state.topic === SAVED) {
-      if (!state.saved.has(card.id)) return false;
+      if (!state.saved.has(canonicalId(card))) return false;
     } else if (state.topic !== ALL && card.topic !== state.topic) {
       return false;
     }
@@ -165,22 +187,25 @@ async function syncWithServer() {
     state.sessions = Math.max(state.sessions, Number(data.sessions) || 0);
   }
 
+  // Máy khác có thể còn dữ liệu ghi theo id của bản lặp.
+  normalizeIds();
   saveLocal();
   renderFilters();
   render();
   pushToServer();
 }
 
-function optionMarkup(card, correctOnly = false) {
+// markCorrect = true: giữ nguyên thứ tự A→D và chỉ tô sáng đáp án đúng, để mắt
+// tìm lại đúng vị trí đã đọc ở mặt trước thay vì thấy nó nhảy lên đầu.
+function optionMarkup(card, markCorrect = false) {
   return Object.entries(card.options)
     .sort(([first], [second]) => first.localeCompare(second))
-    .filter(([letter]) => !correctOnly || card.answer.includes(letter))
-    .map(
-      ([letter, text]) =>
-        `<div class="card-option ${correctOnly ? 'correct-option' : ''}">
+    .map(([letter, text]) => {
+      const correct = markCorrect && card.answer.includes(letter);
+      return `<div class="card-option ${correct ? 'correct-option' : ''} ${markCorrect && !correct ? 'muted-option' : ''}">
           <b>${letter}</b><span>${text}</span>
-        </div>`,
-    )
+        </div>`;
+    })
     .join('');
 }
 
@@ -193,12 +218,25 @@ function topicLabel(topic) {
 }
 
 function renderFilters() {
-  $('#filters').innerHTML = topicList()
-    .map(
-      (topic) =>
-        `<button class="filter ${topic === state.topic ? 'active' : ''}" data-topic="${topic}" type="button">${topicLabel(topic)}</button>`,
-    )
-    .join('');
+  // 20 chip "Trang 1..20" xuống 3 hàng nhìn rất rối, nên tách thành hai cụm:
+  // lối tắt (Tất cả / Đã lưu) và dải số trang cuộn ngang trên một hàng.
+  const pages = topicList().filter((topic) => topic !== ALL && topic !== SAVED);
+  const chip = (topic, label, extraClass = '') =>
+    `<button class="filter ${extraClass} ${topic === state.topic ? 'active' : ''}" data-topic="${topic}" type="button">${label}</button>`;
+
+  $('#filters').innerHTML = `
+    <div class="filter-shortcuts">
+      ${chip(ALL, `Tất cả <span class="filter-count">${cards.length}</span>`)}
+      ${chip(SAVED, `Đã lưu <span class="filter-count">${state.saved.size}</span>`)}
+    </div>
+    <div class="filter-pages">
+      <span class="filter-legend">Trang</span>
+      ${pages
+        .map((topic) =>
+          chip(topic, topic.replace('Trang ', ''), 'filter-page'),
+        )
+        .join('')}
+    </div>`;
 
   $('#filters')
     .querySelectorAll('button')
@@ -225,10 +263,13 @@ function selectTopic(topic) {
 }
 
 function updateProgress() {
+  // Mẫu số là số câu hỏi khác nhau (câu lặp không tính lại), nếu không thì học
+  // hết bộ vẫn không bao giờ chạm 100%.
+  const total = uniqueCount();
   const known = Object.values(state.progress).filter(
     (value) => value === 'known',
   ).length;
-  const percent = cards.length ? (known / cards.length) * 100 : 0;
+  const percent = total ? (known / total) * 100 : 0;
   // One card is only 0.25%, so small values keep a decimal instead of rounding
   // down to a flat "0%", and the ring keeps a visible sliver once anything is known.
   $('#progress-value').textContent =
@@ -239,14 +280,14 @@ function updateProgress() {
     '--progress',
     `${(known ? Math.max(percent, 1.5) : 0) * 3.6}deg`,
   );
-  $('#progress-title').textContent = !cards.length
+  $('#progress-title').textContent = !total
     ? 'Đang tải bộ câu hỏi...'
-    : known === cards.length
-      ? `Bạn đã thuộc toàn bộ ${cards.length} câu!`
+    : known >= total
+      ? `Bạn đã thuộc toàn bộ ${total} câu!`
       : known
         ? 'Tiếp tục giữ nhịp nhé!'
-        : `Bắt đầu bộ ${cards.length} câu`;
-  $('#progress-copy').textContent = `${known} / ${cards.length} câu đã thuộc · ${state.saved.size} câu đã lưu`;
+        : `Bắt đầu bộ ${total} câu`;
+  $('#progress-copy').textContent = `${known} / ${total} câu đã thuộc · ${state.saved.size} câu đã lưu`;
   $('#streak-value').textContent = state.sessions;
   $('#saved-count').textContent = state.saved.size;
   $('#saved-button').classList.toggle(
@@ -256,7 +297,7 @@ function updateProgress() {
 }
 
 function renderSaveButton(card, button, label) {
-  const isSaved = card ? state.saved.has(card.id) : false;
+  const isSaved = card ? state.saved.has(canonicalId(card)) : false;
   button.classList.toggle('saved', isSaved);
   button.setAttribute('aria-pressed', String(isSaved));
   label.textContent = isSaved ? 'Đã lưu' : 'Lưu câu hỏi';
@@ -264,8 +305,9 @@ function renderSaveButton(card, button, label) {
 
 function toggleSaved(card) {
   if (!card) return;
-  if (state.saved.has(card.id)) state.saved.delete(card.id);
-  else state.saved.add(card.id);
+  const key = canonicalId(card);
+  if (state.saved.has(key)) state.saved.delete(key);
+  else state.saved.add(key);
   save();
   updateProgress();
   renderFilters();
@@ -307,7 +349,7 @@ function renderCard() {
   $('#card-options').innerHTML = optionMarkup(card);
   $('#card-answer').innerHTML = `
     <strong class="answer-key">Đáp án: ${card.answer.split('').join(', ')}</strong>
-    <div class="correct-options">${optionMarkup(card, true)}</div>
+    <div class="answer-options">${optionMarkup(card, true)}</div>
   `;
   $('#card-position').textContent = `${state.index + 1} / ${list.length}`;
   $('#deck-count').innerHTML =
@@ -332,7 +374,7 @@ function flip() {
 function rate(value) {
   const card = currentStudyCard();
   if (!card) return;
-  state.progress[card.id] = value;
+  state.progress[canonicalId(card)] = value;
   save();
   updateProgress();
   state.flipped = false;
@@ -604,6 +646,9 @@ async function boot() {
   }));
   cardById.clear();
   cards.forEach((card) => cardById.set(card.id, card));
+  // Dữ liệu cũ ghi theo id của từng bản lặp, gộp lại theo câu gốc.
+  normalizeIds();
+  saveLocal();
 
   if (!cards.length) {
     showToast(
