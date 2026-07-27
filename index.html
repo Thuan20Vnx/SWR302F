@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#111827" />
+    <title>SWR302 Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" id="brand"><span class="brand-mark">S</span><span>SWR302<br><small>study deck</small></span></a>
+        <div class="top-actions">
+          <button class="text-button" id="reset-button" type="button">Đặt lại tiến độ</button>
+          <button class="mode-button ghost" id="study-button" type="button">Học</button>
+          <button class="mode-button" id="quiz-button" type="button">Kiểm tra</button>
+          <button class="pill-button" id="saved-button" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg>
+            <span class="pill-label">Đã lưu</span><span class="pill-count" id="saved-count">0</span>
+          </button>
+          <div class="auth-area" id="auth-area">
+            <div id="google-signin-button"></div>
+            <div class="user-chip hidden" id="user-chip">
+              <img id="user-avatar" alt="" />
+              <span id="user-name"></span>
+              <button class="text-button" id="logout-button" type="button">Đăng xuất</button>
+            </div>
+          </div>
+          <button class="pill-button support-button" id="support-button" type="button" aria-label="Ủng hộ tụi mình">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20.2 4.9 13.3a4.4 4.4 0 0 1 0-6.3 4.5 4.5 0 0 1 6.4 0l.7.7.7-.7a4.5 4.5 0 0 1 6.4 0 4.4 4.4 0 0 1 0 6.3Z"/></svg>
+            <span class="pill-label">Ủng hộ</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" id="hero">
+        <p class="eyebrow">ÔN TẬP CÓ CHỦ ĐÍCH</p>
+        <h1>Học tài<br><em>thi xỉu</em></h1>
+        <p class="intro">Chọn trang muốn ôn, tìm nhanh câu hỏi, lật thẻ để kiểm tra đáp án và lưu lại những câu chưa thuộc.</p>
+        <div class="hero-actions">
+          <button class="mode-button" id="hero-study" type="button">Bắt đầu học</button>
+          <button class="mode-button ghost" id="hero-quiz" type="button">Làm bài kiểm tra</button>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Tiến độ học">
+        <div class="progress-ring" id="progress-ring"><span id="progress-value">0%</span></div>
+        <div><strong id="progress-title">Bắt đầu bộ thẻ</strong><p id="progress-copy">0 / 24 thẻ đã thuộc</p></div>
+        <div class="streak"><span>✦</span><div><strong id="streak-value">0</strong><p>lần ôn hôm nay</p></div></div>
+      </section>
+
+      <section class="toolbar hidden" id="toolbar" aria-label="Bộ lọc câu hỏi">
+        <div class="search-row">
+          <label class="search-field">
+            <svg class="icon search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16.2 16.2 4 4"/></svg>
+            <input id="search-input" type="search" placeholder="Tìm câu hỏi hoặc đáp án..." autocomplete="off" />
+          </label>
+          <label class="page-field">
+            <span class="field-label">Trang</span>
+            <select id="page-select"></select>
+          </label>
+        </div>
+        <nav class="filters" id="filters" aria-label="Chọn trang"></nav>
+      </section>
+
+      <section class="study-layout hidden" id="study-layout">
+        <aside class="study-side"><p class="side-label">BỘ THẺ</p><div id="deck-count" class="deck-count"></div><p class="side-tip">Phím tắt<br><kbd>Space</kbd> lật thẻ<br><kbd>←</kbd> <kbd>→</kbd> chuyển thẻ<br><kbd>S</kbd> lưu câu hỏi</p></aside>
+        <div class="card-area">
+          <p class="empty-state hidden" id="study-empty">Không có câu hỏi nào khớp với bộ lọc. Thử đổi trang hoặc xoá từ khoá tìm kiếm.</p>
+          <article class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Lật thẻ">
+            <div class="card-inner">
+              <section class="card-face card-front"><p class="card-type" id="card-topic"></p><p class="card-label">CÂU HỎI</p><h2 id="card-question"></h2><div class="card-options" id="card-options"></div><span class="tap-hint">Chạm để xem đáp án <b>↗</b></span></section>
+              <section class="card-face card-back"><p class="card-type" id="answer-topic"></p><p class="card-label">ĐÁP ÁN</p><div id="card-answer" class="answer"></div><span class="tap-hint">Chạm để xem câu hỏi <b>↗</b></span></section>
+            </div>
+          </article>
+          <div class="controls"><button class="round-button" id="previous" type="button" aria-label="Thẻ trước">←</button><span id="card-position"></span><button class="round-button" id="next" type="button" aria-label="Thẻ sau">→</button></div>
+          <div class="card-tools"><button class="save-button" id="save-button" type="button" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg><span id="save-label">Lưu câu hỏi</span></button></div>
+          <div class="rating" id="rating"><button data-rating="again" type="button">Chưa thuộc</button><button data-rating="known" type="button">Đã thuộc <span>✓</span></button></div>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="quiz" aria-live="polite">
+        <p class="eyebrow">KIỂM TRA NHANH</p>
+        <p class="empty-state hidden" id="quiz-empty">Không có câu hỏi nào khớp với bộ lọc. Thử đổi trang hoặc xoá từ khoá tìm kiếm.</p>
+        <div id="quiz-body">
+          <h2 id="quiz-question"></h2>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" class="quiz-feedback"></p>
+          <div class="quiz-actions">
+            <button class="save-button" id="quiz-save-button" type="button" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg><span id="quiz-save-label">Lưu câu hỏi</span></button>
+            <button class="mode-button" id="check-answer" type="button">Kiểm tra đáp án</button>
+            <button class="mode-button next-quiz hidden" id="next-quiz" type="button">Câu tiếp theo →</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-overlay hidden" id="support-modal" role="dialog" aria-modal="true" aria-label="Ủng hộ chúng tôi">
+      <div class="modal">
+        <button class="modal-close" id="support-close" type="button" aria-label="Đóng">×</button>
+        <p class="eyebrow">CẢM ƠN BẠN</p>
+        <h3>Ủng hộ đội ngũ phát triển</h3>
+        <p class="modal-copy">Đây là dự án free. Nếu bộ thẻ giúp ích cho việc ôn tập của bạn, quét mã MoMo bên dưới để ủng hộ tụi mình tiếp tục cập nhật nội dung nhé.</p>
+        <img class="modal-qr" id="support-qr" src="/momo-qr.jpg" alt="Mã QR MoMo ủng hộ - TRAN XUAN THUAN" />
+        <p class="modal-note">TRAN XUAN THUAN · MoMo · Tùy duyên SWR302</p>
+        <button class="mode-button modal-done" id="support-done" type="button">Tiếp tục học</button>
+      </div>
+    </div>
+
+    <footer>Đây là dự án free, nếu bạn muốn hãy ủng hộ tụi mình nhé</footer>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

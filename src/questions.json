@@ -1,0 +1,5223 @@
+[
+  {
+    "page": 1,
+    "numberOnPage": 1,
+    "question": "Some stakeholders are customers, such as legal staff, compliance auditors, suppliers, contractors, and venture capitalists",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 1
+  },
+  {
+    "page": 1,
+    "numberOnPage": 2,
+    "question": "Which elements are mandatory in use case?",
+    "options": {
+      "A": "Post-condition",
+      "B": "Actors",
+      "C": "Pre-condition",
+      "D": "Name"
+    },
+    "answer": "BD",
+    "id": 2
+  },
+  {
+    "page": 1,
+    "numberOnPage": 3,
+    "question": "What do product champions do? Choose 2 correct answers",
+    "options": {
+      "A": "They gather requirements from other members of the user classes they represent, and reconcile inconsistencies",
+      "B": "They serve as the primary interface between members of a single user class and the project's business analyst.",
+      "C": "They implement the coding standards.",
+      "D": "They write requirements documents"
+    },
+    "answer": "AB",
+    "id": 3
+  },
+  {
+    "page": 1,
+    "numberOnPage": 4,
+    "question": "Which of the following tasks are typically performed by a business analyst? Select two.",
+    "options": {
+      "A": "Defining business requirements and helping project sponsors express the project's vision clearly.",
+      "B": "Focusing only on textual documentation and avoiding the use of visual aids like diagrams and prototypes.",
+      "C": "Ensuring that all team members fully understand the requirements being communicated.",
+      "D": "Managing the entire software development life cycle, from inception to deployment"
+    },
+    "answer": "AC",
+    "id": 4
+  },
+  {
+    "page": 1,
+    "numberOnPage": 5,
+    "question": "Which of the following statements about reaching agreement on requirements is accurate? Select two.",
+    "options": {
+      "A": "Signing off on requirements is an infallible method to prevent any changes later in the project.",
+      "B": "All participants in the requirements approval process must understand what signing off implies.",
+      "C": "The purpose of signing off is to freeze requirements and prevent any future modifications.",
+      "D": "Reaching agreement on requirements ensures that both customers and developers have a shared understanding of project objectives"
+    },
+    "answer": "BD",
+    "id": 5
+  },
+  {
+    "page": 1,
+    "numberOnPage": 6,
+    "question": "What is the benefit of having a small group representing key areas as decision makers in a project?",
+    "options": {
+      "A": "It simplifies the decision-making process by involving only the project manager",
+      "B": "It ensures diverse perspectives from management, customers, business analysis, development, and marketing",
+      "C": "It reduces the need for stakeholder involvement i i Gee cites we Gooteninel enentineiinne SES SUITED DO TY Eat OTTO Ue Onna TUTTO |) ne Ae Ee aE TS EE ee ae ee eee rea"
+    },
+    "answer": "B",
+    "id": 6
+  },
+  {
+    "page": 2,
+    "numberOnPage": 1,
+    "question": "Which of the following practices should be followed when documenting software requirements? Select two.",
+    "options": {
+      "A": "Ensure that each requirement is documented in multiple places to increase visibility and reduce the risk of it being overlooked.",
+      "B": "Use a consistent format for documenting requirements to enhance clarity and understanding among all stakeholders.",
+      "C": "Avoid documenting requirements that involve complex logic, as these can be difficult for stakeholders to understand.",
+      "D": "The software requirements specification (SRS) should be used to formally record the agreed-upon requirements and ensure all stakeholders have a shared understanding."
+    },
+    "answer": "BD",
+    "id": 7
+  },
+  {
+    "page": 2,
+    "numberOnPage": 2,
+    "question": "Which of the following statements accurately describes the role of a business analyst in a project? Select two.",
+    "options": {
+      "A": "The business analyst is solely responsible for managing communication between the customer(s) and the development team.",
+      "B": "The business analyst primarily focuses on eliciting, analyzing, documenting, and validating the needs of the project stakeholders.",
+      "C": "In agile projects, the business analyst often acts as the project manager, handling both internal and external project tasks.",
+      "D": "The business analyst plays a central role in collecting and disseminating product information, while the project manager focuses on communicating project information."
+    },
+    "answer": "BD",
+    "id": 8
+  },
+  {
+    "page": 2,
+    "numberOnPage": 3,
+    "question": "Which of the following are considered good practices in requirements elicitation? Select two.",
+    "options": {
+      "A": "Defining the product vision and project scope early in the project to ensure all stakeholders have a shared understanding.",
+      "B": "Focusing exclusively on nonfunctional requirements during initial elicitation while ignoring functional requirements to save time.",
+      "C": "Identifying user classes and their characteristics to ensure that all user needs are considered.",
+      "D": "Avoiding the use of prototypes in the early stages of requirements elicitation to prevent biasing stakeholders."
+    },
+    "answer": "AC",
+    "id": 9
+  },
+  {
+    "page": 2,
+    "numberOnPage": 4,
+    "question": "Which of the following are advantages of reusing requirements? (Choose 2 answers)",
+    "options": {
+      "A": "Decreased consistency",
+      "B": "Reduced rework",
+      "C": "Lower development costs",
+      "D": "Increased number of defects"
+    },
+    "answer": "BC",
+    "id": 10
+  },
+  {
+    "page": 2,
+    "numberOnPage": 5,
+    "question": "Which of the following statements correctly distinguishes between product requirements and project requirements? Select two.",
+    "options": {
+      "A": "Product requirements describe the physical resources and training needs necessary for project completion.",
+      "B": "Project requirements include staff training and infrastructure changes needed in the operating environment.",
+      "C": "Project requirements are housed in the SRS along with product requirements.",
+      "D": "Product requirements focus on the characteristics and functionalities of the software system being built."
+    },
+    "answer": "BD",
+    "id": 11
+  },
+  {
+    "page": 2,
+    "numberOnPage": 6,
+    "question": "Which of the following statements about the requirements development process’ framework is accurate? Select two.",
+    "options": {
+      "A": "The process of requirements development is strictly linear, moving from elicitation to validation without any need for revisiting previous stages.",
+      "B": "Elicitation, analysis, specification, and validation are iterative activities that may require revisiting earlier stages to ensure accuracy and completeness.",
+      "C": "Validation is only performed at the end of the project to confirm that all requirements have been met.",
+      "D": "The framework allows for flexibility, with steps often revisited throughout the project to refine and correct requirements as needed."
+    },
+    "answer": "BD",
+    "id": 12
+  },
+  {
+    "page": 2,
+    "numberOnPage": 7,
+    "question": "Which of the following statements accurately describe the use of context diagrams in representing project scope? Select two.",
+    "options": {
+      "A": "A context diagram visually illustrates the boundary between the system being developed and external entities that interact with it.",
+      "B": "The context diagram includes detailed information about the system's internal processes and data.",
+      "C": "The primary purpose of a context diagram is to depict the interactions between the system and external entities without detailing the internal workings of the system.",
+      "D": "Context diagrams are typically used to represent the relationship between user interfaces and system components within the boundary."
+    },
+    "answer": "AC",
+    "id": 13
+  },
+  {
+    "page": 2,
+    "numberOnPage": 8,
+    "question": "Which of the following statements accurately describes the purpose and use of personas in requirements analysis? Select two.",
+    "options": {
+      "A": "A persona is a real user from the target audience, used to validate requirements and ensure they meet actual user needs.",
+      "B": "Personas are hypothetical, generic users representing a group with similar characteristics, used to understand requirements and design user experiences.",
+      "C": "Creating a persona helps bring user classes to life and aids in visualizing how different types of users will interact with the system.",
+      "D": "Personas are only useful during the testing phase to ensure that the application functions as expected for diverse user groups. iV)"
+    },
+    "answer": "BC",
+    "id": 14
+  },
+  {
+    "page": 2,
+    "numberOnPage": 9,
+    "question": "Which of the following statements accurately describe preconditions and postconditions in the context of use cases? Select two.",
+    "options": {
+      "A": "Preconditions define the prerequisites that must be met before the system can begin executing a use case.",
+      "B": "Preconditions describe the expected outcome after the use case has been successfully executed.",
+      "C": "Postconditions describe the state of the system after the use case has executed successfully.",
+      "D": "Postconditions determine whether the system should proceed with executing a use case."
+    },
+    "answer": "AC",
+    "id": 15
+  },
+  {
+    "page": 2,
+    "numberOnPage": 10,
+    "question": "Which of the following statements accurately describes a business rule? Select two.",
+    "options": {
+      "A": "A business rule is a statement that defines or constrains some aspect of the business to control or influence its behavior.",
+      "B": "Business rules are only relevant for heavily rules-driven systems and can be ignored in simpler systems.",
+      "C": "Classifying business rules helps in understanding how they might be applied in a software application, such as using constraints to enforce certain conditions",
+      "D": "A business rule is the same as a system requirement, focusing solely on the technical implementation details."
+    },
+    "answer": "AC",
+    "id": 16
+  },
+  {
+    "page": 2,
+    "numberOnPage": 11,
+    "question": "Which of the following statements accurately describe the use case approach? Select two.",
+    "options": {
+      "A": "A.use case describes a sequence of interactions between a system and an external actor that results in an outcome of value to the actor.",
+      "B": "In a use case diagram, the boundary between what's inside and outside the system is not explicitly defined.",
+      "C": "Actors in a use case can include both human users and other systems that interact with the system being developed.",
+      "D": "The primary actor in a use case is always the system itself, as it initiates and controls all interactions."
+    },
+    "answer": "AC",
+    "id": 17
+  },
+  {
+    "page": 2,
+    "numberOnPage": 12,
+    "question": "Which of the following characteristics should a well-written requirement statement exhibit? Select two.",
+    "options": {
+      "A": "Each requirement should be complete, meaning it contains all the information necessary for the reader to understand it and for developers to implement it correctly.",
+      "B": "A requirement statement can be ambiguous as long as it is feasible to implement.",
+      "C": "Requirements should be prioritized based on their importance to achieving the desired business value, and should be assigned an implementation priority.",
+      "D": "Verifiability of a requirement is optional as long as it meets stakeholder needs."
+    },
+    "answer": "AC",
+    "id": 18
+  },
+  {
+    "page": 2,
+    "numberOnPage": 13,
+    "question": "Which type of requirement best describes the behavior and information that the solution will manage, including specific system actions or responses?",
+    "options": {
+      "A": "Stakeholder Requirements.",
+      "B": "Functional Requirements.",
+      "C": "Business Requirements.",
+      "D": "Non-functional Requirements."
+    },
+    "answer": "B",
+    "id": 19
+  },
+  {
+    "page": 2,
+    "numberOnPage": 14,
+    "question": "When defining the scope and limitations of a product, which of the following practices should be followed? Select two.",
+    "options": {
+      "A": "List the product's major features or user capabilities, focusing on those that distinguish it from competitors.",
+      "B": "Include all possible features in the scope to ensure nothing is left out, even if some may be unnecessary.",
+      "C": "Clearly define the features that will be included in the initial release and those that will be excluded.",
+      "D": "Avoid mentioning any limitations or exclusions to keep the focus on what the product will do."
+    },
+    "answer": "AC",
+    "id": 20
+  },
+  {
+    "page": 2,
+    "numberOnPage": 15,
+    "question": "When specifying the level of detail in software requirements, which of the following practices should be considered? Select two.",
+    "options": {
+      "A": "It is always necessary to specify all requirements at the same high level of detail to ensure consistency.",
+      "B": "More detail should be included when the work is being done for an external client or when system testing will be based on the requirements.",
+      "C": "Less detail can be included if the work is being done internally for your company and developers have considerable domain experience.",
+      "D": "Writing all requirements at a very fine-grained level is always better, regardless of the project's context."
+    },
+    "answer": "BC",
+    "id": 21
+  },
+  {
+    "page": 2,
+    "numberOnPage": 16,
+    "question": "When choosing the appropriate representation techniques for analysis models, which of the following guidelines should be followed? Select two.",
+    "options": {
+      "A": "Business process flows can be represented with high-level data flow diagrams or Swimiane diagrams that show roles and responsibilities in the process.",
+      "B": "Use only one type of model to avoid confusion and ensure clarity throughout the development process.",
+      "C": "Complex logic can be effectively represented using decision trees or decision tables, which show possible outcomes or unique functional requirements.",
+      "D": "Data relationships should be illustrated using state-transition diagrams or storyboard models."
+    },
+    "answer": "AC",
+    "id": 22
+  },
+  {
+    "page": 2,
+    "numberOnPage": 17,
+    "question": "How can a business analyst effectively translate the voice of the customer into specific model components? Select two.",
+    "options": {
+      "A": "By focusing exclusively on the nouns mentioned by customers, as they represent the most critical elements.",
+      "B": "By identifying keywords such as nouns, verbs, and conditional statements that can be mapped to corresponding analysis model components.",
+      "C": "By using a predetermined set of model components without considering the specific word choices of the customer.",
+      "D": "By mapping verbs mentioned by customers to processes, activities, and use cases in the analysis models. 9)"
+    },
+    "answer": "BD",
+    "id": 23
+  },
+  {
+    "page": 2,
+    "numberOnPage": 18,
+    "question": "Why is clear communication crucial in acquirer-supplier interactions in outsourced projects? (Choose 2 answers)",
+    "options": {
+      "A": "It reduces the need for collaboration.",
+      "B": "It ensures both parties understand each other's needs and capabilities.",
+      "C": "It helps in resolving potential issues early.",
+      "D": "It allows unilateral decision-making by the supplier."
+    },
+    "answer": "BC",
+    "id": 24
+  },
+  {
+    "page": 2,
+    "numberOnPage": 19,
+    "question": "In the context of requirements tracing, what is a traceability matrix used for? (Choose 2 answers)",
+    "options": {
+      "A": "To track project progress in real-time",
+      "B": "To generate new requirements automatically",
+      "C": "To map requirements to other system elements like design and code",
+      "D": "To identify missing or unnecessary requirements"
+    },
+    "answer": "CD",
+    "id": 25
+  },
+  {
+    "page": 2,
+    "numberOnPage": 20,
+    "question": "Two important goals of writing requirements are that:",
+    "options": {
+      "A": "Anyone who reads the requirement comes to the same interpretation as any other reader.",
+      "B": "Each reader's interpretation matches what the author intended to communicate.",
+      "C": "Developers find the requirements technically easy to understand",
+      "D": "Customers are happy. iV)"
+    },
+    "answer": "AB",
+    "id": 26
+  },
+  {
+    "page": 3,
+    "numberOnPage": 1,
+    "question": "We can reuse all authentication requirements from the previous project by copy from a library of reusable components. Which dimensions does the statement refer to?",
+    "options": {
+      "A": "extent of modification",
+      "B": "reuse mechanism",
+      "C": "extent of reuses"
+    },
+    "answer": "BC",
+    "id": 27
+  },
+  {
+    "page": 3,
+    "numberOnPage": 2,
+    "question": "What is true about a software prototype? Choose 3 correct answers.",
+    "options": {
+      "A": "It is a partial implementation of a proposed new product.",
+      "B": "It is a possible implementation of a proposed new product.",
+      "C": "It is a preliminary implementation of a proposed new product.",
+      "D": "It is a complete implementation of a proposed new product (7)"
+    },
+    "answer": "ABC",
+    "id": 28
+  },
+  {
+    "page": 3,
+    "numberOnPage": 3,
+    "question": "What are the tasks of a business analyst? Choose 3 correct answers.",
+    "options": {
+      "A": "Define business requirements",
+      "B": "Identify project stakeholders and user classes",
+      "C": "Document requirements",
+      "D": "Lead requirements prioritization"
+    },
+    "answer": "ABC",
+    "id": 29
+  },
+  {
+    "page": 3,
+    "numberOnPage": 4,
+    "question": "What potential issues can be prevented by validating requirements? (Select all that apply)",
+    "options": {
+      "A": "Scope creep",
+      "B": "Eliminating All Bugs",
+      "C": "Misaligned Expectations",
+      "D": "Cost Overruns and Delays 9)"
+    },
+    "answer": "ACD",
+    "id": 30
+  },
+  {
+    "page": 3,
+    "numberOnPage": 5,
+    "question": "What should a business analyst do in an Agile project? Chooses 3 correct answers.",
+    "options": {
+      "A": "Define a lightweight, flexible requirements process and adapt it as the project warrants",
+      "B": "Ensure that requirements documentation is at the right level: very detailed",
+      "C": "Help validate that customer needs are accurately represented in the product backlog",
+      "D": "Facilitate backlog prioritization V7)"
+    },
+    "answer": "ACD",
+    "id": 31
+  },
+  {
+    "page": 3,
+    "numberOnPage": 6,
+    "question": "Which of the following are considered good practices in requirements analysis? Select three.",
+    "options": {
+      "A": "Modeling the application environment to understand the system's boundaries and interactions with external entities.",
+      "B": "Prioritizing the requirements based solely on the preferences of the development team without considering business goals or customer needs.",
+      "C": "Creating prototypes to explore and validate uncertain requirements with stakeholders.",
+      "D": "Analyzing data flows to ensure that all interactions between the system and external entities are understood and documented."
+    },
+    "answer": "ACD",
+    "id": 32
+  },
+  {
+    "page": 3,
+    "numberOnPage": 7,
+    "question": "Which of the following are common places and ways to look for business rules? Choose 3 correct answers.",
+    "options": {
+      "A": "“Common knowledge” from the organization, often collected from individuals who have worked with the business for a long time and know the details of how it operates.",
+      "B": "Legacy systems that embed business rules in their requirements and code.",
+      "C": "Analysis of existing documentation, including requirements specifications from earlier projects, regulations, industry standards, corporate policy documents, contracts, and business plans.",
+      "D": "Business laws"
+    },
+    "answer": "ABC",
+    "id": 33
+  },
+  {
+    "page": 3,
+    "numberOnPage": 8,
+    "question": "Which of the following are true about a dashboard? Choose 3 correct answers.",
+    "options": {
+      "A": "It is a screen display or printed report.",
+      "B": "It uses multiple textual and/or graphical representations of data.",
+      "C": "It aims to provide a consolidated, multidimensional view of what is going on in an organization or a process.",
+      "D": "It is a brochure to promote the product."
+    },
+    "answer": "ABC",
+    "id": 34
+  },
+  {
+    "page": 3,
+    "numberOnPage": 9,
+    "question": "Which of the following factors should be considered when classifying users? Select three.",
+    "options": {
+      "A": "The platform they will be using, such as desktop PCs, laptops, tablets, or smartphones.",
+      "B": "The specific languages used in the system's backend processes.",
+      "C": "The frequency with which they use the product and the tasks they perform during business operations.",
+      "D": "Their access privileges or security levels, such as ordinary user, guest user, or administrator."
+    },
+    "answer": "ACD",
+    "id": 35
+  },
+  {
+    "page": 3,
+    "numberOnPage": 10,
+    "question": "Which of the following skills are essential for a business analyst? Select three.",
+    "options": {
+      "A": "Literacy skills for effectively interpreting written material and communicating requirements.",
+      "B": "Technical skills to ensure the analyst can implement the software they are analyzing.",
+      "C": "Facilitation skills to manage group discussions and ensure effective participation from all stakeholders.",
+      "D": "Analytical skills to break down complex problems and identify feasible solutions."
+    },
+    "answer": "ACD",
+    "id": 36
+  },
+  {
+    "page": 3,
+    "numberOnPage": 11,
+    "question": "Which of the following elements should be included when crafting a vision statement? Select three.",
+    "options": {
+      "A": "The specific target customer for whom the product is intended",
+      "B": "A detailed technical specification of the product's architecture.",
+      "C": "The key benefit or compelling reason for the customer to buy or use the product",
+      "D": "A comparison with the primary competitive alternative or current system. iV)"
+    },
+    "answer": "ACD",
+    "id": 37
+  },
+  {
+    "page": 3,
+    "numberOnPage": 12,
+    "question": "Which of the following are the signals indicating that you have completed requirements elicitation? Choose 3 correct answers.",
+    "options": {
+      "A": "Users repeat issues they already covered in previous discussions.",
+      "B": "Suggested new features, user requirements, or functional requirements are all deemed to be out of scope.",
+      "C": "Proposed new requirements are all low priority.",
+      "D": "Developers and testers who review the requirements for an area raise many questions. 7)"
+    },
+    "answer": "ABC",
+    "id": 38
+  },
+  {
+    "page": 3,
+    "numberOnPage": 13,
+    "question": "Why do we have to label the requirements in a software requirements specification (SRS)? (Choose 3 correct answers)",
+    "options": {
+      "A": "It allows us to refer to specific requirements in a change request, modification history, cross-reference, or requirements traceability matrix.",
+      "B": "It enables reusing the requirements in multiple projects.",
+      "C": "It facilitates collaboration between team members when they're discussing requirements.",
+      "D": "It makes the SRS look more professional."
+    },
+    "answer": "ABC",
+    "id": 39
+  },
+  {
+    "page": 3,
+    "numberOnPage": 14,
+    "question": "When documenting data requirements for a system, which of the following practices should be followed? Select three.",
+    "options": {
+      "A": "Include a detailed implementation data model directly in the SRS to ensure clarity in the system's design.",
+      "B": "Create a data dictionary that defines the composition, meaning, data type, and allowed values for all data elements the system will handle.",
+      "C": "Document any reports that the application will generate, focusing on their logical descriptions and deferring detailed layouts to the design stage.",
+      "D": "Describe how data will be acquired, maintained, and protected, including policies for data retention, disposal, and ensuring data integrity. iV)"
+    },
+    "answer": "BCD",
+    "id": 40
+  },
+  {
+    "page": 3,
+    "numberOnPage": 15,
+    "question": "Customers have the right to: (choose 3 correct answers)",
+    "options": {
+      "A": "expect business analysts to learn about their business and their objectives",
+      "B": "describe characteristics that will make the product easy to use",
+      "C": "receive a system that meets their functional needs and quality expectations",
+      "D": "promptly communicate changes to the requirements"
+    },
+    "answer": "ABC",
+    "id": 41
+  },
+  {
+    "page": 3,
+    "numberOnPage": 16,
+    "question": "Entries in the data dictionary represent the following types of data elements: (choose 3 correct answers)",
+    "options": {
+      "A": "Primitive",
+      "B": "Structure",
+      "C": "Repeating group",
+      "D": "Virtual"
+    },
+    "answer": "ABC",
+    "id": 42
+  },
+  {
+    "page": 3,
+    "numberOnPage": 17,
+    "question": "In software development, what do requirements drive? Choose 3 correct answers.",
+    "options": {
+      "A": "Project planning",
+      "B": "Design and coding",
+      "C": "Testing activities",
+      "D": "Financial activities"
+    },
+    "answer": "ABC",
+    "id": 43
+  },
+  {
+    "page": 3,
+    "numberOnPage": 18,
+    "question": "The benefits of effective requirements reuse include: (choose 3 correct answers)",
+    "options": {
+      "A": "faster delivery",
+      "B": "lower development costs",
+      "C": "reduced rework",
+      "D": "fewer test cases"
+    },
+    "answer": "ABC",
+    "id": 44
+  },
+  {
+    "page": 4,
+    "numberOnPage": 1,
+    "question": "Requirement statements must be: ({Chonce 2 correct ancwerc) MS ee deters ee LL Ne | SNe eR EE as ee, ae",
+    "options": {
+      "A": "Feasible",
+      "B": "Correct",
+      "C": "Verifiable",
+      "D": "Flexible iV)"
+    },
+    "answer": "ABC",
+    "id": 45
+  },
+  {
+    "page": 4,
+    "numberOnPage": 2,
+    "question": "While a mock-up is called a prototype, a proof of concept is called a prototype.",
+    "options": {
+      "A": "horizontal, vertical",
+      "B": "vertical, horizontal",
+      "C": "primary, secondary",
+      "D": "front-end, back-end"
+    },
+    "answer": "A",
+    "id": 46
+  },
+  {
+    "page": 4,
+    "numberOnPage": 3,
+    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the value at the cost",
+    "options": {
+      "A": "highest, lowest",
+      "B": "lowest, highest",
+      "C": "highest, highest",
+      "D": "lowest, lowest"
+    },
+    "answer": "A",
+    "id": 47
+  },
+  {
+    "page": 4,
+    "numberOnPage": 4,
+    "question": "Customers are a(n) of stakeholders.",
+    "options": {
+      "A": "subset",
+      "B": "representative",
+      "C": "partner",
+      "D": "equivalent iV)"
+    },
+    "answer": "A",
+    "id": 48
+  },
+  {
+    "page": 4,
+    "numberOnPage": 5,
+    "question": "Consider the following statement: “All the screens in the system must load quickly”. This requirement statement is ‘",
+    "options": {
+      "A": "Correct and Feasible",
+      "B": "Unambiguous and Testable",
+      "C": "Unambiguous and Non-Testable",
+      "D": "Ambiguous and Non-Testable iV)"
+    },
+    "answer": "D",
+    "id": 49
+  },
+  {
+    "page": 4,
+    "numberOnPage": 6,
+    "question": "Fill in the blank. “Define vision and scope”, “select product champions” activities should be done stage.",
+    "options": {
+      "A": "Specifications",
+      "B": "Validation",
+      "C": "Elicitation",
+      "D": "Analysis"
+    },
+    "answer": "C",
+    "id": 50
+  },
+  {
+    "page": 4,
+    "numberOnPage": 7,
+    "question": "Fill in the blank. is a visual representation of the data objects and collections the system will process, and the relationships between them.",
+    "options": {
+      "A": "Use case diagram",
+      "B": "Data model",
+      "C": "Data dictionary",
+      "D": "Reports"
+    },
+    "answer": "B",
+    "id": 51
+  },
+  {
+    "page": 4,
+    "numberOnPage": 8,
+    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called ;",
+    "options": {
+      "A": "exceptions",
+      "B": "alternative flows",
+      "C": "secondary scenarios",
+      "D": "backup flows iV)"
+    },
+    "answer": "A",
+    "id": 52
+  },
+  {
+    "page": 4,
+    "numberOnPage": 9,
+    "question": "Product backlogs typically are 5",
+    "options": {
+      "A": "user stories",
+      "B": "defects",
+      "C": "user stories and defects",
+      "D": "prototype"
+    },
+    "answer": "C",
+    "id": 53
+  },
+  {
+    "page": 4,
+    "numberOnPage": 10,
+    "question": "c Validation of requirements assesses whether you have written",
+    "options": {
+      "A": "the right requirements",
+      "B": "the requirements right",
+      "C": "the flexible requirements",
+      "D": "the variable requirements iV)"
+    },
+    "answer": "A",
+    "id": 54
+  },
+  {
+    "page": 4,
+    "numberOnPage": 11,
+    "question": "What is not the purpose of a Use Case Diagram?",
+    "options": {
+      "A": "Use case diagrams are both behavior diagrams because they describe the behavior of the system. They are also structure diagrams, serving as a special case of class diagrams where classifiers are restricted to be either actors or use cases related to each other with associations.",
+      "B": "Use case diagrams show the graphical user interface that needs to be implemented",
+      "C": "Use case diagrams are usually referred to as behavior diagrams used to describe a set of actions (use cases) that some system or systems (subject) should or can perform in collaboration with one or more external users of the system (actors)",
+      "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value"
+    },
+    "answer": "B",
+    "id": 55
+  },
+  {
+    "page": 4,
+    "numberOnPage": 12,
+    "question": "Which of the following is NOT an intended audience for a Software Requirements Specification (SRS)?",
+    "options": {
+      "A": "Project Managers",
+      "B": "Testers",
+      "C": "Legal Staff",
+      "D": "Hardware Manufacturers",
+      "E": "Documentation Writers"
+    },
+    "answer": "D",
+    "id": 56
+  },
+  {
+    "page": 4,
+    "numberOnPage": 13,
+    "question": "Which of the following is NOT considered a dimension of requirements reuse when adapting requirements from one project to another?",
+    "options": {
+      "A": "The extent of reuse, including whether individual requirement statements or sets of requirements with their associated elements are reused",
+      "B": "Reuse frequency, which measures how often a particular requirement has been reused in different projects.",
+      "C": "The extent of modification, which considers the degree to which reused requirements must be altered to fit the new project's context",
+      "D": "The reuse mechanism, which involves how the requirement is reused, such as copying from a library of"
+    },
+    "answer": "B",
+    "id": 57
+  },
+  {
+    "page": 4,
+    "numberOnPage": 14,
+    "question": "Which of the following is NOT a type of business rule according to the taxonomy?",
+    "options": {
+      "A": "Fact Rules",
+      "B": "Action Enabler Rules",
+      "C": "Constraint Rules",
+      "D": "Operational Rules"
+    },
+    "answer": "D",
+    "id": 58
+  },
+  {
+    "page": 4,
+    "numberOnPage": 15,
+    "question": "Which of the following is NOT a requirements prioritization technique?",
+    "options": {
+      "A": "Pairwise comparison",
+      "B": "In or out",
+      "C": "Three-level scale",
+      "D": "$1000",
+      "E": "MoSCow"
+    },
+    "answer": "D",
+    "id": 59
+  },
+  {
+    "page": 4,
+    "numberOnPage": 16,
+    "question": "Which of the following is NOT a characteristic of Software as a Service (SaaS)?",
+    "options": {
+      "A": "Subscription-based pricing",
+      "B": "On-premises deployment",
+      "C": "Centralized hosting",
+      "D": "Internet accessibility"
+    },
+    "answer": "B",
+    "id": 60
+  },
+  {
+    "page": 4,
+    "numberOnPage": 17,
+    "question": "Which of the following does NOT suggest an overall description of the Software Requirements Specification template?",
+    "options": {
+      "A": "Product perspective",
+      "B": "User classes and characteristics",
+      "C": "Operating environment",
+      "D": "Design and implementation constraints",
+      "E": "Assumptions and dependencies",
+      "F": "System feature"
+    },
+    "answer": "F",
+    "id": 61
+  },
+  {
+    "page": 4,
+    "numberOnPage": 18,
+    "question": "Which of the following is NOT included in the list of Software Bill of Rights Requirements?",
+    "options": {
+      "A": "Expect BAs to speak your language.",
+      "B": "Expect BAs to learn about your business and your objectives.",
+      "C": "Promptly communicate changes to the requirements.",
+      "D": "Receive explanations of requirements practices and deliverables.",
+      "E": "Change your requirements.",
+      "F": "Expect an environment of mutual respect. iV)"
+    },
+    "answer": "C",
+    "id": 62
+  },
+  {
+    "page": 4,
+    "numberOnPage": 19,
+    "question": "Which of the following is NOT about Agile project?",
+    "options": {
+      "A": "Developers have little interaction with customers after construction begins on projects.",
+      "B": "It encourages creating the minimum amount of documentation needed to accurately guide the developers and testers.",
+      "C": "BAs or other people responsible for requirements will develop the necessary precision through conversations and documentation when it is needed.",
+      "D": "The collaboration of customers with developers on agile projects generally means that requirements can be documented in less detail."
+    },
+    "answer": "A",
+    "id": 63
+  },
+  {
+    "page": 4,
+    "numberOnPage": 20,
+    "question": "Which of the following is NOT about outsourced projects?",
+    "options": {
+      "A": "It takes advantage of development skills they have available in-house.",
+      "B": "It’s harder to get developer input on requirements and to pass along user feedback on delivered software to developers.",
+      "C": "A formal contractual definition of requirements is necessary, which can lead to contention if differences of interpretation are discovered late in the project (9)"
+    },
+    "answer": "A",
+    "id": 64
+  },
+  {
+    "page": 4,
+    "numberOnPage": 21,
+    "question": "Which of the following is NOT about packaged solution?",
+    "options": {
+      "A": "You build systems by using your own staff.",
+      "B": "It needs to be configured, integrated, and extended to work in the target environment.",
+      "C": "You can purchase a package as part or all of the solution for a new project.",
+      "D": "Evaluate solution candidates so that you can select the most appropriate package."
+    },
+    "answer": "A",
+    "id": 65
+  },
+  {
+    "page": 5,
+    "numberOnPage": 1,
+    "question": "Which of the following is NOT a purpose of creating a mock-up?",
+    "options": {
+      "A": "To refine user interface design.",
+      "B": "To test architectural feasibility.",
+      "C": "To allow users to judge the overall workflow and requirements.",
+      "D": "To simulate a user interface with no real functionality, 9)"
+    },
+    "answer": "B",
+    "id": 66
+  },
+  {
+    "page": 5,
+    "numberOnPage": 2,
+    "question": "Which one of these is NOT a Business analyst's task?",
+    "options": {
+      "A": "Communicate requirements",
+      "B": "Document requirements",
+      "C": "Analyze requirements",
+      "D": "Assure requirements",
+      "E": "Elicit requirements D A a Diéu nao KHONG phai nhiém vu cla Business Analyst? Dap an dung: D Dich dap an dung: Dam bao yéu cau (Assure requirements). . 7 Giai thich: BA thuéng thu thap, phan tich, tai ligu hoa va truyén dat yéu cau."
+    },
+    "answer": "DA",
+    "id": 67
+  },
+  {
+    "page": 5,
+    "numberOnPage": 3,
+    "question": "Which of the following is NOT about prioritization techniques?",
+    "options": {
+      "A": "In or out",
+      "B": "Pairwise comparison and rank ordering.",
+      "C": "Three-level scale.",
+      "D": "MoSCoW.",
+      "E": "Based on risk."
+    },
+    "answer": "E",
+    "id": 68
+  },
+  {
+    "page": 5,
+    "numberOnPage": 4,
+    "question": "Which of the following is NOT about Change management on Agile projects?",
+    "options": {
+      "A": "Agile processes harness change for the customer's competitive advantage.",
+      "B": "Agile projects manage change by maintaining a specific backlog of work to be done",
+      "C": "Accepting change helps to meet evolving business objectives and priorities and to accommodate the limitations of human plans and foresight.",
+      "D": "Agile methods vary as to their philosophy on this point; there is no single “correct” approach. iV)"
+    },
+    "answer": "D",
+    "id": 69
+  },
+  {
+    "page": 5,
+    "numberOnPage": 5,
+    "question": "Which is NOT an activity of risk management?",
+    "options": {
+      "A": "Risk avoidance",
+      "B": "Risk assessment",
+      "C": "Risk monitoring",
+      "D": "Risk control"
+    },
+    "answer": "A",
+    "id": 70
+  },
+  {
+    "page": 5,
+    "numberOnPage": 6,
+    "question": "Which of the following is NOT characteristic of the user?",
+    "options": {
+      "A": "A subset of the product's customers in some cases",
+      "B": "A subset of the product's users",
+      "C": "A superset of stakeholders",
+      "D": "Includes direct users and indirect users V) c a Diéu nao sau day KHONG phai la dac diém cla ngui diing (user)? Dap an dung: C Dich dap an dung: La tap cha (superset) cla cac bén lién quan (stakeholders). Giai thich: Stakeholders la khai niém réng hon users, khéng phai ngu¢c lai."
+    },
+    "answer": "CA",
+    "id": 71
+  },
+  {
+    "page": 5,
+    "numberOnPage": 7,
+    "question": "Which of the following statements is TRUE about Use Cases?",
+    "options": {
+      "A": "Use Cases are static and do not evolve throughout the software development process.",
+      "B": "Use case diagrams are the primary tool to document requirements.",
+      "C": "Use Cases are not useful in capturing user requirements.",
+      "D": "Use Cases describe the interactions between the system and external entities. iV)"
+    },
+    "answer": "D",
+    "id": 72
+  },
+  {
+    "page": 5,
+    "numberOnPage": 8,
+    "question": "What is a potential consequence of adding more functionality through a series of iterations?",
+    "options": {
+      "A": "Improved system performance.",
+      "B": "Increased system efficiency.",
+      "C": "Deterioration of system performance.",
+      "D": "Reduced need for performance testing. iV)"
+    },
+    "answer": "C",
+    "id": 73
+  },
+  {
+    "page": 5,
+    "numberOnPage": 9,
+    "question": "What is a common pitfall in writing non-functional requirements?",
+    "options": {
+      "A": "Making them too vague or unmeasurable",
+      "B": "Prioritizing them over functional requirements",
+      "C": "Writing them without stakeholder input",
+      "D": "Skipping them in the documentation process"
+    },
+    "answer": "A",
+    "id": 74
+  },
+  {
+    "page": 5,
+    "numberOnPage": 10,
+    "question": "What is the definition of a condition in which the scope of a project continues to increase in an uncontrolled fashion throughout the development process?",
+    "options": {
+      "A": "Risk",
+      "B": "Inspection",
+      "C": "Scope creep",
+      "D": "Decision rule iV)"
+    },
+    "answer": "C",
+    "id": 75
+  },
+  {
+    "page": 5,
+    "numberOnPage": 11,
+    "question": "What is the central element that drives all activities in the software development process?",
+    "options": {
+      "A": "Project plans",
+      "B": "Designs and code",
+      "C": "Tests",
+      "D": "Baselined requirements"
+    },
+    "answer": "D",
+    "id": 76
+  },
+  {
+    "page": 5,
+    "numberOnPage": 12,
+    "question": "What should you not expect a prototype to replace?",
+    "options": {
+      "A": "Multiple iterations.",
+      "B": "Written requirements.",
+      "C": "Plausible data.",
+      "D": "The purpose of the prototype"
+    },
+    "answer": "B",
+    "id": 77
+  },
+  {
+    "page": 5,
+    "numberOnPage": 13,
+    "question": "Which one of the following is a functional requirement?",
+    "options": {
+      "A": "Portability.",
+      "B": "Order products.",
+      "C": "Maintainability.",
+      "D": "Security.",
+      "E": "Robustness."
+    },
+    "answer": "B",
+    "id": 78
+  },
+  {
+    "page": 5,
+    "numberOnPage": 14,
+    "question": "Which one is a kind of prototyping that firstly creates a sample for clarifying requirements with the user, then builds up and adds new features to this sample incrementally, and finally releases the final deliverable product based on it?",
+    "options": {
+      "A": "Mockup",
+      "B": "Throwaway prototype",
+      "C": "Evolutionary prototype",
+      "D": "Wireframe iV)"
+    },
+    "answer": "C",
+    "id": 79
+  },
+  {
+    "page": 5,
+    "numberOnPage": 15,
+    "question": "Which of the following characteristics of excellent requirements is depicted by the statement: “Requirements don't conflict with other requirements of the same type or with higher-level biz, user, or system requirements.” 2",
+    "options": {
+      "A": "Complete",
+      "B": "Unambiguous",
+      "C": "Consistent",
+      "D": "Traceable",
+      "E": "Modifiable"
+    },
+    "answer": "C",
+    "id": 80
+  },
+  {
+    "page": 5,
+    "numberOnPage": 16,
+    "question": "Which of the following is not included in software requirements specification (SRS) template?",
+    "options": {
+      "A": "Quality Attributes",
+      "B": "External interface",
+      "C": "Data requirements",
+      "D": "Design features",
+      "E": "System features"
+    },
+    "answer": "D",
+    "id": 81
+  },
+  {
+    "page": 5,
+    "numberOnPage": 17,
+    "question": "Which of the following is not an elicitation technique?",
+    "options": {
+      "A": "Interviews",
+      "B": "Focus groups",
+      "C": "Observations",
+      "D": "Training courses iV)"
+    },
+    "answer": "D",
+    "id": 82
+  },
+  {
+    "page": 5,
+    "numberOnPage": 18,
+    "question": "Which of the following is not a component of an Entity Relationship Diagrams (ERD)?",
+    "options": {
+      "A": "Entity",
+      "B": "Relationship",
+      "C": "Association",
+      "D": "Cardinality",
+      "E": "Attribute"
+    },
+    "answer": "C",
+    "id": 83
+  },
+  {
+    "page": 6,
+    "numberOnPage": 1,
+    "question": "Which of the following is a likely stakeholder interest for a retail kiosk's customer?",
+    "options": {
+      "A": "Maximizing user convenience",
+      "B": "Minimizing development cost",
+      "C": "Improving operational efficiency",
+      "D": "Increasing market reach V)"
+    },
+    "answer": "A",
+    "id": 84
+  },
+  {
+    "page": 6,
+    "numberOnPage": 2,
+    "question": "Which one of the following is not a step of requirement development?",
+    "options": {
+      "A": "elicitation",
+      "B": "design",
+      "C": "analysis",
+      "D": "validation",
+      "E": "documentation"
+    },
+    "answer": "B",
+    "id": 85
+  },
+  {
+    "page": 6,
+    "numberOnPage": 3,
+    "question": "Which arrangement describes the increasing amount of requirements and development work when implementing packaged solutions? 1.configured 2.integrated 3.extended 4.out of the box",
+    "options": {
+      "A": "1,2,3,4",
+      "B": "2,1,3,4",
+      "C": "2,4,3,1",
+      "D": "4,1,2,3"
+    },
+    "answer": "D",
+    "id": 86
+  },
+  {
+    "page": 6,
+    "numberOnPage": 4,
+    "question": "Which elicitation technique is most suitable for identifying stakeholder needs in large projects?",
+    "options": {
+      "A": "Focus groups",
+      "B": "Observation",
+      "C": "Brainstorming sessions",
+      "D": "Stakeholder interviews 9)"
+    },
+    "answer": "A",
+    "id": 87
+  },
+  {
+    "page": 6,
+    "numberOnPage": 5,
+    "question": "Which approach to reviewing requirements involves the author describing a deliverable and soliciting comments on it?",
+    "options": {
+      "A": "Peer deskcheck approach",
+      "B": "Passaround approach",
+      "C": "Walkthrough approach",
+      "D": "Inspection approach"
+    },
+    "answer": "C",
+    "id": 88
+  },
+  {
+    "page": 6,
+    "numberOnPage": 6,
+    "question": "Which one of the following is not step of requirement engineering?",
+    "options": {
+      "A": "documentation",
+      "B": "elicitation",
+      "C": "analysis",
+      "D": "design"
+    },
+    "answer": "D",
+    "id": 89
+  },
+  {
+    "page": 6,
+    "numberOnPage": 7,
+    "question": "Which technique is most effective for resolving conflicts among stakeholders?",
+    "options": {
+      "A": "Prioritization workshops",
+      "B": "Eliminating conflicting requirements",
+      "C": "Focusing only on functional requirements",
+      "D": "Avoiding stakeholder feedback 7)"
+    },
+    "answer": "A",
+    "id": 90
+  },
+  {
+    "page": 6,
+    "numberOnPage": 8,
+    "question": "Which JSTL tag is used to format numbers according to the default user's locale?",
+    "options": {
+      "A": "<fmt:parseNumber>",
+      "B": "<fmt:setNumber>",
+      "C": "<fmt:formatNumber>",
+      "D": "<fmt:setLocale>"
+    },
+    "answer": "C",
+    "id": 91
+  },
+  {
+    "page": 6,
+    "numberOnPage": 9,
+    "question": "When considering software quality attributes, which of the following is classified as an internal quality attribute?",
+    "options": {
+      "A": "Usability",
+      "B": "Security",
+      "C": "Efficiency",
+      "D": "Availability"
+    },
+    "answer": "C",
+    "id": 92
+  },
+  {
+    "page": 6,
+    "numberOnPage": 10,
+    "question": "How should the names of use cases be written?",
+    "options": {
+      "A": "A noun followed by a verb",
+      "B": "A verb followed by an object",
+      "C": "A random combination of words",
+      "D": "A descriptive phrase"
+    },
+    "answer": "B",
+    "id": 93
+  },
+  {
+    "page": 6,
+    "numberOnPage": 11,
+    "question": "A designated representative of a specific user class, who supplies the user requirements for the group that he or she represents, is a:",
+    "options": {
+      "A": "Product manager",
+      "B": "Product champion",
+      "C": "Product backlog",
+      "D": "Product owner"
+    },
+    "answer": "B",
+    "id": 94
+  },
+  {
+    "page": 6,
+    "numberOnPage": 12,
+    "question": "A key motivation for requirements tracing is to facilitate what activity, especially when a requirement needs to be modified?",
+    "options": {
+      "A": "Requirements elicitation",
+      "B": "Change impact analysis",
+      "C": "User interface design",
+      "D": "Project budgeting"
+    },
+    "answer": "B",
+    "id": 95
+  },
+  {
+    "page": 6,
+    "numberOnPage": 13,
+    "question": "A collection of definitions for the data elements and data structures that are relevant to the problem domain",
+    "options": {
+      "A": "Data dictionary",
+      "B": "Data flow diagram",
+      "C": "Database",
+      "D": "Relationship"
+    },
+    "answer": "A",
+    "id": 96
+  },
+  {
+    "page": 6,
+    "numberOnPage": 14,
+    "question": "An analysis model that visually depicts the various states in which a system or an object in the system can exist, the permitted transitions that can take place between states",
+    "options": {
+      "A": "State-transition diagram",
+      "B": "Swimlane diagram",
+      "C": "Use case diagram",
+      "D": "Data Flow diagram"
+    },
+    "answer": "A",
+    "id": 97
+  },
+  {
+    "page": 6,
+    "numberOnPage": 15,
+    "question": "An analysis model that depicts a process flow proceeding from one activity to another",
+    "options": {
+      "A": "Dialog map",
+      "B": "Swimiane diagram",
+      "C": "Context diagram",
+      "D": "Class diagram"
+    },
+    "answer": "B",
+    "id": 98
+  },
+  {
+    "page": 6,
+    "numberOnPage": 16,
+    "question": "Consider the following Statement: “If a lead doesn’t respond back within 30 days of the first contact, it must be a cold lead and can be markedaccordingly”.What type of business rule is being depicted here?",
+    "options": {
+      "A": "Facts",
+      "B": "Constraints",
+      "C": "Action enablers",
+      "D": "Inferences",
+      "E": "Computations 7)"
+    },
+    "answer": "D",
+    "id": 99
+  },
+  {
+    "page": 6,
+    "numberOnPage": 17,
+    "question": "Choose the incorrect answer when talking about the essential aspects of an agile approach to requirements.",
+    "options": {
+      "A": "Customer involvement",
+      "B": "Expect stability",
+      "C": "The backlog and prioritization",
+      "D": "Timing",
+      "E": "Documentation detail"
+    },
+    "answer": "B",
+    "id": 100
+  },
+  {
+    "page": 6,
+    "numberOnPage": 18,
+    "question": "During which activity are customer needs processed and related to software requirements?",
+    "options": {
+      "A": "Elicitation",
+      "B": "Analysis",
+      "C": "Specification",
+      "D": "Validation"
+    },
+    "answer": "B",
+    "id": 101
+  },
+  {
+    "page": 6,
+    "numberOnPage": 19,
+    "question": "If you prototype the whole solution rather than only the most uncertain, high-risk, or complex portions, your risk is:",
+    "options": {
+      "A": "investing excessive effort in prototypes",
+      "B": "distraction by details",
+      "C": "pressure to release the prototype",
+      "D": "unrealistic performance expectations"
+    },
+    "answer": "A",
+    "id": 102
+  },
+  {
+    "page": 6,
+    "numberOnPage": 20,
+    "question": "If both “Submit loan request” and “Offer line of credit” use the “Perform credit check” use case, the relationship between “Perform credit check” and the other use cases is:",
+    "options": {
+      "A": "Extend relationship",
+      "B": "Generalization relationship",
+      "C": "Include relationship"
+    },
+    "answer": "C",
+    "id": 103
+  },
+  {
+    "page": 6,
+    "numberOnPage": 21,
+    "question": "If a report is generated but not used, what should a Business Analyst consider doing?",
+    "options": {
+      "A": "Ensure it is included in the new system",
+      "B": "Modify it to meet new requirements",
+      "C": "Exclude it from the new system",
+      "D": "Increase its frequency of generation"
+    },
+    "answer": "C",
+    "id": 104
+  },
+  {
+    "page": 7,
+    "numberOnPage": 1,
+    "question": "Cc Néu mét bao cdo dug tao ra nhung khéng duoc str dung, Business Analyst nén can nhac lam gi? ES COVEN UII Gt, PIUUL OS SIS PS GIL OU! Go.",
+    "options": {
+      "A": "rectangles",
+      "B": "arrows connecting pairs of rectangles",
+      "C": "diamonds",
+      "D": "ovals iV)"
+    },
+    "answer": "A",
+    "id": 105
+  },
+  {
+    "page": 7,
+    "numberOnPage": 2,
+    "question": "In an ERD, what is an entity typically represented by?",
+    "options": {
+      "A": "Adiamond shape",
+      "B": "A rectangle",
+      "C": "An oval shape",
+      "D": "A hexagon shape iV)"
+    },
+    "answer": "B",
+    "id": 106
+  },
+  {
+    "page": 7,
+    "numberOnPage": 3,
+    "question": "In a software requirements specification, which section do user interfaces belong to?",
+    "options": {
+      "A": "Overall description",
+      "B": "System features",
+      "C": "Data requirements",
+      "D": "External interface requirements"
+    },
+    "answer": "D",
+    "id": 107
+  },
+  {
+    "page": 7,
+    "numberOnPage": 4,
+    "question": "In a project, who is primarily responsible for communicating project information?",
+    "options": {
+      "A": "The business analyst",
+      "B": "The project manager",
+      "C": "The software development team",
+      "D": "The customer community"
+    },
+    "answer": "B",
+    "id": 108
+  },
+  {
+    "page": 7,
+    "numberOnPage": 5,
+    "question": "In the Chemical Tracking System project, what is the relationship between use case “Pay a bill” and use case “Write a check”?",
+    "options": {
+      "A": "include",
+      "B": "extend",
+      "C": "generalization"
+    },
+    "answer": "A",
+    "id": 109
+  },
+  {
+    "page": 7,
+    "numberOnPage": 6,
+    "question": "“Organize and share notes\" is an activity that belongs to?",
+    "options": {
+      "A": "Preparing for elicitation",
+      "B": "Performing elicitation activities",
+      "C": "Following up after elicitation",
+      "D": "Classifying customer 9)"
+    },
+    "answer": "C",
+    "id": 110
+  },
+  {
+    "page": 7,
+    "numberOnPage": 7,
+    "question": "“The user must be able to sort the project list in forward and reverse alphabetical order’ is a:",
+    "options": {
+      "A": "business requirement",
+      "B": "user requirement",
+      "C": "functional requirement",
+      "D": "data requirement"
+    },
+    "answer": "C",
+    "id": 111
+  },
+  {
+    "page": 7,
+    "numberOnPage": 8,
+    "question": "The four capitalized letters in the MoSCoW prioritization technique stand for:",
+    "options": {
+      "A": "Must, Should, Could, Won't",
+      "B": "Must, Should, Could, Will",
+      "C": "Must, Should, Can, Will",
+      "D": "Must, Shall, Could, Won't iV) A . A ae Bon chi cai viet hoa trong ky thuat uu tién MoSCoW la viet tat cua gi? Dich dap an dung: Must, Should, Could, Won't. . Giai thich: Day la phuong phap phan loai mirc dé vu tién yéu cau trong Agile va BA. “Story point” is used to measure which one below?"
+    },
+    "answer": "A",
+    "id": 112
+  },
+  {
+    "page": 7,
+    "numberOnPage": 9,
+    "question": "“Story point” is used to measure which one below?",
+    "options": {
+      "A": "User story",
+      "B": "Code",
+      "C": "Function",
+      "D": "Architecture iV)"
+    },
+    "answer": "A",
+    "id": 113
+  },
+  {
+    "page": 7,
+    "numberOnPage": 10,
+    "question": "What is the quality attribute mentioned above?",
+    "options": {
+      "A": "Availability",
+      "B": "Usability",
+      "C": "Scalability",
+      "D": "Robustness"
+    },
+    "answer": "C",
+    "id": 114
+  },
+  {
+    "page": 7,
+    "numberOnPage": 11,
+    "question": "What is one guideline for naming processes in a DFD?",
+    "options": {
+      "A": "Use a verb only",
+      "B": "Use a noun only",
+      "C": "Name the process after its corresponding data store",
+      "D": "Name each process using a concise verb-object action"
+    },
+    "answer": "D",
+    "id": 115
+  },
+  {
+    "page": 7,
+    "numberOnPage": 12,
+    "question": "What is the function of decision tables in requirements modeling?",
+    "options": {
+      "A": "To represent complex Boolean logic and decisions in a tabular format",
+      "B": "To model user interface design",
+      "C": "To specify data flows",
+      "D": "To define system states"
+    },
+    "answer": "A",
+    "id": 116
+  },
+  {
+    "page": 7,
+    "numberOnPage": 13,
+    "question": "What is the main advantage of using the active voice in writing requirements?",
+    "options": {
+      "A": "It helps in reducing the length of the requirements.",
+      "B": "It makes the subject and action of the sentence clear, ensuring clarity.",
+      "C": "It makes the requirements sound more formal and professional",
+      "D": "It is easier to translate into other languages"
+    },
+    "answer": "B",
+    "id": 117
+  },
+  {
+    "page": 7,
+    "numberOnPage": 14,
+    "question": "What is a key benefit of using mock-ups in prototyping?",
+    "options": {
+      "A": "To test the performance of the system",
+      "B": "To demonstrate the system's functionality",
+      "C": "To clarify user interface designs early",
+      "D": "To finalize system features iV)"
+    },
+    "answer": "C",
+    "id": 118
+  },
+  {
+    "page": 7,
+    "numberOnPage": 15,
+    "question": "What is the primary advantage of requirements reuse in software projects?",
+    "options": {
+      "A": "Reducing time and effort during the elicitation process",
+      "B": "Skipping the stakeholder review phase",
+      "C": "Eliminating the need for prototyping",
+      "D": "Ensuring all requirements are functional"
+    },
+    "answer": "A",
+    "id": 119
+  },
+  {
+    "page": 7,
+    "numberOnPage": 16,
+    "question": "What is one of the first questions to ask when eliciting reporting requirements from a customer?",
+    "options": {
+      "A": "How often should the reports be printed?",
+      "B": "What reports are currently used?",
+      "C": "How many users will need access to the report?",
+      "D": "What is the preferred color scheme for the reports?"
+    },
+    "answer": "B",
+    "id": 120
+  },
+  {
+    "page": 7,
+    "numberOnPage": 17,
+    "question": "What is the most popular form of user stories?",
+    "options": {
+      "A": "As a <type of user>, | want <some goal> so that <some reason>.",
+      "B": "As a <type of user>, | want <some goal>.",
+      "C": "As a <type of user>, | need <some need> so that <some reason>.",
+      "D": "As a <type of user>, | want <some goal> to <some purpose>. iV)"
+    },
+    "answer": "A",
+    "id": 121
+  },
+  {
+    "page": 7,
+    "numberOnPage": 18,
+    "question": "What is the primary challenge of validating non-functional requirements?",
+    "options": {
+      "A": "They are often subjective and difficult to measure accurately",
+      "B": "They focus only on technical constraints",
+      "C": "They eliminate the need for functional requirements",
+      "D": "They replace stakeholder reviews."
+    },
+    "answer": "A",
+    "id": 122
+  },
+  {
+    "page": 7,
+    "numberOnPage": 19,
+    "question": "What is the main purpose of a Vision and Scope document?",
+    "options": {
+      "A": "To define the boundaries and objectives of the project",
+      "B": "To specify all technical requirements",
+      "C": "To finalize the system's architecture",
+      "D": "To replace the requirements traceability matrix"
+    },
+    "answer": "A",
+    "id": 123
+  },
+  {
+    "page": 7,
+    "numberOnPage": 20,
+    "question": "What is a potential way for someone to transition into the business analyst role?",
+    "options": {
+      "A": "Through an apprenticeship program with mentoring",
+      "B": "By studying software development exclusively",
+      "C": "By focusing only on user interlace Gesign SKIlis",
+      "D": "By avoiding involvement in diverse business activities"
+    },
+    "answer": "A",
+    "id": 124
+  },
+  {
+    "page": 8,
+    "numberOnPage": 1,
+    "question": "What is the advantage of using acceptance tests during validation?",
+    "options": {
+      "A": "To ensure that all requirements are measurable and testable",
+      "B": "To eliminate the need for non-functional requirements",
+      "C": "To skip stakeholder reviews",
+      "D": "To prioritize coding tasks"
+    },
+    "answer": "A",
+    "id": 125
+  },
+  {
+    "page": 8,
+    "numberOnPage": 2,
+    "question": "What is the primary purpose of requirements reuse?",
+    "options": {
+      "A": "To save time, improve consistency, and reduce risks",
+      "B": "To eliminate stakeholder reviews",
+      "C": "To finalize the coding phase",
+      "D": "To reduce prototyping efforts"
+    },
+    "answer": "A",
+    "id": 126
+  },
+  {
+    "page": 8,
+    "numberOnPage": 3,
+    "question": "What is Risk assessment?",
+    "options": {
+      "A": "It is the process of examining a project to identify potential threats.",
+      "B": "It is one way to deal with a risk: don't do the risky thing.",
+      "C": "It produces a plan for dealing with each significant risk.",
+      "D": "It activities to manage the top-priority risks you identified. V)"
+    },
+    "answer": "A",
+    "id": 127
+  },
+  {
+    "page": 8,
+    "numberOnPage": 4,
+    "question": "What is the primary objective of creating a requirements traceability matrix (RTM)?",
+    "options": {
+      "A": "To link requirements to design, development, and testing artifacts",
+      "B": "To identify redundant requirements",
+      "C": "To finalize the system budget",
+      "D": "To prioritize stakeholder meetings"
+    },
+    "answer": "A",
+    "id": 128
+  },
+  {
+    "page": 8,
+    "numberOnPage": 5,
+    "question": "What is the primary challenge of documenting requirements for complex systems?",
+    "options": {
+      "A": "Ensuring clarity, consistency, and avoiding ambiguities",
+      "B": "Eliminating low-priority requirements",
+      "C": "Skipping stakeholder validation",
+      "D": "Focusing only on functional needs"
+    },
+    "answer": "A",
+    "id": 129
+  },
+  {
+    "page": 8,
+    "numberOnPage": 6,
+    "question": "What is the simplest way to initially manage business rules in an organization?",
+    "options": {
+      "A": "Implement a full-scale business rule management tool",
+      "B": "Use a requirements management tool",
+      "C": "Use a word processor or a simple catalog",
+      "D": "Write business rules directly in application code (7)"
+    },
+    "answer": "C",
+    "id": 130
+  },
+  {
+    "page": 8,
+    "numberOnPage": 7,
+    "question": "What is the purpose of categorizing requirements into \"Must-have\" and \"Should-have\"?",
+    "options": {
+      "A": "To prioritize high-value requirements for early implementation",
+      "B": "To eliminate low-priority requirements altogether",
+      "C": "To finalize coding strategies",
+      "D": "To reduce the scope of non-functional requirements iV)"
+    },
+    "answer": "A",
+    "id": 131
+  },
+  {
+    "page": 8,
+    "numberOnPage": 8,
+    "question": "What is a key characteristic of Agile projects?",
+    "options": {
+      "A": "Strict adherence to a detailed project plan",
+      "B": "Regular adaptation to changing requirements and priorities",
+      "C": "Emphasis on comprehensive documentation over working software",
+      "D": "Minimal interaction with customers and stakeholders 9)"
+    },
+    "answer": "B",
+    "id": 132
+  },
+  {
+    "page": 8,
+    "numberOnPage": 9,
+    "question": "What does the \"STRETCH\" keyword in Planguage represent?",
+    "options": {
+      "A": "The ideal performance level",
+      "B": "A benchmark for testing",
+      "C": "Amore desirable performance objective than the minimum goal",
+      "D": "A failure condition"
+    },
+    "answer": "C",
+    "id": 133
+  },
+  {
+    "page": 8,
+    "numberOnPage": 10,
+    "question": "What does the MoSCoW method classify in requirements prioritization?",
+    "options": {
+      "A": "Urgency and cost of requirements",
+      "B": "Must, Should, Could, and Won't categories",
+      "C": "Technical feasibility and design limitations",
+      "D": "High, Medium, and Low priorities"
+    },
+    "answer": "B",
+    "id": 134
+  },
+  {
+    "page": 8,
+    "numberOnPage": 11,
+    "question": "What does the term \"elicitation\" primarily refer to in requirements engineering?",
+    "options": {
+      "A": "The process of gathering requirements from stakeholders",
+      "B": "The validation of technical requirements",
+      "C": "The prioritization of system constraints",
+      "D": "The finalization of the project budget V)"
+    },
+    "answer": "A",
+    "id": 135
+  },
+  {
+    "page": 8,
+    "numberOnPage": 12,
+    "question": "What tool did Seilevel develop to assist with estimating requirements development effort?",
+    "options": {
+      "A": "A coding tool for developers.",
+      "B": "A requirements effort estimation spreadsheet.",
+      "C": "A time-tracking tool for project managers.",
+      "D": "A documentation tool for stakeholders. 7)"
+    },
+    "answer": "B",
+    "id": 136
+  },
+  {
+    "page": 8,
+    "numberOnPage": 13,
+    "question": "What activities is not included in a representative requirements development process?",
+    "options": {
+      "A": "Select an appropriate software development life cycle.",
+      "B": "Select elicitation techniques",
+      "C": "Review requirement",
+      "D": "Plan elicitation",
+      "E": "Analysis requirement 7)"
+    },
+    "answer": "A",
+    "id": 137
+  },
+  {
+    "page": 8,
+    "numberOnPage": 14,
+    "question": "Which of the following is a recommended question to ask when probing for exceptions in processes?",
+    "options": {
+      "A": "Why do you think this system is perfect?",
+      "B": "What are the three things you dislike about the current system?",
+      "C": "What happens when an error occurs?",
+      "D": "What is your favorite feature of this system? iV)"
+    },
+    "answer": "C",
+    "id": 138
+  },
+  {
+    "page": 8,
+    "numberOnPage": 15,
+    "question": "Which of the following is not a benefit of having a clear set of expectations for product champions?",
+    "options": {
+      "A": "Encouraging accountability and clarity of role",
+      "B": "Helping champions align with project goals",
+      "C": "Guaranteeing the project will stay on budget",
+      "D": "Facilitating negotiation of the champion’s responsibilities V)"
+    },
+    "answer": "C",
+    "id": 139
+  },
+  {
+    "page": 8,
+    "numberOnPage": 16,
+    "question": "Which of the following is an example of a risk avoidance strategy?",
+    "options": {
+      "A": "Performing risk control activities to manage top-priority risks",
+      "B": "Documenting potential risks without any action",
+      "C": "Not engaging in the risky activity at all",
+      "D": "Ignoring minor risks and focusing only on major risks c 2 z Dau Ia vi du vé chién Iugc né tranh rui ro (risk avoidance)? Dap an ding: C. Khéng thu hién hoat déng co ri ro dé ngay tir dau. Giai thich: Risk avoidance la loai bé nguyén nhan gay rui ro bang cach khéng thurc hién hoat déng do."
+    },
+    "answer": "C",
+    "id": 140
+  },
+  {
+    "page": 8,
+    "numberOnPage": 17,
+    "question": "Which of the following are essential analyst skills required from the Business Analyst?",
+    "options": {
+      "A": "Listening skills, Systems thinking skills",
+      "B": "Interviewing and questioning skills, Learning skills, Interpersonal skills",
+      "C": "Thinking on your feet, Facilitation skills",
+      "D": "Analytical skills, Leadership skills, Organizational skills, Creativity",
+      "E": "Observational skills, Communication skills, Modeling skills",
+      "F": "All of the mentioned"
+    },
+    "answer": "F",
+    "id": 141
+  },
+  {
+    "page": 8,
+    "numberOnPage": 18,
+    "question": "Which keyword in Planguage defines the goal or minimum acceptable achievement level?",
+    "options": {
+      "A": "AMBITION",
+      "B": "SCALE",
+      "C": "GOAL",
+      "D": "WISH"
+    },
+    "answer": "C",
+    "id": 142
+  },
+  {
+    "page": 8,
+    "numberOnPage": 19,
+    "question": "Which statement best describes the purpose of an Epic in Agile project?",
+    "options": {
+      "A": "To define detailed requirements and specifications for a project",
+      "B": "To represent a high-level user need or business requirement that can be broken down into smaller, more manageable user stories",
+      "C": "To assign tasks to team members for implementation",
+      "D": "To prioritize project deliverables"
+    },
+    "answer": "B",
+    "id": 143
+  },
+  {
+    "page": 8,
+    "numberOnPage": 20,
+    "question": "Why is traceability essential for managing changing requirements?",
+    "options": {
+      "A": "To track changes and ensure alignment with project goals",
+      "B": "To prioritize functional requirements",
+      "C": "To reduce stakeholder involvement",
+      "D": "To eliminate ambiguous requirements 7)"
+    },
+    "answer": "A",
+    "id": 144
+  },
+  {
+    "page": 8,
+    "numberOnPage": 21,
+    "question": "When creating a persona for each user class, the most important thing is:",
+    "options": {
+      "A": "The persona must be a real person",
+      "B": "The persona must be representative of their user class",
+      "C": "The persona must be rich",
+      "D": "The persona must be beautiful"
+    },
+    "answer": "B",
+    "id": 145
+  },
+  {
+    "page": 9,
+    "numberOnPage": 1,
+    "question": "Why is stakeholder feedback critical during requirements validation?",
+    "options": {
+      "A": "To ensure requirements align with business objectives and user needs",
+      "B": "To finalize coding strategies",
+      "C": "To skip ambiguous requirements",
+      "D": "To prioritize testing phases iV)"
+    },
+    "answer": "A",
+    "id": 146
+  },
+  {
+    "page": 9,
+    "numberOnPage": 2,
+    "question": "Why is it important to clearly define the scope of a software project in a scope document?",
+    "options": {
+      "A": "Limit stakeholder involvement",
+      "B": "Speed up the development process",
+      "C": "Avoid addressing project risks",
+      "D": "Prevent scope creep and ensure project focus"
+    },
+    "answer": "D",
+    "id": 147
+  },
+  {
+    "page": 9,
+    "numberOnPage": 3,
+    "question": "Why is it challenging to amalgamate requirements input from numerous users?",
+    "options": {
+      "A": "Users often disagree on technical specifications",
+      "B": "Structured organizing schemes are typically unavailable",
+      "C": "Requirements input is often diverse and unstructured.",
+      "D": "Users lack domain expertise 7)"
+    },
+    "answer": "C",
+    "id": 148
+  },
+  {
+    "page": 9,
+    "numberOnPage": 4,
+    "question": "How does the process of elicitation relate to the other activities in requirements development?",
+    "options": {
+      "A": "Elicitation is performed only after specification is complete.",
+      "B": "Elicitation is an initial step that does not need to be revisited.",
+      "C": "Elicitation is interwoven with analysis, specification, and validation.",
+      "D": "Elicitation is only necessary for the first iteration of the project."
+    },
+    "answer": "C",
+    "id": 149
+  },
+  {
+    "page": 9,
+    "numberOnPage": 5,
+    "question": "How does the Kano model help analyze user requirements?",
+    "options": {
+      "A": "By classifying features into basic, performance, and delight categories",
+      "B": "By prioritizing requirements based on technical feasibility",
+      "C": "By eliminating unnecessary requirements",
+      "D": "By focusing only on functional requirements 9)"
+    },
+    "answer": "A",
+    "id": 150
+  },
+  {
+    "page": 9,
+    "numberOnPage": 6,
+    "question": "How does requirements reuse improve project efficiency?",
+    "options": {
+      "A": "By reducing time and effort during the elicitation process",
+      "B": "By skipping stakeholder reviews",
+      "C": "By focusing only on functional requirements",
+      "D": "By eliminating non-functional requirements iV) A * Tai str dung yéu cau giup cai thién hiéu qua dy an nhu thé nao? . Dap an dung: A. Giam thoi gian va céng strc trong qua trinh thu thap yéu cau. Giai thich: Cac yéu cau da cé thé dugc st? dung lai thay vi phai xay dung tir dau."
+    },
+    "answer": "A",
+    "id": 151
+  },
+  {
+    "page": 9,
+    "numberOnPage": 7,
+    "question": "How can better requirements practices reduce the cost of development?",
+    "options": {
+      "A": "By increasing the number of features developed.",
+      "B": "By reducing rework, unnecessary features, and miscommunications.",
+      "C": "By increasing the project timeline.",
+      "D": "By focusing solely on technical specifications iV)"
+    },
+    "answer": "B",
+    "id": 152
+  },
+  {
+    "page": 9,
+    "numberOnPage": 8,
+    "question": "Develop a method to ensure that all necessary documents and systems are available for independent elicitation. What would be a primary focus of this method?",
+    "options": {
+      "A": "Creating a checklist of required documents and systems.",
+      "B": "Assigning a team member to gather all necessary materials.",
+      "C": "Setting up a shared repository for document access.",
+      "D": "Scheduling regular audits to ensure document availability. 9)"
+    },
+    "answer": "A",
+    "id": 153
+  },
+  {
+    "page": 9,
+    "numberOnPage": 9,
+    "question": "If you prototype the whole solution rather than only the most uncertain, high-risk, or complex portions, your risk is",
+    "options": {
+      "A": "investing excessive effort in prototypes",
+      "B": "distraction by details",
+      "C": "pressure to release the prototype",
+      "D": "unrealistic performance expectations"
+    },
+    "answer": "A",
+    "id": 154
+  },
+  {
+    "page": 9,
+    "numberOnPage": 10,
+    "question": "In a requirements development process, why is it important to establish a mechanism for managing changes to requirements?",
+    "options": {
+      "A": "To discourage changes and maintain a fixed project scope",
+      "B": "To speed up the development process",
+      "C": "To adapt to evolving project needs while maintaining control",
+      "D": "To eliminate the need for documentation iV)"
+    },
+    "answer": "C",
+    "id": 155
+  },
+  {
+    "page": 9,
+    "numberOnPage": 11,
+    "question": "What is the primary distinction between Scope Creep and Gold Plating?",
+    "options": {
+      "A": "Scope Creep involves adding features, whereas Gold Plating involves reducing project scope.",
+      "B": "Scope Creep arises from customer-driven changes, while Gold Plating results from the project team adding unnecessary features.",
+      "C": "Both Scope Creep and Gold Plating involve unplanned changes",
+      "D": "Scope Creep occurs only in the early stages of a project, while Gold Plating happens post-delivery.",
+      "E": "Scope Creep is seen in small projects, while Gold Plating only occurs in large projects 7)"
+    },
+    "answer": "B",
+    "id": 156
+  },
+  {
+    "page": 9,
+    "numberOnPage": 12,
+    "question": "What is the distinction between users and actors?",
+    "options": {
+      "A": "There is no real difference; the terms can be used interchangeably",
+      "B": "Users are only relevant for use cases involving a graphical interface, while actors cover backend processes.",
+      "C": "Users are responsible for system development, and actors are responsible for testing",
+      "D": "Auser is an actual person (or system) using the product, while an actor is an abstraction that represents the role the user plays in a given use case",
+      "E": "Users are always individuals, while actors are always systems. iV)"
+    },
+    "answer": "D",
+    "id": 157
+  },
+  {
+    "page": 9,
+    "numberOnPage": 13,
+    "question": "What is the relationship between “product vision” and \"project scope\"?",
+    "options": {
+      "A": "Product vision and project scope are interchangeable terms",
+      "B": "Product vision describes the ultimate product, while project scope identifies the portion of that vision to be addressed by the current project",
+      "C": "Project scope defines business objectives, while product vision defines functional requirements.",
+      "D": "Product vision is a subset of project scope for each release"
+    },
+    "answer": "B",
+    "id": 158
+  },
+  {
+    "page": 9,
+    "numberOnPage": 14,
+    "question": "What is Extent of reuse?",
+    "options": {
+      "A": "You might reuse just a single functional requirement.",
+      "B": "You consider how much modification will be needed to make existing requirements reusable on the new project.",
+      "C": "It is simply a copy-and-paste of a piece of requirements information, either from another specification or from a library of reusable requirements.",
+      "D": "It is specific functional requirements within use cases, performance requirements, usability requirements, business rules."
+    },
+    "answer": "A",
+    "id": 159
+  },
+  {
+    "page": 9,
+    "numberOnPage": 15,
+    "question": "What is Planguage?",
+    "options": {
+      "A": "It is a programming language.",
+      "B": "It is a language with a rich set of keywords that permits precise statements of quality attributes and other project goals.",
+      "C": "It is a planning language used in project management",
+      "D": "It is a language to express non-functional requirements."
+    },
+    "answer": "B",
+    "id": 160
+  },
+  {
+    "page": 9,
+    "numberOnPage": 16,
+    "question": "What is the value of creating a traceability matrix in a project?",
+    "options": {
+      "A": "To ensure all requirements are linked to their design, testing, and implementation phases",
+      "B": "To replace stakeholder involvement in the validation phase",
+      "C": "To prioritize non-functional requirements over functional ones",
+      "D": "To finalize the system's coding standards iV)"
+    },
+    "answer": "A",
+    "id": 161
+  },
+  {
+    "page": 9,
+    "numberOnPage": 17,
+    "question": "What is the benefit of having a small group representing key areas as decision makers in a project?",
+    "options": {
+      "A": "It simplifies the decision-making process by involving only the project manager",
+      "B": "It ensures diverse perspectives from management, customers, business analysis, development, and marketing",
+      "C": "It reduces the need for stakeholder involvement",
+      "D": "It focuses solely on technical specifications iV)"
+    },
+    "answer": "B",
+    "id": 162
+  },
+  {
+    "page": 9,
+    "numberOnPage": 18,
+    "question": "What is the primary purpose of a state-transition diagram (STD)?",
+    "options": {
+      "A": "To model the physical layout and hardware components of a system",
+      "B": "To represent the possible states of an object and the transitions between these states based on various events or conditions",
+      "C": "To outline the organizational roles and responsibilities within a business process",
+      "D": "To visualize user interface flow and interactions in software applications"
+    },
+    "answer": "B",
+    "id": 163
+  },
+  {
+    "page": 9,
+    "numberOnPage": 19,
+    "question": "What is the definition of Pre-Condition in Use case?",
+    "options": {
+      "A": "A condition that describes the state of a system after a use case is successfully completed",
+      "B": "A condition that must be satisfied or a state the system must be in before a use case can begin",
+      "C": "A condition that initiates execution of the use case",
+      "D": "A condition that must be satisfied so that system run successful iV)"
+    },
+    "answer": "B",
+    "id": 164
+  },
+  {
+    "page": 9,
+    "numberOnPage": 20,
+    "question": "What is the main benefit of fostering a collaborative relationship between the development team and other stakeholders in the requirements process?",
+    "options": {
+      "A": "To ensure that each stakeholder has full control over the project",
+      "B": "To align business, technical, and user needs and avoid misunderstandings",
+      "C": "To speed up the development process by minimizing the number of team members involved",
+      "D": "To focus only on technical requirements without business or user input"
+    },
+    "answer": "B",
+    "id": 165
+  },
+  {
+    "page": 10,
+    "numberOnPage": 1,
+    "question": "What is the value of prototyping during requirements elicitation?",
+    "options": {
+      "A": "It provides a visual tool to clarify ambiguous requirements and gather stakeholder feedback",
+      "B": "It eliminates the need for acceptance criteria",
+      "C": "It skips non-functional requirements",
+      "D": "It focuses on coding directly"
+    },
+    "answer": "A",
+    "id": 166
+  },
+  {
+    "page": 10,
+    "numberOnPage": 2,
+    "question": "What is the role of user stories in Agile requirements management?",
+    "options": {
+      "A": "To provide concise, actionable descriptions of features from the user's perspective",
+      "B": "To replace the Vision and Scope document",
+      "C": "To prioritize non-functional requirements",
+      "D": "To finalize the system's architecture"
+    },
+    "answer": "A",
+    "id": 167
+  },
+  {
+    "page": 10,
+    "numberOnPage": 3,
+    "question": "What is the primary purpose of using a prototype in the software development process?",
+    "options": {
+      "A": "To finalize the product design and ensure no further changes are needed",
+      "B": "To validate requirements by finding errors and omissions, and assessing their accuracy and quality",
+      "C": "To create a fully functional product that can be immediately deployed",
+      "D": "To focus solely on the user experience without considering technical feasibility iV)"
+    },
+    "answer": "B",
+    "id": 168
+  },
+  {
+    "page": 10,
+    "numberOnPage": 4,
+    "question": "What is a requirements baseline?",
+    "options": {
+      "A": "Constraints on the development process of the system",
+      "B": "A specification of features to be implemented, descriptions of how the system should behave or descriptions",
+      "C": "A set of requirements that stakeholders have agreed to, often defining the contents of a specific planned release or development iteration"
+    },
+    "answer": "C",
+    "id": 169
+  },
+  {
+    "page": 10,
+    "numberOnPage": 5,
+    "question": "What is the primary motivation for tracing requirements?",
+    "options": {
+      "A": "To prevent any changes from being made to project requirements",
+      "B": "To document project assumptions",
+      "C": "To manage project team members",
+      "D": "To improve the quality of your products, reduce maintenance costs, and facilitate reuse"
+    },
+    "answer": "D",
+    "id": 170
+  },
+  {
+    "page": 10,
+    "numberOnPage": 6,
+    "question": "What is a key difference between a throwaway prototype and an evolutionary prototype?",
+    "options": {
+      "A": "A throwaway prototype is built with production-quality code, while an evolutionary prototype is discarded after use.",
+      "B": "An evolutionary prototype is designed to be gradually refined into the final product, while a throwaway prototype is created to answer specific questions and then discarded.",
+      "C": "A throwaway prototype provides a solid architectural foundation for the final product, while an evolutionary prototype is typically used to test user interface designs.",
+      "D": "Both throwaway and evolutionary prototypes are intended to be discarded after initial testing."
+    },
+    "answer": "B",
+    "id": 171
+  },
+  {
+    "page": 10,
+    "numberOnPage": 7,
+    "question": "What is the primary distinction between requirements validation and verification?",
+    "options": {
+      "A": "Validation ensures that the product meets the user's needs, while verification ensures it is free from defects.",
+      "B": "Validation ensures the product satisfies customer needs, while verification ensures the product meets its specifications.",
+      "C": "Validation occurs before the design phase, and verification occurs after.",
+      "D": "Validation is about internal testing, while verification is about external approval."
+    },
+    "answer": "B",
+    "id": 172
+  },
+  {
+    "page": 10,
+    "numberOnPage": 8,
+    "question": "What is the primary purpose of a Swimiane diagram?",
+    "options": {
+      "A": "To represent detailed software architecture and coding structures.",
+      "B": "To visually depict the steps involved in a business process or the operations of a proposed software system, subdivided into lanes that represent different systems or actors.",
+      "C": "To exclusively model user interface interactions and design layouts.",
+      "D": "To show the organizational structure and management hierarchy within a company."
+    },
+    "answer": "B",
+    "id": 173
+  },
+  {
+    "page": 10,
+    "numberOnPage": 9,
+    "question": "What is the definition of Pre-Condition in Use case?",
+    "options": {
+      "A": "A condition that describes the state of a system after a use case is successfully completed.",
+      "B": "A condition that must be satisfied or a state the system must be in before a use case can begin.",
+      "C": "A condition that initiates execution of the use case.",
+      "D": "A condition that must be satisfied so that system run successful 7)"
+    },
+    "answer": "B",
+    "id": 174
+  },
+  {
+    "page": 10,
+    "numberOnPage": 10,
+    "question": "What are the major activities involved in requirements management?",
+    "options": {
+      "A": "Version control, project scheduling, change control and budget management",
+      "B": "Change control, risk assessment, requirements tracing and stakeholder engagement",
+      "C": "Version control, change control, requirements status tracking, and requirements tracing",
+      "D": "Change control, testing, deployment, and maintenance"
+    },
+    "answer": "C",
+    "id": 175
+  },
+  {
+    "page": 10,
+    "numberOnPage": 11,
+    "question": "What steps would you include in a peer review process to identify and resolve ambiguities in requirement statements?",
+    "options": {
+      "A": "Have each participant review the requirements individually and submit their feedback separately.",
+      "B": "Conduct a formal peer review meeting where participants compare their understanding of each requirement and discuss any ambiguities.",
+      "C": "Skip the peer review process and rely on individual interpretations.",
+      "D": "Only review requirements after the development phase. Ban sé dua nhitng budc nao vao quy trinh danh gia dong cap (peer review) dé xac dinh va giai quyét cdc diém mo hé trong yéu cau? Dép an dung: B. Té chive mét cuéc hop danh gia chinh thirc, noi nhtrng ngwdi tham gia so sénh sy hiéu biét cia ho vé ting yéu cau va thao luan cac diém mo ho. Giai thich: Thao luan truc tiép gitp phat hién nhing cach hiéu khac nhau va lam r6 cac yéu cau chwa r6 rang."
+    },
+    "answer": "B",
+    "id": 176
+  },
+  {
+    "page": 10,
+    "numberOnPage": 12,
+    "question": "What are the reasons for companies to contract with software outsourcing organizations?",
+    "options": {
+      "A": "To increase control and oversight project",
+      "B": "To minimize stakeholder involvement",
+      "C": "To limit project scope",
+      "D": "To save money, or to accelerate development and access specialized expertise. 9)"
+    },
+    "answer": "D",
+    "id": 177
+  },
+  {
+    "page": 10,
+    "numberOnPage": 13,
+    "question": "What's the difference between Use Cases and User Stories?",
+    "options": {
+      "A": "The use case is a business artifact which defines the software requirement or an application feature. Whereas use story is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
+      "B": "The user story contains complete and lengthy descriptions. A use case contains simplified and short descriptions",
+      "C": "The user story is a business artifact which defines the software requirement or an application feature. Whereas use case is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
+      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions (9)"
+    },
+    "answer": "D",
+    "id": 178
+  },
+  {
+    "page": 10,
+    "numberOnPage": 14,
+    "question": "Which of the following statements INCORRECTLY describes types of software requirements?",
+    "options": {
+      "A": "Business rules are the origin of several types of software requirements, but they are not software requirements themselves.",
+      "B": "Nonfunctional requirements describe the system's performance characteristics rather than its specific behaviors",
+      "C": "Functional requirements describe how the system will perform certain actions under specific conditions",
+      "D": "Quality attributes describe the system's functional behaviors in terms of user interactions"
+    },
+    "answer": "D",
+    "id": 179
+  },
+  {
+    "page": 10,
+    "numberOnPage": 15,
+    "question": "Which of the following is the most precise definition of “requirement(s)\"?",
+    "options": {
+      "A": "A requirement is anything that drives design choices.",
+      "B": "A requirement is a property that a product must have to provide value to a stakeholder.",
+      "C": "Requirements are a specification of what should be implemented. They are descriptions of how the system should behave, or a system property or attribute. They may be a constraint on the development process of the system.",
+      "D": "Requirements are what customers want"
+    },
+    "answer": "C",
+    "id": 180
+  },
+  {
+    "page": 10,
+    "numberOnPage": 16,
+    "question": "Which of the following best describes the primary purpose of a vision and scope document?",
+    "options": {
+      "A": "To detail the technical specifications of the project.",
+      "B": "To collect business requirements into a single deliverable for subsequent development work.",
+      "C": "To outline the marketing strategy for the product.",
+      "D": "To provide a detailed project timeline."
+    },
+    "answer": "B",
+    "id": 181
+  },
+  {
+    "page": 10,
+    "numberOnPage": 17,
+    "question": "Which of the following statements best describes a key aspect of performance requirements for a software system?",
+    "options": {
+      "A": "Performance requirements focus solely on the visual design and user interface of the system.",
+      "B": "Performance requirements include the responsiveness of the system to user inquiries, such as the number of seconds to display a webpage.",
+      "C": "Performance requirements are concerned only with the physical storage capacity of the system's database.",
+      "D": "Performance requirements are unrelated to the external factors like network connections and hardware components."
+    },
+    "answer": "B",
+    "id": 182
+  },
+  {
+    "page": 10,
+    "numberOnPage": 18,
+    "question": "Which of the following statements are incorrect about throwaway prototypes?",
+    "options": {
+      "A": "most appropriate when the team faces uncertainty, ambiguity, incompleteness, or vagueness in the requirements",
+      "B": "when build a throwaway prototype, they ignore solid software construction techniques",
+      "C": "you might prefer to call it a releasable prototype",
+      "D": "Build a throwaway prototype to answer questions, resolve uncertainties, and improve requirements quality"
+    },
+    "answer": "C",
+    "id": 183
+  },
+  {
+    "page": 10,
+    "numberOnPage": 19,
+    "question": "Which of the following best describes the structure of the Requirements Traceability Matrix (RTM)?",
+    "options": {
+      "A": "It is a spreadsheet that lists requirements and their corresponding test cases",
+      "B": "It is a graphical representation of the project schedule",
+      "C": "It is a tool used to manage project risks",
+      "D": "It is a spreadsheet that maps requirements to other project artifacts such as design documents, test"
+    },
+    "answer": "D",
+    "id": 184
+  },
+  {
+    "page": 10,
+    "numberOnPage": 20,
+    "question": "Which of the following characteristics should a collection of requirements exhibit?",
+    "options": {
+      "A": "Completeness, meaning it is acceptable if some necessary information is absent as long as the core requirements are documented.",
+      "B": "Modifiability, which allows changes to be made without maintaining a history of changes or considering dependencies among requirements.",
+      "C": "Consistency, ensuring that requirements do not conflict with other requirements or higher-level business, user, or system requirements.",
+      "D": "Traceability, where requirements should be loosely linked and not necessarily connected to their origin or to derived elements."
+    },
+    "answer": "C",
+    "id": 185
+  },
+  {
+    "page": 11,
+    "numberOnPage": 1,
+    "question": "Which of the following activities fall under the core activities of requirements management?",
+    "options": {
+      "A": "Document formatting, project scheduling, risk management, and budget tracking.",
+      "B": "Quality assurance, stakeholder management, resource allocation, and system testing.",
+      "C": "Version control, change control, requirements status tracking, and requirements tracing.",
+      "D": "Designing user interfaces, coding, testing software modules, and system deployment. iV)"
+    },
+    "answer": "C",
+    "id": 186
+  },
+  {
+    "page": 11,
+    "numberOnPage": 2,
+    "question": "Which of the following statements is incorrect about ERD?",
+    "options": {
+      "A": "Individual instances of an entity will have the same attribute values",
+      "B": "The cardinality, or multiplicity, of each relationship is shown with a number or letter on the lines that connect entities and relationships",
+      "C": "Each entity is described by one or more attributes",
+      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities V)"
+    },
+    "answer": "A",
+    "id": 187
+  },
+  {
+    "page": 11,
+    "numberOnPage": 3,
+    "question": "Which of the following statements is incorrect about mockup?",
+    "options": {
+      "A": "It is also called a horizontal prototype",
+      "B": "It dives into all the architectural layers or into detailed functionality",
+      "C": "It displays the facades of user interface screens and permits some navigation between them",
+      "D": "It lets you explore some specific behaviors of the intended system, with the goal of refining the requirements"
+    },
+    "answer": "B",
+    "id": 188
+  },
+  {
+    "page": 11,
+    "numberOnPage": 4,
+    "question": "Which of the following factors can act as a barrier to requirements reuse?",
+    "options": {
+      "A": "Lack of stakeholder involvement",
+      "B": "Frequent updates and version control of requirements documentation",
+      "C": "Standardized format for requirements documentation",
+      "D": "Requirements written in natural language are ambiguities, missing information, and hidden assumptions"
+    },
+    "answer": "D",
+    "id": 189
+  },
+  {
+    "page": 11,
+    "numberOnPage": 5,
+    "question": "Which of the following statements best describes a \"horizontal prototype\" in the context of software development?",
+    "options": {
+      "A": "A horizontal prototype focuses on the user interface, allowing exploration of specific behaviors without diving into detailed functionality or architectural layers.",
+      "B": "A horizontal prototype fully implements all layers of the system, from the user interface to the backend services.",
+      "C": "A horizontal prototype is used to validate the architectural approach and test critical timing requirements.",
+      "D": "A horizontal prototype includes detailed implementation of business logic and database interactions. 9)"
+    },
+    "answer": "A",
+    "id": 190
+  },
+  {
+    "page": 11,
+    "numberOnPage": 6,
+    "question": "Which statement accurately describes the implementation of a COTS package?",
+    "options": {
+      "A": "COTS packages always require significant customization.",
+      "B": "Some COTS packages can be used out of the box with little to no modification",
+      "C": "COTS packages provide unlimited flexibility to meet all business requirements",
+      "D": "All COTS packages require integration with other systems. 9)"
+    },
+    "answer": "B",
+    "id": 191
+  },
+  {
+    "page": 11,
+    "numberOnPage": 7,
+    "question": "How can you explain the statement \"Implicit requirements can also be unknown unknowns\"?",
+    "options": {
+      "A": "During the SRS process, customers should always be required to spell out their unknown unknowns.",
+      "B": "An unknown unknown cannot be known and therefore we can not make them explicit requirements.",
+      "C": "There are matters that should be, but are not, elicited through the elicitation process. They exist, but they are not realized.",
+      "D": "They help us reveal both known unknowns and more unknown unknowns."
+    },
+    "answer": "C",
+    "id": 192
+  },
+  {
+    "page": 11,
+    "numberOnPage": 8,
+    "question": "How does prototyping mitigate risks in requirements engineering?",
+    "options": {
+      "A": "By providing stakeholders with a visual representation to validate ambiguous requirements",
+      "B": "By finalizing system requirements early",
+      "C": "By focusing on coding rather than design",
+      "D": "By skipping the requirements validation phase"
+    },
+    "answer": "A",
+    "id": 193
+  },
+  {
+    "page": 11,
+    "numberOnPage": 9,
+    "question": "How does the MoSCoW method assist in prioritizing requirements?",
+    "options": {
+      "A": "By categorizing requirements as Must-have, Should-have, Could-have, and Won't-have",
+      "B": "By focusing on technical feasibility",
+      "C": "By skipping stakeholder engagement",
+      "D": "By eliminating low-priority requirements V)"
+    },
+    "answer": "A",
+    "id": 194
+  },
+  {
+    "page": 11,
+    "numberOnPage": 10,
+    "question": "How should data flows be represented between processes, data stores, and external entities ina DFD?",
+    "options": {
+      "A": "Directly from one process to another.",
+      "B": "Directly from one data store to another.",
+      "C": "Through a process bubble, not directly between data stores or between external entities and data stores.",
+      "D": "Directly between external entities and data stores."
+    },
+    "answer": "C",
+    "id": 195
+  },
+  {
+    "page": 11,
+    "numberOnPage": 11,
+    "question": "How can reusable requirements be stored for easy reference?",
+    "options": {
+      "A": "By storing them in a spreadsheet",
+      "B": "By copying them into every new project document",
+      "C": "By linking to them from a shared location such as a database or a requirements management tool",
+      "D": "By creating new versions for every instance they are used"
+    },
+    "answer": "C",
+    "id": 196
+  },
+  {
+    "page": 11,
+    "numberOnPage": 12,
+    "question": "When defining installability requirements, which of the following factors is most important to measure how easy it is to install a system?",
+    "options": {
+      "A": "The number of additional components that need to be installed with the system.",
+      "B": "The average time required for an untrained user to successfully complete the installation process.",
+      "C": "The type of hardware used during the installation process.",
+      "D": "The number of user profiles that need to be transferred during installation. iV)"
+    },
+    "answer": "B",
+    "id": 197
+  },
+  {
+    "page": 11,
+    "numberOnPage": 13,
+    "question": "Why is it crucial for a business analyst to communicate requirements effectively and efficiently?",
+    "options": {
+      "A": "To ensure that requirements are documented only once.",
+      "B": "To facilitate ongoing collaboration and ensure the team understands the requirements.",
+      "C": "To avoid the need for visual analysis models.",
+      "D": "To reduce the number of requirements V7)"
+    },
+    "answer": "B",
+    "id": 198
+  },
+  {
+    "page": 11,
+    "numberOnPage": 14,
+    "question": "Consider the use case diagram for the Chemical Tracking System. How does the \"extend\" relationship between \"Request a Chemical\" and \"Search Vendor Catalogs\" affect the system's functionality?",
+    "options": {
+      "A": "It allows \"Request a Chemical\" to function independently without any alternative flows.",
+      "B": "It integrates \"Search Vendor Catalogs\" into the normal flow of \"Request a Chemical.\"",
+      "C": "It provides an optional alternative flow for requesting chemicals from a vendor.",
+      "D": "It duplicates the steps of \"Search Vendor Catalogs” within \"Request a Chemical.\" <<extend>> Search Vendor Catalogs V)"
+    },
+    "answer": "C",
+    "id": 199
+  },
+  {
+    "page": 11,
+    "numberOnPage": 15,
+    "question": "huwéng dén chtre nang hé théng nhu thé nao? External quality attributes describe characteristics that are observed when the software is executing. Which following definitions is Integrity?",
+    "options": {
+      "A": "It deals with blocking unauthorized access to system functions or data, ensuring that the software is protected from malware attacks, and so on",
+      "B": "It is the degree to which a system continues to function properly when confronted with invalid inputs.",
+      "C": "It deals with preventing information loss and preserving the correctness of data entered into the system",
+      "D": "It deal with the need to prevent a system from doing any injury to people or damage to property."
+    },
+    "answer": "C",
+    "id": 200
+  },
+  {
+    "page": 11,
+    "numberOnPage": 16,
+    "question": "Evaluate the effectiveness of using business process modeling to discover business rules. Which of the following best describes its impact?",
+    "options": {
+      "A": "It only identifies computational rules and ignores constraints.",
+      "B": "It helps identify rules affecting each process step, including constraints and triggering events.",
+      "C": "It focuses solely on the analysis of existing documentation",
+      "D": "It is ineffective in discovering business rules reiated to data states."
+    },
+    "answer": "B",
+    "id": 201
+  },
+  {
+    "page": 11,
+    "numberOnPage": 17,
+    "question": "In the context of change management on agile projects, how are changes typically managed to maintain alignment with business objectives and priorities?",
+    "options": {
+      "A": "By freezing the product backlog after each iteration to prevent any changes until the next iteration.",
+      "B": "By maintaining a dynamic product backlog where new tasks are prioritized based on business value, and lower-priority tasks can be deferred or removed.",
+      "C": "By allowing changes only during a predefined change window, outside of which no changes are permitted.",
+      "D": "By escalating all change requests to a higher-level change authority, regardless of their impact on the project. 7)"
+    },
+    "answer": "B",
+    "id": 202
+  },
+  {
+    "page": 11,
+    "numberOnPage": 18,
+    "question": "In the context of a data dictionary, which of the following is true about organizing data elements?",
+    "options": {
+      "A": "Each data element in the dictionary should be represented only by primitive types.",
+      "B": "The data dictionary should only store information about complex data structures, not individual data elements.",
+      "C": "The data dictionary should list all data elements alphabetically, regardiess of their relationships or grouping in the system.",
+      "D": "The data dictionary should contain information about each data element, including its data type, length, and any associated constraints."
+    },
+    "answer": "D",
+    "id": 203
+  },
+  {
+    "page": 11,
+    "numberOnPage": 19,
+    "question": "the complexity of the project. Which approach would you recommend?",
+    "options": {
+      "A": "Replace the product owner with a more knowledgeable individual.",
+      "B": "Collaborate with multiple business analysts and product champions to gather comprehensive requirements.",
+      "C": "Simplify the project to reduce complexity.",
+      "D": "Delegate all decision-making to the development team."
+    },
+    "answer": "B",
+    "id": 204
+  },
+  {
+    "page": 12,
+    "numberOnPage": 1,
+    "question": "What are the purposes of prioritizing the requirements? Choose 2 correct answers",
+    "options": {
+      "A": "To ensure that the team implements the highest value or most timely functionality first",
+      "B": "To determine which release or increment will contain each feature or set of requirements",
+      "C": "To finish the project faster",
+      "D": "To facilitate the release of the product"
+    },
+    "answer": "AB",
+    "id": 205
+  },
+  {
+    "page": 12,
+    "numberOnPage": 2,
+    "question": "What do product champions do? Choose 2 correct answers",
+    "options": {
+      "A": "They gather requirements from other members of the user classes they represent and reconcile inconsistencies",
+      "B": "They serve as the primary interface between members of a single user class and the project's business analyst",
+      "C": "They implement the coding standards",
+      "D": "They write requirements documents"
+    },
+    "answer": "AB",
+    "id": 206
+  },
+  {
+    "page": 12,
+    "numberOnPage": 3,
+    "question": "What technique is used to represent the scope of a project? (Choose 2 correct answers)",
+    "options": {
+      "A": "Ecosystem map",
+      "B": "Use case",
+      "C": "Context diagram",
+      "D": "ERD"
+    },
+    "answer": "BC",
+    "id": 207
+  },
+  {
+    "page": 12,
+    "numberOnPage": 4,
+    "question": "Which elements are mandatory in use case? (Choose 2 answers)",
+    "options": {
+      "A": "Post-condition",
+      "B": "Actors",
+      "C": "Pre-condition",
+      "D": "Name V)"
+    },
+    "answer": "BD",
+    "id": 208
+  },
+  {
+    "page": 12,
+    "numberOnPage": 5,
+    "question": "Which one is a non-functional requirement? (Choose 2 correct answers)",
+    "options": {
+      "A": "The messages between the client and server shall be in YAML 1.2 format?",
+      "B": "The user shall be able to select the course number",
+      "C": "Communication between the client and server will be expressed in EBCDIC encoding iV)"
+    },
+    "answer": "AC",
+    "id": 209
+  },
+  {
+    "page": 12,
+    "numberOnPage": 6,
+    "question": "Which of the following statements accurately describe user stories and epics in agile development? Select all that apply",
+    "options": {
+      "A": "Story decomposition refers to breaking down user stories into smaller epics for implementation in agile projects",
+      "B": "Epics are user stories that are too large to be implemented in a single iteration",
+      "C": "User stories are concise statements that articulate user needs and serve as a starting point for detailed discussions iv) BC@Epics chia nhé thanh User Stories Requirements engineering can be split into and Choose 2 correct answers"
+    },
+    "answer": "BC",
+    "id": 210
+  },
+  {
+    "page": 12,
+    "numberOnPage": 7,
+    "question": "Requirements engineering can be split into and Choose 2 correct answers",
+    "options": {
+      "A": "requirements development",
+      "B": "requirements management",
+      "C": "requirements elicitation",
+      "D": "requirements confirmation 0)"
+    },
+    "answer": "AB",
+    "id": 211
+  },
+  {
+    "page": 12,
+    "numberOnPage": 8,
+    "question": "To illustrate the data object relationships, which kinds of representation should be used? (Choose 2 correct answers)",
+    "options": {
+      "A": "Entity-relationship diagram",
+      "B": "Class diagram",
+      "C": "Data dictionary",
+      "D": "Context diagram 0)"
+    },
+    "answer": "AB",
+    "id": 212
+  },
+  {
+    "page": 12,
+    "numberOnPage": 9,
+    "question": "Two important goals of writing requirements are that: (Choose 2 answers)",
+    "options": {
+      "A": "Anyone who reads the requirement comes to the same interpretation as any other reader",
+      "B": "Each reader’s interpretation matches what the author intended to communicate",
+      "C": "Developers find the requirements technically easy to understand",
+      "D": "Customers are happy iV)"
+    },
+    "answer": "AB",
+    "id": 213
+  },
+  {
+    "page": 12,
+    "numberOnPage": 10,
+    "question": "The tasks of a business analyst include (choose 2 correct answers)",
+    "options": {
+      "A": "Documenting business requirements",
+      "B": "Directing testing tasks for product development",
+      "C": "Directing programming tasks for product development",
+      "D": "Identifying user classes of the product"
+    },
+    "answer": "AD",
+    "id": 214
+  },
+  {
+    "page": 12,
+    "numberOnPage": 11,
+    "question": "We can resuse all authentication requirements from the previous project by copy from a library of reusable components. Which dimensions does the statement refer to?",
+    "options": {
+      "A": "extend of modification",
+      "B": "reuse mechanism",
+      "C": "extend of reuses"
+    },
+    "answer": "BC",
+    "id": 215
+  },
+  {
+    "page": 12,
+    "numberOnPage": 12,
+    "question": "What is true about a software prototype? Choose 3 correct answers",
+    "options": {
+      "A": "Itis a partial implementation of a proposed new product",
+      "B": "Itis a possible implementation of a proposed new product",
+      "C": "Itis a preliminary implementation of a proposed new product",
+      "D": "Itis a complete implementation of a proposed new product"
+    },
+    "answer": "ABC",
+    "id": 216
+  },
+  {
+    "page": 12,
+    "numberOnPage": 13,
+    "question": "What are the tasks of a business analyst? Choose 3 correct answers",
+    "options": {
+      "A": "Define business requirements",
+      "B": "Identify project stakeholders and user classes",
+      "C": "Document requirements",
+      "D": "Lead requirements prioritization"
+    },
+    "answer": "ABC",
+    "id": 217
+  },
+  {
+    "page": 12,
+    "numberOnPage": 14,
+    "question": "What does acceptance criteria include? Choose 3 correct answers",
+    "options": {
+      "A": "Passing a defined set of acceptance tests based on user requirements",
+      "B": "Demonstrating satisfaction of specific nonfunctional requirements",
+      "C": "Tracking open defects and issues",
+      "D": "Having a trendy user interface"
+    },
+    "answer": "ABC",
+    "id": 218
+  },
+  {
+    "page": 12,
+    "numberOnPage": 15,
+    "question": "What should a business analyst do in an Agile project? Chooses 3 correct answers",
+    "options": {
+      "A": "Define a lightweight, flexible requirements process and adapt it as the project warrants",
+      "B": "Ensure that requirements documentation is at the right level: very detailed",
+      "C": "Help validate that customer needs are accurately represented in the product backlog",
+      "D": "Facilitate backlog prioritization )"
+    },
+    "answer": "ACD",
+    "id": 219
+  },
+  {
+    "page": 12,
+    "numberOnPage": 16,
+    "question": "Which of the following are true about a dashboard? Choose 3 correct answers",
+    "options": {
+      "A": "Itis a screen display or printed report",
+      "B": "It uses multiple textual and/or graphical representations of data",
+      "C": "It aims to provide a consolidated, multidimensional view of what is going on in an organization or a process",
+      "D": "Itis a brochure to promote the product 0)"
+    },
+    "answer": "ABC",
+    "id": 220
+  },
+  {
+    "page": 12,
+    "numberOnPage": 17,
+    "question": "Which of the following are the signals indicating that you have completed requirements elicitation? Choose 3 correct answers",
+    "options": {
+      "A": "Users repeat issues they already covered in previous discussions",
+      "B": "Suggested new features, user requirements, or functional requirements are all deemed to be out of scope",
+      "C": "Proposed new requirements are all low priority",
+      "D": "Developers and testers who review the requirements for an area raise many questions iV) ABC@@D sai vi \"Developers and testers who review the requirements for an area raise few questions\""
+    },
+    "answer": "ABC",
+    "id": 221
+  },
+  {
+    "page": 12,
+    "numberOnPage": 18,
+    "question": "Which of the following are common places and ways to look for business rules? Choose 3 correct answers",
+    "options": {
+      "A": "“Common knowledge” from the organization, often collected from individuals who have worked with the business for a long time and know the details of how it operates",
+      "B": "Legacy systems that embed business rules in their requirements and code",
+      "C": "Analysis of existing documentation, including requirements specifications from earlier projects, regulations industry standards, corporate policy documents, contracts, and business plans",
+      "D": "Business laws iV)"
+    },
+    "answer": "ABC",
+    "id": 222
+  },
+  {
+    "page": 12,
+    "numberOnPage": 19,
+    "question": "Why do we have to label the requirements in a software requirements specification (SRS)? (Choose 3 correct answers)",
+    "options": {
+      "A": "It allows us to refer to specific requirements in a change request, modification history, cross-reference, or requirements traceability matrix",
+      "B": "It enables reusing the requirements in multiple projects",
+      "C": "It facilitates collaboration between team members when they're discussing requirements",
+      "D": "It makes the SRS look more professional"
+    },
+    "answer": "ABC",
+    "id": 223
+  },
+  {
+    "page": 12,
+    "numberOnPage": 20,
+    "question": "Customers have the right to: (choose 3 correct answers)",
+    "options": {
+      "A": "expect business analysts to learn about their business and their objectives",
+      "B": "describe characteristics that will make the product easy to use",
+      "C": "receive a system that meets their functional needs and quality expectations",
+      "D": "promptly communicate changes to the requirements"
+    },
+    "answer": "ABC",
+    "id": 224
+  },
+  {
+    "page": 13,
+    "numberOnPage": 1,
+    "question": "Entries in the data dictionary represent the following types of data elements: (choose 3 correct answers)",
+    "options": {
+      "A": "Primitive",
+      "B": "Structure",
+      "C": "Repeating group",
+      "D": "Virtual"
+    },
+    "answer": "ABC",
+    "id": 225
+  },
+  {
+    "page": 13,
+    "numberOnPage": 2,
+    "question": "In software development, what do requirements drive? Choose 3 correct answers",
+    "options": {
+      "A": "Project planning",
+      "B": "Design and coding",
+      "C": "Testing activities",
+      "D": "Financial activities V)"
+    },
+    "answer": "ABC",
+    "id": 226
+  },
+  {
+    "page": 13,
+    "numberOnPage": 3,
+    "question": "In agile projects, what is true about an epic? Choose 3 correct answers",
+    "options": {
+      "A": "Itis a user story that is too large to fully implement in a single iteration",
+      "B": "It must be split into sets of smaller stories",
+      "C": "It can span iterations",
+      "D": "Itis the most important feature of an iteration"
+    },
+    "answer": "ABC",
+    "id": 227
+  },
+  {
+    "page": 13,
+    "numberOnPage": 4,
+    "question": "Requirement statements must be: (Choose 3 correct answers)",
+    "options": {
+      "A": "Feasible",
+      "B": "Correct",
+      "C": "Verifiable",
+      "D": "Flexible ABC@Characteristics of requirement statements —-Complete —Correct -Feasible —Necessary —Prioritized —Unambiguous —Verifiable@(Da cé trong tai liéu & slide dau) The structure of the vision and scope document includes: (Choose three correct answers)"
+    },
+    "answer": "ABC",
+    "id": 228
+  },
+  {
+    "page": 13,
+    "numberOnPage": 5,
+    "question": "The structure of the vision and scope document includes: (Choose three correct answers)",
+    "options": {
+      "A": "Scope and Limitations",
+      "B": "Specific Requirements",
+      "C": "Business Context",
+      "D": "Business Requirements",
+      "E": "General Description g fHeang"
+    },
+    "answer": "ACD",
+    "id": 229
+  },
+  {
+    "page": 13,
+    "numberOnPage": 6,
+    "question": "The benefits of effective requirements reuse include: (choose 3 correct answers)",
+    "options": {
+      "A": "faster delivery",
+      "B": "lower development costs",
+      "C": "reduced rework",
+      "D": "fewer test cases ©__"
+    },
+    "answer": "ABC",
+    "id": 230
+  },
+  {
+    "page": 13,
+    "numberOnPage": 7,
+    "question": "The elements of risk management are (choose 3 correct answers)",
+    "options": {
+      "A": "Risk assessment",
+      "B": "Risk avoidance",
+      "C": "Risk control",
+      "D": "Risk reduction ©."
+    },
+    "answer": "ACD",
+    "id": 231
+  },
+  {
+    "page": 13,
+    "numberOnPage": 8,
+    "question": "What is NOT Requirements development tools?",
+    "options": {
+      "A": "Elicitation tools",
+      "B": "Prototyping tools",
+      "C": "Modeling tools",
+      "D": "Specific tools"
+    },
+    "answer": "D",
+    "id": 232
+  },
+  {
+    "page": 13,
+    "numberOnPage": 9,
+    "question": "What is not the purpose of a Use Case Diagram?",
+    "options": {
+      "A": "Use case diagrams are both behavior diagrams because they describe the behavior of the system. They are also structure diagrams, serving as a special case of class diagrams where classifiers are restricted to be either actors or use cases related to each other with associations",
+      "B": "Use case diagrams show the graphical user interface that needs to be implemented.",
+      "C": "Use case diagrams are usually referred to as behavior diagrams used to describe a set of actions (use cases) that some system or systems (subject) should or can perform in collaboration with one or more external users of the system (actors)",
+      "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value 9)"
+    },
+    "answer": "B",
+    "id": 233
+  },
+  {
+    "page": 13,
+    "numberOnPage": 10,
+    "question": "What activities is not included in a representative requirements development process?",
+    "options": {
+      "A": "Select an appropriate software development life cycle",
+      "B": "Select elicitation techniques",
+      "C": "Review requirement",
+      "D": "Plan elicitation",
+      "E": "Analysis requirement"
+    },
+    "answer": "A",
+    "id": 234
+  },
+  {
+    "page": 13,
+    "numberOnPage": 11,
+    "question": "Which is NOT activitie of risk management?",
+    "options": {
+      "A": "Risk avoidance",
+      "B": "Risk assessment",
+      "C": "Risk monitoring",
+      "D": "Risk control"
+    },
+    "answer": "A",
+    "id": 235
+  },
+  {
+    "page": 13,
+    "numberOnPage": 12,
+    "question": "Which is NOT element of risk management?",
+    "options": {
+      "A": "Risk avoidance is one way to deal with a risk: don't do the risky thing",
+      "B": "Risk assessment is the process of examining a project to identify potential threats",
+      "C": "Risk control activities to manage the top-priority risks you identified",
+      "D": "Risk management planning produces a plan for dealing with each significant risk, including mitigation approaches, contingency plans, owners, and timelines"
+    },
+    "answer": "A",
+    "id": 236
+  },
+  {
+    "page": 13,
+    "numberOnPage": 13,
+    "question": "Which of the following is not an external quality attribute?",
+    "options": {
+      "A": "Availability",
+      "B": "Integrity",
+      "C": "Safety",
+      "D": "Reusability iV)"
+    },
+    "answer": "D",
+    "id": 237
+  },
+  {
+    "page": 13,
+    "numberOnPage": 14,
+    "question": "Which of the following is not an elicitation technique?",
+    "options": {
+      "A": "Interviews",
+      "B": "Focus groups",
+      "C": "Observations",
+      "D": "Training courses"
+    },
+    "answer": "D",
+    "id": 238
+  },
+  {
+    "page": 13,
+    "numberOnPage": 15,
+    "question": "Which of the following is not included in software requirements specification (SRS) template ?",
+    "options": {
+      "A": "Quality Attributes",
+      "B": "External interface",
+      "C": "Data requirements",
+      "D": "Design features",
+      "E": "System features iV)"
+    },
+    "answer": "D",
+    "id": 239
+  },
+  {
+    "page": 13,
+    "numberOnPage": 16,
+    "question": "Which of the following is NOT a characteristic of Software as a service (SaaS)?",
+    "options": {
+      "A": "Subscription-based pricing",
+      "B": "On-premises deployment",
+      "C": "Centralized hosting",
+      "D": "Internet accessibility iV)"
+    },
+    "answer": "B",
+    "id": 240
+  },
+  {
+    "page": 13,
+    "numberOnPage": 17,
+    "question": "Which of the following does NOT suggest an overall description of the Software Requirements Specification template?",
+    "options": {
+      "A": "Product perspective",
+      "B": "User classes and characteristics",
+      "C": "Operating environment",
+      "D": "Design and implementation constraints",
+      "E": "Assumptions and dependencies",
+      "F": "System feature Q im 4system Feature System feature typically refers to specific functions or capabilities of the product rather than an overall description of the SRS template"
+    },
+    "answer": "F",
+    "id": 241
+  },
+  {
+    "page": 13,
+    "numberOnPage": 18,
+    "question": "Which of the following is NOT the essential elements of a use case?",
+    "options": {
+      "A": "ID and Name",
+      "B": "Description",
+      "C": "A trigger condition",
+      "D": "Zero or more preconditions, one or more postconditions",
+      "E": "Normal Flow",
+      "F": "Alternative flow"
+    },
+    "answer": "F",
+    "id": 242
+  },
+  {
+    "page": 13,
+    "numberOnPage": 19,
+    "question": "Which of the following is not an elicitation activity? — tation",
+    "options": {
+      "A": "Define product vision and project scope iS) oo",
+      "B": "Hold elicitation interviews = sanpons",
+      "C": "Observe users performing their jobs S. taedey moumiomet Omen",
+      "D": "Model the application environment erview iV)"
+    },
+    "answer": "D",
+    "id": 243
+  },
+  {
+    "page": 13,
+    "numberOnPage": 20,
+    "question": "Which of the following is NOT characteristic of the user?",
+    "options": {
+      "A": "A subset of the product's customers",
+      "B": "A subset of the product's users",
+      "C": "A superset of stakeholders",
+      "D": "Includes direct users and indirect users"
+    },
+    "answer": "C",
+    "id": 244
+  },
+  {
+    "page": 13,
+    "numberOnPage": 21,
+    "question": "Which of the following is not a requirement attribute?",
+    "options": {
+      "A": "Date the requirement was created",
+      "B": "Author who wrote the requirement",
+      "C": "Status",
+      "D": "Customer who came up with the idea about this requirement 9. Heang"
+    },
+    "answer": "D",
+    "id": 245
+  },
+  {
+    "page": 14,
+    "numberOnPage": 1,
+    "question": "Which of the following is NOT a purpose of creating a mock-up?",
+    "options": {
+      "A": "To refine user interface design",
+      "B": "To test architectural feasibility",
+      "C": "To allow users to judge the overall workflow and requirements",
+      "D": "To simulate a user interface with no real functionality"
+    },
+    "answer": "B",
+    "id": 246
+  },
+  {
+    "page": 14,
+    "numberOnPage": 2,
+    "question": "Which of the following is not a benefit of having a clear set of expectations for product champions?",
+    "options": {
+      "A": "Encouraging accountability and clarity of role",
+      "B": "Helping champions align with project goals",
+      "C": "Guaranteeing the project will stay on budget",
+      "D": "Facilitating negotiation of the champion's responsibilities iV) res"
+    },
+    "answer": "C",
+    "id": 247
+  },
+  {
+    "page": 14,
+    "numberOnPage": 3,
+    "question": "Which of the following is NOT included in the list of Software Bill of Rights Requirements?",
+    "options": {
+      "A": "Expect BAs to speak your language",
+      "B": "Expect BAs to learn about your business and your objectives",
+      "C": "Promptly communicate changes to the requirements",
+      "D": "Receive explanations of requirements practices and deliverables",
+      "E": "Change your requirements",
+      "F": "Expect an environment of mutual respect"
+    },
+    "answer": "C",
+    "id": 248
+  },
+  {
+    "page": 14,
+    "numberOnPage": 4,
+    "question": "Which of the following is NOT a principle of software process improvement?",
+    "options": {
+      "A": "People and organizations change only when they have an incentive to do so",
+      "B": "Prioritizing individual contributions over teamwork",
+      "C": "Process changes should be goal-oriented",
+      "D": "Process improvement should be evolutionary and continuous"
+    },
+    "answer": "B",
+    "id": 249
+  },
+  {
+    "page": 14,
+    "numberOnPage": 5,
+    "question": "Which one of the following is NOT true the software customer?",
+    "options": {
+      "A": "A subset of stakeholders",
+      "B": "An individual or organization that derives either direct or indirect benefit from a product",
+      "C": "They could request, pay for, select, specify, use, or receive the output generated by a software product",
+      "D": "Such as legal staff, compliance auditors, suppliers 0)"
+    },
+    "answer": "D",
+    "id": 250
+  },
+  {
+    "page": 14,
+    "numberOnPage": 6,
+    "question": "Which of the following is NOT about Requirements validation?",
+    "options": {
+      "A": "Itis the fourth component of requirements development",
+      "B": "Itis ensure that they have all the desired properties of high-quality requirements is also an essential activity",
+      "C": "Itis assesses whether you have written the right requirements: they trace back to business objectives",
+      "D": "It allows teams to build a correct solution that meets the stated business objectives"
+    },
+    "answer": "B",
+    "id": 251
+  },
+  {
+    "page": 14,
+    "numberOnPage": 7,
+    "question": "Which of the following is NOT about packaged solution?",
+    "options": {
+      "A": "You build systems by using your own staff.",
+      "B": "It needs to be configured, integrated, and extended to work in the target environment",
+      "C": "You can purchase a package as part or all of the solution for a new project",
+      "D": "Evaluate solution candidates so that you can select the most appropriate package"
+    },
+    "answer": "A",
+    "id": 252
+  },
+  {
+    "page": 14,
+    "numberOnPage": 8,
+    "question": "Which of the following is NOT about outsourced projects?",
+    "options": {
+      "A": "It takes advantage of development skills they have available in-house.",
+      "B": "It's harder to get developer input on requirements and to pass along user feedback on delivered software to developers",
+      "C": "A formal contractual definition of requirements is necessary, which can lead to contention if differences of interpretation are discovered late in the project"
+    },
+    "answer": "A",
+    "id": 253
+  },
+  {
+    "page": 14,
+    "numberOnPage": 9,
+    "question": "Which of the following is NOT about Requirements validation?",
+    "options": {
+      "A": "Itis the fourth component of requirements development",
+      "B": "Itis ensure that they have all the desired properties of high-quality requirements is also an essential activity",
+      "C": "Itis assesses whether you have written the right requirements: they trace back to business objectives",
+      "D": "It allows teams to build a correct solution that meets the stated business objectives 0)"
+    },
+    "answer": "B",
+    "id": 254
+  },
+  {
+    "page": 14,
+    "numberOnPage": 10,
+    "question": "Which of the following is NOT about Agile project?",
+    "options": {
+      "A": "Developers have little interaction with customers after construction begins on projects",
+      "B": "It encourage creating the minimum amount of documentation needed to accurately guide the developers and testers",
+      "C": "BAs or other people responsible for requirements will develop the necessary precision through conversations and documentation when it is needed",
+      "D": "The se collaboration of customers with developers on agile projects generally means that requirements can be documented in less detail"
+    },
+    "answer": "A",
+    "id": 255
+  },
+  {
+    "page": 14,
+    "numberOnPage": 11,
+    "question": "Which of the following is NOT about Change management on Agile projects?",
+    "options": {
+      "A": "Agile processes harness change for the customer's competitive advantage",
+      "B": "Agile projects manage change by maintaining a specific backlog of work to be done",
+      "C": "Accepting change helps to meet evolving business objectives and priorities and to accommodate the limitations of human plans and foresight",
+      "D": "Agile methods vary as to their philosophy on this point; there is no single “correct” approach"
+    },
+    "answer": "D",
+    "id": 256
+  },
+  {
+    "page": 14,
+    "numberOnPage": 12,
+    "question": "Which one of the following is not step of requirement engineering?",
+    "options": {
+      "A": "documentation",
+      "B": "elicitation",
+      "C": "analysis",
+      "D": "design"
+    },
+    "answer": "D",
+    "id": 257
+  },
+  {
+    "page": 14,
+    "numberOnPage": 13,
+    "question": "Which one of these is NOT a Business analyst's task?",
+    "options": {
+      "A": "Communicate requirements",
+      "B": "Document requirements",
+      "C": "Analyze requirements",
+      "D": "Assurance requirements",
+      "E": "Elicit requirements (9)"
+    },
+    "answer": "D",
+    "id": 258
+  },
+  {
+    "page": 14,
+    "numberOnPage": 14,
+    "question": "Requirements development does not include",
+    "options": {
+      "A": "Analysis",
+      "B": "Validation",
+      "C": "Design",
+      "D": "Elicitation iV) C@ Elicitation, Analysis, Specification and Validation. Requirements analysis involves refining the requirements to ensure that all stakeholders understand them and scrutinizing them for errors, omissions, and other deficiencies"
+    },
+    "answer": "C",
+    "id": 259
+  },
+  {
+    "page": 14,
+    "numberOnPage": 15,
+    "question": "Which technique is NOT common for expressing requirements during the Requirements analysis step?",
+    "options": {
+      "A": "Model the application environment",
+      "B": "Create user interface and technical prototypes",
+      "C": "Analyze requirement feasibility",
+      "D": "Prioritize the requirements",
+      "E": "Model the requirements",
+      "F": "Identify requirement origins iV)"
+    },
+    "answer": "F",
+    "id": 260
+  },
+  {
+    "page": 14,
+    "numberOnPage": 16,
+    "question": "Which of the following statements are TRUE about Use Cases?",
+    "options": {
+      "A": "Use Cases are static and do not evolve throughout the software development process",
+      "B": "Use case diagrams are the primary tool to document requirements",
+      "C": "Use Cases are not useful in capturing user requirements",
+      "D": "Use Cases describe the interactions between the system and external entities"
+    },
+    "answer": "D",
+    "id": 261
+  },
+  {
+    "page": 14,
+    "numberOnPage": 17,
+    "question": "What is the primary consequence of requirements problems?",
+    "options": {
+      "A": "Delays and rework",
+      "B": "Increased resource costs",
+      "C": "Faster development process",
+      "D": "Improved product quality iV)"
+    },
+    "answer": "A",
+    "id": 262
+  },
+  {
+    "page": 14,
+    "numberOnPage": 18,
+    "question": "What is Vision and Scope Document derived from?",
+    "options": {
+      "A": "System requirements",
+      "B": "User requirements",
+      "C": "Business requirements",
+      "D": "Original requirements"
+    },
+    "answer": "C",
+    "id": 263
+  },
+  {
+    "page": 14,
+    "numberOnPage": 19,
+    "question": "What is the definition of a condition in which the scope of a project continues to increase in an uncontrolled fashion throughout the development process?",
+    "options": {
+      "A": "Risk",
+      "B": "Inspection",
+      "C": "Scope creep",
+      "D": "Decision rule iV)"
+    },
+    "answer": "C",
+    "id": 264
+  },
+  {
+    "page": 14,
+    "numberOnPage": 20,
+    "question": "What is the definition of a high-level requirement for a product that contains multiple subsystems, which could be all software or software and hardware?",
+    "options": {
+      "A": "Business Requirement",
+      "B": "Functional requirement",
+      "C": "Nonfunctional requirement",
+      "D": "System requirement"
+    },
+    "answer": "D",
+    "id": 265
+  },
+  {
+    "page": 14,
+    "numberOnPage": 21,
+    "question": "What principle ensures that each code unit performs a specific, welldefined function without interference from other parts of the system?",
+    "options": {
+      "A": "Loose coupling",
+      "B": "Information hiding",
+      "C": "Strong cohesion",
+      "D": "All of the others iV) €"
+    },
+    "answer": "C",
+    "id": 266
+  },
+  {
+    "page": 15,
+    "numberOnPage": 1,
+    "question": "What database would be best suited for the following scenario: An app development company is trying to implement a cloud based storage system for their new map-based app. The cloud will manage the longitude and latitude of the data in order to track user location",
+    "options": {
+      "A": "Solr",
+      "B": "Vertica",
+      "C": "Aerospike",
+      "D": "Redis"
+    },
+    "answer": "C",
+    "id": 267
+  },
+  {
+    "page": 15,
+    "numberOnPage": 2,
+    "question": "Which of the following is not an elicitation technique?",
+    "options": {
+      "A": "Interviews",
+      "B": "Focus groups",
+      "C": "Observations",
+      "D": "Training courses"
+    },
+    "answer": "D",
+    "id": 268
+  },
+  {
+    "page": 15,
+    "numberOnPage": 3,
+    "question": "Which of the following is not an external quality attribute?",
+    "options": {
+      "A": "Availability",
+      "B": "Integrity",
+      "C": "Safety",
+      "D": "Reusability"
+    },
+    "answer": "D",
+    "id": 269
+  },
+  {
+    "page": 15,
+    "numberOnPage": 4,
+    "question": "Which of the following is a benefit of prioritizing requirements?",
+    "options": {
+      "A": "Improved project management",
+      "B": "Decreased stakeholder involvement",
+      "C": "Enhanced focus on high-value features",
+      "D": "Reduced scope creep"
+    },
+    "answer": "C",
+    "id": 270
+  },
+  {
+    "page": 15,
+    "numberOnPage": 5,
+    "question": "Which of the following is not included in software requirements specification (SRS) template ?",
+    "options": {
+      "A": "Quality Attributes",
+      "B": "External interface",
+      "C": "Data requirements",
+      "D": "Design features",
+      "E": "System features iV) D@(D4 co trong tai ligu & slide dau)"
+    },
+    "answer": "D",
+    "id": 271
+  },
+  {
+    "page": 15,
+    "numberOnPage": 6,
+    "question": "Which of the following is incorrect that the process of evaluating a project deliverable to determine whether it satisfies customer needs?",
+    "options": {
+      "A": "Validation",
+      "B": "Verification",
+      "C": "Checklist",
+      "D": "Testing © Hoding"
+    },
+    "answer": "C",
+    "id": 272
+  },
+  {
+    "page": 15,
+    "numberOnPage": 7,
+    "question": "Which of the following characteristics of excellent requirements is depicted by the statement: “Requirements don't conflict with other requirements of the same type or with higher-level biz, user, or system requirements ?",
+    "options": {
+      "A": "Complete",
+      "B": "Unambiguous",
+      "C": "Consistent",
+      "D": "Traceable",
+      "E": "Modifiable iV)"
+    },
+    "answer": "C",
+    "id": 273
+  },
+  {
+    "page": 15,
+    "numberOnPage": 8,
+    "question": "Which one of the following is not a step of requirement development?",
+    "options": {
+      "A": "elicitation",
+      "B": "design",
+      "C": "analysis",
+      "D": "validation",
+      "E": "documentation iV)"
+    },
+    "answer": "B",
+    "id": 274
+  },
+  {
+    "page": 15,
+    "numberOnPage": 9,
+    "question": "Which one of the following is a functional requirement?",
+    "options": {
+      "A": "Portability",
+      "B": "Order products",
+      "C": "Maintainability",
+      "D": "Security",
+      "E": "Robustness iV)"
+    },
+    "answer": "B",
+    "id": 275
+  },
+  {
+    "page": 15,
+    "numberOnPage": 10,
+    "question": "Which one is a kind of prototyping that firstly creates a sample for clarifying requirements with the user, then builds up and adds new features to this sample incrementally, and finally releases the final deliverable product based on it?",
+    "options": {
+      "A": "Mockup",
+      "B": "Throwaway prototype",
+      "C": "Evolutionary prototype",
+      "D": "Wireframe V)"
+    },
+    "answer": "C",
+    "id": 276
+  },
+  {
+    "page": 15,
+    "numberOnPage": 11,
+    "question": "Which type of issue occurs when something isn't understood or decided about a requirement?",
+    "options": {
+      "A": "Requirement question",
+      "B": "Incorrect requirement",
+      "C": "Implementation question",
+      "D": "Unneeded requirement"
+    },
+    "answer": "A",
+    "id": 277
+  },
+  {
+    "page": 15,
+    "numberOnPage": 12,
+    "question": "Which type of requirement best describes the behavior and information that the solution will manage, including a specific system actions or responses?",
+    "options": {
+      "A": "Stakeholder Requirements",
+      "B": "Functional Requirements",
+      "C": "Business Requirements",
+      "D": "Non-functional Requirements iV)"
+    },
+    "answer": "B",
+    "id": 278
+  },
+  {
+    "page": 15,
+    "numberOnPage": 13,
+    "question": "Which arrangement describes the increasing amount of requirements and development work when implementing packaged solutions? Order: 1 configured, 2 integrated, 3 extended, 4 out of the box.",
+    "options": {
+      "A": "1,2,3,4",
+      "B": "2,1,3,4",
+      "C": "2,43,1",
+      "D": "4,1,2,3 iV)"
+    },
+    "answer": "D",
+    "id": 279
+  },
+  {
+    "page": 15,
+    "numberOnPage": 14,
+    "question": "Which approach to reviewing requirements involves the author describing a deliverable and soliciting comments on it?",
+    "options": {
+      "A": "Peer deskcheck approach",
+      "B": "Passaround approach",
+      "C": "Walkthrough approach",
+      "D": "Inspection approach iV)"
+    },
+    "answer": "C",
+    "id": 280
+  },
+  {
+    "page": 15,
+    "numberOnPage": 15,
+    "question": "While a mock-up is called a prototype, a proof of concept is called a prototype",
+    "options": {
+      "A": "horizontal, vertical",
+      "B": "vertical, horizontal",
+      "C": "primary, secondary",
+      "D": "front-end, back-end"
+    },
+    "answer": "A",
+    "id": 281
+  },
+  {
+    "page": 15,
+    "numberOnPage": 16,
+    "question": "what type of requirement does this statement belong to?",
+    "options": {
+      "A": "User requirements",
+      "B": "Business rules",
+      "C": "Business requirements",
+      "D": "Quality attributes",
+      "E": "Solution ideas iV)"
+    },
+    "answer": "C",
+    "id": 282
+  },
+  {
+    "page": 15,
+    "numberOnPage": 17,
+    "question": "A collection of definitions for the data elements and data structures that are relevant to the problem domain",
+    "options": {
+      "A": "Data dictionary",
+      "B": "Data flow diagram",
+      "C": "Database",
+      "D": "Relationship 0)"
+    },
+    "answer": "A",
+    "id": 283
+  },
+  {
+    "page": 15,
+    "numberOnPage": 18,
+    "question": "An analysis model that depicts a process flow proceeding from one activity to another",
+    "options": {
+      "A": "Dialog map",
+      "B": "Swimlane diagram",
+      "C": "Context diagram",
+      "D": "Class diagram"
+    },
+    "answer": "B",
+    "id": 284
+  },
+  {
+    "page": 15,
+    "numberOnPage": 19,
+    "question": "An analysis model that visually depicts the various states in which a system or an object in the system can exist, the permitted transitions that can take place between states",
+    "options": {
+      "A": "State-transition diagram",
+      "B": "Swimlane diagram",
+      "C": "Use case diagram",
+      "D": "Data Flow diagram iV)"
+    },
+    "answer": "A",
+    "id": 285
+  },
+  {
+    "page": 15,
+    "numberOnPage": 20,
+    "question": "A designated representative of a specific user class who supplies the user requirements for the group that he or she represents",
+    "options": {
+      "A": "Product manager",
+      "B": "Product champion",
+      "C": "Product backlog",
+      "D": "Product owner"
+    },
+    "answer": "B",
+    "id": 286
+  },
+  {
+    "page": 15,
+    "numberOnPage": 21,
+    "question": "Customers are a(n) of stakeholders",
+    "options": {
+      "A": "subset",
+      "B": "representative",
+      "C": "partner",
+      "D": "equivalent"
+    },
+    "answer": "A",
+    "id": 287
+  },
+  {
+    "page": 15,
+    "numberOnPage": 22,
+    "question": "Consider the following Statement: “If a lead doesn't respond back within 30 days of the first contact, it must be a cold lead and can be marked accordingly”. What types of business rule is being depicted here?",
+    "options": {
+      "A": "Facts",
+      "B": "Constraints",
+      "C": "Action enablers",
+      "D": "inferences",
+      "E": "Computations D@dt doan a lead khéng phan héi trong vong 30 ngay dy doan la a cold lead Consider the following statement: “All the screens in the system must load quickly”. This requirement statement is"
+    },
+    "answer": "D",
+    "id": 288
+  },
+  {
+    "page": 16,
+    "numberOnPage": 1,
+    "question": "Consider the following statement: “All the screens in the system must load quickly”. This requirement statement is",
+    "options": {
+      "A": "Correct and Feasible",
+      "B": "Unambiguous and Testable",
+      "C": "Unambiguous and Non-Testable",
+      "D": "Ambiguous and Non-Testable"
+    },
+    "answer": "D",
+    "id": 289
+  },
+  {
+    "page": 16,
+    "numberOnPage": 2,
+    "question": "Fill in the blank Define vision and scope, select product champions activities should be done stage",
+    "options": {
+      "A": "Specifications",
+      "B": "Validation",
+      "C": "Elicitation",
+      "D": "Analysis iv) (es Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them"
+    },
+    "answer": "C",
+    "id": 290
+  },
+  {
+    "page": 16,
+    "numberOnPage": 3,
+    "question": "Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them",
+    "options": {
+      "A": "Use case diagram",
+      "B": "Data model",
+      "C": "Data dictionary",
+      "D": "Reports iV)"
+    },
+    "answer": "B",
+    "id": 291
+  },
+  {
+    "page": 16,
+    "numberOnPage": 4,
+    "question": "“Every order has a shipping charge” is a:",
+    "options": {
+      "A": "fact",
+      "B": "constraint",
+      "C": "action enabler",
+      "D": "inference"
+    },
+    "answer": "A",
+    "id": 292
+  },
+  {
+    "page": 16,
+    "numberOnPage": 5,
+    "question": "Elicitation is a collaborative and analytical process that includes activities to collect, discover, extract, and",
+    "options": {
+      "A": "gather requirements",
+      "B": "define requirements",
+      "C": "write requirements",
+      "D": "analyze requirements"
+    },
+    "answer": "A",
+    "id": 293
+  },
+  {
+    "page": 16,
+    "numberOnPage": 6,
+    "question": "Outsourced teams in other countries are typically referred to as being",
+    "options": {
+      "A": "offshore",
+      "B": "offline",
+      "C": "on-site",
+      "D": "off-site V)"
+    },
+    "answer": "A",
+    "id": 294
+  },
+  {
+    "page": 16,
+    "numberOnPage": 7,
+    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the value at the cost",
+    "options": {
+      "A": "highest, lowest",
+      "B": "lowest, highest",
+      "C": "highest, highest",
+      "D": "lowest, lowest )"
+    },
+    "answer": "A",
+    "id": 295
+  },
+  {
+    "page": 16,
+    "numberOnPage": 8,
+    "question": "Requirements development does not include:",
+    "options": {
+      "A": "Analysis",
+      "B": "Validation",
+      "C": "Design",
+      "D": "Elicitation"
+    },
+    "answer": "C",
+    "id": 296
+  },
+  {
+    "page": 16,
+    "numberOnPage": 9,
+    "question": "c Validation of requirements assesses whether you have written",
+    "options": {
+      "A": "the right requirements",
+      "B": "the requirements right",
+      "C": "the flexible requirements",
+      "D": "the variable requirements"
+    },
+    "answer": "A",
+    "id": 297
+  },
+  {
+    "page": 16,
+    "numberOnPage": 10,
+    "question": "In a Swimlane diagram, process steps are shown as",
+    "options": {
+      "A": "rectangles",
+      "B": "arrows connecting pairs of rectangles",
+      "C": "diamonds",
+      "D": "ovals"
+    },
+    "answer": "A",
+    "id": 298
+  },
+  {
+    "page": 16,
+    "numberOnPage": 11,
+    "question": "In a project, who is primarily responsible for communicating project information?",
+    "options": {
+      "A": "The business analyst",
+      "B": "The project manager",
+      "C": "The software development team",
+      "D": "The customer community"
+    },
+    "answer": "B",
+    "id": 299
+  },
+  {
+    "page": 16,
+    "numberOnPage": 12,
+    "question": "In an ERD, what is an entity typically represented by?",
+    "options": {
+      "A": "Adiamond shape",
+      "B": "Arectangle",
+      "C": "An oval shape",
+      "D": "Ahexagon shape"
+    },
+    "answer": "B",
+    "id": 300
+  },
+  {
+    "page": 16,
+    "numberOnPage": 13,
+    "question": "In a software requirements specification, which section do user interfaces belong to?",
+    "options": {
+      "A": "Overall description",
+      "B": "System features",
+      "C": "Data requirements",
+      "D": "External interface requirements 0)"
+    },
+    "answer": "D",
+    "id": 301
+  },
+  {
+    "page": 16,
+    "numberOnPage": 14,
+    "question": "In a use case diagram, an arrow from an actor to a use case indicates that he is the actor for the use case",
+    "options": {
+      "A": "primary",
+      "B": "secondary",
+      "C": "main",
+      "D": "side 0)"
+    },
+    "answer": "A",
+    "id": 302
+  },
+  {
+    "page": 16,
+    "numberOnPage": 15,
+    "question": "In the Chemical Tracking System project, what is the relationship between use case: Play a bill and use case Write a check ?",
+    "options": {
+      "A": "include",
+      "B": "extend",
+      "C": "generalization )"
+    },
+    "answer": "A",
+    "id": 303
+  },
+  {
+    "page": 16,
+    "numberOnPage": 16,
+    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called",
+    "options": {
+      "A": "exceptions",
+      "B": "alternative flows",
+      "C": "secondary scenarios",
+      "D": "backup flows"
+    },
+    "answer": "A",
+    "id": 304
+  },
+  {
+    "page": 16,
+    "numberOnPage": 17,
+    "question": "If you prototype the whole solution rather than only the most uncertain, high-risk, or complex portions, your risk is",
+    "options": {
+      "A": "investing excessive effort in prototypes",
+      "B": "distraction by details",
+      "C": "pressure to release the prototype",
+      "D": "unrealistic performance expectations iV)"
+    },
+    "answer": "A",
+    "id": 305
+  },
+  {
+    "page": 16,
+    "numberOnPage": 18,
+    "question": "In context diagram, external entities are illustrated with and data flows are illustrated with",
+    "options": {
+      "A": "rectangles, lines/arcs with arrows",
+      "B": "ovals, lines/arcs with arrows",
+      "C": "ovals, lines/arcs without arrows",
+      "D": "triangles, lines/arcs with arrows 0)"
+    },
+    "answer": "A",
+    "id": 306
+  },
+  {
+    "page": 16,
+    "numberOnPage": 19,
+    "question": "‘Story point” is used to measure which one below?",
+    "options": {
+      "A": "User story",
+      "B": "Code",
+      "C": "Function",
+      "D": "Architecture iV)"
+    },
+    "answer": "A",
+    "id": 307
+  },
+  {
+    "page": 16,
+    "numberOnPage": 20,
+    "question": "Some stakeholders are customers, such as legal staff, compliance auditors, suppliers, contractors, and venture capitalists",
+    "options": {
+      "A": "True",
+      "B": "False iv)"
+    },
+    "answer": "B",
+    "id": 308
+  },
+  {
+    "page": 16,
+    "numberOnPage": 21,
+    "question": "a proposed software system",
+    "options": {
+      "A": "design process",
+      "B": "organizational activities",
+      "C": "stakeholders",
+      "D": "business process V)"
+    },
+    "answer": "D",
+    "id": 309
+  },
+  {
+    "page": 16,
+    "numberOnPage": 22,
+    "question": "D To help reviewers look for typical kinds of errors in the products they review, develop a(n) for each type of requirements document your projects create.",
+    "options": {
+      "A": "defect checklist",
+      "B": "error checklist",
+      "C": "inspection meeting",
+      "D": "support documentation"
+    },
+    "answer": "A",
+    "id": 310
+  },
+  {
+    "page": 16,
+    "numberOnPage": 23,
+    "question": "The four capitalized letters in the MoSCoW prioritization technique stand for",
+    "options": {
+      "A": "Must, Should, Could, Won't",
+      "B": "Must, Should, Could, Will",
+      "C": "Must, Should, Can, Will",
+      "D": "Must, Shall, Could, Won't"
+    },
+    "answer": "A",
+    "id": 311
+  },
+  {
+    "page": 17,
+    "numberOnPage": 1,
+    "question": "The four tasks that are performed to handle a single change request are: evaluate change request, make change decision, implement the change, and",
+    "options": {
+      "A": "verify the change",
+      "B": "validate the change",
+      "C": "test the change",
+      "D": "use the change 0)"
+    },
+    "answer": "A",
+    "id": 312
+  },
+  {
+    "page": 17,
+    "numberOnPage": 2,
+    "question": "The close collaboration of customers with developers on agile projects generally means that requirements can be documented in detail than on traditional projects",
+    "options": {
+      "A": "less",
+      "B": "more",
+      "C": "shorter",
+      "D": "longer iv)"
+    },
+    "answer": "A",
+    "id": 313
+  },
+  {
+    "page": 17,
+    "numberOnPage": 3,
+    "question": "‘The user must be able to sort the project list in forward and reverse alphabetical order” is a",
+    "options": {
+      "A": "business requirement",
+      "B": "user requirement",
+      "C": "functional requirement",
+      "D": "data requirement iV) Hoding"
+    },
+    "answer": "C",
+    "id": 314
+  },
+  {
+    "page": 17,
+    "numberOnPage": 4,
+    "question": "The Chemical Tracking System shall be able to import any valid chemical structure from the ChemDraw (version 13.0 or earlier) and MarvinSketch (version 5.0 or earlier) tools” is an external quality attribute about",
+    "options": {
+      "A": "Availability",
+      "B": "Installability",
+      "C": "Integrity",
+      "D": "Interoperability iV)"
+    },
+    "answer": "D",
+    "id": 315
+  },
+  {
+    "page": 17,
+    "numberOnPage": 5,
+    "question": "Which quality attribute does the mentioned statement refer to?",
+    "options": {
+      "A": "Interoperability",
+      "B": "Integrity",
+      "C": "Performance",
+      "D": "Reliability iv)"
+    },
+    "answer": "A",
+    "id": 316
+  },
+  {
+    "page": 17,
+    "numberOnPage": 6,
+    "question": "What is the quality attribute the mentioned?",
+    "options": {
+      "A": "Availability",
+      "B": "Usability",
+      "C": "Scalability",
+      "D": "Robustness iV)"
+    },
+    "answer": "C",
+    "id": 317
+  },
+  {
+    "page": 17,
+    "numberOnPage": 7,
+    "question": "What is a Mock-up?",
+    "options": {
+      "A": "Itis a horizontal prototype",
+      "B": "Itis a particular approach to throwaway prototype",
+      "C": "Itis a throwaway prototype.",
+      "D": "It is a nonreleasable prototype"
+    },
+    "answer": "A",
+    "id": 318
+  },
+  {
+    "page": 17,
+    "numberOnPage": 8,
+    "question": "What is Planguage?",
+    "options": {
+      "A": "Itis a programming language",
+      "B": "Itis a language with a rich set of keywords that permits precise statements of quality attributes and other project goals",
+      "C": "Itis a planning language used in project management",
+      "D": "Itis a language to express non functional requirements VW)"
+    },
+    "answer": "B",
+    "id": 319
+  },
+  {
+    "page": 17,
+    "numberOnPage": 9,
+    "question": "What is Extent of reuse?",
+    "options": {
+      "A": "You might reuse just a single functional requirement",
+      "B": "You consider is how much modification will be needed to make existing requirements reusable on the new project",
+      "C": "Itis is simply a copy-and-paste of a piece of requirements information, either from another specification or from a library of reusable requirements",
+      "D": "It specific functional requirements within use cases, performance requirements, usability requirements business rules A@eExtent of reuse: A Extent of modification: B Reuse mechanism: C@Scope of reuse: D"
+    },
+    "answer": "A",
+    "id": 320
+  },
+  {
+    "page": 17,
+    "numberOnPage": 10,
+    "question": "What is Risk assessment?",
+    "options": {
+      "A": "Itis the process of examining a project to identify potential threats",
+      "B": "It is one way to deal with a risk: don't do the risky thing",
+      "C": "It produces a plan for dealing with each significant risk",
+      "D": "It activities to manage the top-priority risks you identified"
+    },
+    "answer": "A",
+    "id": 321
+  },
+  {
+    "page": 17,
+    "numberOnPage": 11,
+    "question": "What is an enhancement project?",
+    "options": {
+      "A": "Itis a project in which new capabilities are added to an existing system",
+      "B": "Itis a project that replaces an existing application with a new custom-built system, a commercial off-the-shelf system, or a hybrid of those",
+      "C": "Itis a project which costs less than planned",
+      "D": "Itis a project which generates more revenues V)"
+    },
+    "answer": "A",
+    "id": 322
+  },
+  {
+    "page": 17,
+    "numberOnPage": 12,
+    "question": "What is a requirements baseline?",
+    "options": {
+      "A": "Constraints on the development process of the system",
+      "B": "A specification of features be implemented, descriptions of how the system should behave or descriptions",
+      "C": "Aset of requirements that stakeholders have agreed to, often defining the contents of a specific planned release or development iteration iv)"
+    },
+    "answer": "C",
+    "id": 323
+  },
+  {
+    "page": 17,
+    "numberOnPage": 13,
+    "question": "What is the Change Control Board (CCB)?",
+    "options": {
+      "A": "A group of stakeholders responsible for documenting project assumptions",
+      "B": "A group that decides to approve or reject proposed changes for a specific project",
+      "C": "A team of project managers tasked with managing project risks",
+      "D": "Acommittee responsible for scheduling project milestones iV)"
+    },
+    "answer": "B",
+    "id": 324
+  },
+  {
+    "page": 17,
+    "numberOnPage": 14,
+    "question": "What is the most popular form of user stories?",
+    "options": {
+      "A": "As a <type of user>, | want <some goal> so that <some reason>",
+      "B": "As a <type of user>, | want <some goal>",
+      "C": "As a <type of user>, | need <some need> so that <some reason>",
+      "D": "As a <type of user>, | want <some goal> to <some purpose>"
+    },
+    "answer": "A",
+    "id": 325
+  },
+  {
+    "page": 17,
+    "numberOnPage": 15,
+    "question": "What is the definition of Pre-Condition in Use case?",
+    "options": {
+      "A": "Acondition that describes the state of a system after a use case is successfully completed",
+      "B": "Acondition that must be satisfied or a state the system must be in before a use case can begin",
+      "C": "Acondition that initiates execution of the use case",
+      "D": "Acondition that must be so that system run successful"
+    },
+    "answer": "B",
+    "id": 326
+  },
+  {
+    "page": 17,
+    "numberOnPage": 16,
+    "question": "What is the risk of incomplete requirements during the elicitation phase?",
+    "options": {
+      "A": "Project delays, increased costs, and reduced stakeholder satisfaction",
+      "B": "Faster completion of functional requirements",
+      "C": "Elimination of prototyping needs",
+      "D": "Reduced complexity in coding"
+    },
+    "answer": "A",
+    "id": 327
+  },
+  {
+    "page": 17,
+    "numberOnPage": 17,
+    "question": "What is a potential way for someone to transition into the business analyst role?",
+    "options": {
+      "A": "Through an apprenticeship program with mentoring",
+      "B": "By studying software development exclusively",
+      "C": "By focusing only on user interface design skills",
+      "D": "By avoiding involvement in diverse business activities iV)"
+    },
+    "answer": "A",
+    "id": 328
+  },
+  {
+    "page": 17,
+    "numberOnPage": 18,
+    "question": "What is the purpose of a Requirements Traceability Matrix (RTM) in the requirements management process?",
+    "options": {
+      "A": "To trace the origin of software bugs",
+      "B": "To document project milestones",
+      "C": "To track the relationship between requirements and other project artifacts",
+      "D": "To manage project budgets iV) ie!"
+    },
+    "answer": "C",
+    "id": 329
+  },
+  {
+    "page": 17,
+    "numberOnPage": 19,
+    "question": "What is a key benefit of using a requirements management tool?",
+    "options": {
+      "A": "It ensures traceability and reduces errors in requirements documentation",
+      "B": "It finalizes stakeholder requirements automatically",
+      "C": "It replaces the validation process",
+      "D": "It eliminates the need for prototyping iV)"
+    },
+    "answer": "A",
+    "id": 330
+  },
+  {
+    "page": 17,
+    "numberOnPage": 20,
+    "question": "What is the primary motivation for tracing requirements?",
+    "options": {
+      "A": "To prevent any changes from being made to project requirements",
+      "B": "To document project assumptions",
+      "C": "To manage project team members",
+      "D": "To improve the quality of your products, reduce maintenance costs, and facilitate reuse"
+    },
+    "answer": "D",
+    "id": 331
+  },
+  {
+    "page": 17,
+    "numberOnPage": 21,
+    "question": "What is the primary objective of requirements reuse in projects?",
+    "options": {
+      "A": "To improve efficiency and consistency by leveraging existing requirements in new projects",
+      "B": "To finalize coding standards early",
+      "C": "To eliminate stakeholder involvement in the elicitation process",
+      "D": "To skip non-functional requirements entirely"
+    },
+    "answer": "A",
+    "id": 332
+  },
+  {
+    "page": 17,
+    "numberOnPage": 22,
+    "question": "What is the primary challenge in defining system boundaries during requirements elicitation?",
+    "options": {
+      "A": "Ensuring all stakeholders agree on the scope and avoiding scope creep",
+      "B": "Prioritizing functional requirements over non-functional requirements",
+      "C": "Eliminating technical constraints",
+      "D": "Finalizing coding strategies"
+    },
+    "answer": "A",
+    "id": 333
+  },
+  {
+    "page": 17,
+    "numberOnPage": 23,
+    "question": "What is the primary goal of risk management in software projects?",
+    "options": {
+      "A": "To focus on low-priority risks that have minimal impact on the project",
+      "B": "To identify potential threats to the project",
+      "C": "To completely eliminate all potential risks ef oo ee ee ee en SN UL lee eer Sn ee Vo TV PIVPUo’ SUGISYIVS TUT TMIQGUING PIUOeUt Toho",
+      "D": "To propose strategies for mitigating project risks"
+    },
+    "answer": "D",
+    "id": 334
+  },
+  {
+    "page": 18,
+    "numberOnPage": 1,
+    "question": "What is the primary purpose of a business case in software requirements?",
+    "options": {
+      "A": "To justify the project's value and align it with organizational goals",
+      "B": "To finalize the technical requirements",
+      "C": "To replace the Vision and Scope document",
+      "D": "To eliminate stakeholder involvement in the early phases iV)"
+    },
+    "answer": "A",
+    "id": 335
+  },
+  {
+    "page": 18,
+    "numberOnPage": 2,
+    "question": "What is the main purpose of a Vision and Scope document?",
+    "options": {
+      "A": "To define the boundaries and objectives of the project",
+      "B": "To specify all technical requirements",
+      "C": "To finalize the system's architecture",
+      "D": "Toreplace the requirements traceability matrix iV)"
+    },
+    "answer": "A",
+    "id": 336
+  },
+  {
+    "page": 18,
+    "numberOnPage": 3,
+    "question": "What is the primary purpose of conducting stakeholder interviews during elicitation?",
+    "options": {
+      "A": "To gather detailed requirements directly from key stakeholders",
+      "B": "To finalize the project schedule",
+      "C": "To identify coding standards",
+      "D": "To replace prototyping needs"
+    },
+    "answer": "A",
+    "id": 337
+  },
+  {
+    "page": 18,
+    "numberOnPage": 4,
+    "question": "What is the primary distinction between requirements validation and verification?",
+    "options": {
+      "A": "Validation ensures that the product meets the user's needs, while verification ensures it is free from defects",
+      "B": "Validation ensures the product satisfies customer needs, while verification ensures the product meets its specifications",
+      "C": "Validation occurs before the design phase, and verification occurs after",
+      "D": "Validation is about internal testing, while verification is about external approval V) B@Verification = Dung ky thuat Validation = Dung muc tiéu ngudi ding"
+    },
+    "answer": "B",
+    "id": 338
+  },
+  {
+    "page": 18,
+    "numberOnPage": 5,
+    "question": "What is the advantage of using prototyping in early project phases?",
+    "options": {
+      "A": "To validate requirements and reduce the risk of costly changes later",
+      "B": "To eliminate the design phase",
+      "C": "To prioritize functional over non-functional requirements",
+      "D": "To replace stakeholder engagement"
+    },
+    "answer": "A",
+    "id": 339
+  },
+  {
+    "page": 18,
+    "numberOnPage": 6,
+    "question": "What is the main benefit of fostering a collaborative relationship between the development team and other stakeholders in the requirements process?",
+    "options": {
+      "A": "To ensure that each stakeholder has full control over the project",
+      "B": "To align business, technical, and user needs and avoid misunderstandings",
+      "C": "To speed up the development process by minimizing the number of team members involved",
+      "D": "To focus only on technical requirements without business or user input"
+    },
+    "answer": "B",
+    "id": 340
+  },
+  {
+    "page": 18,
+    "numberOnPage": 7,
+    "question": "What is a key characteristic of Agile projects?",
+    "options": {
+      "A": "Strict adherence to a detailed project plan",
+      "B": "Regular adaptation to changing requirements and priorities",
+      "C": "Emphasis on comprehensive documentation over working software",
+      "D": "Minimal interaction with customers and stakeholders 0."
+    },
+    "answer": "B",
+    "id": 341
+  },
+  {
+    "page": 18,
+    "numberOnPage": 8,
+    "question": "What is a key challenge when maintaining trace data in an existing system?",
+    "options": {
+      "A": "There is often no existing trace data to start with",
+      "B": "The system is too complex to trace effectively",
+      "C": "Trace data becomes obsolete very quickly",
+      "D": "There are too many participants to track é"
+    },
+    "answer": "C",
+    "id": 342
+  },
+  {
+    "page": 18,
+    "numberOnPage": 9,
+    "question": "What is the key difference between functional and non-functional requirements?",
+    "options": {
+      "A": "Functional requirements describe what the system does: non-functional requirements describe how the system performs",
+      "B": "Functional requirements are optional, while non-functional requirements are mandatory",
+      "C": "Functional requirements are stakeholder-specific, while non-functional requirements apply to developers",
+      "D": "There is no difference between functional and non-functional requirements"
+    },
+    "answer": "A",
+    "id": 343
+  },
+  {
+    "page": 18,
+    "numberOnPage": 10,
+    "question": "What is a common challenge that both enhancement and replacement projects often face?",
+    "options": {
+      "A": "Users who are familiar with how the system works today might not like the changes they are about to encounter",
+      "B": "Limited stakeholder involvement",
+      "C": "Requirements documentation may be available for existing systems",
+      "D": "Minimal communication among team members"
+    },
+    "answer": "A",
+    "id": 344
+  },
+  {
+    "page": 18,
+    "numberOnPage": 11,
+    "question": "What are non-functional requirements?",
+    "options": {
+      "A": "A description of a property or characteristic that a system must exhibit or a constraint that it must respect",
+      "B": "Requirements that are in conflict with the SRS",
+      "C": "One or more logically related system capabilities that provide value to a user and are described by a set of functional requirements",
+      "D": "Ahigh-level business objective of the organization that builds a product or of a customer who procures it 9) Hoding"
+    },
+    "answer": "A",
+    "id": 345
+  },
+  {
+    "page": 18,
+    "numberOnPage": 12,
+    "question": "What are the reasons for companies to contract with software outsourcing organizations?",
+    "options": {
+      "A": "To increase control and oversight project",
+      "B": "To minimize stakeholder involvement",
+      "C": "To limit project scope",
+      "D": "To save money, or to accelerate development and access specialized expertise"
+    },
+    "answer": "D",
+    "id": 346
+  },
+  {
+    "page": 18,
+    "numberOnPage": 13,
+    "question": "What are the major activities involved in requirements management?",
+    "options": {
+      "A": "Version control, project scheduling, change control and budget management",
+      "B": "Change control, risk assessment, requirements tracing and stakeholder engagement",
+      "C": "Version control, change control, requirements status tracking, and requirements tracing",
+      "D": "Change control, testing, deployment, and maintenance"
+    },
+    "answer": "C",
+    "id": 347
+  },
+  {
+    "page": 18,
+    "numberOnPage": 14,
+    "question": "What does the MoSCoW method classify in requirements prioritization?",
+    "options": {
+      "A": "Urgency and cost of requirements",
+      "B": "Must, Should, Could, and Won't categories",
+      "C": "Technical feasibility and design limitations",
+      "D": "High, Medium, and Low priorities"
+    },
+    "answer": "B",
+    "id": 348
+  },
+  {
+    "page": 18,
+    "numberOnPage": 15,
+    "question": "What does the term \"verifiable\" mean in the context of excellent requirements?",
+    "options": {
+      "A": "The requirements cannot be tested",
+      "B": "The requirements are difficult to understand",
+      "C": "The requirements can be tested to ensure they are met",
+      "D": "The requirements are subjective and open to interpretation"
+    },
+    "answer": "C",
+    "id": 349
+  },
+  {
+    "page": 18,
+    "numberOnPage": 16,
+    "question": "What happens in passive observation for task elicitation? Select all that apply",
+    "options": {
+      "A": "Being involved in the process you are observing",
+      "B": "Interrupting with small questions",
+      "C": "Silently watch the user perform their tasks",
+      "D": "Only watching video 0) @"
+    },
+    "answer": "C",
+    "id": 350
+  },
+  {
+    "page": 18,
+    "numberOnPage": 17,
+    "question": "What kind of questions are best to ask at the beginning to use for writing better questionnaires at the beginning of the elicitation process?",
+    "options": {
+      "A": "Essay questions",
+      "B": "Closed ended questions with standardized answers",
+      "C": "Open-ended questions are asked at the beginning to obtain full and meaningful answers",
+      "D": "Combine close ended questions with open-ended questions é"
+    },
+    "answer": "C",
+    "id": 351
+  },
+  {
+    "page": 18,
+    "numberOnPage": 18,
+    "question": "What role does a Requirements Change Control Board (RCCB) play in the requirements management process?",
+    "options": {
+      "A": "Approving all changes without review",
+      "B": "Rejecting all proposed changes",
+      "C": "Evaluating and approving or rejecting changes to requirements",
+      "D": "Managing project timelines"
+    },
+    "answer": "C",
+    "id": 352
+  },
+  {
+    "page": 18,
+    "numberOnPage": 19,
+    "question": "What tool did Seilevel develop to assist with estimating requirements development effort?",
+    "options": {
+      "A": "Acoding tool for developers",
+      "B": "Arequirements effort estimation spreadsheet",
+      "C": "A time-tracking tool for project managers",
+      "D": "A documentation tool for stakeholders"
+    },
+    "answer": "B",
+    "id": 353
+  },
+  {
+    "page": 18,
+    "numberOnPage": 20,
+    "question": "What's the difference between Use Cases and User Stories?",
+    "options": {
+      "A": "The use case is a business artifact which defines the software requirement or an application feature Whereas use story is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
+      "B": "The user story contains complete and lengthy descriptions. A use case contains simplified and short descriptions",
+      "C": "The user story is a business artifact which defines the software requirement or an application feature Whereas use case is a test artifact which defines the steps to validate and verify that the software requirement or application feature exists",
+      "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions 0)"
+    },
+    "answer": "D",
+    "id": 354
+  },
+  {
+    "page": 18,
+    "numberOnPage": 21,
+    "question": "Which of the following is not an elicitation activity?",
+    "options": {
+      "A": "Define product vision and project scope",
+      "B": "Hold elicitation interviews",
+      "C": "Observe users performing their jobs",
+      "D": "Model the application environment iV)"
+    },
+    "answer": "D",
+    "id": 355
+  },
+  {
+    "page": 18,
+    "numberOnPage": 22,
+    "question": "Which of the following is a correct guideline for writing clear and concise requirements?",
+    "options": {
+      "A": "Use long, descriptive sentences to cover all aspects of a requirement",
+      "B": "Avoid using “shall” or “must” in favor of softer terms like “could” and “may",
+      "C": "Write in simple language, avoid jargon, and keep sentences short and direct",
+      "D": "Use multiple terms for the same concept to make the document more interesting iV) u which of the following statements is incorrect about ERD?"
+    },
+    "answer": "C",
+    "id": 356
+  },
+  {
+    "page": 19,
+    "numberOnPage": 1,
+    "question": "which of the following statements is incorrect about ERD?",
+    "options": {
+      "A": "Individual instances of an entity will have the same as attribute values",
+      "B": "The cardinality, or multiplicity, of each relationship is shown with a number or letter on the lines that connect entities and relationships",
+      "C": "Each entity is described by one or more attributes",
+      "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities iV)"
+    },
+    "answer": "A",
+    "id": 357
+  },
+  {
+    "page": 19,
+    "numberOnPage": 2,
+    "question": "Which of the following best describes the structure of the Requirements Traceability Matrix (RTM)?",
+    "options": {
+      "A": "Itis a spreadsheet that lists requirements and their corresponding test cases",
+      "B": "Itis a graphical representation of the project schedule",
+      "C": "Itis a tool used to manage project risks",
+      "D": "Itis a spreadsheet that maps requirements to other project artifacts such as design documents, test"
+    },
+    "answer": "D",
+    "id": 358
+  },
+  {
+    "page": 19,
+    "numberOnPage": 3,
+    "question": "Which of the following is a potential benefit of implementing requirements tracing?",
+    "options": {
+      "A": "Enhancing project tracking by creating links between project plan tasks and development progress",
+      "B": "Reducing overall product life-cycle costs by minimizing development efforts",
+      "C": "Identifying all regulatory compliance requirements and confirming their correct implementation",
+      "D": "Finding missing requirements that don't trace to any user or business requirements"
+    },
+    "answer": "D",
+    "id": 359
+  },
+  {
+    "page": 19,
+    "numberOnPage": 4,
+    "question": "Which of the following activities would be considered part of requirements management effort?",
+    "options": {
+      "A": "Holding workshops and interviews to gather requirements",
+      "B": "Submitting requirements changes and proposing new requirements change",
+      "C": "Writing requirements specifications and prioritizing requirements",
+      "D": "Creating and evaluating prototypes for requirements development"
+    },
+    "answer": "B",
+    "id": 360
+  },
+  {
+    "page": 19,
+    "numberOnPage": 5,
+    "question": "Which of the following is a benefit of requirements tracing for reengineering efforts?",
+    "options": {
+      "A": "It facilitates the reuse of components from the previous system",
+      "B": "It helps identify where a system needs to be entirely replaced",
+      "C": "It automates the reengineering process",
+      "D": "It allows a system to function with fewer resources"
+    },
+    "answer": "A",
+    "id": 361
+  },
+  {
+    "page": 19,
+    "numberOnPage": 6,
+    "question": "Which of the following statements are incorrect about Three-level scale technique?",
+    "options": {
+      "A": "Medium-priority requirements are important (customers need the capability) but not urgent (they can wait for a later release)",
+      "B": "High-priority requirements are both important (customers need the capability) and urgent (customers need it in the next release)",
+      "C": "Low-priority requirements are not important (customers can live without the capability if necessary) but urgent for some stakeholders €"
+    },
+    "answer": "C",
+    "id": 362
+  },
+  {
+    "page": 19,
+    "numberOnPage": 7,
+    "question": "Which of the following is the most precise definition of “requirement(s)\"?",
+    "options": {
+      "A": "Arequirement is anything that drives design choices",
+      "B": "Arequirement is a property that a product must have to provide value to a stakeholder",
+      "C": "Requirements are a specification of what should be implemented. They are descriptions of how the system should behave, or of a system property or attribute. They may be a constraint on the development process of the system",
+      "D": "Requirements are what customers want 0)"
+    },
+    "answer": "C",
+    "id": 363
+  },
+  {
+    "page": 19,
+    "numberOnPage": 8,
+    "question": "Which of the following is not an elicitation activity?",
+    "options": {
+      "A": "Define product vision and project scope",
+      "B": "Hold elicitation interviews",
+      "C": "Observe users performing their jobs",
+      "D": "Model the application environment"
+    },
+    "answer": "D",
+    "id": 364
+  },
+  {
+    "page": 19,
+    "numberOnPage": 9,
+    "question": "Which of the following factors can act as a barrier to requirements reuse?",
+    "options": {
+      "A": "Lack of stakeholder involvement",
+      "B": "Frequent updates and version control of requirements documentation",
+      "C": "Standardized format for requirements documentation",
+      "D": "Requirements written in natural language are ambiguities, missing information, and hidden assumptions 0) D@(Xem docs 6 slide dau dé) which of the following statements are incorrect about throwaway prototypes?"
+    },
+    "answer": "D",
+    "id": 365
+  },
+  {
+    "page": 19,
+    "numberOnPage": 10,
+    "question": "which of the following statements are incorrect about throwaway prototypes?",
+    "options": {
+      "A": "most appropriate when the team faces uncertainty, ambiguity, incompleteness, or vagueness in the requirements",
+      "B": "when build a throwaway prototype, they ignore solid software construction techniques",
+      "C": "you might prefer to call it a releasable prototype",
+      "D": "Build a throwaway prototype to answer questions, resolve uncertainties, and improve requirements quality"
+    },
+    "answer": "C",
+    "id": 366
+  },
+  {
+    "page": 19,
+    "numberOnPage": 11,
+    "question": "which of the following statements is incorrect about mockup?",
+    "options": {
+      "A": "also called a horizontal prototype",
+      "B": "it dives into all the architectural layers or into detailed functionality",
+      "C": "displays the facades of user interface screens and permits some navigation between them",
+      "D": "let's you explore some specific behaviors of the intended system, with the goal of refining the requirements B@Mockup [a UI chi biéu dién cho cho thay téng quan vé giao dién chtr chua code"
+    },
+    "answer": "B",
+    "id": 367
+  },
+  {
+    "page": 19,
+    "numberOnPage": 12,
+    "question": "Which of the following activities fall under the core activities of requirements management?",
+    "options": {
+      "A": "Document formatting, project scheduling, risk management, and budget tracking",
+      "B": "Quality assurance, stakeholder management, resource allocation, and system testing",
+      "C": "Version control, change control, requirements status tracking, and requirements tracing",
+      "D": "Designing user interfaces, coding, testing software modules, and system deployment 0)"
+    },
+    "answer": "C",
+    "id": 368
+  },
+  {
+    "page": 19,
+    "numberOnPage": 13,
+    "question": "Which of the following activities would be considered part of requirements management effort?",
+    "options": {
+      "A": "Holding workshops and interviews to gather requirements",
+      "B": "Submitting requirements changes and proposing new requirements change",
+      "C": "Writing requirements specifications and prioritizing requirements",
+      "D": "Creating and evaluating prototypes for requirements development iv)"
+    },
+    "answer": "B",
+    "id": 369
+  },
+  {
+    "page": 19,
+    "numberOnPage": 14,
+    "question": "Which of the following is a potential benefit of implementing requirements tracing?",
+    "options": {
+      "A": "Enhancing project tracking by creating links between project plan tasks and development progress",
+      "B": "Reducing overall product life-cycle costs by minimizing development efforts",
+      "C": "Identifying all regulatory compliance requirements and confirming their correct implementation",
+      "D": "Finding missing requirements that don't trace to any user or business requirements iV)"
+    },
+    "answer": "D",
+    "id": 370
+  },
+  {
+    "page": 19,
+    "numberOnPage": 15,
+    "question": "Which of the following would be an appropriate analysis model component for a ‘verb’ in customer language?",
+    "options": {
+      "A": "External entities in a Data Flow Diagram (DFD)",
+      "B": "Relationships in an Entity Relationship Diagram (ERD)",
+      "C": "Processes in a Data Flow Diagram (DFD)",
+      "D": "Objects with states in a State Transition Diagram (STD)"
+    },
+    "answer": "C",
+    "id": 371
+  },
+  {
+    "page": 19,
+    "numberOnPage": 16,
+    "question": "Which of the following is a benefit of prioritizing requirements?",
+    "options": {
+      "A": "Improved project management",
+      "B": "Decreased stakeholder involvement",
+      "C": "Enhanced focus on high-value features",
+      "D": "Reduced scope creep 7)"
+    },
+    "answer": "C",
+    "id": 372
+  },
+  {
+    "page": 19,
+    "numberOnPage": 17,
+    "question": "Which of the following are essential analyst skills required from the Business Analyst?",
+    "options": {
+      "A": "Listening skills, Systems thinking skills",
+      "B": "Interviewing and questioning skills, Learning skills, Interpersonal skills",
+      "C": "Thinking on your feet, Facilitation skills",
+      "D": "Analytical skills, Leadership skills, Organizational skills, Creativity",
+      "E": "Observational skills, Communication skills, Modeling skills",
+      "F": "All of the mentioned"
+    },
+    "answer": "F",
+    "id": 373
+  },
+  {
+    "page": 19,
+    "numberOnPage": 18,
+    "question": "Which of the following strategies helps mitigate the risk of stakeholders expecting a throwaway prototype to be production-ready?",
+    "options": {
+      "A": "Using high-fidelity tools that resemble the final product",
+      "B": "Leaving the prototype looking rough and unpolished",
+      "C": "Making the prototype available for immediate release",
+      "D": "Giving detailed descriptions of every feature iV)"
+    },
+    "answer": "B",
+    "id": 374
+  },
+  {
+    "page": 19,
+    "numberOnPage": 19,
+    "question": "Which statement best describes the purpose of an Epic in Agile project?",
+    "options": {
+      "A": "To define detailed requirements and specifications for a project",
+      "B": "To represent a high-level user need or business requirement that can be broken down into smaller, more manageable user stories",
+      "C": "To assign tasks to team members for implementation",
+      "D": "To prioritize project deliverables"
+    },
+    "answer": "B",
+    "id": 375
+  },
+  {
+    "page": 19,
+    "numberOnPage": 20,
+    "question": "When creating a persona for each user class, the most important thing is",
+    "options": {
+      "A": "The persona must be a real person",
+      "B": "The persona must be representative of their user class",
+      "C": "The persona must be rich",
+      "D": "The persona must be beautiful"
+    },
+    "answer": "B",
+    "id": 376
+  },
+  {
+    "page": 19,
+    "numberOnPage": 21,
+    "question": "When there is a disagreement between development and customers, how to solve it?",
+    "options": {
+      "A": "Customers get preference, unconditionally",
+      "B": "Customers get preference, but in alignment with business objectives",
+      "C": "Development gets preference, unconditionally",
+      "D": "Development gets preference, but in alignment with business objectives V)"
+    },
+    "answer": "B",
+    "id": 377
+  },
+  {
+    "page": 19,
+    "numberOnPage": 22,
+    "question": "Why is it essential to regularly reassess and update prioritization based on evolving business objectives?",
+    "options": {
+      "A": "To discourage changes in project priorities",
+      "B": "To avoid addressing potential risks",
+      "C": "To ensure that development efforts remain aligned with the current business landscape",
+      "D": "To prioritize technical challenges over business goals 0)"
+    },
+    "answer": "C",
+    "id": 378
+  },
+  {
+    "page": 19,
+    "numberOnPage": 23,
+    "question": "Why is it challenging to amalgamate requirements input from numerous users?",
+    "options": {
+      "A": "Users often disagree on technical specifications",
+      "B": "Structured organizing schemes are typically unavailable",
+      "C": "Requirements input is often diverse and unstructured",
+      "D": "Users lack domain expertise"
+    },
+    "answer": "C",
+    "id": 379
+  },
+  {
+    "page": 19,
+    "numberOnPage": 24,
+    "question": "Why is it crucial to involve users during requirements elicitation?",
+    "options": {
+      "A": "To gather insights about their needs and ensure requirements meet their expectations",
+      "B": "To prioritize system design over functional requirements \\. 10 ValGate NOPm-muUncuonal Fequirements D. To finalize system testing strategies"
+    },
+    "answer": "A",
+    "id": 380
+  },
+  {
+    "page": 20,
+    "numberOnPage": 1,
+    "question": "Why is it important to identify stakeholders when eliciting the requirements for a software system?",
+    "options": {
+      "A": "The people, groups, or organizations that are actively involved in a project, are affected by its outcome, or are able to influence its outcome",
+      "B": "It helps you identify the vision and roadmap",
+      "C": "It helps you identify which support you need, who can influence the support, and potential issues that result from a non-supportive stakeholder",
+      "D": "It helps you to make strategic decisions and clear the path of political and financial obstacles"
+    },
+    "answer": "A",
+    "id": 381
+  },
+  {
+    "page": 20,
+    "numberOnPage": 2,
+    "question": "Why is it important to clearly define the scope of a software project in a scope document?",
+    "options": {
+      "A": "Limit stakeholder involvement",
+      "B": "Speed up the development process",
+      "C": "Avoid addressing project risks",
+      "D": "Prevent scope creep and ensure project focus Q)_"
+    },
+    "answer": "D",
+    "id": 382
+  },
+  {
+    "page": 20,
+    "numberOnPage": 3,
+    "question": "Why is it important to involve stakeholders, including data experts, in the process of specifying data requirements?",
+    "options": {
+      "A": "To exclude data experts from the development process",
+      "B": "To limit the variety of data used in the system",
+      "C": "To ensure a comprehensive understanding of data needs and complexities",
+      "D": "To prioritize project timelines over data considerations 0) €"
+    },
+    "answer": "C",
+    "id": 383
+  },
+  {
+    "page": 20,
+    "numberOnPage": 4,
+    "question": "Why is it important to engage with a variety of user representatives rather than relying on a single representative?",
+    "options": {
+      "A": "To streamline the requirements gathering process",
+      "B": "To avoid addressing potential risks",
+      "C": "To ensure a more comprehensive understanding of diverse user needs",
+      "D": "To minimize the impact of user feedback on the development process"
+    },
+    "answer": "C",
+    "id": 384
+  },
+  {
+    "page": 20,
+    "numberOnPage": 5,
+    "question": "How can requirements modeling assist in resolving conflicts between stakeholders?",
+    "options": {
+      "A": "By providing a clear, visual representation of requirements for alignment",
+      "B": "By finalizing all functional requirements",
+      "C": "By focusing only on technical feasibility",
+      "D": "By eliminating the need for prototyping"
+    },
+    "answer": "A",
+    "id": 385
+  },
+  {
+    "page": 20,
+    "numberOnPage": 6,
+    "question": "How can risks be prioritized in project management?",
+    "options": {
+      "A": "By focusing on risks that are least likely to occur",
+      "B": "By considering both the likelihood of occurrence and potential impact of risks",
+      "C": "By ignoring potential impact and only considering likelihood",
+      "D": "By assuming that all risks are equally important V]"
+    },
+    "answer": "B",
+    "id": 386
+  },
+  {
+    "page": 20,
+    "numberOnPage": 7,
+    "question": "How can you explain the statement \"Implicit requirements can also be unknown unknowns\"?",
+    "options": {
+      "A": "During the SRS process, customers should always be required to spell out their unknown unknowns",
+      "B": "An unknown unknown cannot be known and therefore we can not make them explicit requirements",
+      "C": "There are matters that should be, but are not, elicited through the elicitation process. They exist, but they are not realized",
+      "D": "They help us reveal both known unknowns and more unknown unknowns iV)"
+    },
+    "answer": "C",
+    "id": 387
+  },
+  {
+    "page": 20,
+    "numberOnPage": 8,
+    "question": "How does modeling help in analyzing complex requirements?",
+    "options": {
+      "A": "By visualizing requirements and identifying inconsistencies or gaps",
+      "B": "By prioritizing coding over documentation",
+      "C": "By finalizing all functional requirements early",
+      "D": "By reducing stakeholder engagement V)"
+    },
+    "answer": "A",
+    "id": 388
+  },
+  {
+    "page": 20,
+    "numberOnPage": 9,
+    "question": "How does the Kano model help analyze user requirements?",
+    "options": {
+      "A": "By classifying features into basic, performance, and delight categories",
+      "B": "By prioritizing requirements based on technical feasibility",
+      "C": "By eliminating unnecessary requirements",
+      "D": "By focusing only on functional requirements"
+    },
+    "answer": "A",
+    "id": 389
+  },
+  {
+    "page": 20,
+    "numberOnPage": 10,
+    "question": "How does prototyping mitigate risks in requirements engineering?",
+    "options": {
+      "A": "By providing stakeholders with a visual representation to validate ambiguous requirements",
+      "B": "By finalizing system requirements early",
+      "C": "By focusing on coding rather than design",
+      "D": "By skipping the requirements validation phase"
+    },
+    "answer": "A",
+    "id": 390
+  },
+  {
+    "page": 20,
+    "numberOnPage": 11,
+    "question": "How does the MoSCoW method contribute to prioritizing requirements based on business objectives",
+    "options": {
+      "A": "It prioritizes requirements solely based on stakeholder preferences",
+      "B": "It categorizes requirements into Must-haves, Should-haves, Could-haves, and Won't-haves to guide prioritization",
+      "C": "It excludes business objectives from the prioritization process",
+      "D": "It only considers technical specifications in prioritization decisions"
+    },
+    "answer": "B",
+    "id": 391
+  },
+  {
+    "page": 20,
+    "numberOnPage": 12,
+    "question": "How does prioritization help in managing conflicting requirements?",
+    "options": {
+      "A": "It ensures that high-value requirements are implemented first",
+      "B": "It eliminates non-functional requirements from consideration",
+      "C": "It finalizes all requirements before the design phase",
+      "D": "It focuses on budget over stakeholder needs"
+    },
+    "answer": "A",
+    "id": 392
+  },
+  {
+    "page": 20,
+    "numberOnPage": 13,
+    "question": "Who are the intended audiences for requirements specifications?",
+    "options": {
+      "A": "System architects and developers",
+      "B": "Test engineers and quality analysts",
+      "C": "Stakeholders, reviewers, and project team members",
+      "D": "All of the others iV)"
+    },
+    "answer": "D",
+    "id": 393
+  },
+  {
+    "page": 20,
+    "numberOnPage": 14,
+    "question": "A requirement is best defined as?",
+    "options": {
+      "A": "Aneed or want of the business to solve a problem or achieve an objective",
+      "B": "Acondition or capability of a product or solution that documents a problem or objective of the business",
+      "C": "Aneed or necessary feature of a system that could be sensed from a position anywhere within the system",
+      "D": "A condition or capability needed by a stakeholder to solve a problem or achieve an objective IV)"
+    },
+    "answer": "D",
+    "id": 394
+  },
+  {
+    "page": 20,
+    "numberOnPage": 15,
+    "question": "An organization that’s serious about managing its software projects must ensure that",
+    "options": {
+      "A": "Proposed requirements changes are thoughtfully evaluated before being committed to",
+      "B": "Appropriate dividuals make informed business decisions about requested changes",
+      "C": "Approved changes are communicated to all member of team",
+      "D": "Unchange activity is made visible to affected stakeholders iV)"
+    },
+    "answer": "A",
+    "id": 395
+  },
+  {
+    "page": 20,
+    "numberOnPage": 16,
+    "question": "Which following definitions is Integrity?",
+    "options": {
+      "A": "It deals with blocking unauthorized access to system functions or data, ensuring that the software is protected from malware attacks, and so on",
+      "B": "Itis the degree to which a system continues to function properly when confronted with invalid inputs",
+      "C": "It deals with preventing information loss and preserving the correctness of data entered into the system",
+      "D": "It deal with the need to prevent a system from doing any injury to people or damage to property V)"
+    },
+    "answer": "C",
+    "id": 396
+  },
+  {
+    "page": 20,
+    "numberOnPage": 17,
+    "question": "If you prototype the whole solution rather than only the most uncertain, high-risk, or complex portions, your risk is",
+    "options": {
+      "A": "investing excessive effort in prototypes",
+      "B": "distraction by details",
+      "C": "pressure to release the prototype",
+      "D": "unrealistic performance expectations Vv)"
+    },
+    "answer": "A",
+    "id": 397
+  },
+  {
+    "page": 20,
+    "numberOnPage": 18,
+    "question": "If you prototype the whole solution rather than only the most uncertain, high-risk, or complex portions, your risk is",
+    "options": {
+      "A": "investing excessive effort in prototypes",
+      "B": "distraction by details",
+      "C": "pressure to release the prototype",
+      "D": "unrealistic performance expectations iV)"
+    },
+    "answer": "A",
+    "id": 398
+  },
+  {
+    "page": 20,
+    "numberOnPage": 19,
+    "question": "In a requirements development process, why is it important to establish a mechanism for managing changes to requirements?",
+    "options": {
+      "A": "To discourage changes and maintain a fixed project scope",
+      "B": "To speed up the development process",
+      "C": "To adapt to evolving project needs while maintaining control",
+      "D": "To eliminate the need for documentation"
+    },
+    "answer": "C",
+    "id": 399
+  },
+  {
+    "page": 20,
+    "numberOnPage": 20,
+    "question": "The Product vision and project scope describes the?",
+    "options": {
+      "A": "Function, performance and constraints of a computer-based system",
+      "B": "The indicators that stakeholders will use to define and measure success on this project and the statement that is believed to be true in the absence of proof or definitive knowledge",
+      "C": "The benefits the business",
+      "D": "The ultimate product that will achieve the business objectives and what portion of the ultimate product vision the current project or development iteration will address iV)"
+    },
+    "answer": "D",
+    "id": 400
+  }
+]
