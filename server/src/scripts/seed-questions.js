@@ -20,7 +20,8 @@ const result = await Question.bulkWrite(
   questions.map((question) => ({
     updateOne: {
       filter: { id: question.id },
-      update: { $set: question },
+      // duplicateOf phải được ghi rõ, nếu không câu vừa hết trùng sẽ giữ giá trị cũ.
+      update: { $set: { duplicateOf: null, ...question } },
       upsert: true,
     },
   })),

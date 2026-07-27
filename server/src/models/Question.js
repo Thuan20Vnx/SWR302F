@@ -10,6 +10,8 @@ const questionSchema = new mongoose.Schema(
     options: { type: Map, of: String, required: true },
     // Chuỗi các chữ cái đúng, ví dụ "B" hoặc "BD"
     answer: { type: String, required: true },
+    // Câu lặp lại của đề khác: id của câu xuất hiện đầu tiên. null nếu là bản gốc.
+    duplicateOf: { type: Number, default: null },
   },
   { timestamps: true },
 );

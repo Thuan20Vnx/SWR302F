@@ -26,10 +26,45 @@ export async function api(path, options = {}) {
 
 export function initAuth({ onLogin, onLogout, onSupportPrompt, onError }) {
   const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  const googleButton = document.getElementById('google-signin-button');
+  const retryButton = document.getElementById('google-auth-retry');
   const fail = (message, detail) => {
     console.error('[auth]', message, detail ?? '');
     onError?.(message);
   };
+
+  function showGoogleRetry() {
+    googleButton.replaceChildren();
+    retryButton.classList.remove('hidden');
+  }
+
+  function hideGoogleRetry() {
+    retryButton.classList.add('hidden');
+  }
+
+  function loadGoogleLibrary() {
+    if (window.google?.accounts?.id) return Promise.resolve(true);
+
+    document.getElementById('google-identity-script')?.remove();
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      let settled = false;
+      const finish = (loaded) => {
+        if (settled) return;
+        settled = true;
+        resolve(loaded);
+      };
+
+      script.id = 'google-identity-script';
+      script.src = 'https://accounts.google.com/gsi/client';
+      script.async = true;
+      script.defer = true;
+      script.onload = () => finish(Boolean(window.google?.accounts?.id));
+      script.onerror = () => finish(false);
+      document.head.append(script);
+      setTimeout(() => finish(Boolean(window.google?.accounts?.id)), 8000);
+    });
+  }
 
   async function handleCredential(response) {
     const { ok, status, data } = await api('/auth/google', {
@@ -55,19 +90,20 @@ export function initAuth({ onLogin, onLogout, onSupportPrompt, onError }) {
     onSupportPrompt();
   }
 
-  function renderGoogleButton(attemptsLeft = 20) {
+  async function renderGoogleButton() {
+    hideGoogleRetry();
     if (!clientId) {
       fail('Thiếu VITE_GOOGLE_CLIENT_ID nên không bật được đăng nhập Google.');
+      showGoogleRetry();
       return;
     }
-    if (!window.google?.accounts?.id) {
-      if (attemptsLeft > 0) {
-        setTimeout(() => renderGoogleButton(attemptsLeft - 1), 250);
-      } else {
-        fail(
-          'Không tải được thư viện đăng nhập của Google. Kiểm tra trình chặn quảng cáo hoặc kết nối mạng nhé.',
-        );
-      }
+
+    const loaded = await loadGoogleLibrary();
+    if (!loaded) {
+      fail(
+        'Trình chặn quảng cáo có thể đang chặn accounts.google.com. Hãy cho phép miền này rồi bấm "Thử lại".',
+      );
+      showGoogleRetry();
       return;
     }
 
@@ -77,16 +113,26 @@ export function initAuth({ onLogin, onLogout, onSupportPrompt, onError }) {
         callback: handleCredential,
       });
       window.google.accounts.id.renderButton(
-        document.getElementById('google-signin-button'),
+        googleButton,
         { theme: 'outline', size: 'medium', shape: 'pill' },
       );
+      setTimeout(() => {
+        if (!googleButton.childElementCount) {
+          fail(
+            'Không hiển thị được nút Google. Hãy cho phép accounts.google.com và cookie bên thứ ba rồi thử lại.',
+          );
+          showGoogleRetry();
+        }
+      }, 1500);
     } catch (error) {
       fail(
         'Google từ chối khởi tạo đăng nhập. Thường do domain hiện tại chưa nằm trong "Authorized JavaScript origins" của OAuth client.',
         error,
       );
+      showGoogleRetry();
     }
   }
+  retryButton.onclick = renderGoogleButton;
   renderGoogleButton();
 
   api('/auth/me').then(({ ok, data }) => {

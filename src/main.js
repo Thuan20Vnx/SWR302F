@@ -1,6 +1,7 @@
 import { initAuth, api } from './auth.js';
 
 const QUESTIONS_CACHE = 'swr302-questions-v1';
+const THEME_KEY = 'swr302-theme-v1';
 
 // Bộ câu hỏi nằm trên MongoDB. Bản sao trong localStorage giúp app vẫn học được
 // khi server ngủ hoặc mất mạng.
@@ -48,10 +49,32 @@ const state = {
       ? Number(localStorage.getItem('swr302-sessions-v2') || 0)
       : 0,
   sessionsDate: today(),
+  hideDuplicates: localStorage.getItem('swr302-hide-dupes-v1') === '1',
   signedIn: false,
 };
 
 const $ = (selector) => document.querySelector(selector);
+
+function setTheme(theme) {
+  const selectedTheme = theme === 'light' ? 'light' : 'dark';
+  document.documentElement.classList.toggle(
+    'light-theme',
+    selectedTheme === 'light',
+  );
+  document.body.classList.toggle('light-theme', selectedTheme === 'light');
+  document.documentElement.style.colorScheme = selectedTheme;
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute('content', selectedTheme === 'light' ? '#f4f1e8' : '#111827');
+  document.querySelectorAll('[data-theme]').forEach((button) => {
+    const active = button.dataset.theme === selectedTheme;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  localStorage.setItem(THEME_KEY, selectedTheme);
+}
+
+setTheme(localStorage.getItem(THEME_KEY) || 'dark');
 
 function matchesSearch(card) {
   const needle = state.search.trim().toLowerCase();
@@ -64,8 +87,15 @@ function matchesSearch(card) {
   );
 }
 
+// Đề gốc lặp lại một số câu giữa các kỳ thi; bản lặp mang duplicateOf trỏ về
+// câu xuất hiện đầu tiên.
+const cardById = new Map();
+const originalOf = (card) =>
+  card.duplicateOf ? cardById.get(card.duplicateOf) : null;
+
 function filtered() {
   return cards.filter((card) => {
+    if (state.hideDuplicates && card.duplicateOf) return false;
     if (state.topic === SAVED) {
       if (!state.saved.has(card.id)) return false;
     } else if (state.topic !== ALL && card.topic !== state.topic) {
@@ -73,6 +103,19 @@ function filtered() {
     }
     return matchesSearch(card);
   });
+}
+
+function renderDuplicateToggle() {
+  const total = cards.filter((card) => card.duplicateOf).length;
+  $('#dupe-count').textContent = total;
+  $('#dupe-toggle').classList.toggle('active', state.hideDuplicates);
+  $('#dupe-toggle').setAttribute('aria-pressed', String(state.hideDuplicates));
+  $('#dupe-toggle').classList.toggle('hidden', !total);
+}
+
+function duplicateNote(card) {
+  const original = originalOf(card);
+  return original ? `Câu này đã xuất hiện ở trang ${original.page}` : '';
 }
 
 let pushTimer = null;
@@ -130,6 +173,7 @@ async function syncWithServer() {
 
 function optionMarkup(card, correctOnly = false) {
   return Object.entries(card.options)
+    .sort(([first], [second]) => first.localeCompare(second))
     .filter(([letter]) => !correctOnly || card.answer.includes(letter))
     .map(
       ([letter, text]) =>
@@ -252,9 +296,13 @@ function renderCard() {
     return;
   }
 
+  const note = duplicateNote(card);
   const heading = `${card.topic.toUpperCase()} · CÂU ${card.numberOnPage}`;
-  $('#card-topic').textContent = heading;
-  $('#answer-topic').textContent = heading;
+  const badge = note
+    ? `<span class="dupe-badge">${note.toUpperCase()}</span>`
+    : '';
+  $('#card-topic').innerHTML = heading + badge;
+  $('#answer-topic').innerHTML = heading + badge;
   $('#card-question').textContent = card.question;
   $('#card-options').innerHTML = optionMarkup(card);
   $('#card-answer').innerHTML = `
@@ -320,6 +368,9 @@ function renderQuiz() {
 
   state.selected = new Set();
   state.answered = false;
+  const note = duplicateNote(card);
+  $('#quiz-dupe').textContent = note;
+  $('#quiz-dupe').classList.toggle('hidden', !note);
   $('#quiz-question').textContent =
     `Câu ${(state.quizIndex % list.length) + 1}/${list.length} · ${card.topic} · ${card.question}`;
   // Câu một đáp án dùng kiểu radio (chọn cái mới bỏ cái cũ), câu nhiều đáp án
@@ -328,9 +379,10 @@ function renderQuiz() {
   $('#quiz-options').className = `quiz-options ${single ? 'single-choice' : 'multi-choice'}`;
   $('#quiz-options').setAttribute('role', single ? 'radiogroup' : 'group');
   $('#quiz-options').innerHTML = Object.entries(card.options)
+    .sort(([first], [second]) => first.localeCompare(second))
     .map(
       ([letter, text]) =>
-        `<button data-option="${letter}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${letter}</b><span>${text}</span></button>`,
+        `<button data-option="${letter}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${letter}.</b><span>${text}</span></button>`,
     )
     .join('');
   $('#quiz-feedback').textContent = single
@@ -397,6 +449,7 @@ function render() {
   $('#quiz').classList.toggle('hidden', view !== 'quiz');
   $('#study-button').classList.toggle('active', view === 'study');
   $('#quiz-button').classList.toggle('active', view === 'quiz');
+  renderDuplicateToggle();
   updateProgress();
   if (view === 'study') renderCard();
   if (view === 'quiz') renderQuiz();
@@ -435,6 +488,9 @@ $('#saved-button').onclick = () => {
   $('#toolbar').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
 $('#quiz-button').onclick = () => setView('quiz');
+document.querySelectorAll('[data-theme]').forEach((button) => {
+  button.onclick = () => setTheme(button.dataset.theme);
+});
 $('#hero-study').onclick = () => setView('study');
 $('#hero-quiz').onclick = () => setView('quiz');
 $('#brand').onclick = (event) => {
@@ -447,6 +503,14 @@ $('#next-quiz').onclick = () => {
   renderQuiz();
 };
 $('#page-select').onchange = (event) => selectTopic(event.target.value);
+$('#dupe-toggle').onclick = () => {
+  state.hideDuplicates = !state.hideDuplicates;
+  localStorage.setItem('swr302-hide-dupes-v1', state.hideDuplicates ? '1' : '0');
+  state.index = 0;
+  state.flipped = false;
+  resetQuizOrder();
+  render();
+};
 $('#search-input').oninput = (event) => {
   state.search = event.target.value;
   state.index = 0;
@@ -476,15 +540,18 @@ document.addEventListener('keydown', (event) => {
 });
 
 function showSupportModal() {
+  document.body.classList.add('modal-open');
   $('#support-modal').classList.remove('hidden');
+  $('#support-close').focus();
 }
 
 function hideSupportModal() {
+  document.body.classList.remove('modal-open');
   $('#support-modal').classList.add('hidden');
 }
 
 function showUser(user) {
-  $('#google-signin-button').classList.add('hidden');
+  $('.google-auth-control').classList.add('hidden');
   $('#user-chip').classList.remove('hidden');
   $('#user-avatar').src = user.picture || '';
   $('#user-name').textContent = user.name || user.email;
@@ -493,7 +560,7 @@ function showUser(user) {
 }
 
 function showLoggedOut() {
-  $('#google-signin-button').classList.remove('hidden');
+  $('.google-auth-control').classList.remove('hidden');
   $('#user-chip').classList.add('hidden');
   state.signedIn = false;
 }
@@ -504,6 +571,12 @@ $('#support-done').onclick = hideSupportModal;
 $('#support-modal').onclick = (event) => {
   if (event.target === $('#support-modal')) hideSupportModal();
 };
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !$('#support-modal').classList.contains('hidden')) {
+    hideSupportModal();
+    $('#support-button').focus();
+  }
+});
 
 let toastTimer = null;
 
@@ -529,6 +602,8 @@ async function boot() {
     ...question,
     topic: `Trang ${question.page}`,
   }));
+  cardById.clear();
+  cards.forEach((card) => cardById.set(card.id, card));
 
   if (!cards.length) {
     showToast(

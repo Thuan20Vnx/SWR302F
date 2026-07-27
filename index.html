@@ -22,20 +22,36 @@
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg>
             <span class="pill-label">Đã lưu</span><span class="pill-count" id="saved-count">0</span>
           </button>
+          <button class="pill-button support-button" id="support-button" type="button" aria-label="Ủng hộ tụi mình">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20.2 4.9 13.3a4.4 4.4 0 0 1 0-6.3 4.5 4.5 0 0 1 6.4 0l.7.7.7-.7a4.5 4.5 0 0 1 6.4 0 4.4 4.4 0 0 1 0 6.3Z"/></svg>
+            <span class="pill-label">Ủng hộ</span>
+          </button>
           <div class="auth-area" id="auth-area">
-            <div id="google-signin-button"></div>
+            <div class="google-auth-control">
+              <div id="google-signin-button"></div>
+              <button class="google-auth-retry hidden" id="google-auth-retry" type="button" title="Cho phép accounts.google.com trong trình chặn quảng cáo rồi thử lại">
+                Google bị chặn · Thử lại
+              </button>
+            </div>
             <div class="user-chip hidden" id="user-chip">
               <img id="user-avatar" alt="" />
               <span id="user-name"></span>
               <button class="text-button" id="logout-button" type="button">Đăng xuất</button>
             </div>
           </div>
-          <button class="pill-button support-button" id="support-button" type="button" aria-label="Ủng hộ tụi mình">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20.2 4.9 13.3a4.4 4.4 0 0 1 0-6.3 4.5 4.5 0 0 1 6.4 0l.7.7.7-.7a4.5 4.5 0 0 1 6.4 0 4.4 4.4 0 0 1 0 6.3Z"/></svg>
-            <span class="pill-label">Ủng hộ</span>
-          </button>
         </div>
       </header>
+
+      <div class="theme-switch" role="group" aria-label="Chế độ hiển thị">
+        <button class="theme-button" data-theme="light" type="button" aria-label="Light mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+          <span>Light</span>
+        </button>
+        <button class="theme-button" data-theme="dark" type="button" aria-label="Dark mode" aria-pressed="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"/></svg>
+          <span>Dark</span>
+        </button>
+      </div>
 
       <section class="hero" id="hero">
         <p class="eyebrow">ÔN TẬP CÓ CHỦ ĐÍCH</p>
@@ -63,6 +79,10 @@
             <span class="field-label">Trang</span>
             <select id="page-select"></select>
           </label>
+          <button class="pill-button" id="dupe-toggle" type="button" aria-pressed="false" title="Đề gốc lặp lại một số câu giữa các kỳ thi">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 9V5.5a1 1 0 0 1 1-1h8.5a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H15"/><rect x="4.5" y="9" width="10.5" height="10.5" rx="1"/></svg>
+            <span class="pill-label">Ẩn câu trùng</span><span class="pill-count" id="dupe-count">0</span>
+          </button>
         </div>
         <nav class="filters" id="filters" aria-label="Chọn trang"></nav>
       </section>
@@ -87,6 +107,7 @@
         <p class="eyebrow">KIỂM TRA NHANH</p>
         <p class="empty-state hidden" id="quiz-empty">Không có câu hỏi nào khớp với bộ lọc. Thử đổi trang hoặc xoá từ khoá tìm kiếm.</p>
         <div id="quiz-body">
+          <p class="dupe-badge hidden" id="quiz-dupe"></p>
           <h2 id="quiz-question"></h2>
           <div class="quiz-options" id="quiz-options"></div>
           <p id="quiz-feedback" class="quiz-feedback"></p>
@@ -114,7 +135,6 @@
     <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
 
     <footer>Đây là dự án free, nếu bạn muốn hãy ủng hộ tụi mình nhé</footer>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

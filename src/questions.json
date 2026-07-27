@@ -2010,7 +2010,8 @@
       "D": "unrealistic performance expectations"
     },
     "answer": "A",
-    "id": 154
+    "id": 154,
+    "duplicateOf": 102
   },
   {
     "page": 9,
@@ -2271,7 +2272,8 @@
       "D": "A condition that must be satisfied so that system run successful"
     },
     "answer": "B",
-    "id": 174
+    "id": 174,
+    "duplicateOf": 164
   },
   {
     "page": 10,
@@ -2687,7 +2689,8 @@
       "D": "They write requirements documents"
     },
     "answer": "AB",
-    "id": 206
+    "id": 206,
+    "duplicateOf": 3
   },
   {
     "page": 12,
@@ -2814,7 +2817,8 @@
       "D": "Itis a complete implementation of a proposed new product"
     },
     "answer": "ABC",
-    "id": 216
+    "id": 216,
+    "duplicateOf": 28
   },
   {
     "page": 12,
@@ -2827,7 +2831,8 @@
       "D": "Lead requirements prioritization"
     },
     "answer": "ABC",
-    "id": 217
+    "id": 217,
+    "duplicateOf": 29
   },
   {
     "page": 12,
@@ -2853,7 +2858,8 @@
       "D": "Facilitate backlog prioritization )"
     },
     "answer": "ACD",
-    "id": 219
+    "id": 219,
+    "duplicateOf": 31
   },
   {
     "page": 12,
@@ -2866,7 +2872,8 @@
       "D": "Itis a brochure to promote the product"
     },
     "answer": "ABC",
-    "id": 220
+    "id": 220,
+    "duplicateOf": 34
   },
   {
     "page": 12,
@@ -2879,7 +2886,8 @@
       "D": "Developers and testers who review the requirements for an area raise many questions"
     },
     "answer": "ABC",
-    "id": 221
+    "id": 221,
+    "duplicateOf": 38
   },
   {
     "page": 12,
@@ -2892,7 +2900,8 @@
       "D": "Business laws"
     },
     "answer": "ABC",
-    "id": 222
+    "id": 222,
+    "duplicateOf": 33
   },
   {
     "page": 12,
@@ -2905,7 +2914,8 @@
       "D": "It makes the SRS look more professional"
     },
     "answer": "ABC",
-    "id": 223
+    "id": 223,
+    "duplicateOf": 39
   },
   {
     "page": 12,
@@ -2918,7 +2928,8 @@
       "D": "promptly communicate changes to the requirements"
     },
     "answer": "ABC",
-    "id": 224
+    "id": 224,
+    "duplicateOf": 41
   },
   {
     "page": 13,
@@ -2931,7 +2942,8 @@
       "D": "Virtual"
     },
     "answer": "ABC",
-    "id": 225
+    "id": 225,
+    "duplicateOf": 42
   },
   {
     "page": 13,
@@ -2944,7 +2956,8 @@
       "D": "Financial activities"
     },
     "answer": "ABC",
-    "id": 226
+    "id": 226,
+    "duplicateOf": 43
   },
   {
     "page": 13,
@@ -2970,7 +2983,8 @@
       "D": "Flexible"
     },
     "answer": "ABC",
-    "id": 228
+    "id": 228,
+    "duplicateOf": 45
   },
   {
     "page": 13,
@@ -2997,7 +3011,8 @@
       "D": "fewer test cases ©__"
     },
     "answer": "ABC",
-    "id": 230
+    "id": 230,
+    "duplicateOf": 44
   },
   {
     "page": 13,
@@ -3036,7 +3051,8 @@
       "D": "Ause case describes a sequence of interactions between a system and an external actor that results in the actor being able to achieve some outcome of value"
     },
     "answer": "B",
-    "id": 233
+    "id": 233,
+    "duplicateOf": 55
   },
   {
     "page": 13,
@@ -3050,7 +3066,8 @@
       "E": "Analysis requirement"
     },
     "answer": "A",
-    "id": 234
+    "id": 234,
+    "duplicateOf": 137
   },
   {
     "page": 13,
@@ -3102,7 +3119,8 @@
       "D": "Training courses"
     },
     "answer": "D",
-    "id": 238
+    "id": 238,
+    "duplicateOf": 82
   },
   {
     "page": 13,
@@ -3116,7 +3134,8 @@
       "E": "System features"
     },
     "answer": "D",
-    "id": 239
+    "id": 239,
+    "duplicateOf": 81
   },
   {
     "page": 13,
@@ -3129,7 +3148,8 @@
       "D": "Internet accessibility"
     },
     "answer": "B",
-    "id": 240
+    "id": 240,
+    "duplicateOf": 60
   },
   {
     "page": 13,
@@ -3144,7 +3164,8 @@
       "F": "System feature Q im 4system Feature System feature typically refers to specific functions or capabilities of the product rather than an overall description of the SRS template"
     },
     "answer": "F",
-    "id": 241
+    "id": 241,
+    "duplicateOf": 61
   },
   {
     "page": 13,
@@ -3185,7 +3206,8 @@
       "D": "Includes direct users and indirect users"
     },
     "answer": "C",
-    "id": 244
+    "id": 244,
+    "duplicateOf": 71
   },
   {
     "page": 13,
@@ -3211,7 +3233,8 @@
       "D": "To simulate a user interface with no real functionality"
     },
     "answer": "B",
-    "id": 246
+    "id": 246,
+    "duplicateOf": 66
   },
   {
     "page": 14,
@@ -3224,7 +3247,8 @@
       "D": "Facilitating negotiation of the champion's responsibilities iV) res"
     },
     "answer": "C",
-    "id": 247
+    "id": 247,
+    "duplicateOf": 139
   },
   {
     "page": 14,
@@ -3239,7 +3263,8 @@
       "F": "Expect an environment of mutual respect"
     },
     "answer": "C",
-    "id": 248
+    "id": 248,
+    "duplicateOf": 62
   },
   {
     "page": 14,
@@ -3291,7 +3316,8 @@
       "D": "Evaluate solution candidates so that you can select the most appropriate package"
     },
     "answer": "A",
-    "id": 252
+    "id": 252,
+    "duplicateOf": 65
   },
   {
     "page": 14,
@@ -3303,7 +3329,8 @@
       "C": "A formal contractual definition of requirements is necessary, which can lead to contention if differences of interpretation are discovered late in the project"
     },
     "answer": "A",
-    "id": 253
+    "id": 253,
+    "duplicateOf": 64
   },
   {
     "page": 14,
@@ -3316,7 +3343,8 @@
       "D": "It allows teams to build a correct solution that meets the stated business objectives"
     },
     "answer": "B",
-    "id": 254
+    "id": 254,
+    "duplicateOf": 251
   },
   {
     "page": 14,
@@ -3329,7 +3357,8 @@
       "D": "The se collaboration of customers with developers on agile projects generally means that requirements can be documented in less detail"
     },
     "answer": "A",
-    "id": 255
+    "id": 255,
+    "duplicateOf": 63
   },
   {
     "page": 14,
@@ -3342,7 +3371,8 @@
       "D": "Agile methods vary as to their philosophy on this point; there is no single “correct” approach"
     },
     "answer": "D",
-    "id": 256
+    "id": 256,
+    "duplicateOf": 69
   },
   {
     "page": 14,
@@ -3355,7 +3385,8 @@
       "D": "design"
     },
     "answer": "D",
-    "id": 257
+    "id": 257,
+    "duplicateOf": 89
   },
   {
     "page": 14,
@@ -3369,7 +3400,8 @@
       "E": "Elicit requirements"
     },
     "answer": "D",
-    "id": 258
+    "id": 258,
+    "duplicateOf": 67
   },
   {
     "page": 14,
@@ -3449,7 +3481,8 @@
       "D": "Decision rule"
     },
     "answer": "C",
-    "id": 264
+    "id": 264,
+    "duplicateOf": 75
   },
   {
     "page": 14,
@@ -3501,7 +3534,8 @@
       "D": "Training courses"
     },
     "answer": "D",
-    "id": 268
+    "id": 268,
+    "duplicateOf": 82
   },
   {
     "page": 15,
@@ -3514,7 +3548,8 @@
       "D": "Reusability"
     },
     "answer": "D",
-    "id": 269
+    "id": 269,
+    "duplicateOf": 237
   },
   {
     "page": 15,
@@ -3541,7 +3576,8 @@
       "E": "System features"
     },
     "answer": "D",
-    "id": 271
+    "id": 271,
+    "duplicateOf": 81
   },
   {
     "page": 15,
@@ -3568,7 +3604,8 @@
       "E": "Modifiable"
     },
     "answer": "C",
-    "id": 273
+    "id": 273,
+    "duplicateOf": 80
   },
   {
     "page": 15,
@@ -3582,7 +3619,8 @@
       "E": "documentation"
     },
     "answer": "B",
-    "id": 274
+    "id": 274,
+    "duplicateOf": 85
   },
   {
     "page": 15,
@@ -3596,7 +3634,8 @@
       "E": "Robustness"
     },
     "answer": "B",
-    "id": 275
+    "id": 275,
+    "duplicateOf": 78
   },
   {
     "page": 15,
@@ -3609,7 +3648,8 @@
       "D": "Wireframe"
     },
     "answer": "C",
-    "id": 276
+    "id": 276,
+    "duplicateOf": 79
   },
   {
     "page": 15,
@@ -3635,7 +3675,8 @@
       "D": "Non-functional Requirements"
     },
     "answer": "B",
-    "id": 278
+    "id": 278,
+    "duplicateOf": 19
   },
   {
     "page": 15,
@@ -3648,7 +3689,8 @@
       "D": "4,1,2,3"
     },
     "answer": "D",
-    "id": 279
+    "id": 279,
+    "duplicateOf": 86
   },
   {
     "page": 15,
@@ -3661,7 +3703,8 @@
       "D": "Inspection approach"
     },
     "answer": "C",
-    "id": 280
+    "id": 280,
+    "duplicateOf": 88
   },
   {
     "page": 15,
@@ -3674,7 +3717,8 @@
       "D": "front-end, back-end"
     },
     "answer": "A",
-    "id": 281
+    "id": 281,
+    "duplicateOf": 46
   },
   {
     "page": 15,
@@ -3701,7 +3745,8 @@
       "D": "Relationship"
     },
     "answer": "A",
-    "id": 283
+    "id": 283,
+    "duplicateOf": 96
   },
   {
     "page": 15,
@@ -3714,7 +3759,8 @@
       "D": "Class diagram"
     },
     "answer": "B",
-    "id": 284
+    "id": 284,
+    "duplicateOf": 98
   },
   {
     "page": 15,
@@ -3727,7 +3773,8 @@
       "D": "Data Flow diagram"
     },
     "answer": "A",
-    "id": 285
+    "id": 285,
+    "duplicateOf": 97
   },
   {
     "page": 15,
@@ -3740,7 +3787,8 @@
       "D": "Product owner"
     },
     "answer": "B",
-    "id": 286
+    "id": 286,
+    "duplicateOf": 94
   },
   {
     "page": 15,
@@ -3753,7 +3801,8 @@
       "D": "equivalent"
     },
     "answer": "A",
-    "id": 287
+    "id": 287,
+    "duplicateOf": 48
   },
   {
     "page": 15,
@@ -3767,7 +3816,8 @@
       "E": "Computations"
     },
     "answer": "D",
-    "id": 288
+    "id": 288,
+    "duplicateOf": 99
   },
   {
     "page": 16,
@@ -3780,7 +3830,8 @@
       "D": "Ambiguous and Non-Testable"
     },
     "answer": "D",
-    "id": 289
+    "id": 289,
+    "duplicateOf": 49
   },
   {
     "page": 16,
@@ -3793,7 +3844,8 @@
       "D": "Analysis iv) (es Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them"
     },
     "answer": "C",
-    "id": 290
+    "id": 290,
+    "duplicateOf": 50
   },
   {
     "page": 16,
@@ -3806,7 +3858,8 @@
       "D": "Reports"
     },
     "answer": "B",
-    "id": 291
+    "id": 291,
+    "duplicateOf": 51
   },
   {
     "page": 16,
@@ -3858,7 +3911,8 @@
       "D": "lowest, lowest )"
     },
     "answer": "A",
-    "id": 295
+    "id": 295,
+    "duplicateOf": 47
   },
   {
     "page": 16,
@@ -3871,7 +3925,8 @@
       "D": "Elicitation"
     },
     "answer": "C",
-    "id": 296
+    "id": 296,
+    "duplicateOf": 259
   },
   {
     "page": 16,
@@ -3884,7 +3939,8 @@
       "D": "the variable requirements"
     },
     "answer": "A",
-    "id": 297
+    "id": 297,
+    "duplicateOf": 54
   },
   {
     "page": 16,
@@ -3910,7 +3966,8 @@
       "D": "The customer community"
     },
     "answer": "B",
-    "id": 299
+    "id": 299,
+    "duplicateOf": 108
   },
   {
     "page": 16,
@@ -3923,7 +3980,8 @@
       "D": "Ahexagon shape"
     },
     "answer": "B",
-    "id": 300
+    "id": 300,
+    "duplicateOf": 106
   },
   {
     "page": 16,
@@ -3936,7 +3994,8 @@
       "D": "External interface requirements"
     },
     "answer": "D",
-    "id": 301
+    "id": 301,
+    "duplicateOf": 107
   },
   {
     "page": 16,
@@ -3974,7 +4033,8 @@
       "D": "backup flows"
     },
     "answer": "A",
-    "id": 304
+    "id": 304,
+    "duplicateOf": 52
   },
   {
     "page": 16,
@@ -3987,7 +4047,8 @@
       "D": "unrealistic performance expectations"
     },
     "answer": "A",
-    "id": 305
+    "id": 305,
+    "duplicateOf": 102
   },
   {
     "page": 16,
@@ -4013,7 +4074,8 @@
       "D": "Architecture"
     },
     "answer": "A",
-    "id": 307
+    "id": 307,
+    "duplicateOf": 113
   },
   {
     "page": 16,
@@ -4024,7 +4086,8 @@
       "B": "False"
     },
     "answer": "B",
-    "id": 308
+    "id": 308,
+    "duplicateOf": 1
   },
   {
     "page": 16,
@@ -4063,7 +4126,8 @@
       "D": "Must, Shall, Could, Won't"
     },
     "answer": "A",
-    "id": 311
+    "id": 311,
+    "duplicateOf": 112
   },
   {
     "page": 17,
@@ -4102,7 +4166,8 @@
       "D": "data requirement iV) Hoding"
     },
     "answer": "C",
-    "id": 314
+    "id": 314,
+    "duplicateOf": 111
   },
   {
     "page": 17,
@@ -4167,7 +4232,8 @@
       "D": "Itis a language to express non functional requirements VW)"
     },
     "answer": "B",
-    "id": 319
+    "id": 319,
+    "duplicateOf": 160
   },
   {
     "page": 17,
@@ -4180,7 +4246,8 @@
       "D": "It specific functional requirements within use cases, performance requirements, usability requirements business rules"
     },
     "answer": "A",
-    "id": 320
+    "id": 320,
+    "duplicateOf": 159
   },
   {
     "page": 17,
@@ -4193,7 +4260,8 @@
       "D": "It activities to manage the top-priority risks you identified"
     },
     "answer": "A",
-    "id": 321
+    "id": 321,
+    "duplicateOf": 127
   },
   {
     "page": 17,
@@ -4218,7 +4286,8 @@
       "C": "Aset of requirements that stakeholders have agreed to, often defining the contents of a specific planned release or development iteration"
     },
     "answer": "C",
-    "id": 323
+    "id": 323,
+    "duplicateOf": 169
   },
   {
     "page": 17,
@@ -4244,7 +4313,8 @@
       "D": "As a <type of user>, | want <some goal> to <some purpose>"
     },
     "answer": "A",
-    "id": 325
+    "id": 325,
+    "duplicateOf": 121
   },
   {
     "page": 17,
@@ -4257,7 +4327,8 @@
       "D": "Acondition that must be so that system run successful"
     },
     "answer": "B",
-    "id": 326
+    "id": 326,
+    "duplicateOf": 164
   },
   {
     "page": 17,
@@ -4283,7 +4354,8 @@
       "D": "By avoiding involvement in diverse business activities"
     },
     "answer": "A",
-    "id": 328
+    "id": 328,
+    "duplicateOf": 124
   },
   {
     "page": 17,
@@ -4322,7 +4394,8 @@
       "D": "To improve the quality of your products, reduce maintenance costs, and facilitate reuse"
     },
     "answer": "D",
-    "id": 331
+    "id": 331,
+    "duplicateOf": 170
   },
   {
     "page": 17,
@@ -4387,7 +4460,8 @@
       "D": "Toreplace the requirements traceability matrix"
     },
     "answer": "A",
-    "id": 336
+    "id": 336,
+    "duplicateOf": 123
   },
   {
     "page": 18,
@@ -4413,7 +4487,8 @@
       "D": "Validation is about internal testing, while verification is about external approval"
     },
     "answer": "B",
-    "id": 338
+    "id": 338,
+    "duplicateOf": 172
   },
   {
     "page": 18,
@@ -4439,7 +4514,8 @@
       "D": "To focus only on technical requirements without business or user input"
     },
     "answer": "B",
-    "id": 340
+    "id": 340,
+    "duplicateOf": 165
   },
   {
     "page": 18,
@@ -4452,7 +4528,8 @@
       "D": "Minimal interaction with customers and stakeholders 0."
     },
     "answer": "B",
-    "id": 341
+    "id": 341,
+    "duplicateOf": 132
   },
   {
     "page": 18,
@@ -4517,7 +4594,8 @@
       "D": "To save money, or to accelerate development and access specialized expertise"
     },
     "answer": "D",
-    "id": 346
+    "id": 346,
+    "duplicateOf": 177
   },
   {
     "page": 18,
@@ -4530,7 +4608,8 @@
       "D": "Change control, testing, deployment, and maintenance"
     },
     "answer": "C",
-    "id": 347
+    "id": 347,
+    "duplicateOf": 175
   },
   {
     "page": 18,
@@ -4543,7 +4622,8 @@
       "D": "High, Medium, and Low priorities"
     },
     "answer": "B",
-    "id": 348
+    "id": 348,
+    "duplicateOf": 134
   },
   {
     "page": 18,
@@ -4608,7 +4688,8 @@
       "D": "A documentation tool for stakeholders"
     },
     "answer": "B",
-    "id": 353
+    "id": 353,
+    "duplicateOf": 136
   },
   {
     "page": 18,
@@ -4621,7 +4702,8 @@
       "D": "The user story contains simplified and short descriptions. A use case contains complete and lengthy descriptions"
     },
     "answer": "D",
-    "id": 354
+    "id": 354,
+    "duplicateOf": 178
   },
   {
     "page": 18,
@@ -4660,7 +4742,8 @@
       "D": "The diamonds in the ERD represent relationships, which identify the logical linkages between pairs of entities"
     },
     "answer": "A",
-    "id": 357
+    "id": 357,
+    "duplicateOf": 187
   },
   {
     "page": 19,
@@ -4673,7 +4756,8 @@
       "D": "Itis a spreadsheet that maps requirements to other project artifacts such as design documents, test"
     },
     "answer": "D",
-    "id": 358
+    "id": 358,
+    "duplicateOf": 184
   },
   {
     "page": 19,
@@ -4737,7 +4821,8 @@
       "D": "Requirements are what customers want"
     },
     "answer": "C",
-    "id": 363
+    "id": 363,
+    "duplicateOf": 180
   },
   {
     "page": 19,
@@ -4750,7 +4835,8 @@
       "D": "Model the application environment"
     },
     "answer": "D",
-    "id": 364
+    "id": 364,
+    "duplicateOf": 355
   },
   {
     "page": 19,
@@ -4763,7 +4849,8 @@
       "D": "Requirements written in natural language are ambiguities, missing information, and hidden assumptions"
     },
     "answer": "D",
-    "id": 365
+    "id": 365,
+    "duplicateOf": 189
   },
   {
     "page": 19,
@@ -4776,7 +4863,8 @@
       "D": "Build a throwaway prototype to answer questions, resolve uncertainties, and improve requirements quality"
     },
     "answer": "C",
-    "id": 366
+    "id": 366,
+    "duplicateOf": 183
   },
   {
     "page": 19,
@@ -4789,7 +4877,8 @@
       "D": "let's you explore some specific behaviors of the intended system, with the goal of refining the requirements"
     },
     "answer": "B",
-    "id": 367
+    "id": 367,
+    "duplicateOf": 188
   },
   {
     "page": 19,
@@ -4802,7 +4891,8 @@
       "D": "Designing user interfaces, coding, testing software modules, and system deployment"
     },
     "answer": "C",
-    "id": 368
+    "id": 368,
+    "duplicateOf": 186
   },
   {
     "page": 19,
@@ -4815,7 +4905,8 @@
       "D": "Creating and evaluating prototypes for requirements development"
     },
     "answer": "B",
-    "id": 369
+    "id": 369,
+    "duplicateOf": 360
   },
   {
     "page": 19,
@@ -4828,7 +4919,8 @@
       "D": "Finding missing requirements that don't trace to any user or business requirements"
     },
     "answer": "D",
-    "id": 370
+    "id": 370,
+    "duplicateOf": 359
   },
   {
     "page": 19,
@@ -4854,7 +4946,8 @@
       "D": "Reduced scope creep"
     },
     "answer": "C",
-    "id": 372
+    "id": 372,
+    "duplicateOf": 270
   },
   {
     "page": 19,
@@ -4869,7 +4962,8 @@
       "F": "All of the mentioned"
     },
     "answer": "F",
-    "id": 373
+    "id": 373,
+    "duplicateOf": 141
   },
   {
     "page": 19,
@@ -4895,7 +4989,8 @@
       "D": "To prioritize project deliverables"
     },
     "answer": "B",
-    "id": 375
+    "id": 375,
+    "duplicateOf": 143
   },
   {
     "page": 19,
@@ -4908,7 +5003,8 @@
       "D": "The persona must be beautiful"
     },
     "answer": "B",
-    "id": 376
+    "id": 376,
+    "duplicateOf": 145
   },
   {
     "page": 19,
@@ -4947,7 +5043,8 @@
       "D": "Users lack domain expertise"
     },
     "answer": "C",
-    "id": 379
+    "id": 379,
+    "duplicateOf": 148
   },
   {
     "page": 19,
@@ -4984,7 +5081,8 @@
       "D": "Prevent scope creep and ensure project focus Q)_"
     },
     "answer": "D",
-    "id": 382
+    "id": 382,
+    "duplicateOf": 147
   },
   {
     "page": 20,
@@ -5049,7 +5147,8 @@
       "D": "They help us reveal both known unknowns and more unknown unknowns"
     },
     "answer": "C",
-    "id": 387
+    "id": 387,
+    "duplicateOf": 192
   },
   {
     "page": 20,
@@ -5075,7 +5174,8 @@
       "D": "By focusing only on functional requirements"
     },
     "answer": "A",
-    "id": 389
+    "id": 389,
+    "duplicateOf": 150
   },
   {
     "page": 20,
@@ -5088,7 +5188,8 @@
       "D": "By skipping the requirements validation phase"
     },
     "answer": "A",
-    "id": 390
+    "id": 390,
+    "duplicateOf": 193
   },
   {
     "page": 20,
@@ -5179,7 +5280,8 @@
       "D": "unrealistic performance expectations"
     },
     "answer": "A",
-    "id": 397
+    "id": 397,
+    "duplicateOf": 102
   },
   {
     "page": 20,
@@ -5192,7 +5294,8 @@
       "D": "unrealistic performance expectations"
     },
     "answer": "A",
-    "id": 398
+    "id": 398,
+    "duplicateOf": 102
   },
   {
     "page": 20,
@@ -5205,7 +5308,8 @@
       "D": "To eliminate the need for documentation"
     },
     "answer": "C",
-    "id": 399
+    "id": 399,
+    "duplicateOf": 155
   },
   {
     "page": 20,
