@@ -227,11 +227,16 @@ footer { text-align: center; color: #8595a6; font-size: 13px; padding: 25px 20px
 .user-chip .text-button { padding: 4px 8px; font-size: 12px; }
 
 .modal-open { overflow: hidden; }
-.modal-overlay { position: fixed; inset: 0; background: rgba(9, 14, 22, .72); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
-.modal { position: relative; max-height: calc(100dvh - 40px); overflow-y: auto; background: #182536; border: 1px solid #33455a; border-radius: 18px; padding: 34px 38px; max-width: 380px; width: 100%; text-align: center; box-shadow: 12px 14px 0 rgba(0,0,0,.25); }
+.modal-overlay { position: fixed; inset: 0; background: rgba(9, 14, 22, .72); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; overflow: hidden; overscroll-behavior: contain; }
+/* Modal là flex column để mã QR tự co lại cho vừa màn hình, thay vì đẩy nội
+   dung dài ra rồi sinh thanh cuộn bên trong thẻ. */
+.modal { position: relative; display: flex; flex-direction: column; max-height: calc(100dvh - 40px); overflow-y: auto; overscroll-behavior: contain; background: #182536; border: 1px solid #33455a; border-radius: 18px; padding: 34px 38px; max-width: 380px; width: 100%; text-align: center; box-shadow: 12px 14px 0 rgba(0,0,0,.25); scrollbar-width: thin; scrollbar-color: #3a4c60 transparent; }
+.modal::-webkit-scrollbar { width: 6px; }
+.modal::-webkit-scrollbar-track { background: transparent; }
+.modal::-webkit-scrollbar-thumb { background: #3a4c60; border-radius: 3px; }
 .modal h3 { font-family: Fraunces, serif; font-size: 26px; margin: 8px 0 14px; }
 .modal-copy { color: #b7c2cf; font-size: 14px; line-height: 1.6; margin: 0 0 22px; }
-.modal-qr { width: 100%; max-width: 260px; height: auto; border-radius: 12px; margin: 0 auto 14px; display: block; background: #fff; }
+.modal-qr { align-self: center; flex: 0 1 auto; min-height: 0; width: auto; max-width: min(260px, 100%); max-height: 100%; object-fit: contain; border-radius: 12px; margin: 0 auto 14px; display: block; background: #fff; }
 .modal-note { font-size: 12px; color: #9faebe; letter-spacing: .04em; margin: 0 0 20px; }
 .modal-close { position: absolute; top: 14px; right: 16px; background: transparent; border: 0; color: #9faebe; font-size: 22px; cursor: pointer; line-height: 1; }
 .modal-close:hover { color: #fff; }
