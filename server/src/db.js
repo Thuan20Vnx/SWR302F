@@ -24,10 +24,25 @@ async function ensureSrvResolvable(uri) {
   }
 }
 
+// URI dạng ".../?retryWrites=true" (không có tên database) sẽ khiến Mongoose ghi
+// vào DB mặc định là "test". Khi đó tự chỉ định tên database cho chắc.
+function databaseFromUri(uri) {
+  const path = uri.split('://')[1]?.split('@').pop().split('?')[0] || '';
+  const name = path.split('/')[1];
+  return name || '';
+}
+
 export async function connectDB() {
   const uri = process.env.MONGODB_URI;
   if (!uri) throw new Error('Missing MONGODB_URI in environment');
   await ensureSrvResolvable(uri);
-  await mongoose.connect(uri);
-  console.log('MongoDB connected');
+
+  const options = {};
+  if (!databaseFromUri(uri)) {
+    options.dbName = process.env.MONGODB_DB || 'swr302';
+    console.warn(`MONGODB_URI has no database name; using "${options.dbName}"`);
+  }
+
+  await mongoose.connect(uri, options);
+  console.log(`MongoDB connected (db: ${mongoose.connection.name})`);
 }
