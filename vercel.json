@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://TEN-SERVICE-CUA-BAN.onrender.com/api/:path*"
+      "destination": "https://swr302f.onrender.com/api/:path*"
     }
   ]
 }
