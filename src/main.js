@@ -195,6 +195,20 @@ async function syncWithServer() {
   pushToServer();
 }
 
+// Nội dung câu hỏi đến từ API nên vẫn thoát HTML trước khi ghép vào innerHTML.
+const escapeHtml = (value) =>
+  String(value).replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+      })[character],
+  );
+
 // markCorrect = true: giữ nguyên thứ tự A→D và chỉ tô sáng đáp án đúng, để mắt
 // tìm lại đúng vị trí đã đọc ở mặt trước thay vì thấy nó nhảy lên đầu.
 function optionMarkup(card, markCorrect = false) {
@@ -203,7 +217,7 @@ function optionMarkup(card, markCorrect = false) {
     .map(([letter, text]) => {
       const correct = markCorrect && card.answer.includes(letter);
       return `<div class="card-option ${correct ? 'correct-option' : ''} ${markCorrect && !correct ? 'muted-option' : ''}">
-          <b>${letter}</b><span>${text}</span>
+          <b>${escapeHtml(letter)}</b><span>${escapeHtml(text)}</span>
         </div>`;
     })
     .join('');
@@ -424,7 +438,7 @@ function renderQuiz() {
     .sort(([first], [second]) => first.localeCompare(second))
     .map(
       ([letter, text]) =>
-        `<button data-option="${letter}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${letter}.</b><span>${text}</span></button>`,
+        `<button data-option="${escapeHtml(letter)}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${escapeHtml(letter)}.</b><span>${escapeHtml(text)}</span></button>`,
     )
     .join('');
   $('#quiz-feedback').textContent = single

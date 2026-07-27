@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { User } from '../models/User.js';
+import { asyncRoute, isSafeString } from '../middleware.js';
 import {
   verifyGoogleToken,
   signSession,
@@ -20,11 +21,15 @@ function publicUser(user) {
   };
 }
 
-router.post('/google', async (req, res) => {
+router.post(
+  '/google',
+  asyncRoute(async (req, res) => {
   const { credential, deviceId, userAgent } = req.body || {};
-  if (!credential || !deviceId) {
+  // Bắt buộc là chuỗi: object lọt xuống sẽ thành ValidationError của Mongoose.
+  if (!isSafeString(credential, 4096) || !isSafeString(deviceId, 100)) {
     return res.status(400).json({ error: 'Missing credential or deviceId' });
   }
+  const safeUserAgent = isSafeString(userAgent, 300) ? userAgent : '';
 
   let payload;
   try {
@@ -53,9 +58,9 @@ router.post('/google', async (req, res) => {
   const existingDevice = user.devices.find((d) => d.deviceId === deviceId);
   if (existingDevice) {
     existingDevice.lastSeenAt = now;
-    existingDevice.userAgent = userAgent || existingDevice.userAgent;
+    existingDevice.userAgent = safeUserAgent || existingDevice.userAgent;
   } else {
-    user.devices.push({ deviceId, userAgent: userAgent || '', createdAt: now, lastSeenAt: now });
+    user.devices.push({ deviceId, userAgent: safeUserAgent, createdAt: now, lastSeenAt: now });
   }
 
   let evictedDevice = null;
@@ -81,9 +86,13 @@ router.post('/google', async (req, res) => {
     maxDevices: MAX_DEVICES,
     evictedDevice: evictedDevice ? { deviceId: evictedDevice.deviceId } : null,
   });
-});
+  }),
+);
 
-router.get('/me', requireAuth(), async (req, res) => {
+router.get(
+  '/me',
+  requireAuth(),
+  asyncRoute(async (req, res) => {
   const user = await User.findById(req.session.sub);
   if (!user) return res.status(401).json({ error: 'User not found' });
 
@@ -94,15 +103,20 @@ router.get('/me', requireAuth(), async (req, res) => {
   }
 
   res.json({ user: publicUser(user) });
-});
+  }),
+);
 
-router.post('/logout', requireAuth(), async (req, res) => {
+router.post(
+  '/logout',
+  requireAuth(),
+  asyncRoute(async (req, res) => {
   await User.updateOne(
     { _id: req.session.sub },
     { $pull: { devices: { deviceId: req.session.deviceId } } },
   );
   clearSessionCookie(res);
   res.json({ ok: true });
-});
+  }),
+);
 
 export default router;

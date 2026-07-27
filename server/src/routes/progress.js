@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { asyncRoute } from '../middleware.js';
 import { User } from '../models/User.js';
 import { requireAuth } from '../auth.js';
 
@@ -50,14 +51,14 @@ function sanitizeSaved(input) {
   ];
 }
 
-router.get('/', requireAuth(), async (req, res) => {
+router.get('/', requireAuth(), asyncRoute(async (req, res) => {
   const user = await loadUser(req, res);
   if (!user) return;
   res.json(publicProgress(user));
-});
+}));
 
 // Replaces the stored state with what the client sends (client merges on login).
-router.put('/', requireAuth(), async (req, res) => {
+router.put('/', requireAuth(), asyncRoute(async (req, res) => {
   const { progress, savedQuestions, sessions, sessionsDate } = req.body || {};
 
   const nextProgress = sanitizeProgress(progress);
@@ -81,6 +82,6 @@ router.put('/', requireAuth(), async (req, res) => {
   await user.save();
 
   res.json(publicProgress(user));
-});
+}));
 
 export default router;
