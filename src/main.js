@@ -37,7 +37,7 @@ const today = () => new Date().toISOString().slice(0, 10);
 const storedSessionDate = localStorage.getItem('swr302-sessions-date-v1');
 
 const state = {
-  view: 'home', // 'home' | 'study' | 'quiz' | 'exam'
+  view: 'home', // 'home' | 'study' | 'exam'
   subject:
     SUBJECTS.find((item) => item.id === localStorage.getItem(SUBJECT_KEY)) ||
     SUBJECTS[0],
@@ -45,10 +45,6 @@ const state = {
   search: '',
   index: 0,
   flipped: false,
-  quizIndex: 0,
-  quizOrder: [],
-  selected: new Set(),
-  answered: false,
   progress: JSON.parse(localStorage.getItem('swr302-progress-v2') || '{}'),
   saved: new Set(JSON.parse(localStorage.getItem('swr302-saved-v1') || '[]')),
   // "lần ôn hôm nay" only counts today, so the tally restarts on a new date.
@@ -169,6 +165,7 @@ function pushToServer() {
         savedQuestions: [...state.saved],
         sessions: state.sessions,
         sessionsDate: state.sessionsDate,
+        examSessions: exam.sessions(),
       }),
     });
   }, 800);
@@ -206,6 +203,8 @@ async function syncWithServer() {
   // Máy khác có thể còn dữ liệu ghi theo id của bản lặp.
   normalizeIds();
   saveLocal();
+  // Bài thi dở ở máy khác: bản nào mới hơn thì thắng.
+  exam.adoptSessions(data.examSessions);
   renderFilters();
   render();
   pushToServer();
@@ -288,7 +287,6 @@ function selectTopic(topic) {
   state.index = 0;
   state.flipped = false;
   renderFilters();
-  resetQuizOrder();
   render();
 }
 
@@ -410,112 +408,15 @@ function rate(value) {
   renderCard();
 }
 
-function resetQuizOrder() {
-  const list = filtered();
-  const order = list.map((_, index) => index);
-  for (let i = order.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [order[i], order[j]] = [order[j], order[i]];
-  }
-  state.quizOrder = order;
-  state.quizIndex = 0;
-}
-
-function currentQuizCard() {
-  const list = filtered();
-  if (!list.length) return null;
-  if (state.quizOrder.length !== list.length) resetQuizOrder();
-  const position = state.quizIndex % state.quizOrder.length;
-  return list[state.quizOrder[position]];
-}
-
-function renderQuiz() {
-  const list = filtered();
-  const card = currentQuizCard();
-  $('#quiz-empty').classList.toggle('hidden', Boolean(card));
-  $('#quiz-body').classList.toggle('hidden', !card);
-  if (!card) return;
-
-  state.selected = new Set();
-  state.answered = false;
-  const note = duplicateNote(card);
-  $('#quiz-dupe').textContent = note;
-  $('#quiz-dupe').classList.toggle('hidden', !note);
-  $('#quiz-question').textContent =
-    `Câu ${(state.quizIndex % list.length) + 1}/${list.length} · ${card.topic} · ${card.question}`;
-  // Câu một đáp án dùng kiểu radio (chọn cái mới bỏ cái cũ), câu nhiều đáp án
-  // dùng kiểu checkbox.
-  const single = card.answer.length === 1;
-  $('#quiz-options').className = `quiz-options ${single ? 'single-choice' : 'multi-choice'}`;
-  $('#quiz-options').setAttribute('role', single ? 'radiogroup' : 'group');
-  $('#quiz-options').innerHTML = Object.entries(card.options)
-    .sort(([first], [second]) => first.localeCompare(second))
-    .map(
-      ([letter, text]) =>
-        `<button data-option="${escapeHtml(letter)}" type="button" role="${single ? 'radio' : 'checkbox'}" aria-checked="false"><b>${escapeHtml(letter)}.</b><span>${escapeHtml(text)}</span></button>`,
-    )
-    .join('');
-  $('#quiz-feedback').textContent = single
-    ? 'Chọn một đáp án rồi kiểm tra.'
-    : `Chọn ${card.answer.length} đáp án rồi kiểm tra.`;
-  $('#check-answer').classList.remove('hidden');
-  $('#next-quiz').classList.add('hidden');
-  renderSaveButton(card, $('#quiz-save-button'), $('#quiz-save-label'));
-
-  const buttons = [...$('#quiz-options').querySelectorAll('button')];
-  const paint = () =>
-    buttons.forEach((button) => {
-      const on = state.selected.has(button.dataset.option);
-      button.classList.toggle('selected', on);
-      button.setAttribute('aria-checked', String(on));
-    });
-
-  buttons.forEach((button) => {
-    button.onclick = () => {
-      if (state.answered) return;
-      const letter = button.dataset.option;
-      if (single) {
-        state.selected = new Set([letter]);
-      } else if (state.selected.has(letter)) {
-        state.selected.delete(letter);
-      } else {
-        state.selected.add(letter);
-      }
-      paint();
-    };
-  });
-}
-
-function checkQuizAnswer() {
-  if (state.answered || !state.selected.size) return;
-  const card = currentQuizCard();
-  if (!card) return;
-  state.answered = true;
-  const expected = new Set(card.answer.split(''));
-  const correct =
-    state.selected.size === expected.size &&
-    [...state.selected].every((letter) => expected.has(letter));
-
-  $('#quiz-options')
-    .querySelectorAll('button')
-    .forEach((button) => {
-      const letter = button.dataset.option;
-      if (expected.has(letter)) button.classList.add('correct');
-      else if (state.selected.has(letter)) button.classList.add('wrong');
-    });
-
-  $('#quiz-feedback').textContent = correct
-    ? 'Chính xác - bạn nắm rất chắc!'
-    : `Chưa đúng. Đáp án là ${card.answer.split('').join(', ')}.`;
-  $('#check-answer').classList.add('hidden');
-  $('#next-quiz').classList.remove('hidden');
-}
-
 const exam = createExam({
   getCards: () => cards,
+  getSubject: () => state.subject.id,
+  subjectIds: () => SUBJECTS.map((item) => item.id),
   onLeave: () => setView('home'),
   isSaved: (card) => state.saved.has(canonicalId(card)),
   onToggleSave: (card) => toggleSaved(card),
+  // Bài thi dở đi cùng tiến độ lên server để đổi thiết bị vẫn làm tiếp được.
+  onSessionChange: () => pushToServer(),
 });
 
 function render() {
@@ -525,21 +426,17 @@ function render() {
   $('#toolbar').classList.toggle('hidden', view === 'home' || view === 'exam');
   $('#dashboard').classList.toggle('hidden', view === 'exam');
   $('#study-layout').classList.toggle('hidden', view !== 'study');
-  $('#quiz').classList.toggle('hidden', view !== 'quiz');
   $('#exam').classList.toggle('hidden', view !== 'exam');
   $('#study-button').classList.toggle('active', view === 'study');
-  $('#quiz-button').classList.toggle('active', view === 'quiz');
   $('#exam-button').classList.toggle('active', view === 'exam');
   renderDuplicateToggle();
   updateProgress();
   if (view === 'study') renderCard();
-  if (view === 'quiz') renderQuiz();
   if (view === 'exam') exam.open();
 }
 
 function setView(view) {
   state.view = view;
-  if (view === 'quiz') resetQuizOrder();
   render();
   if (view === 'exam') {
     $('#exam').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -584,8 +481,6 @@ function selectSubject(id) {
   state.topic = ALL;
   state.index = 0;
   state.flipped = false;
-  state.quizIndex = 0;
-  state.quizOrder = [];
   renderSubjects();
   boot();
 }
@@ -606,14 +501,12 @@ $('#rating').onclick = (event) => {
   if (button) rate(button.dataset.rating);
 };
 $('#save-button').onclick = () => toggleSaved(currentStudyCard());
-$('#quiz-save-button').onclick = () => toggleSaved(currentQuizCard());
 $('#study-button').onclick = () => setView('study');
 $('#saved-button').onclick = () => {
   state.view = 'study';
   selectTopic(SAVED);
   $('#toolbar').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
-$('#quiz-button').onclick = () => setView('quiz');
 $('#exam-button').onclick = () => setView('exam');
 $('#subject-button').onclick = (event) => {
   event.stopPropagation();
@@ -629,16 +522,10 @@ document.querySelectorAll('[data-theme]').forEach((button) => {
   button.onclick = () => setTheme(button.dataset.theme);
 });
 $('#hero-study').onclick = () => setView('study');
-$('#hero-quiz').onclick = () => setView('quiz');
 $('#hero-exam').onclick = () => setView('exam');
 $('#brand').onclick = (event) => {
   event.preventDefault();
   setView('home');
-};
-$('#check-answer').onclick = checkQuizAnswer;
-$('#next-quiz').onclick = () => {
-  state.quizIndex += 1;
-  renderQuiz();
 };
 $('#page-select').onchange = (event) => selectTopic(event.target.value);
 $('#dupe-toggle').onclick = () => {
@@ -646,14 +533,12 @@ $('#dupe-toggle').onclick = () => {
   localStorage.setItem('swr302-hide-dupes-v1', state.hideDuplicates ? '1' : '0');
   state.index = 0;
   state.flipped = false;
-  resetQuizOrder();
   render();
 };
 $('#search-input').oninput = (event) => {
   state.search = event.target.value;
   state.index = 0;
   state.flipped = false;
-  resetQuizOrder();
   render();
 };
 $('#reset-button').onclick = () => {

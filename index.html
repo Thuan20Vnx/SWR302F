@@ -32,7 +32,6 @@
           </div>
           <button class="text-button" id="reset-button" type="button">Đặt lại tiến độ</button>
           <button class="mode-button ghost" id="study-button" type="button">Học</button>
-          <button class="mode-button ghost" id="quiz-button" type="button">Kiểm tra</button>
           <button class="mode-button" id="exam-button" type="button">Thi thử</button>
           <button class="pill-button" id="saved-button" type="button">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg>
@@ -75,7 +74,6 @@
         <p class="intro">Chọn trang muốn ôn, tìm nhanh câu hỏi, lật thẻ để kiểm tra đáp án và lưu lại những câu chưa thuộc.</p>
         <div class="hero-actions">
           <button class="mode-button" id="hero-study" type="button">Bắt đầu học</button>
-          <button class="mode-button ghost" id="hero-quiz" type="button">Làm bài kiểm tra</button>
           <button class="mode-button ghost" id="hero-exam" type="button">Thi thử EOS</button>
         </div>
       </section>
@@ -120,22 +118,18 @@
         </div>
       </section>
 
-      <section class="quiz hidden" id="quiz" aria-live="polite">
-        <p class="eyebrow">KIỂM TRA NHANH</p>
-        <p class="empty-state hidden" id="quiz-empty">Không có câu hỏi nào khớp với bộ lọc. Thử đổi trang hoặc xoá từ khoá tìm kiếm.</p>
-        <div id="quiz-body">
-          <p class="dupe-badge hidden" id="quiz-dupe"></p>
-          <h2 id="quiz-question"></h2>
-          <div class="quiz-options" id="quiz-options"></div>
-          <p id="quiz-feedback" class="quiz-feedback"></p>
-          <div class="quiz-actions">
-            <button class="save-button" id="quiz-save-button" type="button" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg><span id="quiz-save-label">Lưu câu hỏi</span></button>
-            <button class="mode-button" id="check-answer" type="button">Kiểm tra đáp án</button>
-            <button class="mode-button next-quiz hidden" id="next-quiz" type="button">Câu tiếp theo →</button>
+      <section class="exam hidden" id="exam">
+        <div class="exam-resume hidden" id="exam-resume">
+          <p class="eyebrow">BÀI THI CÒN DỞ</p>
+          <h2 class="exam-launcher-title">Làm tiếp chỗ đang bỏ dở?</h2>
+          <p class="exam-launcher-copy" id="resume-summary"></p>
+          <div class="result-actions">
+            <button class="mode-button" id="resume-continue" type="button">Làm tiếp</button>
+            <button class="mode-button ghost" id="resume-restart" type="button">Làm lại từ đầu</button>
+            <button class="text-button" id="resume-drop" type="button">Bỏ bài này</button>
           </div>
         </div>
-      </section>
-      <section class="exam hidden" id="exam">
+
         <div class="exam-launcher" id="exam-launcher">
           <p class="eyebrow">PHÒNG THI THỬ</p>
           <h2 class="exam-launcher-title">Làm quen với phòng thi EOS</h2>
@@ -160,6 +154,10 @@
           <div class="eos-finishbar">
             <label class="eos-check"><input type="checkbox" id="eos-finish-check" /><span>I want to finish the exam.</span></label>
             <button class="eos-btn eos-btn-finish" id="eos-finish-top" type="button" disabled>Finish</button>
+            <button class="eos-btn eos-btn-full" id="eos-fullscreen" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+              <span id="eos-fullscreen-label">Toàn màn hình</span>
+            </button>
           </div>
 
           <div class="eos-info">

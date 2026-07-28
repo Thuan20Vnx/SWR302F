@@ -21,7 +21,7 @@ body {
 .brand small { font-size: 10px; font-weight: 500; color: #aab7c6; letter-spacing: .12em; }
 .brand-mark { width: 34px; height: 34px; border: 1px solid #f5c765; display: grid; place-items: center; color: #f5c765; font-family: Fraunces, serif; font-size: 21px; }
 .top-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
-.text-button, .mode-button, .filter, .round-button, .rating button, .quiz-options button, .save-button, .pill-button { font: inherit; cursor: pointer; }
+.text-button, .mode-button, .filter, .round-button, .rating button, .save-button, .pill-button { font: inherit; cursor: pointer; }
 .theme-switch { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 45; transform: translateX(-50%); display: inline-flex; gap: 2px; padding: 4px; border: 1px solid rgba(255, 255, 255, .14); border-radius: 999px; background: rgba(24, 37, 54, .88); box-shadow: 0 8px 22px rgba(4, 10, 18, .3), inset 0 1px 0 rgba(255, 255, 255, .05); backdrop-filter: blur(12px); }
 .theme-button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 32px; border: 0; border-radius: 999px; padding: 7px 11px; background: transparent; color: #aebdca; font: 700 11px "Be Vietnam Pro", sans-serif; cursor: pointer; transition: color .18s, background .18s, box-shadow .18s; }
 .theme-button svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -48,7 +48,7 @@ body {
 .intro { color: #b7c2cf; max-width: 600px; line-height: 1.65; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
 
-/* The hero is hidden in study/quiz mode, so the dashboard carries the gap
+/* The hero is hidden in study/exam mode, so the dashboard carries the gap
    under the topbar itself instead of sitting flush against it. */
 .dashboard { margin-top: 40px; background: #182536; border: 1px solid #33455a; border-radius: 14px; display: flex; align-items: center; gap: 16px; padding: 16px 20px; max-width: 620px; }
 .hero:not(.hidden) + .dashboard { margin-top: 0; }
@@ -103,7 +103,6 @@ kbd { border: 1px solid #64748b; border-radius: 3px; padding: 1px 4px; color: #e
 .card-type { font-size: 11px; font-weight: 800; letter-spacing: .15em; margin: 0 0 20px; opacity: .6; }
 /* Nhãn cho câu lặp lại giữa các đề. */
 .dupe-badge { display: inline-block; margin-left: 8px; padding: 2px 9px; border: 1px solid currentColor; border-radius: 999px; font-size: 9px; letter-spacing: .1em; vertical-align: middle; }
-#quiz-dupe.dupe-badge { margin: 0 0 12px; border-color: #6b5a2f; color: #f5c765; font-size: 10px; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; }
 .card-label { color: #45617a; margin: 0 0 8px; }
 .card-face h2 { font-family: Fraunces, serif; font-size: clamp(23px, 3vw, 34px); line-height: 1.16; max-width: 680px; margin: 0 0 20px; }
 .card-options { display: grid; gap: 8px; margin-bottom: 20px; }
@@ -131,34 +130,6 @@ kbd { border: 1px solid #64748b; border-radius: 3px; padding: 1px 4px; color: #e
 .rating button { border-radius: 8px; padding: 11px 17px; font-weight: 700; border: 1px solid #526579; background: transparent; color: #e8eef4; }
 .rating button:last-child { border-color: #76b99a; background: #76b99a; color: #13261e; }
 
-.quiz { max-width: 760px; margin: 15px auto 0; background: #182536; border: 1px solid #34475c; padding: 34px; border-radius: 15px; }
-.quiz h2 { font: 700 27px Fraunces, serif; line-height: 1.25; margin: 12px 0 25px; }
-.quiz-options { display: grid; gap: 10px; }
-.quiz-options button { display: flex; text-align: left; gap: 14px; align-items: flex-start; border: 1px solid #41556b; border-radius: 8px; padding: 14px; color: #e9eef3; background: #1d2c3e; }
-.quiz-feedback { min-height: 24px; color: #f5c765; font-weight: 600; }
-.quiz-actions { display: flex; justify-content: flex-end; align-items: center; gap: 10px; flex-wrap: wrap; }
-.quiz-actions .save-button { margin-right: auto; }
-
-/* Exam-paper treatment keeps questions and A-D choices visually close to the real test. */
-.quiz { max-width: 980px; background: #fff; border: 0; border-radius: 18px; padding: 24px 30px 30px; color: #171717; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 10px 28px rgba(6, 12, 20, .28); }
-.quiz .eyebrow { color: #6a6a6a; font: 700 10px Arial, Helvetica, sans-serif; letter-spacing: .08em; margin: 0 0 14px; }
-.quiz h2 { font: 700 13px Arial, Helvetica, sans-serif; line-height: 1.35; margin: 0 0 16px; }
-.quiz-options { gap: 8px; }
-.quiz-options button { display: grid; grid-template-columns: 20px minmax(0, 1fr); width: 100%; text-align: left; gap: 0; align-items: start; border: 1px solid transparent; border-left-width: 2px; border-radius: 10px; padding: 8px 12px; color: #1d1d1d; background: transparent; font: 12px/1.4 Arial, Helvetica, sans-serif; }
-.quiz-options button b, .quiz-options button.selected b, .quiz-options button.correct b, .quiz-options button.wrong b { display: block; flex: none; height: auto; border: 0; border-radius: 0; background: transparent; font: inherit; font-weight: 400; color: inherit; }
-.quiz-options button span, .study-layout .card-option span { min-width: 0; overflow-wrap: anywhere; }
-.quiz-options button:hover:not(:disabled), .quiz-options button:focus-visible { background: #f3f6fa; outline: 0; }
-.quiz-options button.selected { border-color: #cfe0ef; border-left-color: #2d6ea3; background: #eaf3fb; }
-.quiz-options button.selected b { color: #17598e; font-weight: 700; }
-.quiz-options button.correct { border-color: #cfe6d0; border-left-color: #2e7d32; background: #edf7ee; }
-.quiz-options button.correct b { color: #256329; font-weight: 700; }
-.quiz-options button.wrong { border-color: #f0d2d2; border-left-color: #c62828; background: #fff0f0; }
-.quiz-options button.wrong b { color: #a61d1d; font-weight: 700; }
-.quiz-options button:not(:disabled) { transition: background .15s, border-color .15s; }
-.quiz-feedback { min-height: 20px; margin: 18px 0 8px; color: #3f3f3f; font: 600 12px/1.4 Arial, Helvetica, sans-serif; }
-.quiz-actions { border-top: 1px solid #e5e5e5; padding-top: 16px; }
-.quiz-actions .save-button { color: #3d3d3d; border-color: #bdbdbd; }
-.quiz-actions .save-button:hover { border-color: #2d6ea3; color: #17598e; }
 
 /* Study cards use the same reading rhythm as the examination page. */
 .study-layout .flashcard { height: auto; min-height: 460px; cursor: pointer; }
@@ -266,7 +237,6 @@ footer { text-align: center; color: #8595a6; font-size: 13px; padding: 25px 20px
   .hero { margin-top: 54px; }
   .study-layout { grid-template-columns: 150px minmax(0, 1fr); gap: 28px; }
   .deck-count strong { font-size: 34px; }
-  .quiz { padding: 28px 26px; }
 }
 
 @media (max-width: 900px) {
@@ -317,11 +287,6 @@ footer { text-align: center; color: #8595a6; font-size: 13px; padding: 25px 20px
   .answer { font-size: 16px; }
   .answer-key { font-size: 26px; margin-bottom: 16px; }
   .controls { margin: 20px 0 14px; }
-  .quiz { padding: 22px 18px; }
-  .quiz h2 { font-size: 13px; margin: 0 0 16px; }
-  .quiz-actions { justify-content: stretch; }
-  .quiz-actions .save-button { margin-right: 0; flex: 1 1 100%; justify-content: center; }
-  .quiz-actions .mode-button { flex: 1 1 100%; }
   .rating { flex-wrap: wrap; }
   .rating button { flex: 1 1 45%; }
   .modal-overlay { align-items: flex-start; padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom)); }
@@ -343,7 +308,6 @@ footer { text-align: center; color: #8595a6; font-size: 13px; padding: 25px 20px
   .study-layout .card-face h2 { font-size: 13px; }
 }
 
-html.light-theme body #quiz-dupe.dupe-badge { color: #875b00; border-color: #d8c48d; }
 
 /* ---------- Chọn môn ---------- */
 .subject-picker { position: relative; }
@@ -367,6 +331,12 @@ html.light-theme body .subject-option.active { background: #fff4d8; border-color
 .exam-launcher { max-width: 900px; }
 .exam-launcher-title { font: 700 clamp(26px, 4vw, 38px)/1.15 Fraunces, serif; margin: 10px 0 12px; }
 .exam-launcher-copy { color: #b7c2cf; line-height: 1.65; max-width: 620px; margin: 0 0 26px; }
+.exam-resume { max-width: 720px; background: #182536; border: 1px solid #33455a; border-radius: 16px; padding: 26px 28px; }
+.exam-resume .exam-launcher-title { margin: 8px 0 10px; font-size: clamp(22px, 3vw, 30px); }
+.exam-resume .exam-launcher-copy { margin-bottom: 20px; }
+.exam-resume .result-actions { justify-content: flex-start; }
+html.light-theme body .exam-resume { background: rgba(255, 255, 255, .86); border-color: #cbd5dc; color: #172031; }
+
 .exam-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .exam-choice { display: grid; gap: 8px; justify-items: start; text-align: left; padding: 22px; border: 1px solid #33455a; border-radius: 15px; background: #182536; color: #e9edf2; font: inherit; cursor: pointer; transition: .18s; }
 .exam-choice:hover { border-color: #f5c765; transform: translateY(-2px); }
@@ -410,6 +380,15 @@ html.light-theme body .exam-choice:hover { border-color: #a06b00; }
 .eos-btn-finish { background: linear-gradient(#efe4b4, #ddcc8e); border-color: #8a7c4e; padding: 3px 22px; }
 .eos-btn-finish:hover:not(:disabled) { background: linear-gradient(#f7edc4, #e4d69c); border-color: #6f6335; }
 .eos-btn-finish:disabled { background: linear-gradient(#f1f1f1, #e6e6e6); border-color: #b4b4b4; }
+
+.eos-btn-full { display: inline-flex; align-items: center; gap: 6px; }
+.eos-btn-full svg { width: 13px; height: 13px; }
+.eos-btn-full.is-on { background: linear-gradient(#dfe9f7, #c9daf0); border-color: #6d8fb5; }
+
+/* Toàn màn hình: phòng thi chiếm trọn màn hình, nền theo trang cho đỡ chói. */
+#exam:fullscreen { background: #f4f1e8; overflow: auto; padding: 18px; display: grid; align-content: start; }
+html:not(.light-theme) #exam:fullscreen { background: #111827; }
+#exam:fullscreen .eos { max-width: min(1100px, 100%); margin: 0 auto; }
 
 .eos-info { display: grid; gap: 4px; padding: 2px 0 6px; }
 .eos-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
@@ -483,8 +462,6 @@ html.light-theme body .exam-choice:hover { border-color: #a06b00; }
 .eos-num.miss { background: #d84f4f; border-color: #a83a3a; color: #fff; }
 .eos-num.current { outline: 2px solid #e8a400; outline-offset: -2px; font-weight: 700; }
 .eos-leave { display: block; margin: 4px auto 0; color: #4a5a75; font-size: 12px; }
-
-
 
 .exam-result { max-width: 620px; margin-top: 10px; background: #182536; border: 1px solid #33455a; border-radius: 16px; padding: 30px; text-align: center; }
 .result-score { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin: 10px 0 6px; }

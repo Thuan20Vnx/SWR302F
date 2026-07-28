@@ -26,6 +26,8 @@ def main():
     parser.add_argument("pages")
     parser.add_argument("--out", default="tmp/shots/review")
     parser.add_argument("--per", type=int, default=2)
+    # Soát chỗ trống thì chỉ cần dải câu hỏi, xếp được nhiều trang trên một tấm.
+    parser.add_argument("--question-only", action="store_true")
     args = parser.parse_args()
 
     reader = PdfReader(args.pdf)
@@ -38,9 +40,12 @@ def main():
         blocks = []
         for number in chunk:
             image = list(reader.pages[number - 1].images)[0].image.convert("RGB")
-            blocks.append((number, strip(image, CARD_BOX), strip(image, ANSWER_BOX)))
+            if args.question_only:
+                blocks.append((number, strip(image, (300, 90, 2020, 330)), None))
+            else:
+                blocks.append((number, strip(image, CARD_BOX), strip(image, ANSWER_BOX)))
 
-        height = sum(card.height + answer.height + 34 for _, card, answer in blocks)
+        height = sum(card.height + (answer.height if answer else 0) + 34 for _, card, answer in blocks)
         sheet = Image.new("RGB", (WIDTH, height), "white")
         draw = ImageDraw.Draw(sheet)
         y = 0
@@ -49,8 +54,9 @@ def main():
             y += 24
             sheet.paste(card, (0, y))
             y += card.height + 4
-            sheet.paste(answer, (0, y))
-            y += answer.height + 6
+            if answer:
+                sheet.paste(answer, (0, y))
+                y += answer.height + 6
             draw.line((0, y, WIDTH, y), fill="red", width=2)
 
         name = out / f"rev-{'-'.join(str(n) for n in chunk)}.png"

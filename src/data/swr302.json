@@ -674,7 +674,7 @@
   {
     "page": 3,
     "numberOnPage": 6,
-    "question": "While a mock-up is called a prototype, a proof of concept is called a prototype",
+    "question": "While a mock-up is called a ______ prototype, a proof of concept is called a ______ prototype",
     "options": {
       "A": "horizontal, vertical",
       "B": "vertical, horizontal",
@@ -689,7 +689,7 @@
   {
     "page": 3,
     "numberOnPage": 7,
-    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the value at the cost",
+    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the ______ value at the ______ cost",
     "options": {
       "A": "highest, lowest",
       "B": "lowest, highest",
@@ -704,7 +704,7 @@
   {
     "page": 3,
     "numberOnPage": 8,
-    "question": "Customers are a(n) of stakeholders",
+    "question": "Customers are a(n) ______ of stakeholders",
     "options": {
       "A": "subset",
       "B": "representative",
@@ -719,7 +719,7 @@
   {
     "page": 3,
     "numberOnPage": 9,
-    "question": "Consider the following statement: \"All the screens in the system must load quickly\". This requirement statement is",
+    "question": "Consider the following statement: \"All the screens in the system must load quickly\". This requirement statement is ______",
     "options": {
       "A": "Correct and Feasible",
       "B": "Unambiguous and Testable",
@@ -734,12 +734,12 @@
   {
     "page": 3,
     "numberOnPage": 10,
-    "question": "Fill in the blank Define vision and scope, select product champions activities should be done stage",
+    "question": "Fill in the blank. \"Define vision and scope\", \"select product champions\" activities should be done ______ stage.",
     "options": {
       "A": "Specifications",
       "B": "Validation",
       "C": "Elicitation",
-      "D": "Analysis iv) (es Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them"
+      "D": "Analysis"
     },
     "answer": "C",
     "id": 1050,
@@ -749,7 +749,7 @@
   {
     "page": 3,
     "numberOnPage": 11,
-    "question": "Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them",
+    "question": "Fill in the blank ______ is a visual representation of the data objects and collections the system will process and the relationships between them",
     "options": {
       "A": "Use case diagram",
       "B": "Data model",
@@ -764,7 +764,7 @@
   {
     "page": 3,
     "numberOnPage": 12,
-    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called",
+    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called ______",
     "options": {
       "A": "exceptions",
       "B": "alternative flows",
@@ -779,7 +779,7 @@
   {
     "page": 3,
     "numberOnPage": 13,
-    "question": "Product backlogs typically are",
+    "question": "Product backlogs typically are ______",
     "options": {
       "A": "user stories",
       "B": "defects",
@@ -908,7 +908,7 @@
       "C": "Operating environment",
       "D": "Design and implementation constraints",
       "E": "Assumptions and dependencies",
-      "F": "System feature Q im 4system Feature System feature typically refers to specific functions or capabilities of the product rather than an overall description of the SRS template"
+      "F": "System feature"
     },
     "answer": "F",
     "id": 1061,
@@ -3008,7 +3008,7 @@
       "A": "It allows \"Request a Chemical\" to function independently without any alternative flows.",
       "B": "It integrates \"Search Vendor Catalogs\" into the normal flow of \"Request a Chemical.\"",
       "C": "It provides an optional alternative flow for requesting chemicals from a vendor.",
-      "D": "It duplicates the steps of \"Search Vendor Catalogs\" within \"Request a Chemical.\" <<extend>> Search Vendor Catalogs"
+      "D": "It duplicates the steps of \"Search Vendor Catalogs\" within \"Request a Chemical.\" ______ ______ <<extend>> Search Vendor Catalogs ______"
     },
     "answer": "C",
     "id": 1200,
@@ -3182,7 +3182,7 @@
   {
     "page": 11,
     "numberOnPage": 12,
-    "question": "Requirements engineering can be split into and Choose 2 correct answers",
+    "question": "Requirements engineering can be split into ______ and ______ Choose 2 correct answers",
     "options": {
       "A": "requirements development",
       "B": "requirements management",
@@ -3658,7 +3658,7 @@
       "C": "Operating environment",
       "D": "Design and implementation constraints",
       "E": "Assumptions and dependencies",
-      "F": "System feature Q im 4system Feature System feature typically refers to specific functions or capabilities of the product rather than an overall description of the SRS template"
+      "F": "System feature"
     },
     "answer": "F",
     "id": 1242,
@@ -4286,7 +4286,7 @@
   {
     "page": 15,
     "numberOnPage": 2,
-    "question": "While a mock-up is called a prototype, a proof of concept is called a prototype",
+    "question": "While a mock-up is called a ______ prototype, a proof of concept is called a ______ prototype",
     "options": {
       "A": "horizontal, vertical",
       "B": "vertical, horizontal",
@@ -4382,7 +4382,7 @@
   {
     "page": 15,
     "numberOnPage": 8,
-    "question": "Customers are a(n) of stakeholders",
+    "question": "Customers are a(n) ______ of stakeholders",
     "options": {
       "A": "subset",
       "B": "representative",
@@ -4414,7 +4414,7 @@
   {
     "page": 15,
     "numberOnPage": 10,
-    "question": "Consider the following statement: \"All the screens in the system must load quickly\". This requirement statement is",
+    "question": "Consider the following statement: \"All the screens in the system must load quickly\". This requirement statement is ______",
     "options": {
       "A": "Correct and Feasible",
       "B": "Unambiguous and Testable",
@@ -4430,12 +4430,12 @@
   {
     "page": 15,
     "numberOnPage": 11,
-    "question": "Fill in the blank Define vision and scope, select product champions activities should be done stage",
+    "question": "Fill in the blank Define vision and scope, select product champions activities should be done ______ stage",
     "options": {
       "A": "Specifications",
       "B": "Validation",
       "C": "Elicitation",
-      "D": "Analysis iv) (es Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them"
+      "D": "Analysis"
     },
     "answer": "C",
     "id": 1291,
@@ -4446,7 +4446,7 @@
   {
     "page": 15,
     "numberOnPage": 12,
-    "question": "Fill in the blank is a visual representation of the data objects and collections the system will process and the relationships between them",
+    "question": "Fill in the blank ______ is a visual representation of the data objects and collections the system will process and the relationships between them",
     "options": {
       "A": "Use case diagram",
       "B": "Data model",
@@ -4477,7 +4477,7 @@
   {
     "page": 15,
     "numberOnPage": 14,
-    "question": "Elicitation is a collaborative and analytical process that includes activities to collect, discover, extract, and",
+    "question": "Elicitation is a collaborative and analytical process that includes activities to collect, discover, extract, and ______",
     "options": {
       "A": "gather requirements",
       "B": "define requirements",
@@ -4492,7 +4492,7 @@
   {
     "page": 15,
     "numberOnPage": 15,
-    "question": "Outsourced teams in other countries are typically referred to as being",
+    "question": "Outsourced teams in other countries are typically referred to as being ______",
     "options": {
       "A": "offshore",
       "B": "offline",
@@ -4507,7 +4507,7 @@
   {
     "page": 15,
     "numberOnPage": 16,
-    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the value at the cost",
+    "question": "Prioritization is a way to deal with competing demands for limited resources. So, establishing the relative priority of each product capability lets you plan construction to provide the ______ value at the ______ cost",
     "options": {
       "A": "highest, lowest",
       "B": "lowest, highest",
@@ -4539,7 +4539,7 @@
   {
     "page": 15,
     "numberOnPage": 18,
-    "question": "Validation of requirements assesses whether you have written",
+    "question": "Validation of requirements assesses whether you have written ______",
     "options": {
       "A": "the right requirements",
       "B": "the requirements right",
@@ -4618,7 +4618,7 @@
   {
     "page": 16,
     "numberOnPage": 3,
-    "question": "In a use case diagram, an arrow from an actor to a use case indicates that he is the actor for the use case",
+    "question": "In a use case diagram, an arrow from an actor to a use case indicates that he is the ______ actor for the use case",
     "options": {
       "A": "primary",
       "B": "secondary",
@@ -4648,7 +4648,7 @@
   {
     "page": 16,
     "numberOnPage": 5,
-    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called",
+    "question": "In the specification of a use case, conditions that have the potential to prevent a use case from succeeding are called ______",
     "options": {
       "A": "exceptions",
       "B": "alternative flows",
@@ -4680,7 +4680,7 @@
   {
     "page": 16,
     "numberOnPage": 7,
-    "question": "In context diagram, external entities are illustrated with and data flows are illustrated with",
+    "question": "In context diagram, external entities are illustrated with ______ and data flows are illustrated with ______",
     "options": {
       "A": "rectangles, lines/arcs with arrows",
       "B": "ovals, lines/arcs with arrows",
@@ -4771,7 +4771,7 @@
   {
     "page": 16,
     "numberOnPage": 13,
-    "question": "The four tasks that are performed to handle a single change request are: evaluate change request, make change decision, implement the change, and",
+    "question": "The four tasks that are performed to handle a single change request are: evaluate change request, make change decision, implement the change, and ______",
     "options": {
       "A": "verify the change",
       "B": "validate the change",
@@ -4786,7 +4786,7 @@
   {
     "page": 16,
     "numberOnPage": 14,
-    "question": "The close collaboration of customers with developers on agile projects generally means that requirements can be documented in detail than on traditional projects",
+    "question": "The close collaboration of customers with developers on agile projects generally means that requirements can be documented in ______ detail than on traditional projects",
     "options": {
       "A": "less",
       "B": "more",
@@ -5098,7 +5098,7 @@
     "options": {
       "A": "To focus on low-priority risks that have minimal impact on the project",
       "B": "To identify potential threats to the project",
-      "C": "To completely eliminate all potential risks ef oo ee ee ee en SN UL lee eer Sn ee Vo TV PIVPUo' SUGISYIVS TUT TMIQGUING PIUOeUt Toho",
+      "C": "To completely eliminate all potential risks.",
       "D": "To propose strategies for mitigating project risks"
     },
     "answer": "D",
@@ -5813,7 +5813,7 @@
     "question": "Why is it crucial to involve users during requirements elicitation?",
     "options": {
       "A": "To gather insights about their needs and ensure requirements meet their expectations",
-      "B": "To prioritize system design over functional requirements \\. 10 ValGate NOPm-muUncuonal Fequirements D. To finalize system testing strategies"
+      "B": "To prioritize system design over functional requirements"
     },
     "answer": "A",
     "id": 1380,

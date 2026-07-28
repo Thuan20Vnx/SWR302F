@@ -44,7 +44,33 @@ function machineName() {
   return name;
 }
 
-export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
+// Bài thi đang làm dở được ghi lại nguyên trạng: đúng thứ tự câu đã bốc, các ô
+// đã chọn và mốc hết giờ tuyệt đối. Nhờ vậy đóng app, tắt máy hay đổi thiết bị
+// vẫn làm tiếp được đúng chỗ cũ chứ không phải bốc lại đề mới.
+const sessionKey = (subject) => `swr302-exam-session-v1:${subject}`;
+
+function readSession(subject) {
+  try {
+    const raw = localStorage.getItem(sessionKey(subject));
+    const session = raw ? JSON.parse(raw) : null;
+    return session && Array.isArray(session.ids) && session.ids.length
+      ? session
+      : null;
+  } catch {
+    localStorage.removeItem(sessionKey(subject));
+    return null;
+  }
+}
+
+export function createExam({
+  getCards,
+  getSubject,
+  subjectIds,
+  onLeave,
+  isSaved,
+  onToggleSave,
+  onSessionChange,
+}) {
   const state = {
     mode: null, // 'practice' | 'full'
     list: [],
@@ -73,8 +99,34 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
 
   function show(screen) {
     $('#exam-launcher').classList.toggle('hidden', screen !== 'launcher');
+    $('#exam-resume').classList.toggle('hidden', screen !== 'resume');
     $('#eos-window').classList.toggle('hidden', screen !== 'exam');
     $('#exam-result').classList.toggle('hidden', screen !== 'result');
+  }
+
+  function persist() {
+    const subject = getSubject();
+    if (!state.mode || state.review) return;
+    localStorage.setItem(
+      sessionKey(subject),
+      JSON.stringify({
+        subject,
+        mode: state.mode,
+        ids: state.list.map((card) => card.id),
+        index: state.index,
+        answers: state.answers.map((set) => [...set].sort().join('')),
+        checked: state.checked,
+        deadline: state.deadline,
+        startedAt: state.startedAt,
+        updatedAt: Date.now(),
+      }),
+    );
+    onSessionChange?.();
+  }
+
+  function clearSession() {
+    localStorage.removeItem(sessionKey(getSubject()));
+    onSessionChange?.();
   }
 
   function stopTimer() {
@@ -113,6 +165,16 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
     setFinishEnabled(false);
   }
 
+  function applyMeta() {
+    const full = state.mode === 'full';
+    $('#eos-machine').textContent = machineName();
+    $('#eos-student').textContent = student;
+    $('#eos-code').textContent = full ? 'SWR302_PE' : 'TEST_P';
+    $('#eos-duration').textContent = full ? `${EXAM_MINUTES} minutes` : 'unlimited';
+    $('#eos-total').textContent = state.list.length;
+    $('#eos-window').classList.toggle('eos-practice', !full);
+  }
+
   function start(mode) {
     const questions = pool();
     if (!questions.length) return;
@@ -133,19 +195,64 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
       state.timer = setInterval(paintTimer, 1000);
     }
 
-    $('#eos-machine').textContent = machineName();
-    $('#eos-student').textContent = student;
-    $('#eos-code').textContent = mode === 'full' ? 'SWR302_PE' : 'TEST_P';
-    $('#eos-duration').textContent =
-      mode === 'full' ? `${EXAM_MINUTES} minutes` : 'unlimited';
-    $('#eos-total').textContent = state.list.length;
-    $('#eos-window').classList.toggle('eos-practice', mode === 'practice');
-
+    applyMeta();
     resetFinishChecks();
     setStrip(false);
     show('exam');
     paintTimer();
     render();
+    persist();
+  }
+
+  // Mở lại bài đang dở: giữ nguyên thứ tự câu đã bốc và các ô đã tick.
+  function resume(session) {
+    const byId = new Map(getCards().map((card) => [card.id, card]));
+    const list = session.ids.map((id) => byId.get(id)).filter(Boolean);
+    if (list.length !== session.ids.length) {
+      // Bộ đề đã đổi kể từ lúc thi, không khôi phục nửa vời được.
+      clearSession();
+      show('launcher');
+      return;
+    }
+
+    state.mode = session.mode === 'full' ? 'full' : 'practice';
+    state.review = false;
+    state.list = list;
+    state.answers = list.map((_, position) => new Set([...(session.answers?.[position] || '')]));
+    state.checked = list.map((_, position) => Boolean(session.checked?.[position]));
+    state.index = Math.min(Math.max(session.index || 0, 0), list.length - 1);
+    state.deadline = session.deadline || 0;
+    state.startedAt = session.startedAt || Date.now();
+
+    applyMeta();
+    resetFinishChecks();
+    setStrip(false);
+    show('exam');
+
+    stopTimer();
+    if (state.mode === 'full') {
+      // Hết giờ trong lúc đóng app thì vào là chấm luôn, không cho làm tiếp.
+      if (Date.now() >= state.deadline) {
+        render();
+        finish(true);
+        return;
+      }
+      state.timer = setInterval(paintTimer, 1000);
+    }
+    paintTimer();
+    render();
+  }
+
+  function describeSession(session) {
+    const answered = (session.answers || []).filter(Boolean).length;
+    const total = session.ids.length;
+    if (session.mode !== 'full') {
+      return `Luyện từng câu · đang ở câu ${(session.index || 0) + 1}/${total} · đã trả lời ${answered} câu.`;
+    }
+    const left = Math.max(0, Math.round((session.deadline - Date.now()) / 60000));
+    return left
+      ? `Thi thử FPT · đã làm ${answered}/${total} câu · còn khoảng ${left} phút.`
+      : `Thi thử FPT · đã làm ${answered}/${total} câu · đã hết giờ, vào là nộp bài luôn.`;
   }
 
   function renderAnswerColumn(card) {
@@ -263,11 +370,13 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
       picked.add(letter);
     }
     render();
+    persist();
   }
 
   function go(position) {
     state.index = Math.min(Math.max(position, 0), state.list.length - 1);
     render();
+    persist();
     $('.eos-paper').scrollIntoView({ block: 'nearest' });
   }
 
@@ -281,6 +390,8 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
       if (!confirm(message)) return;
     }
     stopTimer();
+    // Bài đã nộp thì không còn là bài dở nữa.
+    clearSession();
 
     const correct = state.list.filter((card, position) =>
       isCorrect(card, state.answers[position]),
@@ -315,6 +426,44 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
   $('#exam-start-practice').onclick = () => start('practice');
   $('#exam-start-full').onclick = () => start('full');
 
+  $('#resume-continue').onclick = () => {
+    const session = readSession(getSubject());
+    if (session) resume(session);
+    else show('launcher');
+  };
+  $('#resume-restart').onclick = () => {
+    const session = readSession(getSubject());
+    clearSession();
+    if (session) start(session.mode === 'full' ? 'full' : 'practice');
+    else show('launcher');
+  };
+  $('#resume-drop').onclick = () => {
+    clearSession();
+    show('launcher');
+  };
+
+  // Toàn màn hình để lúc luyện không thấy phần còn lại của web, giống phòng thi.
+  const fullscreenTarget = () => document.getElementById('exam');
+  function paintFullscreen() {
+    const on = document.fullscreenElement === fullscreenTarget();
+    $('#eos-fullscreen').classList.toggle('is-on', on);
+    $('#eos-fullscreen').setAttribute('aria-pressed', String(on));
+    $('#eos-fullscreen-label').textContent = on ? 'Thoát toàn màn hình' : 'Toàn màn hình';
+  }
+  $('#eos-fullscreen').onclick = async () => {
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else await fullscreenTarget().requestFullscreen();
+    } catch {
+      // Safari trên iPhone không cho phần tử vào toàn màn hình, bỏ qua.
+    }
+  };
+  document.addEventListener('fullscreenchange', paintFullscreen);
+  // Trình duyệt không hỗ trợ thì giấu nút đi cho đỡ rối.
+  if (!document.documentElement.requestFullscreen) {
+    $('#eos-fullscreen').classList.add('hidden');
+  }
+
   $('#eos-answers').onclick = (event) => {
     const input = event.target.closest('input[data-option]');
     if (input) pick(input.dataset.option);
@@ -348,6 +497,7 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
     if (!state.answers[state.index].size) return;
     state.checked[state.index] = true;
     render();
+    persist();
   };
 
   // Nút Finish chỉ bật khi đã tick ô xác nhận, đúng như EOS thật.
@@ -363,7 +513,14 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
   $('#eos-finish-top').onclick = () => (state.mode === 'full' && !state.review ? finish() : leave());
   $('#eos-finish-bottom').onclick = () => (state.mode === 'full' && !state.review ? finish() : leave());
   $('#eos-leave').onclick = () => {
-    if (state.mode === 'full' && !state.review && !confirm('Thoát phòng thi? Bài làm hiện tại sẽ mất.')) return;
+    // Bài dở được giữ lại nên rời phòng không còn là mất trắng nữa.
+    if (
+      state.mode === 'full' &&
+      !state.review &&
+      !confirm('Rời phòng thi? Bài làm được giữ lại, lần sau vào bạn chọn làm tiếp. Đồng hồ vẫn chạy.')
+    ) {
+      return;
+    }
     leave();
   };
 
@@ -376,9 +533,17 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
   };
 
   return {
-    // Mở lại từ header luôn quay về màn chọn hình thức thi khi chưa thi dở.
+    // Vào lại phòng thi: đang thi dở thì giữ nguyên màn hình, còn nếu máy (hoặc
+    // thiết bị khác) có bài chưa nộp thì hỏi làm tiếp hay làm lại.
     open() {
-      if (!state.mode) show('launcher');
+      if (state.mode) return;
+      const session = readSession(getSubject());
+      if (!session || !getCards().length) {
+        show('launcher');
+        return;
+      }
+      $('#resume-summary').textContent = describeSession(session);
+      show('resume');
     },
     setStudent(name) {
       student = name || 'student';
@@ -388,7 +553,7 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
       const count = Math.min(EXAM_SIZE, pool().length);
       $('#exam-full-count').textContent = count || EXAM_SIZE;
     },
-    // Đổi môn giữa chừng thì bài thi cũ không còn ý nghĩa.
+    // Đổi môn thì rời bài đang mở, nhưng bài dở của môn cũ vẫn được giữ.
     reset() {
       stopTimer();
       state.mode = null;
@@ -396,6 +561,27 @@ export function createExam({ getCards, onLeave, isSaved, onToggleSave }) {
       resetFinishChecks();
       setStrip(false);
       show('launcher');
+    },
+    // Bài dở của mọi môn, để đẩy lên server cùng tiến độ.
+    sessions() {
+      return Object.fromEntries(
+        subjectIds()
+          .map((id) => [id, readSession(id)])
+          .filter(([, session]) => session),
+      );
+    },
+    // Bản trên server mới hơn (làm dở ở máy khác) thì lấy về.
+    adoptSessions(remote) {
+      let changed = false;
+      for (const [subject, session] of Object.entries(remote || {})) {
+        if (!session?.ids?.length) continue;
+        const local = readSession(subject);
+        if (local && (local.updatedAt || 0) >= (session.updatedAt || 0)) continue;
+        localStorage.setItem(sessionKey(subject), JSON.stringify(session));
+        changed = true;
+      }
+      // Đang thi dở trên máy này thì không giật màn hình của người dùng.
+      if (changed && !state.mode) this.open();
     },
   };
 }

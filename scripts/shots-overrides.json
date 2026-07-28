@@ -37,6 +37,17 @@
     }
   },
 
+  "_bankJunk": "Bộ đề cũ bị OCR kéo nội dung câu sau vào lựa chọn cuối; chép lại theo ảnh mới.",
+  "53": {
+    "options": { "D": "Analysis" },
+    "question": "Fill in the blank. \"Define vision and scope\", \"select product champions\" activities should be done ______ stage."
+  },
+  "256": { "options": { "F": "System feature" } },
+  "309": { "options": { "D": "Analysis" } },
+  "400": {
+    "options": { "B": "To prioritize system design over functional requirements" }
+  },
+
   "_glued": "OCR nuốt dấu cách trên các dòng dài; chép lại nguyên văn theo ảnh gốc.",
   "61": {
     "question": "Which of the following is NOT considered a dimension of requirements reuse when adapting requirements from one project to another?",

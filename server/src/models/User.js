@@ -10,6 +10,25 @@ const deviceSchema = new mongoose.Schema(
   { _id: false },
 );
 
+// Bài thi thử đang làm dở, lưu theo môn để đổi thiết bị vẫn làm tiếp được.
+const examSessionSchema = new mongoose.Schema(
+  {
+    subject: { type: String, default: '' },
+    mode: { type: String, enum: ['practice', 'full'], default: 'practice' },
+    // Thứ tự câu đã bốc - phải giữ nguyên, nếu không vào lại là đề khác.
+    ids: { type: [Number], default: [] },
+    index: { type: Number, default: 0 },
+    // Mỗi phần tử là các chữ cái đã chọn của câu đó, ví dụ "" hoặc "BD".
+    answers: { type: [String], default: [] },
+    checked: { type: [Boolean], default: [] },
+    // Mốc hết giờ tuyệt đối (epoch ms) nên đóng app đồng hồ vẫn chạy đúng.
+    deadline: { type: Number, default: 0 },
+    startedAt: { type: Number, default: 0 },
+    updatedAt: { type: Number, default: 0 },
+  },
+  { _id: false },
+);
+
 const userSchema = new mongoose.Schema(
   {
     googleId: { type: String, required: true, unique: true },
@@ -23,6 +42,12 @@ const userSchema = new mongoose.Schema(
     sessions: { type: Number, default: 0 },
     // YYYY-MM-DD the session counter belongs to
     sessionsDate: { type: String, default: '' },
+    // { "<subject>": examSession }
+    examSessions: {
+      type: Map,
+      of: examSessionSchema,
+      default: () => new Map(),
+    },
     progressUpdatedAt: { type: Date, default: Date.now },
   },
   { timestamps: true },
