@@ -1,0 +1,164 @@
+{
+  "_note": "Sửa tay theo ảnh gốc cho những trang OCR đọc sai. Khoá là số trang PDF. Giá trị 'skip' = bỏ trang, hoặc object vá {question, options, answer}.",
+
+  "_answerA": "OCR không đọc được chữ 'A' đứng một mình trong ô đáp án; các trang dưới đây đã soát lại bằng mắt trên ảnh gốc.",
+  "49": { "answer": "A" },
+  "299": { "answer": "A" },
+  "306": { "answer": "A" },
+  "316": { "answer": "A" },
+  "325": { "answer": "A" },
+
+  "_gluedOption": "OCR dính dòng lựa chọn A vào câu hỏi, chép lại theo ảnh.",
+  "57": {
+    "answer": "A",
+    "question": "Validation of requirements assesses whether you have written ______.",
+    "options": {
+      "A": "the right requirements",
+      "B": "the requirements right",
+      "C": "the flexible requirements",
+      "D": "the variable requirements"
+    }
+  },
+  "410": {
+    "answer": "A",
+    "question": "How does prototyping mitigate risks in requirements engineering?",
+    "options": {
+      "A": "By providing stakeholders with a visual representation to validate ambiguous requirements",
+      "B": "By finalizing system requirements early",
+      "C": "By focusing on coding rather than design",
+      "D": "By skipping the requirements validation phase"
+    }
+  },
+
+  "_missingOption": "Dòng lựa chọn bị OCR bỏ sót ở mọi tỉ lệ, chép lại theo ảnh.",
+  "213": {
+    "options": {
+      "B": "Collaborate with multiple business analysts and product champions to gather comprehensive requirements."
+    }
+  },
+
+  "_glued": "OCR nuốt dấu cách trên các dòng dài; chép lại nguyên văn theo ảnh gốc.",
+  "61": {
+    "question": "Which of the following is NOT considered a dimension of requirements reuse when adapting requirements from one project to another?",
+    "options": {
+      "A": "The extent of reuse, including whether individual requirement statements or sets of requirements with their associated elements are reused.",
+      "B": "Reuse frequency, which measures how often a particular requirement has been reused in different projects.",
+      "C": "The extent of modification, which considers the degree to which reused requirements must be altered to fit the new project's context.",
+      "D": "The reuse mechanism, which involves how the requirement is reused, such as copying from a library of reusable requirements or referring to the original source."
+    }
+  },
+  "120": {
+    "question": "Your company developed a software system for a customer a long time ago, and the application works as intended. Now, the customer's business has grown, and they want the software system to handle 10x the number of transactions. They ask your company to upgrade the software system. Upon inspection, you find out that this system can't handle 10x transactions due to monolithic processes and tightly coupled logic. What is the quality attribute mentioned above?",
+    "options": {
+      "A": "Availability",
+      "B": "Usability",
+      "C": "Scalability",
+      "D": "Robustness"
+    }
+  },
+  "182": {
+    "question": "What is the primary purpose of a Swimlane diagram?",
+    "options": {
+      "A": "To represent detailed software architecture and coding structures.",
+      "B": "To visually depict the steps involved in a business process or the operations of a proposed software system, subdivided into lanes that represent different systems or actors.",
+      "C": "To exclusively model user interface interactions and design layouts.",
+      "D": "To show the organizational structure and management hierarchy within a company."
+    }
+  },
+  "258": {
+    "question": "Which of the following is not an elicitation activity?",
+    "options": {
+      "A": "Define product vision and project scope",
+      "B": "Hold elicitation interviews",
+      "C": "Observe users performing their jobs",
+      "D": "Model the application environment"
+    }
+  },
+  "273": {
+    "question": "Which one of these is NOT a Business analyst's task?",
+    "options": {
+      "A": "Communicate requirements",
+      "B": "Document requirements",
+      "C": "Analyze requirements",
+      "D": "Assurance requirements",
+      "E": "Elicit requirements"
+    }
+  },
+  "275": {
+    "question": "Requirements analysis involves refining the requirements to ensure that all stakeholders understand them and scrutinizing them for errors, omissions, and other deficiencies. Which technique is NOT common for expressing requirements during the Requirements analysis step?",
+    "options": {
+      "A": "Model the application environment.",
+      "B": "Create user interface and technical prototypes.",
+      "C": "Analyze requirement feasibility.",
+      "D": "Prioritize the requirements.",
+      "E": "Model the requirements.",
+      "F": "Identify requirement origins."
+    }
+  },
+  "300": {
+    "question": "When requirements elicitation, the customer states, \"Save $X per year on electricity now wasted by inefficient units\". As an analyst, what type of requirement does this statement belong to?",
+    "options": {
+      "A": "User requirements",
+      "B": "Business rules",
+      "C": "Business requirements",
+      "D": "Quality attributes",
+      "E": "Solution ideas"
+    }
+  },
+  "328": {
+    "question": "Swimlane diagrams provide a way to represent the steps involved in a ______ or the operations of a proposed software system.",
+    "options": {
+      "A": "design process",
+      "B": "organizational activities",
+      "C": "stakeholders",
+      "D": "business process"
+    }
+  },
+  "329": {
+    "answer": "A",
+    "question": "To help reviewers look for typical kinds of errors in the products they review, develop a(n) ______ for each type of requirements document your projects create.",
+    "options": {
+      "A": "defect checklist",
+      "B": "error checklist",
+      "C": "inspection meeting",
+      "D": "support documentation"
+    }
+  },
+  "334": {
+    "answer": "A",
+    "question": "The system shall be able to import any valid chemical structure from the ChemDraw (version 13.0 or earlier) and MarvinSketch (version 5.0 or earlier) tools. Which quality attribute does the mentioned statement refer to?",
+    "options": {
+      "A": "Interoperability",
+      "B": "Integrity",
+      "C": "Performance",
+      "D": "Reliability"
+    }
+  },
+  "335": {
+    "question": "Your company developed a software system for a customer a long time ago, and the application works as intended. Now, the customer's business has grown, and they want the software system to handle 10x the number of transactions. They ask your company to upgrade the software system. Upon inspection, you find out that this system can't handle 10x transactions due to monolithic processes and tightly coupled logic. What is the quality attribute the mentioned?",
+    "options": {
+      "A": "Availability",
+      "B": "Usability",
+      "C": "Scalability",
+      "D": "Robustness"
+    }
+  },
+  "365": {
+    "question": "What are the reasons for companies to contract with software outsourcing organizations?",
+    "options": {
+      "A": "To increase control and oversight project",
+      "B": "To minimize stakeholder involvement",
+      "C": "To limit project scope",
+      "D": "To save money, or to accelerate development and access specialized expertise."
+    }
+  },
+  "407": {
+    "question": "How can you explain the statement \"Implicit requirements can also be unknown unknowns\"?",
+    "options": {
+      "A": "During the SRS process, customers should always be required to spell out their unknown unknowns.",
+      "B": "An unknown unknown cannot be known and therefore we can not make them explicit requirements.",
+      "C": "There are matters that should be, but are not, elicited through the elicitation process. They exist, but they are not realized.",
+      "D": "They help us reveal both known unknowns and more unknown unknowns."
+    }
+  }
+}

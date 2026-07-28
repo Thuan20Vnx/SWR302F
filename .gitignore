@@ -4,3 +4,6 @@ dist/
 server/.env
 tmp/
 __pycache__/
+
+# Ảnh chụp đề nguồn (rất nặng), giữ ngoài repo
+*.pdf

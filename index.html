@@ -9,15 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/style.css" />
+    <script>
+      // Đặt theme trước khi vẽ để không chớp sáng/tối lúc tải trang. Mặc định là light.
+      if ((localStorage.getItem('swr302-theme-v1') || 'light') === 'light') {
+        document.documentElement.classList.add('light-theme');
+        document.documentElement.style.colorScheme = 'light';
+      }
+    </script>
   </head>
   <body>
     <main class="shell">
       <header class="topbar">
-        <a class="brand" href="#" id="brand"><span class="brand-mark">S</span><span>SWR302<br><small>study deck</small></span></a>
+        <button class="brand" id="brand" type="button" aria-label="Về trang chủ"><span class="brand-mark">S</span><span id="brand-name">SLearning</span></button>
         <div class="top-actions">
+          <div class="subject-picker" id="subject-picker">
+            <button class="pill-button" id="subject-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10l1.5 2h7A1.5 1.5 0 0 1 20 7.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5Z"/></svg>
+              <span class="pill-label" id="subject-label">SWR302Sample</span>
+              <span class="pill-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="subject-menu hidden" id="subject-menu" role="listbox" aria-label="Chọn môn"></div>
+          </div>
           <button class="text-button" id="reset-button" type="button">Đặt lại tiến độ</button>
           <button class="mode-button ghost" id="study-button" type="button">Học</button>
-          <button class="mode-button" id="quiz-button" type="button">Kiểm tra</button>
+          <button class="mode-button ghost" id="quiz-button" type="button">Kiểm tra</button>
+          <button class="mode-button" id="exam-button" type="button">Thi thử</button>
           <button class="pill-button" id="saved-button" type="button">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg>
             <span class="pill-label">Đã lưu</span><span class="pill-count" id="saved-count">0</span>
@@ -60,10 +76,11 @@
         <div class="hero-actions">
           <button class="mode-button" id="hero-study" type="button">Bắt đầu học</button>
           <button class="mode-button ghost" id="hero-quiz" type="button">Làm bài kiểm tra</button>
+          <button class="mode-button ghost" id="hero-exam" type="button">Thi thử EOS</button>
         </div>
       </section>
 
-      <section class="dashboard" aria-label="Tiến độ học">
+      <section class="dashboard" id="dashboard" aria-label="Tiến độ học">
         <div class="progress-ring" id="progress-ring"><span id="progress-value">0%</span></div>
         <div><strong id="progress-title">Bắt đầu bộ thẻ</strong><p id="progress-copy">0 / 24 thẻ đã thuộc</p></div>
         <div class="streak"><span>✦</span><div><strong id="streak-value">0</strong><p>lần ôn hôm nay</p></div></div>
@@ -115,6 +132,110 @@
             <button class="save-button" id="quiz-save-button" type="button" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg><span id="quiz-save-label">Lưu câu hỏi</span></button>
             <button class="mode-button" id="check-answer" type="button">Kiểm tra đáp án</button>
             <button class="mode-button next-quiz hidden" id="next-quiz" type="button">Câu tiếp theo →</button>
+          </div>
+        </div>
+      </section>
+      <section class="exam hidden" id="exam">
+        <div class="exam-launcher" id="exam-launcher">
+          <p class="eyebrow">PHÒNG THI THỬ</p>
+          <h2 class="exam-launcher-title">Làm quen với phòng thi EOS</h2>
+          <p class="exam-launcher-copy">Giao diện được dựng lại theo phần mềm thi EOS của trường, để lúc vào phòng thi thật bạn không mất thời gian mò nút.</p>
+          <div class="exam-choices">
+            <button class="exam-choice" id="exam-start-practice" type="button">
+              <span class="exam-choice-tag">KHÔNG GIỚI HẠN</span>
+              <strong>Thi thử từng câu</strong>
+              <p>Làm từng câu và xem đáp án ngay như mục Kiểm tra, nhưng trong giao diện EOS. Ô thời gian hiện <b>--:--</b>.</p>
+              <span class="exam-choice-go">Vào phòng thi →</span>
+            </button>
+            <button class="exam-choice" id="exam-start-full" type="button">
+              <span class="exam-choice-tag">TÍNH ĐIỂM</span>
+              <strong>Thi thử FPT</strong>
+              <p><b id="exam-full-count">60</b> câu · <b>60 phút</b>. Không xem đáp án giữa chừng, nộp bài xong mới hiện điểm.</p>
+              <span class="exam-choice-go">Vào phòng thi →</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="eos hidden" id="eos-window">
+          <div class="eos-finishbar">
+            <label class="eos-check"><input type="checkbox" id="eos-finish-check" /><span>I want to finish the exam.</span></label>
+            <button class="eos-btn eos-btn-finish" id="eos-finish-top" type="button" disabled>Finish</button>
+          </div>
+
+          <div class="eos-info">
+            <div class="eos-row">
+              <span class="eos-l eos-l-a">Machine:</span><b class="eos-v eos-v-a" id="eos-machine">DESKTOP-4NRM1OV</b>
+              <span class="eos-l eos-l-b">Student:</span><b class="eos-v" id="eos-student">student</b>
+            </div>
+            <div class="eos-row">
+              <span class="eos-l eos-l-a">Server:</span><b class="eos-v eos-v-a" id="eos-server">Eng_EOS_14032</b>
+              <span class="eos-l eos-l-b">Exam Code:</span><b class="eos-v" id="eos-code">Test1_</b>
+            </div>
+            <div class="eos-row">
+              <span class="eos-l eos-l-a">Duration:</span><b class="eos-v eos-v-a" id="eos-duration">60 minutes</b>
+              <span class="eos-l eos-l-b">Open Code:</span><span class="eos-textbox"></span>
+              <button class="eos-btn eos-btn-sm" type="button" disabled>Show Question</button>
+            </div>
+            <div class="eos-row">
+              <span class="eos-l eos-l-a">Q mark:</span><b class="eos-v eos-v-a">1</b>
+              <span class="eos-l eos-l-b">Total Marks:</span><b class="eos-v eos-v-c" id="eos-total">60</b>
+              <span class="eos-l">Vol:</span><span class="eos-spin">8<i class="eos-spinner" aria-hidden="true"></i></span>
+            </div>
+            <div class="eos-row eos-row-font">
+              <span class="eos-l eos-l-b">Font:</span><span class="eos-spin eos-spin-font">Microsoft Sans Serif<i class="eos-spinner" aria-hidden="true"></i></span>
+              <span class="eos-l">Size:</span><span class="eos-spin">10<i class="eos-spinner" aria-hidden="true"></i></span>
+              <span class="eos-l eos-l-time">Time Left:</span><span class="eos-time" id="eos-time">--:--</span>
+            </div>
+          </div>
+
+          <div class="eos-tabs"><span class="eos-tab">Multiple Choices</span></div>
+
+          <div class="eos-paper">
+            <p class="eos-paper-head" id="eos-head">Multiple choices 1/60</p>
+            <div class="eos-qrow">
+              <div class="eos-answercol">
+                <p class="eos-col-label">Answer</p>
+                <div id="eos-answers"></div>
+                <div class="eos-nav">
+                  <button class="eos-btn" id="eos-prev" type="button">Previous</button>
+                  <button class="eos-btn" id="eos-next" type="button">Next</button>
+                  <button class="eos-btn eos-btn-check" id="eos-check" type="button">Check answer</button>
+                  <button class="eos-btn eos-btn-save" id="eos-save" type="button" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 4.5h11a1 1 0 0 1 1 1v14l-6.5-4.4L5.5 19.5v-14a1 1 0 0 1 1-1Z"/></svg>
+                    <span id="eos-save-label">Lưu câu hỏi</span>
+                  </button>
+                </div>
+              </div>
+              <div class="eos-qcol">
+                <p class="eos-hint" id="eos-hint">(Choose 1 answer)</p>
+                <p class="eos-question" id="eos-question"></p>
+                <div class="eos-options" id="eos-options"></div>
+                <p class="eos-feedback hidden" id="eos-feedback"></p>
+              </div>
+            </div>
+          </div>
+
+          <button class="eos-strip-toggle" id="eos-strip-toggle" type="button" aria-expanded="false" aria-controls="eos-strip">
+            <span class="eos-caret" aria-hidden="true"></span>
+            <span id="eos-strip-label">Danh sách câu hỏi</span>
+          </button>
+          <div class="eos-strip hidden" id="eos-strip" aria-label="Danh sách câu hỏi"></div>
+
+          <div class="eos-finishbar eos-finishbar-bottom">
+            <label class="eos-check"><input type="checkbox" id="eos-finish-check-bottom" /><span>I want to finish the exam.</span></label>
+            <button class="eos-btn" id="eos-finish-bottom" type="button" disabled>Finish</button>
+          </div>
+          <button class="text-button eos-leave" id="eos-leave" type="button">← Rời phòng thi</button>
+        </div>
+
+        <div class="exam-result hidden" id="exam-result">
+          <p class="eyebrow">KẾT QUẢ BÀI THI</p>
+          <div class="result-score"><strong id="result-mark">0</strong><span id="result-scale">/10</span></div>
+          <p class="result-copy" id="result-copy"></p>
+          <div class="result-actions">
+            <button class="mode-button" id="result-review" type="button">Xem lại bài làm</button>
+            <button class="mode-button ghost" id="result-again" type="button">Thi lại</button>
+            <button class="mode-button ghost" id="result-home" type="button">Về phòng thi</button>
           </div>
         </div>
       </section>

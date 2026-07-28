@@ -5,7 +5,11 @@
 // duplicateOf trỏ về nó. Không xoá câu nào, chỉ gắn nhãn.
 import { readFile, writeFile } from 'node:fs/promises';
 
-const FILE = new URL('../src/questions.json', import.meta.url);
+// Chạy cho từng bộ đề: node scripts/mark_duplicates.mjs src/data/swr302.json --write
+const target = process.argv[2]?.endsWith('.json')
+  ? process.argv[2]
+  : 'src/data/swr302sample.json';
+const FILE = new URL(`../${target}`, import.meta.url);
 
 // OCR làm lệch dấu nháy và đôi khi thêm/bớt mạo từ, nên chỉ so 80 ký tự
 // chữ-số đầu tiên. Đáp án và số lựa chọn phải khớp để tránh gom nhầm.
@@ -70,7 +74,7 @@ if (suspicious.length) {
 
 if (process.argv.includes('--write')) {
   await writeFile(FILE, JSON.stringify(questions, null, 2) + '\n', 'utf8');
-  console.log('\nĐã ghi src/questions.json');
+  console.log(`\nĐã ghi ${target}`);
 } else {
   console.log('\n(chạy lại với --write để ghi file)');
 }

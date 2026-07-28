@@ -1,11 +1,11 @@
-// Làm sạch text thừa do OCR trong src/questions.json.
+// Làm sạch text thừa do OCR trong bộ đề mẫu src/data/swr302sample.json.
 // Chạy: node scripts/clean_questions.mjs [--write]
 //
 // Nguồn PDF có phần đáp án + giải thích tiếng Việt nằm ngay dưới mỗi câu, OCR
 // kéo chúng dính vào lựa chọn cuối. Ngoài ra còn dấu tick "iV)" và ký tự lạ.
 import { readFile, writeFile } from 'node:fs/promises';
 
-const FILE = new URL('../src/questions.json', import.meta.url);
+const FILE = new URL('../src/data/swr302sample.json', import.meta.url);
 
 // "... iv) BC@Epics chia nhỏ ..." - từ dấu @ trở đi là chú thích của người soạn.
 const AT_BLOCK = /\s*[A-Za-z0-9]{0,6}@[\s\S]*$/;
@@ -137,7 +137,7 @@ problems.forEach((problem) => console.log('  ' + problem));
 
 if (process.argv.includes('--write')) {
   await writeFile(FILE, JSON.stringify(questions, null, 2) + '\n', 'utf8');
-  console.log('\nĐã ghi src/questions.json');
+  console.log('\nĐã ghi src/data/swr302sample.json');
 } else {
   console.log('\n(chạy lại với --write để ghi file)');
 }

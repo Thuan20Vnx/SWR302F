@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 OCR_DIR = Path("tmp/pdfs/ocr")
-OUTPUT = Path("src/questions.json")
+OUTPUT = Path("src/data/swr302sample.json")
 REPORT = Path("tmp/pdfs/parse-report.json")
 
 OPTION_RE = re.compile(r"^\s*([A-F])[\.\),:]\s*(.+)", re.I)

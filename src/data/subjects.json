@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SWR302",
+    "label": "SWR302",
+    "note": "Đề chuẩn · 400 câu (293 câu khác nhau)",
+    "file": "swr302.json",
+    "idBase": 1000
+  },
+  {
+    "id": "SWR302Sample",
+    "label": "SWR302Sample",
+    "note": "Bộ đề chụp mẫu · 400 câu",
+    "file": "swr302sample.json",
+    "idBase": 0
+  }
+]

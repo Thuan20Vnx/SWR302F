@@ -16,7 +16,8 @@ body {
 
 .shell { max-width: 1120px; margin: auto; padding: 28px 38px 60px; }
 .topbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; }
-.brand { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; font-weight: 800; line-height: .9; letter-spacing: .03em; }
+.brand { color: #fff; border: 0; background: transparent; padding: 0; cursor: pointer; text-align: left; font: inherit; font-weight: 800; display: flex; align-items: center; gap: 10px; line-height: .9; letter-spacing: .03em; }
+.brand:focus-visible { outline: 2px solid #f5c765; outline-offset: 4px; border-radius: 6px; }
 .brand small { font-size: 10px; font-weight: 500; color: #aab7c6; letter-spacing: .12em; }
 .brand-mark { width: 34px; height: 34px; border: 1px solid #f5c765; display: grid; place-items: center; color: #f5c765; font-family: Fraunces, serif; font-size: 21px; }
 .top-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
@@ -177,57 +178,57 @@ kbd { border: 1px solid #64748b; border-radius: 3px; padding: 1px 4px; color: #e
 .study-layout .tap-hint { color: #6a6a6a; font: 11px Arial, Helvetica, sans-serif; }
 
 html.light-theme { background: #f4f1e8; }
-body.light-theme {
+html.light-theme body {
   background: radial-gradient(circle at 85% 5%, #dbe7ee 0, transparent 27rem), #f4f1e8;
   color: #172031;
 }
-body.light-theme .brand { color: #172031; }
-body.light-theme .brand small, body.light-theme .dashboard p, body.light-theme .deck-count span, body.light-theme .side-tip, body.light-theme .intro, body.light-theme .controls, body.light-theme footer { color: #526373; }
-body.light-theme .text-button { color: #4f6070; }
-body.light-theme .text-button:hover { color: #172031; }
-body.light-theme .eyebrow, body.light-theme .side-label, body.light-theme .field-label, body.light-theme .hero em, body.light-theme .deck-count strong, body.light-theme .streak > span { color: #875b00; }
-body.light-theme .brand-mark { color: #875b00; border-color: #b77d08; }
-body.light-theme .mode-button.ghost { color: #704c00; border-color: #b77d08; }
-body.light-theme .mode-button.ghost:hover { background: #fff4d8; }
-body.light-theme .mode-button.active { box-shadow: 0 0 0 3px rgba(154, 103, 0, .18); }
-body.light-theme .dashboard, body.light-theme .search-field, body.light-theme .page-field select, body.light-theme .pill-button, body.light-theme .user-chip, body.light-theme .empty-state {
+html.light-theme body .brand { color: #172031; }
+html.light-theme body .brand small, html.light-theme body .dashboard p, html.light-theme body .deck-count span, html.light-theme body .side-tip, html.light-theme body .intro, html.light-theme body .controls, html.light-theme body footer { color: #526373; }
+html.light-theme body .text-button { color: #4f6070; }
+html.light-theme body .text-button:hover { color: #172031; }
+html.light-theme body .eyebrow, html.light-theme body .side-label, html.light-theme body .field-label, html.light-theme body .hero em, html.light-theme body .deck-count strong, html.light-theme body .streak > span { color: #875b00; }
+html.light-theme body .brand-mark { color: #875b00; border-color: #b77d08; }
+html.light-theme body .mode-button.ghost { color: #704c00; border-color: #b77d08; }
+html.light-theme body .mode-button.ghost:hover { background: #fff4d8; }
+html.light-theme body .mode-button.active { box-shadow: 0 0 0 3px rgba(154, 103, 0, .18); }
+html.light-theme body .dashboard, html.light-theme body .search-field, html.light-theme body .page-field select, html.light-theme body .pill-button, html.light-theme body .user-chip, html.light-theme body .empty-state {
   background: rgba(255, 255, 255, .86);
   border-color: #cbd5dc;
   color: #172031;
 }
-body.light-theme .dashboard strong, body.light-theme .progress-ring span { color: #172031; }
-body.light-theme .progress-ring { background: conic-gradient(#d39f31 var(--progress), #d9e0e4 0); }
-body.light-theme .progress-ring::before { background: #fff; }
-body.light-theme .search-field input, body.light-theme .page-field select, body.light-theme .user-chip span { color: #172031; }
-body.light-theme .search-field input::placeholder, body.light-theme .search-field .search-icon { color: #6d7d8b; }
-body.light-theme .search-field:focus-within { border-color: #a06b00; }
-body.light-theme .search-field:focus-within .search-icon { color: #875b00; }
-body.light-theme .filter { color: #435363; border-color: #b8c4cc; }
-body.light-theme .filter:hover { color: #172031; border-color: #a06b00; }
-body.light-theme .filter.active { background: #172031; border-color: #172031; color: #fff; }
-body.light-theme .filter-legend { color: #6d7d8b; }
-body.light-theme .filter-pages { scrollbar-color: #c3ced6 transparent; }
-body.light-theme .filter-pages::-webkit-scrollbar-thumb { background: #c3ced6; }
-body.light-theme .round-button, body.light-theme .save-button, body.light-theme .rating button { color: #263748; border-color: #9facb6; }
-body.light-theme .round-button:hover { background: #e0e8ed; }
-body.light-theme .save-button:hover { color: #704c00; border-color: #a06b00; }
-body.light-theme .save-button.saved { color: #704c00; border-color: #b77d08; background: #fff4d8; }
-body.light-theme .rating button:last-child { color: #123522; border-color: #68a789; background: #8ac5a8; }
-body.light-theme .side-tip { border-color: #c8d1d7; }
-body.light-theme kbd { color: #263748; border-color: #82919d; background: #fff; }
-body.light-theme .pill-button:hover { color: #172031; border-color: #a06b00; }
-body.light-theme .pill-button.active { color: #704c00; border-color: #b77d08; background: #fff4d8; }
-body.light-theme .pill-button .icon { color: #875b00; }
-body.light-theme .google-auth-retry { color: #263748; border-color: #9facb6; background: #fff; }
-body.light-theme .google-auth-retry:hover { color: #704c00; border-color: #a06b00; }
-body.light-theme .theme-switch { background: rgba(255, 255, 255, .9); border-color: rgba(75, 91, 105, .2); box-shadow: 0 8px 22px rgba(56, 68, 78, .16), inset 0 1px 0 #fff; }
-body.light-theme .theme-button { color: #536574; }
-body.light-theme .theme-button.active { background: #172031; color: #fff; box-shadow: 0 3px 10px rgba(23, 32, 49, .2); }
-body.light-theme .modal { background: #fff; border-color: #cbd5dc; color: #172031; }
-body.light-theme .modal-copy, body.light-theme .modal-note, body.light-theme .modal-close { color: #607080; }
-body.light-theme .modal-close:hover { color: #172031; }
-body.light-theme .toast { background: #fff; border-color: #cbd5dc; border-left-color: #a06b00; color: #172031; box-shadow: 0 10px 30px rgba(50, 65, 76, .18); }
-body.light-theme .toast-error { border-left-color: #c43a3a; }
+html.light-theme body .dashboard strong, html.light-theme body .progress-ring span { color: #172031; }
+html.light-theme body .progress-ring { background: conic-gradient(#d39f31 var(--progress), #d9e0e4 0); }
+html.light-theme body .progress-ring::before { background: #fff; }
+html.light-theme body .search-field input, html.light-theme body .page-field select, html.light-theme body .user-chip span { color: #172031; }
+html.light-theme body .search-field input::placeholder, html.light-theme body .search-field .search-icon { color: #6d7d8b; }
+html.light-theme body .search-field:focus-within { border-color: #a06b00; }
+html.light-theme body .search-field:focus-within .search-icon { color: #875b00; }
+html.light-theme body .filter { color: #435363; border-color: #b8c4cc; }
+html.light-theme body .filter:hover { color: #172031; border-color: #a06b00; }
+html.light-theme body .filter.active { background: #172031; border-color: #172031; color: #fff; }
+html.light-theme body .filter-legend { color: #6d7d8b; }
+html.light-theme body .filter-pages { scrollbar-color: #c3ced6 transparent; }
+html.light-theme body .filter-pages::-webkit-scrollbar-thumb { background: #c3ced6; }
+html.light-theme body .round-button, html.light-theme body .save-button, html.light-theme body .rating button { color: #263748; border-color: #9facb6; }
+html.light-theme body .round-button:hover { background: #e0e8ed; }
+html.light-theme body .save-button:hover { color: #704c00; border-color: #a06b00; }
+html.light-theme body .save-button.saved { color: #704c00; border-color: #b77d08; background: #fff4d8; }
+html.light-theme body .rating button:last-child { color: #123522; border-color: #68a789; background: #8ac5a8; }
+html.light-theme body .side-tip { border-color: #c8d1d7; }
+html.light-theme body kbd { color: #263748; border-color: #82919d; background: #fff; }
+html.light-theme body .pill-button:hover { color: #172031; border-color: #a06b00; }
+html.light-theme body .pill-button.active { color: #704c00; border-color: #b77d08; background: #fff4d8; }
+html.light-theme body .pill-button .icon { color: #875b00; }
+html.light-theme body .google-auth-retry { color: #263748; border-color: #9facb6; background: #fff; }
+html.light-theme body .google-auth-retry:hover { color: #704c00; border-color: #a06b00; }
+html.light-theme body .theme-switch { background: rgba(255, 255, 255, .9); border-color: rgba(75, 91, 105, .2); box-shadow: 0 8px 22px rgba(56, 68, 78, .16), inset 0 1px 0 #fff; }
+html.light-theme body .theme-button { color: #536574; }
+html.light-theme body .theme-button.active { background: #172031; color: #fff; box-shadow: 0 3px 10px rgba(23, 32, 49, .2); }
+html.light-theme body .modal { background: #fff; border-color: #cbd5dc; color: #172031; }
+html.light-theme body .modal-copy, html.light-theme body .modal-note, html.light-theme body .modal-close { color: #607080; }
+html.light-theme body .modal-close:hover { color: #172031; }
+html.light-theme body .toast { background: #fff; border-color: #cbd5dc; border-left-color: #a06b00; color: #172031; box-shadow: 0 10px 30px rgba(50, 65, 76, .18); }
+html.light-theme body .toast-error { border-left-color: #c43a3a; }
 .hidden { display: none !important; }
 
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; max-width: min(520px, calc(100vw - 32px)); background: #182536; border: 1px solid #3a4c60; border-left: 3px solid #f5c765; border-radius: 10px; padding: 14px 18px; font-size: 14px; line-height: 1.55; color: #e9edf2; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
@@ -342,4 +343,204 @@ footer { text-align: center; color: #8595a6; font-size: 13px; padding: 25px 20px
   .study-layout .card-face h2 { font-size: 13px; }
 }
 
-body.light-theme #quiz-dupe.dupe-badge { color: #875b00; border-color: #d8c48d; }
+html.light-theme body #quiz-dupe.dupe-badge { color: #875b00; border-color: #d8c48d; }
+
+/* ---------- Chọn môn ---------- */
+.subject-picker { position: relative; }
+.pill-caret { font-size: 10px; opacity: .7; }
+.subject-menu { position: absolute; top: calc(100% + 8px); left: 0; z-index: 40; min-width: 240px; display: grid; gap: 4px; padding: 8px; background: #182536; border: 1px solid #3a4c60; border-radius: 12px; box-shadow: 0 14px 34px rgba(4, 10, 18, .45); }
+.subject-option { display: grid; gap: 2px; text-align: left; width: 100%; border: 1px solid transparent; border-radius: 9px; padding: 9px 11px; background: transparent; color: #dfe6ee; font: inherit; cursor: pointer; }
+.subject-option strong { font-size: 14px; }
+.subject-option span { font-size: 12px; color: #9faebe; }
+.subject-option:hover { border-color: #f5c765; }
+.subject-option.active { background: rgba(245, 199, 101, .14); border-color: #f5c765; color: #f5c765; }
+.subject-option.active span { color: #d9c393; }
+.subject-soon { margin: 6px 4px 2px; font-size: 11px; color: #7f8fa1; }
+html.light-theme body .subject-menu { background: #fff; border-color: #cbd5dc; box-shadow: 0 14px 34px rgba(56, 68, 78, .18); }
+html.light-theme body .subject-option { color: #172031; }
+html.light-theme body .subject-option span { color: #607080; }
+html.light-theme body .subject-option:hover { border-color: #a06b00; }
+html.light-theme body .subject-option.active { background: #fff4d8; border-color: #b77d08; color: #704c00; }
+
+/* ---------- Phòng thi thử ---------- */
+.exam { margin-top: 26px; }
+.exam-launcher { max-width: 900px; }
+.exam-launcher-title { font: 700 clamp(26px, 4vw, 38px)/1.15 Fraunces, serif; margin: 10px 0 12px; }
+.exam-launcher-copy { color: #b7c2cf; line-height: 1.65; max-width: 620px; margin: 0 0 26px; }
+.exam-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.exam-choice { display: grid; gap: 8px; justify-items: start; text-align: left; padding: 22px; border: 1px solid #33455a; border-radius: 15px; background: #182536; color: #e9edf2; font: inherit; cursor: pointer; transition: .18s; }
+.exam-choice:hover { border-color: #f5c765; transform: translateY(-2px); }
+.exam-choice-tag { font: 700 10px "Be Vietnam Pro", sans-serif; letter-spacing: .15em; color: #f5c765; }
+.exam-choice strong { font: 700 22px Fraunces, serif; }
+.exam-choice p { margin: 0; font-size: 13px; line-height: 1.6; color: #aab7c6; }
+.exam-choice b { color: #f5c765; }
+.exam-choice-go { margin-top: 6px; font-size: 13px; font-weight: 700; color: #f5c765; }
+html.light-theme body .exam-launcher-copy { color: #526373; }
+html.light-theme body .exam-choice { background: rgba(255, 255, 255, .86); border-color: #cbd5dc; color: #172031; }
+html.light-theme body .exam-choice p { color: #526373; }
+html.light-theme body .exam-choice-tag, html.light-theme body .exam-choice-go, html.light-theme body .exam-choice b { color: #875b00; }
+html.light-theme body .exam-choice:hover { border-color: #a06b00; }
+
+/* Cửa sổ EOS dựng theo ảnh chụp phần mềm thi thật: nền trắng, nhãn đen chữ
+   nhỏ, giá trị màu xanh, khung câu hỏi viền mảnh. Tông này giữ nguyên ở cả
+   light lẫn dark theme để lúc vào phòng máy không thấy lạ mắt. */
+.eos {
+  --eos-blue: #1447c4;
+  --eos-line: #b7b7b7;
+  max-width: 1000px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  font: 13px/1.35 "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
+  padding: 6px 14px 12px;
+  box-shadow: 0 12px 30px rgba(6, 12, 20, .35);
+}
+.eos-finishbar { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 3px 0 6px; }
+.eos-finishbar-bottom { margin-top: 10px; padding-top: 8px; border-top: 1px solid #e3e3e3; }
+.eos-check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.eos-check input { width: 13px; height: 13px; margin: 0; accent-color: #1447c4; }
+
+/* Nút EOS là nút Windows cổ điển; riêng Finish có nền vàng nâu như bản thật. */
+.eos-btn { border: 1px solid #8d8d8d; background: linear-gradient(#fdfdfd, #e6e6e6); color: #000; font: 12px "Microsoft Sans Serif", Tahoma, Arial, sans-serif; padding: 3px 13px; border-radius: 2px; cursor: pointer; }
+.eos-btn:hover:not(:disabled) { background: linear-gradient(#fff, #eee); border-color: #6f6f6f; }
+.eos-btn:active:not(:disabled) { background: #e0e0e0; }
+.eos-btn:disabled { color: #9a9a9a; cursor: default; }
+.eos-btn-sm { padding: 2px 8px; font-size: 12px; }
+.eos-btn-finish { background: linear-gradient(#efe4b4, #ddcc8e); border-color: #8a7c4e; padding: 3px 22px; }
+.eos-btn-finish:hover:not(:disabled) { background: linear-gradient(#f7edc4, #e4d69c); border-color: #6f6335; }
+.eos-btn-finish:disabled { background: linear-gradient(#f1f1f1, #e6e6e6); border-color: #b4b4b4; }
+
+.eos-info { display: grid; gap: 4px; padding: 2px 0 6px; }
+.eos-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.eos-row-font { margin-left: 96px; }
+.eos-l { flex: none; color: #1a1a1a; }
+/* Hai cột nhãn canh phải như bản gốc: Machine/Server/Duration/Q mark thẳng hàng. */
+.eos-l-a { width: 76px; text-align: right; }
+.eos-l-b { width: 104px; text-align: right; }
+.eos-l-time { margin-left: 10px; }
+.eos-v { font-weight: 700; color: var(--eos-blue); overflow-wrap: anywhere; }
+.eos-v-a { width: 178px; }
+.eos-v-c { width: 60px; }
+.eos-textbox { display: inline-block; width: 168px; height: 21px; border: 1px solid #7f9db9; background: #fff; }
+.eos-spin { display: inline-flex; align-items: center; min-width: 34px; height: 21px; padding: 0 0 0 5px; border: 1px solid #7f9db9; background: #fff; color: #000; font-size: 12px; }
+.eos-spin-font { min-width: 156px; }
+.eos-spinner { position: relative; width: 15px; align-self: stretch; margin-left: auto; border-left: 1px solid #cfcfcf; background: linear-gradient(#fbfbfb, #e9e9e9); }
+.eos-spinner::before, .eos-spinner::after { content: ""; position: absolute; left: 50%; margin-left: -3px; border-left: 3px solid transparent; border-right: 3px solid transparent; }
+.eos-spinner::before { top: 4px; border-bottom: 4px solid #444; }
+.eos-spinner::after { bottom: 4px; border-top: 4px solid #444; }
+.eos-time { font: 700 44px/1 Arial, Helvetica, sans-serif; color: #1560e8; font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+.eos-time.eos-time-low { color: #d21414; }
+
+.eos-tabs { display: flex; align-items: flex-end; gap: 2px; margin: 6px 0 0; }
+.eos-tab { border: 1px solid #767676; border-bottom: 0; padding: 2px 10px 3px; background: #fff; font-weight: 700; font-size: 13px; }
+.eos-tab-off { padding: 2px 8px 3px; color: #444; font-size: 13px; }
+
+.eos-paper { padding: 10px 0 0; }
+.eos-paper-head { margin: 0 0 10px 22px; font-weight: 700; color: var(--eos-blue); }
+.eos-qrow { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; align-items: stretch; }
+.eos-answercol { display: flex; flex-direction: column; }
+.eos-col-label { margin: 0 0 14px 6px; font-weight: 700; color: var(--eos-blue); }
+.eos-answer { display: flex; align-items: center; gap: 9px; padding: 6px 0 6px 14px; cursor: pointer; }
+.eos-answer input { width: 13px; height: 13px; margin: 0; accent-color: #1447c4; }
+.eos-answer.is-correct { color: #14601f; font-weight: 700; }
+.eos-answer.is-wrong { color: #a91414; font-weight: 700; }
+/* Cụm nút điều hướng nằm dưới cột Answer: các nút bằng nhau, chữ không xuống
+   dòng, hai nút phụ (chấm đáp án / lưu câu) tách khỏi Previous-Next bằng một
+   đường mảnh cho đỡ rối. */
+.eos-nav { display: grid; gap: 5px; margin-top: auto; padding-top: 24px; }
+.eos-nav .eos-btn { width: 100%; padding: 5px 8px; white-space: nowrap; text-align: center; }
+#eos-next { margin-bottom: 9px; }
+.eos-btn-save { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.eos-btn-save svg { width: 13px; height: 13px; flex: none; }
+.eos-btn-save.is-saved { background: linear-gradient(#fbf0cd, #f0e0a6); border-color: #9a8646; color: #5a4a13; }
+.eos-btn-save.is-saved svg { fill: currentColor; }
+
+/* Câu hỏi nằm trong một panel viền mảnh, chữ giãn dòng rộng như đề thi giấy. */
+.eos-qcol { border: 1px solid var(--eos-line); background: #fff; padding: 10px 14px 16px; min-height: 260px; }
+.eos-hint { margin: 0 0 14px; }
+.eos-question { margin: 0 0 14px; line-height: 1.5; white-space: pre-line; overflow-wrap: anywhere; }
+.eos-options { display: grid; gap: 4px; }
+.eos-option { display: flex; align-items: flex-start; gap: 8px; width: 100%; text-align: left; border: 1px solid transparent; padding: 5px 6px; background: transparent; color: #000; font: 13px/1.5 "Microsoft Sans Serif", Tahoma, Arial, sans-serif; cursor: pointer; }
+.eos-option-box { display: none; flex: none; width: 14px; height: 14px; margin-top: 3px; border: 1px solid #6f6f6f; background: #fff; }
+.eos-option-text { min-width: 0; overflow-wrap: anywhere; }
+.eos-option:hover:not(:disabled) { background: #eef3fb; }
+.eos-option.is-picked { background: #dceafa; border-color: #a9c7e8; }
+.eos-option.is-correct { background: #e7f5e8; border-color: #aed4b0; color: #14601f; font-weight: 700; }
+.eos-option.is-wrong { background: #fdeded; border-color: #ecbfbf; color: #a91414; font-weight: 700; }
+.eos-option:disabled { cursor: default; }
+.eos-feedback { margin: 14px 0 0; font-weight: 700; color: #a91414; }
+.eos-feedback.is-ok { color: #14601f; }
+
+.eos-strip-toggle { display: inline-flex; align-items: center; gap: 7px; margin-top: 10px; border: 0; background: transparent; padding: 4px 2px; color: var(--eos-blue); font: 12px "Microsoft Sans Serif", Tahoma, Arial, sans-serif; cursor: pointer; }
+.eos-strip-toggle:hover { text-decoration: underline; }
+.eos-caret { width: 0; height: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid currentColor; transition: transform .15s; }
+.eos-strip-toggle.is-open .eos-caret { transform: rotate(90deg); }
+.eos-strip { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 4px; padding: 4px; border: 1px solid var(--eos-line); background: #f5f5f5; max-height: 96px; overflow-y: auto; }
+.eos-num { width: 25px; height: 20px; border: 1px solid #a5a5a5; background: #fff; color: #000; font: 12px "Microsoft Sans Serif", Tahoma, Arial, sans-serif; cursor: pointer; padding: 0; }
+.eos-num.answered { background: #7ad17a; border-color: #4e9c4e; }
+.eos-num.right { background: #3f9c42; border-color: #2f7a32; color: #fff; }
+.eos-num.miss { background: #d84f4f; border-color: #a83a3a; color: #fff; }
+.eos-num.current { outline: 2px solid #e8a400; outline-offset: -2px; font-weight: 700; }
+.eos-leave { display: block; margin: 4px auto 0; color: #4a5a75; font-size: 12px; }
+
+
+
+.exam-result { max-width: 620px; margin-top: 10px; background: #182536; border: 1px solid #33455a; border-radius: 16px; padding: 30px; text-align: center; }
+.result-score { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin: 10px 0 6px; }
+.result-score strong { font: 700 68px Fraunces, serif; color: #f5c765; }
+.result-score span { font-size: 22px; color: #9faebe; }
+.result-copy { color: #b7c2cf; margin: 0 0 24px; }
+.result-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+html.light-theme body .exam-result { background: rgba(255, 255, 255, .86); border-color: #cbd5dc; color: #172031; }
+html.light-theme body .result-score strong { color: #875b00; }
+html.light-theme body .result-copy { color: #526373; }
+
+@media (max-width: 900px) {
+  .eos-time { font-size: 34px; }
+  .eos-v-a { width: 150px; }
+  .eos-row-font { margin-left: 0; }
+}
+
+/* Trên điện thoại cột Answer nhỏ xíu rất khó bấm, nên gộp luôn vào danh sách
+   đáp án: mỗi dòng đáp án trở thành một ô tick to bằng ngón tay. */
+@media (max-width: 720px) {
+  /* Tên môn là thứ cần thấy ngay nên vẫn giữ chữ, chỉ cắt bớt nếu quá dài. */
+  #subject-button .pill-label { display: inline-block; max-width: 96px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .subject-menu { min-width: min(260px, calc(100vw - 32px)); }
+  .exam { margin-top: 18px; }
+  .exam-choice { padding: 18px; }
+  .eos { padding: 8px 10px 10px; border-radius: 8px; font-size: 12px; }
+  .eos-finishbar { flex-wrap: wrap; gap: 8px; }
+  .eos-btn { padding: 7px 14px; }
+  .eos-info { gap: 3px; font-size: 12px; }
+  .eos-row { gap: 5px; }
+  .eos-row-font { margin-left: 0; }
+  .eos-l-a { width: 68px; }
+  .eos-l-b { width: auto; }
+  .eos-v-a, .eos-v-c { width: auto; }
+  .eos-textbox { width: 96px; }
+  .eos-spin-font { min-width: 118px; }
+  .eos-l-time { margin-left: 0; }
+  .eos-time { font-size: 36px; margin-left: auto; }
+  .eos-paper-head { margin-left: 0; }
+  .eos-qrow { grid-template-columns: 1fr; gap: 0; }
+  .eos-qcol { order: 1; min-height: 0; padding: 10px 12px 14px; }
+  .eos-answercol { order: 2; }
+  .eos-col-label, #eos-answers { display: none; }
+  .eos-option { padding: 11px 8px; border-color: #dcdcdc; }
+  .eos-option-box { display: block; }
+  .eos-option.is-picked .eos-option-box { background: #1447c4; box-shadow: inset 0 0 0 2px #fff; }
+  .eos-option.is-correct .eos-option-box { background: #2e7d32; box-shadow: inset 0 0 0 2px #fff; }
+  .eos-option.is-wrong .eos-option-box { background: #c62828; box-shadow: inset 0 0 0 2px #fff; }
+  .eos-nav { grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 0; padding-top: 12px; }
+  .eos-nav .eos-btn { padding: 10px 8px; }
+  #eos-next { margin-bottom: 0; }
+  .eos-btn-check, .eos-btn-save { grid-column: 1 / -1; }
+  .eos-strip-toggle { padding: 8px 2px; font-size: 13px; }
+  .eos-num { width: 30px; height: 26px; font-size: 12px; }
+  .eos-strip { max-height: 120px; }
+  .exam-result { padding: 24px 18px; }
+  .result-score strong { font-size: 54px; }
+  .result-actions .mode-button { flex: 1 1 100%; }
+}

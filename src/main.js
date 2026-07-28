@@ -1,25 +1,30 @@
 import { initAuth, api } from './auth.js';
+import { createExam } from './exam.js';
+// Danh sách môn dùng chung với script nạp dữ liệu (server/src/scripts/seed-questions.js),
+// nên thêm môn mới chỉ phải sửa một chỗ duy nhất.
+import SUBJECTS from './data/subjects.json';
 
-const QUESTIONS_CACHE = 'swr302-questions-v1';
 const THEME_KEY = 'swr302-theme-v1';
+const SUBJECT_KEY = 'swr302-subject-v2';
+const cacheKey = (subject) => `swr302-questions-v2:${subject}`;
 
 // Bộ câu hỏi nằm trên MongoDB. Bản sao trong localStorage giúp app vẫn học được
 // khi server ngủ hoặc mất mạng.
 let cards = [];
 
-async function loadCards() {
-  const { ok, data } = await api('/questions');
+async function loadCards(subject) {
+  const { ok, data } = await api(`/questions?subject=${encodeURIComponent(subject)}`);
   if (ok && Array.isArray(data.questions) && data.questions.length) {
-    localStorage.setItem(QUESTIONS_CACHE, JSON.stringify(data.questions));
+    localStorage.setItem(cacheKey(subject), JSON.stringify(data.questions));
     return data.questions;
   }
 
-  const cached = localStorage.getItem(QUESTIONS_CACHE);
+  const cached = localStorage.getItem(cacheKey(subject));
   if (cached) {
     try {
       return JSON.parse(cached);
     } catch {
-      localStorage.removeItem(QUESTIONS_CACHE);
+      localStorage.removeItem(cacheKey(subject));
     }
   }
   return [];
@@ -32,7 +37,10 @@ const today = () => new Date().toISOString().slice(0, 10);
 const storedSessionDate = localStorage.getItem('swr302-sessions-date-v1');
 
 const state = {
-  view: 'home', // 'home' | 'study' | 'quiz'
+  view: 'home', // 'home' | 'study' | 'quiz' | 'exam'
+  subject:
+    SUBJECTS.find((item) => item.id === localStorage.getItem(SUBJECT_KEY)) ||
+    SUBJECTS[0],
   topic: ALL,
   search: '',
   index: 0,
@@ -75,7 +83,7 @@ function setTheme(theme) {
   window.dispatchEvent(new CustomEvent('swr302:theme'));
 }
 
-setTheme(localStorage.getItem(THEME_KEY) || 'dark');
+setTheme(localStorage.getItem(THEME_KEY) || 'light');
 
 function matchesSearch(card) {
   const needle = state.search.trim().toLowerCase();
@@ -98,6 +106,13 @@ const originalOf = (card) =>
 // nhóm trùng - không bị đếm hai lần, cũng không mất khi bật "Ẩn câu trùng".
 const canonicalId = (card) => card.duplicateOf || card.id;
 const uniqueCount = () => cards.filter((card) => !card.duplicateOf).length;
+// Tiến độ và danh sách đã lưu dùng chung cho mọi môn, nên khi đếm phải bỏ qua
+// những câu không thuộc bộ đề đang mở.
+const knownCount = () =>
+  cards.filter((card) => !card.duplicateOf && state.progress[card.id] === 'known')
+    .length;
+const savedCount = () =>
+  cards.filter((card) => !card.duplicateOf && state.saved.has(card.id)).length;
 
 function normalizeIds() {
   const progress = {};
@@ -229,7 +244,7 @@ function topicList() {
 }
 
 function topicLabel(topic) {
-  return topic === SAVED ? `${SAVED} (${state.saved.size})` : topic;
+  return topic === SAVED ? `${SAVED} (${savedCount()})` : topic;
 }
 
 function renderFilters() {
@@ -242,7 +257,7 @@ function renderFilters() {
   $('#filters').innerHTML = `
     <div class="filter-shortcuts">
       ${chip(ALL, `Tất cả <span class="filter-count">${cards.length}</span>`)}
-      ${chip(SAVED, `Đã lưu <span class="filter-count">${state.saved.size}</span>`)}
+      ${chip(SAVED, `Đã lưu <span class="filter-count">${savedCount()}</span>`)}
     </div>
     <div class="filter-pages">
       <span class="filter-legend">Trang</span>
@@ -281,9 +296,7 @@ function updateProgress() {
   // Mẫu số là số câu hỏi khác nhau (câu lặp không tính lại), nếu không thì học
   // hết bộ vẫn không bao giờ chạm 100%.
   const total = uniqueCount();
-  const known = Object.values(state.progress).filter(
-    (value) => value === 'known',
-  ).length;
+  const known = knownCount();
   const percent = total ? (known / total) * 100 : 0;
   // One card is only 0.25%, so small values keep a decimal instead of rounding
   // down to a flat "0%", and the ring keeps a visible sliver once anything is known.
@@ -302,9 +315,9 @@ function updateProgress() {
       : known
         ? 'Tiếp tục giữ nhịp nhé!'
         : `Bắt đầu bộ ${total} câu`;
-  $('#progress-copy').textContent = `${known} / ${total} câu đã thuộc · ${state.saved.size} câu đã lưu`;
+  $('#progress-copy').textContent = `${known} / ${total} câu đã thuộc · ${savedCount()} câu đã lưu`;
   $('#streak-value').textContent = state.sessions;
-  $('#saved-count').textContent = state.saved.size;
+  $('#saved-count').textContent = savedCount();
   $('#saved-button').classList.toggle(
     'active',
     state.view === 'study' && state.topic === SAVED,
@@ -498,27 +511,83 @@ function checkQuizAnswer() {
   $('#next-quiz').classList.remove('hidden');
 }
 
+const exam = createExam({
+  getCards: () => cards,
+  onLeave: () => setView('home'),
+  isSaved: (card) => state.saved.has(canonicalId(card)),
+  onToggleSave: (card) => toggleSaved(card),
+});
+
 function render() {
   const { view } = state;
   $('#hero').classList.toggle('hidden', view !== 'home');
-  $('#toolbar').classList.toggle('hidden', view === 'home');
+  // Phòng thi có bộ đề riêng nên không dùng thanh lọc trang / tìm kiếm.
+  $('#toolbar').classList.toggle('hidden', view === 'home' || view === 'exam');
+  $('#dashboard').classList.toggle('hidden', view === 'exam');
   $('#study-layout').classList.toggle('hidden', view !== 'study');
   $('#quiz').classList.toggle('hidden', view !== 'quiz');
+  $('#exam').classList.toggle('hidden', view !== 'exam');
   $('#study-button').classList.toggle('active', view === 'study');
   $('#quiz-button').classList.toggle('active', view === 'quiz');
+  $('#exam-button').classList.toggle('active', view === 'exam');
   renderDuplicateToggle();
   updateProgress();
   if (view === 'study') renderCard();
   if (view === 'quiz') renderQuiz();
+  if (view === 'exam') exam.open();
 }
 
 function setView(view) {
   state.view = view;
   if (view === 'quiz') resetQuizOrder();
   render();
-  if (view !== 'home') {
+  if (view === 'exam') {
+    $('#exam').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (view !== 'home') {
     $('#toolbar').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
+}
+
+function renderSubjects() {
+  $('#subject-label').textContent = state.subject.label;
+  document.title = `SLearning · ${state.subject.label}`;
+  $('#subject-menu').innerHTML =
+    SUBJECTS.map(
+      (item) =>
+        `<button class="subject-option ${item.id === state.subject.id ? 'active' : ''}" type="button" role="option" aria-selected="${item.id === state.subject.id}" data-subject="${item.id}">
+          <strong>${escapeHtml(item.label)}</strong><span>${escapeHtml(item.note)}</span>
+        </button>`,
+    ).join('') +
+    '<p class="subject-soon">Các môn khác đang được cập nhật.</p>';
+  $('#subject-menu')
+    .querySelectorAll('[data-subject]')
+    .forEach((button) => {
+      button.onclick = () => selectSubject(button.dataset.subject);
+    });
+}
+
+function toggleSubjectMenu(open) {
+  const next =
+    open ?? $('#subject-menu').classList.contains('hidden');
+  $('#subject-menu').classList.toggle('hidden', !next);
+  $('#subject-button').setAttribute('aria-expanded', String(next));
+}
+
+function selectSubject(id) {
+  const subject = SUBJECTS.find((item) => item.id === id);
+  toggleSubjectMenu(false);
+  if (!subject || subject.id === state.subject.id) return;
+  state.subject = subject;
+  localStorage.setItem(SUBJECT_KEY, subject.id);
+  // Đổi môn là đổi hẳn bộ đề: bỏ bài thi đang dở và về đầu bộ thẻ.
+  exam.reset();
+  state.topic = ALL;
+  state.index = 0;
+  state.flipped = false;
+  state.quizIndex = 0;
+  state.quizOrder = [];
+  renderSubjects();
+  boot();
 }
 
 $('#flashcard').onclick = flip;
@@ -545,11 +614,23 @@ $('#saved-button').onclick = () => {
   $('#toolbar').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
 $('#quiz-button').onclick = () => setView('quiz');
+$('#exam-button').onclick = () => setView('exam');
+$('#subject-button').onclick = (event) => {
+  event.stopPropagation();
+  toggleSubjectMenu();
+};
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('#subject-picker')) toggleSubjectMenu(false);
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') toggleSubjectMenu(false);
+});
 document.querySelectorAll('[data-theme]').forEach((button) => {
   button.onclick = () => setTheme(button.dataset.theme);
 });
 $('#hero-study').onclick = () => setView('study');
 $('#hero-quiz').onclick = () => setView('quiz');
+$('#hero-exam').onclick = () => setView('exam');
 $('#brand').onclick = (event) => {
   event.preventDefault();
   setView('home');
@@ -612,6 +693,7 @@ function showUser(user) {
   $('#user-chip').classList.remove('hidden');
   $('#user-avatar').src = user.picture || '';
   $('#user-name').textContent = user.name || user.email;
+  exam.setStudent(user.name || user.email);
   state.signedIn = true;
   syncWithServer();
 }
@@ -619,6 +701,7 @@ function showUser(user) {
 function showLoggedOut() {
   $('.google-auth-control').classList.remove('hidden');
   $('#user-chip').classList.add('hidden');
+  exam.setStudent('student');
   state.signedIn = false;
 }
 
@@ -654,7 +737,10 @@ initAuth({
 });
 
 async function boot() {
-  const raw = await loadCards();
+  const subject = state.subject.id;
+  const raw = await loadCards(subject);
+  // Người dùng có thể đã bấm đổi môn khác trong lúc chờ mạng.
+  if (state.subject.id !== subject) return;
   cards = raw.map((question) => ({
     ...question,
     topic: `Trang ${question.page}`,
@@ -672,9 +758,12 @@ async function boot() {
   }
 
   renderFilters();
+  exam.refresh();
   render();
 }
 
+renderSubjects();
 renderFilters();
+exam.refresh();
 render();
 boot();
