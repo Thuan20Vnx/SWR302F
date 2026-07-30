@@ -169,7 +169,7 @@ export function createExam({
     const full = state.mode === 'full';
     $('#eos-machine').textContent = machineName();
     $('#eos-student').textContent = student;
-    $('#eos-code').textContent = full ? 'SWR302_PE' : 'TEST_P';
+    $('#eos-code').textContent = full ? `${getSubject()}_PE` : 'TEST_P';
     $('#eos-duration').textContent = full ? `${EXAM_MINUTES} minutes` : 'unlimited';
     $('#eos-total').textContent = state.list.length;
     $('#eos-window').classList.toggle('eos-practice', !full);

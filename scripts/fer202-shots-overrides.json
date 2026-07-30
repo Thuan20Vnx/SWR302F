@@ -1,0 +1,413 @@
+{
+  "_note": "Sửa tay theo ảnh gốc cho những trang OCR đọc sai. Khoá là số trang PDF. Giá trị 'skip' = bỏ trang, hoặc object vá {question, options, answer, dropOptions}. dropOptions xoá các lựa chọn giả do watermark FORU bị đọc nhầm thành một lựa chọn (vd chữ 'F').",
+
+  "_missingFirstLine": "Model OCR bỏ sót toàn bộ dòng đầu của câu hỏi ở một số trang (đặc biệt khi câu hỏi chỉ có một dòng); chép lại theo ảnh.",
+  "12": {
+    "question": "Which action dispatch would correctly increment the count in the reducer setup?",
+    "options": {
+      "A": "dispatch({ type: 'add' });",
+      "B": "dispatch({ action: 'increment' });",
+      "C": "dispatch({ type: 'increment' });",
+      "D": "dispatch({ command: 'increment' });"
+    },
+    "answer": "C"
+  },
+  "24": {
+    "question": "How can you declare PropTypes for a prop that is an array of integers?",
+    "options": {
+      "A": "prop: PropTypes.arrayOf(PropTypes.number)",
+      "B": "prop: PropTypes.arrayOf(PropTypes.integer)",
+      "C": "prop: PropTypes.array(PropTypes.number)",
+      "D": "prop: PropTypes.array(PropTypes.integer)"
+    },
+    "answer": "A"
+  },
+  "37": {
+    "question": "Which of the following is a valid JSON object?",
+    "options": {
+      "A": "{ \"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\" }",
+      "B": "{ name: \"John Doe\", age: \"30\", city: \"New York\" }",
+      "C": "{ name: \"John Doe\", age: 30, city: \"New York\" }",
+      "D": "{\"name\" = \"John Doe\", \"age\" = 30, \"city\" = \"New York\"}"
+    },
+    "answer": "A"
+  },
+  "43": {
+    "question": "How would you handle errors in a fetch request to ensure that the error is caught and logged to the console?",
+    "options": {
+      "A": "fetch(url).then((response) => { return response.json(); }).catch(error => console.log(error))",
+      "B": "fetch(url).then(response => response.catch(error => console.log(error)))",
+      "C": "fetch(url).catch(error => {{ console.log(error) }})",
+      "D": "fetch(url).then(response => { throw new Error() }).catch(error => console.log(error))"
+    },
+    "answer": "A"
+  },
+  "54": {
+    "question": "How can you render only specific items from an array?",
+    "options": {
+      "A": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.map(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "B": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.reduce(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "C": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.filter(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "D": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.find(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);"
+    },
+    "answer": "C"
+  },
+  "71": {
+    "question": "In ReactJS with Bootstrap, select the JSX code snippet to create a button with a blue background and white text color.",
+    "options": {
+      "A": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"btn-primary\">My Button</Button>; }; export default MyButton;",
+      "B": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"bg-primary text-white\">My Button</Button>; }; export default MyButton;",
+      "C": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"btn btn-primary\">My Button</Button>; }; export default MyButton;",
+      "D": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button className=\"btn btn-primary\">My Button</Button>; }; export default MyButton;"
+    },
+    "answer": "B"
+  },
+  "75": {
+    "question": "Select the code snippet that correctly defines a component with state in React.",
+    "options": {
+      "A": "const MyComponent = React.createClass({ getInitialState() { return { count: 0 }; }, render() { return <div>{this.state.count}</div>; } });",
+      "B": "function MyComponent() { const [count, setCount] = React.useState(0); return <div>{count}</div>; }",
+      "C": "class MyComponent extends React.Component { constructor(props) { super(props); this.state = { count: 0 }; } render() { return <div>{this.state.count}</div>; } }",
+      "D": "const MyComponent = () => { const [count, setCount] = React.useState(0); return <div>{count}</div>; }"
+    },
+    "answer": "C"
+  },
+  "76": {
+    "question": "Select the code snippet that correctly defines a Higher-Order Component in React using an arrow function.",
+    "options": {
+      "A": "function withLogger(WrappedComponent) { return class extends React.Component { // HOC implementation }; }",
+      "B": "const withLogger = (WrappedComponent) => { return class extends React.Component { // HOC implementation }; };",
+      "C": "const withLogger = (WrappedComponent) => { return function HOC() { // HOC implementation }; };",
+      "D": "function withLogger(WrappedComponent) { return function HOC() { // HOC implementation }; }"
+    },
+    "answer": "B"
+  },
+  "151": {
+    "question": "In a React function component, how do you access a prop named \"name\" that is passed from a parent component?",
+    "options": {
+      "A": "this.props.name",
+      "B": "props.name",
+      "C": "useState.name",
+      "D": "getProps().name"
+    },
+    "answer": "B"
+  },
+
+  "_missingOneOption": "Một lựa chọn (thường là C, nằm đúng dải watermark FORU) bị OCR bỏ sót hoàn toàn ở cả hai tỉ lệ; chép lại theo ảnh.",
+  "95": {
+    "question": "Evaluate the benefits of using the React.lazy API for code splitting in a React application. Which of the following is NOT a benefit?",
+    "options": {
+      "A": "Reduces the initial load time by splitting code into bundles.",
+      "B": "Ensures that all components are loaded upfront.",
+      "C": "Provides a better user experience by loading components only when needed.",
+      "D": "Allows for dynamic imports and lazy loading of components."
+    },
+    "answer": "B"
+  },
+  "160": {
+    "question": "What is the purpose of json-server in client-server communication?",
+    "options": {
+      "A": "To set up a simple static web server that serves data to clients.",
+      "B": "To encrypt data during transmission between client and server.",
+      "C": "To manage client authentication and session data.",
+      "D": "To provide a full-featured backend for the React application."
+    },
+    "answer": "A"
+  },
+  "161": {
+    "question": "What is the purpose of a package.json file in a Node.js project?",
+    "options": {
+      "A": "To store application data",
+      "B": "To define routes for the web application",
+      "C": "To serve as documentation for project dependencies and their versions",
+      "D": "To compile JavaScript code"
+    },
+    "answer": "C"
+  },
+  "192": {
+    "question": "What happens if you forget to add key to items in a list rendered with map()?",
+    "options": {
+      "A": "React will not render the list at all.",
+      "B": "React will display a warning in the console about missing keys.",
+      "C": "React will automatically assign keys to each item.",
+      "D": "React will throw an error and stop rendering the component."
+    },
+    "answer": "B"
+  },
+  "216": {
+    "question": "Why should you avoid using too many lazy components in your application?",
+    "options": {
+      "A": "Because it results in multiple HTTP requests, slowing down the application.",
+      "B": "Because it decreases the performance by loading everything upfront.",
+      "C": "Because it makes the code difficult to debug.",
+      "D": "Because it affects the layout and styling of components."
+    },
+    "answer": "A"
+  },
+  "287": {
+    "question": "How do you create a modal in Bootstrap?",
+    "options": {
+      "A": "By using the <modal> HTML element.",
+      "B": "By applying the .modal class to the container element.",
+      "C": "By using the .modal class along with the data-bs-toggle=\"modal\" attribute.",
+      "D": "By using JavaScript to dynamically create and show modal elements."
+    },
+    "answer": "C"
+  },
+  "303": {
+    "question": "According to Redux's main principles, how should changes to the application's state be made?",
+    "options": {
+      "A": "Directly by modifying the state object in any component.",
+      "B": "Through setters that directly update the state.",
+      "C": "Only through actions, with changes made by pure functions that return a new state without mutating the previous one.",
+      "D": "By calling setState() on the Redux store directly."
+    },
+    "answer": "C"
+  },
+
+  "_missingTwoOptions": "Câu hỏi 'ẩn dụ nhà hàng' dùng chung khối code minh hoạ dài; hai lựa chọn ngắn (A và D) rơi ngay dưới đoạn code phức tạp nên bị OCR bỏ sót.",
+  "60": {
+    "question": "// Rendering the component (preparing the order in the kitchen) const renderOrders = () => { return orders.map((order, index) => <Dish key={index} name={order} />); }; // Committing to the DOM (placing the order on the table) return (<div><h2>Orders</h2><ul>{renderOrders()}</ul></div>); function Waiter() { const handleOrder = () => { // Triggering a render (delivering the guest's order to the kitchen) kitchenRef.current.addOrder('Pizza'); }; // A reference to the Kitchen component const kitchenRef = React.createRef(); // Rendering the Waiter component return (<div><h1>Welcome to the Restaurant!</h1><button onClick={handleOrder}>Place Order</button><Kitchen ref={kitchenRef} /></div>); } export default Waiter; Which process in React corresponds to \"send order to kitchen\"?",
+    "options": {
+      "A": "Triggering a render",
+      "B": "Rendering the component",
+      "C": "Committing to the DOM",
+      "D": "Placing the order on the table"
+    },
+    "answer": "A"
+  },
+  "69": {
+    "question": "import React, { useState } from 'react'; function Dish({ name }) { return <li>{name}</li>; } function Kitchen() { const [orders, setOrders] = useState([]); // Triggering a render (delivering the guest's order to the kitchen) const addOrder = (order) => { setOrders((prevOrders) => [...prevOrders, order]); }; // Rendering the component (preparing the order in the kitchen) const renderOrders = () => { return orders.map((order, index) => <Dish key={index} name={order} />); }; // Committing to the DOM (placing the order on the table) return (<div><h2>Orders</h2><ul>{renderOrders()}</ul></div>); } function Waiter() { const handleOrder = () => { kitchenRef.current.addOrder('Pizza'); }; const kitchenRef = React.createRef(); return (<div><h1>Welcome to the Restaurant!</h1><button onClick={handleOrder}>Place Order</button><Kitchen ref={kitchenRef} /></div>); } Which process in React corresponds to \"putting orders on the table\"?",
+    "options": {
+      "A": "Triggering a render",
+      "B": "Rendering the component",
+      "C": "Committing to the DOM",
+      "D": "Placing the order on the table"
+    },
+    "answer": "C"
+  },
+
+  "_gluedOptions": "Nhiều lựa chọn bị dính chữ nhau hoặc dính chữ ký watermark do OCR gộp sai dòng; chép lại theo ảnh.",
+  "28": {
+    "question": "How do you define a route that matches /users/123 and passes the 123 as a parameter to the component?",
+    "options": {
+      "A": "<Route path=\"/users?id\" element={<User />} />",
+      "B": "<Route path=\"/users/:id\" element={<User />} />",
+      "C": "<Route path=\"/users/{id}\" element={<User />} />",
+      "D": "<Route path=\"/users/#id\" element={<User />} />"
+    },
+    "answer": "B"
+  },
+  "38": {
+    "question": "Which of the following is the correct syntax to use useDispatch in a functional component?",
+    "options": {
+      "A": "const MyComponent = () => { const dispatch = useDispatch(); return <div>MyComponent</div>; };",
+      "B": "const MyComponent = () => { const dispatch = useDispatch; return <div>My Component</div>; };",
+      "C": "const MyComponent = () => { const dispatch = dispatch(); return <div>My Component</div>; };",
+      "D": "const MyComponent = () => { const dispatch = useDispatch(); return <div>My Component with {dispatch}</div>; };"
+    },
+    "answer": "A"
+  },
+  "47": {
+    "question": "How would you correctly convert the following HTML code to JSX? <h1>Hedy Lamarr's Todos</h1> <img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" class=\"photo\" /> <ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul>",
+    "options": {
+      "A": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" className=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul></>",
+      "B": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" class=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul></>",
+      "C": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" className=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li></ul></>"
+    },
+    "answer": "A"
+  },
+  "48": {
+    "question": "How do you use the Grid system in React-Bootstrap?",
+    "options": {
+      "A": "<Row><Container><Col xs={6}>2 of 3 (wider)</Col></Container></Row>",
+      "B": "<Row><Container><Column>1 of 3</Column></Container></Row>",
+      "C": "<Container><Row><Col xs={6}>2 of 3 (wider)</Col></Row></Container>",
+      "D": "<Container><Column><Row xs={6}>2 of 3 (wider)</Row></Column></Container>"
+    },
+    "answer": "C"
+  },
+  "51": {
+    "question": "How do you configure a Redux store using Redux Toolkit?",
+    "options": {
+      "A": "import { createStore } from 'redux'; const store = createStore({ reducer: { counter: counterReducer } });",
+      "B": "import { createStore } from 'redux'; const store = createStore({ counter: counterReducer });",
+      "C": "import { configureStore } from '@reduxjs/toolkit'; const store = configureStore({ counter: counterReducer });",
+      "D": "import { configureStore } from '@reduxjs/toolkit'; const store = configureStore({ reducer: { counter: counterReducer } });"
+    },
+    "answer": "D"
+  },
+  "57": {
+    "question": "Create a React component that uses the Suspense component to display a fallback while loading a lazily loaded component. Which code snippet is correct?",
+    "options": {
+      "A": "import React, { lazy, Suspense } from 'react'; const MyComponent = lazy(() => import('./MyComponent')); function App() { return (<Suspense fallback={<div>Loading...</div>}><MyComponent /></Suspense>); } export default App;",
+      "B": "import React, { Suspense } from 'react'; const MyComponent = import('./MyComponent'); function App() { return (<Suspense fallback={<div>Loading...</div>}><MyComponent /></Suspense>); } export default App;",
+      "C": "import React, { lazy } from 'react'; const MyComponent = lazy('./MyComponent'); function App() { return (<div>Loading...</div>); } export default App;",
+      "D": "import React from 'react'; const MyComponent = React.lazy(() => import('./MyComponent')); function App() { return (<React.Suspense><MyComponent /></React.Suspense>); } export default App;"
+    },
+    "answer": "A"
+  },
+  "58": {
+    "question": "Create a React component that uses inline event handlers to log a message when a button is clicked. Which code snippet is correct?",
+    "options": {
+      "A": "class MyButton extends React.Component { render() { return (<button onClick={(e) => console.log('clicked', e)}>Click me</button>); } }",
+      "B": "class MyButton extends React.Component { render() { return (<button onClick={this.onClick}>Click me</button>); } }",
+      "C": "class MyButton extends React.Component { render() { return (<button onClick={this.onClick.bind(this)}>Click me</button>); } }",
+      "D": "class MyButton extends React.Component { render() { return (<button onClick={() => this.onClick()}>Click me</button>); } }"
+    },
+    "answer": "A"
+  },
+  "65": {
+    "question": "(React class component question - Counter increment) import React, { Component } from 'react'; class Counter extends Component { constructor(props) { super(props); this.state = { count: 0 }; } incrementCount() { // TODO: Increase the count state by 1 } render() { return (<div><p>Count: {this.state.count}</p><button onClick={this.incrementCount}>Increment</button></div>); } } export default Counter; In the code above, how can we increase the value of the count state by 1 when the user clicks the \"Increment\" button?",
+    "options": {
+      "A": "Call the method this.setState({ count: this.state.count + 1 }) inside the incrementCount method.",
+      "B": "Assign a new value to count using the assignment operator (=) inside the incrementCount method.",
+      "C": "Call the method this.state.count += 1 inside the incrementCount method.",
+      "D": "Use this.setState(count + 1) inside the incrementCount method."
+    },
+    "answer": "A"
+  },
+  "66": {
+    "question": "import React, { Component } from 'react'; class Form extends Component { constructor(props) { super(props); this.state = { name: '', email: '' }; } handleInputChange(event) { // TODO: Update the corresponding state property based on user input } render() { return (<form><label>Name: <input type=\"text\" value={this.state.name} onChange={this.handleInputChange} /></label><label>Email: <input type=\"email\" value={this.state.email} onChange={this.handleInputChange} /></label></form>); } } export default Form; In the code above, how can we update the value of the name or email state based on the user input in the respective input fields?",
+    "options": {
+      "A": "Call the method this.setState({ name: event.target.value }) or this.setState({ email: event.target.value }) inside the handleInputChange method.",
+      "B": "Assign a new value to name or email using the assignment operator (=) inside the handleInputChange method.",
+      "C": "Call the method this.state.name = event.target.value or this.state.email = event.target.value inside the handleInputChange method.",
+      "D": "Use this.setState(event.target.value) inside the handleInputChange method."
+    },
+    "answer": "A"
+  },
+  "72": {
+    "question": "In Bootstrap, select the HTML/CSS code snippet to create a navbar with a dropdown menu containing sub-items.",
+    "options": {
+      "A": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item dropdown\"><a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>",
+      "B": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item\"><a class=\"nav-link\" href=\"#\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>",
+      "C": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item dropdown\"><a class=\"nav-link\" href=\"#\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>"
+    },
+    "answer": "A"
+  },
+  "218": {
+    "question": "How do you declare a route in React Router?",
+    "options": {
+      "A": "Using <Link path=\"/\" element={<Home>} />",
+      "B": "Using <Route path=\"/\" element={<Home>} />",
+      "C": "Using <Routes path=\"/\" element={<Home>} />",
+      "D": "Using <context path=\"/\"></context></suspense></home>"
+    },
+    "answer": "B"
+  },
+
+  "_watermarkFakeOption": "OCR đọc watermark 'FORU' bị tách dòng thành một lựa chọn giả (chữ cái F); loại bỏ khỏi kết quả.",
+  "91": {
+    "question": "Describe the Redux flow process when an action is dispatched.",
+    "options": {
+      "A": "Action is dispatched → Middleware → Reducer → Store → Component.",
+      "B": "Component dispatches action → Reducer → Middleware → Store.",
+      "C": "Middleware dispatches action → Reducer → Store → Component.",
+      "D": "Reducer dispatches action → Middleware → Component → Store."
+    },
+    "dropOptions": ["F"],
+    "answer": "A"
+  },
+  "204": {
+    "question": "How do you create a modal in Bootstrap?",
+    "options": {
+      "A": "By using the <modal> HTML element.",
+      "B": "By applying the .modal class to the container element.",
+      "C": "By using the .modal class along with the data-bs-toggle=\"modal\" attribute.",
+      "D": "By using JavaScript to dynamically create and show modal elements."
+    },
+    "dropOptions": ["F"],
+    "answer": "C"
+  },
+  "300": {
+    "question": "When declaring routes in React Router, what are Routes and Route components used for?",
+    "options": {
+      "A": "Routes is for styling, and Route is for defining event handlers.",
+      "B": "Routes is for managing state, and Route is for rendering components.",
+      "C": "Routes is used to wrap Route components and define the application's routes, while Route is used to define an individual route.",
+      "D": "Routes is for client-side logic, and Route is for server-side logic."
+    },
+    "dropOptions": ["F"],
+    "answer": "C"
+  },
+
+  "_watermarkGluedToOption": "Watermark FORU/LEARN TO KNOW hoặc chữ ký Hoàng Hoàng Buôn Source nằm sát dòng cuối một lựa chọn nên bị chính model OCR gộp chung vào một khung chữ; cắt bỏ phần thừa theo ảnh.",
+  "8": {
+    "options": {
+      "C": "<Button variant=\"primary\">Click Me</Button>",
+      "D": "<PrimaryButton>Click Me</PrimaryButton>"
+    },
+    "answer": "C"
+  },
+  "112": {
+    "options": {
+      "D": "Responsive Event-driven Server Technologies"
+    },
+    "answer": "A"
+  },
+  "146": {
+    "options": {
+      "C": "const add => a + b",
+      "D": "function add(a, b) { return a + b; }"
+    },
+    "answer": "B"
+  },
+  "156": {
+    "options": {
+      "A": "It makes the container take up the entire width of the viewport.",
+      "C": "It changes the container's background color.",
+      "D": "It makes the container fixed width."
+    },
+    "answer": "A"
+  },
+  "170": {
+    "options": {
+      "C": "To provide a static web server for serving JSON data.",
+      "D": "To generate dynamic server responses."
+    },
+    "answer": "C"
+  },
+  "230": {
+    "options": {
+      "C": "Container fluid is 100% wide at all breakpoints.",
+      "D": "Container is 100% wide at all breakpoints."
+    },
+    "answer": "C"
+  },
+  "262": {
+    "options": {
+      "D": "It allows for better management of event contexts."
+    },
+    "answer": "A"
+  },
+  "268": {
+    "options": {
+      "C": "State is mutable and can be directly modified.",
+      "D": "State is only updated using the useState hook."
+    },
+    "answer": "A"
+  },
+  "281": {
+    "options": {
+      "A": "By returning a cleanup function from the useEffect callback.",
+      "B": "By passing an empty dependency array as the second parameter to useEffect.",
+      "C": "By wrapping the useEffect callback in a try-catch block.",
+      "D": "By using the useCleanupEffect Hook instead of useEffect."
+    },
+    "answer": "A"
+  },
+  "282": {
+    "options": {
+      "C": "Keep all dependencies and accept performance issues.",
+      "D": "Replace useEffect with useLayoutEffect."
+    },
+    "answer": "B"
+  },
+  "131": {
+    "question": "Which React Router component is commonly used to perform client-side navigation without triggering a full page reload?"
+  },
+  "225": {
+    "question": "Why use React-Bootstrap?"
+  }
+}

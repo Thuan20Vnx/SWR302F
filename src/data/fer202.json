@@ -1,0 +1,4305 @@
+[
+  {
+    "page": 1,
+    "numberOnPage": 1,
+    "question": "What isthe correct waytowrapalazy componentwithSuspense inReact?",
+    "options": {
+      "A": "<Suspenseloading=[<Loading/>}><MyComponent/></Suspense>",
+      "B": "<Suspensefallback=[<Loading/>]><MyComponent/></Suspense>",
+      "C": "<Suspensewait=[<Loading/>]><MyComponent/></Suspense>",
+      "D": "<Suspensefallback=[<Loading/>) loading=[<MyComponent/>) />"
+    },
+    "answer": "B",
+    "id": 2001,
+    "sourcePage": 1
+  },
+  {
+    "page": 1,
+    "numberOnPage": 2,
+    "question": "What is thecorrect wayto declare PropTypes fora component in React?",
+    "options": {
+      "A": "Component.propTypes ={...}",
+      "B": "Component.typeCheck =(... }",
+      "C": "Component.props = (... }",
+      "D": "Component.checkProps = {... }"
+    },
+    "answer": "A",
+    "id": 2002,
+    "sourcePage": 2
+  },
+  {
+    "page": 1,
+    "numberOnPage": 3,
+    "question": "What is the correct way to update the state when it depends on the previous state?",
+    "options": {
+      "A": "setValue(value + 1);",
+      "B": "setValue(prevValue=> prevValue + 1);",
+      "C": "setValue(0 => value + 1);",
+      "D": "setValue(value => value + 1);"
+    },
+    "answer": "B",
+    "id": 2003,
+    "sourcePage": 3
+  },
+  {
+    "page": 1,
+    "numberOnPage": 4,
+    "question": "Which of the following will navigate to the root path (\"/\") using the useNavigate hook?",
+    "options": {
+      "A": "navigate(\");",
+      "B": "navigate('home');",
+      "C": "navigate();",
+      "D": "navigate(root');"
+    },
+    "answer": "C",
+    "id": 2004,
+    "sourcePage": 4
+  },
+  {
+    "page": 1,
+    "numberOnPage": 5,
+    "question": "Which of the following is the correct way to dispatch an action using the useDispatch hook?",
+    "options": {
+      "A": "const dispatch =useDispatch(); dispatch(ACTION_TYPE');",
+      "B": "const dispatch =useDispatch(); dispatch(() => type:'ACTION_TYPE'));",
+      "C": "const dispatch =useDispatch(); dispatch(type:'ACTION_TYPE');",
+      "D": "const dispatch =useDispatch(); dispatch((action:'ACTION_TYPE'));"
+    },
+    "answer": "C",
+    "id": 2005,
+    "sourcePage": 5
+  },
+  {
+    "page": 1,
+    "numberOnPage": 6,
+    "question": "Whichcodesnippetdemonstrateshowtohandlea routeparameter inReact Router?",
+    "options": {
+      "A": "<Route path=\"/users/:id\"component={UserDetail) />",
+      "B": "<Link to=\"/users\">Users</Link>",
+      "C": "import(BrowserRouteras Router,Route) from\"react-router-dom\";",
+      "D": "import (Link, Route) from \"react-router-dom\";"
+    },
+    "answer": "A",
+    "id": 2006,
+    "sourcePage": 6
+  },
+  {
+    "page": 1,
+    "numberOnPage": 7,
+    "question": "Which codesnippet demonstrates howto declareabasic route in React Router?",
+    "options": {
+      "A": "<Route path=\"/about\"component={About) />",
+      "B": "<Linkto=\"/about\">About</Link>",
+      "C": "import (BrowserRouter as Router, Route} from\"react-router-dom\";",
+      "D": "import (Link, Route) from \"react-router-dom\";"
+    },
+    "answer": "A",
+    "id": 2007,
+    "sourcePage": 7
+  },
+  {
+    "page": 1,
+    "numberOnPage": 8,
+    "question": "Which of the following is the correct way to rendera React-Bootstrap Button with a primary style?",
+    "options": {
+      "A": "<Button className=\"btn btn-primary\">Click Me</Button>",
+      "B": "<button class=\"btn btn-primary\">Click Me</button>",
+      "C": "<Button variant=\"primary\">Click Me</Button>",
+      "D": "<PrimaryButton>Click Me</PrimaryButton>"
+    },
+    "answer": "C",
+    "id": 2008,
+    "sourcePage": 8
+  },
+  {
+    "page": 1,
+    "numberOnPage": 9,
+    "question": "Which of thefollowing is the correct way to pass a functionas a prop inReact?",
+    "options": {
+      "A": "<Child onClick={handleClick()) />",
+      "B": "<Child handleClick=handleClick) />",
+      "C": "<Child onClick=(handleClick) />",
+      "D": "<Child handleClick=(handleClick(O) />"
+    },
+    "answer": "C",
+    "id": 2009,
+    "sourcePage": 9
+  },
+  {
+    "page": 1,
+    "numberOnPage": 10,
+    "question": "Which component is used to define aroute in React Router?",
+    "options": {
+      "A": "<Route>",
+      "B": "<Router>",
+      "C": "<Link>",
+      "D": "<Navigation>"
+    },
+    "answer": "A",
+    "id": 2010,
+    "sourcePage": 10
+  },
+  {
+    "page": 1,
+    "numberOnPage": 11,
+    "question": "Whichclass is used tocreate a button in Bootstrap5?",
+    "options": {
+      "A": ".btn",
+      "B": ".button",
+      "C": ".btn-primary",
+      "D": ".btn-default"
+    },
+    "answer": "A",
+    "id": 2011,
+    "sourcePage": 11
+  },
+  {
+    "page": 1,
+    "numberOnPage": 12,
+    "question": "Which action dispatch would correctly increment the count in the reducer setup?",
+    "options": {
+      "A": "dispatch({ type: 'add' });",
+      "B": "dispatch({ action: 'increment' });",
+      "C": "dispatch({ type: 'increment' });",
+      "D": "dispatch({ command: 'increment' });"
+    },
+    "answer": "C",
+    "id": 2012,
+    "sourcePage": 12
+  },
+  {
+    "page": 1,
+    "numberOnPage": 13,
+    "question": "Which component is typically used in conjunction with React.lazy to handle the loading state?",
+    "options": {
+      "A": "<ErrorBoundary>",
+      "B": "<Suspense>",
+      "C": "<LoadingComponent>",
+      "D": "<Provider>"
+    },
+    "answer": "B",
+    "id": 2013,
+    "sourcePage": 13
+  },
+  {
+    "page": 1,
+    "numberOnPage": 14,
+    "question": "Whichcomponent isusedtocreateasubmitbutton inReact-Bootstrap?",
+    "options": {
+      "A": "<Button.Submit>",
+      "B": "<Form.Submit>",
+      "C": "<Form.Button>",
+      "D": "<Button>"
+    },
+    "answer": "D",
+    "id": 2014,
+    "sourcePage": 14
+  },
+  {
+    "page": 1,
+    "numberOnPage": 15,
+    "question": "Which componentis used to createan input field in React-Bootstrap?",
+    "options": {
+      "A": "<Form.Text>",
+      "B": "<Form.Control>",
+      "C": "<Form.Caption>",
+      "D": "<Form.Title>"
+    },
+    "answer": "B",
+    "id": 2015,
+    "sourcePage": 15
+  },
+  {
+    "page": 1,
+    "numberOnPage": 16,
+    "question": "How doyoudispatch an action using the dispatchfunction?",
+    "options": {
+      "A": "dispatch(increment');",
+      "B": "dispatch((action: increment'));",
+      "C": "dispatch(t'increment');",
+      "D": "dispatch(type: 'increment'));"
+    },
+    "answer": "D",
+    "id": 2016,
+    "sourcePage": 16
+  },
+  {
+    "page": 1,
+    "numberOnPage": 17,
+    "question": "How do you access props in a functional component in React?",
+    "options": {
+      "A": "const Child = (props) => [return <div>(props.name]</div>;);",
+      "B": "const Child = () => { return <div>[this.props.name)</div>;);",
+      "C": "const Child = (prop) => (return <div>[prop.name]</div);",
+      "D": "const Child = (=> (return <div>[props.name]</div>;);"
+    },
+    "answer": "A",
+    "id": 2017,
+    "sourcePage": 17
+  },
+  {
+    "page": 1,
+    "numberOnPage": 18,
+    "question": "Howdoyoudefinea lazy component in React?",
+    "options": {
+      "A": "const MyComponent =React.lazy(() => import(./MyComponent')",
+      "B": "const MyComponent = lazy() => import(./MyComponent);",
+      "C": "const MyComponent =import(./MyComponent\").lazy();",
+      "D": "constMyComponent=React.importLazy(./MyComponent');"
+    },
+    "answer": "A",
+    "id": 2018,
+    "sourcePage": 18
+  },
+  {
+    "page": 1,
+    "numberOnPage": 19,
+    "question": "How do you create navigation links in React Router?",
+    "options": {
+      "A": "Using the<Switch> component",
+      "B": "Using the <Link> component",
+      "C": "Using the<Route> component",
+      "D": "Using the<Navigate>component"
+    },
+    "answer": "B",
+    "id": 2019,
+    "sourcePage": 19
+  },
+  {
+    "page": 1,
+    "numberOnPage": 20,
+    "question": "Howcanyoudefine a routewith multipleparameters,suchas userld andpostld?",
+    "options": {
+      "A": "<Routepath=\"/user/userld/post/postld\"component={UserPost)/>",
+      "B": "<Route path=\"/user/:userld/:postld\" component={UserPost) />",
+      "C": "<Routepath=\"/user/userld/post/:postld\"component={UserPost)/>",
+      "D": "<Route path=\"/user?userld?post?postld\" component={UserPost) />"
+    },
+    "answer": "C",
+    "id": 2020,
+    "sourcePage": 20
+  },
+  {
+    "page": 2,
+    "numberOnPage": 1,
+    "question": "Howdoyou definea dynamicrouteparameter in React Router?",
+    "options": {
+      "A": "<Routepath=\"/users/:userld\"component=[UserDetail) />",
+      "B": "<Routepath=\"/users\" component={UserDetail) />",
+      "C": "<Route path=\"/users/(userld)\"component={UserDetail) />",
+      "D": "<Routepath=\"/users?userld=:userld\"component={UserDetail)/>"
+    },
+    "answer": "A",
+    "id": 2021,
+    "sourcePage": 21
+  },
+  {
+    "page": 2,
+    "numberOnPage": 2,
+    "question": "How do you create navigation links in React Router?",
+    "options": {
+      "A": "Using the<Link> component",
+      "B": "Using the <Route> component",
+      "C": "Using the<NavLink> component",
+      "D": "Using the<Switch>component"
+    },
+    "answer": "A",
+    "id": 2022,
+    "sourcePage": 22
+  },
+  {
+    "page": 2,
+    "numberOnPage": 3,
+    "question": "How can you access the state and dispatch from Context in a child component? Hoang Hoang",
+    "options": {
+      "A": "const[state,dispatch]=useContext(CountContext);",
+      "B": "const(state, dispatch)= CountContext;",
+      "C": "const[state, dispatch)=useContext(CountContext);",
+      "D": "const state=CountContext.state; ______ ______"
+    },
+    "answer": "C",
+    "id": 2023,
+    "sourcePage": 23
+  },
+  {
+    "page": 2,
+    "numberOnPage": 4,
+    "question": "How can you declare PropTypes for a prop that is an array of integers?",
+    "options": {
+      "A": "prop: PropTypes.arrayOf(PropTypes.number)",
+      "B": "prop: PropTypes.arrayOf(PropTypes.integer)",
+      "C": "prop: PropTypes.array(PropTypes.number)",
+      "D": "prop: PropTypes.array(PropTypes.integer)"
+    },
+    "answer": "A",
+    "id": 2024,
+    "sourcePage": 24
+  },
+  {
+    "page": 2,
+    "numberOnPage": 5,
+    "question": "HowwouldyouusetheuseEffectHooktofetchdatafromanAPlinaReactcomponent?",
+    "options": {
+      "A": "useEffect(fetchData,);",
+      "B": "useEffect(O) => fetchData(), [fetchData]);",
+      "C": "useEffect() => fetchData();",
+      "D": "useEffect() => fetchData(),);"
+    },
+    "answer": "D",
+    "id": 2025,
+    "sourcePage": 25
+  },
+  {
+    "page": 2,
+    "numberOnPage": 6,
+    "question": "HowwouldyouusetheuseStateHooktomanageacounterinaReactcomponent?",
+    "options": {
+      "A": "const [count, setCount] = useState(O);",
+      "B": "const count = useState(O);",
+      "C": "const count = useState()[O];",
+      "D": "const [count, setCount] = useState(); ______"
+    },
+    "answer": "A",
+    "id": 2026,
+    "sourcePage": 26
+  },
+  {
+    "page": 2,
+    "numberOnPage": 7,
+    "question": "How would you use the useContext Hook to access a shared theme in a React component?",
+    "options": {
+      "A": "const theme = useContext(ThemeContext);",
+      "B": "const (theme}=useContext(ThemeContext);",
+      "C": "const (theme) = useContext(ThemeContext.Provider);U",
+      "D": "const theme = useContext(ThemeContext.Provider);"
+    },
+    "answer": "A",
+    "id": 2027,
+    "sourcePage": 27
+  },
+  {
+    "page": 2,
+    "numberOnPage": 8,
+    "question": "How do you define a route that matches /users/123 and passes the 123 as a parameter to the component?",
+    "options": {
+      "B": "<Route path=\"/users/:id\" element={<User />} />",
+      "C": "<Route path=\"/users/{id}\" element={<User />} />",
+      "D": "<Route path=\"/users/#id\" element={<User />} />",
+      "A": "<Route path=\"/users?id\" element={<User />} />"
+    },
+    "answer": "B",
+    "id": 2028,
+    "sourcePage": 28
+  },
+  {
+    "page": 2,
+    "numberOnPage": 9,
+    "question": "Howwould you extractand display multipleparameters, userldandpostld, in acomponent?",
+    "options": {
+      "A": "const (userld, postld) = useParams();",
+      "B": "const userld = useParams('userld'); const postld = useParams('postld\");",
+      "C": "const userld = route.params.userld; const postld route.params.postld;",
+      "D": "const (userld } = useParams(); const (postld) = useParams();"
+    },
+    "answer": "A",
+    "id": 2029,
+    "sourcePage": 29
+  },
+  {
+    "page": 2,
+    "numberOnPage": 10,
+    "question": "Howwould younavigateback tothepreviouspageusingtheuseNavigatehook?",
+    "options": {
+      "A": "navigate(/back');",
+      "B": "navigate(back');",
+      "C": "navigate(-1);",
+      "D": "navigate(/previous');"
+    },
+    "answer": "C",
+    "id": 2030,
+    "sourcePage": 30
+  },
+  {
+    "page": 2,
+    "numberOnPage": 11,
+    "question": "Canyouprovideanexampleofa custompropertyvalidatorinReactthat checks ifaprop isapositive number?",
+    "options": {
+      "A": "value:PropTypes.positiveNumber",
+      "B": "value:function(props,propName, componentName)",
+      "C": "value:PropTypes.number&&value>0",
+      "D": "value:PropTypes.number&&value>=0"
+    },
+    "answer": "B",
+    "id": 2031,
+    "sourcePage": 31
+  },
+  {
+    "page": 2,
+    "numberOnPage": 12,
+    "question": "Writea custom property validator in Reactfor a prop called\"email\" that should be a valid email address.",
+    "options": {
+      "A": "email: PropTypes.string",
+      "B": "email: PropTypes.email",
+      "C": "email: PropTypes.string.isRequired",
+      "D": "email:function(props, propName, componentName)"
+    },
+    "answer": "D",
+    "id": 2032,
+    "sourcePage": 32
+  },
+  {
+    "page": 2,
+    "numberOnPage": 13,
+    "question": "What is the first step in migrating from useState to useReducer with this code? const[count, setCount] = useState(O); function increment() setCount(count + 1); } Hoang Hoang",
+    "options": {
+      "A": "Replace setCountwith dispatch inthe existing code.",
+      "B": "Move all state update logic into a reducer function.",
+      "C": "Definethereducerfunction andusedispatchtoreplace setCount.",
+      "D": "Import useReducerwithout changing any code."
+    },
+    "answer": "C",
+    "id": 2033,
+    "sourcePage": 34
+  },
+  {
+    "page": 2,
+    "numberOnPage": 14,
+    "question": "What is the correct way to define default props in a functional component?",
+    "options": {
+      "A": "const Child = ((name)) => [name = name I \"Default Name\"; return <div>(name)</div>;",
+      "B": "const Child = ((name)) => (return<div>(name?name:\"DefaultName\"</div>;O RU",
+      "C": "const Child = ((name)) => return <div>(name II \"Default Name\")</div>;",
+      "D": "const Child = ((name = \"Default Name\")) => { return <div>(name)]</div>;"
+    },
+    "answer": "D",
+    "id": 2034,
+    "sourcePage": 35
+  },
+  {
+    "page": 2,
+    "numberOnPage": 15,
+    "question": "What will be the output of the following code? const obj = { name:'Alice', greet: 0 => [console.log(this.name); obj.greet();",
+    "options": {
+      "A": "Alice",
+      "B": "undefined",
+      "C": "this",
+      "D": "this.name"
+    },
+    "answer": "B",
+    "id": 2035,
+    "sourcePage": 36
+  },
+  {
+    "page": 2,
+    "numberOnPage": 16,
+    "question": "Which of the following is a valid JSON object?",
+    "options": {
+      "A": "{ \"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\" }",
+      "B": "{ name: \"John Doe\", age: \"30\", city: \"New York\" }",
+      "D": "{\"name\" = \"John Doe\", \"age\" = 30, \"city\" = \"New York\"}",
+      "C": "{ name: \"John Doe\", age: 30, city: \"New York\" }"
+    },
+    "answer": "A",
+    "id": 2036,
+    "sourcePage": 37
+  },
+  {
+    "page": 2,
+    "numberOnPage": 17,
+    "question": "Which of the following is the correct syntax to use useDispatch in a functional component?",
+    "options": {
+      "A": "const MyComponent = () => { const dispatch = useDispatch(); return <div>MyComponent</div>; };",
+      "C": "const MyComponent = () => { const dispatch = dispatch(); return <div>My Component</div>; };",
+      "D": "const MyComponent = () => { const dispatch = useDispatch(); return <div>My Component with {dispatch}</div>; };",
+      "B": "const MyComponent = () => { const dispatch = useDispatch; return <div>My Component</div>; };"
+    },
+    "answer": "A",
+    "id": 2037,
+    "sourcePage": 38
+  },
+  {
+    "page": 2,
+    "numberOnPage": 18,
+    "question": "Which ofthefollowing correctlypasses an objectasapropto a child component?",
+    "options": {
+      "A": "const user =[name:\"Hedy\", age: 35 }; function ParentComponent()(return<ChildComponentuser=(user.toString())/>;",
+      "B": "const user={name:\"Hedy\", age: 35}; function ParentComponent()(return<ChildComponent user=\"user\"/>;",
+      "C": "const user = name:\"Hedy\", age: 35); function ParentComponent() (return<ChildComponent user=\"{user)\" />;",
+      "D": "const user = { name:\"Hedy\", age: 35); function ParentComponent() (return <ChildComponent user={user) />;"
+    },
+    "answer": "D",
+    "id": 2038,
+    "sourcePage": 39
+  },
+  {
+    "page": 2,
+    "numberOnPage": 19,
+    "question": "Which of the following is a correct way to initialize multiple state variables using useState?",
+    "options": {
+      "A": "const[value1, setValue1,value2, setValue2]=useState(0, 0);",
+      "B": "const[value1, setValue1]=useStateO; const[value2, setValue2] =useState();",
+      "C": "const [state, setState] = useState(1 value1: 0, value2: 0 J);",
+      "D": "const[value1,value2, setValues]=useState(0, 0);"
+    },
+    "answer": "B",
+    "id": 2039,
+    "sourcePage": 40
+  },
+  {
+    "page": 2,
+    "numberOnPage": 20,
+    "question": "Whichmethod iscommonlyusedto transforman arrayof data intoa list ofcomponents inReact?",
+    "options": {
+      "A": "const items =[\"Apple\",\"Banana\",\"Cherry\"]; const listltems = items.filter(item =><li>(item)</li>);",
+      "B": "const items =[\"Apple\",\"Banana\",\"Cherry\"] const listltems = items.map(item =><li>[item)</li>);",
+      "C": "const items = [\"Apple\", \"Banana\", \"Cherry\"]; const listltems = items.forEach(item => <li>[item</li>);",
+      "D": "const items =[\"Apple\",\"Banana\",\"Cherry\"]; const listltems = items.reduce(item => <li>[item)</li>);"
+    },
+    "answer": "B",
+    "id": 2040,
+    "sourcePage": 41
+  },
+  {
+    "page": 3,
+    "numberOnPage": 1,
+    "question": "Which method can help ensure that updates in a function depend on the previous state in React?",
+    "options": {
+      "A": "const [count, setCount] = useState(O); function increment() setCount(count + 1);",
+      "B": "const [count, setCount] = useState(O); function increment() setCount(count + 1);",
+      "C": "const [count, setCount] = useState(O); function increment() setCount(prevCount => prevCount + 1);",
+      "D": "const [count, setCount] = useState(O); function increment() setCount(count - 1);"
+    },
+    "answer": "C",
+    "id": 2041,
+    "sourcePage": 42
+  },
+  {
+    "page": 3,
+    "numberOnPage": 2,
+    "question": "How would you handle errors in a fetch request to ensure that the error is caught and logged to the console?",
+    "options": {
+      "A": "fetch(url).then((response) => { return response.json(); }).catch(error => console.log(error))",
+      "B": "fetch(url).then(response => response.catch(error => console.log(error)))",
+      "C": "fetch(url).catch(error => {{ console.log(error) }})",
+      "D": "fetch(url).then(response => { throw new Error() }).catch(error => console.log(error))"
+    },
+    "answer": "A",
+    "id": 2042,
+    "sourcePage": 43
+  },
+  {
+    "page": 3,
+    "numberOnPage": 3,
+    "question": "How do youpass multiple props to a child component in React?",
+    "options": {
+      "A": "<Child props=([name:\"John\", age: 30 } />",
+      "B": "<Child name=\"John\" age=[30) />",
+      "C": "<Child name=\"John\" age=\"30\" />",
+      "D": "<Child name=\"John\" age=30 />"
+    },
+    "answer": "B",
+    "id": 2043,
+    "sourcePage": 44
+  },
+  {
+    "page": 3,
+    "numberOnPage": 4,
+    "question": "transform them into uppercase?",
+    "options": {
+      "A": "const items = [\"Apple\", \"Banana\", \"Cherry\",\"Avocado\"]: return (<ul> (items.filter(item => item.length > 5).map(item => <li>(item)</li>)) </ul>",
+      "B": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; return (<u> </ul>",
+      "C": "const items = [\"Apple\",\"Banana\",\"Cherry\",\"Avocado\"]; return (<ul> (items.map(item => <li key={item)>(item)</li>).filter(item => item.length > 5)) </ul>",
+      "D": "const items = [\"Apple\",\"Banana\",\"Cherry\",\"Avocado\"]; return (<ul> [items.map(item => item.toUpperCase().filter(item => item.length > 5) </ul>"
+    },
+    "answer": "B",
+    "id": 2044,
+    "sourcePage": 45
+  },
+  {
+    "page": 3,
+    "numberOnPage": 5,
+    "question": "How can you avoid contradictions in state with this code? const [isOpen, setlsOpen] =useState(false); const [buttonText, setButtonText]=useState(isOpen?\"se\":\"Open\"); function toggleO setlsOpen(lisOpen); setButtonText(isOpen?\"Open\":\"se\");",
+    "options": {
+      "A": "The code above is fine as it is.",
+      "B": "Remove buttonText from stateand calculate it dynamically in the rendermethod based on isOpen.",
+      "C": "KeepbothisOpenandbuttonTextinstatebutupdatethemseparately",
+      "D": "UseuseEffecttosyncbuttonTextwithisOpen."
+    },
+    "answer": "B",
+    "id": 2045,
+    "sourcePage": 46
+  },
+  {
+    "page": 3,
+    "numberOnPage": 6,
+    "question": "How would you correctly convert the following HTML code to JSX? <h1>Hedy Lamarr's Todos</h1> <img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" class=\"photo\" /> <ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul>",
+    "options": {
+      "A": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" className=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul></>",
+      "B": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" class=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li><li>Improve the spectrum technology</li></ul></>",
+      "C": "<><h1>Hedy Lamarr's Todos</h1><img src=\"https://i.imgur.com/xX0vdOSs.jpg\" alt=\"Hedy Lamarr\" className=\"photo\" /><ul><li>Invent new traffic lights</li><li>Rehearse a movie scene</li></ul></>"
+    },
+    "answer": "A",
+    "id": 2046,
+    "sourcePage": 47
+  },
+  {
+    "page": 3,
+    "numberOnPage": 7,
+    "question": "How do you use the Grid system in React-Bootstrap?",
+    "options": {
+      "A": "<Row><Container><Col xs={6}>2 of 3 (wider)</Col></Container></Row>",
+      "B": "<Row><Container><Column>1 of 3</Column></Container></Row>",
+      "D": "<Container><Column><Row xs={6}>2 of 3 (wider)</Row></Column></Container>",
+      "C": "<Container><Row><Col xs={6}>2 of 3 (wider)</Col></Row></Container>"
+    },
+    "answer": "C",
+    "id": 2047,
+    "sourcePage": 48
+  },
+  {
+    "page": 3,
+    "numberOnPage": 8,
+    "question": "Howwouldyouaccessthemessageprop insidethe ChildComponent? function ChildComponent(props) (return<h1>(props.message)</h1>;",
+    "options": {
+      "A": "props.message",
+      "B": "this.props.message",
+      "C": "props(\"message\")",
+      "D": "props.getMessage()"
+    },
+    "answer": "A",
+    "id": 2048,
+    "sourcePage": 49
+  },
+  {
+    "page": 3,
+    "numberOnPage": 9,
+    "question": "How do you define a dynamic route parameter in React Router?",
+    "options": {
+      "A": "<Route path=\"/user/id\" component={UserProfile) />",
+      "B": "<Route path=\"/user.:id\" component={UserProfile) />",
+      "C": "<Routepath=\"/user=?id\"component=(UserProfile) />",
+      "D": "<Route path=\"/user/:id\" component={UserProfile) />"
+    },
+    "answer": "D",
+    "id": 2049,
+    "sourcePage": 50
+  },
+  {
+    "page": 3,
+    "numberOnPage": 10,
+    "question": "How do you configure a Redux store using Redux Toolkit?",
+    "options": {
+      "A": "import { createStore } from 'redux'; const store = createStore({ reducer: { counter: counterReducer } });",
+      "B": "import { createStore } from 'redux'; const store = createStore({ counter: counterReducer });",
+      "D": "import { configureStore } from '@reduxjs/toolkit'; const store = configureStore({ reducer: { counter: counterReducer } });",
+      "C": "import { configureStore } from '@reduxjs/toolkit'; const store = configureStore({ counter: counterReducer });"
+    },
+    "answer": "D",
+    "id": 2050,
+    "sourcePage": 51
+  },
+  {
+    "page": 3,
+    "numberOnPage": 11,
+    "question": "How can you avoid contradictions in state with this code? Hoang Hoang const [isOpen, setlsOpen] =useState(false); const [buttonText, setButtonText] = useState(isOpen?\"Se\":\"Open\"); function toggle() (setlsOpen(lisOpen); setButtonText(isOpen?\"Open\":\"Se\");",
+    "options": {
+      "A": "The codeaboveis fine as itis.",
+      "B": "RemovebuttonTextfromstateand calculateitdynamically intherendermethodbasedon isOpen.",
+      "C": "Keep both isOpen and buttonText in state but update them separately.",
+      "D": "UseuseEffect tosync buttonText with isOpen."
+    },
+    "answer": "B",
+    "id": 2051,
+    "sourcePage": 52
+  },
+  {
+    "page": 3,
+    "numberOnPage": 12,
+    "question": "Howdo youdispatchan action when abutton is clicked?",
+    "options": {
+      "A": "const handleClick = 0 => [______ dispatch((type: BUTTON_CLICKED'); <button onClick=[handleClick)>Click me</button>;",
+      "B": "const handleClick = 0 => [______ dispatch(I type: 'BUTTON_CLICKED); <button onClick=[0 =>handleClickO]>Clickme</button>; ______",
+      "C": "const handleClick = O =>{ dispatch(type:'BUTTON_CLICKED');); <button onClick=[handleClickO]>Clickme</button>;",
+      "D": "const handleClick = 0 => (______ dispatch(action: \"BUTTON_CLICKED'); <button onClick=[handleClick)>Click me</button>;"
+    },
+    "answer": "A",
+    "id": 2052,
+    "sourcePage": 53
+  },
+  {
+    "page": 3,
+    "numberOnPage": 13,
+    "question": "How can you render only specific items from an array?",
+    "options": {
+      "A": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.map(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "B": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.reduce(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "C": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.filter(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);",
+      "D": "const items = [\"Apple\", \"Banana\", \"Cherry\", \"Avocado\"]; const filteredItems = items.find(item => item.startsWith(\"A\")); return (<ul>{filteredItems.map((item, index) => <li key={index}>{item}</li>)}</ul>);"
+    },
+    "answer": "C",
+    "id": 2053,
+    "sourcePage": 54
+  },
+  {
+    "page": 3,
+    "numberOnPage": 14,
+    "question": "How do you wrap a lazy-loaded component with a fallback in React?",
+    "options": {
+      "A": "<Suspense loader=<div>Loading...</div>)> <LazyComponent/> </Suspense>",
+      "B": "<Suspensefallback=[<div>Loading...</div>]> <LazyComponent /> </Suspense>",
+      "C": "<Await fallback=(<div>Loading...</div>)> <LazyComponent/> </Await>",
+      "D": "<Loading fallback=[<div>Loading...</div>]> <LazyComponent /> </Loading>"
+    },
+    "answer": "B",
+    "id": 2054,
+    "sourcePage": 55
+  },
+  {
+    "page": 3,
+    "numberOnPage": 15,
+    "question": "ghiuTay Which classes would you apply?",
+    "options": {
+      "A": "<Container> <Row> <Col>1 of 3</Col> <Col>2 of 3</Col> <Col>3 of 3</Col> </Row> </Container>",
+      "B": "<Container> <Row> <Col sm={4)>1 of 3</Col> <Col sm=[4)>2 of 3</Col> <Col sm=[4)>3 of 3</Col> </Row> </Container>",
+      "C": "<Container> <Row> <Col md=(12)>1 of 4</Col> <Col md={12)>2 of 4/Col> <Col md=[12]>3 of 4</Col> </Row> </Container>",
+      "D": "<Container> <Row> <Col sm=[12) md=[4]>1 of 4</Col> <Col sm=[12] md=[4)>2 of 4</Col> <Col sm=[12] md=[4]>3 of 4</Col> </Row> ain"
+    },
+    "answer": "D",
+    "id": 2055,
+    "sourcePage": 56
+  },
+  {
+    "page": 3,
+    "numberOnPage": 16,
+    "question": "Create a React component that uses the Suspense component to display a fallback while loading a lazily loaded component. Which code snippet is correct?",
+    "options": {
+      "A": "import React, { lazy, Suspense } from 'react'; const MyComponent = lazy(() => import('./MyComponent')); function App() { return (<Suspense fallback={<div>Loading...</div>}><MyComponent /></Suspense>); } export default App;",
+      "B": "import React, { Suspense } from 'react'; const MyComponent = import('./MyComponent'); function App() { return (<Suspense fallback={<div>Loading...</div>}><MyComponent /></Suspense>); } export default App;",
+      "C": "import React, { lazy } from 'react'; const MyComponent = lazy('./MyComponent'); function App() { return (<div>Loading...</div>); } export default App;",
+      "D": "import React from 'react'; const MyComponent = React.lazy(() => import('./MyComponent')); function App() { return (<React.Suspense><MyComponent /></React.Suspense>); } export default App;"
+    },
+    "answer": "A",
+    "id": 2056,
+    "sourcePage": 57
+  },
+  {
+    "page": 3,
+    "numberOnPage": 17,
+    "question": "Create a React component that uses inline event handlers to log a message when a button is clicked. Which code snippet is correct?",
+    "options": {
+      "A": "class MyButton extends React.Component { render() { return (<button onClick={(e) => console.log('clicked', e)}>Click me</button>); } }",
+      "B": "class MyButton extends React.Component { render() { return (<button onClick={this.onClick}>Click me</button>); } }",
+      "C": "class MyButton extends React.Component { render() { return (<button onClick={this.onClick.bind(this)}>Click me</button>); } }",
+      "D": "class MyButton extends React.Component { render() { return (<button onClick={() => this.onClick()}>Click me</button>); } }"
+    },
+    "answer": "A",
+    "id": 2057,
+    "sourcePage": 58
+  },
+  {
+    "page": 3,
+    "numberOnPage": 18,
+    "question": "WhatistheaboveJsONservercodeusedfor? const jsonServer = require(json-server\"); const server = jsonServer.create(); const router= jsonServer.router('data.json'); const port= 3000; server.use(router): server.listen(port, => { console.log(JsoN server is running on port $(port)\");: 3);",
+    "options": {
+      "A": "Create a dynamic serverto serve JSON data.",
+      "B": "Createa dynamic web application using JSONdata.",
+      "C": "Createa JSoNfilebasedon datafrom the server.",
+      "D": "Configure the development environment for the project using JSON."
+    },
+    "answer": "A",
+    "id": 2058,
+    "sourcePage": 59
+  },
+  {
+    "page": 3,
+    "numberOnPage": 19,
+    "question": "// Rendering the component (preparing the order in the kitchen) const renderOrders = () => { return orders.map((order, index) => <Dish key={index} name={order} />); }; // Committing to the DOM (placing the order on the table) return (<div><h2>Orders</h2><ul>{renderOrders()}</ul></div>); function Waiter() { const handleOrder = () => { // Triggering a render (delivering the guest's order to the kitchen) kitchenRef.current.addOrder('Pizza'); }; // A reference to the Kitchen component const kitchenRef = React.createRef(); // Rendering the Waiter component return (<div><h1>Welcome to the Restaurant!</h1><button onClick={handleOrder}>Place Order</button><Kitchen ref={kitchenRef} /></div>); } export default Waiter; Which process in React corresponds to \"send order to kitchen\"?",
+    "options": {
+      "B": "Rendering the component",
+      "C": "Committing to the DOM",
+      "A": "Triggering a render",
+      "D": "Placing the order on the table"
+    },
+    "answer": "A",
+    "id": 2059,
+    "sourcePage": 60
+  },
+  {
+    "page": 3,
+    "numberOnPage": 20,
+    "question": "Howmanycolumnswillthnecodebelowdisplayonamobilescreen? <Container> <Row> <Col sm=[6) md=[4)>[/* Placeholder content *</Col> <Col sm=[6] md=[8]>[/* Placeholder content *</Col> </Row> </Container>",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B",
+    "id": 2060,
+    "sourcePage": 61
+  },
+  {
+    "page": 4,
+    "numberOnPage": 1,
+    "question": "CreateaReactcomponentthatusescompositiontoincludeaheader,maincontent,andfooter.Whichcode snippetis correct?",
+    "options": {
+      "A": "function App(O) return (<div><Header/><MainContent/><Footer /></div>);",
+      "B": "functionAppO return (<div><Header/><Footer/><MainContent/></div>);",
+      "C": "function AppO return (<div><MainContent /><Header /><Footer /></div>);",
+      "D": "function AppO return (<div><Footer/><Header/><MainContent/></div>);"
+    },
+    "answer": "A",
+    "id": 2061,
+    "sourcePage": 62
+  },
+  {
+    "page": 4,
+    "numberOnPage": 2,
+    "question": "Find the bug in the following React code: const [items, setltems] = useState(); const addltem = 0 =>[items.push('new); setltems(items);",
+    "options": {
+      "A": "useStateshouldbeuseReducer",
+      "B": "use setltems([...items, 'new')",
+      "C": "push is not a valid method",
+      "D": "setltems musttake a string"
+    },
+    "answer": "B",
+    "id": 2062,
+    "sourcePage": 63
+  },
+  {
+    "page": 4,
+    "numberOnPage": 3,
+    "question": "git init git add. git commit -m \"Initial commit\" git branch new-feature git checkout new-feature git add new-file.js git commit -m \"Add new file\" git checkout main git merge new-feature",
+    "options": {
+      "A": "The repository has a new branch called new-feature with new-file.js added.",
+      "B": "The main branch has new-file.js added.",
+      "C": "The new-feature branch is merged into main without new-file.js.",
+      "D": "The repository remains unchanged."
+    },
+    "answer": "B",
+    "id": 2063,
+    "sourcePage": 64
+  },
+  {
+    "page": 4,
+    "numberOnPage": 4,
+    "question": "(React class component question - Counter increment) import React, { Component } from 'react'; class Counter extends Component { constructor(props) { super(props); this.state = { count: 0 }; } incrementCount() { // TODO: Increase the count state by 1 } render() { return (<div><p>Count: {this.state.count}</p><button onClick={this.incrementCount}>Increment</button></div>); } } export default Counter; In the code above, how can we increase the value of the count state by 1 when the user clicks the \"Increment\" button?",
+    "options": {
+      "A": "Call the method this.setState({ count: this.state.count + 1 }) inside the incrementCount method.",
+      "B": "Assign a new value to count using the assignment operator (=) inside the incrementCount method.",
+      "C": "Call the method this.state.count += 1 inside the incrementCount method.",
+      "D": "Use this.setState(count + 1) inside the incrementCount method."
+    },
+    "answer": "A",
+    "id": 2064,
+    "sourcePage": 65
+  },
+  {
+    "page": 4,
+    "numberOnPage": 5,
+    "question": "import React, { Component } from 'react'; class Form extends Component { constructor(props) { super(props); this.state = { name: '', email: '' }; } handleInputChange(event) { // TODO: Update the corresponding state property based on user input } render() { return (<form><label>Name: <input type=\"text\" value={this.state.name} onChange={this.handleInputChange} /></label><label>Email: <input type=\"email\" value={this.state.email} onChange={this.handleInputChange} /></label></form>); } } export default Form; In the code above, how can we update the value of the name or email state based on the user input in the respective input fields?",
+    "options": {
+      "B": "Assign a new value to name or email using the assignment operator (=) inside the handleInputChange method.",
+      "C": "Call the method this.state.name = event.target.value or this.state.email = event.target.value inside the handleInputChange method.",
+      "A": "Call the method this.setState({ name: event.target.value }) or this.setState({ email: event.target.value }) inside the handleInputChange method.",
+      "D": "Use this.setState(event.target.value) inside the handleInputChange method."
+    },
+    "answer": "A",
+    "id": 2065,
+    "sourcePage": 66
+  },
+  {
+    "page": 4,
+    "numberOnPage": 6,
+    "question": "import React, (useState}from'react'; function AppO (const[showMessage, setShowMessage] =useState(false); const toggleMessage = () => (setShowMessage(!showMessage); return <div> <button onClick=(toggleMessage)>Toggle Message</button> [showMessage && <p>This is a message!</p>) </div> export default App; What happens when the \"Toggle Message\" button is clicked?",
+    "options": {
+      "A": "The message is displayed.",
+      "B": "The message is hidden.",
+      "C": "The state of the component is updated.",
+      "D": "The component is re-rendered."
+    },
+    "answer": "C",
+    "id": 2066,
+    "sourcePage": 67
+  },
+  {
+    "page": 4,
+    "numberOnPage": 7,
+    "question": "import React from 'react'; const Greeting = (name))=> (return <h1>Hello, (name)!</h1>; export default Greeting; What typeof component is represented bythe codeabove?",
+    "options": {
+      "A": "Class component",
+      "B": "Functional component",
+      "C": "Containercomponent",
+      "D": "Higher-order component"
+    },
+    "answer": "B",
+    "id": 2067,
+    "sourcePage": 68
+  },
+  {
+    "page": 4,
+    "numberOnPage": 8,
+    "question": "import React, { useState } from 'react'; function Dish({ name }) { return <li>{name}</li>; } function Kitchen() { const [orders, setOrders] = useState([]); // Triggering a render (delivering the guest's order to the kitchen) const addOrder = (order) => { setOrders((prevOrders) => [...prevOrders, order]); }; // Rendering the component (preparing the order in the kitchen) const renderOrders = () => { return orders.map((order, index) => <Dish key={index} name={order} />); }; // Committing to the DOM (placing the order on the table) return (<div><h2>Orders</h2><ul>{renderOrders()}</ul></div>); } function Waiter() { const handleOrder = () => { kitchenRef.current.addOrder('Pizza'); }; const kitchenRef = React.createRef(); return (<div><h1>Welcome to the Restaurant!</h1><button onClick={handleOrder}>Place Order</button><Kitchen ref={kitchenRef} /></div>); } Which process in React corresponds to \"putting orders on the table\"?",
+    "options": {
+      "B": "Rendering the component",
+      "C": "Committing to the DOM",
+      "A": "Triggering a render",
+      "D": "Placing the order on the table"
+    },
+    "answer": "C",
+    "id": 2068,
+    "sourcePage": 69
+  },
+  {
+    "page": 4,
+    "numberOnPage": 9,
+    "question": "pontReact,usestateofeact, function AppO (const [showMessage, setShowMessage]=useState(false); const toggleMessage = O =>(setShowMessage(lshowMessage); return (<div> <buttononClick=(toggleMessage]>ToggleMessage</button> [showMessage&&<p>This isa messagel</p>] OR U </div> export default App; What happens when the \"Toggle Message\"button is clicked?",
+    "options": {
+      "A": "The message is displayed.",
+      "B": "The message is hidden.",
+      "C": "The state of the component is updated.",
+      "D": "Thecomponentisre-rendered"
+    },
+    "answer": "C",
+    "id": 2069,
+    "sourcePage": 70
+  },
+  {
+    "page": 4,
+    "numberOnPage": 10,
+    "question": "In ReactJS with Bootstrap, select the JSX code snippet to create a button with a blue background and white text color.",
+    "options": {
+      "A": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"btn-primary\">My Button</Button>; }; export default MyButton;",
+      "B": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"bg-primary text-white\">My Button</Button>; }; export default MyButton;",
+      "C": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button variant=\"primary\" className=\"btn btn-primary\">My Button</Button>; }; export default MyButton;",
+      "D": "import React from 'react'; import { Button } from 'react-bootstrap'; const MyButton = () => { return <Button className=\"btn btn-primary\">My Button</Button>; }; export default MyButton;"
+    },
+    "answer": "B",
+    "id": 2070,
+    "sourcePage": 71
+  },
+  {
+    "page": 4,
+    "numberOnPage": 11,
+    "question": "In Bootstrap, select the HTML/CSS code snippet to create a navbar with a dropdown menu containing sub-items.",
+    "options": {
+      "A": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item dropdown\"><a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>",
+      "B": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item\"><a class=\"nav-link\" href=\"#\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>",
+      "C": "<nav class=\"navbar\"><ul class=\"nav\"><li class=\"nav-item\">Item 1</li><li class=\"nav-item dropdown\"><a class=\"nav-link\" href=\"#\">Dropdown</a><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"#\">Sub-item 1</a><a class=\"dropdown-item\" href=\"#\">Sub-item 2</a></div></li></ul></nav>"
+    },
+    "answer": "A",
+    "id": 2071,
+    "sourcePage": 72
+  },
+  {
+    "page": 4,
+    "numberOnPage": 12,
+    "question": "import(Button,Checkbox,Listbox}from'react-bootstrap'; <div> <Button variant=\"primary\">Primary Button</Button> <Checkboxlabel=\"Check me!\"/> <Listboxoptions={['Option1','Option2''Option3')/> </div> Whatcomponents does the codeabove display?",
+    "options": {
+      "A": "Grid, Button, ListBox",
+      "B": "Button,Radiobox,Listbox",
+      "C": "Checkbox, Listbox, Button",
+      "D": "Button,Checkbox,Tabs"
+    },
+    "answer": "C",
+    "id": 2072,
+    "sourcePage": 73
+  },
+  {
+    "page": 4,
+    "numberOnPage": 13,
+    "question": "Select the code snippet that correctly defines a component with state in React.",
+    "options": {
+      "A": "const MyComponent = React.createClass({ getInitialState() { return { count: 0 }; }, render() { return <div>{this.state.count}</div>; } });",
+      "B": "function MyComponent() { const [count, setCount] = React.useState(0); return <div>{count}</div>; }",
+      "C": "class MyComponent extends React.Component { constructor(props) { super(props); this.state = { count: 0 }; } render() { return <div>{this.state.count}</div>; } }",
+      "D": "const MyComponent = () => { const [count, setCount] = React.useState(0); return <div>{count}</div>; }"
+    },
+    "answer": "C",
+    "id": 2073,
+    "sourcePage": 75
+  },
+  {
+    "page": 4,
+    "numberOnPage": 14,
+    "question": "Select the code snippet that correctly defines a Higher-Order Component in React using an arrow function.",
+    "options": {
+      "A": "function withLogger(WrappedComponent) { return class extends React.Component { // HOC implementation }; }",
+      "B": "const withLogger = (WrappedComponent) => { return class extends React.Component { // HOC implementation }; };",
+      "C": "const withLogger = (WrappedComponent) => { return function HOC() { // HOC implementation }; };",
+      "D": "function withLogger(WrappedComponent) { return function HOC() { // HOC implementation }; }"
+    },
+    "answer": "B",
+    "id": 2074,
+    "sourcePage": 76
+  },
+  {
+    "page": 4,
+    "numberOnPage": 15,
+    "question": "How can you pass parameters to an event handler in React?Hoang Hoang",
+    "options": {
+      "A": "Using the bind() method.",
+      "B": "Using arrow functions.",
+      "C": "UsingtheaddEventListener()method.",
+      "D": "Using the this keyword."
+    },
+    "answer": "AB",
+    "id": 2075,
+    "sourcePage": 78
+  },
+  {
+    "page": 4,
+    "numberOnPage": 16,
+    "question": "Which of thefollowing are true characteristics of React components?Select all thatapply.",
+    "options": {
+      "A": "Canbereusedacrossdifferentpartsoftheapplication.",
+      "B": "Managetheirown state",
+      "C": "UseJSX syntax.",
+      "D": "Directly manage routing."
+    },
+    "answer": "ABC",
+    "id": 2076,
+    "sourcePage": 79
+  },
+  {
+    "page": 4,
+    "numberOnPage": 17,
+    "question": "Which of thefollowingare valid waysto initializeand manage state in a functional React component? (Choose2correctanswers)",
+    "options": {
+      "A": "UsingtheuseStatehook.",
+      "B": "UsingtheuseReducerhook.",
+      "C": "UsingaProvidercomponent.",
+      "D": "UsingtheuseRefhook."
+    },
+    "answer": "AB",
+    "id": 2077,
+    "sourcePage": 81
+  },
+  {
+    "page": 4,
+    "numberOnPage": 18,
+    "question": "How do you include Tailwind Css in a project?",
+    "options": {
+      "A": "Link the Tailwind CSS stylesheet in the HTML file.",
+      "B": "Import the Tailwind CsS file in the JavaScript code.",
+      "C": "Use the @import rule in a Css file to import Tailwind csS.",
+      "D": "AddTailwind CsS as a dependency inthepackage.json file."
+    },
+    "answer": "BCD",
+    "id": 2078,
+    "sourcePage": 82
+  },
+  {
+    "page": 4,
+    "numberOnPage": 19,
+    "question": "Howdoyou importand initialize theuseReducerhook ina React component?(Selectall that apply)",
+    "options": {
+      "A": "const[state, dispatch] = useReducer(reducer, initialState);",
+      "B": "const[state, setState] =useReducer(reducer, initialState);",
+      "C": "import React, [useReducer} from'react';",
+      "D": "import [useReducer} from'react-redux';"
+    },
+    "answer": "AC",
+    "id": 2079,
+    "sourcePage": 83
+  },
+  {
+    "page": 4,
+    "numberOnPage": 20,
+    "question": "Select the code snippet that correctly defines a Functional Component in React (Choose 2 answers).",
+    "options": {
+      "A": "function MyComponent() return <div>Hello, World!</div>;",
+      "B": "const MyComponent =()=>(return <div>Hello, World!</div>;",
+      "C": "class MyComponentextendsReact.Component(render((return<div>Hello, World!</div>;",
+      "D": "const MyComponent=React.createClass(render() return <div>Hello,World!</div>; 3);"
+    },
+    "answer": "AB",
+    "id": 2080,
+    "sourcePage": 84
+  },
+  {
+    "page": 5,
+    "numberOnPage": 1,
+    "question": "SelectthebenefitsofusingReact.memoanduseMemoinReactapplications.(Choose2correctanswers)",
+    "options": {
+      "A": "Prevent unnecessary componentre-renders",
+      "B": "Automatically synchronize component statewithglobal state",
+      "C": "Guarantee object references don't change during re-rendering",
+      "D": "Simplifytheprocessofcontextmanagement"
+    },
+    "answer": "AC",
+    "id": 2081,
+    "sourcePage": 85
+  },
+  {
+    "page": 5,
+    "numberOnPage": 2,
+    "question": "Whatarethekeyfeatures ofNext.js?",
+    "options": {
+      "A": "Server-side rendering, Static Site Generation, Image Optimization, Built-in Routing.",
+      "B": "Database integration,codedebugging,and form validation.",
+      "C": "Cssstyling,versioncontrol,anderrorhandling.",
+      "D": "Packagemanagement,command-lineinterface,andtestingframework."
+    },
+    "answer": "A",
+    "id": 2082,
+    "sourcePage": 87
+  },
+  {
+    "page": 5,
+    "numberOnPage": 3,
+    "question": "Whichmethods arepart of the Lifecycle in Class Components?",
+    "options": {
+      "A": "componentDidMount,componentDidUpdate,componentWillUnmount.",
+      "B": "render,setState,forceUpdate.",
+      "C": "constructor,render,componentWillUpdate.",
+      "D": "componentWillReceiveProps,shouldComponentUpdate,componentDidCatch."
+    },
+    "answer": "A",
+    "id": 2083,
+    "sourcePage": 88
+  },
+  {
+    "page": 5,
+    "numberOnPage": 4,
+    "question": "Which React-Bootstrap components areused to createnavigation menus?",
+    "options": {
+      "A": "Navbars,Navs,Tabs.",
+      "B": "Alert, Card.",
+      "C": "Button,Checkbox.",
+      "D": "Modal, Listbox."
+    },
+    "answer": "A",
+    "id": 2084,
+    "sourcePage": 89
+  },
+  {
+    "page": 5,
+    "numberOnPage": 5,
+    "question": "Whichpair of Git commands is used to create a new branch and then switchto it?",
+    "options": {
+      "A": "git new branch-name; git change branch-name",
+      "B": "git branch branch-name, git checkout branch-name",
+      "C": "git make branch-name; git switch branch-name",
+      "D": "git create branch-name; git select branch-name"
+    },
+    "answer": "B",
+    "id": 2085,
+    "sourcePage": 90
+  },
+  {
+    "page": 5,
+    "numberOnPage": 6,
+    "question": "Describe the Redux flow process when an action is dispatched.",
+    "options": {
+      "A": "Action is dispatched Middleware Reducer Store Component.",
+      "B": "Component dispatches action Reducer Middleware Store.",
+      "C": "Middleware dispatches action Reducer Store Component.",
+      "D": "Reducer dispatches action Middleware Component Store."
+    },
+    "answer": "A",
+    "id": 2086,
+    "sourcePage": 91
+  },
+  {
+    "page": 5,
+    "numberOnPage": 7,
+    "question": "Analyze thebenefits of using synthetic events in React. Which of the following is NoT a benefit?",
+    "options": {
+      "A": "Providesaconsistenteventinterfaceacrossdifferentbrowsers.",
+      "B": "Contains informationnecessaryforeventpropagation.",
+      "C": "Reduces the needfor garbage collection.",
+      "D": "Normalizesbrowserinconsistencies."
+    },
+    "answer": "C",
+    "id": 2087,
+    "sourcePage": 93
+  },
+  {
+    "page": 5,
+    "numberOnPage": 8,
+    "question": "Evaluate the benefits ofusing ReduxThunk middleware in a Redux application.Which of thefollowing is NOTabenefit?",
+    "options": {
+      "A": "Allows for handling asynchronous actions",
+      "B": "Simplifies theprocess of making APIcalls within action creators.",
+      "C": "Ensures that all actions are synchronous.",
+      "D": "Enables conditional dispatchingof actions."
+    },
+    "answer": "C",
+    "id": 2088,
+    "sourcePage": 94
+  },
+  {
+    "page": 5,
+    "numberOnPage": 9,
+    "question": "Evaluate the benefits of using the React.lazy API for code splitting in a React application. Which of the following is NOT a benefit?",
+    "options": {
+      "A": "Reduces the initial load time by splitting code into bundles.",
+      "B": "Ensures that all components are loaded upfront.",
+      "D": "Allows for dynamic imports and lazy loading of components.",
+      "C": "Provides a better user experience by loading components only when needed."
+    },
+    "answer": "B",
+    "id": 2089,
+    "sourcePage": 95
+  },
+  {
+    "page": 5,
+    "numberOnPage": 10,
+    "question": "Which method is used toperform enhanced array manipulation in ES6?",
+    "options": {
+      "A": "map()",
+      "B": "forEach()",
+      "C": "reduce()",
+      "D": "filter()"
+    },
+    "answer": "A",
+    "id": 2090,
+    "sourcePage": 97
+  },
+  {
+    "page": 5,
+    "numberOnPage": 11,
+    "question": "WhichtworecentadditionstoReactallowthecompleteintegrationofcodesplitting intoapplications?",
+    "options": {
+      "A": "useStateOanduseEffect()",
+      "B": "React.memo()anduseCallbackO)",
+      "C": "lazyOAPIandSuspensecomponents",
+      "D": "ReactDOM.createRootO)andBrowserRouter."
+    },
+    "answer": "C",
+    "id": 2091,
+    "sourcePage": 98
+  },
+  {
+    "page": 5,
+    "numberOnPage": 12,
+    "question": "Aftermakingasuccessfulfetchrequest,howwouldyouretrievetheJsONdatafromtheresponseobject?",
+    "options": {
+      "A": "response.data0)",
+      "B": "response.jsonO",
+      "C": "response.jsonTexto",
+      "D": "response.body.jsono"
+    },
+    "answer": "B",
+    "id": 2092,
+    "sourcePage": 99
+  },
+  {
+    "page": 5,
+    "numberOnPage": 13,
+    "question": "What is a core feature of Next.js that enhances SEO?",
+    "options": {
+      "A": "Real-time data fetching.",
+      "B": "Client-side routing",
+      "C": "Automatic code splitting",
+      "D": "Server-side rendering."
+    },
+    "answer": "D",
+    "id": 2093,
+    "sourcePage": 101
+  },
+  {
+    "page": 5,
+    "numberOnPage": 14,
+    "question": "What isthetypicalfileextensionfora React component?",
+    "options": {
+      "A": ".html",
+      "B": ".CsS",
+      "C": "js or jsx",
+      "D": ".php"
+    },
+    "answer": "C",
+    "id": 2094,
+    "sourcePage": 102
+  },
+  {
+    "page": 5,
+    "numberOnPage": 15,
+    "question": "What is the command to start json-server and specify the JsON file to be served?",
+    "options": {
+      "A": "npm start",
+      "B": "json-server start",
+      "C": "npx json-server --watch data.json",
+      "D": "node server.js"
+    },
+    "answer": "C",
+    "id": 2095,
+    "sourcePage": 103
+  },
+  {
+    "page": 5,
+    "numberOnPage": 16,
+    "question": "What is the primary architectural style used in designing web services that follow REsT principles?",
+    "options": {
+      "A": "SOAP (Simple Object Access Protocol)",
+      "B": "RPC (Remote Procedure Call)",
+      "C": "MVC (Model-View-Controller)",
+      "D": "RESTful (RepresentationalStateTransfer)"
+    },
+    "answer": "D",
+    "id": 2096,
+    "sourcePage": 104
+  },
+  {
+    "page": 5,
+    "numberOnPage": 17,
+    "question": "What is the initial state of a promise?",
+    "options": {
+      "A": "Fulfilled",
+      "B": "Rejected",
+      "C": "Pending",
+      "D": "Resolved"
+    },
+    "answer": "C",
+    "id": 2097,
+    "sourcePage": 105
+  },
+  {
+    "page": 5,
+    "numberOnPage": 18,
+    "question": "What is the main concept behind Tailwind Css? Hoang Hoang",
+    "options": {
+      "A": "Component-basedarchitecture.",
+      "B": "Object-oriented programming.",
+      "C": "Utility classes.",
+      "D": "ModularCSS."
+    },
+    "answer": "C",
+    "id": 2098,
+    "sourcePage": 106
+  },
+  {
+    "page": 5,
+    "numberOnPage": 19,
+    "question": "What is a Component inReact?",
+    "options": {
+      "A": "It is a single Ul element.",
+      "B": "It is a JavaScript function.",
+      "C": "It is an HTML framework.",
+      "D": "It is a Python class."
+    },
+    "answer": "B",
+    "id": 2099,
+    "sourcePage": 107
+  },
+  {
+    "page": 5,
+    "numberOnPage": 20,
+    "question": "What is Node.js?",
+    "options": {
+      "A": "A web browser.",
+      "B": "Aprogramming language.",
+      "C": "A JavaScript runtime.",
+      "D": "ACSSframework."
+    },
+    "answer": "C",
+    "id": 2100,
+    "sourcePage": 108
+  },
+  {
+    "page": 6,
+    "numberOnPage": 1,
+    "question": "WhatareHigher-OrderComponents inReact?",
+    "options": {
+      "A": "Advancedcomponents.",
+      "B": "Componentswritten inJavaScript.",
+      "C": "Components with multiple props.",
+      "D": "Components with multiple states."
+    },
+    "answer": "A",
+    "id": 2101,
+    "sourcePage": 109
+  },
+  {
+    "page": 6,
+    "numberOnPage": 2,
+    "question": "What are the keyfeatures of React?",
+    "options": {
+      "A": "Two-way data binding.",
+      "B": "Virtual DOM.",
+      "C": "SQLdatabaseintegration.",
+      "D": "Automatic styling."
+    },
+    "answer": "B",
+    "id": 2102,
+    "sourcePage": 110
+  },
+  {
+    "page": 6,
+    "numberOnPage": 3,
+    "question": "______ What does the HTTP response code404 indicate?",
+    "options": {
+      "A": "OK.",
+      "B": "Created.",
+      "C": "Not Found.",
+      "D": "Internal Server Error."
+    },
+    "answer": "C",
+    "id": 2103,
+    "sourcePage": 111
+  },
+  {
+    "page": 6,
+    "numberOnPage": 4,
+    "question": "What does REsT stand forin the context ofweb services?",
+    "options": {
+      "A": "RepresentationalStateTransfer",
+      "B": "RemoteExecutionandStateTransfer",
+      "C": "Resourceful Endpoint and Service Tools",
+      "D": "Responsive Event-driven Server Technologies"
+    },
+    "answer": "A",
+    "id": 2104,
+    "sourcePage": 112
+  },
+  {
+    "page": 6,
+    "numberOnPage": 5,
+    "question": "What does REST stand for?",
+    "options": {
+      "A": "Representational StateTransfer",
+      "B": "RepresentationalStateTransmission",
+      "C": "ResourceStateTransfer",
+      "D": "ResourceStateTransmission"
+    },
+    "answer": "A",
+    "id": 2105,
+    "sourcePage": 113
+  },
+  {
+    "page": 6,
+    "numberOnPage": 6,
+    "question": "Whatarethe threepossiblestates of a Promise as described in the sources?",
+    "options": {
+      "A": "Initial, Running, Completed",
+      "B": "Starting, Paused, Finished",
+      "C": "Pending, Fulfilled, Rejected",
+      "D": "Waiting, Processing, Error Answer"
+    },
+    "answer": "C",
+    "id": 2106,
+    "sourcePage": 114
+  },
+  {
+    "page": 6,
+    "numberOnPage": 7,
+    "question": "Whatprotocoliscommonlyusedforclient-servercommunicationovertheweb?",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "SSH"
+    },
+    "answer": "A",
+    "id": 2107,
+    "sourcePage": 115
+  },
+  {
+    "page": 6,
+    "numberOnPage": 8,
+    "question": "What command is used to createa new Next.jsproject?",
+    "options": {
+      "A": "npx create-react-app",
+      "B": "npm install next",
+      "C": "npx create-next-app",
+      "D": "git clone next.js"
+    },
+    "answer": "C",
+    "id": 2108,
+    "sourcePage": 116
+  },
+  {
+    "page": 6,
+    "numberOnPage": 9,
+    "question": "Which of the following is a utility-first CsS framework that is often used with Next.js? Hoang Hoang",
+    "options": {
+      "A": "Bootstrap",
+      "B": "Material-UI",
+      "C": "Tailwind CSS",
+      "D": "Bulma"
+    },
+    "answer": "C",
+    "id": 2109,
+    "sourcePage": 117
+  },
+  {
+    "page": 6,
+    "numberOnPage": 10,
+    "question": "Whichof thefollowing components can be usedto create a slideshow in Bootstrap?",
+    "options": {
+      "A": "-popover",
+      "B": ".modal",
+      "C": ".carousel",
+      "D": ".nav-pills"
+    },
+    "answer": "C",
+    "id": 2110,
+    "sourcePage": 118
+  },
+  {
+    "page": 6,
+    "numberOnPage": 11,
+    "question": "Which Bootstrap component is used for creating a navigation bar?",
+    "options": {
+      "A": ".nav-bar",
+      "B": ".navigation",
+      "C": ".nav",
+      "D": ".menu"
+    },
+    "answer": "C",
+    "id": 2111,
+    "sourcePage": 119
+  },
+  {
+    "page": 6,
+    "numberOnPage": 12,
+    "question": "Which command is used to install the required dependencies for a React project?",
+    "options": {
+      "A": "npm install",
+      "B": "git LOne",
+      "C": "create-react-app",
+      "D": "npm start"
+    },
+    "answer": "A",
+    "id": 2112,
+    "sourcePage": 120
+  },
+  {
+    "page": 6,
+    "numberOnPage": 13,
+    "question": "Which class is used to create a collapsible accordion component in Bootstrap5?",
+    "options": {
+      "A": ".collapse",
+      "B": ".accordion",
+      "C": ".collapsible",
+      "D": ".collapse-accordion"
+    },
+    "answer": "B",
+    "id": 2113,
+    "sourcePage": 121
+  },
+  {
+    "page": 6,
+    "numberOnPage": 14,
+    "question": "(Choose1answer) Which class is used to createa form input witha validation state in Bootstrap5?",
+    "options": {
+      "A": ".input-group",
+      "B": ".form-check",
+      "C": ".form-control",
+      "D": ".form-validation"
+    },
+    "answer": "C",
+    "id": 2114,
+    "sourcePage": 122
+  },
+  {
+    "page": 6,
+    "numberOnPage": 15,
+    "question": "Which feature of ES6 is used to iterate over the elements of an array?",
+    "options": {
+      "A": "Spreadsyntax",
+      "B": "Destructuring assignment",
+      "C": "Arrow functions",
+      "D": "for...of loop"
+    },
+    "answer": "D",
+    "id": 2115,
+    "sourcePage": 123
+  },
+  {
+    "page": 6,
+    "numberOnPage": 16,
+    "question": "Which Es6 featureallows you to extract values fromarrays or objects and assign them to variables?",
+    "options": {
+      "A": "Template literals",
+      "B": "Arrow functions",
+      "C": "Destructuringassignment",
+      "D": "Promises"
+    },
+    "answer": "C",
+    "id": 2116,
+    "sourcePage": 124
+  },
+  {
+    "page": 6,
+    "numberOnPage": 17,
+    "question": "______ Which HTTP status code indicates a successful response from a server?",
+    "options": {
+      "A": "200 OK",
+      "B": "404 Not Found",
+      "C": "500 Internal ServerError",
+      "D": "302Found"
+    },
+    "answer": "A",
+    "id": 2117,
+    "sourcePage": 125
+  },
+  {
+    "page": 6,
+    "numberOnPage": 18,
+    "question": "______ (Choose 1answer) Which HTTP method is typically usedto retrievedatafrom a server?",
+    "options": {
+      "A": "POST",
+      "B": "DELETE",
+      "C": "PUT",
+      "D": "GET"
+    },
+    "answer": "D",
+    "id": 2118,
+    "sourcePage": 126
+  },
+  {
+    "page": 6,
+    "numberOnPage": 19,
+    "question": "Which method is used to update the state in a class component?",
+    "options": {
+      "A": "setState",
+      "B": "useState",
+      "C": "updateState",
+      "D": "changeState"
+    },
+    "answer": "A",
+    "id": 2119,
+    "sourcePage": 127
+  },
+  {
+    "page": 6,
+    "numberOnPage": 20,
+    "question": "Which React hook is used to manage state in functional components?Hoang Hoang",
+    "options": {
+      "A": "useEffect",
+      "B": "useContext",
+      "C": "useState",
+      "D": "useReducer"
+    },
+    "answer": "C",
+    "id": 2120,
+    "sourcePage": 128
+  },
+  {
+    "page": 7,
+    "numberOnPage": 1,
+    "question": "Which React-Bootstrap component is used to display apopup dialog with customizable content?",
+    "options": {
+      "A": "Modal",
+      "B": "Checkbox",
+      "C": "Button",
+      "D": "Card"
+    },
+    "answer": "A",
+    "id": 2121,
+    "sourcePage": 129
+  },
+  {
+    "page": 7,
+    "numberOnPage": 2,
+    "question": "WhichReact conceptisusedtopassdatafromaparent componenttoa child component?",
+    "options": {
+      "A": "State",
+      "B": "Props",
+      "C": "Context",
+      "D": "Ref"
+    },
+    "answer": "B",
+    "id": 2122,
+    "sourcePage": 130
+  },
+  {
+    "page": 7,
+    "numberOnPage": 3,
+    "question": "Which React Router component is commonly used to perform client-side navigation without triggering a full page reload?",
+    "options": {
+      "A": "<Router>",
+      "B": "<Routes>",
+      "C": "<Link>",
+      "D": "<Route>"
+    },
+    "answer": "C",
+    "id": 2123,
+    "sourcePage": 131
+  },
+  {
+    "page": 7,
+    "numberOnPage": 4,
+    "question": "Which prop is used todefine default values for props ina functional component in React 18?",
+    "options": {
+      "A": "initialProps",
+      "B": "props",
+      "C": "defaultProps",
+      "D": "defaultValue"
+    },
+    "answer": "C",
+    "id": 2124,
+    "sourcePage": 132
+  },
+  {
+    "page": 7,
+    "numberOnPage": 5,
+    "question": "Whichpropisusedtoprovideauniqueidentifierforelements inalistrenderedbyacomponent inReact18?",
+    "options": {
+      "A": "key",
+      "B": "id",
+      "C": "index",
+      "D": "ref"
+    },
+    "answer": "A",
+    "id": 2125,
+    "sourcePage": 133
+  },
+  {
+    "page": 7,
+    "numberOnPage": 6,
+    "question": "Whichpackage can beusedtosetupa simple JsON-basedserver in Node.js?",
+    "options": {
+      "A": "express",
+      "B": "json-server",
+      "C": "axios",
+      "D": "nodemon"
+    },
+    "answer": "B",
+    "id": 2126,
+    "sourcePage": 134
+  },
+  {
+    "page": 7,
+    "numberOnPage": 7,
+    "question": "Which is the correct wayto consume context ina functional component using theuseContext\"hook?",
+    "options": {
+      "A": "const value = MyContext();",
+      "B": "const value = useContext(MyContext);",
+      "C": "const value = this.context(MyContext);",
+      "D": "<MyContext.ProvideruseContext=(value) />"
+    },
+    "answer": "B",
+    "id": 2127,
+    "sourcePage": 135
+  },
+  {
+    "page": 7,
+    "numberOnPage": 8,
+    "question": "WhichBootstrap classis commonly usedto createa responsivenavigationbar?",
+    "options": {
+      "A": ".navbar-static",
+      "B": ".nav-horizontal",
+      "C": ".navbar",
+      "D": ".navigation-block"
+    },
+    "answer": "C",
+    "id": 2128,
+    "sourcePage": 136
+  },
+  {
+    "page": 7,
+    "numberOnPage": 9,
+    "question": "Which Bootstrap classprovides a fluid containerthat adapts toallbreakpoints?",
+    "options": {
+      "A": ".container-fluid",
+      "B": ".container",
+      "C": ".container-lg",
+      "D": ".container-xs"
+    },
+    "answer": "A",
+    "id": 2129,
+    "sourcePage": 137
+  },
+  {
+    "page": 7,
+    "numberOnPage": 10,
+    "question": "Why would a React developer choose to use\"Axios\"?",
+    "options": {
+      "A": "TorenderReactcomponentsfaster",
+      "B": "Tomanage component stateglobally ______",
+      "C": "To make HTTP requests to APIs",
+      "D": "To build reusablehooks"
+    },
+    "answer": "C",
+    "id": 2130,
+    "sourcePage": 138
+  },
+  {
+    "page": 7,
+    "numberOnPage": 11,
+    "question": "Which hook is typically used alongside useSelector to modify the Redux state?",
+    "options": {
+      "A": "useState",
+      "B": "useEffect",
+      "C": "useDispatch",
+      "D": "useContext"
+    },
+    "answer": "C",
+    "id": 2131,
+    "sourcePage": 139
+  },
+  {
+    "page": 7,
+    "numberOnPage": 12,
+    "question": "Whichof the following is NOT consideredapopularfront-endframework?",
+    "options": {
+      "A": "React",
+      "B": "Angular",
+      "C": "Django",
+      "D": "Vue.js"
+    },
+    "answer": "C",
+    "id": 2132,
+    "sourcePage": 140
+  },
+  {
+    "page": 7,
+    "numberOnPage": 13,
+    "question": "Whichmethod is most commonly used in a React appto fetch data froma server?",
+    "options": {
+      "A": "WebSockets",
+      "B": "useState()",
+      "C": "fetchO)oraxios insideuseEffecto)",
+      "D": "console.logO inside renderO"
+    },
+    "answer": "C",
+    "id": 2133,
+    "sourcePage": 141
+  },
+  {
+    "page": 7,
+    "numberOnPage": 14,
+    "question": "How do you define a Type validator in PropTypes fora prop called\"age\"that should be a number?",
+    "options": {
+      "A": "age: PropTypes.string",
+      "B": "age:PropTypes.number",
+      "C": "age: PropTypes.bool",
+      "D": "age: PropTypes.object"
+    },
+    "answer": "B",
+    "id": 2134,
+    "sourcePage": 142
+  },
+  {
+    "page": 7,
+    "numberOnPage": 15,
+    "question": "Howcan you ensure thataprop is passedas an arraywithatleast one element?",
+    "options": {
+      "A": "By using PropTypes.array.isRequired",
+      "B": "By creating a custom PropType validator",
+      "C": "By using PropTypes.arrayOf()",
+      "D": "By using PropTypes.objectOfO"
+    },
+    "answer": "B",
+    "id": 2135,
+    "sourcePage": 143
+  },
+  {
+    "page": 7,
+    "numberOnPage": 16,
+    "question": "Howwouldyounavigateprogrammaticallytoa routewithaparameterusinguseNavigateinReactRouter?",
+    "options": {
+      "A": "navigate(\"/user.id\");",
+      "B": "navigate(\"/user?id=123\");",
+      "C": "navigate(\"/user/123\");",
+      "D": "navigate((path:\"/user/123\"1)"
+    },
+    "answer": "C",
+    "id": 2136,
+    "sourcePage": 144
+  },
+  {
+    "page": 7,
+    "numberOnPage": 17,
+    "question": "How canyou import functions orvariables froman Es6 module?",
+    "options": {
+      "A": "By using the import keyword",
+      "B": "By using the require function",
+      "C": "By using the export keyword",
+      "D": "By using the include directive"
+    },
+    "answer": "A",
+    "id": 2137,
+    "sourcePage": 145
+  },
+  {
+    "page": 7,
+    "numberOnPage": 18,
+    "question": "Howwouldyouwriteanarrowfunction inEs6thataddstwonumbers?",
+    "options": {
+      "A": "const add = function(a, b) (return a + b;)",
+      "B": "const add = (a, b) => [return a + b;)",
+      "C": "const add => a + b",
+      "D": "function add(a, b) { return a + b; }"
+    },
+    "answer": "B",
+    "id": 2138,
+    "sourcePage": 146
+  },
+  {
+    "page": 7,
+    "numberOnPage": 19,
+    "question": "How are Class Components written in React?",
+    "options": {
+      "A": "function.",
+      "B": "class.",
+      "C": "const.",
+      "D": "component."
+    },
+    "answer": "B",
+    "id": 2139,
+    "sourcePage": 147
+  },
+  {
+    "page": 7,
+    "numberOnPage": 20,
+    "question": "Fill in the blank in this Bootstrap CsS code to apply a primary button style using React-Bootstrap: import[Button} from'react-bootstrap; <Button ______ =\"primary\">Click me</Button>",
+    "options": {
+      "A": "color",
+      "B": "variant",
+      "C": "style",
+      "D": "theme"
+    },
+    "answer": "B",
+    "id": 2140,
+    "sourcePage": 148
+  },
+  {
+    "page": 8,
+    "numberOnPage": 1,
+    "question": "InJsx,howcanyouembedaJavaScriptexpression?",
+    "options": {
+      "A": "By adding js: before it",
+      "B": "By wrapping it in 0",
+      "C": "By using O only",
+      "D": "By using (0)"
+    },
+    "answer": "B",
+    "id": 2141,
+    "sourcePage": 149
+  },
+  {
+    "page": 8,
+    "numberOnPage": 2,
+    "question": "In theuseEffect hook, howmany milliseconds would youwait using setTimeout toperforma side effect after 2 seconds?",
+    "options": {
+      "A": "2",
+      "B": "200",
+      "C": "2000",
+      "D": "20000"
+    },
+    "answer": "C",
+    "id": 2142,
+    "sourcePage": 150
+  },
+  {
+    "page": 8,
+    "numberOnPage": 3,
+    "question": "In a React function component, how do you access a prop named \"name\" that is passed from a parent component?",
+    "options": {
+      "A": "this.props.name",
+      "B": "props.name",
+      "C": "useState.name",
+      "D": "getProps().name"
+    },
+    "answer": "B",
+    "id": 2143,
+    "sourcePage": 151
+  },
+  {
+    "page": 8,
+    "numberOnPage": 4,
+    "question": "JSX inReact standsfor:",
+    "options": {
+      "A": "JavaScriptXML",
+      "B": "JavaSyntaxExtension",
+      "C": "JavaScriptExecutiveExtension",
+      "D": "JSONExtension"
+    },
+    "answer": "A",
+    "id": 2144,
+    "sourcePage": 152
+  },
+  {
+    "page": 8,
+    "numberOnPage": 5,
+    "question": "Supposea React componentrenders 50 items ina list.If the component re-renders andadds 10 newitems, how many total list items will be displayed?",
+    "options": {
+      "A": "40",
+      "B": "50",
+      "C": "60",
+      "D": "70"
+    },
+    "answer": "C",
+    "id": 2145,
+    "sourcePage": 153
+  },
+  {
+    "page": 8,
+    "numberOnPage": 6,
+    "question": "Tospecifythatapropertymustbeprovidedand must haveaspecifictype in PropTypes, what is appendedto the type validator?",
+    "options": {
+      "A": ".optional",
+      "B": ".default",
+      "C": ".isRequired",
+      "D": ".mustExist"
+    },
+    "answer": "C",
+    "id": 2146,
+    "sourcePage": 154
+  },
+  {
+    "page": 8,
+    "numberOnPage": 7,
+    "question": "What is thepurpose of the'fluid'prop in React-Bootstrap's Container component?",
+    "options": {
+      "A": "It makes the container take up the entire width of the viewport.",
+      "B": "It enables the container to display text.",
+      "C": "It changes the container's background color.",
+      "D": "It makes the container fixed width."
+    },
+    "answer": "A",
+    "id": 2147,
+    "sourcePage": 156
+  },
+  {
+    "page": 8,
+    "numberOnPage": 8,
+    "question": "What is the mainadvantageof using Hooks in React?",
+    "options": {
+      "A": "HooksallowReacttomaintain internalstatewithoutclasses",
+      "B": "Hooks simplify sharingfunctionality between components",
+      "C": "Hooks removetheneedforfunctional components",
+      "D": "Hooks only support stateful components"
+    },
+    "answer": "B",
+    "id": 2148,
+    "sourcePage": 157
+  },
+  {
+    "page": 8,
+    "numberOnPage": 9,
+    "question": "What is the primary purpose of Next.js?",
+    "options": {
+      "A": "To enable server-side rendering and generate static websites.",
+      "B": "Tomanagestate in Reactapplications.",
+      "C": "To provide a Ul component library.",
+      "D": "Tocreatedatabaseschemas."
+    },
+    "answer": "A",
+    "id": 2149,
+    "sourcePage": 158
+  },
+  {
+    "page": 8,
+    "numberOnPage": 10,
+    "question": "What is thepurposeof therestparameterin Es6?",
+    "options": {
+      "A": "To declare variables in theglobal scope.",
+      "B": "Toaccept an indefinite number of arguments as an array.",
+      "C": "Tohandleasynchronoustasks.",
+      "D": "Todestructurearrays."
+    },
+    "answer": "B",
+    "id": 2150,
+    "sourcePage": 159
+  },
+  {
+    "page": 8,
+    "numberOnPage": 11,
+    "question": "What is the purpose of json-server in client-server communication?",
+    "options": {
+      "A": "To set up a simple static web server that serves data to clients.",
+      "B": "To encrypt data during transmission between client and server.",
+      "D": "To provide a full-featured backend for the React application.",
+      "C": "To manage client authentication and session data."
+    },
+    "answer": "A",
+    "id": 2151,
+    "sourcePage": 160
+  },
+  {
+    "page": 8,
+    "numberOnPage": 12,
+    "question": "What is the purpose of a package.json file in a Node.js project?",
+    "options": {
+      "A": "To store application data",
+      "B": "To define routes for the web application",
+      "D": "To compile JavaScript code",
+      "C": "To serve as documentation for project dependencies and their versions"
+    },
+    "answer": "C",
+    "id": 2152,
+    "sourcePage": 161
+  },
+  {
+    "page": 8,
+    "numberOnPage": 13,
+    "question": "What is the primary purpose of event handlers in React?",
+    "options": {
+      "A": "Tomanagestatewithinacomponent",
+      "B": "To respond to user interactions like clicking, hovering,and focusing",
+      "C": "To handle server-side logic",
+      "D": "Tomanage routing ina Reactapplication"
+    },
+    "answer": "B",
+    "id": 2153,
+    "sourcePage": 162
+  },
+  {
+    "page": 8,
+    "numberOnPage": 14,
+    "question": "Whatis Redux Thunk used for?",
+    "options": {
+      "A": "Tomanageasynchronous actions inRedux.",
+      "B": "To logeveryaction dispatchedtotheRedux store.",
+      "C": "To split reducers into simpler functions.",
+      "D": "Tohandlesideeffects inReact components."
+    },
+    "answer": "A",
+    "id": 2154,
+    "sourcePage": 163
+  },
+  {
+    "page": 8,
+    "numberOnPage": 15,
+    "question": "What is thebenefit of using CodeSplitting and lazy components for web performance?",
+    "options": {
+      "A": "Enhanced security",
+      "B": "Handle load-time User Experience (UX)",
+      "C": "Smallerbundlesizes",
+      "D": "HandleCORS"
+    },
+    "answer": "C",
+    "id": 2155,
+    "sourcePage": 164
+  },
+  {
+    "page": 8,
+    "numberOnPage": 16,
+    "question": "What is the purpose of the className attribute in JSX? Hoang Hoang",
+    "options": {
+      "A": "Todefinea CSS class for the JSX element",
+      "B": "Tospecifythe component'sclass name",
+      "C": "To define a unique identifier for the element",
+      "D": "To add inline styles to the element"
+    },
+    "answer": "A",
+    "id": 2156,
+    "sourcePage": 165
+  },
+  {
+    "page": 8,
+    "numberOnPage": 17,
+    "question": "What is eventpooling inReact?",
+    "options": {
+      "A": "Theprocess ofreusing event objects forperformance optimization.",
+      "B": "The process of creating multiple eventobjects for each event.",
+      "C": "Theprocess of cleaning up event objects after they are used.",
+      "D": "The process of handling events in a pool of event handlers."
+    },
+    "answer": "A",
+    "id": 2157,
+    "sourcePage": 166
+  },
+  {
+    "page": 8,
+    "numberOnPage": 18,
+    "question": "What isTailwind CSS?",
+    "options": {
+      "A": "A JavaScript framework for building single-page applications.",
+      "B": "Aprogramminglanguageusedforbackenddevelopment.",
+      "C": "A utility-first Cssframeworkforbuildingresponsivewebinterfaces.",
+      "D": "Adatabasemanagement systemforstoring CsSstyles."
+    },
+    "answer": "C",
+    "id": 2158,
+    "sourcePage": 167
+  },
+  {
+    "page": 8,
+    "numberOnPage": 19,
+    "question": "What is thepurpose of PropTypes?",
+    "options": {
+      "A": "Toensuretypesafety inReactcomponents.",
+      "B": "To improveperformance in React applications",
+      "C": "To handle asynchronous operations in React.",
+      "D": "To enable code reusability in React components.AN To KNow"
+    },
+    "answer": "A",
+    "id": 2159,
+    "sourcePage": 168
+  },
+  {
+    "page": 8,
+    "numberOnPage": 20,
+    "question": "What is the purpose of the initial state parameter in a Redux reducer function?",
+    "options": {
+      "A": "To define the structure of the Redux store",
+      "B": "Tospecifytheactions thatcan be dispatched",
+      "C": "Tohandleasynchronousoperations",
+      "D": "To define the initial state of the reducer"
+    },
+    "answer": "D",
+    "id": 2160,
+    "sourcePage": 169
+  },
+  {
+    "page": 9,
+    "numberOnPage": 1,
+    "question": "What is the purpose of json-server in the context of setting up a server?",
+    "options": {
+      "A": "To handle user input and interactions.",
+      "B": "To displaythe websitecontent.",
+      "C": "To provide a static web server for serving JSON data.",
+      "D": "To generate dynamic server responses."
+    },
+    "answer": "C",
+    "id": 2161,
+    "sourcePage": 170
+  },
+  {
+    "page": 9,
+    "numberOnPage": 2,
+    "question": "What is the purpose of the next/link module in Next.js?",
+    "options": {
+      "A": "It is usedfor handling form submissions",
+      "B": "It provides client-side routing capabilities.",
+      "C": "It is responsible for server-side rendering.",
+      "D": "Itenablesserverlessfunction deployment."
+    },
+    "answer": "B",
+    "id": 2162,
+    "sourcePage": 171
+  },
+  {
+    "page": 9,
+    "numberOnPage": 3,
+    "question": "What is the purpose of package.json in a Node.js project?",
+    "options": {
+      "A": "It defines the project's dependencies and scripts",
+      "B": "It contains the source code of the project",
+      "C": "It configures the Node.js environment",
+      "D": "It manages the project's build process"
+    },
+    "answer": "A",
+    "id": 2163,
+    "sourcePage": 172
+  },
+  {
+    "page": 9,
+    "numberOnPage": 4,
+    "question": "What is the primary purpose of the tailwind.config.js file in a Tailwind CSS project?",
+    "options": {
+      "A": "To define custom utility classes for HTML elements.",
+      "B": "To configure and customizethe default Tailwind CSS settings",
+      "C": "To handle CSS minification for production",
+      "D": "To install third-party plugins automatically."
+    },
+    "answer": "B",
+    "id": 2164,
+    "sourcePage": 173
+  },
+  {
+    "page": 9,
+    "numberOnPage": 5,
+    "question": "What is the role of HTTP response codes in client-servercommunication?",
+    "options": {
+      "A": "To indicate the status of the HTTP request",
+      "B": "To manage state within a component",
+      "C": "To handle server-side logic",
+      "D": "To manage routing ina React application"
+    },
+    "answer": "A",
+    "id": 2165,
+    "sourcePage": 174
+  },
+  {
+    "page": 9,
+    "numberOnPage": 6,
+    "question": "What is a prop in React used for? Hoang Hoang",
+    "options": {
+      "A": "It defines the internal state of a component.",
+      "B": "It specifies the visualappearance ofacomponent",
+      "C": "Itenablescommunicationand datatransferbetween components",
+      "D": "It handles userinteractions and events."
+    },
+    "answer": "C",
+    "id": 2166,
+    "sourcePage": 175
+  },
+  {
+    "page": 9,
+    "numberOnPage": 7,
+    "question": "What is the purpose of a router in web development?",
+    "options": {
+      "A": "To handle database operations",
+      "B": "Tomanage user authentication",
+      "C": "To handle navigation between different pages",
+      "D": "To style the user interface"
+    },
+    "answer": "C",
+    "id": 2167,
+    "sourcePage": 176
+  },
+  {
+    "page": 9,
+    "numberOnPage": 8,
+    "question": "What is the purpose of a server in a client-server architecture?",
+    "options": {
+      "A": "To handle user input and interactions.",
+      "B": "Todisplaythe website content.",
+      "C": "To provide data and resources to clients.",
+      "D": "To style the user interface."
+    },
+    "answer": "C",
+    "id": 2168,
+    "sourcePage": 177
+  },
+  {
+    "page": 9,
+    "numberOnPage": 9,
+    "question": "WhatisReact?",
+    "options": {
+      "A": "A programming language",
+      "B": "A JavaScript library for building user interfaces",
+      "C": "Adatabasemanagementsystem",
+      "D": "A web browser"
+    },
+    "answer": "B",
+    "id": 2169,
+    "sourcePage": 178
+  },
+  {
+    "page": 9,
+    "numberOnPage": 10,
+    "question": "What is thepurpose of CodeSplitting in web development?",
+    "options": {
+      "A": "To combine multiple code files into a single bundle",
+      "B": "To improvewebperformancebyloading onlynecessarycode",
+      "C": "Toobfuscatecodeforsecuritypurposes",
+      "D": "To enhance cross-browsercompatibility"
+    },
+    "answer": "B",
+    "id": 2170,
+    "sourcePage": 179
+  },
+  {
+    "page": 9,
+    "numberOnPage": 11,
+    "question": "What is thepurpose ofacontainer component in React?",
+    "options": {
+      "A": "To handle Ul rendering and user interactions",
+      "B": "Tofetch the data and passing to child component",
+      "C": "To provide a visual representation of data",
+      "D": "ToencapsulatereusableUl components"
+    },
+    "answer": "B",
+    "id": 2171,
+    "sourcePage": 180
+  },
+  {
+    "page": 9,
+    "numberOnPage": 12,
+    "question": "What is the purpose of the Redux middleware in React applications?",
+    "options": {
+      "A": "Tohandle asynchronous actionsandsideeffects",
+      "B": "To define the structure of the Redux store",
+      "C": "Toconnect React components totheRedux store",
+      "D": "Tomanagecomponenthierarchy"
+    },
+    "answer": "A",
+    "id": 2172,
+    "sourcePage": 181
+  },
+  {
+    "page": 9,
+    "numberOnPage": 13,
+    "question": "Whatis thepurpose ofarrowfunctions inES6?",
+    "options": {
+      "A": "To bind the value of this inside a function",
+      "B": "To create self-executing functions",
+      "C": "Todeclare asynchronous functions",
+      "D": "To define functions with a shorter syntax"
+    },
+    "answer": "D",
+    "id": 2173,
+    "sourcePage": 182
+  },
+  {
+    "page": 9,
+    "numberOnPage": 14,
+    "question": "WhatarePropTypes inReact?",
+    "options": {
+      "A": "They are used for creating componentclasses.",
+      "B": "Theyareusedfor definingthetypes of component props",
+      "C": "They are used for handling events in React.",
+      "D": "They are used for manipulating the component's state."
+    },
+    "answer": "B",
+    "id": 2174,
+    "sourcePage": 183
+  },
+  {
+    "page": 9,
+    "numberOnPage": 15,
+    "question": "WhatdoesthefallbackpropinSuspenserepresent?",
+    "options": {
+      "A": "The component to display while the lazy component is loading",
+      "B": "The component todisplaywhen an error occurs during loading",
+      "C": "The component to display when thelazy component is rendered",
+      "D": "ThecomponenttodisplaywhenSuspense isnotsupported"
+    },
+    "answer": "A",
+    "id": 2175,
+    "sourcePage": 184
+  },
+  {
+    "page": 9,
+    "numberOnPage": 16,
+    "question": "What does the npx create-next-app command do? Hoang Hoang",
+    "options": {
+      "A": "Itcreatesanew Reactapplication",
+      "B": "It creates a new Next.js application",
+      "C": "It installs Tailwind CSS",
+      "D": "Itcreates anewpackage.json in NextJS"
+    },
+    "answer": "B",
+    "id": 2176,
+    "sourcePage": 185
+  },
+  {
+    "page": 9,
+    "numberOnPage": 17,
+    "question": "What does the catch method do in apromise chain?",
+    "options": {
+      "A": "Ithandlestheresolved value",
+      "B": "It handles errors",
+      "C": "Itpausestheexecution",
+      "D": "It converts the promise to a synchronous function"
+    },
+    "answer": "B",
+    "id": 2177,
+    "sourcePage": 186
+  },
+  {
+    "page": 9,
+    "numberOnPage": 18,
+    "question": "What does the rendermethod in a React component do?",
+    "options": {
+      "A": "Itmanages state updates",
+      "B": "It handles side effects",
+      "C": "It returns the JSX that describes the UI",
+      "D": "It fetches data froman API"
+    },
+    "answer": "C",
+    "id": 2178,
+    "sourcePage": 187
+  },
+  {
+    "page": 9,
+    "numberOnPage": 19,
+    "question": "What does the default case in the reducer function do?",
+    "options": {
+      "A": "Resetsthestate",
+      "B": "Handles unknownactions",
+      "C": "Throwsanerrorforunknownactions",
+      "D": "Returnsthe current state"
+    },
+    "answer": "D",
+    "id": 2179,
+    "sourcePage": 188
+  },
+  {
+    "page": 9,
+    "numberOnPage": 20,
+    "question": "Whathappensduring therenderphaseof React'srenderingprocess?",
+    "options": {
+      "A": "The DOM is updated immediately",
+      "B": "React calculateswhattorenderbutdoesn'tchangetheDOMyet",
+      "C": "Side effects like\"useEffect\"are executed",
+      "D": "Eventlisteners areremoved"
+    },
+    "answer": "B",
+    "id": 2180,
+    "sourcePage": 189
+  },
+  {
+    "page": 10,
+    "numberOnPage": 1,
+    "question": "Whathappens ifapropfailsthevalidation definedbya simplepropertyvalidator?",
+    "options": {
+      "A": "An error will be thrown during runtime.",
+      "B": "Theprop will be automatically converted to the expected type",
+      "C": "The componentwill continue to function normally.",
+      "D": "The validation willbebypassed, and the prop will be accepted."
+    },
+    "answer": "A",
+    "id": 2181,
+    "sourcePage": 190
+  },
+  {
+    "page": 10,
+    "numberOnPage": 2,
+    "question": "Whathappens when you declare afunction with theasync\"keyword?",
+    "options": {
+      "A": "It makes thefunction execute immediately",
+      "B": "It tells the function to pause until all variables are declared",
+      "C": "It makes thefunction returna Promise",
+      "D": "It prevents any asynchronous code from running"
+    },
+    "answer": "C",
+    "id": 2182,
+    "sourcePage": 191
+  },
+  {
+    "page": 10,
+    "numberOnPage": 3,
+    "question": "What happens if you forget to add key to items in a list rendered with map()?",
+    "options": {
+      "A": "React will not render the list at all.",
+      "B": "React will display a warning in the console about missing keys.",
+      "D": "React will throw an error and stop rendering the component.",
+      "C": "React will automatically assign keys to each item."
+    },
+    "answer": "B",
+    "id": 2183,
+    "sourcePage": 192
+  },
+  {
+    "page": 10,
+    "numberOnPage": 4,
+    "question": "What would happen if you didn't include the class=\"form-control\" in your <input> element?",
+    "options": {
+      "A": "The inputwould notbesubmitted withtheform",
+      "B": "The input would fail client-side validation",
+      "C": "The inputfield would revert to the browser's default styles",
+      "D": "Theinputfieldwouldbecomenon-responsive"
+    },
+    "answer": "C",
+    "id": 2184,
+    "sourcePage": 193
+  },
+  {
+    "page": 10,
+    "numberOnPage": 5,
+    "question": "Which of the following is a feature of Next.js?",
+    "options": {
+      "A": "AcsS framework for styling webapplications.",
+      "B": "A server-side rendering framework for React.",
+      "C": "A state management libraryforReact applications.",
+      "D": "Atesting framework forJavaScriptapplications."
+    },
+    "answer": "B",
+    "id": 2185,
+    "sourcePage": 194
+  },
+  {
+    "page": 10,
+    "numberOnPage": 6,
+    "question": "Which of the following best explains the purpose of the tailwind.config.js file?",
+    "options": {
+      "A": "To configure server-side rendering",
+      "B": "Todefinecustomutilityclassesandpathstotemplatefiles",
+      "C": "To manage JavaScript dependencies",
+      "D": "To set up routing for the application"
+    },
+    "answer": "B",
+    "id": 2186,
+    "sourcePage": 195
+  },
+  {
+    "page": 10,
+    "numberOnPage": 7,
+    "question": "Which of thefollowing best describes Lazy Components?",
+    "options": {
+      "A": "Components that are slowto render",
+      "B": "Components thatare loaded asynchronously",
+      "C": "Components thatarereusable across multipleprojects",
+      "D": "Components thatare optimized for mobile devices"
+    },
+    "answer": "B",
+    "id": 2187,
+    "sourcePage": 196
+  },
+  {
+    "page": 10,
+    "numberOnPage": 8,
+    "question": "Whichof the following is a commonuse caseforusing Redux in a React application?",
+    "options": {
+      "A": "Managing authenticationand user sessions",
+      "B": "Styling and layout ofReact components",
+      "C": "Handling form validation and input tracking",
+      "D": "Implementing server-side rendering in React"
+    },
+    "answer": "A",
+    "id": 2188,
+    "sourcePage": 197
+  },
+  {
+    "page": 10,
+    "numberOnPage": 9,
+    "question": "Which of the following is the best use case for React Context? Hoang Hoang",
+    "options": {
+      "A": "Passing props froma parenttoa single child component.",
+      "B": "Passing data to a component at the same level in the tree.",
+      "C": "Sharingathemesettingacross multiple nested components.",
+      "D": "Updating acomponent'slocal state."
+    },
+    "answer": "C",
+    "id": 2189,
+    "sourcePage": 198
+  },
+  {
+    "page": 10,
+    "numberOnPage": 10,
+    "question": "Whichofthefollowingisusedtopassafunctionfromaparentcomponenttoachildcomponent?",
+    "options": {
+      "A": "Passing afunction as aprop to the child component.",
+      "B": "Using useState hook in the child component.",
+      "C": "Using useContext in bothparent and child components.",
+      "D": "Directly accessing the child component's state."
+    },
+    "answer": "A",
+    "id": 2190,
+    "sourcePage": 199
+  },
+  {
+    "page": 10,
+    "numberOnPage": 11,
+    "question": "Which of the following could cause an Effect to run too frequently?",
+    "options": {
+      "A": "Includingall statevariables inthedependency array.",
+      "B": "Not using a dependency array.",
+      "C": "Including a variable like data that changes often in the dependency array",
+      "D": "Omitting the dependency array altogether."
+    },
+    "answer": "BCD",
+    "id": 2191,
+    "sourcePage": 200
+  },
+  {
+    "page": 10,
+    "numberOnPage": 12,
+    "question": "Whichof thefollowingisthecorrectwaytouse useSelectortoaccessavaluefromtheRedux store?",
+    "options": {
+      "A": "constvalue = useSelector(store)=> store.value);",
+      "B": "const value =useSelector(state)=> state.value);",
+      "C": "const value = useSelector(context)=> context.value);",
+      "D": "const value = useSelector(redux) => redux.value);"
+    },
+    "answer": "B",
+    "id": 2192,
+    "sourcePage": 201
+  },
+  {
+    "page": 10,
+    "numberOnPage": 13,
+    "question": "Howdoyou declare multiple routes in React Router?",
+    "options": {
+      "A": "Bynesting<Route> components inside each other.",
+      "B": "By using the<Routes>component instead of<Route>",
+      "C": "Byusingthepathpropwithmultiplevalues ina single<Route>component.",
+      "D": "By using an array of Route components inside the Routes component."
+    },
+    "answer": "B",
+    "id": 2193,
+    "sourcePage": 202
+  },
+  {
+    "page": 10,
+    "numberOnPage": 14,
+    "question": "Howdo you import the useNavigate hook fromReact Router?",
+    "options": {
+      "A": "import [useNavigate } from 'react-router';",
+      "B": "import [useNavigate] from 'react-router-dom';",
+      "C": "import [useNavigate] from 'react-router-native'",
+      "D": "import(useNavigate} from'react-navigation';"
+    },
+    "answer": "B",
+    "id": 2194,
+    "sourcePage": 203
+  },
+  {
+    "page": 10,
+    "numberOnPage": 15,
+    "question": "How do you create a modal in Bootstrap?",
+    "options": {
+      "A": "By using the <modal> HTML element.",
+      "B": "By applying the.modal class to the container element.",
+      "C": "By using the.modal class along with the data-bs-toggle=\"modal\" attribute.",
+      "D": "By using JavaScript to dynamically create and show modal elements."
+    },
+    "answer": "C",
+    "id": 2195,
+    "sourcePage": 204
+  },
+  {
+    "page": 10,
+    "numberOnPage": 16,
+    "question": "Howdoyou includeTailwindCSS inaproject?",
+    "options": {
+      "A": "Link the Tailwind CSS stylesheet in the HTML file.",
+      "B": "Import the Tailwind CSS file in the JavaScript code",
+      "C": "Use the @import rule ina CSS file to import Tailwind CSS.",
+      "D": "Add Tailwind CsS as a dependency in the package.json file."
+    },
+    "answer": "BCD",
+    "id": 2196,
+    "sourcePage": 205,
+    "duplicateOf": 2078
+  },
+  {
+    "page": 10,
+    "numberOnPage": 17,
+    "question": "How do you create a new Next.js project?",
+    "options": {
+      "A": "Use the create-next-app command-line tool.",
+      "B": "Install the Next.js package globally with npm.",
+      "C": "Clone the Next.js starter template from GitHub.",
+      "D": "Use the npm init command and manually configure the project."
+    },
+    "answer": "A",
+    "id": 2197,
+    "sourcePage": 206
+  },
+  {
+    "page": 10,
+    "numberOnPage": 18,
+    "question": "How do you create a responsive grid layout using Bootstrap?",
+    "options": {
+      "A": "By using the <div class=\"grid\"> element.",
+      "B": "By applying the.responsive-grid class to the container element.",
+      "C": "By using the.rowand.col* classes to create rows and columns.",
+      "D": "By manually specifying the width of each element using Css."
+    },
+    "answer": "C",
+    "id": 2198,
+    "sourcePage": 207
+  },
+  {
+    "page": 10,
+    "numberOnPage": 19,
+    "question": "How do you install Tailwind CSS in a project?",
+    "options": {
+      "A": "Use the npm install tailwindcss command.",
+      "B": "Include the Tailwind CSS CDN in the HTML file",
+      "C": "Install Tailwind CSS globally with npm.",
+      "D": "Usethe npx tailwindcss init command."
+    },
+    "answer": "A",
+    "id": 2199,
+    "sourcePage": 208
+  },
+  {
+    "page": 10,
+    "numberOnPage": 20,
+    "question": "How do you install Tailwind Css in a project? (variation question)",
+    "options": {
+      "A": "Usethe npxtailwindcss init command.",
+      "B": "Include the Tailwind CSS CDN in the HTML file.",
+      "C": "Install Tailwind CSS globally with npm",
+      "D": "Use the npm install tailwind-css command."
+    },
+    "answer": "B",
+    "id": 2200,
+    "sourcePage": 209
+  },
+  {
+    "page": 11,
+    "numberOnPage": 1,
+    "question": "Howdoyouwrapa lazy component with Suspense in React?",
+    "options": {
+      "A": "Usingthewrapprop of theSuspense component.",
+      "B": "UsingthefallbackpropoftheSuspensecomponent.",
+      "C": "UsingthelazypropoftheSuspensecomponent.",
+      "D": "Usingthecomponentprop oftheSuspensecomponent."
+    },
+    "answer": "B",
+    "id": 2201,
+    "sourcePage": 210
+  },
+  {
+    "page": 11,
+    "numberOnPage": 2,
+    "question": "HowcanyouaccessChromeDevTools?",
+    "options": {
+      "A": "By pressing F12 or right-clicking and selecting \"lnspect\"",
+      "B": "By installing a Chrome extension.",
+      "C": "By typing \"chrome:/devtools\"in the address bar.",
+      "D": "By opening the Chrome menu and selecting \"DeVTools.\"U"
+    },
+    "answer": "A",
+    "id": 2202,
+    "sourcePage": 211
+  },
+  {
+    "page": 11,
+    "numberOnPage": 3,
+    "question": "How can you conditionally rendercontent in JSX? Hoang Hoang",
+    "options": {
+      "A": "By using the if statement",
+      "B": "By using the for loop",
+      "C": "By using the ternary operator (condition?trueContent:falseContent)",
+      "D": "By using the switch statement"
+    },
+    "answer": "C",
+    "id": 2203,
+    "sourcePage": 212
+  },
+  {
+    "page": 11,
+    "numberOnPage": 4,
+    "question": "How can you createa new Git repository?",
+    "options": {
+      "A": "By running \"git init\" in the project directory",
+      "B": "By adding a remote repository URL",
+      "C": "By cloning an existing repository",
+      "D": "By committing changes using \"git commit -m\""
+    },
+    "answer": "A",
+    "id": 2204,
+    "sourcePage": 213
+  },
+  {
+    "page": 11,
+    "numberOnPage": 5,
+    "question": "How can you set up Git for version control?",
+    "options": {
+      "A": "By running \"npm install git\"",
+      "B": "By downloading Git from the official website",
+      "C": "By using a Git GUIclient",
+      "D": "By configuring Git settings in Visual Studio Code"
+    },
+    "answer": "B",
+    "id": 2205,
+    "sourcePage": 214
+  },
+  {
+    "page": 11,
+    "numberOnPage": 6,
+    "question": "How can you configure Tailwind CsS in a Next.js project?",
+    "options": {
+      "A": "By importing a CsS file directly in the component",
+      "B": "By installing the Tailwind CSS package and creating a configuration file",
+      "C": "By using a CDN link in the HTML file",
+      "D": "By installing a Tailwind CSS plugin for Next.js"
+    },
+    "answer": "B",
+    "id": 2206,
+    "sourcePage": 215
+  },
+  {
+    "page": 11,
+    "numberOnPage": 7,
+    "question": "Why should you avoid using too many lazy components in your application?",
+    "options": {
+      "A": "Because it results in multiple HTTP requests, slowing down the application.",
+      "B": "Because it decreases the performance by loading everything upfront.",
+      "D": "Because it affects the layout and styling of components.",
+      "C": "Because it makes the code difficult to debug."
+    },
+    "answer": "A",
+    "id": 2207,
+    "sourcePage": 216
+  },
+  {
+    "page": 11,
+    "numberOnPage": 8,
+    "question": "HowcantheuseEffecthookbe optimizedforcleanupactions?",
+    "options": {
+      "A": "Bypassinganemptyarrayasthesecondargument",
+      "B": "By using a class-based component",
+      "C": "By calling it after every render",
+      "D": "By manually removing event listeners"
+    },
+    "answer": "A",
+    "id": 2208,
+    "sourcePage": 217
+  },
+  {
+    "page": 11,
+    "numberOnPage": 9,
+    "question": "How do you declare a route in React Router?",
+    "options": {
+      "A": "Using <Link path=\"/\" element={<Home>} />",
+      "B": "Using <Route path=\"/\" element={<Home>} />",
+      "D": "Using <context path=\"/\"></context></suspense></home>",
+      "C": "Using <Routes path=\"/\" element={<Home>} />"
+    },
+    "answer": "B",
+    "id": 2209,
+    "sourcePage": 218
+  },
+  {
+    "page": 11,
+    "numberOnPage": 10,
+    "question": "HowcanyouoptimizeperformancewhenusingHooks in React?",
+    "options": {
+      "A": "ByusingtheuseMemoanduseCallbackHooks.",
+      "B": "By avoiding unnecessary re-renders with the memo Hook.",
+      "C": "ByusingtheuseLayoutEffect Hook instead ofuseEffect.",
+      "D": "By using the useDebugValue Hook for debugging purposes."
+    },
+    "answer": "A",
+    "id": 2210,
+    "sourcePage": 219
+  },
+  {
+    "page": 11,
+    "numberOnPage": 11,
+    "question": "How can you install React-Bootstrap in your ReactJS project?",
+    "options": {
+      "A": "By using npm or yarn to install the package.",
+      "B": "BydownloadingtheReact-Bootstrapfilesfroma website.",
+      "C": "By copying and pasting the React-Bootstrap code into your project.",
+      "D": "By using a CDN link to include React-Bootstrap in your HTML file."
+    },
+    "answer": "A",
+    "id": 2211,
+    "sourcePage": 220
+  },
+  {
+    "page": 11,
+    "numberOnPage": 12,
+    "question": "How can you createanew React applicationusing CreateReactApp?",
+    "options": {
+      "A": "By running \"npm create-react-app my-app\"",
+      "B": "By downloading a ZiP file from the official website",
+      "C": "By using an online code editor",
+      "D": "By cloning a Git repository"
+    },
+    "answer": "A",
+    "id": 2212,
+    "sourcePage": 221
+  },
+  {
+    "page": 11,
+    "numberOnPage": 13,
+    "question": "Howcanyoudefinea lazy component in React?",
+    "options": {
+      "A": "Using the lazy function from the React library",
+      "B": "Wrapping the component in the LazyComponent higher-order component",
+      "C": "Importing the component with the lazykeyword",
+      "D": "Usingthe createLazyComponentmethod from the React package"
+    },
+    "answer": "A",
+    "id": 2213,
+    "sourcePage": 222
+  },
+  {
+    "page": 11,
+    "numberOnPage": 14,
+    "question": "Howcanrouteparametersbedefined inReact Router?",
+    "options": {
+      "A": "Byusingtheparamsprop inthe<Route>component",
+      "B": "Byaccessing themdirectly fromthe URL",
+      "C": "Byusingthepathpropwithplaceholders intheRoute>component",
+      "D": "Byusing the match object passed to the component"
+    },
+    "answer": "C",
+    "id": 2214,
+    "sourcePage": 223
+  },
+  {
+    "page": 11,
+    "numberOnPage": 15,
+    "question": "How would you create a custom Hook in React?",
+    "options": {
+      "A": "By defining a function that uses other built-in Hooks.",
+      "B": "Byextending the React.Component class.",
+      "C": "Bywrappingaclasscomponentwithafunctionalcomponent.",
+      "D": "By using the createCustomHook() function."
+    },
+    "answer": "A",
+    "id": 2215,
+    "sourcePage": 224
+  },
+  {
+    "page": 11,
+    "numberOnPage": 16,
+    "question": "Why use React-Bootstrap?",
+    "options": {
+      "A": "It easier to manage the state as updates are made using React's state.",
+      "B": "It isfasterand more efficient than otherUl libraries.",
+      "C": "It is compatiblewithall browsersanddevices.",
+      "D": "It is developed by Facebook and has a large community support."
+    },
+    "answer": "A",
+    "id": 2216,
+    "sourcePage": 225
+  },
+  {
+    "page": 11,
+    "numberOnPage": 17,
+    "question": "Why are frameworks like React, Angular,orVuepopularamong developers?",
+    "options": {
+      "A": "They only work with static content",
+      "B": "Theyallowbuildingdynamic,responsive,andefficientwebapplications",
+      "C": "Theyfocus ondatabasemanagement",
+      "D": "Theyareusedexclusivelyforcreatingserver-sidelogic"
+    },
+    "answer": "B",
+    "id": 2217,
+    "sourcePage": 226
+  },
+  {
+    "page": 11,
+    "numberOnPage": 18,
+    "question": "In Next.js, what mechanism primarily determines the routes in an application?",
+    "options": {
+      "A": "Explicit configuration in a central routes.json file.",
+      "B": "File-system routing, where routes are determined by the structure of files",
+      "C": "Dynamic routedeclarationsusingReact Router",
+      "D": "Server-side API endpoints only"
+    },
+    "answer": "B",
+    "id": 2218,
+    "sourcePage": 227
+  },
+  {
+    "page": 11,
+    "numberOnPage": 19,
+    "question": "In JSX, which of the following is correct?",
+    "options": {
+      "A": "Youmustalways wrapJsx inasinglerootelement",
+      "B": "You can use multipleroot elements without any wrapping",
+      "C": "JSX tags can be self-closing onlyfor non-void elements",
+      "D": "JSXdoesnotsupportattributeslikeclassName"
+    },
+    "answer": "A",
+    "id": 2219,
+    "sourcePage": 228
+  },
+  {
+    "page": 11,
+    "numberOnPage": 20,
+    "question": "Compare the use of Redux and Flux for state management. Which statement is true?",
+    "options": {
+      "A": "Redux uses multiple stores, while Flux uses a single store.",
+      "B": "Flux uses multiple stores, while Redux uses a single store.",
+      "C": "Both Redux and Flux use multiple stores.",
+      "D": "Both Redux and Flux use a single store."
+    },
+    "answer": "B",
+    "id": 2220,
+    "sourcePage": 229
+  },
+  {
+    "page": 12,
+    "numberOnPage": 1,
+    "question": "Compare the use of Container and Containerfluid in React-Bootstrap.Which statement is accurate?",
+    "options": {
+      "A": "Containeris always 100% wide.",
+      "B": "Containerfluid is fixed-width at all breakpoints",
+      "C": "Container fluid is 100% wide at all breakpoints.",
+      "D": "Container is 100% wide at all breakpoints."
+    },
+    "answer": "C",
+    "id": 2221,
+    "sourcePage": 230
+  },
+  {
+    "page": 12,
+    "numberOnPage": 2,
+    "question": "Create a React component that displays a list of items passedas props.Which approach would you use?",
+    "options": {
+      "A": "Usea functional componentwith the map method.",
+      "B": "Usea class componentwith componentDidMount.",
+      "C": "Use a higher-ordercomponent.",
+      "D": "Use a lifecycle method to fetch data."
+    },
+    "answer": "A",
+    "id": 2222,
+    "sourcePage": 231
+  },
+  {
+    "page": 12,
+    "numberOnPage": 3,
+    "question": "Can you define multiple Type and Valuevalidators for a single prop in PropTypes?",
+    "options": {
+      "A": "Yes,you can define multiple validators fora prop.",
+      "B": "No,you can only define one validator fora prop.",
+      "C": "Yes, but it's not recommended for code readability.",
+      "D": "No, Type and Value validators cannot be used together."
+    },
+    "answer": "A",
+    "id": 2223,
+    "sourcePage": 232
+  },
+  {
+    "page": 12,
+    "numberOnPage": 4,
+    "question": "In Redux, howdo you update the state immutably?",
+    "options": {
+      "A": "By directly modifying the state object.",
+      "B": "By using the setState() method.",
+      "C": "By using the splice() method.",
+      "D": "By creating a new copy of the state object."
+    },
+    "answer": "D",
+    "id": 2224,
+    "sourcePage": 233
+  },
+  {
+    "page": 12,
+    "numberOnPage": 5,
+    "question": "In React, what istheroleof Suspense?",
+    "options": {
+      "A": "To handle errors in asynchronous rendering.",
+      "B": "To control the rendering of lazy components",
+      "C": "To manage state in functional components.",
+      "D": "To handle network requests and API calls."
+    },
+    "answer": "B",
+    "id": 2225,
+    "sourcePage": 234
+  },
+  {
+    "page": 12,
+    "numberOnPage": 6,
+    "question": "In React Router, how do you define a nested route structure within a parent component?",
+    "options": {
+      "A": "Utilizethe<Switch>componenttohandlenestedroutes",
+      "B": "Implementaroutingtableusinganarrayof routeobjects",
+      "C": "Usethe<Route>componentwithnested<Route>components",
+      "D": "Directroutesusingqueryparameters inURLpathnames"
+    },
+    "answer": "C",
+    "id": 2226,
+    "sourcePage": 235
+  },
+  {
+    "page": 12,
+    "numberOnPage": 7,
+    "question": "InRedux,whenshouldyouusecombineReducers?",
+    "options": {
+      "A": "When youwantto connecttheRedux storetoaReact component",
+      "B": "When you want tomanageactions in the Redux application.",
+      "C": "Whenyouwantto splitareducerintosmallerreducers.",
+      "D": "WhenyouwanttouseReduxDevToolstotrack thestate."
+    },
+    "answer": "C",
+    "id": 2227,
+    "sourcePage": 236
+  },
+  {
+    "page": 12,
+    "numberOnPage": 8,
+    "question": "Next.js is primarily used for:",
+    "options": {
+      "A": "Stylingstatic websites",
+      "B": "Creatingserver-renderedorstaticallygeneratedReactapplications",
+      "C": "Managingback-enddatabases",
+      "D": "Handling real-time communication"
+    },
+    "answer": "B",
+    "id": 2228,
+    "sourcePage": 237
+  },
+  {
+    "page": 12,
+    "numberOnPage": 9,
+    "question": "One ofthemaincharacteristicsof React-Bootstrap is\"Component-Based\".Whatdoes this imply?",
+    "options": {
+      "A": "React-BootstraponlyprovidescomponentsforCSSstyling",
+      "B": "ItenablesdeveloperstocreatemodularandreusableUl elementsasReactcomponents.",
+      "C": "It requires custom JavaScript to be written foreachcomponent.",
+      "D": "Components can onlybeused once in theapplication"
+    },
+    "answer": "B",
+    "id": 2229,
+    "sourcePage": 238
+  },
+  {
+    "page": 12,
+    "numberOnPage": 10,
+    "question": "What is themainpurpose of code splitting in a React application?",
+    "options": {
+      "A": "To makethe code easierto read",
+      "B": "To bundle all components into a single large file",
+      "C": "To reduce the initial load timebyloadingpartsoftheapponly when needed",
+      "D": "TosplitCSSandJavaScript intoseparatefiles"
+    },
+    "answer": "C",
+    "id": 2230,
+    "sourcePage": 240
+  },
+  {
+    "page": 12,
+    "numberOnPage": 11,
+    "question": "Whatis themainpurpose of React in modern web development, and whattype ofapplications does it best support?",
+    "options": {
+      "A": "It ismainly designed for handling backend logic and databasemanagement",
+      "B": "React helps build interactive user interfaces, especially for SPAs.",
+      "C": "Reactprimarilyfunctionsasaserver-siderenderingengineforwebapplications",
+      "D": "It ismainlyamobiledevelopmentframeworkandnotsuitableforwebapplications."
+    },
+    "answer": "B",
+    "id": 2231,
+    "sourcePage": 241
+  },
+  {
+    "page": 12,
+    "numberOnPage": 12,
+    "question": "What is the primary purpose of Next.js?",
+    "options": {
+      "A": "To enable server-side rendering and generate static websites.",
+      "B": "Tomanagestate in Reactapplications.",
+      "C": "To provide a Ul component library.",
+      "D": "Tocreatedatabaseschemas."
+    },
+    "answer": "A",
+    "id": 2232,
+    "sourcePage": 242,
+    "duplicateOf": 2149
+  },
+  {
+    "page": 12,
+    "numberOnPage": 13,
+    "question": "What is one major benefit of using front-endframeworks like React or Vue.js?",
+    "options": {
+      "A": "They eliminate the need for HTML",
+      "B": "Theyallowforfaster development byproviding pre-built components",
+      "C": "They only work on mobile applications",
+      "D": "They focus solely on server-side development"
+    },
+    "answer": "B",
+    "id": 2233,
+    "sourcePage": 243
+  },
+  {
+    "page": 12,
+    "numberOnPage": 14,
+    "question": "What is the purpose of React.Fragment or shorthand<></> in React? (Select all that apply)",
+    "options": {
+      "A": "Fragments allow you togroup multiple elements without adding an extra node to the DOM.",
+      "B": "Fragments allowyoutoprovide CsS stylingtomultipleelements",
+      "C": "FragmentsallowyoutohandlestatemanagementinReact.",
+      "D": "Fragments areparticularlyusefulforavoidingunnecessary<div>elements,whichcan clutteryour markup."
+    },
+    "answer": "AD",
+    "id": 2234,
+    "sourcePage": 244
+  },
+  {
+    "page": 12,
+    "numberOnPage": 15,
+    "question": "Whatis oneoftheprimarybenefits ofusingPromises in JavaScriptforasynchronousoperations?",
+    "options": {
+      "A": "It allows direct modification of theDOM",
+      "B": "It makes synchronous code asynchronous.",
+      "C": "Ithelpssolvethe\"callbackhell\"problembyallowing chains of asynchronous operations.",
+      "D": "It ensuresdataisalways instantaneouslyavailable."
+    },
+    "answer": "C",
+    "id": 2235,
+    "sourcePage": 245
+  },
+  {
+    "page": 12,
+    "numberOnPage": 16,
+    "question": "What is theprimarypurpose of ReduxThunk ina React-Reduxapplication?",
+    "options": {
+      "A": "To connect React components directly to the Redux store without the need for action creators or reducers",
+      "B": "Toprovide a way to store and manage the application's state on the server-side, separate from the client-side state.",
+      "C": "To enable creatingaction creators that returnfunctions (for asynchronous operations likeAPI calls) insteadofplainactionobjects.",
+      "D": "Toautomaticallygenerate the codeforactioncreators andreducersbased onthe application'sdata structure."
+    },
+    "answer": "C",
+    "id": 2236,
+    "sourcePage": 246
+  },
+  {
+    "page": 12,
+    "numberOnPage": 17,
+    "question": "Whatisakeycharacteristicofnetworkoperationsinclient-servercommunicationthatdevelopersmust recognize?",
+    "options": {
+      "A": "Dataisalways instantaneouslyavailable.",
+      "B": "Network operations inherently cause unexpected delays and areasynchronous",
+      "C": "Communication is always synchronous and predictable.",
+      "D": "Client-server communicationprimarilyfocuses onlocal data storage."
+    },
+    "answer": "B",
+    "id": 2237,
+    "sourcePage": 247
+  },
+  {
+    "page": 12,
+    "numberOnPage": 18,
+    "question": "What is the main role of a reducer in Redux?",
+    "options": {
+      "A": "Tofetch datafromAPls",
+      "B": "To dispatch actionstocomponents",
+      "C": "To update the store by returning the new state based ontheaction received",
+      "D": "To create components dynamically"
+    },
+    "answer": "C",
+    "id": 2238,
+    "sourcePage": 248
+  },
+  {
+    "page": 12,
+    "numberOnPage": 19,
+    "question": "Whatisthemainpurpose of theBootstrap framework in webdevelopment?",
+    "options": {
+      "A": "Tomanageback-enddata",
+      "B": "Toprovidepre-designedresponsivelayoutcomponentsand stylesforfront-enddevelopment",
+      "C": "To perform server-side scripting",
+      "D": "Toenabledatabasemanagement inwebapplications"
+    },
+    "answer": "B",
+    "id": 2239,
+    "sourcePage": 249
+  },
+  {
+    "page": 12,
+    "numberOnPage": 20,
+    "question": "What is akeydifferentiating characteristic of Tailwind CsS compared totraditional Cssframeworks like Bootstrap, as described inthe sources?",
+    "options": {
+      "A": "Itprovidesacomprehensive setofpre-builtcomponentsforrapiddevelopment",
+      "B": "It enforces strict design patterns to maintain visual consistency",
+      "C": "It offers a huge list of utility Css classes, providing more freedom for customdesigns",
+      "D": "It relies heavily on JavaScript for styling and layout management"
+    },
+    "answer": "C",
+    "id": 2240,
+    "sourcePage": 250
+  },
+  {
+    "page": 13,
+    "numberOnPage": 1,
+    "question": "What isa Higher-OrderComponent (HOC)inReact?",
+    "options": {
+      "A": "A component thathas a higher visual hierarchy than others.",
+      "B": "Afunction that takes a componentas an argument and returns anew component with enhanced functionality.",
+      "C": "A component that only renders other components withoutanylogic of its own.",
+      "D": "A built-in React component foradvanced routing."
+    },
+    "answer": "B",
+    "id": 2241,
+    "sourcePage": 251
+  },
+  {
+    "page": 13,
+    "numberOnPage": 2,
+    "question": "What is theprimarygoalofdecouplingroutedeclarations in a React Routerapplication?",
+    "options": {
+      "A": "Toimprovetheorganizationandmaintainabilityofthecodebyseparatingroutesintolarger,more manageablemodules.",
+      "B": "To enhance the security oftheapplication by separating sensitiveroutes frompublic routes.",
+      "C": "To enable the use of dynamic routing and nested routes in the application.",
+      "D": "To enhance code organizationand maintainability by separating routes into smaller, moremanageable modules."
+    },
+    "answer": "D",
+    "id": 2242,
+    "sourcePage": 252
+  },
+  {
+    "page": 13,
+    "numberOnPage": 3,
+    "question": "WhatisJSX inReactprimarilyusedfor?",
+    "options": {
+      "A": "Defining server-side logicand databasequeries",
+      "B": "Describing the user interface structure and embedding HTML-like markup directly within JavaScript code.",
+      "C": "Managing application-wide state using a global store RU",
+      "D": "Optimizing imageloadingandassetmanagement"
+    },
+    "answer": "B",
+    "id": 2243,
+    "sourcePage": 253
+  },
+  {
+    "page": 13,
+    "numberOnPage": 4,
+    "question": "What isasync/await inJavaScript?",
+    "options": {
+      "A": "It is a JavaScriptfeaturethatmakes asynchronous codelookandbehave likesynchronous code",
+      "B": "It is used to send data to a serverwithout blocking the Ul",
+      "C": "Itisawaytohandlecallbackfunctions.",
+      "D": "It is amethodtomanagestate in React components"
+    },
+    "answer": "A",
+    "id": 2244,
+    "sourcePage": 254
+  },
+  {
+    "page": 13,
+    "numberOnPage": 5,
+    "question": "WhatisthemainfeatureofTailwindCSScomparedtootherCSSframeworks?",
+    "options": {
+      "A": "It provides pre-designed Ul components and themes",
+      "B": "It uses a utility-first approach, allowing developers to build custom designs using small utility classes",
+      "C": "It providespre-builtJavaScript components",
+      "D": "It is a framework specifically formobile development"
+    },
+    "answer": "B",
+    "id": 2245,
+    "sourcePage": 255
+  },
+  {
+    "page": 13,
+    "numberOnPage": 6,
+    "question": "Whatis theroleof theBrowserRoutercomponent inReact Router?",
+    "options": {
+      "A": "To define a route in the application",
+      "B": "To wrap the entire application and enable routing using the HTML5 History API",
+      "C": "Tohandleformsubmissions",
+      "D": "To manage state within a component"
+    },
+    "answer": "B",
+    "id": 2246,
+    "sourcePage": 256
+  },
+  {
+    "page": 13,
+    "numberOnPage": 7,
+    "question": "Whatis React-Bootstrap?",
+    "options": {
+      "A": "It combines the flexibility and power of the Bootstrap framework with the dynamic nature of React.",
+      "B": "It is aprogramming languageusedforback-enddevelopment.",
+      "C": "It is a database managementsystemforReact applications.",
+      "D": "It is a version control systemforReactprojects."
+    },
+    "answer": "A",
+    "id": 2247,
+    "sourcePage": 257
+  },
+  {
+    "page": 13,
+    "numberOnPage": 8,
+    "question": "What is thedifference between the render()methodand the commit()method in React?Hoang Hoang",
+    "options": {
+      "A": "Therender()method defines the component's structure,whilethe commit()method handles side effects.",
+      "B": "The render()method handles events, while the commit()method defines the component's structure.",
+      "C": "TherenderO)method is called beforethe component ismounted, whilethe commito)methodiscalledafter thecomponentismounted.",
+      "D": "Thereisno commitO)methodinReact."
+    },
+    "answer": "D",
+    "id": 2248,
+    "sourcePage": 258
+  },
+  {
+    "page": 13,
+    "numberOnPage": 9,
+    "question": "WhatisthepurposeofReact Hooks?",
+    "options": {
+      "A": "Hooks are functions that are part of the React library.",
+      "B": "Reactdidn't havea simple way to share reusable functionality between components.",
+      "C": "Solutions suchas higher-order components and render props.",
+      "D": "Using classes to be unnecessarily confusing and verbose."
+    },
+    "answer": "B",
+    "id": 2249,
+    "sourcePage": 259
+  },
+  {
+    "page": 13,
+    "numberOnPage": 10,
+    "question": "What is thepurpose of the componentDidMount method in React?",
+    "options": {
+      "A": "It is calledafterthe component's rendermethod has been executed.",
+      "B": "It is called before the component's render method is executed.",
+      "C": "It is called when the component is about to beunmounted from the DOM.",
+      "D": "It is called when the component is about to be updated and re-rendered."
+    },
+    "answer": "A",
+    "id": 2250,
+    "sourcePage": 260
+  },
+  {
+    "page": 13,
+    "numberOnPage": 11,
+    "question": "What isthedifferencebetweencontrolledanduncontrolledcomponents inReact-Bootstrap?",
+    "options": {
+      "A": "Controlledcomponentsarestatelessandrelyonexternalstatemanagement,whileuncontrolledcomponents managetheirown state internally.",
+      "B": "Controlled componentshavepredefinedbehaviorand cannotbecustomized,whileuncontrolled components offermoreflexibility.",
+      "C": "Controlled components arefasterand moreefficientthan uncontrolled components",
+      "D": "Uncontrolledcomponents arerecommendedforcomplexforms,whilecontrolledcomponents aresuitablefor simpleforms."
+    },
+    "answer": "A",
+    "id": 2251,
+    "sourcePage": 261
+  },
+  {
+    "page": 13,
+    "numberOnPage": 12,
+    "question": "Whatistheadvantageofeventpooling inReact?",
+    "options": {
+      "A": "It reduces memoryusagebyreusingeventobjects.",
+      "B": "It improves eventhandling performanceby creating new event objects for each event.",
+      "C": "It simplifies event handling by providing apool of event handlers.",
+      "D": "It allows for better management of event contexts."
+    },
+    "answer": "A",
+    "id": 2252,
+    "sourcePage": 262
+  },
+  {
+    "page": 13,
+    "numberOnPage": 13,
+    "question": "What is thepurposeoftheexactpropin a Routecomponent?",
+    "options": {
+      "A": "It specifies the component to renderfora specific route.",
+      "B": "It ensures thatthe route matches the URL exactly,without partial matching.",
+      "C": "Itdefines a redirectto anotherroute.",
+      "D": "It enables code splitting forthe route component."
+    },
+    "answer": "B",
+    "id": 2253,
+    "sourcePage": 263
+  },
+  {
+    "page": 13,
+    "numberOnPage": 14,
+    "question": "What is the purpose of the next/link module in Next.js?",
+    "options": {
+      "A": "It is used for handling form submissions.",
+      "B": "It provides client-side routing capabilities.",
+      "C": "It is responsible for server-side rendering",
+      "D": "Itenablesserverlessfunctiondeployment."
+    },
+    "answer": "B",
+    "id": 2254,
+    "sourcePage": 264,
+    "duplicateOf": 2162
+  },
+  {
+    "page": 13,
+    "numberOnPage": 15,
+    "question": "What is themain purpose ofthe awaitkeyword within an async function?",
+    "options": {
+      "A": "Toreturn anewPromise object.",
+      "B": "To immediately execute the next line of code without waiting.",
+      "C": "To pause the execution of the async function untilthe Promise it's waiting for is resolved or rejected.",
+      "D": "To define a synchronous block of code"
+    },
+    "answer": "C",
+    "id": 2255,
+    "sourcePage": 265
+  },
+  {
+    "page": 13,
+    "numberOnPage": 16,
+    "question": "Whatistheprimarypurposeofarouterinawebapplication?",
+    "options": {
+      "A": "Tomanagestatewithinacomponent",
+      "B": "Torespondtoa URL based ona set of route handlerdeclarations",
+      "C": "To handle server-side logic",
+      "D": "Tomanage routing ina Reactapplication"
+    },
+    "answer": "B",
+    "id": 2256,
+    "sourcePage": 266
+  },
+  {
+    "page": 13,
+    "numberOnPage": 17,
+    "question": "WhatistheadvantageofusingAxios overfetch?",
+    "options": {
+      "A": "Axioshasbettersupportforhandlingrequestsandresponses.",
+      "B": "Axios requires less boilerplate code.",
+      "C": "Axios is faster than fetch for all types of HTTP requests.",
+      "D": "Axiosdoesnotsupportpromises."
+    },
+    "answer": "A",
+    "id": 2257,
+    "sourcePage": 267
+  },
+  {
+    "page": 13,
+    "numberOnPage": 18,
+    "question": "What is the core principle of Redux?",
+    "options": {
+      "A": "Single source of truth and unidirectional data flow.",
+      "B": "Multiple sources of truth for each component.",
+      "C": "State is mutable and can be directly modified.",
+      "D": "State is only updated using the useState hook."
+    },
+    "answer": "A",
+    "id": 2258,
+    "sourcePage": 268
+  },
+  {
+    "page": 13,
+    "numberOnPage": 19,
+    "question": "______ WhatisthedifferencebetweentheHTTPresponsecodes401and403?",
+    "options": {
+      "A": "401 the request is missing valid authentication credentials, while 403 the server refuses to authorize.",
+      "B": "401the server encountered an internal error, while 403means the requested resourcewas not found.",
+      "C": "401therequestwassuccessful,while403meanstherequestwasnotmodified.",
+      "D": "401and 403are interchangeableandhave the same meaning."
+    },
+    "answer": "A",
+    "id": 2259,
+    "sourcePage": 269
+  },
+  {
+    "page": 13,
+    "numberOnPage": 20,
+    "question": "WhathappenswhenyouusethexsproponaColcomponentinReact-Bootstrap?",
+    "options": {
+      "A": "The column will only have its width defined on extra-large screens.",
+      "B": "The column will only have its width defined on extra-small screens, and larger sizes will ignore it",
+      "C": "The column will have its width defined on extra-small screens and will apply to larger sizes if no specific breakpointis defined.",
+      "D": "Thexs propdoes not exist in React-Bootstrap"
+    },
+    "answer": "C",
+    "id": 2260,
+    "sourcePage": 270
+  },
+  {
+    "page": 14,
+    "numberOnPage": 1,
+    "question": "WhatarethedifferencesbetweenuseStateanduseReducerHooksinReact?",
+    "options": {
+      "A": "useState is used formanaging simple state, while useReducer is used for complex state and state transitions.",
+      "B": "useStateisabuilt-inHook,whileuseReducerisacustomHook.",
+      "C": "useStateisusedforclass components,whileuseReduceris usedforfunctional components.",
+      "D": "useStateis forlocal componentstate,whileuseReduceris forglobal application state."
+    },
+    "answer": "A",
+    "id": 2261,
+    "sourcePage": 271
+  },
+  {
+    "page": 14,
+    "numberOnPage": 2,
+    "question": "Whatdoes theuseNavigate hook return?",
+    "options": {
+      "A": "An object with navigation methods.",
+      "B": "Anavigate function that can be usedto navigate to a new location",
+      "C": "Aboolean indicatingnavigation status",
+      "D": "A string representing the current route."
+    },
+    "answer": "B",
+    "id": 2262,
+    "sourcePage": 272
+  },
+  {
+    "page": 14,
+    "numberOnPage": 3,
+    "question": "Whathappens ifacomponenttriestoconsumeacontextthathasnotbeenprovidedhigherupinthe componenttree?",
+    "options": {
+      "A": "The component receives a default value specified in the context definition.",
+      "B": "The component throws an error.",
+      "C": "Thecomponentreceivesanempty objectas the contextvalue.",
+      "D": "Thecomponentreceivesnullasthecontextvalue."
+    },
+    "answer": "A",
+    "id": 2263,
+    "sourcePage": 273
+  },
+  {
+    "page": 14,
+    "numberOnPage": 4,
+    "question": "What advantage does using a reducer function have over directly managing state with useState?",
+    "options": {
+      "A": "Itmakes codeshorterand lesscomplexforsimplestateupdates.",
+      "B": "It consolidates all statelogic in oneplace,which isbeneficial forcomponents with complexstate updates",
+      "C": "Itautomaticallyoptimizesrenderingperformance.",
+      "D": "It onlyworkswithglobal state, notlocalcomponentstate."
+    },
+    "answer": "B",
+    "id": 2264,
+    "sourcePage": 274
+  },
+  {
+    "page": 14,
+    "numberOnPage": 5,
+    "question": "What unique capabilitydoes Redux Thunk middlewareprovideforaction creators?",
+    "options": {
+      "A": "It allows action creators toreturman immutable stateobject",
+      "B": "Itenablesactioncreatorstodirectlymodifytheglobal state",
+      "C": "It allows action creators to returnafunction instead of a plain action object.",
+      "D": "Itautomatically dispatches actions without needinga dispatchfunction."
+    },
+    "answer": "C",
+    "id": 2265,
+    "sourcePage": 275
+  },
+  {
+    "page": 14,
+    "numberOnPage": 6,
+    "question": "Which of the following best describes a reducer in Redux? Hoang Hoang",
+    "options": {
+      "A": "A function that triggers actions in response to user interactions",
+      "B": "Acomponentthatmanagestheapplication's state",
+      "C": "Afunction that specifies howthe application's state changes in response to actions",
+      "D": "Amiddlewarethathandles asynchronous operations inRedux"
+    },
+    "answer": "C",
+    "id": 2266,
+    "sourcePage": 276
+  },
+  {
+    "page": 14,
+    "numberOnPage": 7,
+    "question": "Whichof thefollowing statements about reducers inRedux is true?",
+    "options": {
+      "A": "Reducerscanonly beusedwithReactclass components,notfunctional components.",
+      "B": "Reducersareresponsiblefordispatchingactions",
+      "C": "Reducers should have side effects suchas APl calls ordatabase interactions.",
+      "D": "Reducersmustbepurefunctionswithnosideeffects."
+    },
+    "answer": "D",
+    "id": 2267,
+    "sourcePage": 277
+  },
+  {
+    "page": 14,
+    "numberOnPage": 8,
+    "question": "Whichofthe following statements about Redux selectors is true?",
+    "options": {
+      "A": "Selectors areresponsible for dispatching actions.",
+      "B": "Selectors are used to modify the Redux store directly.",
+      "C": "Selectors are pure functions that derive specific data from the Redux store.",
+      "D": "Selectors are onlyused in React class components."
+    },
+    "answer": "C",
+    "id": 2268,
+    "sourcePage": 278
+  },
+  {
+    "page": 14,
+    "numberOnPage": 9,
+    "question": "Howare PropTypestypically integrated intoafunctional React component?",
+    "options": {
+      "A": "By declaring them within the component's return statement.",
+      "B": "By installing react-proptypes and using this.props.propTypes inside the function.",
+      "C": "By defining a propTypes property on the component function itself, usually after its declaration, to specify proptypedefinitions.",
+      "D": "PropTypes cannot be used withfunctional components."
+    },
+    "answer": "C",
+    "id": 2269,
+    "sourcePage": 279
+  },
+  {
+    "page": 14,
+    "numberOnPage": 10,
+    "question": "How canyou renderJsXinaReactcomponent?",
+    "options": {
+      "A": "By using the renderJSX() function.",
+      "B": "By passing the JSX as a string to the ReactDOM.render() function.",
+      "C": "By enclosing the JSX in curly braces within the component's renderO) method.",
+      "D": "By using the React.render() function."
+    },
+    "answer": "C",
+    "id": 2270,
+    "sourcePage": 280
+  },
+  {
+    "page": 14,
+    "numberOnPage": 11,
+    "question": "Howcan youperform initializationand cleanupactions using the useEffect Hook?",
+    "options": {
+      "A": "By returning a cleanup function from the useEffect callback.",
+      "B": "By passing an empty dependency array as the second parameter to useEffect.",
+      "C": "By wrapping the useEffect callback in a try-catch block.",
+      "D": "By using the useCleanupEffect Hook instead of useEffect."
+    },
+    "answer": "A",
+    "id": 2271,
+    "sourcePage": 281
+  },
+  {
+    "page": 14,
+    "numberOnPage": 12,
+    "question": "How canyou safelyremoveanunnecessarydependencyfroman Effect?",
+    "options": {
+      "A": "Remove all dependenciesfrom the array.",
+      "B": "Usean empty dependency array to ensure the Effect only runs once.",
+      "C": "Keep all dependencies and accept performance issues.",
+      "D": "Replace useEffect with useLayoutEffect."
+    },
+    "answer": "B",
+    "id": 2272,
+    "sourcePage": 282
+  },
+  {
+    "page": 14,
+    "numberOnPage": 13,
+    "question": "How can you configure Gitwithyournameand email address?",
+    "options": {
+      "A": "By running \"git config --global user.name 'Your Name\" and \"git config --global user.email'Your Email\"",
+      "B": "By creating a.gitignore file.",
+      "C": "By committing changes using \"git commit -m\".",
+      "D": "By pushing changes to a remote repository."
+    },
+    "answer": "A",
+    "id": 2273,
+    "sourcePage": 283
+  },
+  {
+    "page": 14,
+    "numberOnPage": 14,
+    "question": "Howcanyouuseafragment in JSX?",
+    "options": {
+      "A": "By wrapping the JSX elements with <div> tags.",
+      "B": "By using the shorthand syntax<></> or<React.Fragment>...</React.Fragment>.",
+      "C": "By creating a separate componentfor each element.",
+      "D": "By using the fragment() function."
+    },
+    "answer": "B",
+    "id": 2274,
+    "sourcePage": 284
+  },
+  {
+    "page": 14,
+    "numberOnPage": 15,
+    "question": "How do you create a dynamic route in Next.js?",
+    "options": {
+      "A": "By using useRouter()and manually specifying the route.",
+      "B": "By creating a file with square brackets in the pages directory, e.g., [id].js.",
+      "C": "By defining a route in the next.config.js file.",
+      "D": "Byusing React Router'sRoutecomponent."
+    },
+    "answer": "B",
+    "id": 2275,
+    "sourcePage": 285
+  },
+  {
+    "page": 14,
+    "numberOnPage": 16,
+    "question": "How do you create a responsive grid layout using Bootstrap? Hoang Hoang",
+    "options": {
+      "A": "By using the <div class=\"grid\"> element.",
+      "B": "By applying the.responsive-grid class to the container element.",
+      "C": "By using the.row and.col-1** classes to create rows and columns.",
+      "D": "By manually specifying the width of each element using CsS."
+    },
+    "answer": "C",
+    "id": 2276,
+    "sourcePage": 286
+  },
+  {
+    "page": 14,
+    "numberOnPage": 17,
+    "question": "How do you create a modal in Bootstrap?",
+    "options": {
+      "A": "By using the <modal> HTML element.",
+      "B": "By applying the.modal class to the container element.",
+      "D": "By using JavaScript to dynamically create and show modal elements.",
+      "C": "By using the.modal class along with the data-bs-toggle=\"modal\" attribute."
+    },
+    "answer": "C",
+    "id": 2277,
+    "sourcePage": 287,
+    "duplicateOf": 2195
+  },
+  {
+    "page": 14,
+    "numberOnPage": 18,
+    "question": "How doyoudeclaremultipleroutes in React Router?",
+    "options": {
+      "A": "Bynesting<Route>components insideeachother.",
+      "B": "Byusing the<Routes>component instead of<Route>.",
+      "C": "By using the path prop with multiple values in a single<Route> component.",
+      "D": "By using an array of Route components inside the Routes component."
+    },
+    "answer": "B",
+    "id": 2278,
+    "sourcePage": 288,
+    "duplicateOf": 2193
+  },
+  {
+    "page": 14,
+    "numberOnPage": 19,
+    "question": "How do you create a tooltip in Bootstrap?",
+    "options": {
+      "A": "By using the <tooltip> HTML element.",
+      "B": "By applying the.tooltip class to the container element.",
+      "C": "By using the data-bs-toggle=\"tooltip\" attribute alongwith the title attribute.",
+      "D": "By using JavaScriptto dynamically create and showtooitip elements."
+    },
+    "answer": "C",
+    "id": 2279,
+    "sourcePage": 289
+  },
+  {
+    "page": 14,
+    "numberOnPage": 20,
+    "question": "How do you include Tailwind CsS in a project?",
+    "options": {
+      "A": "Link the Tailwind CSS stylesheet in the HTML file.",
+      "B": "Import the Tailwind CSS file in the JavaScript code.",
+      "C": "Use the @import rule ina CSS file to import Tailwind CSS.",
+      "D": "Add Tailwind CsS as a dependency in the package.json file"
+    },
+    "answer": "D",
+    "id": 2280,
+    "sourcePage": 290
+  },
+  {
+    "page": 15,
+    "numberOnPage": 1,
+    "question": "How does the Grid component in React-Bootstrap help in creating a responsive layout?",
+    "options": {
+      "A": "Defines a flexible grid system with rows and columns that auto-adjust by screen size",
+      "B": "Provides pre-built responsive layouts",
+      "C": "Auto resizes and repositions elements",
+      "D": "Aligns elements vertically and horizontally"
+    },
+    "answer": "A",
+    "id": 2281,
+    "sourcePage": 291
+  },
+  {
+    "page": 15,
+    "numberOnPage": 2,
+    "question": "How does using Suspense with lazy components enhanceuserexperience?",
+    "options": {
+      "A": "Prevents interaction until all components load",
+      "B": "Displays a loading indicator while lazy component loads",
+      "C": "Improvesresponsivenessandperceivedperformance",
+      "D": "Removes need for error handling in async rendering"
+    },
+    "answer": "B",
+    "id": 2282,
+    "sourcePage": 292
+  },
+  {
+    "page": 15,
+    "numberOnPage": 3,
+    "question": "How does Next.js's server-side rendering capability primarily benefit web applications?",
+    "options": {
+      "A": "By offloading all rendering tasks to the client's browser",
+      "B": "By eliminating the need forany server infrastructure",
+      "C": "By resulting in faster initial page load times and better search engine optimization (SEO)",
+      "D": "By simplifying complex client-side statemanagement."
+    },
+    "answer": "C",
+    "id": 2283,
+    "sourcePage": 293
+  },
+  {
+    "page": 15,
+    "numberOnPage": 4,
+    "question": "Howdoes the Bootstrapgrid system help in designing responsive websites?",
+    "options": {
+      "A": "Provides pre-designed website templates",
+      "B": "Auto-adjusts font sizes",
+      "C": "Adapts layoutto screen sizes using 12-column responsive grid",
+      "D": "Optimizes website for search engines"
+    },
+    "answer": "C",
+    "id": 2284,
+    "sourcePage": 294
+  },
+  {
+    "page": 15,
+    "numberOnPage": 5,
+    "question": "How does Tailwind CsS's utility-first approach differ from traditional Css frameworks that offerpre-designed components?",
+    "options": {
+      "A": "Tailwind Css provides a set of pre-designed components that can be customized with utility classes, while traditional frameworks offermore flexibility in creating custom designs.",
+      "B": "Tailwind CsS provides low-level utility classes for styling, while traditional frameworks offer pre-built components with limited customization.",
+      "C": "Tailwind csS relies on JavaScript to generate styles dynamically, while traditional frameworks use static css files.",
+      "D": "Tailwind CsS is primarily used for server-side rendering, while traditional frameworks are better suited for client-side rendering."
+    },
+    "answer": "B",
+    "id": 2285,
+    "sourcePage": 295
+  },
+  {
+    "page": 15,
+    "numberOnPage": 6,
+    "question": "How would you combine fluid and pixel widths behaviors in a grid layout using Bootstrap5?",
+    "options": {
+      "A": "Use.container-fluidfor entire layout",
+      "B": "Combine.containerwith.col-fluid",
+      "C": "Use fixed-widthclass with media query",
+      "D": "Use.container-md to apply responsive container at md breakpoint"
+    },
+    "answer": "D",
+    "id": 2286,
+    "sourcePage": 296
+  },
+  {
+    "page": 15,
+    "numberOnPage": 7,
+    "question": "WhyuseReact-Bootstrap?",
+    "options": {
+      "A": "DevelopedbyFacebookwithlargecommunitysupport",
+      "B": "Easierstatemanagement withReact's state",
+      "C": "Compatiblewithallbrowsersanddevices",
+      "D": "Fasterand more efficient than otherUl libraries"
+    },
+    "answer": "B",
+    "id": 2287,
+    "sourcePage": 297
+  },
+  {
+    "page": 15,
+    "numberOnPage": 8,
+    "question": "When writing a custom PropTypes validatorfunction, what should it return upon successful validation and uponfailure?",
+    "options": {
+      "A": "It should returmtrueforsuccess andfalseforfailure.",
+      "B": "It shouldretunthe validated valuefor success and undefinedforfailure.",
+      "C": "It should return null for success and an Error object forfailure.",
+      "D": "It should return a success message string for success and an error message stringforfailure."
+    },
+    "answer": "C",
+    "id": 2288,
+    "sourcePage": 298
+  },
+  {
+    "page": 15,
+    "numberOnPage": 9,
+    "question": "Whenshould theuseReducerOHookbe used insteadofuseState()?",
+    "options": {
+      "A": "When components requiresimple,independent statevalues. ______",
+      "B": "Whenperforming initializationand cleanupactions",
+      "C": "When there is complex state logic, several sub-values, or when the upcoming state depends on the previousstate",
+      "D": "Whensharingdataacrossacomponenthierarchywithoutprop"
+    },
+    "answer": "C",
+    "id": 2289,
+    "sourcePage": 299
+  },
+  {
+    "page": 15,
+    "numberOnPage": 10,
+    "question": "When declaring routes in React Router, what are Routes and Route components used for?",
+    "options": {
+      "A": "Routes is for styling, and Route is for defining event handlers.",
+      "B": "Routes is for managing state, and Route is for rendering components.",
+      "C": "Routes is used to wrap Route components and define the application's routes, while Route is used to define an individual route.",
+      "D": "Routes is for client-side logic, and Route is for server-side logic."
+    },
+    "answer": "C",
+    "id": 2290,
+    "sourcePage": 300
+  },
+  {
+    "page": 15,
+    "numberOnPage": 11,
+    "question": "Analyzethedifferences betweenFlux and MVC architectures.Which statement is true?",
+    "options": {
+      "A": "Flux enforces unidirectional data flow, while MVC allows bidirectionaldataflow",
+      "B": "MVC enforces unidirectional dataflow,whileFlux allowsbidirectional",
+      "C": "BothFluxand MVCenforceunidirectional",
+      "D": "Both Flux and MVC allow bidirectional"
+    },
+    "answer": "A",
+    "id": 2291,
+    "sourcePage": 301
+  },
+  {
+    "page": 15,
+    "numberOnPage": 12,
+    "question": "Assessthe impactofusinginlineeventhandlers inReact components.Whichstatementistrue?",
+    "options": {
+      "A": "Inline event handlers improveperformanceby reducing the number offunction calls",
+      "B": "Inline event handlers can leadtoperformance issues due to the creation of newfunctions on each render",
+      "C": "Inline event handlers are theonlywaytohandle events in React",
+      "D": "Inlineeventhandlers aremore securethannamed eventhandlers"
+    },
+    "answer": "B",
+    "id": 2292,
+    "sourcePage": 302
+  },
+  {
+    "page": 15,
+    "numberOnPage": 13,
+    "question": "According to Redux's main principles, how should changes to the application's state be made?",
+    "options": {
+      "A": "Directly by modifying the state object in any component.",
+      "B": "Through setters that directly update the state.",
+      "D": "By calling setState() on the Redux store directly.",
+      "C": "Only through actions, with changes made by pure functions that return a new state without mutating the previous one."
+    },
+    "answer": "C",
+    "id": 2293,
+    "sourcePage": 303
+  },
+  {
+    "page": 15,
+    "numberOnPage": 14,
+    "question": "CanPropTypesbeusedforbothfunctionalandclasscomponents?",
+    "options": {
+      "A": "Yes,PropTypescanbeused inbothtypes of components",
+      "B": "No, only functional",
+      "C": "No, only class",
+      "D": "Yes,but syntax differs"
+    },
+    "answer": "A",
+    "id": 2294,
+    "sourcePage": 304
+  },
+  {
+    "page": 15,
+    "numberOnPage": 15,
+    "question": "Describe the concept of fragments in JSX. Which best explains their purpose?",
+    "options": {
+      "A": "Group multiple elements without adding extra nodes totheDOM",
+      "B": "Used to style JSX elements",
+      "C": "Used to manage state",
+      "D": "Used to handle async ops"
+    },
+    "answer": "A",
+    "id": 2295,
+    "sourcePage": 305
+  },
+  {
+    "page": 15,
+    "numberOnPage": 16,
+    "question": "If you wanted to customize the size of the form controls,what would you do in Bootstrap5?",
+    "options": {
+      "A": "Set width in inline CsS",
+      "B": "Usetherowsandcolsattributesforall form elements",
+      "C": "Use the size variants of the.form-control class,like Iform-control-sm or.form-control-lg",
+      "D": "ApplycustomJavaScriptfunctions"
+    },
+    "answer": "C",
+    "id": 2296,
+    "sourcePage": 306
+  },
+  {
+    "page": 15,
+    "numberOnPage": 17,
+    "question": "EvaluatedifferencesbetweenFetchAPlandAxios.Whichstatementistrue?",
+    "options": {
+      "A": "Fetch auto handles JSON, Axios requires manual parsing",
+      "B": "Axios provides built-in supportforrequest/response interception, Fetch does not",
+      "C": "Fetch supports auto retries, Axiosdoes not",
+      "D": "Axios built into browsers, Fetchneeds library"
+    },
+    "answer": "B",
+    "id": 2297,
+    "sourcePage": 307
+  },
+  {
+    "page": 15,
+    "numberOnPage": 18,
+    "question": "Explain thedifferencebetween usingasync/awaitandtraditional Promises (.then and.catch)for handling asynchronous operations inJavaScript.",
+    "options": {
+      "A": "async/await makes async codemorereadable,whilePromises useacallback-basedapproach.",
+      "B": "async/await is usedforsynchronousoperations,whilePromisesareusedforasynchronous operations",
+      "C": "async/await canonlybeusedwiththewindow.fetchAPl, whilePromises canbeused withany asynchronous function.",
+      "D": "async/awaitisa newerfeaturethat completelyreplacesPromises in modernJavaScript."
+    },
+    "answer": "A",
+    "id": 2298,
+    "sourcePage": 308
+  },
+  {
+    "page": 15,
+    "numberOnPage": 19,
+    "question": "In React 18,how can you pass additional arguments to an event handler?",
+    "options": {
+      "A": "Using event.target",
+      "B": "Using event.data",
+      "C": "Using bind method when binding the handler",
+      "D": "Not supported"
+    },
+    "answer": "C",
+    "id": 2299,
+    "sourcePage": 309
+  },
+  {
+    "page": 15,
+    "numberOnPage": 20,
+    "question": "InReact 19, how canyoupass additional arguments toanevent handler?",
+    "options": {
+      "A": "Using event.target",
+      "B": "Using event.data",
+      "C": "Using bind method when binding the handler",
+      "D": "Not supported"
+    },
+    "answer": "C",
+    "id": 2300,
+    "sourcePage": 310
+  },
+  {
+    "page": 16,
+    "numberOnPage": 1,
+    "question": "InReact 19, how canyoupass additional arguments toan eventhandler?",
+    "options": {
+      "A": "By using the event.target property",
+      "B": "By using the event.data property",
+      "C": "By using the bind method when binding the event handler",
+      "D": "React 19does not support passing additional argumentsto eventhandlers"
+    },
+    "answer": "C",
+    "id": 2301,
+    "sourcePage": 311,
+    "duplicateOf": 2300
+  },
+  {
+    "page": 16,
+    "numberOnPage": 2,
+    "question": "ThepurposeofJsXisto:",
+    "options": {
+      "A": "MakeJavaScript codemorereadableby embeddingHTML in JavaScript",
+      "B": "Make JavaScript runfaster",
+      "C": "EncryptHTML elements",
+      "D": "Handle server-side logic"
+    },
+    "answer": "A",
+    "id": 2302,
+    "sourcePage": 312
+  },
+  {
+    "page": 16,
+    "numberOnPage": 3,
+    "question": "[Using Bootstrap] How does the for attribute in <label> work, and why is it important?",
+    "options": {
+      "A": "Styles the label",
+      "B": "Links thelabel toform control via control's id, improving accessibility",
+      "C": "Adds inline validation",
+      "D": "Triggers JS events"
+    },
+    "answer": "B",
+    "id": 2303,
+    "sourcePage": 313
+  },
+  {
+    "page": 16,
+    "numberOnPage": 4,
+    "question": "[Using Bootstrap] How does the for attribute in the <label> element work, and why is it important in forms? (labelfor=\"exampleFormControllnput1\"class=\"form-label\">Emailaddress</label>)",
+    "options": {
+      "A": "It styles the label based on form control types",
+      "B": "It links the label to the form control via the control's id, improving accessibility",
+      "C": "It is used for adding inline form validation",
+      "D": "It triggers JavaScript events when the form is submitted"
+    },
+    "answer": "B",
+    "id": 2304,
+    "sourcePage": 314
+  },
+  {
+    "page": 16,
+    "numberOnPage": 5,
+    "question": "Understand the role of the render method in JSX. Which best explains its use?",
+    "options": {
+      "A": "Compile JSX intoJavaScript",
+      "B": "Convert JSX intoHTMLandrender ittoDOM",
+      "C": "Manage state in components",
+      "D": "Handle routing in React"
+    },
+    "answer": "B",
+    "id": 2305,
+    "sourcePage": 315
+  },
+  {
+    "page": 16,
+    "numberOnPage": 6,
+    "question": "Understandthe role of the render method in JSX. Which of thefollowing best explains its use?",
+    "options": {
+      "A": "TherendermethodisusedtocompileJSXintoJavaScript.",
+      "B": "The rendermethod is used toconvert JSX intoHTMLand render it to theDOM.",
+      "C": "TherendermethodisusedtomanagestateinReactcomponents",
+      "D": "The render method is usedtohandle routing inReact applications."
+    },
+    "answer": "B",
+    "id": 2306,
+    "sourcePage": 316
+  },
+  {
+    "page": 16,
+    "numberOnPage": 7,
+    "question": "Understandthe role of the render method in JSX. Which of thefollowing best explains its use?",
+    "options": {
+      "A": "TherendermethodisusedtocompileJSXintoJavaScript.",
+      "B": "The rendermethod is used toconvert JSX intoHTMLand render it to theDOM.",
+      "C": "TherendermethodisusedtomanagestateinReactcomponents",
+      "D": "The render method is usedtohandle routing inReact applications."
+    },
+    "answer": "B",
+    "id": 2307,
+    "sourcePage": 317,
+    "duplicateOf": 2306
+  }
+]
