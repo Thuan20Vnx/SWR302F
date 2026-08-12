@@ -1,5 +1,5 @@
 {
-  "name": "swr302-flashcards",
+  "name": "hachimi",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,5 +9,11 @@
   },
   "devDependencies": {
     "vite": "latest"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "liquid-glass-react": "^1.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   }
 }

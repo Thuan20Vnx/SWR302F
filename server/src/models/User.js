@@ -49,6 +49,12 @@ const userSchema = new mongoose.Schema(
       default: () => new Map(),
     },
     progressUpdatedAt: { type: Date, default: Date.now },
+    stars: { type: Map, of: Number, default: () => new Map() },
+    highlights: { type: Map, of: [String], default: () => new Map() },
+    entitlements: {
+      examSubjects: { type: [String], default: [] },
+      trickSubjects: { type: [String], default: [] },
+    },
   },
   { timestamps: true },
 );

@@ -8,6 +8,7 @@ import {
   clearSessionCookie,
   requireAuth,
 } from '../auth.js';
+import { isAdminEmail } from '../admin.js';
 
 const router = Router();
 const MAX_DEVICES = Number(process.env.MAX_DEVICES || 3);
@@ -18,6 +19,7 @@ function publicUser(user) {
     email: user.email,
     name: user.name,
     picture: user.picture,
+    isAdmin: isAdminEmail(user.email),
   };
 }
 
@@ -50,6 +52,7 @@ router.post(
       devices: [],
     });
   } else {
+    user.email = payload.email;
     user.name = payload.name || user.name;
     user.picture = payload.picture || user.picture;
   }

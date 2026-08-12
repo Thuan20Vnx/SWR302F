@@ -8,7 +8,11 @@ export async function verifyGoogleToken(idToken) {
     idToken,
     audience: process.env.GOOGLE_CLIENT_ID,
   });
-  return ticket.getPayload();
+  const payload = ticket.getPayload();
+  if (!payload?.sub || !payload?.email || payload.email_verified !== true) {
+    throw new Error('Google account email is not verified');
+  }
+  return payload;
 }
 
 export function signSession(user, deviceId) {

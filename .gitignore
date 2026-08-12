@@ -4,6 +4,8 @@ dist/
 server/.env
 tmp/
 __pycache__/
+.codex-artifacts/
+outputs/
 
 # Ảnh chụp đề nguồn (rất nặng), giữ ngoài repo
 *.pdf

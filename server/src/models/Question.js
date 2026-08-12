@@ -15,6 +15,19 @@ const questionSchema = new mongoose.Schema(
     answer: { type: String, required: true },
     // Câu lặp lại của đề khác: id của câu xuất hiện đầu tiên. null nếu là bản gốc.
     duplicateOf: { type: Number, default: null },
+    tricks: {
+      type: [
+        new mongoose.Schema(
+          {
+            pack: { type: Number, min: 1, default: 1 },
+            content: { type: String, default: '' },
+            createdBy: { type: String, default: '' },
+          },
+          { _id: false },
+        ),
+      ],
+      default: [],
+    },
   },
   { timestamps: true },
 );
