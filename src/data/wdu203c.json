@@ -1,0 +1,4520 @@
+[
+  {
+    "page": 1,
+    "numberOnPage": 1,
+    "question": "What is a common source of error in UX surveys that can affect data quality?",
+    "options": {
+      "A": "High response rates",
+      "B": "Clear and concise questions",
+      "C": "Ambiguous or leading questions",
+      "D": "Use of multiple-choice questions"
+    },
+    "answer": "C",
+    "id": 3001,
+    "sourcePage": 1
+  },
+  {
+    "page": 1,
+    "numberOnPage": 2,
+    "question": "What is a primary reason for using surveys in UX research?",
+    "options": {
+      "A": "To replace qualitative methods",
+      "B": "To collect data from many users",
+      "C": "To eliminate need for analytics",
+      "D": "To focus on expert opinions only"
+    },
+    "answer": "B",
+    "id": 3002,
+    "sourcePage": 2
+  },
+  {
+    "page": 1,
+    "numberOnPage": 3,
+    "question": "What is a primary goal when analyzing data from user tests?",
+    "options": {
+      "A": "To confirm that the design meets business objectives",
+      "B": "To identify areas where users encounter difficulties",
+      "C": "To validate the technical feasibility of the design",
+      "D": "To assess the aesthetic appeal of the interface"
+    },
+    "answer": "B",
+    "id": 3003,
+    "sourcePage": 3
+  },
+  {
+    "page": 1,
+    "numberOnPage": 4,
+    "question": "What is a key criterion when evaluating low-fidelity prototypes?",
+    "options": {
+      "A": "Ability to test core user tasks",
+      "B": "Visual style and branding",
+      "C": "Use of advanced interaction pattems",
+      "D": "Detailed animations"
+    },
+    "answer": "A",
+    "id": 3004,
+    "sourcePage": 4
+  },
+  {
+    "page": 1,
+    "numberOnPage": 5,
+    "question": "What is the purpose of sketching in UX design?",
+    "options": {
+      "A": "To finalize the design",
+      "B": "To reflect, explore, and communicate design concepts",
+      "C": "To create perfect visuals",
+      "D": "To avoid feedback from users"
+    },
+    "answer": "B",
+    "id": 3005,
+    "sourcePage": 5
+  },
+  {
+    "page": 1,
+    "numberOnPage": 6,
+    "question": "What is a common challenge when conducting in-situ observations?",
+    "options": {
+      "A": "Participants behaving unnaturally due to being observed",
+      "B": "Difficulty in accessing the user's environment",
+      "C": "Collecting too much quantitative data",
+      "D": "Lack of visual data De"
+    },
+    "answer": "A",
+    "id": 3006,
+    "sourcePage": 6
+  },
+  {
+    "page": 1,
+    "numberOnPage": 7,
+    "question": "SS What is \"page depth\" in website analytics?",
+    "options": {
+      "A": "The number of pages visited during a single user session",
+      "B": "The time spent on each page by a user",
+      "C": "The number of visitors who return to the site regularly",
+      "D": "The number of clicks on a page's primary button SSC"
+    },
+    "answer": "A",
+    "id": 3007,
+    "sourcePage": 7
+  },
+  {
+    "page": 1,
+    "numberOnPage": 8,
+    "question": "SS What is the primary focus of Heuristic Evaluation?",
+    "options": {
+      "A": "To analyze system speed and performance",
+      "B": "To review a UI using Nielsen's 10 heuristics",
+      "C": "To conduct focus groups with real users",
+      "D": "To test the visual appeal of the design SS"
+    },
+    "answer": "B",
+    "id": 3008,
+    "sourcePage": 8
+  },
+  {
+    "page": 1,
+    "numberOnPage": 9,
+    "question": "LL What is the goal of labeling clusters in the affinity wall method?",
+    "options": {
+      "A": "To create catchy titles for each cluster",
+      "B": "To summarize the common theme or issue represented by the notes in the cluster",
+      "C": "To provide a detailed breakdown of each user's feedback",
+      "D": "To list all the observations without organizing them I"
+    },
+    "answer": "B",
+    "id": 3009,
+    "sourcePage": 9
+  },
+  {
+    "page": 1,
+    "numberOnPage": 10,
+    "question": "What is the primary purpose of conducting user interviews in UX research?",
+    "options": {
+      "A": "To test the final product",
+      "B": "To gather quantitative data",
+      "C": "To understand user needs and behaviors",
+      "D": "To train new designers"
+    },
+    "answer": "C",
+    "id": 3010,
+    "sourcePage": 10
+  },
+  {
+    "page": 1,
+    "numberOnPage": 11,
+    "question": "What does the Gulf of Execution refer to?",
+    "options": {
+      "A": "The gap when users interpret the results of their actions",
+      "B": "The difficulty in understanding the actions required to achieve a goal",
+      "C": "The gap when the goal is too complex to reach",
+      "D": "The failure of actions when feedback is not provided a N Khoang cach thuc thi (Gulf of Execution) dé cap dén diéu gi?"
+    },
+    "answer": "B",
+    "id": 3011,
+    "sourcePage": 11
+  },
+  {
+    "page": 1,
+    "numberOnPage": 12,
+    "question": "What does it mean when the design process is called \"iterative\"?",
+    "options": {
+      "A": "Designers skip testing to save time",
+      "B": "Designers repeat and refine ideas",
+      "C": "Designers always follow linear steps",
+      "D": "Designers focus only on wireframes ee"
+    },
+    "answer": "B",
+    "id": 3012,
+    "sourcePage": 12
+  },
+  {
+    "page": 1,
+    "numberOnPage": 13,
+    "question": "What are the benefits of brainstorming in group ideation?",
+    "options": {
+      "A": "Stimulates creativity and diverse perspectives",
+      "B": "Ensures immediate solutions are found",
+      "C": "Eliminates the need for further design steps",
+      "D": "Focuses on individual expertise"
+    },
+    "answer": "A",
+    "id": 3013,
+    "sourcePage": 13
+  },
+  {
+    "page": 1,
+    "numberOnPage": 14,
+    "question": "Which of the following methods are effective for gathering user needs? (More than one answer may be correct)",
+    "options": {
+      "A": "User interviews",
+      "B": "Surveys",
+      "C": "Ignoring negative feedback",
+      "D": "Copying competitors' features"
+    },
+    "answer": "AB",
+    "id": 3014,
+    "sourcePage": 14
+  },
+  {
+    "page": 1,
+    "numberOnPage": 15,
+    "question": "What method would you develop to boost survey response rates for a mobile app?",
+    "options": {
+      "A": "Use complex survey jargon",
+      "B": "Offer incentives, clear opt-outs",
+      "C": "Require all questions be answered",
+      "D": "Hide the survey's purpose"
+    },
+    "answer": "B",
+    "id": 3015,
+    "sourcePage": 15
+  },
+  {
+    "page": 1,
+    "numberOnPage": 16,
+    "question": "Which sampling method should be used when aiming to minimize bias and ensure generalizability in research findings?",
+    "options": {
+      "A": "Convenience sampling",
+      "B": "Probability sampling",
+      "C": "Purposeful sampling",
+      "D": "Non-probability sampling"
+    },
+    "answer": "B",
+    "id": 3016,
+    "sourcePage": 16
+  },
+  {
+    "page": 1,
+    "numberOnPage": 17,
+    "question": "Which of the following is not a question that can be answered by getting feedback on wireframes?",
+    "options": {
+      "A": "Do screens contain the right functional components?",
+      "B": "Does the screen layout make sense?",
+      "C": "Is the displayed content ordered correctly?",
+      "D": "Do the screens provide adequate navigation?"
+    },
+    "answer": "A",
+    "id": 3017,
+    "sourcePage": 17
+  },
+  {
+    "page": 1,
+    "numberOnPage": 18,
+    "question": "Which of the following best describes a \"persona\" in UX design?",
+    "options": {
+      "A": "A fictional character representing a user type",
+      "B": "Areal user interviewed during research",
+      "C": "A list of product features",
+      "D": "A prototype of the final product ee"
+    },
+    "answer": "A",
+    "id": 3018,
+    "sourcePage": 18
+  },
+  {
+    "page": 1,
+    "numberOnPage": 19,
+    "question": "Which of the following is an example of a tool commonly used for creating wireframes in UX design?",
+    "options": {
+      "A": "Blender",
+      "B": "Figma",
+      "C": "Unity",
+      "D": "Maya"
+    },
+    "answer": "B",
+    "id": 3019,
+    "sourcePage": 19
+  },
+  {
+    "page": 1,
+    "numberOnPage": 20,
+    "question": "Which of the following are types of user-entered inputs?",
+    "options": {
+      "A": "GPS",
+      "B": "Text fields where users enter free-form responses",
+      "C": "Widgets like calendar pickers or on/off switches",
+      "D": "Voice input, like dictation typing",
+      "E": "All options on this list except GPS ee"
+    },
+    "answer": "E",
+    "id": 3020,
+    "sourcePage": 20
+  },
+  {
+    "page": 2,
+    "numberOnPage": 1,
+    "question": "Which of the following best describes the correct approach to note-taking?",
+    "options": {
+      "A": "Writing down only the main ideas using brief phrases and key details.",
+      "B": "Recording only the information that won't be captured by audio or video.",
+      "C": "Accepting that there isn't a single correct method for taking notes.",
+      "D": "Noting only the follow-up questions you plan to ask later in the conversation. De"
+    },
+    "answer": "C",
+    "id": 3021,
+    "sourcePage": 21
+  },
+  {
+    "page": 2,
+    "numberOnPage": 2,
+    "question": "Which of the following best describes a low-fidelity prototype?",
+    "options": {
+      "A": "A fully functional product",
+      "B": "A detailed visual representation with interactive elements",
+      "C": "Asimple, often hand-drawn, representation of a design concept",
+      "D": "A final version ready for deployment"
+    },
+    "answer": "A",
+    "id": 3022,
+    "sourcePage": 22
+  },
+  {
+    "page": 2,
+    "numberOnPage": 3,
+    "question": "How should affinity clusters be labeled?",
+    "options": {
+      "A": "With specific, precise titles that capture the essence of the common theme",
+      "B": "With random titles for easier identification",
+      "C": "With labels that focus solely on the user demographics",
+      "D": "With vague, general titles to avoid bias"
+    },
+    "answer": "A",
+    "id": 3023,
+    "sourcePage": 23
+  },
+  {
+    "page": 2,
+    "numberOnPage": 4,
+    "question": "How does qualitative research differ from quantitative research?",
+    "options": {
+      "A": "Qualitative research focuses on understanding in-depth user behavior and experiences, while quantitative research focuses on numerical data",
+      "B": "Qualitative research provides statistical data, while quantitative research focuses on user behavior",
+      "C": "Quantitative research is more subjective than qualitative research",
+      "D": "Qualitative research involves automated data analysis"
+    },
+    "answer": "A",
+    "id": 3024,
+    "sourcePage": 24
+  },
+  {
+    "page": 2,
+    "numberOnPage": 5,
+    "question": "A team proposes bypassing heuristic evaluation and moving directly to user testing for a website design. How would you assess this decision based on UX evaluation principles?",
+    "options": {
+      "A": "Support it, as user testing is always superior",
+      "B": "Oppose it, as heuristic evaluation is faster and finds different issues",
+      "C": "Support it, as heuristic evaluation is unnecessary",
+      "D": "Oppose it, as user testing requires more evaluators a"
+    },
+    "answer": "B",
+    "id": 3025,
+    "sourcePage": 25
+  },
+  {
+    "page": 2,
+    "numberOnPage": 6,
+    "question": "A test task uses the term \"Shopping Cart' which appears in the UI. What should you do instead?",
+    "options": {
+      "A": "Leave it as is",
+      "B": "Add more technical jargon",
+      "C": "Reword it to avoid interface-specific terms",
+      "D": "Ask users to guess the meaning ee"
+    },
+    "answer": "C",
+    "id": 3026,
+    "sourcePage": 26
+  },
+  {
+    "page": 2,
+    "numberOnPage": 7,
+    "question": "Besides usability testing, what is another research method that can be conducted remotely?",
+    "options": {
+      "A": "Product assembly",
+      "B": "Diary studies",
+      "C": "Server maintenance",
+      "D": "Eye-tracking in physical stores"
+    },
+    "answer": "B",
+    "id": 3027,
+    "sourcePage": 27
+  },
+  {
+    "page": 2,
+    "numberOnPage": 8,
+    "question": "In-situ observation is particularly useful for",
+    "options": {
+      "A": "Understanding user behavior in their natural environment",
+      "B": "Testing the technical performance of a product",
+      "C": "Conducting large-scale surveys",
+      "D": "Gathering statistical data on user preferences"
+    },
+    "answer": "A",
+    "id": 3028,
+    "sourcePage": 28
+  },
+  {
+    "page": 2,
+    "numberOnPage": 9,
+    "question": "Select all the benefits of conducting usability testing early in the UX design process. (More than one answer may be correct).",
+    "options": {
+      "A": "Identify potential design flaws",
+      "B": "Guarantees project success",
+      "C": "Improves user satisfaction",
+      "D": "Ensures compliance with industry standards"
+    },
+    "answer": "AC",
+    "id": 3029,
+    "sourcePage": 29
+  },
+  {
+    "page": 2,
+    "numberOnPage": 10,
+    "question": "A single designer can usually conduct a test of a lo-fi prototype by him/herself",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3030,
+    "sourcePage": 31
+  },
+  {
+    "page": 2,
+    "numberOnPage": 11,
+    "question": "Creation of many alternative solutions increases the quality of the final design",
+    "options": {
+      "A": "True",
+      "B": "False a"
+    },
+    "answer": "A",
+    "id": 3031,
+    "sourcePage": 32
+  },
+  {
+    "page": 2,
+    "numberOnPage": 12,
+    "question": "Designers prototype to test their design ideas before resources are invested in expensive and time-consuming software development.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3032,
+    "sourcePage": 33
+  },
+  {
+    "page": 2,
+    "numberOnPage": 13,
+    "question": "Granularity of the needed information is an important consideration when designing system inputs",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3033,
+    "sourcePage": 34
+  },
+  {
+    "page": 2,
+    "numberOnPage": 14,
+    "question": "Mode can change how multiple aspects of the system behave.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3034,
+    "sourcePage": 35
+  },
+  {
+    "page": 2,
+    "numberOnPage": 15,
+    "question": "It is important not to criticize ideas during brainstorming.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3035,
+    "sourcePage": 36
+  },
+  {
+    "page": 2,
+    "numberOnPage": 16,
+    "question": "It's possible to create a useful, functional interactive prototype with very simple tools, such as paper, post-it notes, and scotch tape.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3036,
+    "sourcePage": 37
+  },
+  {
+    "page": 2,
+    "numberOnPage": 17,
+    "question": "In the \"generation\" phase, your goal should be to sketch many different design ideas rather than to perfect a single idea",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3037,
+    "sourcePage": 38
+  },
+  {
+    "page": 2,
+    "numberOnPage": 18,
+    "question": "True or false: One of your goals in designing products with a good user experience should be to fail as early and often as possible.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3038,
+    "sourcePage": 39
+  },
+  {
+    "page": 2,
+    "numberOnPage": 19,
+    "question": "\"Push\" output can be time information delivery for maximum effectiveness",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3039,
+    "sourcePage": 40
+  },
+  {
+    "page": 2,
+    "numberOnPage": 20,
+    "question": "\"Pull\" output gives user high level of control of information access",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3040,
+    "sourcePage": 41
+  },
+  {
+    "page": 3,
+    "numberOnPage": 1,
+    "question": "Problem scoping is a fundamental part of the design process",
+    "options": {
+      "A": "True",
+      "B": "False eer"
+    },
+    "answer": "A",
+    "id": 3041,
+    "sourcePage": 42
+  },
+  {
+    "page": 3,
+    "numberOnPage": 2,
+    "question": "Sketching is used both for generating and for communicating ideas",
+    "options": {
+      "A": "True",
+      "B": "False i ee—SSC"
+    },
+    "answer": "A",
+    "id": 3042,
+    "sourcePage": 43
+  },
+  {
+    "page": 3,
+    "numberOnPage": 3,
+    "question": "Scenarios help designers reflect on user needs, how technology might address those needs, and potential issues that might arise with the use of the envisioned technology",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3043,
+    "sourcePage": 44
+  },
+  {
+    "page": 3,
+    "numberOnPage": 4,
+    "question": "Technical determinists believe that sometimes the properties of technologies almost necessitate certain kinds of consequences",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3044,
+    "sourcePage": 45
+  },
+  {
+    "page": 3,
+    "numberOnPage": 5,
+    "question": "True or False: Baseline statistics such as task completion rate, time spent on task, and/or error rates should be included in user test reports",
+    "options": {
+      "A": "True",
+      "B": "False De"
+    },
+    "answer": "A",
+    "id": 3045,
+    "sourcePage": 46
+  },
+  {
+    "page": 3,
+    "numberOnPage": 6,
+    "question": "True or false: In this course, you will get your hands dirty and gain hands-on experience with UX Research and Design methods.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3046,
+    "sourcePage": 47
+  },
+  {
+    "page": 3,
+    "numberOnPage": 7,
+    "question": "Wireframes can test design concepts, as well as help designers decide among multiple ways of designing a piece of functionality",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "id": 3047,
+    "sourcePage": 48
+  },
+  {
+    "page": 3,
+    "numberOnPage": 8,
+    "question": "When sketching to come up with different design solutions, you should stop the first time you run out of ideas",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3048,
+    "sourcePage": 50
+  },
+  {
+    "page": 3,
+    "numberOnPage": 9,
+    "question": "Affordances of user interface don't have much influence on how easily users learn to use the system",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3049,
+    "sourcePage": 51
+  },
+  {
+    "page": 3,
+    "numberOnPage": 10,
+    "question": "Although there are different types of input, UX designers only need to focus on designing the information that users will explicitly enter into the system",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3050,
+    "sourcePage": 52
+  },
+  {
+    "page": 3,
+    "numberOnPage": 11,
+    "question": "Bill Buxton states that all design is \"compromise.\" By this he means that fundamentally no de good no design is particularly good.",
+    "options": {
+      "A": "True",
+      "B": "False a"
+    },
+    "answer": "B",
+    "id": 3051,
+    "sourcePage": 53
+  },
+  {
+    "page": 3,
+    "numberOnPage": 12,
+    "question": "Designers should aim to generate about half a dozen solutions when they ideate",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3052,
+    "sourcePage": 54
+  },
+  {
+    "page": 3,
+    "numberOnPage": 13,
+    "question": "Designers usually solve the exact design problem they are initially presented with",
+    "options": {
+      "A": "True",
+      "B": "False ee"
+    },
+    "answer": "B",
+    "id": 3053,
+    "sourcePage": 55
+  },
+  {
+    "page": 3,
+    "numberOnPage": 14,
+    "question": "Designers conduct formative research using a single, unified set of methods.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3054,
+    "sourcePage": 56
+  },
+  {
+    "page": 3,
+    "numberOnPage": 15,
+    "question": "Excellent drawing skills are needed to create effective storyboards",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3055,
+    "sourcePage": 57
+  },
+  {
+    "page": 3,
+    "numberOnPage": 16,
+    "question": "Formal research methods are always preferable to informal methods for doing formative research",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3056,
+    "sourcePage": 58
+  },
+  {
+    "page": 3,
+    "numberOnPage": 17,
+    "question": "Is the following statement true or false? You should always include a pre-test questionnaire in any user test you conduct",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3057,
+    "sourcePage": 59
+  },
+  {
+    "page": 3,
+    "numberOnPage": 18,
+    "question": "In order to have a mental model of a system that enable them to use that system effectively, users need to understand the technical underpinnings of that system",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3058,
+    "sourcePage": 60
+  },
+  {
+    "page": 3,
+    "numberOnPage": 19,
+    "question": "In UX, \"Design\" is concerned only with the aesthetic (or beauty-related) aspects of products",
+    "options": {
+      "A": "True",
+      "B": "False ee"
+    },
+    "answer": "B",
+    "id": 3059,
+    "sourcePage": 61
+  },
+  {
+    "page": 3,
+    "numberOnPage": 20,
+    "question": "Ideation mostly happens at the start of the design process when the designer is first coming up with possible solutions to the design problem.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3060,
+    "sourcePage": 62
+  },
+  {
+    "page": 4,
+    "numberOnPage": 1,
+    "question": "It is important to be good at drawing to use sketching in UX Design",
+    "options": {
+      "A": "True",
+      "B": "False CT"
+    },
+    "answer": "B",
+    "id": 3061,
+    "sourcePage": 63
+  },
+  {
+    "page": 4,
+    "numberOnPage": 2,
+    "question": "It's typically obvious which design solution, among alternatives they generated, designers should pursue",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3062,
+    "sourcePage": 64
+  },
+  {
+    "page": 4,
+    "numberOnPage": 3,
+    "question": "It doesn't matter whether you initially create a low- or high-fidelity prototype. You can get the same kind of feedback on either",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3063,
+    "sourcePage": 65
+  },
+  {
+    "page": 4,
+    "numberOnPage": 4,
+    "question": "| Personas are purely fictional characters",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3064,
+    "sourcePage": 66
+  },
+  {
+    "page": 4,
+    "numberOnPage": 5,
+    "question": "The primary concern of design is to create artifacts and systems that are aesthetically pleasing",
+    "options": {
+      "A": "True",
+      "B": "False SCC"
+    },
+    "answer": "B",
+    "id": 3065,
+    "sourcePage": 67
+  },
+  {
+    "page": 4,
+    "numberOnPage": 6,
+    "question": "The many new technological trends we discussed means that UX design as a process is fundamentally changing and that what we discussed in this course is not going to be useful a year or two from now.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3066,
+    "sourcePage": 68
+  },
+  {
+    "page": 4,
+    "numberOnPage": 7,
+    "question": "True or False: It is not the role of the UX researcher to assign severity to problems found in user testing--this should be left up to the product owner.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3067,
+    "sourcePage": 69
+  },
+  {
+    "page": 4,
+    "numberOnPage": 8,
+    "question": "True or False: If you take good notes, there is no reason to capture a screen recording of user test sessions for later review.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3068,
+    "sourcePage": 70
+  },
+  {
+    "page": 4,
+    "numberOnPage": 9,
+    "question": "True or false: User Experience only describes the experience that people have while actually using a product, and not other related experiences like acquiring the product or fixing it when it breaks.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3069,
+    "sourcePage": 71
+  },
+  {
+    "page": 4,
+    "numberOnPage": 10,
+    "question": "You have to be good at drawing to create sketches that are useful for design",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3070,
+    "sourcePage": 72
+  },
+  {
+    "page": 4,
+    "numberOnPage": 11,
+    "question": "True or false: You need to have a degree in psychology in order to understand the principles behind good UX.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3071,
+    "sourcePage": 73
+  },
+  {
+    "page": 4,
+    "numberOnPage": 12,
+    "question": "Wizard of Oz prototypes are most useful for prototyping screen-based applications",
+    "options": {
+      "A": "True",
+      "B": "False B a 2 AMliszard af O79 nratathimnan hits inh nhAt AA tan nratathinn aha ndAn Venn ding dion trAn mAn hinh"
+    },
+    "answer": "B",
+    "id": 3072,
+    "sourcePage": 74
+  },
+  {
+    "page": 4,
+    "numberOnPage": 13,
+    "question": "While designers have to set defaults for many design elements, these default values rarely matter since users can just change them at any time: ee",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "B",
+    "id": 3073,
+    "sourcePage": 75
+  },
+  {
+    "page": 4,
+    "numberOnPage": 14,
+    "question": "Which of the following is not a characteristic of low-fidelity prototypes?",
+    "options": {
+      "A": "They should be quick to create",
+      "B": "They should support the full sequence of actions needed to complete a task",
+      "C": "They should be realistic",
+      "D": "They should cover the functionality of the whole system."
+    },
+    "answer": "C",
+    "id": 3074,
+    "sourcePage": 77
+  },
+  {
+    "page": 4,
+    "numberOnPage": 15,
+    "question": "Which of the following is NOT a reason to randomize your response categories in a nominal survey question?",
+    "options": {
+      "A": "Anchoring",
+      "B": "Primacy",
+      "C": "Recency",
+      "D": "Cognitive burden"
+    },
+    "answer": "D",
+    "id": 3075,
+    "sourcePage": 78
+  },
+  {
+    "page": 4,
+    "numberOnPage": 16,
+    "question": "Which of the following is NOT an uncommon type of survey question?",
+    "options": {
+      "A": "Drill Down",
+      "B": "Nominal",
+      "C": "Heat Map",
+      "D": "Pick, Group and Rank"
+    },
+    "answer": "B",
+    "id": 3076,
+    "sourcePage": 79
+  },
+  {
+    "page": 4,
+    "numberOnPage": 17,
+    "question": "Which of the following is NOT a dimension of survey modes?",
+    "options": {
+      "A": "Cost",
+      "B": "Respondent burden",
+      "C": "Sampling frame",
+      "D": "Flexibility a"
+    },
+    "answer": "C",
+    "id": 3077,
+    "sourcePage": 80
+  },
+  {
+    "page": 4,
+    "numberOnPage": 18,
+    "question": "Which of the following is NOT a type of sampling?",
+    "options": {
+      "A": "Census",
+      "B": "Sampling Frame",
+      "C": "Probability",
+      "D": "Convenience"
+    },
+    "answer": "B",
+    "id": 3078,
+    "sourcePage": 81
+  },
+  {
+    "page": 4,
+    "numberOnPage": 19,
+    "question": "When choosing an environment to conduct a user test session, which of the following is NOT an important characteristic of your chosen site?",
+    "options": {
+      "A": "Distraction-free",
+      "B": "Private",
+      "C": "Dedicated only for conducting user tests",
+      "D": "Quiet"
+    },
+    "answer": "C",
+    "id": 3079,
+    "sourcePage": 82
+  },
+  {
+    "page": 4,
+    "numberOnPage": 20,
+    "question": "Which of the following is NOT an element of a typical scenario?",
+    "options": {
+      "A": "Agent",
+      "B": "Actions",
+      "C": "Location",
+      "D": "Goals",
+      "E": "Events"
+    },
+    "answer": "C",
+    "id": 3080,
+    "sourcePage": 83
+  },
+  {
+    "page": 5,
+    "numberOnPage": 1,
+    "question": "Which of the following is NOT a method one would use to understand why people are using a product at certain times?",
+    "options": {
+      "A": "Surveys",
+      "B": "Clickstream analytics",
+      "C": "Concept Testing",
+      "D": "Interviews",
+      "E": "Remote testing"
+    },
+    "answer": "C",
+    "id": 3081,
+    "sourcePage": 84
+  },
+  {
+    "page": 5,
+    "numberOnPage": 2,
+    "question": "Which of the following does NOT impact the likelihood that something in long-term memory will be recalled?",
+    "options": {
+      "A": "Strength of association",
+      "B": "Frequency of use",
+      "C": "Recency of use",
+      "D": "Accuracy of information"
+    },
+    "answer": "D",
+    "id": 3082,
+    "sourcePage": 85
+  },
+  {
+    "page": 5,
+    "numberOnPage": 3,
+    "question": "Which of the following is NOT another name for the kind of qualitative research methodology you learned in this specialization?",
+    "options": {
+      "A": "Ethnographic research",
+      "B": "Contextual inquiry",
+      "C": "User needs assessment",
+      "D": "Socio-technical extraction"
+    },
+    "answer": "D",
+    "id": 3083,
+    "sourcePage": 86
+  },
+  {
+    "page": 5,
+    "numberOnPage": 4,
+    "question": "Which of the following is NOT important to consider when defining your population?",
+    "options": {
+      "A": "Number of questions you want to ask",
+      "B": "Characteristics of the people you're interested in",
+      "C": "Survey mode",
+      "D": "Relationship to the product"
+    },
+    "answer": "A",
+    "id": 3084,
+    "sourcePage": 87
+  },
+  {
+    "page": 5,
+    "numberOnPage": 5,
+    "question": "Which of the following is NOT something you should consider while writing questions?",
+    "options": {
+      "A": "Avoiding jargon",
+      "B": "Keeping language as simple as possible.",
+      "C": "Ask one question at a time.",
+      "D": "Making the question sound scientific SS"
+    },
+    "answer": "D",
+    "id": 3085,
+    "sourcePage": 88
+  },
+  {
+    "page": 5,
+    "numberOnPage": 6,
+    "question": "Which of the following should you NOT do when trying to establish rapport with an interview participant?",
+    "options": {
+      "A": "Talk about what other participants have been saying",
+      "B": "Make small talk at first.",
+      "C": "Listen and observe how they respond.",
+      "D": "Adopt a learning mindset"
+    },
+    "answer": "A",
+    "id": 3086,
+    "sourcePage": 89
+  },
+  {
+    "page": 5,
+    "numberOnPage": 7,
+    "question": "Which of the following is NOT a best practice when designing ordinal closed-ended questions?",
+    "options": {
+      "A": "Use direct labels",
+      "B": "Use vague quantifiers rather than specific metrics",
+      "C": "Provide a balanced scale",
+      "D": "Provide scales that approximate the real world distribution"
+    },
+    "answer": "B",
+    "id": 3087,
+    "sourcePage": 90
+  },
+  {
+    "page": 5,
+    "numberOnPage": 8,
+    "question": "Which of the following would NOT be an example of a sampling frame?",
+    "options": {
+      "A": "Asocial media site, like Twitter",
+      "B": "An organization's email directory",
+      "C": "All phone numbers in the U.S",
+      "D": "User names of everyone who logged into the site this month Lo"
+    },
+    "answer": "C",
+    "id": 3088,
+    "sourcePage": 91
+  },
+  {
+    "page": 5,
+    "numberOnPage": 9,
+    "question": "Which of the following is NOT a type of passive input?",
+    "options": {
+      "A": "Application data like contacts, calendar events, or user's health information (e.g., steps)",
+      "B": "Weather data",
+      "C": "Picture taken by the user using the phone camera",
+      "D": "User's current location C\\\\Diéu nao sau day KHONG phai la mét loai dau vao thu dong?"
+    },
+    "answer": "C",
+    "id": 3089,
+    "sourcePage": 92
+  },
+  {
+    "page": 5,
+    "numberOnPage": 10,
+    "question": "Which of the following is NOT a way to match your UX goals to survey methods?",
+    "options": {
+      "A": "Launch an exploratory survey to determine UX goals",
+      "B": "Ask why you want to have the data",
+      "C": "Have a story for why surveys are the best way to meet this UX goal",
+      "D": "Define goals before choosing metrics ee"
+    },
+    "answer": "A",
+    "id": 3090,
+    "sourcePage": 93
+  },
+  {
+    "page": 5,
+    "numberOnPage": 11,
+    "question": "Which of the following topics are NOT a common part of the introduction to an interview?",
+    "options": {
+      "A": "How confidentiality will be handled",
+      "B": "Expected duration of the interview",
+      "C": "How many other interview participants there are",
+      "D": "Overall goals of the interview"
+    },
+    "answer": "C",
+    "id": 3091,
+    "sourcePage": 94
+  },
+  {
+    "page": 5,
+    "numberOnPage": 12,
+    "question": "Which of the following is NOT something to think about if you are going to use Amazon's Mechanical Turk to recruit respondents?",
+    "options": {
+      "A": "How to pay a fair wage to Turkers",
+      "B": "The shakiness of the demographic data about Turkers",
+      "C": "How to check for the validity of responses",
+      "D": "Response rates for Turkers"
+    },
+    "answer": "D",
+    "id": 3092,
+    "sourcePage": 95
+  },
+  {
+    "page": 5,
+    "numberOnPage": 13,
+    "question": "Which of the following is NOT a best practice in writing nominal closed-ended questions?",
+    "options": {
+      "A": "Avoid unequal response options",
+      "B": "Use \"select all that apply\" responses rather than forced choices.",
+      "C": "Constrain the number of response options that you provide",
+      "D": "Randomize response options when necessary"
+    },
+    "answer": "B",
+    "id": 3093,
+    "sourcePage": 96
+  },
+  {
+    "page": 5,
+    "numberOnPage": 14,
+    "question": "Which of the following is NOT a best practice for writing open-ended questions?",
+    "options": {
+      "A": "Use an open-ended question after every closed-ended question",
+      "B": "Use neutral probes when possible",
+      "C": "Provide extra motivation to respond",
+      "D": "Specify the response wanted in the question stem ee"
+    },
+    "answer": "A",
+    "id": 3094,
+    "sourcePage": 97
+  },
+  {
+    "page": 5,
+    "numberOnPage": 15,
+    "question": "Nielsen provides several recommendations for help and documentation. Which of the following is NOT one of his recommendations?",
+    "options": {
+      "A": "Help should be focused on users' tasks",
+      "B": "Help should be small and searchable",
+      "C": "Help should include step-by-step instructions",
+      "D": "Help should be written from the system developers' point of view"
+    },
+    "answer": "D",
+    "id": 3095,
+    "sourcePage": 98
+  },
+  {
+    "page": 5,
+    "numberOnPage": 16,
+    "question": "Which of the following is NOT a key design skill?",
+    "options": {
+      "A": "To frame or reframe a design problem",
+      "B": "To generate a large number of alternative solutions",
+      "C": "To evaluate tradeoffs of different alternatives",
+      "D": "To create and test with potential users a functioning prototype of a design solution",
+      "E": "To write a business plan for selling the technology designers created"
+    },
+    "answer": "E",
+    "id": 3096,
+    "sourcePage": 99
+  },
+  {
+    "page": 5,
+    "numberOnPage": 17,
+    "question": "Which of the following is NOT a way to increase the perceived benefit of participating in a survey?",
+    "options": {
+      "A": "Specify how the survey results will be used",
+      "B": "Identify the trustworthiness of the sponsoring organization",
+      "C": "Make the survey as short as possible",
+      "D": "Stress that opportunities to respond are limited"
+    },
+    "answer": "C",
+    "id": 3097,
+    "sourcePage": 100
+  },
+  {
+    "page": 5,
+    "numberOnPage": 18,
+    "question": "Which of the following is NOT a reason why building products with great UX is hard?",
+    "options": {
+      "A": "You are not the user",
+      "B": "Computers are weird",
+      "C": "Software is (Usually) complex",
+      "D": "There is no known process that we can follow to create good UX"
+    },
+    "answer": "D",
+    "id": 3098,
+    "sourcePage": 101
+  },
+  {
+    "page": 5,
+    "numberOnPage": 19,
+    "question": "Which of the following is NOT a best practice in writing nominal closed-ended questions?",
+    "options": {
+      "A": "Avoid unequal response options",
+      "B": "Use \"select all that apply\" responses rather than forced choices.",
+      "C": "Constrain the number of response options that you provide",
+      "D": "Randomize response options when necessary"
+    },
+    "answer": "B",
+    "id": 3099,
+    "sourcePage": 102,
+    "duplicateOf": 3093
+  },
+  {
+    "page": 5,
+    "numberOnPage": 20,
+    "question": "Which of the following is NOT an example of convenience sampling?",
+    "options": {
+      "A": "Asking people on a street corner to answer some questions.",
+      "B": "Posting flyers in a doctor's office asking for participants who have had a cold recently.",
+      "C": "Asking your friends on Facebook or Twitter to answer questions for you.",
+      "D": "Emailing all students at a university based on a random sample of email addresses provided by the administration."
+    },
+    "answer": "D",
+    "id": 3100,
+    "sourcePage": 103
+  },
+  {
+    "page": 6,
+    "numberOnPage": 1,
+    "question": "Which of the following is NOT a reason you would want to have a high response rate?",
+    "options": {
+      "A": "If you want to be more confident that you've detected a difference/change.",
+      "B": "If your population is very heterogeneous.",
+      "C": "If you want to be able to conduct more complicated statistical analyses",
+      "D": "If you want to detect smaller, or more subtle differences/changes"
+    },
+    "answer": "B",
+    "id": 3101,
+    "sourcePage": 104
+  },
+  {
+    "page": 6,
+    "numberOnPage": 2,
+    "question": "Which of the following is NOT important for every survey question?",
+    "options": {
+      "A": "Writing a question that every respondent will interpret in the way the researcher intends",
+      "B": "Writing a question that every respondent will answer in the same way",
+      "C": "Writing a question that every respondent will respond to accurately",
+      "D": "Writing a question that every respondent is willing to answer."
+    },
+    "answer": "B",
+    "id": 3102,
+    "sourcePage": 105
+  },
+  {
+    "page": 6,
+    "numberOnPage": 3,
+    "question": "De Which of the following is NOT a way of reducing the burden for a respondent to participate in your survey?",
+    "options": {
+      "A": "Asking people who use a site's shopping cart how they feel about that experience.",
+      "B": "Keep the survey as short as you can without compromising quality.",
+      "C": "Reduce the complexity of questions by making them easy to understand.",
+      "D": "Asking one group of respondents to forward the survey invite to their social networks"
+    },
+    "answer": "D",
+    "id": 3103,
+    "sourcePage": 106
+  },
+  {
+    "page": 6,
+    "numberOnPage": 4,
+    "question": "Which of the following is NOT an advantage of lo-fi prototyping?",
+    "options": {
+      "A": "You can identify problems before investing significant resources into a design direction.",
+      "B": "You can work out aspects of graphic design such as fonts and color schemes, which have the largest impact on user experience.",
+      "C": "Stakeholders are more likely to give honest feedback if they perceive that design ideas are \"sketchy\" rather than highly polished",
+      "D": "Lo-fi prototypes are easy to change, allowing you to iterate more rapidly than you could if you were creating more complex prototypes De"
+    },
+    "answer": "B",
+    "id": 3104,
+    "sourcePage": 107
+  },
+  {
+    "page": 6,
+    "numberOnPage": 5,
+    "question": "Which of the following is typically NOT TRUE of user testing?",
+    "options": {
+      "A": "You should not know who the test participants are, and they should not know who you are",
+      "B": "You should observe test participants using the system directly",
+      "C": "You should recruit test participants who are representative of your target users",
+      "D": "You should give test participants specific tasks to carry out using the system ee"
+    },
+    "answer": "A",
+    "id": 3105,
+    "sourcePage": 108
+  },
+  {
+    "page": 6,
+    "numberOnPage": 6,
+    "question": "Which is not an output modality commonly used in today's interactive applications?",
+    "options": {
+      "A": "Audio",
+      "B": "Visual",
+      "C": "Olfactory",
+      "D": "Tactile/Haptic"
+    },
+    "answer": "C",
+    "id": 3106,
+    "sourcePage": 109
+  },
+  {
+    "page": 6,
+    "numberOnPage": 7,
+    "question": "Which of the following is not a characteristic of sketches done for the purposes of ideation?",
+    "options": {
+      "A": "Quick",
+      "B": "Disposable",
+      "C": "Evocative",
+      "D": "Refined",
+      "E": "Ambiguous"
+    },
+    "answer": "D",
+    "id": 3107,
+    "sourcePage": 110
+  },
+  {
+    "page": 6,
+    "numberOnPage": 8,
+    "question": "Which of the following is not one of the qualities of well-design tasks for use in a user test?",
+    "options": {
+      "A": "Realistic",
+      "B": "Verifiable",
+      "C": "Doesn't \"lead the witness\"",
+      "D": "Leaves room for different users' interpretation De"
+    },
+    "answer": "D",
+    "id": 3108,
+    "sourcePage": 111
+  },
+  {
+    "page": 6,
+    "numberOnPage": 9,
+    "question": "Which of the following data types is typically not collected in a user test?",
+    "options": {
+      "A": "Task completion",
+      "B": "Task timing",
+      "C": "Critical incidents",
+      "D": "Expected purchase price D sa ant Ate IA RAR ct APA IARI Ack RA KK en tet?"
+    },
+    "answer": "D",
+    "id": 3109,
+    "sourcePage": 112
+  },
+  {
+    "page": 6,
+    "numberOnPage": 10,
+    "question": "Which of the following is not an example of a subjective measure that might be collected during a user test?",
+    "options": {
+      "A": "Perceived usability",
+      "B": "Desirability",
+      "C": "Perceived usefulness",
+      "D": "Task completion speed"
+    },
+    "answer": "D",
+    "id": 3110,
+    "sourcePage": 113
+  },
+  {
+    "page": 6,
+    "numberOnPage": 11,
+    "question": "Which new technological trend is not requiring designers to change how they prototype and test their systems?",
+    "options": {
+      "A": "Proliferation of screens (smart watches, embedded displays, etc.) for which designers need to design user experiences",
+      "B": "Instrumented environments",
+      "C": "Artificial Intelligence-based systems",
+      "D": "Virtual and augmented reality",
+      "E": "None of the others"
+    },
+    "answer": "E",
+    "id": 3111,
+    "sourcePage": 114
+  },
+  {
+    "page": 6,
+    "numberOnPage": 12,
+    "question": "Which of the following is not part of a typical UX design process?",
+    "options": {
+      "A": "Understanding the problem",
+      "B": "Generating possible solutions",
+      "C": "Establishing the sale price for a product",
+      "D": "Assessing prototypes and finding new problems"
+    },
+    "answer": "C",
+    "id": 3112,
+    "sourcePage": 115
+  },
+  {
+    "page": 6,
+    "numberOnPage": 13,
+    "question": "Which of the following is not a question that can be answered by getting feedback on wireframes?",
+    "options": {
+      "A": "Do screens contain the right functional components?",
+      "B": "Does the screen layout make sense?",
+      "C": "Is the displayed content ordered correctly?",
+      "D": "Do the screens provide adequate navigation?"
+    },
+    "answer": "C",
+    "id": 3113,
+    "sourcePage": 116
+  },
+  {
+    "page": 6,
+    "numberOnPage": 14,
+    "question": "Which of the following is not a characteristic of hi-fi prototypes?",
+    "options": {
+      "A": "They are more resource-intensive to develop",
+      "B": "They can be run by the tester without help",
+      "C": "They are of limited usefulness for testing usability",
+      "D": "They can be used as a part of the spec given to developers"
+    },
+    "answer": "C",
+    "id": 3114,
+    "sourcePage": 117
+  },
+  {
+    "page": 6,
+    "numberOnPage": 15,
+    "question": "Which of the following would you typically not include in a debrief interview?",
+    "options": {
+      "A": "Review of problems encountered during tasks",
+      "B": "General questions about perceived usefulness and comparisons to similar systems",
+      "C": "Demographic questions like age, gender, and education level",
+      "D": "A \"wrap-up\" question in which you ask participants for any additional thoughts that weren't covered already"
+    },
+    "answer": "C",
+    "id": 3115,
+    "sourcePage": 118
+  },
+  {
+    "page": 6,
+    "numberOnPage": 16,
+    "question": "Which of the following is not considered a primitive visual feature that is processed in the first, and fastest, stage of visual processing?",
+    "options": {
+      "A": "angle of intersection",
+      "B": "proximity",
+      "C": "shade/contrast",
+      "D": "motion"
+    },
+    "answer": "B",
+    "id": 3116,
+    "sourcePage": 119
+  },
+  {
+    "page": 6,
+    "numberOnPage": 17,
+    "question": "Which of the following is not another name for the kind of qualitative research methodology you learned in this course?",
+    "options": {
+      "A": "Ethnographic research.",
+      "B": "Contextual inquiry.",
+      "C": "User needs assessment.",
+      "D": "Socio-technical extraction."
+    },
+    "answer": "D",
+    "id": 3117,
+    "sourcePage": 120,
+    "duplicateOf": 3083
+  },
+  {
+    "page": 6,
+    "numberOnPage": 18,
+    "question": "Which of the following is not one of the three things you learned in this course?",
+    "options": {
+      "A": "Conducting semi-structured interviews",
+      "B": "Observing users",
+      "C": "Coding of qualitative texts",
+      "D": "Analyzing data with affinity walls"
+    },
+    "answer": "C",
+    "id": 3118,
+    "sourcePage": 121
+  },
+  {
+    "page": 6,
+    "numberOnPage": 19,
+    "question": "Which of the following is not an advantage of lo-fi prototyping?",
+    "options": {
+      "A": "You can identify problems before investing significant resources into a design direction.",
+      "B": "You can work out aspects of graphic design such as fonts and color schemes, which have the largest impact on user experience.",
+      "C": "Stakeholders are more likely to give honest feedback if they perceive that design ideas are \"sketchy\" rather than highly polished.",
+      "D": "Lo-fi prototypes are easy to change, allowing you to iterate more rapidly than you could if you were creating more complex prototypes."
+    },
+    "answer": "B",
+    "id": 3119,
+    "sourcePage": 122,
+    "duplicateOf": 3104
+  },
+  {
+    "page": 6,
+    "numberOnPage": 20,
+    "question": "Which new technological trend is not requiring designers to change how they prototype and test their systems?",
+    "options": {
+      "A": "Proliferation of screens (smart watches, embedded displays, etc.) for which designers need to design user experiences",
+      "B": "Instrumented environments",
+      "C": "Artificial Intelligence-based systems",
+      "D": "Virtual and augmented reality",
+      "E": "None of the above"
+    },
+    "answer": "E",
+    "id": 3120,
+    "sourcePage": 123,
+    "duplicateOf": 3111
+  },
+  {
+    "page": 7,
+    "numberOnPage": 1,
+    "question": "When choosing an environment to conduct a user test session, which of the following is not an important characteristic of your chosen site?",
+    "options": {
+      "A": "Distraction-free",
+      "B": "Private",
+      "C": "Dedicated only for conducting user tests",
+      "D": "Quiet"
+    },
+    "answer": "C",
+    "id": 3121,
+    "sourcePage": 124,
+    "duplicateOf": 3079
+  },
+  {
+    "page": 7,
+    "numberOnPage": 2,
+    "question": "About how long does an item remain in short-term memory if it is not actively maintained through rehearsal?",
+    "options": {
+      "A": "Less than one second",
+      "B": "A few seconds",
+      "C": "A few minutes",
+      "D": "Up to an hour"
+    },
+    "answer": "B",
+    "id": 3122,
+    "sourcePage": 125
+  },
+  {
+    "page": 7,
+    "numberOnPage": 3,
+    "question": "Bill Buxton claims that is not just a byproduct of design, but is central to design thinking and learning",
+    "options": {
+      "A": "Sketching",
+      "B": "Beauty",
+      "C": "Functionality",
+      "D": "User Testing A x 2 DI Dinvtan aha rina LhAna ahi IA ean nhAm nhi arin thidt LA mA nAn Adnan uni trA trina tam trana tin dine thikt LA UA anid trink han hai"
+    },
+    "answer": "A",
+    "id": 3123,
+    "sourcePage": 126
+  },
+  {
+    "page": 7,
+    "numberOnPage": 4,
+    "question": "Designing thoughtful defaults is important for several reasons. Which of the following is not a reason for designing good defaults",
+    "options": {
+      "A": "Defaults define out-of-the-box experience",
+      "B": "Defaults are easily changed",
+      "C": "Defaults decrease onboarding time",
+      "D": "Defaults can have large consequences"
+    },
+    "answer": "B",
+    "id": 3124,
+    "sourcePage": 127
+  },
+  {
+    "page": 7,
+    "numberOnPage": 5,
+    "question": "In user testing, we generally ask test participants to verbalize what they are thinking as they perform tasks What is not correct answer?",
+    "options": {
+      "A": "Debriefing",
+      "B": "The Think-Aloud Protocol",
+      "C": "What You See Is What You Get",
+      "D": "Screening"
+    },
+    "answer": "B",
+    "id": 3125,
+    "sourcePage": 128
+  },
+  {
+    "page": 7,
+    "numberOnPage": 6,
+    "question": "Which of the following is MOST true about offering a \"Don't Know\" option in your response categories?",
+    "options": {
+      "A": "Research shows people don't choose the \"Don't Know\" option when it's offered.",
+      "B": "You should always include a \"Don't Know\" option in your written surveys.",
+      "C": "It's best to do when the question asks for recall, not when asking for opinions.",
+      "D": "The \"Don't Know\" option should only be used for opinion questions."
+    },
+    "answer": "C",
+    "id": 3126,
+    "sourcePage": 130
+  },
+  {
+    "page": 7,
+    "numberOnPage": 7,
+    "question": "Which of the following is the MOST TRUE statement?",
+    "options": {
+      "A": "It can be hard to operationalize abstract concepts in a way that every respondent understands.",
+      "B": "The best way to start a survey is by writing some questions, and then iterating on them",
+      "C": "People are very consistent in how they answer questions over time",
+      "D": "Pre-testing a survey is rarely worth the time it takes"
+    },
+    "answer": "A",
+    "id": 3127,
+    "sourcePage": 131
+  },
+  {
+    "page": 7,
+    "numberOnPage": 8,
+    "question": "[oo Which of the following is the MOST TRUE about social exchange theory?",
+    "options": {
+      "A": "People consider the economic value to themselves of any given social exchange.",
+      "B": "People think about the risk to themselves primarily in considering social exchanges.",
+      "C": "People are really bad at guessing the cost/benefit of any given social exchange.",
+      "D": "People use trust as a basis to make a cost/benefit guess on the value of a social exchange Lo"
+    },
+    "answer": "D",
+    "id": 3128,
+    "sourcePage": 132
+  },
+  {
+    "page": 7,
+    "numberOnPage": 9,
+    "question": "Which of the following is the MOST TRUE statement about how people remember things?",
+    "options": {
+      "A": "People remember their past behavior well enough to give accurate survey responses",
+      "B": "Memory can be guided back to accuracy through careful prompts",
+      "C": "Memory fades over time, but people are good at remembering routine actions",
+      "D": "Memory fades over time, and often doesn't capture routine actions"
+    },
+    "answer": "D",
+    "id": 3129,
+    "sourcePage": 133
+  },
+  {
+    "page": 7,
+    "numberOnPage": 10,
+    "question": "Which of the following is the MOST TRUE statement?",
+    "options": {
+      "A": "It's better to get a low response rate from a small sample than it is to get a high response rate from a big sample.",
+      "B": "Response rates are only important for national, probability studies.",
+      "C": "Response rates are not connected to survey quality.",
+      "D": "It's better to get a high response rate from a small sample than a low response rate from a big sample."
+    },
+    "answer": "D",
+    "id": 3130,
+    "sourcePage": 134
+  },
+  {
+    "page": 7,
+    "numberOnPage": 11,
+    "question": "Which of the following is the MOST IMPORTANT consideration in picking what type of question type to use?",
+    "options": {
+      "A": "The demographic makeup of your population",
+      "B": "The type of analysis you plan on doing",
+      "C": "The type of sampling you're using",
+      "D": "The mode your survey will be delivered in"
+    },
+    "answer": "B",
+    "id": 3131,
+    "sourcePage": 136
+  },
+  {
+    "page": 7,
+    "numberOnPage": 12,
+    "question": "Which of the following statement about open-ended questions is most FALSE?",
+    "options": {
+      "A": "They are the easiest type of question to analyze",
+      "B": "They allow respondents to answer without limiting the range of responses",
+      "C": "They are more frequently skipped than other types of questions",
+      "D": "They are often used when we haven't pre-defined response categories"
+    },
+    "answer": "A",
+    "id": 3132,
+    "sourcePage": 137
+  },
+  {
+    "page": 7,
+    "numberOnPage": 13,
+    "question": "Factors that capture the ways in which you expect your users to differ can be expressed as",
+    "options": {
+      "A": "Recruiting criteria",
+      "B": "Diversity criteria",
+      "C": "Success criteria",
+      "D": "Tasks Le"
+    },
+    "answer": "B",
+    "id": 3133,
+    "sourcePage": 138
+  },
+  {
+    "page": 7,
+    "numberOnPage": 14,
+    "question": "When reporting an issue found through user testing you should report all of the following EXCEPT",
+    "options": {
+      "A": "Recommendation",
+      "B": "Severity",
+      "C": "Evidence",
+      "D": "Clear description of the problem",
+      "E": "The names of the participants who encountered them"
+    },
+    "answer": "E",
+    "id": 3134,
+    "sourcePage": 139
+  },
+  {
+    "page": 7,
+    "numberOnPage": 15,
+    "question": "All of the following are important to do when observing a user testing session, EXCEPT for:",
+    "options": {
+      "A": "Capture recordings of the user's screen",
+      "B": "Capture audio recordings of the user thinking aloud",
+      "C": "Notify participants as soon as they have met each task's success criteria",
+      "D": "Use a logging sheet to capture when critical incidents occur"
+    },
+    "answer": "C",
+    "id": 3135,
+    "sourcePage": 140
+  },
+  {
+    "page": 7,
+    "numberOnPage": 16,
+    "question": "When making a recommendation for how to address a problem, you should consider all of the following EXCEPT:",
+    "options": {
+      "A": "Identifying best practices from competitors' products",
+      "B": "Declining to provide a recommendation, admitting you have no good ideas",
+      "C": "Suggesting further research to better characterize the problem",
+      "D": "Recommending an iterative design process to find the best solution"
+    },
+    "answer": "B",
+    "id": 3136,
+    "sourcePage": 141
+  },
+  {
+    "page": 7,
+    "numberOnPage": 17,
+    "question": "Neilsen's set of 10 heuristics was designed to meet all of the following criteria EXCEPT",
+    "options": {
+      "A": "The heuristics are exhaustive and detailed enough to tell a designer exactly what elements to include in every possible part of every possible user interface",
+      "B": "The heuristics are applicable to a wide range of different platforms and interaction modalities (e.g., mouse-and-keyboard, touch-based mobile, speech)",
+      "C": "The heuristics are compact enough to be taught to a non-expert within a few hours",
+      "D": "The heuristics are backed up by systematic research showing that the set of heuristics could explain a range of usability problems observed across numerous usability tests with multiple systems"
+    },
+    "answer": "A",
+    "id": 3137,
+    "sourcePage": 142
+  },
+  {
+    "page": 7,
+    "numberOnPage": 18,
+    "question": "Which of the following is a BAD question to ask during a user needs assessment interview?",
+    "options": {
+      "A": "Could you tell me about a recent time when you used the \"undo\" feature?",
+      "B": "Tell me more -- what was the context when you used the \"undo\" feature?",
+      "C": "What functionality would you have liked to have to complete the task?",
+      "D": "Was it because you didn't know about the \"undo\" feature that you were unable to complete the task? Lo"
+    },
+    "answer": "D",
+    "id": 3138,
+    "sourcePage": 143
+  },
+  {
+    "page": 7,
+    "numberOnPage": 19,
+    "question": "Which of the following is the LEAST true statement about open-ended questions?",
+    "options": {
+      "A": "Responses require effort for coding and analysis.",
+      "B": "Respondents are more likely to skip open-ended questions.",
+      "C": "They can require more data cleaning.",
+      "D": "They provide bad data because responses are not standardized."
+    },
+    "answer": "D",
+    "id": 3139,
+    "sourcePage": 144
+  },
+  {
+    "page": 7,
+    "numberOnPage": 20,
+    "question": "Which of the following is LEAST true about extrinsic, or material, incentives?",
+    "options": {
+      "A": "You should frame incentives as gifts, not as payment",
+      "B": "Incentives given *before* the survey are more effective",
+      "C": "The more money you offer, the more likely people are to participate",
+      "D": "Lotteries (a chance to win a larger reward) are not very effective as incentives"
+    },
+    "answer": "C",
+    "id": 3140,
+    "sourcePage": 145
+  },
+  {
+    "page": 8,
+    "numberOnPage": 1,
+    "question": "Which of the following is a STRENGTH of surveys as a UX method?",
+    "options": {
+      "A": "Measuring Behaviors",
+      "B": "Understanding why people do things",
+      "C": "Describing Opinions of a Group of People",
+      "D": "Conducting Exploratory Work"
+    },
+    "answer": "C",
+    "id": 3141,
+    "sourcePage": 146
+  },
+  {
+    "page": 8,
+    "numberOnPage": 2,
+    "question": "Download Attachment #2 as.pdf and read in full to answer questions 3 and 4. Which of these aspects make the key findings section particularly good?",
+    "options": {
+      "A": "It lists UX issues ranked by priority based on evidence of actual user testing feedback",
+      "B": "It includes actionable recommendations of how to fix the UX issues",
+      "C": "It includes visuals of possible designs that would fix the UX issues",
+      "D": "It only focuses on two main UX issues"
+    },
+    "answer": "AB",
+    "id": 3142,
+    "sourcePage": 148
+  },
+  {
+    "page": 8,
+    "numberOnPage": 3,
+    "question": "Read the project brief, then the scenario. What conclusions might you draw from the scenario that would inform the design? (Select all that apply)",
+    "options": {
+      "A": "George needs the app to work efficiently, since he will likely be using it at the end of the day and will only have a short period to sell the leftover food",
+      "B": "Consumers need to find out about the food availability right when it is posted, since it will likely be at the end of the day. Pushing notifications to consumers when food is posted would be useful in the app",
+      "C": "The app's success will rely on users following through on picking up their purchases; making users pay in-app rather than in the store will increase the likelihood that all the food is picked up",
+      "D": "George does not care about making money since he is throwing the food away anyways, so all the leftover food should be posted on the app for free"
+    },
+    "answer": "ABC",
+    "id": 3143,
+    "sourcePage": 149
+  },
+  {
+    "page": 8,
+    "numberOnPage": 4,
+    "question": "Imagine a new shopping website named Nomaza.com. Nomaza.com offers a wide range of products. Which of the following might be a reasonable goal for a Nomaza.com user test? (choose all that apply)",
+    "options": {
+      "A": "Can experienced online shoppers use Nomaza.com to find and purchase household items?",
+      "B": "How likely are first-time users of Nomaza.com to return for a second visit?",
+      "C": "Are novice Internet shoppers able to complete the checkout process on Nomaza.com?",
+      "D": "Can people find stuff they want on Nomaza.com?"
+    },
+    "answer": "AC",
+    "id": 3144,
+    "sourcePage": 150
+  },
+  {
+    "page": 8,
+    "numberOnPage": 5,
+    "question": "If this was the full test plan, which of the following suggestions might help clarify the plan?",
+    "options": {
+      "A": "Specify Recruiting Criteria",
+      "B": "Complete the Test Script",
+      "C": "Add task instructions for users to replicate",
+      "D": "Include Follow-Up Questions"
+    },
+    "answer": "BC",
+    "id": 3145,
+    "sourcePage": 151
+  },
+  {
+    "page": 8,
+    "numberOnPage": 6,
+    "question": "What deliverables are typically used to tell user stories? (pick all that apply)",
+    "options": {
+      "A": "Personas",
+      "B": "Scenarios",
+      "C": "Diary Study",
+      "D": "Customer Journey Maps"
+    },
+    "answer": "ABD",
+    "id": 3146,
+    "sourcePage": 152
+  },
+  {
+    "page": 8,
+    "numberOnPage": 7,
+    "question": "For each UX issue, the report includes the:",
+    "options": {
+      "A": "Severity",
+      "B": "Evidence",
+      "C": "Clear description of the problem",
+      "D": "Name of the participant who encountered the issue"
+    },
+    "answer": "ABC",
+    "id": 3147,
+    "sourcePage": 153
+  },
+  {
+    "page": 8,
+    "numberOnPage": 8,
+    "question": "Which of the following components of UX were discussed in this week's lectures? Check all that apply.",
+    "options": {
+      "A": "Value",
+      "B": "Usability",
+      "C": "Desirability",
+      "D": "Adoptability",
+      "E": "Scrollability",
+      "F": "Monetizability"
+    },
+    "answer": "ABCD",
+    "id": 3148,
+    "sourcePage": 154
+  },
+  {
+    "page": 8,
+    "numberOnPage": 9,
+    "question": "What makes these good research questions for a needs-finding study? (Select All that apply)",
+    "options": {
+      "A": "They're open ended, not leading",
+      "B": "They seek to learn about what problems there are with existing solutions",
+      "C": "They are questions that can be answered by interviewing the target user population",
+      "D": "They will help the researcher learn how users currently complete the activity that their design will try to improve"
+    },
+    "answer": "ABCD",
+    "id": 3149,
+    "sourcePage": 155
+  },
+  {
+    "page": 8,
+    "numberOnPage": 10,
+    "question": "What alternative approaches can you use to engage people in research results? (pick all that apply)",
+    "options": {
+      "A": "Extensive report",
+      "B": "Have stakeholders attend study sessions and participate in analyzing and interpreting data",
+      "C": "Create and show videos of critical moments during tests",
+      "D": "Emails that include bullet point findings",
+      "E": "Brief executive summary"
+    },
+    "answer": "BCDE",
+    "id": 3150,
+    "sourcePage": 156
+  },
+  {
+    "page": 8,
+    "numberOnPage": 11,
+    "question": "What elements should a script include for a remote moderated test?",
+    "options": {
+      "A": "Obtain Consent",
+      "B": "Make introductions",
+      "C": "Build rapport",
+      "D": "Exact instructions for how to complete tasks",
+      "E": "Set expectations for duration and content of test",
+      "F": "Set expectations for role of moderator and observer"
+    },
+    "answer": "ABCEF",
+    "id": 3151,
+    "sourcePage": 157
+  },
+  {
+    "page": 8,
+    "numberOnPage": 12,
+    "question": "Which of these are good research questions for a needs-finding study?",
+    "options": {
+      "A": "They will help the researcher learn how users currently complete the activity that their design will try to improve",
+      "B": "They are questions that can be answered by interviewing the target user population",
+      "D": "They seek to learn about what problems there are with existing solutions",
+      "C": "They are open ended, not leading"
+    },
+    "answer": "ABCD",
+    "id": 3152,
+    "sourcePage": 158
+  },
+  {
+    "page": 8,
+    "numberOnPage": 13,
+    "question": "What kinds of information might be part of qualitative data analysis? |. Quotations from interviews ll. Observed actions or events lll. Inferred facts from interviews",
+    "options": {
+      "A": "lonly",
+      "B": "| and Il only",
+      "C": "llonly",
+      "D": "|, Il and Ill"
+    },
+    "answer": "D",
+    "id": 3153,
+    "sourcePage": 161
+  },
+  {
+    "page": 8,
+    "numberOnPage": 14,
+    "question": "Which of the following steps will you be learning about in this user needs assessment course? |. Preparing for and conducting interviews. Il. Observing users using a product or service. Ill. Analyzing qualitative data to arrive at insights.",
+    "options": {
+      "A": "land Il",
+      "B": "land Ill",
+      "C": "Mand Ill",
+      "D": "I, Il, and Ill"
+    },
+    "answer": "D",
+    "id": 3154,
+    "sourcePage": 162
+  },
+  {
+    "page": 8,
+    "numberOnPage": 15,
+    "question": "In which of the following contexts can you use qualitative data analysis? |. Understanding user needs ll. Making sense of non-quantitative data Ill. Condensing complex information",
+    "options": {
+      "A": "lonly",
+      "B": "landil",
+      "C": "land Ill",
+      "D": "1, Hl, and Ill"
+    },
+    "answer": "D",
+    "id": 3155,
+    "sourcePage": 163
+  },
+  {
+    "page": 8,
+    "numberOnPage": 16,
+    "question": "Which of the following is worth noticing in an observation? |. The physical context where the user is ll. Pauses or missteps the user makes Ill. Comments the user makes during a task",
+    "options": {
+      "A": "ll only",
+      "B": "Ill only",
+      "C": "land Ill",
+      "D": "|, land Ill"
+    },
+    "answer": "D",
+    "id": 3156,
+    "sourcePage": 164
+  },
+  {
+    "page": 8,
+    "numberOnPage": 17,
+    "question": "Which of the following should you aim for when arranging interviews? I. The participant should be a user or potential user of the product or service. II. The interview should be held where the product or service would normally be used. III. The time should be when the product or service would normally be used.",
+    "options": {
+      "A": "I and II",
+      "B": "I and III",
+      "C": "II and III",
+      "D": "I, II and III"
+    },
+    "answer": "D",
+    "id": 3157,
+    "sourcePage": 165
+  },
+  {
+    "page": 8,
+    "numberOnPage": 18,
+    "question": "In a semi-structured interview, why would you want to avoid a question such as \"Was it because you didn't know about the 'undo' feature that you were unable to complete the task?\" I. It is leading -- you are feeding a possible answer to the participant. IL. It is closed-ended -- this is a yes-or-no question Ill. It is judgmental -- you are suggesting that the participant's lack of knowledge was a problem.",
+    "options": {
+      "A": "land Il",
+      "B": "land Ill",
+      "C": "Iland Ill",
+      "D": "|, Nand Ill"
+    },
+    "answer": "D",
+    "id": 3158,
+    "sourcePage": 166
+  },
+  {
+    "page": 8,
+    "numberOnPage": 19,
+    "question": "Effective ways of delivering findings to stakeholders include |. Anecdotes of critical moments ll. Retelling what happened during each session of a usability test lll. Having stakeholders attend study sessions and participating in analysing or interpreting data IV. Quotes or videos of critical moments",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "D": "I, III, IV",
+      "C": "II, IV"
+    },
+    "answer": "D",
+    "id": 3159,
+    "sourcePage": 167
+  },
+  {
+    "page": 8,
+    "numberOnPage": 20,
+    "question": "What types of research activities are typically engaged in by 2-3 people design teams?",
+    "options": {
+      "A": "I. A/B Testing",
+      "B": "II. Feature driven usability testing",
+      "C": "III. Competitive testing",
+      "D": "IV. Attitudinal analytics (surveys)",
+      "E": "II and IV"
+    },
+    "answer": "C",
+    "id": 3160,
+    "sourcePage": 169
+  },
+  {
+    "page": 9,
+    "numberOnPage": 1,
+    "question": "What consideration is not important when deciding what platform or technology solution you will use for testing? |. Metrics that may be collected ll. Panel access Ill. Network speed requirements IV. Screen, Audio, or other data collection, as appropriate for test V. None of the above",
+    "options": {
+      "A": "I, II, III",
+      "B": "I, II",
+      "C": "II, IV",
+      "D": "I, III, IV",
+      "E": "V"
+    },
+    "answer": "E",
+    "id": 3161,
+    "sourcePage": 170
+  },
+  {
+    "page": 9,
+    "numberOnPage": 2,
+    "question": "Which of the following are good guidelines for using an interview protocol? |. Memorize the protocol, so that you don't have to refer to it that much during the interview itself ll. Avoid asking any questions that are not open-ended lll. Ask the questions exactly as they are written and in the order they are written",
+    "options": {
+      "A": "lonly",
+      "B": "Il only",
+      "C": "Ill only",
+      "D": "land Ill"
+    },
+    "answer": "A",
+    "id": 3162,
+    "sourcePage": 171
+  },
+  {
+    "page": 9,
+    "numberOnPage": 3,
+    "question": "Which of the following are techniques that might be used in qualitative data analysis? |. Clustering Il. Running a statistical regression Ill. Finding patterns",
+    "options": {
+      "A": "lonly",
+      "B": "Ill only",
+      "C": "land Ill",
+      "D": "I, land Ill c 2 Rihfina Lo thiirAt nAn anus AA nA thA Alonin adn diinn trana nhAn tinh Afb liAis Ainh tinh"
+    },
+    "answer": "C",
+    "id": 3163,
+    "sourcePage": 172
+  },
+  {
+    "page": 9,
+    "numberOnPage": 4,
+    "question": "Once you have a list of core questions to ask, what should you do next in constructing the interview protocol? |. Cluster related questions together. Il. Try the questions on a potential subject Ill. Add follow-up questions.",
+    "options": {
+      "A": "land il",
+      "B": "land Ill",
+      "C": "land Ill",
+      "D": "|, land Ill"
+    },
+    "answer": "B",
+    "id": 3164,
+    "sourcePage": 173
+  },
+  {
+    "page": 9,
+    "numberOnPage": 5,
+    "question": "Which of the following is a method one would use to learn more about users' attitudes, preferences, context, and needs? |. Interviews (Remote or in-person) ll. Clickstream analytics Ill. Behavioral analytics (surveys) IV. AB Testing",
+    "options": {
+      "A": "land Il",
+      "B": "land Ill",
+      "C": "I, Il, andIV",
+      "D": "1, I, Ill, and IV"
+    },
+    "answer": "B",
+    "id": 3165,
+    "sourcePage": 174
+  },
+  {
+    "page": 9,
+    "numberOnPage": 6,
+    "question": "At what point in a product or service's life-cycle should one conduct a user needs assessment? |. Before designing a new product or service. ll. Before considering a re-design of an existing product or service. Ill. Just before releasing a new product or service that has already been designed.",
+    "options": {
+      "A": "I only",
+      "B": "II only",
+      "C": "I and II",
+      "D": "II and III"
+    },
+    "answer": "C",
+    "id": 3166,
+    "sourcePage": 175
+  },
+  {
+    "page": 9,
+    "numberOnPage": 7,
+    "question": "Under what circumstances is remote testing appropriate? |. It is difficult to access the product/experience ll. Participants from a variety of geographic locations are needed lll. Time is limited IV. There is a lot of Personally Identifiable Information required. V. All of the above",
+    "options": {
+      "A": "1H, ll",
+      "B": "1, IV",
+      "C": "1, ILIV",
+      "D": "I, Il Ex"
+    },
+    "answer": "D",
+    "id": 3167,
+    "sourcePage": 176
+  },
+  {
+    "page": 9,
+    "numberOnPage": 8,
+    "question": "When is it most appropriate to conduct remote moderated testing? |. Redirection and discussion are required ll. Users can complete tasks without instruction Ill. Finding participants local to your lab is challenging IV. You want to see and explore user's digital contexts V. All of the above",
+    "options": {
+      "A": "1, i, il",
+      "B": "LIV",
+      "C": "1, Ill",
+      "D": "1, Ill, IV",
+      "E": "V ee TT Te"
+    },
+    "answer": "D",
+    "id": 3168,
+    "sourcePage": 177
+  },
+  {
+    "page": 9,
+    "numberOnPage": 9,
+    "question": "Which of the following are the hallmarks of good research questions? |. Clarity Il. Consistency Ill. Ability to be answered IV. Ethical excellence V. Significance",
+    "options": {
+      "A": "I, Il, and Ill",
+      "B": "|, Il, and V",
+      "C": "VandV",
+      "D": "Il, IV, and V",
+      "E": "1, Ill, IV, and V"
+    },
+    "answer": "E",
+    "id": 3169,
+    "sourcePage": 178
+  },
+  {
+    "page": 9,
+    "numberOnPage": 10,
+    "question": "What preparations should you make ahead of both remote moderated as well as unmoderated testing? |. Review alternate paths IL. Be online 10-15 minutes early Ill. Determine what metrics to collect and how IV. Obtain informed consent V. Overrecruit VI. All of the above",
+    "options": {
+      "A": "1, Ul, Ill",
+      "B": "1 LIV, V",
+      "C": "U,V, Vv",
+      "D": "1,1IV",
+      "E": "Vi"
+    },
+    "answer": "B",
+    "id": 3170,
+    "sourcePage": 179
+  },
+  {
+    "page": 9,
+    "numberOnPage": 11,
+    "question": "Question | Write the stages of action in the correct order in the text box below. There is no need to number them, and feel free to separate each stage with a comma: |. Interpreting the State of the World Il. Selecting the Action Ill. Evaluating the Outcome IV. Executing the Action V. Forming the Intention VI. Perceiving the State of the World",
+    "options": {
+      "A": "V, IL, IV, VI, 1, UI",
+      "B": "|, Il, IIL, IV, V, VI"
+    },
+    "answer": "A",
+    "id": 3171,
+    "sourcePage": 180
+  },
+  {
+    "page": 9,
+    "numberOnPage": 12,
+    "question": "UX research at scale can be conducted by teams at these levels of maturity |. UX team of one (Awareness) ll. Mobilization Ill. Collaboration IV. Executive Buy-In V. UX Obsessed",
+    "options": {
+      "A": "1,1, Il",
+      "B": "Ill, IV, V",
+      "C": "IV, V",
+      "D": "All"
+    },
+    "answer": "D",
+    "id": 3172,
+    "sourcePage": 181
+  },
+  {
+    "page": 9,
+    "numberOnPage": 13,
+    "question": "______ means to make an idea real or concrete.",
+    "options": {
+      "A": "Assessment",
+      "B": "Communication",
+      "C": "Reification",
+      "D": "Reflection"
+    },
+    "answer": "C",
+    "id": 3173,
+    "sourcePage": 183
+  },
+  {
+    "page": 9,
+    "numberOnPage": 14,
+    "question": "What is another name for the affinity wall technique?",
+    "options": {
+      "A": "The KJ Method",
+      "B": "Relatedness clustering",
+      "C": "Holmes deduction",
+      "D": "Jiro Dreams of Sushi"
+    },
+    "answer": "A",
+    "id": 3174,
+    "sourcePage": 184
+  },
+  {
+    "page": 9,
+    "numberOnPage": 15,
+    "question": "What kind of interviews are you learning about in this course?",
+    "options": {
+      "A": "Group, remote, semi-structured.",
+      "B": "Individual, remote, structured.",
+      "C": "Individual, in-person, semi-structured.",
+      "D": "Group, in-person, unstructured. ua"
+    },
+    "answer": "C",
+    "id": 3175,
+    "sourcePage": 185
+  },
+  {
+    "page": 9,
+    "numberOnPage": 16,
+    "question": "What does the System Usability Scale measure?",
+    "options": {
+      "A": "Perceived usability",
+      "B": "Number of tasks successfully completed",
+      "C": "Frequency of errors",
+      "D": "Number of usability principles violated"
+    },
+    "answer": "A",
+    "id": 3176,
+    "sourcePage": 186
+  },
+  {
+    "page": 9,
+    "numberOnPage": 17,
+    "question": "What term is used to describe the actual questions you ask people?",
+    "options": {
+      "A": "Respondent",
+      "B": "Instrument",
+      "C": "Frame",
+      "D": "Population"
+    },
+    "answer": "B",
+    "id": 3177,
+    "sourcePage": 187
+  },
+  {
+    "page": 9,
+    "numberOnPage": 18,
+    "question": "What type of question is the following survey question How much do you like or dislike participating in surveys? 1 Extremely like 2 Somewhat like 3 Neither like nor dislike 4 Somewhat dislike 5 Extremely dislike",
+    "options": {
+      "A": "Bipolar ordinal",
+      "B": "Unipolar ordinal",
+      "C": "Nominal",
+      "D": "Open-ended"
+    },
+    "answer": "A",
+    "id": 3178,
+    "sourcePage": 188
+  },
+  {
+    "page": 9,
+    "numberOnPage": 19,
+    "question": "What technique can you use to learn about how large numbers of users navigate through an experience during the Optimization phase?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Analytics Review",
+      "C": "AJB testing",
+      "D": "Remote usability testing"
+    },
+    "answer": "B",
+    "id": 3179,
+    "sourcePage": 189
+  },
+  {
+    "page": 9,
+    "numberOnPage": 20,
+    "question": "What was the title of this course?",
+    "options": {
+      "A": "Understanding User Needs",
+      "B": "Designing User Experience",
+      "C": "Surveying Users at Scale",
+      "D": "Analyzing User Data"
+    },
+    "answer": "A",
+    "id": 3180,
+    "sourcePage": 191
+  },
+  {
+    "page": 10,
+    "numberOnPage": 1,
+    "question": "Which of the following research techniques were taught in this specific course?",
+    "options": {
+      "A": "Experience sampling",
+      "B": "A/B testing",
+      "C": "Semi-structured interviews",
+      "D": "Surveys and questionnaires"
+    },
+    "answer": "C",
+    "id": 3181,
+    "sourcePage": 192
+  },
+  {
+    "page": 10,
+    "numberOnPage": 2,
+    "question": "Which of the following is not a phase in the iterative design process?",
+    "options": {
+      "A": "Build",
+      "B": "Design",
+      "C": "Stylize",
+      "D": "Assess"
+    },
+    "answer": "C",
+    "id": 3182,
+    "sourcePage": 193
+  },
+  {
+    "page": 10,
+    "numberOnPage": 3,
+    "question": "Which of the following is not a method for doing ideation?",
+    "options": {
+      "A": "Brainstorming",
+      "B": "Mind-mapping",
+      "C": "Timed idea generation",
+      "D": "Tradeoff analysis",
+      "E": "Sketching"
+    },
+    "answer": "D",
+    "id": 3183,
+    "sourcePage": 194
+  },
+  {
+    "page": 10,
+    "numberOnPage": 4,
+    "question": "Which of the following observation methodologies did you learn in this course?",
+    "options": {
+      "A": "Sit-and-stare methodology",
+      "B": "Shock-and-awe technique",
+      "C": "Think-aloud protocol",
+      "D": "Poke-or-nudge routine"
+    },
+    "answer": "C",
+    "id": 3184,
+    "sourcePage": 195
+  },
+  {
+    "page": 10,
+    "numberOnPage": 5,
+    "question": "Which of the following data types is arguably the most important to capture when conducting a formative, problem-finding user test?",
+    "options": {
+      "A": "Critical incidents",
+      "B": "Perceived usability",
+      "C": "Suggested improvements",
+      "D": "Participant demographics"
+    },
+    "answer": "A",
+    "id": 3185,
+    "sourcePage": 196
+  },
+  {
+    "page": 10,
+    "numberOnPage": 6,
+    "question": "Which position on the social effects of technology claims that technological adoption is primarily governed by the needs of different social groups and that it has little to do with the properties of the actual technology?",
+    "options": {
+      "A": "Social determinists",
+      "B": "Technical determinists",
+      "C": "Interactionists"
+    },
+    "answer": "A",
+    "id": 3186,
+    "sourcePage": 197
+  },
+  {
+    "page": 10,
+    "numberOnPage": 7,
+    "question": "Which component of the QOC framework articulates conditions or constraints that the design needs to meet?",
+    "options": {
+      "A": "Questions",
+      "B": "Options",
+      "C": "Criteria",
+      "D": "None of the others"
+    },
+    "answer": "C",
+    "id": 3187,
+    "sourcePage": 198
+  },
+  {
+    "page": 10,
+    "numberOnPage": 8,
+    "question": "Which type of recruiting criteria would the following question screen for? \"In the past week, how many hours did you spend completing coursework on edX? 0, 1-2, 3-5, or more than 5\"",
+    "options": {
+      "A": "Expertise",
+      "B": "Behavioral",
+      "C": "Characteristic",
+      "D": "Attitudinal"
+    },
+    "answer": "B",
+    "id": 3188,
+    "sourcePage": 199
+  },
+  {
+    "page": 10,
+    "numberOnPage": 9,
+    "question": "Which type of question asks the respondent to compare categories where there is no inherent order between the choices?",
+    "options": {
+      "A": "Ordinal closed-ended",
+      "B": "Descriptive open-ended",
+      "C": "Nominal closed-ended",
+      "D": "List-of-items open-ended"
+    },
+    "answer": "C",
+    "id": 3189,
+    "sourcePage": 200
+  },
+  {
+    "page": 10,
+    "numberOnPage": 10,
+    "question": "About how many key findings should be included in a typical user test report?",
+    "options": {
+      "A": "1",
+      "B": "2-3",
+      "C": "5-10",
+      "D": "20-50"
+    },
+    "answer": "C",
+    "id": 3190,
+    "sourcePage": 202
+  },
+  {
+    "page": 10,
+    "numberOnPage": 11,
+    "question": "Acollection of associated concepts in long-term memory is called what?",
+    "options": {
+      "A": "A thought",
+      "B": "Aschema Cc. Amule",
+      "D": "A gestalt"
+    },
+    "answer": "B",
+    "id": 3191,
+    "sourcePage": 203
+  },
+  {
+    "page": 10,
+    "numberOnPage": 12,
+    "question": "= to Bill Moggridge, \"A representation of a design, made before the final solution exists\" is called a:",
+    "options": {
+      "A": "Design representation",
+      "B": "Time capsule",
+      "C": "Prototype",
+      "D": "Brainstorm"
+    },
+    "answer": "C",
+    "id": 3192,
+    "sourcePage": 204
+  },
+  {
+    "page": 10,
+    "numberOnPage": 13,
+    "question": "A feature of an environment or system that communicates through verbiage or imagery what will happen if an action is taken is called",
+    "options": {
+      "A": "A signifier",
+      "B": "A signal",
+      "C": "Feedback",
+      "D": "An icon"
+    },
+    "answer": "A",
+    "id": 3193,
+    "sourcePage": 205
+  },
+  {
+    "page": 10,
+    "numberOnPage": 14,
+    "question": "A feature of an environment or system that, by its shape and appearance, suggests to a person that a particular action could be taken is called",
+    "options": {
+      "A": "An affordance",
+      "B": "A signal",
+      "C": "A constraint",
+      "D": "A signpost"
+    },
+    "answer": "A",
+    "id": 3194,
+    "sourcePage": 206
+  },
+  {
+    "page": 10,
+    "numberOnPage": 15,
+    "question": "A change in an environment or system that indicates that a user's action was recognized and communicates the result of that action is called:",
+    "options": {
+      "A": "Response time",
+      "B": "A signal",
+      "C": "Feedback",
+      "D": "A dialogue box"
+    },
+    "answer": "C",
+    "id": 3195,
+    "sourcePage": 207
+  },
+  {
+    "page": 10,
+    "numberOnPage": 16,
+    "question": "By helping users form effective we can help users to predict the results of actions they haven't yet performed using a system",
+    "options": {
+      "A": "System images",
+      "B": "Assumptions",
+      "C": "Feedback",
+      "D": "Conceptual models CC"
+    },
+    "answer": "D",
+    "id": 3196,
+    "sourcePage": 208
+  },
+  {
+    "page": 10,
+    "numberOnPage": 17,
+    "question": "Bill Buxton claims that ______ is not just a byproduct of design, but is central to design thinking and learning.",
+    "options": {
+      "A": "Sketching",
+      "B": "Beauty",
+      "C": "Functionality",
+      "D": "User Testing"
+    },
+    "answer": "A",
+    "id": 3197,
+    "sourcePage": 209,
+    "duplicateOf": 3123
+  },
+  {
+    "page": 10,
+    "numberOnPage": 18,
+    "question": "Reducing the set of available actions to only those that are possible given a particular state of the system would be an example of applying:",
+    "options": {
+      "A": "Feedback",
+      "B": "Constraints",
+      "C": "Conceptual Models",
+      "D": "Mapping"
+    },
+    "answer": "B",
+    "id": 3198,
+    "sourcePage": 210
+  },
+  {
+    "page": 10,
+    "numberOnPage": 19,
+    "question": "A basic ethical principle of research involving human subjects that states that researchers need to confirm that Participants in a study know the purpose of the study, what they will be asked to do, their right to withdraw or refuse to comply with aspects of the study, and what will be done with the data is",
+    "options": {
+      "A": "Usability",
+      "B": "Perceived usefulness",
+      "C": "Acquiescence",
+      "D": "Informed Consent"
+    },
+    "answer": "D",
+    "id": 3199,
+    "sourcePage": 211
+  },
+  {
+    "page": 10,
+    "numberOnPage": 20,
+    "question": "A model of the design process that shows both the iterative nature and also how it progresses towards an end goal is:",
+    "options": {
+      "A": "The spiral model",
+      "B": "The waterfall model",
+      "C": "The hub-and-spoke model",
+      "D": "The wave model"
+    },
+    "answer": "A",
+    "id": 3200,
+    "sourcePage": 212
+  },
+  {
+    "page": 11,
+    "numberOnPage": 1,
+    "question": "According to the instructor, __ information is understanding, and understanding is intelligence. Fill in the blank.",
+    "options": {
+      "A": "Rearranging",
+      "B": "Condensing",
+      "C": "Creating",
+      "D": "Eliminating"
+    },
+    "answer": "B",
+    "id": 3201,
+    "sourcePage": 213
+  },
+  {
+    "page": 11,
+    "numberOnPage": 2,
+    "question": "According to the original research on short-term memory, how many \"items\" can a person retain in short-term memory at one time?",
+    "options": {
+      "A": "One or two",
+      "B": "About 7",
+      "C": "About 10",
+      "D": "There is no measurable limit"
+    },
+    "answer": "B",
+    "id": 3202,
+    "sourcePage": 214
+  },
+  {
+    "page": 11,
+    "numberOnPage": 3,
+    "question": "According to Wikipedia, a \"direct manipulation interface\" is one that features \"continuous representation of objects of interest and rapid, reversible, and incremental actions and feedback.\" The \"continuous representation of objects of interest\" is best aligned with which principle of good UI design?",
+    "options": {
+      "A": "Prevent errors before they happen",
+      "B": "Support recognition over recall",
+      "C": "Employ aesthetic and minimalist design",
+      "D": "Support user control and freedom"
+    },
+    "answer": "B",
+    "id": 3203,
+    "sourcePage": 215
+  },
+  {
+    "page": 11,
+    "numberOnPage": 4,
+    "question": "Brainstorming, morphological analysis, and \"the worst idea\" are examples of what kind of technique?",
+    "options": {
+      "A": "Ideation",
+      "B": "Lo-fi prototyping",
+      "C": "Convergence",
+      "D": "Poor"
+    },
+    "answer": "A",
+    "id": 3204,
+    "sourcePage": 216
+  },
+  {
+    "page": 11,
+    "numberOnPage": 5,
+    "question": "Clear \"tests\" that determine whether someone is \"in\" or \"out\" of the target population for a user test are",
+    "options": {
+      "A": "Recruiting criteria",
+      "B": "Diversity criteria Ic User tests",
+      "D": "Tasks"
+    },
+    "answer": "A",
+    "id": 3205,
+    "sourcePage": 217
+  },
+  {
+    "page": 11,
+    "numberOnPage": 6,
+    "question": "Critical incidents and verbal reports are both examples of what kind of user testing data?",
+    "options": {
+      "A": "Quantitative",
+      "B": "Qualitative",
+      "C": "Insignificant",
+      "D": "Performance"
+    },
+    "answer": "B",
+    "id": 3206,
+    "sourcePage": 218
+  },
+  {
+    "page": 11,
+    "numberOnPage": 7,
+    "question": "Designing thoughtful defaults is important for several reasons. Which of the following is not a reason for designing good defaults",
+    "options": {
+      "A": "Defaults define out-of-the-box experience",
+      "B": "Defaults are easily changed.",
+      "C": "Defaults decrease onboarding time",
+      "D": "Defaults can have large consequences."
+    },
+    "answer": "B",
+    "id": 3207,
+    "sourcePage": 219,
+    "duplicateOf": 3124
+  },
+  {
+    "page": 11,
+    "numberOnPage": 8,
+    "question": "For a system's response to user input to be perceived as \"instantaneous\" by the user, what is the maximum time that can elapse between the user's action and the system response?",
+    "options": {
+      "A": "10 milliseconds",
+      "B": "100 milliseconds",
+      "C": "1 second",
+      "D": "1 minute"
+    },
+    "answer": "B",
+    "id": 3208,
+    "sourcePage": 220
+  },
+  {
+    "page": 11,
+    "numberOnPage": 9,
+    "question": "Factors that capture the ways in which you expect your users to differ can be expressed as",
+    "options": {
+      "A": "Recruiting criteria",
+      "B": "Diversity criteria",
+      "C": "Success criteria",
+      "D": "Tasks CT"
+    },
+    "answer": "B",
+    "id": 3209,
+    "sourcePage": 221,
+    "duplicateOf": 3133
+  },
+  {
+    "page": 11,
+    "numberOnPage": 10,
+    "question": "Multiple choice questions like this are really just survey questions! What type of survey question is this?",
+    "options": {
+      "A": "Nominal closed-ended, choice unforced",
+      "B": "Nominal closed-ended, choice forced",
+      "C": "Ordinal closed-ended, choice unforced",
+      "D": "Ordinal closed-ended, choice forced"
+    },
+    "answer": "B",
+    "id": 3210,
+    "sourcePage": 222
+  },
+  {
+    "page": 11,
+    "numberOnPage": 11,
+    "question": "If a user of a system is unable to determine whether an action they took helped to move them closer to achieving their goal, we would say that the system fails to bridge:",
+    "options": {
+      "A": "The Gulf of Inspection",
+      "B": "The Gulf of Expectation",
+      "C": "The Gulf of Execution",
+      "D": "The Gulf of Evaluation"
+    },
+    "answer": "D",
+    "id": 3211,
+    "sourcePage": 224
+  },
+  {
+    "page": 11,
+    "numberOnPage": 12,
+    "question": "If a user of a system is unable to find an option for action that they believe will move them closer to achieving their goal, we would say that the system fails to bridge",
+    "options": {
+      "A": "The Gulf of Inspection",
+      "B": "The Gulf of Expectation",
+      "C": "The Gulf of Execution",
+      "D": "The Gulf of Evaluation"
+    },
+    "answer": "C",
+    "id": 3212,
+    "sourcePage": 225
+  },
+  {
+    "page": 11,
+    "numberOnPage": 13,
+    "question": "Research at scale can be carried out during the following product development lifecycles",
+    "options": {
+      "A": "Discovery",
+      "B": "Design/Development",
+      "C": "Optimization",
+      "D": "All of the others"
+    },
+    "answer": "D",
+    "id": 3213,
+    "sourcePage": 226
+  },
+  {
+    "page": 11,
+    "numberOnPage": 14,
+    "question": "Interviews, Observations, Surveys, User Testing, and Inspection Methods are all examples of:",
+    "options": {
+      "A": "Common UX mistakes",
+      "B": "UX Design methods",
+      "C": "UX Research methods",
+      "D": "UX Marketing methods"
+    },
+    "answer": "C",
+    "id": 3214,
+    "sourcePage": 227
+  },
+  {
+    "page": 11,
+    "numberOnPage": 15,
+    "question": "Rank these prototypes in order of fidelity, from low to high.",
+    "options": {
+      "A": "1, 2,3",
+      "B": "3, 2,1 Gul,3p.2",
+      "D": "2,1, 3"
+    },
+    "answer": "A",
+    "id": 3215,
+    "sourcePage": 228
+  },
+  {
+    "page": 11,
+    "numberOnPage": 16,
+    "question": "Research at scale can be carried out during the following product development lifecycles:",
+    "options": {
+      "A": "Discovery",
+      "B": "Design/Development",
+      "C": "Optimization",
+      "D": "All"
+    },
+    "answer": "D",
+    "id": 3216,
+    "sourcePage": 229,
+    "duplicateOf": 3213
+  },
+  {
+    "page": 11,
+    "numberOnPage": 17,
+    "question": "The \"central vision\" portion of the human field of view, in which people can read text and recognize details in images, is approximately how wide?",
+    "options": {
+      "A": "5 degrees",
+      "B": "18 degrees",
+      "C": "30 degrees",
+      "D": "180 degrees"
+    },
+    "answer": "A",
+    "id": 3217,
+    "sourcePage": 230
+  },
+  {
+    "page": 11,
+    "numberOnPage": 18,
+    "question": "The effect that makes it easy to recognize objects in a visual field that differ from their background and all other objects in simple visual features like color and texture is called:",
+    "options": {
+      "A": "saccade",
+      "B": "gestalt",
+      "C": "brightness",
+      "D": "Pop-out"
+    },
+    "answer": "D",
+    "id": 3218,
+    "sourcePage": 231
+  },
+  {
+    "page": 11,
+    "numberOnPage": 19,
+    "question": "The person who greets participants and communicates with them throughout a user test session is called the:",
+    "options": {
+      "A": "Logger",
+      "B": "Moderator",
+      "C": "Interviewer",
+      "D": "Technician"
+    },
+    "answer": "B",
+    "id": 3219,
+    "sourcePage": 232
+  },
+  {
+    "page": 11,
+    "numberOnPage": 20,
+    "question": "| This term describes the total set of people you want to be able to represent with your survey",
+    "options": {
+      "A": "Sample",
+      "B": "Response Rate",
+      "C": "Respondents",
+      "D": "Population | | |"
+    },
+    "answer": "D",
+    "id": 3220,
+    "sourcePage": 233
+  },
+  {
+    "page": 12,
+    "numberOnPage": 1,
+    "question": "The pattern of eye fixations that people perform when processing a web page has been shov what shape?",
+    "options": {
+      "A": "Acircle",
+      "B": "Aspiral",
+      "C": "The letter 'F''",
+      "D": "The letter '2'"
+    },
+    "answer": "C",
+    "id": 3221,
+    "sourcePage": 234
+  },
+  {
+    "page": 12,
+    "numberOnPage": 2,
+    "question": "This is error that is introduced when your questions somehow don't actually get to the concept you're interested in",
+    "options": {
+      "A": "Coverage Error",
+      "B": "Sampling Error",
+      "C": "Measurement error",
+      "D": "Nonresponse Error Miss some -> Sampling Error Concept -> Measurement Error Refusing -> Nonresponse Error"
+    },
+    "answer": "C",
+    "id": 3222,
+    "sourcePage": 235
+  },
+  {
+    "page": 12,
+    "numberOnPage": 3,
+    "question": "This is the error that is introduced because some portion of the population is refusing to answer your questions",
+    "options": {
+      "A": "Coverage error",
+      "B": "Nonresponse error",
+      "C": "Sampling error",
+      "D": "Measurement error"
+    },
+    "answer": "B",
+    "id": 3223,
+    "sourcePage": 236
+  },
+  {
+    "page": 12,
+    "numberOnPage": 4,
+    "question": "This is the error that is introduced because the way you are asking questions is going to miss some big chunk of your population of interest",
+    "options": {
+      "A": "Measurement error",
+      "B": "Nonresponse error",
+      "C": "Sampling frame",
+      "D": "Sampling error"
+    },
+    "answer": "C",
+    "id": 3224,
+    "sourcePage": 237
+  },
+  {
+    "page": 12,
+    "numberOnPage": 5,
+    "question": "Your client wants you to conduct a user test of their pre-release prototype to find the most important user interface problems to be fixed before the product is released. What kind of user test is your client asking you to perform?",
+    "options": {
+      "A": "Summative",
+      "B": "Formative",
+      "C": "Competitive",
+      "D": "A/B"
+    },
+    "answer": "B",
+    "id": 3225,
+    "sourcePage": 238
+  },
+  {
+    "page": 12,
+    "numberOnPage": 6,
+    "question": "You are working on assessing the usability of a medical device. For regulatory reasons, you need to demonstrate that 99% of medical professionals can perform a certain task in under one minute. What kind of user test should you perform?",
+    "options": {
+      "A": "Comparative",
+      "B": "Formative",
+      "C": "Benchmark",
+      "D": "Microusability"
+    },
+    "answer": "C",
+    "id": 3226,
+    "sourcePage": 239
+  },
+  {
+    "page": 12,
+    "numberOnPage": 7,
+    "question": "What makes the example shown effective at conveying the navigation flow? (Select all that apply)",
+    "options": {
+      "A": "It specifies where the user should click to progress to the next screen.",
+      "B": "It is a digital prototype",
+      "C": "It contains placeholder text"
+    },
+    "answer": "A",
+    "id": 3227,
+    "sourcePage": 241
+  },
+  {
+    "page": 12,
+    "numberOnPage": 8,
+    "question": "What makes these good research questions for a needs-finding study?",
+    "options": {
+      "A": "They're open ended, not leading",
+      "B": "They seek to learn about what problems there are with existing solutions",
+      "C": "They are questions that can be answered by interviewing the target user population",
+      "D": "They will help the researcher learn how users currently complete the activity that their design will try to improve",
+      "E": "All of the others"
+    },
+    "answer": "E",
+    "id": 3228,
+    "sourcePage": 242
+  },
+  {
+    "page": 12,
+    "numberOnPage": 9,
+    "question": "Could you run user tests with this prototype and receive useful data to inform your designs?",
+    "options": {
+      "A": "Yes, any type of prototype can be used for user testing",
+      "B": "No, only fully interactive digital prototypes will give you useful data",
+      "C": "No, user testing is most effective when you use hand-drawn prototypes rather than ones created with graphic design software",
+      "D": "No, you shouldn't use a prototype to conduct user testing"
+    },
+    "answer": "A",
+    "id": 3229,
+    "sourcePage": 243
+  },
+  {
+    "page": 12,
+    "numberOnPage": 10,
+    "question": "Is this a good scope for a user test?",
+    "options": {
+      "A": "No, a user test must focus on only one task",
+      "B": "Yes, it has users test the core functions of the app",
+      "C": "No, a user test needs to compare two different systems",
+      "D": "No, a user test needs to include testing every single task in the application to deliver valuable data"
+    },
+    "answer": "B",
+    "id": 3230,
+    "sourcePage": 244
+  },
+  {
+    "page": 12,
+    "numberOnPage": 11,
+    "question": "(Choose 1 answer) Finding 1. No Option to delete or modify Time Sheet entries. What heuristic does this violate? Severity: 4 Heuristic(s) Violated: Navigation While the existing prototype shows the list of time entries on the Time Sheet tab, it A Visibility of system status does not provide an option to Modify or Delete time entries. It is crucial when",
+    "options": {
+      "A": "Usercontcdend ead: allowing users to DO something to allow them a way to UNDO or correct User control and freedom something done in enor.",
+      "C": "Error prevention Home [Tene Sheet | Tine Of Comoney Orecary Accoun _ Pay Period (6724 - 7142018 Status",
+      "D": "Recognition vs recall & fs: Due for Submission by 7/5/2018 (Sebei) | You have been Clocked IN for 1 hour 34 mins, since 9:01 am i) Time Date Type Code Start End Hours Q 6/24/2018 Hourly = W3 9:00am 3:04pm 6 Q 6/25/2018 Hourly w3 9:01am 3:02pm 6 Q 6/26/2018 Hourly = W3 9:07am 11:59pm 3 Q 6/25/2018 PTO SICK 12:00pm 3:00pm 3 Recommendation: System should accommodate user reviewina. modifvina. or"
+    },
+    "answer": "D",
+    "id": 3231,
+    "sourcePage": 245
+  },
+  {
+    "page": 12,
+    "numberOnPage": 12,
+    "question": "Which of the following are among key tasks that were identified?",
+    "options": {
+      "A": "Customize automatic functions, Help, Log Out",
+      "B": "Check map, Create a post, Log Out",
+      "C": "Change security code, Create a post, Check recent events",
+      "D": "Check map, Help, Activate function Robbery"
+    },
+    "answer": "D",
+    "id": 3232,
+    "sourcePage": 246
+  },
+  {
+    "page": 12,
+    "numberOnPage": 13,
+    "question": "This example would most likely be an example of a... (choose the BEST response)",
+    "options": {
+      "A": "Wireframes",
+      "B": "Lo-Fi Prototype",
+      "C": "Hi-Fi Prototype",
+      "D": "Yes, wireframes need to look like a completely finished product"
+    },
+    "answer": "C",
+    "id": 3233,
+    "sourcePage": 247
+  },
+  {
+    "page": 12,
+    "numberOnPage": 14,
+    "question": "Which of these are good research questions for a needs-finding study?",
+    "options": {
+      "A": "They will help the researcher learn how users currently complete the activity that their design will try to improve",
+      "B": "They are questions that can be answered by interviewing the target user population",
+      "D": "They seek to learn about what problems there are with existing solutions",
+      "C": "They are open ended, not leading"
+    },
+    "answer": "ABCD",
+    "id": 3234,
+    "sourcePage": 248,
+    "duplicateOf": 3152
+  },
+  {
+    "page": 12,
+    "numberOnPage": 15,
+    "question": "What is the problem with the following task description? \"Go to coursera.org. Hover over the button \"Explore\", then click \"Explore all of Coursera\". Scroll until you find the link to \"User Experience (UX) Research and Design\" Specialization. Click on it. On the resulting page, find the first course and enroll in it.\"",
+    "options": {
+      "A": "Itis not realistic",
+      "B": "Itis not verifiable",
+      "C": "It \"leads the witness\"",
+      "D": "It is not the most efficient way of enrolling in a Coursera course - B. It is not verifiable (\"Go to coursera.org and find a course that looks interesting to you. Find out more about it.\") - C. It \"leads the witness\" (\"Go to coursera.org. Hover over the button \"Explore\", then click \"Explore all of Coursera\". Scroll until you find the link to \"User Experience (UX) Research and Design\" Specialization. Click on it. On the resulting page, find the first course and enroll in it.\")"
+    },
+    "answer": "C",
+    "id": 3235,
+    "sourcePage": 249
+  },
+  {
+    "page": 12,
+    "numberOnPage": 16,
+    "question": "What is the problem with the following task description? \"Go to coursera.org and find a course that looks interesting to you. Find out more about it.\"",
+    "options": {
+      "A": "Itis not realistic",
+      "B": "Itis not verifiable",
+      "C": "It \"leads the witness\"",
+      "D": "Itis not the most efficient way of learning about a Coursera course ee"
+    },
+    "answer": "B",
+    "id": 3236,
+    "sourcePage": 250
+  },
+  {
+    "page": 12,
+    "numberOnPage": 17,
+    "question": "What is the main problem with the \"Agree/Disagree\" response scale?",
+    "options": {
+      "A": "Overly familiar to respondents, leading to satisficing",
+      "B": "Leads to acquiescence bias",
+      "C": "Cognitively burdensome",
+      "D": "Not understood by most respondents"
+    },
+    "answer": "B",
+    "id": 3237,
+    "sourcePage": 251
+  },
+  {
+    "page": 12,
+    "numberOnPage": 18,
+    "question": "What is qualitative data analysis?",
+    "options": {
+      "A": "The formal analysis of data that is not all quantified or quantifiable",
+      "B": "The formal analysis of numerical information",
+      "C": "The formal analysis of product quality",
+      "D": "The formal analysis of how good something is ee"
+    },
+    "answer": "A",
+    "id": 3238,
+    "sourcePage": 252
+  },
+  {
+    "page": 12,
+    "numberOnPage": 19,
+    "question": "What is the main problem with the \"Agree/Disagree\" response scale?",
+    "options": {
+      "A": "Overly familiar to respondents, leading to satisficing",
+      "B": "Leads to acquiescence bias",
+      "C": "Cognitively burdensome",
+      "D": "Not understood by most respondents"
+    },
+    "answer": "B",
+    "id": 3239,
+    "sourcePage": 253,
+    "duplicateOf": 3237
+  },
+  {
+    "page": 12,
+    "numberOnPage": 20,
+    "question": "What is user testing particularly well suited to tell you?",
+    "options": {
+      "A": "How many people will buy your product.",
+      "B": "Users' most critical unmet needs.",
+      "C": "Whether users can successfully perform the tasks that you designed the system to support.",
+      "D": "What users will do with the system once they have it in their own hands."
+    },
+    "answer": "C",
+    "id": 3240,
+    "sourcePage": 254
+  },
+  {
+    "page": 13,
+    "numberOnPage": 1,
+    "question": "What is a key benefit of collecting qualitative data during user testing?",
+    "options": {
+      "A": "It helps you \"prove\" statistically that the system being studied is better than competitors'",
+      "B": "It doesn't require any analysis, so it saves time compared to other types of data",
+      "C": "It helps you understand why test participants had difficulties when using the system",
+      "D": "It allows you to assess the overall quality of the system being tested"
+    },
+    "answer": "C",
+    "id": 3241,
+    "sourcePage": 255
+  },
+  {
+    "page": 13,
+    "numberOnPage": 2,
+    "question": "What is the main problem with the following survey question? \"How likely are you to participate in an online course in the future?\" [Very likely] [Somewhat likely] [Neutral] [Somewhat unlikely] [Very unlikely]",
+    "options": {
+      "A": "The response categories don't match the question stem.",
+      "B": "The question stem doesn't include both poles of the scale",
+      "C": "This should be framed as a unipolar scale",
+      "D": "There's nothing wrong with this question"
+    },
+    "answer": "B",
+    "id": 3242,
+    "sourcePage": 256
+  },
+  {
+    "page": 13,
+    "numberOnPage": 3,
+    "question": "What is an affinity note?",
+    "options": {
+      "A": "Assticky note on which you write relevant bits from your interview notes/recording and which is probably relevant for the user needs assessment",
+      "B": "Acomment you write during an interview that indicates a common, recurring theme.",
+      "C": "Ashort summary that includes your analysis of a single interview",
+      "D": "A follow-up message from an interview participant that contains additional information"
+    },
+    "answer": "A",
+    "id": 3243,
+    "sourcePage": 257
+  },
+  {
+    "page": 13,
+    "numberOnPage": 4,
+    "question": "What is the value of having an overarching question in an interview protocol?",
+    "options": {
+      "A": "It provides a focus for the interview that the interviewer keeps in mind throughout the interview.",
+      "B": "It serves as a catch-all question to ask at the end of an interview.",
+      "C": "It is a good opening question to ask during the interview.",
+      "D": "Itis a good way to elicit a summary of the interview participant's thoughts."
+    },
+    "answer": "A",
+    "id": 3244,
+    "sourcePage": 258
+  },
+  {
+    "page": 13,
+    "numberOnPage": 5,
+    "question": "What is one quality that distinguishes a semi-structured interview from other kinds of interviews?",
+    "options": {
+      "A": "Half of the interview will be a questionnaire, the other half will be open-ended.",
+      "B": "Half of the interview will be a questionnaire, the other half will be based on an interview protocol",
+      "C": "While the interviewer uses an interview protocol as a guideline, the interview itself will often go off-script.",
+      "D": "The interviewer and the interview participant should each expect to speak about half of the time. SSCs"
+    },
+    "answer": "C",
+    "id": 3245,
+    "sourcePage": 259
+  },
+  {
+    "page": 13,
+    "numberOnPage": 6,
+    "question": "What is the first step in conducting a Heuristic Evaluation?",
+    "options": {
+      "A": "Create a prionitized list of issues",
+      "B": "Choose specific screens or interactions to focus on",
+      "C": "Conduct user interviews",
+      "D": "Test the system's speed"
+    },
+    "answer": "B",
+    "id": 3246,
+    "sourcePage": 260
+  },
+  {
+    "page": 13,
+    "numberOnPage": 7,
+    "question": "What can UX researchers do to minimize the impact of confirmation bias?",
+    "options": {
+      "A": "Wherever possible, have user tests conducted by neutral third parties who have no investment in the outcome of the test",
+      "B": "Recruit only family and friends as participants, since they will be more honest about their feelings",
+      "C": "Researchers should trust their intuition when analyzing test results, rather than seeking to be systematic and impartial",
+      "D": "Ask participants the same questions at least 3 times, in order to confirm that the answers accurately reflect their feelings"
+    },
+    "answer": "A",
+    "id": 3247,
+    "sourcePage": 261
+  },
+  {
+    "page": 13,
+    "numberOnPage": 8,
+    "question": "What does the concept of \"demand characteristics\" warn us about when applied to user testing?",
+    "options": {
+      "A": "Participants will perform differently when observed than they would if they were on their own",
+      "B": "Participants are likely to tell us what they think we want to hear",
+      "C": "Participants who receive monetary compensation will typically perform better on tasks than those who don't",
+      "D": "Researchers shouldn't ask participants to do anything in particular, rather they should let participants decide what to do"
+    },
+    "answer": "B",
+    "id": 3248,
+    "sourcePage": 262
+  },
+  {
+    "page": 13,
+    "numberOnPage": 9,
+    "question": "What does it mean to balance abstraction and precision in an affinity wall cluster summary?",
+    "options": {
+      "A": "The summary should be neither too long nor too short",
+      "B": "The summary should use some of the same vocabulary used in the notes in the cluster.",
+      "C": "The summary should be applicable to most but not all of the notes in the cluster.",
+      "D": "The summary should represent all of the notes in the cluster while being as specific and insightful as possible"
+    },
+    "answer": "D",
+    "id": 3249,
+    "sourcePage": 263
+  },
+  {
+    "page": 13,
+    "numberOnPage": 10,
+    "question": "What should you keep in mind throughout the interview?",
+    "options": {
+      "A": "Your overarching question(s).",
+      "B": "\"The Force\" from Star Wars.",
+      "C": "The name of the interview participant.",
+      "D": "The next question in your interview protocol."
+    },
+    "answer": "A",
+    "id": 3250,
+    "sourcePage": 264
+  },
+  {
+    "page": 13,
+    "numberOnPage": 11,
+    "question": "What should you do when clustering data for qualitative data analysis?",
+    "options": {
+      "A": "Ensure each cluster is the same size.",
+      "B": "Make clusters out of related information.",
+      "C": "Throw out data that doesn't fit in any cluster.",
+      "D": "Focus on the arrangement of items in each cluster."
+    },
+    "answer": "B",
+    "id": 3251,
+    "sourcePage": 265
+  },
+  {
+    "page": 13,
+    "numberOnPage": 12,
+    "question": "What should be your approach in conducting a semi-structured interview?",
+    "options": {
+      "A": "Maintain a conversational tone and use the interview protocol as a loose guideline.",
+      "B": "Maintain a formal tone and read the interview protocol questions exactly in the listed order.",
+      "C": "Maintain a relaxed tone and discuss whatever the interview participant feels is relevant.",
+      "D": "Maintain a professional tone and never refer to the interview protocol."
+    },
+    "answer": "A",
+    "id": 3252,
+    "sourcePage": 266
+  },
+  {
+    "page": 13,
+    "numberOnPage": 13,
+    "question": "What should a new note you write (after data extraction is completed) during construction of an affinity wall contain?",
+    "options": {
+      "A": "A self-contained summary of the knowledge in the associated cluster.",
+      "B": "Spelling or grammar corrections for affinity notes.",
+      "C": "Anew question to ask in a future user needs assessment.",
+      "D": "A salience ranking of the affinity notes in the associated cluster."
+    },
+    "answer": "A",
+    "id": 3253,
+    "sourcePage": 267
+  },
+  {
+    "page": 13,
+    "numberOnPage": 14,
+    "question": "What should you do when you create clusters in an affinity wall?",
+    "options": {
+      "A": "Avoid mistakes, because once a cluster is formed, it cannot be undone",
+      "B": "Create clusters of more than seven affinity notes",
+      "C": "Put all notes that use the same word in a single cluster.",
+      "D": "Be willing to move notes and re-form clusters"
+    },
+    "answer": "D",
+    "id": 3254,
+    "sourcePage": 268
+  },
+  {
+    "page": 13,
+    "numberOnPage": 15,
+    "question": "What should you do during the think-aloud protocol?",
+    "options": {
+      "A": "Let the participant hear what you're thinking while you observe them",
+      "B": "Prompt the user to convey their thinking out loud with short questions",
+      "C": "Respond to the participant by telling whether what they're saying is correct or not.",
+      "D": "Sit quietly and observe, even if the participant says nothing"
+    },
+    "answer": "B",
+    "id": 3255,
+    "sourcePage": 269
+  },
+  {
+    "page": 13,
+    "numberOnPage": 16,
+    "question": "Which of the following is a reason why you might use non- probability samples rather than probability samples?",
+    "options": {
+      "A": "Ability to represent the population better",
+      "B": "Quality of data",
+      "C": "Cost",
+      "D": "Ability to get more responses"
+    },
+    "answer": "C",
+    "id": 3256,
+    "sourcePage": 271
+  },
+  {
+    "page": 13,
+    "numberOnPage": 17,
+    "question": "Which of the following should you avoid when writing affinity notes?",
+    "options": {
+      "A": "Make each note understandable on its own.",
+      "B": "Be concrete.",
+      "C": "Aim for about one affinity note per minute of interview.",
+      "D": "Provide thorough, detailed explanations."
+    },
+    "answer": "D",
+    "id": 3257,
+    "sourcePage": 272
+  },
+  {
+    "page": 13,
+    "numberOnPage": 18,
+    "question": "Which of the following are types of user-entered inputs?",
+    "options": {
+      "A": "GPS",
+      "B": "Text fields where users enter free-form responses",
+      "C": "Widgets like calendar pickers or on/off switches",
+      "D": "Voice input, like dictation typing",
+      "E": "All options on this list except GPS"
+    },
+    "answer": "E",
+    "id": 3258,
+    "sourcePage": 273,
+    "duplicateOf": 3020
+  },
+  {
+    "page": 13,
+    "numberOnPage": 19,
+    "question": "Which of the following methods would be the best approach for answering the stated questions?",
+    "options": {
+      "A": "Qualitative research such as user interviews or focus groups",
+      "B": "Quantitative research such as surveys",
+      "C": "Quantitative research such as A/B testing",
+      "D": "Qualitative research such as user testing a prototype"
+    },
+    "answer": "A",
+    "id": 3259,
+    "sourcePage": 274
+  },
+  {
+    "page": 13,
+    "numberOnPage": 20,
+    "question": "Which of the following is the most important consideration in picking what type of question type to use?",
+    "options": {
+      "A": "The demographic makeup of your population",
+      "B": "The type of analysis you plan on doing",
+      "C": "The type of sampling you're using",
+      "D": "The mode your survey will be delivered in"
+    },
+    "answer": "B",
+    "id": 3260,
+    "sourcePage": 275,
+    "duplicateOf": 3131
+  },
+  {
+    "page": 14,
+    "numberOnPage": 1,
+    "question": "Which of the following is the right way to take notes?",
+    "options": {
+      "A": "To write only the key points in short phrases.",
+      "B": "To capture only what audio recording definitely will not.",
+      "C": "There is no one right way to take notes.",
+      "D": "To jot down only follow-up questions you want to ask later."
+    },
+    "answer": "C",
+    "id": 3261,
+    "sourcePage": 276
+  },
+  {
+    "page": 14,
+    "numberOnPage": 2,
+    "question": "Which of the following questions would be most relevant to the UX criterion of \"Adoptability\"?",
+    "options": {
+      "A": "Where do users currently look for products or services like the one we will offer?",
+      "B": "Do users prefer bright or muted colors for graphics in this product category?",
+      "C": "How much would people be willing to pay for the product or service we plan to offer?",
+      "D": "What percentage of people succeed in completing key tasks using the product?"
+    },
+    "answer": "A",
+    "id": 3262,
+    "sourcePage": 277
+  },
+  {
+    "page": 14,
+    "numberOnPage": 3,
+    "question": "Which of the following is not true about standardized usability questionnaires like QUIS and PSSUQ?",
+    "options": {
+      "A": "The level of reliability is known, allowing you to assess how consistent they are across systems and study participants",
+      "B": "Most of them have been used in many studies, allowing comparisons across systems",
+      "C": "Some of them allow you to \"plug in\" different questionnaire sections to ask about specific usability issues",
+      "D": "They are so expensive that they are only used in the biggest, most well-funded projects"
+    },
+    "answer": "D",
+    "id": 3263,
+    "sourcePage": 278
+  },
+  {
+    "page": 14,
+    "numberOnPage": 4,
+    "question": "Which of the following would be a good reason for using a high- end usability testing lab with separate control and observation room?",
+    "options": {
+      "A": "You will be providing a computer for participants to use during the test",
+      "B": "You will be using the think-aloud protocol",
+      "C": "You plan to administer a post-test questionnaire",
+      "D": "You plan to invite multiple stakeholders to observe the test sessions"
+    },
+    "answer": "D",
+    "id": 3264,
+    "sourcePage": 279
+  },
+  {
+    "page": 14,
+    "numberOnPage": 5,
+    "question": "Which of the following is not a characteristic of low-fidelity prototypes?",
+    "options": {
+      "A": "They should be quick to create",
+      "B": "They should support the full sequence of actions needed to complete a task",
+      "C": "They should be realistic",
+      "D": "They should cover the functionality of the whole system."
+    },
+    "answer": "C",
+    "id": 3265,
+    "sourcePage": 280,
+    "duplicateOf": 3074
+  },
+  {
+    "page": 14,
+    "numberOnPage": 6,
+    "question": "Which of the following is most accurate?",
+    "options": {
+      "A": "Surveys are good at broad descriptions of groups, but not at precise measurements.",
+      "B": "Surveys have largely been abandoned in modern research because they are so inaccurate.",
+      "C": "Surveys should never be combined with other types of methods.",
+      "D": "Surveys are good at measuring behavioral outcomes."
+    },
+    "answer": "A",
+    "id": 3266,
+    "sourcePage": 281
+  },
+  {
+    "page": 14,
+    "numberOnPage": 7,
+    "question": "Which of the following best describes the social desirability outcomes in interview-led survey modes?",
+    "options": {
+      "A": "Results can be biased because people want to be agreeable with an interviewer.",
+      "B": "Results can be biased because interviewers will avoid questions that could be embarrassing.",
+      "C": "Results can be biased because people semi-consciously will try to look acceptable to the interviewer.",
+      "D": "Results can be biased because some interviewers are more able to get people to do surveys."
+    },
+    "answer": "C",
+    "id": 3267,
+    "sourcePage": 282
+  },
+  {
+    "page": 14,
+    "numberOnPage": 8,
+    "question": "Which of the following best describes the social desirability outcomes in interview-led survey modes?",
+    "options": {
+      "A": "Results can be biased because people want to be agreeable with an interviewer.",
+      "B": "Results can be biased because interviewers will avoid questions that could be embarrassing.",
+      "C": "Results can be biased because some interviewers are more able to get people to do surveys.",
+      "D": "Results can be biased because people semi-consciously will try to look acceptable to the interviewer."
+    },
+    "answer": "D",
+    "id": 3268,
+    "sourcePage": 283
+  },
+  {
+    "page": 14,
+    "numberOnPage": 9,
+    "question": "Which of the following is the most true statement about how people remember things?",
+    "options": {
+      "A": "People remember their past behavior well enough to give accurate survey responses.",
+      "B": "Memory can be guided back to accuracy through careful prompts.",
+      "C": "Memory fades over time, but people are good at remembering routine actions.",
+      "D": "Memory fades over time, and often doesn't capture routine actions."
+    },
+    "answer": "D",
+    "id": 3269,
+    "sourcePage": 284,
+    "duplicateOf": 3129
+  },
+  {
+    "page": 14,
+    "numberOnPage": 10,
+    "question": "Which of the following best describes the question stem?",
+    "options": {
+      "A": "It's the optional instructions for how to answer a question.",
+      "B": "It's the set of responses that a respondent can give.",
+      "C": "It's the query that operationalizes the concept of interest and prompts a response.",
+      "D": "It's a series of questions that are used together to form a scale."
+    },
+    "answer": "C",
+    "id": 3270,
+    "sourcePage": 285
+  },
+  {
+    "page": 14,
+    "numberOnPage": 11,
+    "question": "Which of these examples of personas could be more effective for guiding a design solution?",
+    "options": {
+      "A": "#2 because it includes relevant demographic information, motivations and needs related to the design problem, and characteristics could constrain the persona's ability to use a system.",
+      "B": "#1 because there are more personas and they're in paragraph form",
+      "C": "#1 because the picture in #2 is distracting"
+    },
+    "answer": "A",
+    "id": 3271,
+    "sourcePage": 286
+  },
+  {
+    "page": 14,
+    "numberOnPage": 12,
+    "question": "Which of the following can prototypes help designers test?",
+    "options": {
+      "A": "The overall design concept",
+      "B": "Functionality of different components of the system",
+      "C": "Screen layouts",
+      "D": "User interactions",
+      "E": "All of the others"
+    },
+    "answer": "E",
+    "id": 3272,
+    "sourcePage": 287
+  },
+  {
+    "page": 14,
+    "numberOnPage": 13,
+    "question": "Which of the following best describes why you might choose to use a panel for recruiting respondents?",
+    "options": {
+      "A": "To reduce recruitment costs",
+      "B": "To make sure you get people who are experienced in answering surveys",
+      "C": "To increase quality",
+      "D": "To avoid having a convenience sample"
+    },
+    "answer": "A",
+    "id": 3273,
+    "sourcePage": 288
+  },
+  {
+    "page": 14,
+    "numberOnPage": 14,
+    "question": "Which of the following represents the system's state",
+    "options": {
+      "A": "Information about the user's current location",
+      "B": "User profile information",
+      "C": "Rules for providing feedback to the user",
+      "D": "Current values of all system inputs and variables, and rules for operating on those values"
+    },
+    "answer": "D",
+    "id": 3274,
+    "sourcePage": 289
+  },
+  {
+    "page": 14,
+    "numberOnPage": 15,
+    "question": "Which of the following are research methods that can be applied in formative research?",
+    "options": {
+      "A": "Interviews",
+      "C": "Asking friends and family members about their experiences",
+      "D": "Participatory design groups",
+      "E": "All of the others",
+      "F": "None of the others",
+      "B": "Observations"
+    },
+    "answer": "E",
+    "id": 3275,
+    "sourcePage": 290
+  },
+  {
+    "page": 14,
+    "numberOnPage": 16,
+    "question": "Which of the following tasks is most representative of the kind of work involved in qualitative research?",
+    "options": {
+      "A": "Conducting interviews about how people use Excel spreadsheets",
+      "B": "Analyzing statistical data about visits to Amazon",
+      "C": "Writing software to classify user posts on Facebook",
+      "D": "Running an experimental trial to see if users like Google with banner ads"
+    },
+    "answer": "A",
+    "id": 3276,
+    "sourcePage": 291
+  },
+  {
+    "page": 14,
+    "numberOnPage": 17,
+    "question": "Which of the following best describes the question stem?",
+    "options": {
+      "A": "It's the optional instructions for how to answer a question.",
+      "B": "It's the set of responses that a respondent can give",
+      "C": "It's the query that operationalizes the concept of interest and prompts a response.",
+      "D": "It's a series of questions that are used together to form a scale"
+    },
+    "answer": "C",
+    "id": 3277,
+    "sourcePage": 292,
+    "duplicateOf": 3270
+  },
+  {
+    "page": 14,
+    "numberOnPage": 18,
+    "question": "Which of the following is a good open-ended question to ask in a semi-structured interview?",
+    "options": {
+      "A": "How many times a week do you use a GPS device recently?",
+      "B": "Can you tell me about the most recent time when you used a GPS device?",
+      "C": "Was the GPS interface poorly designed?",
+      "D": "Why didn't you use the landmark feature on your GPS device?"
+    },
+    "answer": "B",
+    "id": 3278,
+    "sourcePage": 293
+  },
+  {
+    "page": 14,
+    "numberOnPage": 19,
+    "question": "Which of the following is an example of purposive sampling?",
+    "options": {
+      "A": "Asking your female friends to respond to a survey via Facebook and Twitter requests",
+      "B": "Asking people who use a site's shopping cart how they feel about that experience.",
+      "C": "Emailing a random sample of employees who started at the company this year based on a list provided by HR",
+      "D": "Asking one group of respondents to forward the survey invite to their social networks"
+    },
+    "answer": "B",
+    "id": 3279,
+    "sourcePage": 294
+  },
+  {
+    "page": 14,
+    "numberOnPage": 20,
+    "question": "Which of the following is the most accurate statement?",
+    "options": {
+      "A": "Error can be reduced by designing surveys as well as well as possible within resource constraints",
+      "B": "Error should be reduced to zero before launching a survey.",
+      "C": "It's impossible to affect error one way or another",
+      "D": "Surveys should never be trusted because of how much error they involve"
+    },
+    "answer": "A",
+    "id": 3280,
+    "sourcePage": 295
+  },
+  {
+    "page": 15,
+    "numberOnPage": 1,
+    "question": "Which of the following is most accurate?",
+    "options": {
+      "A": "Surveys are good at broad descriptions of groups, but not at precise measurements",
+      "B": "Surveys have largely been abandoned in modern research because they are so inaccurate.",
+      "C": "Surveys should never be combined with other types of methods.",
+      "D": "Surveys are good at measuring behavioral outcomes a"
+    },
+    "answer": "A",
+    "id": 3281,
+    "sourcePage": 296,
+    "duplicateOf": 3266
+  },
+  {
+    "page": 15,
+    "numberOnPage": 2,
+    "question": "Which of the following questions is best answered by a qualitative research methodology?",
+    "options": {
+      "A": "What proportion of Gadget X users love Feature Y?",
+      "B": "What are the different ways in which Gadget X frustrates its users?",
+      "C": "How will total revenue change if Gadget X's price is reduced by 10%?",
+      "D": "Does Gadget X tend to increase traffic accidents among its users?"
+    },
+    "answer": "B",
+    "id": 3282,
+    "sourcePage": 297
+  },
+  {
+    "page": 15,
+    "numberOnPage": 3,
+    "question": "[Which of the following is a BAD question to ask during a user needs assessment interview?",
+    "options": {
+      "A": "Could you tell me about a recent time when you used the \"undo\" feature?",
+      "B": "Tell me more -- what was the context when you used the \"undo\" feature?",
+      "C": "What functionality would you have liked to have to complete the task?",
+      "D": "Was it because you didn't know about the \"undo\" feature that you were unable to complete the task?"
+    },
+    "answer": "D",
+    "id": 3283,
+    "sourcePage": 298,
+    "duplicateOf": 3138
+  },
+  {
+    "page": 15,
+    "numberOnPage": 4,
+    "question": "Which of the following is the best-scoped question for a small user needs assessment project?",
+    "options": {
+      "A": "What kinds of problems do users face when using Microsoft Word's spell-checking feature?",
+      "B": "What kinds of problems do users face when using Microsoft products?",
+      "C": "What kinds of problems do users face when using Microsoft Word?",
+      "D": "What kinds of problems do users face when fixing a spelling error identified by Microsoft Word's spell-checking feature?"
+    },
+    "answer": "D",
+    "id": 3284,
+    "sourcePage": 299
+  },
+  {
+    "page": 15,
+    "numberOnPage": 5,
+    "question": "Which of the following is an example of a good use of a post-test questionnaire?",
+    "options": {
+      "A": "Asking open-ended questions where participants can give any answer that comes to mind",
+      "B": "Asking follow-up questions to understand why participants gave answers that they did",
+      "C": "Obtaining quantified measures of participants' subjective reactions to using a system",
+      "D": "Measuring the time it takes participants to complete a task"
+    },
+    "answer": "C",
+    "id": 3285,
+    "sourcePage": 300
+  },
+  {
+    "page": 15,
+    "numberOnPage": 6,
+    "question": "Which of the following is the best definition of a probability sample?",
+    "options": {
+      "A": "Almost every member of your population has some chance to be selected for the survey",
+      "B": "Only those people who will probably answer the survey are sampled from the population",
+      "C": "Every member of your population has some chance to be selected for the survey",
+      "D": "You invite every member of the population to participate in the survey ee"
+    },
+    "answer": "C",
+    "id": 3286,
+    "sourcePage": 301
+  },
+  {
+    "page": 15,
+    "numberOnPage": 7,
+    "question": "Which of the following best describes the social desirability outcomes in interview-led survey modes?",
+    "options": {
+      "A": "Results can be biased because people want to be agreeable with an interviewer",
+      "B": "Results can be biased because interviewers will avoid questions that could be embarrassing.",
+      "C": "Results can be biased because people semi-consciously will try to look acceptable to the interviewer.",
+      "D": "Results can be biased because some interviewers are more able to get people to do surveys."
+    },
+    "answer": "C",
+    "id": 3287,
+    "sourcePage": 302,
+    "duplicateOf": 3267
+  },
+  {
+    "page": 15,
+    "numberOnPage": 8,
+    "question": "Which of the following best describes the role of a participant in a user test?",
+    "options": {
+      "A": "They are being evaluated to see if they are competent enough to use the system tested",
+      "B": "Once they have agreed to participate, they are obligated to complete all tasks and answer all questions, regardless of their discomfort",
+      "C": "They are partners with the researchers administering the test, working with together to find flaws in the system design",
+      "D": "They should remain ignorant of the goals of the test, so that they can offer more creative feedback and design suggestions"
+    },
+    "answer": "C",
+    "id": 3288,
+    "sourcePage": 303
+  },
+  {
+    "page": 15,
+    "numberOnPage": 9,
+    "question": "How do you get to Carnegie Hall?",
+    "options": {
+      "A": "Practice, practice, practice!",
+      "B": "Go down three blocks and take a right.",
+      "C": "Buy a ticket online.",
+      "D": "Use a GPS device."
+    },
+    "answer": "A",
+    "id": 3289,
+    "sourcePage": 305
+  },
+  {
+    "page": 15,
+    "numberOnPage": 10,
+    "question": "How many personas should designers create for a design project?",
+    "options": {
+      "A": "Often one or two personas are all that's needed",
+      "B": "As many personas as it takes to represent everything designers have learned in the formative work",
+      "C": "The number of personas should match the number of classes of target users that the designers have identified in the formative work",
+      "D": "The more personas, the better",
+      "E": "Three to four personas are usually a sweet spot"
+    },
+    "answer": "C",
+    "id": 3290,
+    "sourcePage": 306
+  },
+  {
+    "page": 15,
+    "numberOnPage": 11,
+    "question": "When using questionnaires to collect characteristic, behavioral, and attitudinal data about your test participants, it is best to:",
+    "options": {
+      "A": "Ask all the questions you can think of, because you never know what will be useful.",
+      "B": "Ask no questions, because it will distract from the test and annoy your participants.",
+      "C": "Focus on collecting data that could help explain differences in task outcomes.",
+      "D": "Focus on getting users to rate the quality of your system ona five-point scale."
+    },
+    "answer": "C",
+    "id": 3291,
+    "sourcePage": 307
+  },
+  {
+    "page": 15,
+    "numberOnPage": 12,
+    "question": "When designing the set of tasks you will use in a test, it's a good idea to",
+    "options": {
+      "A": "Order them from hardest to easiest, to get the hard stuff out of the way",
+      "B": "Order them from easiest to hardest, so that your participants feel more comfortable",
+      "C": "Ask individual participants to perform several very similar tasks one after another, to ensure that they perform consistently",
+      "D": "Exhaustively test every possible path a user could take through the interface, even if it means testing with dozens of users"
+    },
+    "answer": "B",
+    "id": 3292,
+    "sourcePage": 308
+  },
+  {
+    "page": 15,
+    "numberOnPage": 13,
+    "question": "Why is it important to have a facilitator for a brainstorming session?",
+    "options": {
+      "A": "To make sure people don't go on excessive tangents",
+      "B": "To notice when session participants feel stuck or are have hit a dead end, and to redirect the session by bringing up a new topic for brainstorming",
+      "C": "To keep in check critiquing of ideas",
+      "D": "To flag if participants end up diving too deeply into a single idea",
+      "E": "All of the others"
+    },
+    "answer": "E",
+    "id": 3293,
+    "sourcePage": 309
+  },
+  {
+    "page": 15,
+    "numberOnPage": 14,
+    "question": "Why is it important to ask participants to announce when they believe they are done with a task?",
+    "options": {
+      "A": "Otherwise there is no way to know if they've finished",
+      "B": "Allowing the moderator to declare a task \"done\" could give the participant more information than they would have if conducting the task outside the test environment",
+      "C": "Saying \"I'm done\" gives the participant a sense of accomplishment",
+      "D": "It allows the moderator to pay less attention to the current task and start to prepare for the next one"
+    },
+    "answer": "B",
+    "id": 3294,
+    "sourcePage": 310
+  },
+  {
+    "page": 15,
+    "numberOnPage": 15,
+    "question": "Why does ideation emphasize the speed of idea generation?",
+    "options": {
+      "A": "Because the ideas that first come to mind are usually the best ones",
+      "B": "Because the quality of the initial ideas doesn't matter since a design solution gets iteratively refined many times anyway",
+      "C": "Because designers often work on tight schedules",
+      "D": "Because quick idea generation helps designers generate a lot of ideas ee"
+    },
+    "answer": "D",
+    "id": 3295,
+    "sourcePage": 311
+  },
+  {
+    "page": 15,
+    "numberOnPage": 16,
+    "question": "Why would a designer create storyboards as opposed to write scenarios?",
+    "options": {
+      "A": "To better represent physical environment in which the technology would be used",
+      "B": "To better represent relationships among multiple people",
+      "C": "To better envision size or other physical constraints of the technology and its use",
+      "D": "All of the others ———E———EL Een"
+    },
+    "answer": "D",
+    "id": 3296,
+    "sourcePage": 312
+  },
+  {
+    "page": 15,
+    "numberOnPage": 17,
+    "question": "A recommended technique for supporting \"flexibility and efficiency of use\" is:",
+    "options": {
+      "A": "The use of keyboard \"accelerator\" shortcuts",
+      "B": "Make sure all commands are represented graphically on the screen",
+      "C": "Streamline the design to minimize page load times",
+      "D": "Eliminate as many commands as possible to prevent possible errors"
+    },
+    "answer": "A",
+    "id": 3297,
+    "sourcePage": 314
+  },
+  {
+    "page": 15,
+    "numberOnPage": 18,
+    "question": "Among responses by interview participants that are relevant to your overarching question, what should you be Paying particular attention to?",
+    "options": {
+      "A": "Answers that confirm what you know",
+      "B": "Answers that are surprising or unexpected.",
+      "C": "Answers delivered without emotion",
+      "D": "Answers that show off the participant's cleverness"
+    },
+    "answer": "B",
+    "id": 3298,
+    "sourcePage": 315
+  },
+  {
+    "page": 15,
+    "numberOnPage": 19,
+    "question": "According to Nielsen's heuristics, \"platform standards\" are important to support in user interface design because:",
+    "options": {
+      "A": "Platform standards are always better than anything you could come up with on your own",
+      "B": "Supporting standards allows users to leverage \"schemas\" they have developed through prior experiences with similar systems",
+      "C": "Platform owners may refuse to allow your system to run on their platform if you do not conform",
+      "D": "You can use pre-existing code libraries, which saves development time"
+    },
+    "answer": "B",
+    "id": 3299,
+    "sourcePage": 316
+  },
+  {
+    "page": 15,
+    "numberOnPage": 20,
+    "question": "Because some users learn how to use a system through trial and error, it is important to:",
+    "options": {
+      "A": "provide extensive documentation to ensure that users always do the right thing",
+      "B": "force users to undergo training before using a system so they don't break anything",
+      "C": "provide users with only one option at a time so that they cannot make mistakes",
+      "D": "support \"undo\" and \"redo\" to help users recover from mistakes"
+    },
+    "answer": "D",
+    "id": 3300,
+    "sourcePage": 317
+  },
+  {
+    "page": 16,
+    "numberOnPage": 1,
+    "question": "Conducting an actual semi-structured interview is most consistently like which of the following activities?",
+    "options": {
+      "A": "Golf, because negative events can affect your performance",
+      "B": "Driving, because you have to navigate adversarial situations",
+      "C": "Playing jazz, because improvisation is required",
+      "D": "Running a marathon, because it is exhausting"
+    },
+    "answer": "C",
+    "id": 3301,
+    "sourcePage": 318
+  },
+  {
+    "page": 16,
+    "numberOnPage": 2,
+    "question": "Designers often refer to the notion of the \"design space.\" What does this term refer to?",
+    "options": {
+      "A": "Physical space (like a design studio) where design activities take place",
+      "B": "Space into which the design has to fit (e.g., the size of the screen of a mobile phone)",
+      "C": "Properties of the space (e.g., location, shape of the room) where the design will be used",
+      "D": "The range of alternative ways that a design solution can work"
+    },
+    "answer": "D",
+    "id": 3302,
+    "sourcePage": 319
+  },
+  {
+    "page": 16,
+    "numberOnPage": 3,
+    "question": "Download Attachment #1 as.pdf and read in full to answer questions 1 and 2. The stated purpose of this user test is: The test is designed to validate the main purpose of the project which is: \"Designing an affordable and easy to use method to archive insurance related files electronically while keeping in mind that the environment has an unstable internet connection and customers can't wait until all documents are uploaded\". While this is a good start, after reading through the user test plan and scenarios, which of these options provides a more specific goal? The goal is to discover whether the web browser tool or Dropbox is easier for users' file management needs",
+    "options": {
+      "A": "The goal is to get users to explain what exactly their ideal system would be so that the researcher can design that for them",
+      "B": "The goal is to understand the users' current way of doing things",
+      "C": "The goal is to discover whether users like the way that A 2 2 Rain HAis are thaA han arin hAi LiAm thes naindi Adina IA iO"
+    },
+    "answer": "A",
+    "id": 3303,
+    "sourcePage": 320
+  },
+  {
+    "page": 16,
+    "numberOnPage": 4,
+    "question": "From a usability point of view, it's important to use an \"aesthetic and minimalist design\" because:",
+    "options": {
+      "A": "a pleasing design can increase brand awareness, which can increase sales",
+      "B": "reducing clutter and organizing information makes it easier for people to find what they are looking for",
+      "C": "a simpler design is more cost-effective to develop and maintain",
+      "D": "an ugly design will provoke users to make errors On purpose, as a form of protest"
+    },
+    "answer": "B",
+    "id": 3304,
+    "sourcePage": 321
+  },
+  {
+    "page": 16,
+    "numberOnPage": 5,
+    "question": "For the purposes of this course, which of the following is the best-scoped question for a small user needs assessment project?",
+    "options": {
+      "A": "How could the \"on/off\" switch of the device you are using be better designed to accommodate users?",
+      "B": "How could the local grocery store be designed better to accommodate customers?",
+      "C": "How could the city/town/village you live in be designed better to accommodate residents?",
+      "D": "How could the customer queue at the local post office be designed better to accommodate customers?"
+    },
+    "answer": "D",
+    "id": 3305,
+    "sourcePage": 322
+  },
+  {
+    "page": 16,
+    "numberOnPage": 6,
+    "question": "For the purposes of this course, which of the following is the best-scoped question for a small user needs assessment project?",
+    "options": {
+      "A": "How do users feel about MOOCs (massive open online courses)?",
+      "B": "How do users feel about the interface for this particular question in this quiz?",
+      "C": "How do users feel about websites in general?",
+      "D": "How do users feel about Coursera's interface for quizzes?"
+    },
+    "answer": "D",
+    "id": 3306,
+    "sourcePage": 323,
+    "duplicateOf": 3305
+  },
+  {
+    "page": 16,
+    "numberOnPage": 7,
+    "question": "For the purposes of this course, which of the following is the best-scoped question for a small user needs assessment project?",
+    "options": {
+      "A": "How can the world economy be improved for human beings?",
+      "B": "What do people who take this course want out of it?",
+      "C": "How could the solar system be better designed for alien visitors?",
+      "D": "What do sentient beings expect from the universe?"
+    },
+    "answer": "B",
+    "id": 3307,
+    "sourcePage": 324
+  },
+  {
+    "page": 16,
+    "numberOnPage": 8,
+    "question": "P| Gulf of evaluation refers to which of the following?",
+    "options": {
+      "A": "The user's ability to understand the system's output (e.g., the graphs that the system presents the user)",
+      "B": "The ability of the user to tell if the system did what the user was trying to do.",
+      "C": "The user's ability to evaluate if the system is a good match for his/her needs",
+      "D": "The difference between user ratings of an app in the app store and the actual quality of the app."
+    },
+    "answer": "B",
+    "id": 3308,
+    "sourcePage": 325
+  },
+  {
+    "page": 16,
+    "numberOnPage": 9,
+    "question": "Gulf of execution refers to which of the following?",
+    "options": {
+      "A": "The time it takes an application to execute some computationally-intensive task, such as running a statistical model",
+      "B": "The difference between the output the system provided and the output the user wanted.",
+      "C": "The discrepancy between what the user is trying to do and what he/she Is able to do using the system's interface",
+      "D": "The time between when the user gives the system a command and when the system executes that command (e.g., the delay in responding to a button press)"
+    },
+    "answer": "C",
+    "id": 3309,
+    "sourcePage": 326
+  },
+  {
+    "page": 16,
+    "numberOnPage": 10,
+    "question": "In the context of this lesson, the use of consistency, standards, and metaphor is recommended because:",
+    "options": {
+      "A": "people are afraid of things that are new and different.",
+      "B": "they allow a design to take advantage of users' existing schema.",
+      "C": "they are typically required by platform guideline documents.",
+      "D": "borrowing ideas from others is easier than coming up with your own."
+    },
+    "answer": "B",
+    "id": 3310,
+    "sourcePage": 327
+  },
+  {
+    "page": 16,
+    "numberOnPage": 11,
+    "question": "| Is this a good scope for a user test?",
+    "options": {
+      "A": "Yes, it has users test the core functions of the app",
+      "B": "No, a user test needs to include testing every single task in the application to deliver valuable data",
+      "C": "No, a user test must focus on only one task",
+      "D": "No, a user test needs to compare two different systems De"
+    },
+    "answer": "A",
+    "id": 3311,
+    "sourcePage": 328
+  },
+  {
+    "page": 16,
+    "numberOnPage": 12,
+    "question": "In the affinity wall demo video about toaster ovens, why were the two affinity notes related to \"burning\" eventually separated?",
+    "options": {
+      "A": "Because \"burning toast\" and \"burning fingers\" were associated with two different concepts that went better with other affinity notes.",
+      "B": "Because that cluster grew to exceed seven affinity notes.",
+      "C": "Because they were about two different interview participants.",
+      "D": "Because \"burning toast\" tends to happen before \"burning fingers.\""
+    },
+    "answer": "A",
+    "id": 3312,
+    "sourcePage": 329
+  },
+  {
+    "page": 16,
+    "numberOnPage": 13,
+    "question": "SSSSSSSll_Q5QqqqqQQ5Q5Q5Q5QQQ SSS QL = Using obscure system codes or non-intuitive imagery to represent system features and/or feedback violates which heuristic?",
+    "options": {
+      "A": "User control and freedom",
+      "B": "Flexibility and efficiency of use",
+      "C": "Aesthetic and minimalist design",
+      "D": "Match between system and the real world SSS"
+    },
+    "answer": "D",
+    "id": 3313,
+    "sourcePage": 330
+  },
+  {
+    "page": 16,
+    "numberOnPage": 14,
+    "question": "Personas represent target users and are, thus, primarily a distillation of the findings from formative work. Scenarios begin to move designers toward a design solution. How do scenarios do this?",
+    "options": {
+      "A": "By envisioning how a technology might address the needs identified in formative work",
+      "B": "By enumerating features of the technology being designed",
+      "C": "By articulating tradeoffs of different design solutions",
+      "D": "By providing stories that can be put into the ads for the product being designed"
+    },
+    "answer": "A",
+    "id": 3314,
+    "sourcePage": 331
+  },
+  {
+    "page": 16,
+    "numberOnPage": 15,
+    "question": "Personas include different types of information, from demographics to motivations and sociocultural context How should designers decide what information to include?",
+    "options": {
+      "A": "They should focus on making the information as complete as possible",
+      "B": "They should focus on idiosyncratic characteristics of people they encountered in the formative research that will make personas as vivid as possible",
+      "C": "They should focus mostly on demographic information; other types of information are secondary",
+      "D": "They should focus on information that contributes to the distinct needs and potential barriers to and motivations for use that each class of target users has in relation to the technology being developed"
+    },
+    "answer": "D",
+    "id": 3315,
+    "sourcePage": 332
+  },
+  {
+    "page": 16,
+    "numberOnPage": 16,
+    "question": "Some web forms give instantaneous feedback about the validity of data entered into a form field every time a user types a character. This type of \"in-process feedback\" helps usability because",
+    "options": {
+      "A": "It can be used to manipulate users into providing data they didn't intend to provide",
+      "B": "It encourages users to look up help and documentation to understand how the system works",
+      "C": "It helps prevent errors before they happen",
+      "D": "It keeps users focused on the current task rather than getting distracted"
+    },
+    "answer": "C",
+    "id": 3316,
+    "sourcePage": 333
+  },
+  {
+    "page": 16,
+    "numberOnPage": 17,
+    "question": "The design process is highly iterative. Which of the following are iterative loops that a designer might do in the course of a project?",
+    "options": {
+      "A": "From ideation to problem framing",
+      "B": "From creation of scenarios and storyboards to ideation",
+      "C": "From creation of scenarios and storyboards to problem framing",
+      "D": "From prototyping to ideation",
+      "E": "All of the others",
+      "F": "None of the others"
+    },
+    "answer": "E",
+    "id": 3317,
+    "sourcePage": 334
+  },
+  {
+    "page": 16,
+    "numberOnPage": 18,
+    "question": "The methodology you learned in this specialization is often labeled \"human-centered.\" Why?",
+    "options": {
+      "A": "Because it cannot be applied to animals",
+      "B": "Because it requires mindfulness training and centeredness to execute well",
+      "C": "Because it focuses on the needs, preferences, and perspectives of a human user (or potential user).",
+      "D": "Because it focuses only on the human user and ignores the user's environment."
+    },
+    "answer": "C",
+    "id": 3318,
+    "sourcePage": 335
+  },
+  {
+    "page": 16,
+    "numberOnPage": 19,
+    "question": "The recommendation \"keep lists of options short\" is given because:",
+    "options": {
+      "A": "short lists load faster on a web page.",
+      "B": "designing long lists of options is a waste of time because most users will only ever choose one or two of them.",
+      "C": "due to the limits of short-term memory, users will have forgotten the first items by the time they've gotten to the end of a long list.",
+      "D": "long lists exceed users' useful field of view, and they aren't able to scan them effectively using"
+    },
+    "answer": "C",
+    "id": 3319,
+    "sourcePage": 336
+  },
+  {
+    "page": 16,
+    "numberOnPage": 20,
+    "question": "The methodology you learned in this course is often labeled \"human-centered.\" Why?",
+    "options": {
+      "A": "Because it cannot be applied to animals.",
+      "B": "Because it requires mindfulness training and centeredness to execute well.",
+      "C": "Because it focuses on the needs, preferences, and perspectives of a human user (or potential user).",
+      "D": "Because it focuses only on the human user and ignores the user's environment."
+    },
+    "answer": "C",
+    "id": 3320,
+    "sourcePage": 337
+  },
+  {
+    "page": 17,
+    "numberOnPage": 1,
+    "question": "You are testing the Nomaza.com website. All of your test participants will be using the same computer, which is located in your user testing lab. Which of the following is not something you ought to worry about when preparing for each test session?",
+    "options": {
+      "A": "making sure the browser cache is cleared so that later users don't see which links have been visited",
+      "B": "clearing out data that was created by earlier users so that all participants see the same starting conditions",
+      "C": "testing participants' laptops to make sure their default browser is capable of displaying Nomaza.com",
+      "D": "giving all participants the same account capabilities and payment method in order to ensure consistency"
+    },
+    "answer": "C",
+    "id": 3321,
+    "sourcePage": 338
+  },
+  {
+    "page": 17,
+    "numberOnPage": 2,
+    "question": "With respect to semi-structured interviews, what is the point of the Carnegie Hall joke about practice?",
+    "options": {
+      "A": "Interviewing is a state of mind.",
+      "B": "The location where you conduct an interview is as important as the interview itself.",
+      "C": "Like any skill, practice is essential.",
+      "D": "Musicians make good interviewers."
+    },
+    "answer": "C",
+    "id": 3322,
+    "sourcePage": 339
+  },
+  {
+    "page": 17,
+    "numberOnPage": 3,
+    "question": "With respect to semi-structured interviews, what is the point of the Carnegie Hall joke about practice?",
+    "options": {
+      "A": "Interviewing is a state of mind.",
+      "B": "The location where you conduct an interview is as important as the interview itself.",
+      "C": "Like any skill, practice is essential.",
+      "D": "Musicians make good interviewers."
+    },
+    "answer": "C",
+    "id": 3323,
+    "sourcePage": 340,
+    "duplicateOf": 3322
+  },
+  {
+    "page": 17,
+    "numberOnPage": 4,
+    "question": "With respect to semi-structured interviews, what is the point of the Carnegie Hall joke about practice?",
+    "options": {
+      "A": "Interviewing is a state of mind.",
+      "B": "The location where you conduct an interview is as important as the interview itself.",
+      "C": "Like any skill, practice is essential.",
+      "D": "Musicians make good interviewers."
+    },
+    "answer": "C",
+    "id": 3324,
+    "sourcePage": 341,
+    "duplicateOf": 3322
+  },
+  {
+    "page": 17,
+    "numberOnPage": 5,
+    "question": "With respect to semi-structured interviews, what is the point of the Carnegie Hall joke about practice?",
+    "options": {
+      "A": "Interviewing is a state of mind.",
+      "B": "The location where you conduct an interview is as important as the interview itself.",
+      "C": "Like any skill, practice is essential.",
+      "D": "Musicians make good interviewers."
+    },
+    "answer": "C",
+    "id": 3325,
+    "sourcePage": 342,
+    "duplicateOf": 3322
+  },
+  {
+    "page": 17,
+    "numberOnPage": 6,
+    "question": "With respect to semi-structured interviews, what is the point of the Carnegie Hall joke about practice?",
+    "options": {
+      "A": "Interviewing is a state of mind.",
+      "B": "The location where you conduct an interview is as important as the interview itself.",
+      "C": "Like any skill, practice is essential.",
+      "D": "Musicians make good interviewers."
+    },
+    "answer": "C",
+    "id": 3326,
+    "sourcePage": 343,
+    "duplicateOf": 3322
+  }
+]

@@ -19,5 +19,12 @@
     "note": "Bộ đề chụp · 307 câu (300 câu khác nhau)",
     "file": "fer202.json",
     "idBase": 2000
+  },
+  {
+    "id": "WDU203c",
+    "label": "WDU203c",
+    "note": "Bộ đề chụp · 326 câu (302 câu khác nhau)",
+    "file": "wdu203c.json",
+    "idBase": 3000
   }
 ]

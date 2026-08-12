@@ -1,0 +1,165 @@
+{
+  "11": { "answer": "B" },
+  "33": {
+    "question": "Designers prototype to test their design ideas before resources are invested in expensive and time-consuming software development.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "A"
+  },
+  "35": {
+    "question": "Mode can change how multiple aspects of the system behave.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "A"
+  },
+  "39": { "answer": "A" },
+  "41": { "answer": "A" },
+  "47": {
+    "question": "True or false: In this course, you will get your hands dirty and gain hands-on experience with UX Research and Design methods.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "A"
+  },
+  "62": { "question": "Ideation mostly happens at the start of the design process when the designer is first coming up with possible solutions to the design problem." },
+  "68": {
+    "question": "The many new technological trends we discussed means that UX design as a process is fundamentally changing and that what we discussed in this course is not going to be useful a year or two from now.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "B"
+  },
+  "71": {
+    "question": "True or false: User Experience only describes the experience that people have while actually using a product, and not other related experiences like acquiring the product or fixing it when it breaks.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "B"
+  },
+  "73": {
+    "question": "True or false: You need to have a degree in psychology in order to understand the principles behind good UX.",
+    "options": { "A": "True", "B": "False" },
+    "answer": "B"
+  },
+  "74": { "answer": "B" },
+  "80": { "question": "Which of the following is NOT a dimension of survey modes?", "answer": "C" },
+  "84": { "question": "Which of the following is NOT a method one would use to understand why people are using a product at certain times?" },
+  "92": { "answer": "C" },
+  "112": { "answer": "D" },
+  "126": { "answer": "A" },
+  "157": { "answer": "ABCEF" },
+  "158": {
+    "question": "Which of these are good research questions for a needs-finding study?",
+    "options": {
+      "A": "They will help the researcher learn how users currently complete the activity that their design will try to improve",
+      "B": "They are questions that can be answered by interviewing the target user population",
+      "C": "They are open ended, not leading",
+      "D": "They seek to learn about what problems there are with existing solutions"
+    },
+    "answer": "ABCD"
+  },
+  "169": {
+    "question": "What types of research activities are typically engaged in by 2-3 people design teams?",
+    "options": {
+      "A": "I. A/B Testing",
+      "B": "II. Feature driven usability testing",
+      "C": "III. Competitive testing",
+      "D": "IV. Attitudinal analytics (surveys)",
+      "E": "II and IV"
+    },
+    "answer": "C"
+  },
+  "165": {
+    "question": "Which of the following should you aim for when arranging interviews? I. The participant should be a user or potential user of the product or service. II. The interview should be held where the product or service would normally be used. III. The time should be when the product or service would normally be used.",
+    "options": { "A": "I and II", "B": "I and III", "C": "II and III", "D": "I, II and III" }
+  },
+  "167": {
+    "options": { "A": "I", "B": "II", "C": "II, IV", "D": "I, III, IV" },
+    "answer": "D"
+  },
+  "170": {
+    "options": { "A": "I, II, III", "B": "I, II", "C": "II, IV", "D": "I, III, IV", "E": "V" },
+    "answer": "E"
+  },
+  "172": { "answer": "C" },
+  "175": {
+    "options": { "A": "I only", "B": "II only", "C": "I and II", "D": "II and III" },
+    "answer": "C"
+  },
+  "183": { "question": "______ means to make an idea real or concrete." },
+  "185": { "answer": "C" },
+  "202": {
+    "question": "About how many key findings should be included in a typical user test report?",
+    "options": { "A": "1", "B": "2-3", "C": "5-10", "D": "20-50" },
+    "answer": "C"
+  },
+  "205": {
+    "question": "A feature of an environment or system that communicates through verbiage or imagery what will happen if an action is taken is called",
+    "options": { "A": "A signifier", "B": "A signal", "C": "Feedback", "D": "An icon" },
+    "answer": "A"
+  },
+  "206": {
+    "question": "A feature of an environment or system that, by its shape and appearance, suggests to a person that a particular action could be taken is called",
+    "options": { "A": "An affordance", "B": "A signal", "C": "A constraint", "D": "A signpost" },
+    "answer": "A"
+  },
+  "207": {
+    "question": "A change in an environment or system that indicates that a user's action was recognized and communicates the result of that action is called:",
+    "options": { "A": "Response time", "B": "A signal", "C": "Feedback", "D": "A dialogue box" },
+    "answer": "C"
+  },
+  "209": {
+    "question": "Bill Buxton claims that ______ is not just a byproduct of design, but is central to design thinking and learning."
+  },
+  "216": { "options": { "A": "Ideation" } },
+  "230": { "options": { "A": "5 degrees", "B": "18 degrees", "C": "30 degrees", "D": "180 degrees" } },
+  "244": {
+    "question": "Is this a good scope for a user test?",
+    "options": {
+      "A": "No, a user test must focus on only one task",
+      "B": "Yes, it has users test the core functions of the app",
+      "C": "No, a user test needs to compare two different systems",
+      "D": "No, a user test needs to include testing every single task in the application to deliver valuable data"
+    },
+    "answer": "B"
+  },
+  "246": {
+    "question": "Which of the following are among key tasks that were identified?",
+    "options": {
+      "A": "Customize automatic functions, Help, Log Out",
+      "B": "Check map, Create a post, Log Out",
+      "C": "Change security code, Create a post, Check recent events",
+      "D": "Check map, Help, Activate function Robbery"
+    },
+    "answer": "D"
+  },
+  "247": {
+    "question": "This example would most likely be an example of a... (choose the BEST response)",
+    "options": {
+      "A": "Wireframes",
+      "B": "Lo-Fi Prototype",
+      "C": "Hi-Fi Prototype",
+      "D": "Yes, wireframes need to look like a completely finished product"
+    },
+    "answer": "C",
+    "dropOptions": ["F"]
+  },
+  "248": {
+    "question": "Which of these are good research questions for a needs-finding study?",
+    "options": {
+      "A": "They will help the researcher learn how users currently complete the activity that their design will try to improve",
+      "B": "They are questions that can be answered by interviewing the target user population",
+      "C": "They are open ended, not leading",
+      "D": "They seek to learn about what problems there are with existing solutions"
+    },
+    "answer": "ABCD"
+  },
+  "269": { "options": { "D": "Sit quietly and observe, even if the participant says nothing" } },
+  "271": { "options": { "C": "Cost" }, "answer": "C" },
+  "290": {
+    "question": "Which of the following are research methods that can be applied in formative research?",
+    "options": {
+      "A": "Interviews",
+      "B": "Observations",
+      "C": "Asking friends and family members about their experiences",
+      "D": "Participatory design groups",
+      "E": "All of the others",
+      "F": "None of the others"
+    },
+    "answer": "E"
+  },
+  "300": { "options": { "C": "Obtaining quantified measures of participants' subjective reactions to using a system" } },
+  "320": { "answer": "A" }
+}
