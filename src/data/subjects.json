@@ -1,19 +1,5 @@
 [
   {
-    "id": "SWR302",
-    "label": "SWR302",
-    "note": "Đề chuẩn · 400 câu (293 câu khác nhau)",
-    "file": "swr302.json",
-    "idBase": 1000
-  },
-  {
-    "id": "FER202",
-    "label": "FER202",
-    "note": "Bộ đề chụp · 307 câu (300 câu khác nhau)",
-    "file": "fer202.json",
-    "idBase": 2000
-  },
-  {
     "id": "WDU203c",
     "label": "WDU203c",
     "note": "Bộ đề chụp · 326 câu (302 câu khác nhau)",

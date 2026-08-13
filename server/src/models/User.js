@@ -54,6 +54,8 @@ const userSchema = new mongoose.Schema(
     entitlements: {
       examSubjects: { type: [String], default: [] },
       trickSubjects: { type: [String], default: [] },
+      examAttempts: { type: Number, default: 1 },
+      isExamUnlimited: { type: Boolean, default: false },
     },
   },
   { timestamps: true },

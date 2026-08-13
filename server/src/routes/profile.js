@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { Router } from 'express';
 import { requireAuth } from '../auth.js';
 import { asyncRoute, isSafeString } from '../middleware.js';
@@ -7,11 +8,28 @@ import { Question } from '../models/Question.js';
 
 const router = Router();
 
+function hasTrickAccess(user, subject) {
+  if (isAdminEmail(user.email)) return true;
+  if (subject && user.entitlements?.trickSubjects?.includes(subject)) return true;
+  if (user.entitlements?.trickSubjects?.length > 0) return true;
+  const starsMap = user.stars instanceof Map ? user.stars : new Map(Object.entries(user.stars || {}));
+  for (const [, val] of starsMap.entries ? starsMap.entries() : Object.entries(starsMap)) {
+    if (Number(val) >= 7) return true;
+  }
+  return false;
+}
+
 function profile(user) {
+  const entitlements = user.entitlements || {};
   return {
     stars: user.stars instanceof Map ? Object.fromEntries(user.stars) : (user.stars || {}),
     highlights: user.highlights instanceof Map ? Object.fromEntries(user.highlights) : (user.highlights || {}),
-    entitlements: user.entitlements || { examSubjects: [], trickSubjects: [] },
+    entitlements: {
+      examSubjects: entitlements.examSubjects || [],
+      trickSubjects: entitlements.trickSubjects || [],
+      examAttempts: entitlements.examAttempts ?? 1,
+      isExamUnlimited: entitlements.isExamUnlimited ?? false,
+    },
   };
 }
 
@@ -32,11 +50,53 @@ router.put('/highlights/:questionId', requireAuth(), asyncRoute(async (req, res)
   if (terms.some((term) => term.length > 180)) {
     return res.status(400).json({ error: 'Mỗi đoạn highlight tối đa 180 ký tự' });
   }
+
+  const user = await User.findById(req.session.sub);
+  if (!user) return res.status(401).json({ error: 'User not found' });
+
+  const questionDoc = await Question.findOne({ id: questionId }, { subject: 1 }).lean();
+  const subject = questionDoc?.subject || '';
+  if (!hasTrickAccess(user, subject)) {
+    return res.status(403).json({ error: 'Vui lòng mua Gói tạo trick lỏ hoặc đạt 7 ngôi sao để sử dụng tính năng highlight!' });
+  }
+
   await User.updateOne(
     { _id: req.session.sub },
     { $set: { [`highlights.${questionId}`]: terms } },
   );
   res.json({ ok: true, questionId, terms });
+}));
+
+router.get('/download-keyword-pdf', requireAuth(), asyncRoute(async (req, res) => {
+  const user = await User.findById(req.session.sub);
+  if (!user) return res.status(401).json({ error: 'User not found' });
+  if (!hasTrickAccess(user, '')) {
+    return res.status(403).json({ error: 'Bạn cần mua Gói tạo trick lỏ hoặc đạt 7 ngôi sao để tải file này!' });
+  }
+  const filePath = path.resolve(process.cwd(), '../key_word_wdu.pdf');
+  res.download(filePath, 'key_word_wdu.pdf', (err) => {
+    if (err && !res.headersSent) {
+      const altPath = path.resolve(process.cwd(), 'key_word_wdu.pdf');
+      res.download(altPath, 'key_word_wdu.pdf');
+    }
+  });
+}));
+
+router.post('/use-exam-attempt', requireAuth(), asyncRoute(async (req, res) => {
+  const user = await User.findById(req.session.sub);
+  if (!user) return res.status(401).json({ error: 'User not found' });
+  const isAdmin = isAdminEmail(user.email);
+  const isUnlimited = user.entitlements?.isExamUnlimited;
+  if (isAdmin || isUnlimited) {
+    return res.json({ ok: true, remaining: 'unlimited' });
+  }
+  const currentAttempts = user.entitlements?.examAttempts ?? 1;
+  if (currentAttempts <= 0) {
+    return res.status(403).json({ error: 'Bạn đã hết lượt test mô phỏng. Vui lòng mua thêm gói test.' });
+  }
+  user.entitlements.examAttempts = currentAttempts - 1;
+  await user.save();
+  res.json({ ok: true, remaining: user.entitlements.examAttempts });
 }));
 
 router.post('/exam-complete', requireAuth(), asyncRoute(async (req, res) => {
@@ -47,7 +107,7 @@ router.post('/exam-complete', requireAuth(), asyncRoute(async (req, res) => {
   }
   const user = await User.findById(req.session.sub);
   if (!user) return res.status(401).json({ error: 'User not found' });
-  const allowed = isAdminEmail(user.email) || user.entitlements?.examSubjects?.includes(subject);
+  const allowed = isAdminEmail(user.email) || user.entitlements?.isExamUnlimited || (user.entitlements?.examAttempts ?? 0) >= 0 || user.entitlements?.examSubjects?.includes(subject);
   if (!allowed) return res.status(403).json({ error: 'Bạn chưa mở khóa bài thi mô phỏng của môn này' });
 
   const earned = score >= 8 ? 2 : score >= 5 ? 1 : 0;

@@ -83,17 +83,17 @@ function SubjectPicker({ subjects, value, onChange }) {
   </div>;
 }
 
-function Header({ view, setView, subjects, subjectId, setSubjectId, user, profile, onLogin, onLogout, toast }) {
+function Header({ view, handleNavigate, subjects, subjectId, setSubjectId, user, profile, onLogin, onLogout, toast }) {
   const stars = Number(profile?.stars?.[subjectId] || 0);
   return (
     <header className="app-header">
       <div className="header-glass"><HeaderGlass /></div>
-      <button className="brand" onClick={() => setView('home')}><img className="brand-dot" src="/hachimi-brand.png" alt="" /><span>Hachimi</span></button>
+      <button className="brand" onClick={() => handleNavigate('home')}><img className="brand-dot" src="/hachimi-brand.png" alt="" /><span>Hachimi</span></button>
       <nav className="nav-pills" aria-label="Điều hướng">
-        <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Tổng quan</button>
-        <button className={view === 'study' ? 'active' : ''} onClick={() => setView('study')}>Flashcard</button>
-        <button className={view === 'exam' ? 'active' : ''} onClick={() => setView('exam')}>EOS</button>
-        {user?.isAdmin && <button className={view === 'admin' ? 'active' : ''} onClick={() => setView('admin')}>Quản trị</button>}
+        <button className={view === 'home' ? 'active' : ''} onClick={() => handleNavigate('home')}>Tổng quan</button>
+        <button className={view === 'study' ? 'active' : ''} onClick={() => handleNavigate('study')}>Flashcard</button>
+        <button className={view === 'exam' ? 'active' : ''} onClick={() => handleNavigate('exam')}>EOS</button>
+        {user?.isAdmin && <button className={view === 'admin' ? 'active' : ''} onClick={() => handleNavigate('admin')}>Quản trị</button>}
       </nav>
       <div className="header-actions">
         <SubjectPicker subjects={subjects} value={subjectId} onChange={setSubjectId} />
@@ -106,24 +106,123 @@ function Header({ view, setView, subjects, subjectId, setSubjectId, user, profil
   );
 }
 
+function StarProgressTracker({ stars = 0, target = 7, subjectLabel, onOpenHelp }) {
+  const percent = Math.min(100, Math.round((stars / target) * 100));
+  const remaining = Math.max(0, target - stars);
+  const isCompleted = stars >= target;
+
+  return (
+    <Glass strong className="star-tracker-card">
+      <div className="star-tracker-head">
+        <div>
+          <span className="kicker">TIẾN ĐỘ TÍCH SAO {subjectLabel ? `· ${subjectLabel}` : ''}</span>
+          <h3>{isCompleted ? '🎉 Đã đạt đủ 7/7 Ngôi sao!' : `⭐ ${stars} / ${target} Ngôi sao`}</h3>
+        </div>
+        <button type="button" className="help-circle-btn" onClick={onOpenHelp} title="Giải thích cách tích sao & quà">
+          ?
+        </button>
+      </div>
+
+      {isCompleted ? (
+        <div className="star-unlocked-container">
+          <p className="star-unlocked-text">Bạn đã mở khóa thành công Gói tạo trick lỏ & Tài liệu bí truyền!</p>
+          <a className="download-pdf-hero-btn" href="/api/profile/download-keyword-pdf" download="key_word_wdu.pdf" target="_blank" rel="noreferrer">
+            📥 TẢI XUỐNG KEY_WORD_WDU.PDF
+          </a>
+        </div>
+      ) : (
+        <>
+          <div className="star-bar-row">
+            <div className="star-bar-track">
+              <div className="star-bar-fill" style={{ width: `${percent}%` }} />
+              <span className="star-bar-percent">{percent}%</span>
+            </div>
+          </div>
+          <div className="star-tracker-footer">
+            <span className="reward-badge locked">Còn {remaining} sao nữa để nhận file key_word_wdu.pdf & mở Gói tạo trick</span>
+          </div>
+        </>
+      )}
+    </Glass>
+  );
+}
+
+function StarHelpModal({ close, stars = 0, target = 7 }) {
+  const isCompleted = stars >= target;
+  return (
+    <div className="modal-backdrop" onMouseDown={(event) => event.target === event.currentTarget && close()}>
+      <Glass strong className="modal-card help-modal">
+        <button className="modal-x" onClick={close}>×</button>
+        <span className="kicker">QUYỀN LỢI TÍCH SAO</span>
+        <h2>⭐ Hướng dẫn tích sao & Phần thưởng</h2>
+
+        <div className="help-content-box">
+          <div className="help-section">
+            <h4>💡 Cách tích sao:</h4>
+            <p>Mỗi bài thi thử EOS 60 phút:</p>
+            <ul>
+              <li>Đạt <b>≥ 5.0 điểm</b>: Nhận <b>1 sao</b>.</li>
+              <li>Đạt <b>≥ 8.0 điểm</b>: Nhận <b>2 sao</b>.</li>
+            </ul>
+          </div>
+
+          <div className="help-section">
+            <h4>🎁 Phần thưởng khi tích đủ {target} sao:</h4>
+            <ul>
+              <li><b>1. Mở khóa Gói tạo trick lỏ:</b> Tự do bôi đen từ khóa & lưu Highlight ở Flashcard và xem lại bài thi EOS.</li>
+              <li><b>2. Mở khóa File bí truyền key_word_wdu.pdf:</b> File tổng hợp mẹo thi và từ khóa cực xịn cho môn học.</li>
+            </ul>
+          </div>
+
+          {isCompleted ? (
+            <div className="help-completed-box">
+              <p>🎉 Chúc mừng! Bạn đã tích đủ {stars}/{target} sao và mở khóa toàn bộ quyền lợi.</p>
+              <a className="download-link-btn" href="/api/profile/download-keyword-pdf" target="_blank" rel="noreferrer">
+                📥 Tải file key_word_wdu.pdf ngay
+              </a>
+            </div>
+          ) : (
+            <div className="help-progress-note">
+              <p>Hiện tại bạn đang có <b>{stars}/{target} sao</b>. Bạn chỉ cần tích thêm <b>{target - stars} sao</b> nữa để nhận quà!</p>
+            </div>
+          )}
+        </div>
+      </Glass>
+    </div>
+  );
+}
+
 function Home({ subjects, subjectId, setSubjectId, setView, user, profile, openPurchase }) {
+  const [showStarHelp, setShowStarHelp] = useState(false);
   const selected = subjects.find((subject) => subject.id === subjectId) || subjects[0];
-  const examOwned = user?.isAdmin || profile?.entitlements?.examSubjects?.includes(subjectId);
   const trickOwned = user?.isAdmin || profile?.entitlements?.trickSubjects?.includes(subjectId);
+  const isUnlimited = user?.isAdmin || profile?.entitlements?.isExamUnlimited;
+  const attempts = profile?.entitlements?.examAttempts ?? 1;
+  const stars = Number(profile?.stars?.[subjectId] || 0);
+
   return (
     <main>
       <section className="hero">
-        <div className="hero-copy"><span className="kicker">HỌC LỎ CÓ CHIẾN THUẬT</span><h1>Học nhẹ đầu.<br /><em>Thi có bài.</em></h1><p>Flashcard miễn phí cho mọi người. Khi cần cảm giác phòng thi thật, vào EOS 60 câu · 60 phút và tích sao để mở từng pack trick lỏ.</p><div className="hero-actions"><button className="primary" onClick={() => setView('study')}>Học flashcard miễn phí</button><button className="secondary" onClick={() => setView('exam')}>Vào phòng EOS</button></div></div>
-        <Glass strong className="hero-orbit"><div className="orbit-core"><strong>{profile?.stars?.[subjectId] || 0}</strong><span>ngôi sao</span></div><div className="orbit-note">Mỗi bài ≥ 5 điểm nhận 1 sao<br />≥ 8 điểm nhận 2 sao</div></Glass>
+        <div className="hero-copy"><span className="kicker">HỌC LỎ CÓ CHIẾN THUẬT</span><h1>Học nhẹ đầu.<br /><em>Thi có bài.</em></h1><p>Flashcard miễn phí cho mọi người. Khi cần cảm giác phòng thi thật, vào EOS 60 câu · 60 phút và tích sao để mở từng pack trick lỏ (Lần đầu FREE!).</p><div className="hero-actions"><button className="primary" onClick={() => setView('study')}>Học flashcard miễn phí</button><button className="secondary" onClick={() => setView('exam')}>Vào phòng EOS</button></div></div>
+        
+        <div className="hero-orbit-box">
+          <Glass strong className="hero-orbit">
+            <div className="orbit-core"><strong>{stars}</strong><span>ngôi sao</span></div>
+            <div className="orbit-note">Mỗi bài ≥ 5 điểm nhận 1 sao<br />≥ 8 điểm nhận 2 sao</div>
+          </Glass>
+          <StarProgressTracker stars={stars} target={7} subjectLabel={selected?.label} onOpenHelp={() => setShowStarHelp(true)} />
+        </div>
       </section>
 
       <section className="section"><div className="section-head"><div><span className="kicker">CHỌN MÔN</span><h2>Hôm nay lỏ môn nào?</h2></div><p>Đang chọn <strong>{selected?.label}</strong></p></div><div className="subject-grid">{subjects.map((subject) => <button key={subject.id} className={`subject-card ${subject.id === subjectId ? 'active' : ''}`} onClick={() => setSubjectId(subject.id)}><span>{subject.id.slice(0, 3)}</span><strong>{subject.label}</strong><small>{subject.questionCount || '—'} câu hỏi</small></button>)}</div></section>
 
       <section className="section"><div className="section-head"><div><span className="kicker">GÓI HỌC</span><h2>Free để học, trả phí khi cần lợi thế.</h2></div></div><div className="pricing-grid">
         <Glass className="price-card"><span className="price-icon">◌</span><h3>Flashcard</h3><p>Học toàn bộ câu hỏi, lưu câu và tự highlight theo cách nhớ của bạn.</p><strong>Miễn phí</strong><button className="secondary" onClick={() => setView('study')}>Bắt đầu học</button></Glass>
-        <Glass className="price-card featured"><span className="price-icon">▣</span><h3>Test mô phỏng EOS</h3><p>Kiểm tra từng câu hoặc thi thử FPT 60 câu trong 60 phút.</p><strong>{money(selected?.examPrice || 20000)} <small>/ môn</small></strong>{examOwned ? <button className="owned" onClick={() => setView('exam')}>Đã mở khóa</button> : <button className="primary" onClick={() => openPurchase('exam')}>Mở khóa EOS</button>}</Glass>
-        <Glass className="price-card"><span className="price-icon">✦</span><h3>Gói trick lỏ</h3><p>Trick do Hoàng tổng hợp, hiện ngay trong flashcard và phần xem lại.</p><strong>{money(selected?.trickPrice || 20000)} <small>/ tài khoản</small></strong>{trickOwned ? <button className="owned" onClick={() => setView('study')}>Đã mở khóa</button> : <button className="secondary" onClick={() => openPurchase('trick')}>Mở khóa trick</button>}</Glass>
+        <Glass className="price-card featured"><span className="price-icon">▣</span><h3>Test mô phỏng EOS</h3><p>Lần đầu FREE! Mua thêm chỉ 10k cho 2 lần test, 20k cho 5 lần hoặc 30k No Limit.</p><strong>Chỉ từ {money(10000)} <small>/ 2 lượt test</small></strong>{isUnlimited ? <button className="owned" onClick={() => setView('exam')}>Thi Không Giới Hạn</button> : <button className="primary" onClick={() => (attempts > 0 ? setView('exam') : openPurchase('exam'))}>{attempts > 0 ? `Vào thi ngay (Còn ${attempts} lượt)` : 'Mở khóa gói test'}</button>}</Glass>
+        <Glass className="price-card"><span className="price-icon">✦</span><h3>Gói tạo trick lỏ</h3><p>Hãy lỏ theo cách của bạn</p><strong>{money(selected?.trickPrice || 20000)} <small>/ tài khoản</small></strong>{trickOwned ? <button className="owned" onClick={() => setView('study')}>Đã mở khóa</button> : <button className="secondary" onClick={() => openPurchase('trick')}>Mở khóa gói tạo trick</button>}</Glass>
       </div></section>
+
+      {showStarHelp && <StarHelpModal close={() => setShowStarHelp(false)} stars={stars} target={7} />}
     </main>
   );
 }
@@ -135,17 +234,23 @@ function Highlighted({ text, terms = [] }) {
   return String(text).split(pattern).map((part, index) => safe.some((term) => term.toLowerCase() === part.toLowerCase()) ? <mark key={index}>{part}</mark> : part);
 }
 
-function Study({ questions, subject, user, profile, refreshProfile, toast, openPurchase }) {
+function Study({ questions, subject, user, profile, refreshProfile, toast, openPurchase, setView }) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [freezeFlip, setFreezeFlip] = useState(false);
   const [tricks, setTricks] = useState({ packs: [] });
+
   const card = questions[index] || null;
   const terms = card ? profile?.highlights?.[card.id] || [] : [];
+  const stars = Number(profile?.stars?.[subject?.id] || 0);
+  const hasTrickEntitlement = user?.isAdmin || profile?.entitlements?.trickSubjects?.includes(subject?.id) || stars >= 7;
+
   useEffect(() => { setIndex(0); setFlipped(false); }, [subject?.id]);
   useEffect(() => {
     if (!user || !subject) return setTricks({ packs: [] });
     api(`/profile/tricks?subject=${encodeURIComponent(subject.id)}`).then((result) => result.ok && setTricks(result.data));
   }, [user, subject, profile?.stars]);
+
   const trick = useMemo(() => {
     if (!card) return null;
     return tricks.packs?.flatMap((pack) => pack.items || []).find((item) => item.questionId === card.id)?.content || null;
@@ -153,27 +258,71 @@ function Study({ questions, subject, user, profile, refreshProfile, toast, openP
 
   async function addHighlight() {
     if (!user) return toast('Đăng nhập Google để lưu highlight');
+    if (!hasTrickEntitlement) {
+      toast('Vui lòng mua Gói tạo trick lỏ hoặc đạt 7 ngôi sao để sử dụng tính năng highlight!');
+      openPurchase('trick');
+      return;
+    }
     const selected = window.getSelection()?.toString().trim();
     if (!selected || selected.length > 180) return toast('Hãy bôi đen một đoạn ngắn trên câu hỏi hoặc đáp án');
     const next = [...new Set([...terms, selected])].slice(0, 20);
     const result = await api(`/profile/highlights/${card.id}`, { method: 'PUT', body: JSON.stringify({ terms: next }) });
-    if (!result.ok) return toast(result.data.error || 'Không lưu được highlight');
+    if (!result.ok) {
+      if (result.status === 403) openPurchase('trick');
+      return toast(result.data.error || 'Không lưu được highlight');
+    }
     await refreshProfile(); toast('Đã lưu cách nhớ của bạn', 'success');
   }
+
   async function clearHighlights() {
     const result = await api(`/profile/highlights/${card.id}`, { method: 'PUT', body: JSON.stringify({ terms: [] }) });
     if (result.ok) { await refreshProfile(); toast('Đã xóa highlight', 'success'); }
   }
 
-  if (!card) return <main className="empty-page"><h2>Chưa có câu hỏi cho môn này</h2></main>;
+  function handleCardClick() {
+    const selection = window.getSelection()?.toString().trim();
+    if (selection || freezeFlip) return;
+    setFlipped(!flipped);
+  }
+
+  if (!card) return <main className="empty-page"><button type="button" className="page-back-arrow-btn" onClick={() => setView('home')}>← Quay lại</button><h2>Chưa có câu hỏi cho môn này</h2></main>;
   return (
     <main className="study-page">
-      <div className="study-top"><div><span className="kicker">FLASHCARD MIỄN PHÍ</span><h1>{subject?.label}</h1></div><div className="card-progress"><span>{index + 1} / {questions.length}</span><div><i style={{ width: `${(index + 1) / questions.length * 100}%` }} /></div></div></div>
+      <div className="study-top">
+        <div className="study-title-group">
+          <button type="button" className="page-back-arrow-btn" onClick={() => setView('home')} title="Quay lại trang chủ">← Quay lại</button>
+          <div><span className="kicker">FLASHCARD MIỄN PHÍ</span><h1>{subject?.label}</h1></div>
+        </div>
+        <div className="card-progress"><span>{index + 1} / {questions.length}</span><div><i style={{ width: `${(index + 1) / questions.length * 100}%` }} /></div></div>
+      </div>
       <div className="study-shell">
-        <aside><Glass><strong>Hãy lỏ theo cách của bạn</strong><p>Bôi đen đoạn cần nhớ rồi lưu highlight. Màu đánh dấu sẽ đi cùng tài khoản.</p><button onClick={addHighlight}>Lưu đoạn đang chọn</button>{terms.length > 0 && <button className="text-action" onClick={clearHighlights}>Xóa highlight câu này</button>}</Glass><Glass><strong>Trick lỏ</strong>{trick ? <p className="trick-content">{trick}</p> : user ? <p>Chưa có trick được mở cho câu này. Tích sao hoặc mở gói trick.</p> : <p>Đăng nhập để xem tiến độ trick.</p>}{!tricks.purchased && <button onClick={() => openPurchase('trick')}>Xem gói trick</button>}</Glass></aside>
-        <section className={`flashcard ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
-          <div className="flash-face front"><span>CÂU {card.numberOnPage || index + 1} · TRANG {card.page}</span><h2><Highlighted text={card.question} terms={terms} /></h2><div className="flash-options">{Object.entries(card.options || {}).map(([letter, option]) => <p key={letter}><b>{letter}</b><Highlighted text={option} terms={terms} /></p>)}</div><small>Chạm để xem đáp án</small></div>
-          <div className="flash-face back"><span>ĐÁP ÁN</span><h2>{card.answer}</h2><div className="flash-options">{Object.entries(card.options || {}).map(([letter, option]) => <p className={card.answer.includes(letter) ? 'correct' : ''} key={letter}><b>{letter}</b><Highlighted text={option} terms={terms} /></p>)}</div>{trick && <div className="trick-inline"><b>✦ Trick lỏ</b>{trick}</div>}<small>Chạm để quay lại câu hỏi</small></div>
+        <aside>
+          <Glass>
+            <strong>Hãy lỏ theo cách của bạn</strong>
+            <p>Bôi đen đoạn cần nhớ rồi lưu highlight. Màu đánh dấu sẽ đi cùng tài khoản.</p>
+            <div className="trick-toggle-box">
+              <label className="switch-label">
+                <input type="checkbox" checked={freezeFlip} onChange={(e) => setFreezeFlip(e.target.checked)} />
+                <span>Chế độ tạo trick lỏ (khóa lật thẻ)</span>
+              </label>
+            </div>
+            <button onClick={addHighlight}>Lưu đoạn đang chọn</button>
+            {terms.length > 0 && <button className="text-action" onClick={clearHighlights}>Xóa highlight câu này</button>}
+          </Glass>
+
+          {stars >= 7 && (
+            <Glass className="reward-card">
+              <strong className="reward-title">🎉 Đạt mốc 7 Ngôi Sao!</strong>
+              <p>Chúc mừng! Bạn đã mở khóa file bí truyền hướng dẫn trick lỏ:</p>
+              <a className="download-link-btn" href="/api/profile/download-keyword-pdf" target="_blank" rel="noreferrer">
+                📥 Tải file key_word_wdu.pdf
+              </a>
+            </Glass>
+          )}
+        </aside>
+        <section className={`flashcard ${flipped ? 'flipped' : ''}`} onClick={handleCardClick}>
+          <div className="flash-face front"><span>CÂU {card.numberOnPage || index + 1} · TRANG {card.page}</span><h2><Highlighted text={card.question} terms={terms} /></h2><div className="flash-options">{Object.entries(card.options || {}).map(([letter, option]) => <p key={letter}><b>{letter}</b><Highlighted text={option} terms={terms} /></p>)}</div><small>{freezeFlip ? 'Chế độ tạo trick: Thẻ bị khóa lật' : 'Chạm để xem đáp án'}</small></div>
+          <div className="flash-face back"><span>ĐÁP ÁN</span><h2>{card.answer}</h2><div className="flash-options">{Object.entries(card.options || {}).map(([letter, option]) => <p className={card.answer.includes(letter) ? 'correct' : ''} key={letter}><b>{letter}</b><Highlighted text={option} terms={terms} /></p>)}</div>{trick && <div className="trick-inline"><b>✦ Trick lỏ</b>{trick}</div>}<small>{freezeFlip ? 'Chế độ tạo trick: Thẻ bị khóa lật' : 'Chạm để quay lại câu hỏi'}</small></div>
         </section>
       </div>
       <div className="study-controls"><button onClick={() => { setIndex((index - 1 + questions.length) % questions.length); setFlipped(false); }}>← Câu trước</button><button className="primary" onClick={() => { setIndex((index + 1) % questions.length); setFlipped(false); }}>Câu tiếp →</button></div>
@@ -181,31 +330,65 @@ function Study({ questions, subject, user, profile, refreshProfile, toast, openP
   );
 }
 
-function EosExam({ questions, subject, user, profile, refreshProfile, toast, openPurchase }) {
+function EosExam({ questions, subject, user, profile, refreshProfile, toast, openPurchase, setExamSessionActive, setView }) {
   const [session, setSession] = useState(null);
   const [now, setNow] = useState(Date.now());
   const [tricks, setTricks] = useState({ packs: [] });
   const [showResult, setShowResult] = useState(false);
   const [finishArmed, setFinishArmed] = useState(false);
-  const hasAccess = user?.isAdmin || profile?.entitlements?.examSubjects?.includes(subject?.id);
-  useEffect(() => { setSession(null); setShowResult(false); setFinishArmed(false); }, [subject?.id]);
+  const [showExitConfirm, setShowExitConfirm] = useState(false);
+
+  const isUnlimited = user?.isAdmin || profile?.entitlements?.isExamUnlimited;
+  const examAttempts = profile?.entitlements?.examAttempts ?? 1;
+  const stars = Number(profile?.stars?.[subject?.id] || 0);
+  const hasTrickEntitlement = user?.isAdmin || profile?.entitlements?.trickSubjects?.includes(subject?.id) || stars >= 7;
+
+  useEffect(() => {
+    setSession(null);
+    setShowResult(false);
+    setFinishArmed(false);
+    setShowExitConfirm(false);
+    setExamSessionActive?.(false);
+  }, [subject?.id, setExamSessionActive]);
+
+  useEffect(() => {
+    setExamSessionActive?.(Boolean(session && !session.finished));
+  }, [session, setExamSessionActive]);
+
   useEffect(() => {
     if (!user || !subject) return setTricks({ packs: [] });
     api(`/profile/tricks?subject=${encodeURIComponent(subject.id)}`).then((result) => result.ok && setTricks(result.data));
   }, [user, subject, profile?.stars]);
+
   useEffect(() => {
     if (!session?.deadline || session.finished) return;
     const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(timer);
   }, [session?.deadline, session?.finished]);
 
-  function start(mode) {
+  async function handleStart(mode) {
+    if (!user) return toast('Vui lòng đăng nhập Google để bắt đầu làm bài test');
+    if (!isUnlimited && examAttempts <= 0) {
+      toast('Bạn đã hết lượt test mô phỏng. Vui lòng mua thêm gói.');
+      openPurchase('exam');
+      return;
+    }
+    if (!isUnlimited) {
+      const result = await api('/profile/use-exam-attempt', { method: 'POST' });
+      if (!result.ok) {
+        toast(result.data?.error || 'Không thể trừ lượt test');
+        if (result.status === 403) openPurchase('exam');
+        return;
+      }
+      await refreshProfile();
+    }
     const pool = mode === 'full' ? shuffle(questions).slice(0, Math.min(60, questions.length)) : shuffle(questions);
     setSession({ mode, items: pool, index: 0, answers: pool.map(() => ''), checked: pool.map(() => false), deadline: mode === 'full' ? Date.now() + 60 * 60 * 1000 : 0, finished: false, result: null });
     setFinishArmed(mode === 'practice');
     setShowResult(false);
     setNow(Date.now());
   }
+
   function pick(letter) {
     if (!session || session.finished || (session.mode === 'practice' && session.checked[session.index])) return;
     const item = session.items[session.index];
@@ -214,10 +397,16 @@ function EosExam({ questions, subject, user, profile, refreshProfile, toast, ope
     const next = multiple ? normalizeAnswer(current.includes(letter) ? current.replace(letter, '') : current + letter) : letter;
     const answers = [...session.answers]; answers[session.index] = next; setSession({ ...session, answers });
   }
+
   function check() { const checked = [...session.checked]; checked[session.index] = true; setSession({ ...session, checked }); }
+
   async function finish() {
-    const correct = session.items.filter((item, index) => normalizeAnswer(session.answers[index]) === normalizeAnswer(item.answer)).length;
-    const score = Number((correct / session.items.length * 10).toFixed(1));
+    const correct = session.items.filter((item, index) => {
+      const userAnswer = normalizeAnswer(session.answers[index]);
+      const correctAnswer = normalizeAnswer(item.answer);
+      return Boolean(userAnswer && correctAnswer && userAnswer === correctAnswer);
+    }).length;
+    const score = Number((correct / session.items.length * 10).toFixed(2));
     let earned = 0;
     if (session.mode === 'full' && user) {
       const result = await api('/profile/exam-complete', { method: 'POST', body: JSON.stringify({ subject: subject.id, score }) });
@@ -226,10 +415,79 @@ function EosExam({ questions, subject, user, profile, refreshProfile, toast, ope
     setSession({ ...session, finished: true, checked: session.items.map(() => true), result: { correct, score, earned } });
     setShowResult(true);
   }
+
+  async function addExamHighlight(questionId) {
+    if (!user) return toast('Đăng nhập Google để lưu highlight');
+    if (!hasTrickEntitlement) {
+      toast('Vui lòng mua Gói tạo trick lỏ hoặc đạt 7 ngôi sao để sử dụng tính năng highlight!');
+      openPurchase('trick');
+      return;
+    }
+    const selected = window.getSelection()?.toString().trim();
+    if (!selected || selected.length > 180) return toast('Hãy bôi đen một đoạn ngắn trên câu hỏi hoặc đáp án');
+    const existingTerms = profile?.highlights?.[questionId] || [];
+    const next = [...new Set([...existingTerms, selected])].slice(0, 20);
+    const result = await api(`/profile/highlights/${questionId}`, { method: 'PUT', body: JSON.stringify({ terms: next }) });
+    if (!result.ok) {
+      if (result.status === 403) openPurchase('trick');
+      return toast(result.data.error || 'Không lưu được highlight');
+    }
+    await refreshProfile(); toast('Đã lưu cách nhớ của bạn', 'success');
+  }
+
   useEffect(() => { if (session?.deadline && !session.finished && now >= session.deadline) finish(); }, [now]);
 
-  if (!hasAccess) return <main className="locked-page"><Glass strong><span className="lock-icon">▣</span><h1>Phòng EOS của {subject?.label}</h1><p>Test mô phỏng là gói trả phí 20.000đ cho từng môn. Flashcard vẫn luôn miễn phí.</p><button className="primary" onClick={() => openPurchase('exam')}>Mở khóa test mô phỏng</button></Glass></main>;
-  if (!session) return <main className="exam-launch"><div><span className="kicker">PHÒNG THI HACHIMI</span><h1>Chọn cách luyện EOS</h1><p>Giao diện mô phỏng theo bố cục EOS: thông tin máy, đồng hồ lớn, cột Answer và vùng câu hỏi.</p></div><div className="exam-mode-grid"><Glass className="mode-card"><span>LUYỆN NHANH</span><h2>Kiểm tra từng câu</h2><p>Chọn đáp án, bấm kiểm tra và xem kết quả ngay. Next ở câu cuối sẽ quay về câu 1.</p><button className="secondary" onClick={() => start('practice')}>Bắt đầu luyện</button></Glass><Glass strong className="mode-card"><span>THI THỬ FPT</span><h2>60 câu · 60 phút</h2><p>Không hiện đáp án giữa chừng. Nộp bài để nhận điểm và sao mở trick.</p><button className="primary" onClick={() => start('full')}>Vào thi ngay</button></Glass></div></main>;
+  function handleBackClick() {
+    if (session && !session.finished) {
+      setShowExitConfirm(true);
+    } else {
+      setSession(null);
+    }
+  }
+
+  function confirmExit() {
+    setShowExitConfirm(false);
+    setSession(null);
+    setExamSessionActive?.(false);
+  }
+
+  if (!session) return (
+    <main className="exam-launch">
+      <div className="exam-launch-head">
+        <button type="button" className="page-back-arrow-btn" onClick={() => setView('home')} title="Quay lại trang chủ">← Quay lại Trang chủ</button>
+        <div>
+          <span className="kicker">PHÒNG THI HACHIMI</span>
+          <h1>Chọn cách luyện EOS</h1>
+          <p>Giao diện mô phỏng theo bố cục EOS: thông tin máy, đồng hồ lớn, cột Answer và vùng câu hỏi.</p>
+        </div>
+        <div className="attempt-status-bar">
+          {isUnlimited ? (
+            <span className="attempt-tag unlimited">★ Gói Thi Không Giới Hạn (No Limit)</span>
+          ) : examAttempts > 0 ? (
+            <span className="attempt-tag available">✦ Bạn còn {examAttempts} lượt test mô phỏng {examAttempts === 1 ? '(Lần đầu FREE!)' : ''}</span>
+          ) : (
+            <span className="attempt-tag empty">⚠ Bạn đã hết lượt test mô phỏng</span>
+          )}
+          {!isUnlimited && <button className="text-link-btn" onClick={() => openPurchase('exam')}>+ Mua thêm gói test</button>}
+        </div>
+      </div>
+      <StarProgressTracker stars={stars} target={7} subjectLabel={subject?.label} />
+      <div className="exam-mode-grid">
+        <Glass className="mode-card">
+          <span>LUYỆN NHANH</span>
+          <h2>Kiểm tra từng câu</h2>
+          <p>Chọn đáp án, bấm kiểm tra và xem kết quả ngay. Next ở câu cuối sẽ quay về câu 1.</p>
+          <button className="secondary" onClick={() => handleStart('practice')}>Bắt đầu luyện</button>
+        </Glass>
+        <Glass strong className="mode-card">
+          <span>THI THỬ FPT</span>
+          <h2>60 câu · 60 phút</h2>
+          <p>Không hiện đáp án giữa chừng. Nộp bài để nhận điểm và sao mở trick.</p>
+          <button className="primary" onClick={() => handleStart('full')}>Vào thi ngay</button>
+        </Glass>
+      </div>
+    </main>
+  );
 
   const item = session.items[session.index];
   const selected = session.answers[session.index];
@@ -238,30 +496,194 @@ function EosExam({ questions, subject, user, profile, refreshProfile, toast, ope
   const terms = profile?.highlights?.[item.id] || [];
   const seconds = session.deadline ? Math.max(0, Math.ceil((session.deadline - now) / 1000)) : 0;
   const time = session.mode === 'full' ? `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}` : '--:--';
+
   return (
     <main className="eos-page">
       <div className="eos-window">
-        <div className="eos-finish"><label><input type="checkbox" checked={finishArmed || session.finished} disabled={session.finished} onChange={(event) => setFinishArmed(event.target.checked)} /> I want to finish the exam.</label><button disabled={session.finished || !finishArmed} onClick={finish}>Finish</button></div>
+        <div className="eos-top-bar">
+          <button type="button" className="eos-exit-btn" onClick={handleBackClick}>← Quay lại phòng thi</button>
+          <div className="eos-finish">
+            <label><input type="checkbox" checked={finishArmed || session.finished} disabled={session.finished} onChange={(event) => setFinishArmed(event.target.checked)} /> I want to finish the exam.</label>
+            <button disabled={session.finished || !finishArmed} onClick={finish}>Finish</button>
+          </div>
+        </div>
         <div className="eos-meta"><div><span>Machine:</span><b>DESKTOP-HACHIMI</b><span>Student:</span><b>{user?.name || 'student'}</b></div><div><span>Server:</span><b>Hachimi_EOS</b><span>Exam Code:</span><b>{subject?.id}_TEST</b></div><div><span>Duration:</span><b>{session.mode === 'full' ? '60 minutes' : 'Practice'}</b><span>Total Marks:</span><b>{session.items.length}</b></div><div className="time-row"><span>Font:</span><i>Microsoft Sans Serif</i><span>Size:</span><i>10</i><span>Time Left:</span><strong>{time}</strong></div></div>
         <div className="eos-tabs"><button className="active">Multiple Choices</button></div>
         <div className="eos-head">Multiple choices {session.index + 1}/{session.items.length}</div>
-        <div className="eos-body"><aside><b>Answer</b>{Object.keys(item.options || {}).map((letter) => <label key={letter} className={revealed ? item.answer.includes(letter) ? 'right' : selected.includes(letter) ? 'wrong' : '' : ''}><input type={item.answer.length > 1 ? 'checkbox' : 'radio'} checked={selected.includes(letter)} onChange={() => pick(letter)} /> {letter}</label>)}<div className="eos-nav"><button onClick={() => setSession({ ...session, index: (session.index - 1 + session.items.length) % session.items.length })}>Previous</button><button onClick={() => setSession({ ...session, index: (session.index + 1) % session.items.length })}>Next</button>{session.mode === 'practice' && <button onClick={check} disabled={!selected || revealed}>Check answer</button>}</div></aside><section><p>({item.answer.length > 1 ? `Choose ${item.answer.length} answers` : 'Choose 1 answer'})</p><h2><Highlighted text={item.question} terms={terms} /></h2><div className="eos-options">{Object.entries(item.options || {}).map(([letter, option]) => <button key={letter} onClick={() => pick(letter)} className={`${selected.includes(letter) ? 'picked' : ''} ${revealed ? item.answer.includes(letter) ? 'right' : selected.includes(letter) ? 'wrong' : '' : ''}`}><span>{letter}.</span><Highlighted text={option} terms={terms} /></button>)}</div>{revealed && <div className="eos-feedback">Đáp án đúng: {item.answer}</div>}{revealed && trick && <div className="eos-trick"><b>✦ Trick lỏ:</b> {trick}</div>}</section></div>
+        <div className="eos-body"><aside><b>Answer</b>{Object.keys(item.options || {}).map((letter) => <label key={letter} className={revealed ? item.answer.includes(letter) ? 'right' : selected.includes(letter) ? 'wrong' : '' : ''}><input type={item.answer.length > 1 ? 'checkbox' : 'radio'} checked={selected.includes(letter)} onChange={() => pick(letter)} /> {letter}</label>)}<div className="eos-nav"><button onClick={() => setSession({ ...session, index: (session.index - 1 + session.items.length) % session.items.length })}>Previous</button><button onClick={() => setSession({ ...session, index: (session.index + 1) % session.items.length })}>Next</button>{session.mode === 'practice' && <button onClick={check} disabled={!selected || revealed}>Check answer</button>}</div></aside><section><p>({item.answer.length > 1 ? `Choose ${item.answer.length} answers` : 'Choose 1 answer'})</p><h2><Highlighted text={item.question} terms={terms} /></h2><div className="eos-options">{Object.entries(item.options || {}).map(([letter, option]) => <button key={letter} onClick={() => pick(letter)} className={`${selected.includes(letter) ? 'picked' : ''} ${revealed ? item.answer.includes(letter) ? 'right' : selected.includes(letter) ? 'wrong' : '' : ''}`}><span>{letter}.</span><Highlighted text={option} terms={terms} /></button>)}</div>{revealed && <div className="eos-feedback">Đáp án đúng: {item.answer} <button type="button" className="text-link-btn margin-left" onClick={() => addExamHighlight(item.id)}>✎ Lưu đoạn đang chọn làm Highlight</button></div>}{revealed && trick && <div className="eos-trick"><b>✦ Trick lỏ:</b> {trick}</div>}</section></div>
         <div className="question-strip">{session.items.map((_, index) => <button key={index} className={`${index === session.index ? 'current' : ''} ${session.answers[index] ? 'answered' : ''}`} onClick={() => setSession({ ...session, index })}>{index + 1}</button>)}</div>
       </div>
       {session.finished && showResult && <div className="result-overlay"><Glass strong><span className="kicker">KẾT QUẢ</span><h2>{session.result.score}/10</h2><p>{session.result.correct}/{session.items.length} câu đúng · nhận {session.result.earned} sao</p><div className="result-actions"><button className="secondary" onClick={() => setShowResult(false)}>Xem lại bài & trick</button><button className="primary" onClick={() => setSession(null)}>Về phòng thi</button></div></Glass></div>}
+      {showExitConfirm && <ExitConfirmModal onConfirm={confirmExit} onCancel={() => setShowExitConfirm(false)} />}
     </main>
   );
 }
 
+const EXAM_PACKAGES = [
+  { id: '10k_2', title: 'Gói 1', price: 10000, desc: '2 lượt test mô phỏng', badge: '10.000đ' },
+  { id: '20k_5', title: 'Gói 2', price: 20000, desc: '5 lượt test mô phỏng', badge: '20.000đ' },
+  { id: '30k_unlimited', title: 'Gói 3', price: 30000, desc: 'Thi Không Giới Hạn (No Limit)', badge: '30.000đ' },
+];
+
 function PurchaseModal({ product, subject, close, toast, refreshProfile }) {
   const [voucherCode, setVoucherCode] = useState('');
-  const [quote, setQuote] = useState({ originalPrice: subject?.[product === 'exam' ? 'examPrice' : 'trickPrice'] || 20000, discount: 0, finalPrice: subject?.[product === 'exam' ? 'examPrice' : 'trickPrice'] || 20000 });
-  async function applyVoucher() { const result = await api('/commerce/quote', { method: 'POST', body: JSON.stringify({ subject: subject.id, product, voucherCode }) }); if (!result.ok) return toast(result.data.error); setQuote(result.data); toast('Voucher đã được áp dụng', 'success'); }
-  async function order() { const result = await api('/commerce/orders', { method: 'POST', body: JSON.stringify({ subject: subject.id, product, voucherCode }) }); if (!result.ok) return toast(result.data.error); toast('Đã tạo yêu cầu mua. Admin sẽ xác nhận sau khi nhận thanh toán.', 'success'); await refreshProfile(); close(); }
-  return <div className="modal-backdrop" onMouseDown={(event) => event.target === event.currentTarget && close()}><Glass strong className="modal-card"><button className="modal-x" onClick={close}>×</button><span className="kicker">MỞ KHÓA HACHIMI</span><h2>{product === 'exam' ? 'Test mô phỏng EOS' : 'Gói trick lỏ'} · {subject.label}</h2><div className="quote"><span>Giá gốc</span><b>{money(quote.originalPrice)}</b><span>Giảm giá</span><b>-{money(quote.discount)}</b><strong>Thanh toán</strong><strong>{money(quote.finalPrice)}</strong></div><div className="voucher-row"><input value={voucherCode} onChange={(event) => setVoucherCode(event.target.value.toUpperCase())} placeholder="Nhập mã voucher" /><button onClick={applyVoucher}>Áp dụng</button></div><p className="modal-note">Hiện hệ thống tạo yêu cầu mua và chờ admin xác nhận thủ công. Chưa tích hợp cổng thanh toán tự động.</p><button className="primary full" onClick={order}>Tạo yêu cầu mua</button></Glass></div>;
+  const [packageOption, setPackageOption] = useState(product === 'exam' ? '20k_5' : '');
+  const [quote, setQuote] = useState({
+    originalPrice: product === 'exam' ? 20000 : (subject?.trickPrice || 20000),
+    discount: 0,
+    finalPrice: product === 'exam' ? 20000 : (subject?.trickPrice || 20000)
+  });
+  const [createdOrder, setCreatedOrder] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (product === 'exam') {
+      api('/commerce/quote', { method: 'POST', body: JSON.stringify({ subject: subject.id, product, packageOption: '20k_5' }) })
+        .then((res) => res.ok && setQuote(res.data));
+    }
+  }, [product, subject]);
+
+  async function updateQuote(pkg = packageOption, code = voucherCode) {
+    const result = await api('/commerce/quote', {
+      method: 'POST',
+      body: JSON.stringify({ subject: subject.id, product, packageOption: pkg, voucherCode: code })
+    });
+    if (result.ok) setQuote(result.data);
+    return result;
+  }
+
+  async function applyVoucher() {
+    const result = await updateQuote(packageOption, voucherCode);
+    if (!result.ok) return toast(result.data.error);
+    toast('Voucher đã được áp dụng', 'success');
+  }
+
+  function handleSelectPackage(pkgId) {
+    setPackageOption(pkgId);
+    updateQuote(pkgId, voucherCode);
+  }
+
+  async function createOrder() {
+    setLoading(true);
+    const result = await api('/commerce/orders', {
+      method: 'POST',
+      body: JSON.stringify({ subject: subject.id, product, packageOption, voucherCode })
+    });
+    setLoading(false);
+    if (!result.ok) return toast(result.data.error);
+    setCreatedOrder(result.data.order);
+    toast('Đã tạo đơn hàng. Vui lòng quét QR hoặc chuyển khoản theo thông tin bên dưới.', 'success');
+  }
+
+  useEffect(() => {
+    if (!createdOrder) return;
+    const interval = setInterval(async () => {
+      const result = await api('/commerce/orders');
+      if (result.ok && Array.isArray(result.data?.orders)) {
+        const found = result.data.orders.find((o) => o._id === createdOrder.id || o.code === createdOrder.code);
+        if (found && found.status === 'active') {
+          clearInterval(interval);
+          toast('Thanh toán thành công! Hệ thống đã tự động kích hoạt gói.', 'success');
+          await refreshProfile();
+          close();
+        }
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [createdOrder, refreshProfile, close, toast]);
+
+  function copyText(text, label) {
+    navigator.clipboard.writeText(text);
+    toast(`Đã chép ${label}`, 'success');
+  }
+
+  return (
+    <div className="modal-backdrop" onMouseDown={(event) => event.target === event.currentTarget && close()}>
+      <Glass strong className="modal-card">
+        <button className="modal-x" onClick={close}>×</button>
+        <span className="kicker">MỞ KHÓA HACHIMI</span>
+        <h2>{product === 'exam' ? 'Test mô phỏng EOS' : 'Gói tạo trick lỏ'} · {subject.label}</h2>
+
+        {product === 'exam' && !createdOrder && (
+          <div className="package-select-box">
+            <span className="package-select-label">CHỌN GÓI MUA TEST MÔ PHỎNG:</span>
+            <div className="package-grid">
+              {EXAM_PACKAGES.map((pkg) => (
+                <button
+                  key={pkg.id}
+                  type="button"
+                  className={`pkg-option-card ${packageOption === pkg.id ? 'active' : ''}`}
+                  onClick={() => handleSelectPackage(pkg.id)}
+                >
+                  <span className="pkg-badge">{pkg.badge}</span>
+                  <strong>{pkg.title}</strong>
+                  <div className="pkg-desc">{pkg.desc}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="quote">
+          <span>Giá gốc</span><b>{money(quote.originalPrice)}</b>
+          <span>Giảm giá</span><b>-{money(quote.discount)}</b>
+          <strong>Thanh toán</strong><strong>{money(createdOrder ? createdOrder.finalPrice : quote.finalPrice)}</strong>
+        </div>
+
+        {!createdOrder ? (
+          <>
+            <div className="voucher-row">
+              <input value={voucherCode} onChange={(event) => setVoucherCode(event.target.value.toUpperCase())} placeholder="Nhập mã voucher" />
+              <button onClick={applyVoucher}>Áp dụng</button>
+            </div>
+            <p className="modal-note">Hệ thống hỗ trợ thanh toán qua VietQR và tự động kích hoạt gói ngay sau khi nhận tiền từ SePay.</p>
+            <button className="primary full" onClick={createOrder} disabled={loading}>
+              {loading ? 'Đang tạo đơn...' : 'Tạo mã thanh toán QR'}
+            </button>
+          </>
+        ) : (
+          <div className="qr-container">
+            <img src={createdOrder.qrUrl} alt="VietQR SePay" className="qr-img" />
+            <div className="payment-status">
+              <span className="pulse-dot" /> Đang chờ thanh toán (Tự động kích hoạt)...
+            </div>
+            <div className="bank-info">
+              <div className="bank-row"><span>Ngân hàng:</span> <b>{createdOrder.bank.bankShortName}</b></div>
+              <div className="bank-row">
+                <span>Số tài khoản:</span> <b>{createdOrder.bank.bankAccountNo}</b>
+                <button className="copy-btn" onClick={() => copyText(createdOrder.bank.bankAccountNo, 'Số tài khoản')}>Sao chép</button>
+              </div>
+              <div className="bank-row"><span>Chủ tài khoản:</span> <b>{createdOrder.bank.bankAccountName}</b></div>
+              <div className="bank-row"><span>Số tiền:</span> <b>{money(createdOrder.finalPrice)}</b></div>
+              <div className="bank-row">
+                <span>Nội dung CK:</span> <b>{createdOrder.transferContent}</b>
+                <button className="copy-btn" onClick={() => copyText(createdOrder.transferContent, 'Nội dung chuyển khoản')}>Sao chép</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </Glass>
+    </div>
+  );
 }
 
-function Admin({ toast }) {
+function ExitConfirmModal({ onConfirm, onCancel }) {
+  return (
+    <div className="modal-backdrop" onMouseDown={(event) => event.target === event.currentTarget && onCancel()}>
+      <Glass strong className="modal-card exit-confirm-modal">
+        <span className="kicker danger-kicker">XÁC NHẬN THOÁT</span>
+        <h2>Bạn có muốn thoát ra không?</h2>
+        <p>Bạn đang làm bài test mô phỏng. Nếu thoát bây giờ, bài làm chưa nộp của bạn sẽ không được lưu.</p>
+        <div className="exit-confirm-actions">
+          <button className="secondary" onClick={onCancel}>Ở lại tiếp tục thi</button>
+          <button className="danger-btn" onClick={onConfirm}>Thoát bài test</button>
+        </div>
+      </Glass>
+    </div>
+  );
+}
+
+function Admin({ toast, setView }) {
   const [data, setData] = useState({ subjects: [], questions: [], vouchers: [], orders: [] });
   const [tab, setTab] = useState('subjects');
   const [filter, setFilter] = useState('');
@@ -289,11 +711,11 @@ function Admin({ toast }) {
   }
   async function importQuestions() { try { const payload = await readImportFile(importFile); await request('/admin/questions/import', { method: 'POST', body: JSON.stringify({ ...payload, replaceExisting: true }) }, `Đã import ${payload.questions.length} câu`); } catch (error) { toast(error.message); } }
   const shownQuestions = data.questions.filter((question) => !filter || question.subject === filter);
-  return <main className="admin-page"><div className="admin-head"><div><span className="kicker">HACHIMI CONTROL ROOM</span><h1>Quản trị nội dung</h1></div><a href="/question-import-template.xlsx" download className="secondary">Tải template Excel</a></div><div className="admin-tabs">{[['subjects','Môn học'],['questions','Câu hỏi'],['tricks','Trick lỏ'],['vouchers','Voucher'],['orders','Đơn mua'],['import','Import']].map(([id,label]) => <button className={tab === id ? 'active' : ''} onClick={() => setTab(id)} key={id}>{label}</button>)}</div>
+  return <main className="admin-page"><div className="admin-head"><button type="button" className="page-back-arrow-btn" onClick={() => setView('home')} title="Quay lại trang chủ">← Quay lại Trang chủ</button><div><span className="kicker">HACHIMI CONTROL ROOM</span><h1>Quản trị nội dung</h1></div><a href="/question-import-template.xlsx" download className="secondary">Tải template Excel</a></div><div className="admin-tabs">{[['subjects','Môn học'],['questions','Câu hỏi'],['tricks','Trick lỏ'],['vouchers','Voucher'],['orders','Đơn mua'],['import','Import']].map(([id,label]) => <button className={tab === id ? 'active' : ''} onClick={() => setTab(id)} key={id}>{label}</button>)}</div>
     {tab === 'subjects' && <div className="admin-grid"><Glass className="admin-form"><h2>Thêm môn</h2>{['id','label','examPrice','trickPrice'].map((field) => <label key={field}>{field}<input type={field.includes('Price') ? 'number' : 'text'} value={subjectForm[field]} onChange={(event) => setSubjectForm({ ...subjectForm, [field]: event.target.value })} /></label>)}<button className="primary" onClick={() => request('/admin/subjects', { method:'POST', body: JSON.stringify(subjectForm) }, 'Đã thêm môn')}>Thêm môn</button></Glass><div className="admin-list">{data.subjects.map((subject) => <Glass key={subject.id} className="admin-row"><div><b>{subject.label}</b><small>{subject.id} · {subject.questionCount || 0} câu</small></div><div className="row-actions"><button onClick={() => editSubject(subject)}>Sửa</button><button className="danger" onClick={() => confirm(`Xóa môn ${subject.label} và toàn bộ câu hỏi?`) && request(`/admin/subjects/${subject.id}`, { method:'DELETE' }, 'Đã xóa môn')}>Xóa</button></div></Glass>)}</div></div>}
     {tab === 'questions' && <><Glass className="question-create"><h2>Thêm câu hỏi</h2><div className="form-row"><select value={questionForm.subject} onChange={(event) => setQuestionForm({...questionForm,subject:event.target.value})}><option value="">Chọn môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={questionForm.page} onChange={(e)=>setQuestionForm({...questionForm,page:Number(e.target.value)})} placeholder="Trang" /></div><textarea value={questionForm.question} onChange={(e)=>setQuestionForm({...questionForm,question:e.target.value})} placeholder="Nội dung câu hỏi" />{Object.keys(questionForm.options).map((letter)=><input key={letter} value={questionForm.options[letter]} onChange={(e)=>setQuestionForm({...questionForm,options:{...questionForm.options,[letter]:e.target.value}})} placeholder={`Đáp án ${letter}`} />)}<input value={questionForm.answer} onChange={(e)=>setQuestionForm({...questionForm,answer:e.target.value})} placeholder="Đáp án đúng: A hoặc BD" /><button className="primary" onClick={()=>request('/admin/questions',{method:'POST',body:JSON.stringify(questionForm)},'Đã thêm câu hỏi')}>Lưu câu hỏi</button></Glass><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Tất cả môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <Glass key={question.id} className="question-admin-row"><div><small>#{question.id} · {question.subject} · trang {question.page}</small><p>{question.question}</p><b>Đáp án {question.answer}</b></div><div className="row-actions"><button onClick={() => editQuestion(question)}>Sửa</button><button className="danger" onClick={() => confirm('Xóa câu hỏi này?') && request(`/admin/questions/${question.id}`, { method:'DELETE' }, 'Đã xóa câu hỏi')}>Xóa</button></div></Glass>)}</div></>}
     {tab === 'tricks' && <><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Chọn môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <TrickEditor key={question.id} question={question} request={request} />)}</div></>}
-    {tab === 'vouchers' && <div className="admin-grid"><Glass className="admin-form"><h2>Tạo voucher</h2><input value={voucher.code} onChange={(e)=>setVoucher({...voucher,code:e.target.value.toUpperCase()})} placeholder="HACHIMI20" /><select value={voucher.type} onChange={(e)=>setVoucher({...voucher,type:e.target.value})}><option value="percent">Phần trăm</option><option value="fixed">Số tiền</option></select><input type="number" value={voucher.value} onChange={(e)=>setVoucher({...voucher,value:Number(e.target.value)})} /><select value={voucher.product} onChange={(e)=>setVoucher({...voucher,product:e.target.value})}><option value="all">Tất cả</option><option value="exam">EOS</option><option value="trick">Trick</option></select><select value={voucher.subject} onChange={(e)=>setVoucher({...voucher,subject:e.target.value})}><option value="*">Mọi môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={voucher.usageLimit} onChange={(e)=>setVoucher({...voucher,usageLimit:Number(e.target.value)})} placeholder="Lượt dùng" /><button className="primary" onClick={()=>request('/admin/vouchers',{method:'POST',body:JSON.stringify(voucher)},'Đã tạo voucher')}>Tạo mã</button></Glass><div className="admin-list">{data.vouchers.map((item)=><Glass className="admin-row" key={item._id}><div><b>{item.code}</b><small>{item.type === 'percent' ? `${item.value}%` : money(item.value)} · {item.usedCount}/{item.usageLimit || '∞'} · {item.active ? 'đang bật' : 'đã tắt'}</small></div><div className="row-actions"><button onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'PUT',body:JSON.stringify({active:!item.active,usageLimit:item.usageLimit,expiresAt:item.expiresAt})},item.active?'Đã tắt voucher':'Đã bật voucher')}>{item.active?'Tắt':'Bật'}</button><button className="danger" onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'DELETE'},'Đã xóa voucher')}>Xóa</button></div></Glass>)}</div></div>}
+    {tab === 'vouchers' && <div className="admin-grid"><Glass className="admin-form"><h2>Tạo voucher</h2><label>Mã voucher<input value={voucher.code} onChange={(e)=>setVoucher({...voucher,code:e.target.value.toUpperCase()})} placeholder="HACHIMI20" /></label><label>Loại giảm<select value={voucher.type} onChange={(e)=>setVoucher({...voucher,type:e.target.value})}><option value="percent">Phần trăm (%)</option><option value="fixed">Số tiền cố định (VNĐ)</option></select></label><label>Mức giảm<input type="number" value={voucher.value} onChange={(e)=>setVoucher({...voucher,value:Number(e.target.value)})} placeholder="10" /></label><label>Áp dụng gói<select value={voucher.product} onChange={(e)=>setVoucher({...voucher,product:e.target.value})}><option value="all">Tất cả sản phẩm</option><option value="exam">Gói EOS</option><option value="trick">Gói Tạo Trick Lỏ</option></select></label><label>Áp dụng môn<select value={voucher.subject} onChange={(e)=>setVoucher({...voucher,subject:e.target.value})}><option value="*">Mọi môn học</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select></label><label>Số lượt dùng tối đa (Số lượng)<input type="number" value={voucher.usageLimit} onChange={(e)=>setVoucher({...voucher,usageLimit:Number(e.target.value)})} placeholder="Ví dụ: 100" /></label><button className="primary" onClick={()=>request('/admin/vouchers',{method:'POST',body:JSON.stringify(voucher)},'Đã tạo voucher')}>Tạo mã</button></Glass><div className="admin-list">{data.vouchers.map((item)=><Glass className="admin-row" key={item._id}><div><b>{item.code}</b><small>{item.type === 'percent' ? `${item.value}%` : money(item.value)} · {item.usedCount}/{item.usageLimit || '∞'} · {item.active ? 'đang bật' : 'đã tắt'}</small></div><div className="row-actions"><button onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'PUT',body:JSON.stringify({active:!item.active,usageLimit:item.usageLimit,expiresAt:item.expiresAt})},item.active?'Đã tắt voucher':'Đã bật voucher')}>{item.active?'Tắt':'Bật'}</button><button className="danger" onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'DELETE'},'Đã xóa voucher')}>Xóa</button></div></Glass>)}</div></div>}
     {tab === 'orders' && <div className="admin-list">{data.orders.map((order)=><Glass className="admin-row" key={order._id}><div><b>{order.email}</b><small>{order.subject} · {order.product} · {money(order.finalPrice)} · {order.status}</small></div>{order.status === 'pending' && <div><button onClick={()=>request(`/admin/orders/${order._id}/activate`,{method:'POST'},'Đã kích hoạt quyền')}>Duyệt</button><button className="danger" onClick={()=>request(`/admin/orders/${order._id}/cancel`,{method:'POST'},'Đã hủy đơn')}>Hủy</button></div>}</Glass>)}</div>}
     {tab === 'import' && <Glass className="import-panel"><h2>Import câu hỏi và môn học</h2><p>Dùng đúng sheet Questions trong template. Mỗi file chứa một môn, tối đa 1.000 câu.</p><input type="file" accept=".xlsx" onChange={(event)=>setImportFile(event.target.files?.[0])} /><button className="primary" disabled={!importFile} onClick={importQuestions}>Import và thay thế dữ liệu môn</button></Glass>}
   </main>;
@@ -310,25 +732,51 @@ function SupportModal({ close }) { return <div className="modal-backdrop" onMous
 function App() {
   const [view, setView] = useState('home');
   const [subjects, setSubjects] = useState(STATIC_SUBJECTS);
-  const [subjectId, setSubjectId] = useState(localStorage.getItem('hachimi-subject') || STATIC_SUBJECTS[0].id);
+  const [subjectId, setSubjectId] = useState(() => {
+    const stored = localStorage.getItem('hachimi-subject');
+    return STATIC_SUBJECTS.some((item) => item.id === stored) ? stored : STATIC_SUBJECTS[0].id;
+  });
   const [questions, setQuestions] = useState([]);
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   const [purchase, setPurchase] = useState(null);
   const [support, setSupport] = useState(false);
   const [notice, setNotice] = useState(null);
+  const [examSessionActive, setExamSessionActive] = useState(false);
+  const [pendingView, setPendingView] = useState(null);
+
   const subject = subjects.find((item) => item.id === subjectId) || subjects[0];
   const toast = useCallback((message, tone = 'error') => { setNotice({ message, tone }); setTimeout(() => setNotice(null), 5000); }, []);
   const refreshProfile = useCallback(async () => { if (!user) return setProfile(null); const result = await api('/profile'); if (result.ok) setProfile(result.data); }, [user]);
   const login = useCallback(async (nextUser) => { setUser(nextUser); toast(`Chào ${nextUser.name || nextUser.email}`, 'success'); }, [toast]);
   const logout = useCallback(async () => { await api('/auth/logout', { method: 'POST' }); setUser(null); setProfile(null); setView('home'); }, []);
+
+  function handleNavigate(targetView) {
+    if (view === 'exam' && examSessionActive && targetView !== 'exam') {
+      setPendingView(targetView);
+    } else {
+      setView(targetView);
+    }
+  }
+
+  function confirmExitNavigation() {
+    setExamSessionActive(false);
+    if (pendingView) setView(pendingView);
+    setPendingView(null);
+  }
+
   useEffect(() => { api('/auth/me').then((result) => result.ok && setUser(result.data.user)); }, []);
   useEffect(() => { refreshProfile(); }, [refreshProfile]);
   useEffect(() => {
     api('/subjects').then((result) => {
-      if (!result.ok) return;
+      if (!result.ok || !Array.isArray(result.data?.subjects)) return;
+      const staticIds = new Set(STATIC_SUBJECTS.map((item) => item.id));
       const merged = new Map(STATIC_SUBJECTS.map((item) => [item.id, item]));
-      result.data.subjects.forEach((item) => merged.set(item.id, { ...merged.get(item.id), ...item }));
+      result.data.subjects.forEach((item) => {
+        if (staticIds.has(item.id)) {
+          merged.set(item.id, { ...merged.get(item.id), ...item });
+        }
+      });
       setSubjects([...merged.values()]);
     });
   }, []);
@@ -341,15 +789,16 @@ function App() {
   return <>
     <div className="background"><i /><i /><i /></div>
     <div className="app-shell">
-      <Header view={view} setView={setView} subjects={subjects} subjectId={subjectId} setSubjectId={setSubjectId} user={user} profile={profile} onLogin={login} onLogout={logout} toast={toast} />
-      {view === 'home' && <Home subjects={subjects} subjectId={subjectId} setSubjectId={setSubjectId} setView={setView} user={user} profile={profile} openPurchase={openPurchase} />}
-      {view === 'study' && <Study questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} />}
-      {view === 'exam' && <EosExam questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} />}
-      {view === 'admin' && user?.isAdmin && <Admin toast={toast} />}
+      <Header view={view} handleNavigate={handleNavigate} subjects={subjects} subjectId={subjectId} setSubjectId={setSubjectId} user={user} profile={profile} onLogin={login} onLogout={logout} toast={toast} />
+      {view === 'home' && <Home subjects={subjects} subjectId={subjectId} setSubjectId={setSubjectId} setView={handleNavigate} user={user} profile={profile} openPurchase={openPurchase} />}
+      {view === 'study' && <Study questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} setView={handleNavigate} />}
+      {view === 'exam' && <EosExam questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} setExamSessionActive={setExamSessionActive} setView={handleNavigate} />}
+      {view === 'admin' && user?.isAdmin && <Admin toast={toast} setView={handleNavigate} />}
       {!user?.isAdmin && <footer>Bạn muốn ủng hộ? <button onClick={() => setSupport(true)}>Bấm tại đây</button></footer>}
     </div>
     {purchase && <PurchaseModal product={purchase} subject={subject} close={() => setPurchase(null)} toast={toast} refreshProfile={refreshProfile} />}
     {support && <SupportModal close={() => setSupport(false)} />}
+    {pendingView && <ExitConfirmModal onConfirm={confirmExitNavigation} onCancel={() => setPendingView(null)} />}
     {notice && <div className={`toast ${notice.tone}`}>{notice.message}</div>}
   </>;
 }

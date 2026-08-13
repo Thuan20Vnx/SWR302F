@@ -6,6 +6,7 @@ import { Subject } from '../models/Subject.js';
 import { Voucher } from '../models/Voucher.js';
 import { Order } from '../models/Order.js';
 import { User } from '../models/User.js';
+import { applyOrderBenefits } from './commerce.js';
 
 const router = Router();
 const SUBJECT_ID_PATTERN = /^[A-Za-z0-9_-]{2,40}$/;
@@ -328,8 +329,7 @@ router.post('/orders/:id/activate', ...requireAdmin(), asyncRoute(async (req, re
   order.status = 'active';
   order.activatedBy = req.adminEmail;
   await order.save();
-  const field = order.product === 'exam' ? 'entitlements.examSubjects' : 'entitlements.trickSubjects';
-  await User.updateOne({ _id: order.userId }, { $addToSet: { [field]: order.subject } });
+  await applyOrderBenefits(order);
   if (order.voucherCode) await Voucher.updateOne({ code: order.voucherCode }, { $inc: { usedCount: 1 } });
   res.json({ order });
 }));
