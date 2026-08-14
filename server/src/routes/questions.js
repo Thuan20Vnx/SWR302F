@@ -15,7 +15,7 @@ router.get('/', asyncRoute(async (req, res) => {
     .sort({ id: 1 })
     .lean();
 
-  res.set('Cache-Control', 'public, max-age=300');
+  res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.json({
     subject: subject || null,
     count: questions.length,

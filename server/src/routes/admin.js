@@ -249,12 +249,38 @@ router.post('/questions', ...requireAdmin(), asyncRoute(async (req, res) => {
 }));
 
 router.put('/questions/:id', ...requireAdmin(), asyncRoute(async (req, res) => {
-  const parsed = validateQuestion(req.body, true);
-  if (parsed.error) return res.status(400).json({ error: parsed.error });
-  delete parsed.value.subject;
-  const question = await Question.findOneAndUpdate({ id: Number(req.params.id) }, { $set: parsed.value }, { new: true });
-  if (!question) return res.status(404).json({ error: 'Không tìm thấy câu hỏi' });
-  res.json({ question });
+  const existing = await Question.findOne({ id: Number(req.params.id) });
+  if (!existing) return res.status(404).json({ error: 'Không tìm thấy câu hỏi' });
+
+  const questionText = typeof req.body?.question === 'string' ? req.body.question.trim() : existing.question;
+  const rawOptions = req.body?.options || existing.options || {};
+  const options = Object.fromEntries(
+    LETTERS.map((letter) => [letter, String(rawOptions[letter] || '').trim()]).filter(([, value]) => value),
+  );
+  const rawAnswer = typeof req.body?.answer === 'string' ? req.body.answer : existing.answer;
+  const answer = [...new Set(rawAnswer.toUpperCase().replace(/[^A-D]/g, ''))].sort().join('');
+
+  if (!isSafeString(questionText, 2_000) || !options.A || !options.B || !answer) {
+    return res.status(400).json({ error: 'Nội dung câu hỏi, lựa chọn A, B và đáp án đúng là bắt buộc' });
+  }
+  if ([...answer].some((letter) => !options[letter])) {
+    return res.status(400).json({ error: 'Đáp án đúng phải là chữ cái thuộc các đáp án đã có (A, B, C, D)' });
+  }
+
+  const page = req.body?.page !== undefined ? Math.max(1, Math.trunc(Number(req.body.page) || 1)) : existing.page;
+  const numberOnPage = req.body?.numberOnPage !== undefined ? Math.max(1, Math.trunc(Number(req.body.numberOnPage) || 1)) : existing.numberOnPage;
+
+  existing.question = questionText;
+  existing.options = options;
+  existing.answer = answer;
+  existing.page = page;
+  existing.numberOnPage = numberOnPage;
+  if (req.body?.subject && SUBJECT_ID_PATTERN.test(req.body.subject)) {
+    existing.subject = req.body.subject;
+  }
+
+  await existing.save();
+  res.json({ ok: true, question: existing });
 }));
 
 router.delete('/questions/:id', ...requireAdmin(), asyncRoute(async (req, res) => {

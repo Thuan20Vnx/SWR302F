@@ -683,7 +683,132 @@ function ExitConfirmModal({ onConfirm, onCancel }) {
   );
 }
 
-function Admin({ toast, setView }) {
+function QuestionItemEditor({ question, request }) {
+  const [editing, setEditing] = useState(false);
+  const [questionText, setQuestionText] = useState(question.question || '');
+  const [options, setOptions] = useState({
+    A: question.options?.A || '',
+    B: question.options?.B || '',
+    C: question.options?.C || '',
+    D: question.options?.D || '',
+  });
+  const [answer, setAnswer] = useState(question.answer || 'A');
+
+  useEffect(() => {
+    setQuestionText(question.question || '');
+    setOptions({
+      A: question.options?.A || '',
+      B: question.options?.B || '',
+      C: question.options?.C || '',
+      D: question.options?.D || '',
+    });
+    setAnswer(question.answer || 'A');
+  }, [question]);
+
+  async function handleSave() {
+    if (!questionText.trim()) return alert('Nội dung câu hỏi không được để trống!');
+    if (!options.A.trim() || !options.B.trim()) return alert('Bắt buộc phải có đáp án A và B!');
+    if (!answer.trim()) return alert('Vui lòng chọn hoặc nhập đáp án đúng!');
+
+    const filteredOptions = Object.fromEntries(
+      Object.entries(options).map(([k, v]) => [k, v.trim()]).filter(([, v]) => v),
+    );
+
+    await request(
+      `/admin/questions/${question.id}`,
+      {
+        method: 'PUT',
+        body: JSON.stringify({
+          question: questionText.trim(),
+          options: filteredOptions,
+          answer: answer.trim().toUpperCase(),
+        }),
+      },
+      `Đã cập nhật câu hỏi #${question.id}`,
+    );
+    setEditing(false);
+  }
+
+  function handleCancel() {
+    setQuestionText(question.question || '');
+    setOptions({
+      A: question.options?.A || '',
+      B: question.options?.B || '',
+      C: question.options?.C || '',
+      D: question.options?.D || '',
+    });
+    setAnswer(question.answer || 'A');
+    setEditing(false);
+  }
+
+  if (editing) {
+    return (
+      <Glass className="question-admin-row editing-mode">
+        <div className="question-edit-form">
+          <small className="edit-tag">✏️ SỬA TRỰC TIẾP CÂU HỎI #{question.id} · MÔN {question.subject}</small>
+          <label>
+            Nội dung câu hỏi
+            <textarea
+              rows={3}
+              value={questionText}
+              onChange={(e) => setQuestionText(e.target.value)}
+              placeholder="Nhập nội dung câu hỏi..."
+            />
+          </label>
+          <div className="options-grid">
+            {['A', 'B', 'C', 'D'].map((letter) => (
+              <label key={letter}>
+                Đáp án {letter}
+                <input
+                  type="text"
+                  value={options[letter] || ''}
+                  onChange={(e) => setOptions({ ...options, [letter]: e.target.value })}
+                  placeholder={`Nội dung đáp án ${letter}`}
+                />
+              </label>
+            ))}
+          </div>
+          <label>
+            Đáp án đúng (A, B, C, D hoặc kết hợp như BD)
+            <input
+              type="text"
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value.toUpperCase())}
+              placeholder="Ví dụ: A hoặc BD"
+            />
+          </label>
+          <div className="row-actions">
+            <button className="primary" onClick={handleSave}>💾 Lưu thay đổi</button>
+            <button className="secondary" onClick={handleCancel}>Hủy</button>
+          </div>
+        </div>
+      </Glass>
+    );
+  }
+
+  return (
+    <Glass className="question-admin-row">
+      <div>
+        <small>#{question.id} · {question.subject} · trang {question.page}</small>
+        <p><strong>{question.question}</strong></p>
+        <div className="options-preview">
+          {Object.entries(question.options || {}).map(([letter, text]) => (
+            <span key={letter} className={`opt-pill ${question.answer.includes(letter) ? 'is-correct' : ''}`}>
+              <b>{letter}:</b> {text}
+            </span>
+          ))}
+        </div>
+        <small className="correct-answer-badge">Đáp án đúng: <b>{question.answer}</b></small>
+      </div>
+      <div className="row-actions">
+        <button onClick={() => setEditing(true)}>✏️ Sửa trực tiếp</button>
+        <button className="danger" onClick={() => confirm(`Xóa câu hỏi #${question.id}?`) && request(`/admin/questions/${question.id}`, { method: 'DELETE' }, `Đã xóa câu hỏi #${question.id}`)}>Xóa</button>
+      </div>
+    </Glass>
+  );
+}
+
+function Admin({ toast, setView, refreshQuestions }) {
   const [data, setData] = useState({ subjects: [], questions: [], vouchers: [], orders: [] });
   const [tab, setTab] = useState('subjects');
   const [filter, setFilter] = useState('');
@@ -693,7 +818,13 @@ function Admin({ toast, setView }) {
   const [questionForm, setQuestionForm] = useState({ subject: '', page: 1, numberOnPage: 1, question: '', options: { A: '', B: '', C: '', D: '' }, answer: 'A' });
   async function load() { const result = await api('/admin/snapshot'); if (result.ok) setData(result.data); else toast(result.data.error); }
   useEffect(() => { load(); }, []);
-  async function request(path, options, success) { const result = await api(path, options); if (!result.ok) return toast(result.data.error || 'Thao tác thất bại'); toast(success, 'success'); await load(); }
+  async function request(path, options, success) {
+    const result = await api(path, options);
+    if (!result.ok) return toast(result.data.error || 'Thao tác thất bại');
+    toast(success, 'success');
+    await load();
+    await refreshQuestions?.();
+  }
   function editSubject(subject) {
     const label = prompt('Tên môn học', subject.label);
     if (label === null) return;
@@ -701,19 +832,11 @@ function Admin({ toast, setView }) {
     const trickPrice = Number(prompt('Giá trick', subject.trickPrice ?? 20000));
     request(`/admin/subjects/${subject.id}`, { method:'PUT', body:JSON.stringify({ label, examPrice, trickPrice, active: subject.active !== false }) }, 'Đã sửa môn học');
   }
-  function editQuestion(question) {
-    const content = prompt('Nội dung câu hỏi', question.question);
-    if (content === null) return;
-    const options = Object.fromEntries(['A','B','C','D'].map((letter) => [letter, prompt(`Đáp án ${letter}`, question.options?.[letter] || '') ?? (question.options?.[letter] || '')]));
-    const answer = prompt('Đáp án đúng (A hoặc BD)', question.answer);
-    if (answer === null) return;
-    request(`/admin/questions/${question.id}`, { method:'PUT', body:JSON.stringify({ ...question, question:content, options, answer }) }, 'Đã sửa câu hỏi');
-  }
   async function importQuestions() { try { const payload = await readImportFile(importFile); await request('/admin/questions/import', { method: 'POST', body: JSON.stringify({ ...payload, replaceExisting: true }) }, `Đã import ${payload.questions.length} câu`); } catch (error) { toast(error.message); } }
   const shownQuestions = data.questions.filter((question) => !filter || question.subject === filter);
   return <main className="admin-page"><div className="admin-head"><button type="button" className="page-back-arrow-btn" onClick={() => setView('home')} title="Quay lại trang chủ">← Quay lại Trang chủ</button><div><span className="kicker">HACHIMI CONTROL ROOM</span><h1>Quản trị nội dung</h1></div><a href="/question-import-template.xlsx" download className="secondary">Tải template Excel</a></div><div className="admin-tabs">{[['subjects','Môn học'],['questions','Câu hỏi'],['tricks','Trick lỏ'],['vouchers','Voucher'],['orders','Đơn mua'],['import','Import']].map(([id,label]) => <button className={tab === id ? 'active' : ''} onClick={() => setTab(id)} key={id}>{label}</button>)}</div>
     {tab === 'subjects' && <div className="admin-grid"><Glass className="admin-form"><h2>Thêm môn</h2>{['id','label','examPrice','trickPrice'].map((field) => <label key={field}>{field}<input type={field.includes('Price') ? 'number' : 'text'} value={subjectForm[field]} onChange={(event) => setSubjectForm({ ...subjectForm, [field]: event.target.value })} /></label>)}<button className="primary" onClick={() => request('/admin/subjects', { method:'POST', body: JSON.stringify(subjectForm) }, 'Đã thêm môn')}>Thêm môn</button></Glass><div className="admin-list">{data.subjects.map((subject) => <Glass key={subject.id} className="admin-row"><div><b>{subject.label}</b><small>{subject.id} · {subject.questionCount || 0} câu</small></div><div className="row-actions"><button onClick={() => editSubject(subject)}>Sửa</button><button className="danger" onClick={() => confirm(`Xóa môn ${subject.label} và toàn bộ câu hỏi?`) && request(`/admin/subjects/${subject.id}`, { method:'DELETE' }, 'Đã xóa môn')}>Xóa</button></div></Glass>)}</div></div>}
-    {tab === 'questions' && <><Glass className="question-create"><h2>Thêm câu hỏi</h2><div className="form-row"><select value={questionForm.subject} onChange={(event) => setQuestionForm({...questionForm,subject:event.target.value})}><option value="">Chọn môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={questionForm.page} onChange={(e)=>setQuestionForm({...questionForm,page:Number(e.target.value)})} placeholder="Trang" /></div><textarea value={questionForm.question} onChange={(e)=>setQuestionForm({...questionForm,question:e.target.value})} placeholder="Nội dung câu hỏi" />{Object.keys(questionForm.options).map((letter)=><input key={letter} value={questionForm.options[letter]} onChange={(e)=>setQuestionForm({...questionForm,options:{...questionForm.options,[letter]:e.target.value}})} placeholder={`Đáp án ${letter}`} />)}<input value={questionForm.answer} onChange={(e)=>setQuestionForm({...questionForm,answer:e.target.value})} placeholder="Đáp án đúng: A hoặc BD" /><button className="primary" onClick={()=>request('/admin/questions',{method:'POST',body:JSON.stringify(questionForm)},'Đã thêm câu hỏi')}>Lưu câu hỏi</button></Glass><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Tất cả môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <Glass key={question.id} className="question-admin-row"><div><small>#{question.id} · {question.subject} · trang {question.page}</small><p>{question.question}</p><b>Đáp án {question.answer}</b></div><div className="row-actions"><button onClick={() => editQuestion(question)}>Sửa</button><button className="danger" onClick={() => confirm('Xóa câu hỏi này?') && request(`/admin/questions/${question.id}`, { method:'DELETE' }, 'Đã xóa câu hỏi')}>Xóa</button></div></Glass>)}</div></>}
+    {tab === 'questions' && <><Glass className="question-create"><h2>Thêm câu hỏi</h2><div className="form-row"><select value={questionForm.subject} onChange={(event) => setQuestionForm({...questionForm,subject:event.target.value})}><option value="">Chọn môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={questionForm.page} onChange={(e)=>setQuestionForm({...questionForm,page:Number(e.target.value)})} placeholder="Trang" /></div><textarea value={questionForm.question} onChange={(e)=>setQuestionForm({...questionForm,question:e.target.value})} placeholder="Nội dung câu hỏi" />{Object.keys(questionForm.options).map((letter)=><input key={letter} value={questionForm.options[letter]} onChange={(e)=>setQuestionForm({...questionForm,options:{...questionForm.options,[letter]:e.target.value}})} placeholder={`Đáp án ${letter}`} />)}<input value={questionForm.answer} onChange={(e)=>setQuestionForm({...questionForm,answer:e.target.value})} placeholder="Đáp án đúng: A hoặc BD" /><button className="primary" onClick={()=>request('/admin/questions',{method:'POST',body:JSON.stringify(questionForm)},'Đã thêm câu hỏi')}>Lưu câu hỏi</button></Glass><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Tất cả môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <QuestionItemEditor key={question.id} question={question} request={request} />)}</div></>}
     {tab === 'tricks' && <><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Chọn môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <TrickEditor key={question.id} question={question} request={request} />)}</div></>}
     {tab === 'vouchers' && <div className="admin-grid"><Glass className="admin-form"><h2>Tạo voucher</h2><label>Mã voucher<input value={voucher.code} onChange={(e)=>setVoucher({...voucher,code:e.target.value.toUpperCase()})} placeholder="HACHIMI20" /></label><label>Loại giảm<select value={voucher.type} onChange={(e)=>setVoucher({...voucher,type:e.target.value})}><option value="percent">Phần trăm (%)</option><option value="fixed">Số tiền cố định (VNĐ)</option></select></label><label>Mức giảm<input type="number" value={voucher.value} onChange={(e)=>setVoucher({...voucher,value:Number(e.target.value)})} placeholder="10" /></label><label>Áp dụng gói<select value={voucher.product} onChange={(e)=>setVoucher({...voucher,product:e.target.value})}><option value="all">Tất cả sản phẩm</option><option value="exam">Gói EOS</option><option value="trick">Gói Tạo Trick Lỏ</option></select></label><label>Áp dụng môn<select value={voucher.subject} onChange={(e)=>setVoucher({...voucher,subject:e.target.value})}><option value="*">Mọi môn học</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select></label><label>Số lượt dùng tối đa (Số lượng)<input type="number" value={voucher.usageLimit} onChange={(e)=>setVoucher({...voucher,usageLimit:Number(e.target.value)})} placeholder="Ví dụ: 100" /></label><button className="primary" onClick={()=>request('/admin/vouchers',{method:'POST',body:JSON.stringify(voucher)},'Đã tạo voucher')}>Tạo mã</button></Glass><div className="admin-list">{data.vouchers.map((item)=><Glass className="admin-row" key={item._id}><div><b>{item.code}</b><small>{item.type === 'percent' ? `${item.value}%` : money(item.value)} · {item.usedCount}/{item.usageLimit || '∞'} · {item.active ? 'đang bật' : 'đã tắt'}</small></div><div className="row-actions"><button onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'PUT',body:JSON.stringify({active:!item.active,usageLimit:item.usageLimit,expiresAt:item.expiresAt})},item.active?'Đã tắt voucher':'Đã bật voucher')}>{item.active?'Tắt':'Bật'}</button><button className="danger" onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'DELETE'},'Đã xóa voucher')}>Xóa</button></div></Glass>)}</div></div>}
     {tab === 'orders' && <div className="admin-list">{data.orders.map((order)=><Glass className="admin-row" key={order._id}><div><b>{order.email}</b><small>{order.subject} · {order.product} · {money(order.finalPrice)} · {order.status}</small></div>{order.status === 'pending' && <div><button onClick={()=>request(`/admin/orders/${order._id}/activate`,{method:'POST'},'Đã kích hoạt quyền')}>Duyệt</button><button className="danger" onClick={()=>request(`/admin/orders/${order._id}/cancel`,{method:'POST'},'Đã hủy đơn')}>Hủy</button></div>}</Glass>)}</div>}
@@ -780,10 +903,16 @@ function App() {
       setSubjects([...merged.values()]);
     });
   }, []);
-  useEffect(() => {
+
+  const refreshQuestions = useCallback(() => {
     localStorage.setItem('hachimi-subject', subjectId);
-    api(`/questions?subject=${encodeURIComponent(subjectId)}`).then((result) => setQuestions(result.ok ? result.data.questions : []));
+    return api(`/questions?subject=${encodeURIComponent(subjectId)}`).then((result) => setQuestions(result.ok ? result.data.questions : []));
   }, [subjectId]);
+
+  useEffect(() => {
+    refreshQuestions();
+  }, [refreshQuestions]);
+
   useEffect(() => { if (view === 'admin' && !user?.isAdmin) setView('home'); }, [view, user]);
   function openPurchase(product) { if (!user) return toast('Đăng nhập Google trước khi mua gói'); setPurchase(product); }
   return <>
@@ -793,7 +922,7 @@ function App() {
       {view === 'home' && <Home subjects={subjects} subjectId={subjectId} setSubjectId={setSubjectId} setView={handleNavigate} user={user} profile={profile} openPurchase={openPurchase} />}
       {view === 'study' && <Study questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} setView={handleNavigate} />}
       {view === 'exam' && <EosExam questions={questions} subject={subject} user={user} profile={profile} refreshProfile={refreshProfile} toast={toast} openPurchase={openPurchase} setExamSessionActive={setExamSessionActive} setView={handleNavigate} />}
-      {view === 'admin' && user?.isAdmin && <Admin toast={toast} setView={handleNavigate} />}
+      {view === 'admin' && user?.isAdmin && <Admin toast={toast} setView={handleNavigate} refreshQuestions={refreshQuestions} />}
       {!user?.isAdmin && <footer>Bạn muốn ủng hộ? <button onClick={() => setSupport(true)}>Bấm tại đây</button></footer>}
     </div>
     {purchase && <PurchaseModal product={purchase} subject={subject} close={() => setPurchase(null)} toast={toast} refreshProfile={refreshProfile} />}
