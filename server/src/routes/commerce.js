@@ -115,9 +115,30 @@ router.post('/orders', requireAuth(), asyncRoute(async (req, res) => {
   const user = await User.findById(req.session.sub).lean();
   if (!user) return res.status(401).json({ error: 'User not found' });
   const existing = await Order.findOne({ userId: user._id, subject: result.subject, product: result.product, packageOption: result.packageOption, status: { $in: ['pending', 'active'] } });
+  
   if (existing) {
     if (existing.status === 'active') {
       return res.status(409).json({ error: 'Bạn đã sở hữu sản phẩm này' });
+    }
+    if (result.finalPrice === 0) {
+      existing.status = 'active';
+      existing.finalPrice = 0;
+      existing.discount = result.originalPrice;
+      existing.voucherCode = result.voucherCode;
+      await existing.save();
+      await applyOrderBenefits(existing);
+      if (result.voucherCode) {
+        await Voucher.updateOne({ code: result.voucherCode }, { $inc: { usedCount: 1 } });
+      }
+      return res.status(200).json({
+        order: {
+          id: existing._id,
+          code: existing.code,
+          status: 'active',
+          finalPrice: 0,
+          autoActivated: true,
+        },
+      });
     }
     const bank = getBankConfig();
     const qrUrl = buildQrUrl(bank.bankShortName, bank.bankAccountNo, existing.finalPrice, existing.code || existing._id.toString(), bank.bankAccountName);
@@ -135,6 +156,8 @@ router.post('/orders', requireAuth(), asyncRoute(async (req, res) => {
   }
 
   const code = 'HC' + Math.floor(100000 + Math.random() * 900000);
+  const isFree = result.finalPrice === 0;
+
   const order = await Order.create({
     userId: user._id,
     email: user.email,
@@ -146,7 +169,24 @@ router.post('/orders', requireAuth(), asyncRoute(async (req, res) => {
     discount: result.discount,
     finalPrice: result.finalPrice,
     voucherCode: result.voucherCode,
+    status: isFree ? 'active' : 'pending',
   });
+
+  if (isFree) {
+    await applyOrderBenefits(order);
+    if (result.voucherCode) {
+      await Voucher.updateOne({ code: result.voucherCode }, { $inc: { usedCount: 1 } });
+    }
+    return res.status(201).json({
+      order: {
+        id: order._id,
+        code: order.code,
+        status: 'active',
+        finalPrice: 0,
+        autoActivated: true,
+      },
+    });
+  }
 
   const bank = getBankConfig();
   const transferContent = code;

@@ -571,6 +571,12 @@ function PurchaseModal({ product, subject, close, toast, refreshProfile }) {
     });
     setLoading(false);
     if (!result.ok) return toast(result.data.error);
+    if (result.data.order?.status === 'active' || result.data.order?.finalPrice === 0) {
+      toast('🎉 Voucher giảm 100%! Đã tự động kích hoạt gói thành công!', 'success');
+      await refreshProfile();
+      close();
+      return;
+    }
     setCreatedOrder(result.data.order);
     toast('Đã tạo đơn hàng. Vui lòng quét QR hoặc chuyển khoản theo thông tin bên dưới.', 'success');
   }
@@ -636,9 +642,17 @@ function PurchaseModal({ product, subject, close, toast, refreshProfile }) {
               <input value={voucherCode} onChange={(event) => setVoucherCode(event.target.value.toUpperCase())} placeholder="Nhập mã voucher" />
               <button onClick={applyVoucher}>Áp dụng</button>
             </div>
-            <p className="modal-note">Hệ thống hỗ trợ thanh toán qua VietQR và tự động kích hoạt gói ngay sau khi nhận tiền từ SePay.</p>
+            <p className="modal-note">
+              {quote.finalPrice === 0
+                ? '🎉 Đơn hàng được giảm 100%! Bạn sẽ được kích hoạt gói ngay mà không cần chuyển khoản.'
+                : 'Hệ thống hỗ trợ thanh toán qua VietQR và tự động kích hoạt gói ngay sau khi nhận tiền từ SePay.'}
+            </p>
             <button className="primary full" onClick={createOrder} disabled={loading}>
-              {loading ? 'Đang tạo đơn...' : 'Tạo mã thanh toán QR'}
+              {loading
+                ? 'Đang xử lý...'
+                : quote.finalPrice === 0
+                ? '🎉 Kích hoạt gói miễn phí ngay'
+                : 'Tạo mã thanh toán QR'}
             </button>
           </>
         ) : (
