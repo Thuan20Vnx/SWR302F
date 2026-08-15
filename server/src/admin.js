@@ -1,9 +1,19 @@
 import { User } from './models/User.js';
 import { requireAuth } from './auth.js';
 
-export const ADMIN_EMAILS = new Set([
+const defaultAdmins = [
   'tranxuanthuan20@gmail.com',
   'ngochoang.le73@gmail.com',
+  'nguyenxuanhuan.dev@gmail.com',
+];
+
+const envAdmins = process.env.ADMIN_EMAILS
+  ? process.env.ADMIN_EMAILS.split(',').map((e) => e.trim().toLowerCase())
+  : [];
+
+export const ADMIN_EMAILS = new Set([
+  ...defaultAdmins.map((e) => e.toLowerCase()),
+  ...envAdmins.filter(Boolean),
 ]);
 
 export const isAdminEmail = (email) =>
