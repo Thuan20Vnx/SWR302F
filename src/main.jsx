@@ -826,6 +826,9 @@ function Admin({ toast, setView, refreshQuestions }) {
   const [data, setData] = useState({ subjects: [], questions: [], vouchers: [], orders: [] });
   const [tab, setTab] = useState('subjects');
   const [filter, setFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [pageSize, setPageSize] = useState(50);
+  const [currentPage, setCurrentPage] = useState(1);
   const [subjectForm, setSubjectForm] = useState({ id: '', label: '', examPrice: 20000, trickPrice: 20000 });
   const [voucher, setVoucher] = useState({ code: '', type: 'percent', value: 10, product: 'all', subject: '*', usageLimit: 100 });
   const [importFile, setImportFile] = useState(null);
@@ -869,14 +872,92 @@ function Admin({ toast, setView, refreshQuestions }) {
     await refreshQuestions?.();
   }
 
-  const shownQuestions = [...data.questions]
-    .filter((question) => !filter || question.subject === filter)
-    .sort((a, b) => b.id - a.id);
+  const filteredQuestions = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    return [...data.questions]
+      .filter((item) => {
+        if (filter && item.subject !== filter) return false;
+        if (!q) return true;
+        const idMatch = String(item.id).includes(q);
+        const textMatch = (item.question || '').toLowerCase().includes(q);
+        const answerMatch = (item.answer || '').toLowerCase().includes(q);
+        const optionsMatch = Object.values(item.options || {}).some((opt) => (opt || '').toLowerCase().includes(q));
+        return idMatch || textMatch || answerMatch || optionsMatch;
+      })
+      .sort((a, b) => b.id - a.id);
+  }, [data.questions, filter, searchQuery]);
+
+  const totalCount = filteredQuestions.length;
+  const totalPages = pageSize > 0 ? Math.ceil(totalCount / pageSize) : 1;
+  const safePage = Math.min(Math.max(1, currentPage), totalPages || 1);
+
+  const pagedQuestions = useMemo(() => {
+    if (pageSize <= 0) return filteredQuestions;
+    const start = (safePage - 1) * pageSize;
+    return filteredQuestions.slice(start, start + pageSize);
+  }, [filteredQuestions, safePage, pageSize]);
+
+  const renderQuestionToolbar = () => (
+    <div className="admin-question-toolbar">
+      <div className="search-and-filter">
+        <select
+          className="admin-filter"
+          value={filter}
+          onChange={(event) => { setFilter(event.target.value); setCurrentPage(1); }}
+        >
+          <option value="">Tất cả môn ({data.questions.length} câu)</option>
+          {data.subjects.map((subject) => (
+            <option key={subject.id} value={subject.id}>
+              {subject.label} ({subject.id})
+            </option>
+          ))}
+        </select>
+        <input
+          type="text"
+          className="admin-search-input"
+          placeholder="🔍 Tìm theo ID, nội dung câu hỏi, lựa chọn, đáp án..."
+          value={searchQuery}
+          onChange={(event) => { setSearchQuery(event.target.value); setCurrentPage(1); }}
+        />
+      </div>
+      <div className="pagination-bar">
+        <span className="pagination-info">
+          Hiển thị {pagedQuestions.length > 0 ? (pageSize > 0 ? (safePage - 1) * pageSize + 1 : 1) : 0} -{' '}
+          {pageSize > 0 ? Math.min(safePage * pageSize, totalCount) : totalCount} trong tổng số <strong>{totalCount}</strong> câu
+        </span>
+        <div className="pagination-controls">
+          <label className="page-size-label">
+            Số câu / trang:
+            <select
+              value={pageSize}
+              onChange={(event) => { setPageSize(Number(event.target.value)); setCurrentPage(1); }}
+            >
+              <option value={50}>50</option>
+              <option value={100}>100</option>
+              <option value={200}>200</option>
+              <option value={0}>Tất cả ({totalCount})</option>
+            </select>
+          </label>
+          {pageSize > 0 && totalPages > 1 && (
+            <div className="page-buttons">
+              <button disabled={safePage <= 1} onClick={() => setCurrentPage(safePage - 1)}>
+                ← Trước
+              </button>
+              <span className="page-num-indicator">Trang {safePage} / {totalPages}</span>
+              <button disabled={safePage >= totalPages} onClick={() => setCurrentPage(safePage + 1)}>
+                Sau →
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 
   return <main className="admin-page"><div className="admin-head"><button type="button" className="page-back-arrow-btn" onClick={() => setView('home')} title="Quay lại trang chủ">← Quay lại Trang chủ</button><div><span className="kicker">HACHIMI CONTROL ROOM</span><h1>Quản trị nội dung</h1></div><a href="/question-import-template.xlsx" download className="secondary">Tải template Excel</a></div><div className="admin-tabs">{[['subjects','Môn học'],['questions','Câu hỏi'],['tricks','Trick lỏ'],['vouchers','Voucher'],['orders','Đơn mua'],['import','Import']].map(([id,label]) => <button className={tab === id ? 'active' : ''} onClick={() => setTab(id)} key={id}>{label}</button>)}</div>
     {tab === 'subjects' && <div className="admin-grid"><Glass className="admin-form"><h2>Thêm môn</h2>{['id','label','examPrice','trickPrice'].map((field) => <label key={field}>{field}<input type={field.includes('Price') ? 'number' : 'text'} value={subjectForm[field]} onChange={(event) => setSubjectForm({ ...subjectForm, [field]: event.target.value })} /></label>)}<button className="primary" onClick={() => request('/admin/subjects', { method:'POST', body: JSON.stringify(subjectForm) }, 'Đã thêm môn')}>Thêm môn</button></Glass><div className="admin-list">{data.subjects.map((subject) => <Glass key={subject.id} className="admin-row"><div><b>{subject.label}</b><small>{subject.id} · {subject.questionCount || 0} câu</small></div><div className="row-actions"><button onClick={() => editSubject(subject)}>Sửa</button><button className="danger" onClick={() => confirm(`Xóa môn ${subject.label} và toàn bộ câu hỏi?`) && request(`/admin/subjects/${subject.id}`, { method:'DELETE' }, 'Đã xóa môn')}>Xóa</button></div></Glass>)}</div></div>}
-    {tab === 'questions' && <><Glass className="question-create"><h2>Thêm câu hỏi mới</h2><div className="form-row"><select value={questionForm.subject} onChange={(event) => setQuestionForm({...questionForm,subject:event.target.value})}><option value="">Chọn môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={questionForm.page} onChange={(e)=>setQuestionForm({...questionForm,page:Number(e.target.value)})} placeholder="Trang" /></div><textarea value={questionForm.question} onChange={(e)=>setQuestionForm({...questionForm,question:e.target.value})} placeholder="Nội dung câu hỏi" />{Object.keys(questionForm.options).map((letter)=><input key={letter} value={questionForm.options[letter]} onChange={(e)=>setQuestionForm({...questionForm,options:{...questionForm.options,[letter]:e.target.value}})} placeholder={`Đáp án ${letter}`} />)}<input value={questionForm.answer} onChange={(e)=>setQuestionForm({...questionForm,answer:e.target.value.toUpperCase()})} placeholder="Đáp án đúng: A hoặc BD" /><button className="primary" onClick={handleCreateQuestion}>Lưu câu hỏi</button></Glass><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Tất cả môn (Mới nhất lên đầu)</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <QuestionItemEditor key={question.id} question={question} request={request} />)}</div></>}
-    {tab === 'tricks' && <><select className="admin-filter" value={filter} onChange={(event) => setFilter(event.target.value)}><option value="">Chọn môn</option>{data.subjects.map((subject) => <option key={subject.id}>{subject.id}</option>)}</select><div className="question-admin-list">{shownQuestions.slice(0,200).map((question) => <TrickEditor key={question.id} question={question} request={request} />)}</div></>}
+    {tab === 'questions' && <><Glass className="question-create"><h2>Thêm câu hỏi mới</h2><div className="form-row"><select value={questionForm.subject} onChange={(event) => setQuestionForm({...questionForm,subject:event.target.value})}><option value="">Chọn môn</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select><input type="number" value={questionForm.page} onChange={(e)=>setQuestionForm({...questionForm,page:Number(e.target.value)})} placeholder="Trang" /></div><textarea value={questionForm.question} onChange={(e)=>setQuestionForm({...questionForm,question:e.target.value})} placeholder="Nội dung câu hỏi" />{Object.keys(questionForm.options).map((letter)=><input key={letter} value={questionForm.options[letter]} onChange={(e)=>setQuestionForm({...questionForm,options:{...questionForm.options,[letter]:e.target.value}})} placeholder={`Đáp án ${letter}`} />)}<input value={questionForm.answer} onChange={(e)=>setQuestionForm({...questionForm,answer:e.target.value.toUpperCase()})} placeholder="Đáp án đúng: A hoặc BD" /><button className="primary" onClick={handleCreateQuestion}>Lưu câu hỏi</button></Glass>{renderQuestionToolbar()}<div className="question-admin-list">{pagedQuestions.length > 0 ? pagedQuestions.map((question) => <QuestionItemEditor key={question.id} question={question} request={request} />) : <div className="admin-empty">Không tìm thấy câu hỏi nào phù hợp</div>}</div></>}
+    {tab === 'tricks' && <>{renderQuestionToolbar()}<div className="question-admin-list">{pagedQuestions.length > 0 ? pagedQuestions.map((question) => <TrickEditor key={question.id} question={question} request={request} />) : <div className="admin-empty">Không tìm thấy câu hỏi nào phù hợp</div>}</div></>}
     {tab === 'vouchers' && <div className="admin-grid"><Glass className="admin-form"><h2>Tạo voucher</h2><label>Mã voucher<input value={voucher.code} onChange={(e)=>setVoucher({...voucher,code:e.target.value.toUpperCase()})} placeholder="HACHIMI20" /></label><label>Loại giảm<select value={voucher.type} onChange={(e)=>setVoucher({...voucher,type:e.target.value})}><option value="percent">Phần trăm (%)</option><option value="fixed">Số tiền cố định (VNĐ)</option></select></label><label>Mức giảm<input type="number" value={voucher.value} onChange={(e)=>setVoucher({...voucher,value:Number(e.target.value)})} placeholder="10" /></label><label>Áp dụng gói<select value={voucher.product} onChange={(e)=>setVoucher({...voucher,product:e.target.value})}><option value="all">Tất cả sản phẩm</option><option value="exam">Gói EOS</option><option value="trick">Gói Tạo Trick Lỏ</option></select></label><label>Áp dụng môn<select value={voucher.subject} onChange={(e)=>setVoucher({...voucher,subject:e.target.value})}><option value="*">Mọi môn học</option>{data.subjects.map((subject)=><option key={subject.id}>{subject.id}</option>)}</select></label><label>Số lượt dùng tối đa (Số lượng)<input type="number" value={voucher.usageLimit} onChange={(e)=>setVoucher({...voucher,usageLimit:Number(e.target.value)})} placeholder="Ví dụ: 100" /></label><button className="primary" onClick={()=>request('/admin/vouchers',{method:'POST',body:JSON.stringify(voucher)},'Đã tạo voucher')}>Tạo mã</button></Glass><div className="admin-list">{data.vouchers.map((item)=><Glass className="admin-row" key={item._id}><div><b>{item.code}</b><small>{item.type === 'percent' ? `${item.value}%` : money(item.value)} · {item.usedCount}/{item.usageLimit || '∞'} · {item.active ? 'đang bật' : 'đã tắt'}</small></div><div className="row-actions"><button onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'PUT',body:JSON.stringify({active:!item.active,usageLimit:item.usageLimit,expiresAt:item.expiresAt})},item.active?'Đã tắt voucher':'Đã bật voucher')}>{item.active?'Tắt':'Bật'}</button><button className="danger" onClick={()=>request(`/admin/vouchers/${item._id}`,{method:'DELETE'},'Đã xóa voucher')}>Xóa</button></div></Glass>)}</div></div>}
     {tab === 'orders' && <div className="admin-list">{data.orders.map((order)=><Glass className="admin-row" key={order._id}><div><b>{order.email}</b><small>{order.subject} · {order.product} · {money(order.finalPrice)} · {order.status}</small></div>{order.status === 'pending' && <div><button onClick={()=>request(`/admin/orders/${order._id}/activate`,{method:'POST'},'Đã kích hoạt quyền')}>Duyệt</button><button className="danger" onClick={()=>request(`/admin/orders/${order._id}/cancel`,{method:'POST'},'Đã hủy đơn')}>Hủy</button></div>}</Glass>)}</div>}
     {tab === 'import' && <Glass className="import-panel"><h2>Import câu hỏi và môn học</h2><p>Dùng đúng sheet Questions trong template. Mỗi file chứa một môn, tối đa 1.000 câu.</p><input type="file" accept=".xlsx" onChange={(event)=>setImportFile(event.target.files?.[0])} /><button className="primary" disabled={!importFile} onClick={importQuestions}>Import và thay thế dữ liệu môn</button></Glass>}

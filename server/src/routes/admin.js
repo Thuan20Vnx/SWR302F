@@ -154,7 +154,7 @@ router.get('/snapshot', ...requireAdmin(), asyncRoute(async (req, res) => {
       { $group: { _id: '$subject', questionCount: { $sum: 1 } } },
       { $sort: { _id: 1 } },
     ]),
-    Question.find({}, { _id: 0, __v: 0 }).sort({ subject: 1, id: 1 }).limit(5000).lean(),
+    Question.find({}, { _id: 0, __v: 0 }).sort({ subject: 1, id: 1 }).lean(),
     Voucher.find({}, { __v: 0 }).sort({ createdAt: -1 }).lean(),
     Order.find({}, { __v: 0 }).sort({ createdAt: -1 }).limit(300).lean(),
   ]);
